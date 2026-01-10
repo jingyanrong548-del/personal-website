@@ -13,13 +13,10 @@ const translations = {
         'hero.badge2': 'Industrial Heat Pumps',
         'hero.badge3': 'Smart Refrigeration & Heat Pumps',
         
-        // Purpose Notice
-        'purpose.notice': 'This website is established for open-source and non-commercial purposes. All self-developed applications are provided for public benefit and research purposes only. The site operates on a voluntary, non-profit basis to share knowledge and tools with the engineering community.',
-        
         // About
         'about.title': 'About',
         'about.text1': 'Jing Yanrong (荆炎荣), specializing in industrial refrigeration and industrial heat pump systems. Focus on advancing green low-carbon technologies through innovative design and intelligent applications in refrigeration and heat pump engineering.',
-        'about.text2': 'This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, focusing on design optimization, energy efficiency analysis, and performance calculation.',
+        'about.text2': 'This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, focusing on design optimization, energy efficiency analysis, and performance calculation. All self-developed applications are provided for public benefit and research purposes only, on a non-commercial, open-source basis.',
         
         // Apps
         'apps.title': 'My Applications',
@@ -74,10 +71,9 @@ const translations = {
         'hero.badge1': '工业制冷',
         'hero.badge2': '工业热泵',
         'hero.badge3': '智能制冷热泵',
-        'purpose.notice': '本网站以开源和非商业目的建立。所有自编应用仅供公益和研究目的使用。本网站以志愿服务、非营利的方式运营，旨在与工程社区分享知识和工具。',
         'about.title': '关于',
         'about.text1': '荆炎荣（Jing Yanrong），专注于工业制冷和工业热泵系统。致力于通过创新设计和智能化应用推进绿色低碳技术在制冷热泵工程中的发展。',
-        'about.text2': '本网站为工业制冷和工业热泵系统提供实用的应用程序和工具，专注于设计优化、能效分析和系统性能计算。',
+        'about.text2': '本网站为工业制冷和工业热泵系统提供实用的应用程序和工具，专注于设计优化、能效分析和系统性能计算。所有自编应用均以开源、非商业的方式提供，仅供公益和研究目的使用。',
         'apps.title': '自编应用工具',
         'apps.description': '自编应用工具集',
         'apps.app0.title': '工程单位换算器',
@@ -118,7 +114,7 @@ const translations = {
 };
 
 // Language management
-let currentLanguage = localStorage.getItem('language') || 'en';
+let currentLanguage = localStorage.getItem('language') || 'zh';
 
 function setLanguage(lang) {
     if (!translations[lang]) return;

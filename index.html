@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jing Yanrong - Personal Homepage</title>
-    <meta name="description" content="Personal website specializing in industrial refrigeration and industrial heat pump systems, committed to green low-carbon and sustainable development.">
+    
+    <!-- Primary Meta Tags -->
+    <title>荆炎荣 (Jing Yanrong) - 工业制冷与热泵系统专家 | Industrial Refrigeration & Heat Pump Systems</title>
+    <meta name="title" content="荆炎荣 (Jing Yanrong) - 工业制冷与热泵系统专家">
+    <meta name="description" content="荆炎荣（Jing Yanrong）个人网站，专注于工业制冷和工业热泵系统。提供开源工程工具，包括工程单位换算器、工业热泵匹配计算器、热泵效益分析器等专业应用。致力于绿色低碳技术和可持续发展。">
+    <meta name="keywords" content="荆炎荣, Jing Yanrong, 工业制冷, 工业热泵, 热泵系统, 制冷系统, industrial refrigeration, industrial heat pump, heat pump calculator, refrigeration systems, 热泵计算器, 制冷设计, 热泵匹配, 能效分析, 绿色低碳, green technology, energy efficiency">
+    <meta name="author" content="Jing Yanrong, 荆炎荣">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Chinese, English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://www.jingyanrong.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jingyanrong.com/">
+    <meta property="og:title" content="荆炎荣 (Jing Yanrong) - 工业制冷与热泵系统专家">
+    <meta property="og:description" content="专注于工业制冷和工业热泵系统的专业网站，提供开源工程工具和应用。">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="荆炎荣 (Jing Yanrong) - 工业制冷与热泵系统专家">
+    <meta name="twitter:description" content="专注于工业制冷和工业热泵系统的专业网站，提供开源工程工具和应用。">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Legacy Apple meta tags (保留以兼容旧版 iOS Safari) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="荆炎荣">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jing Yanrong",
+      "alternateName": "荆炎荣",
+      "url": "https://www.jingyanrong.com",
+      "jobTitle": "工业制冷与热泵系统专家",
+      "description": "专注于工业制冷和工业热泵系统，致力于绿色低碳技术和可持续发展的工程实践",
+      "email": "jingyanrong@126.com",
+      "sameAs": [
+        "https://github.com/jingyanrong548-del"
+      ],
+      "knowsAbout": [
+        "工业制冷系统",
+        "工业热泵系统",
+        "制冷设计",
+        "热泵匹配计算",
+        "能效分析",
+        "绿色低碳技术",
+        "Industrial Refrigeration",
+        "Industrial Heat Pump",
+        "Energy Efficiency"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "荆炎荣个人网站",
+      "alternateName": "Jing Yanrong Personal Website",
+      "url": "https://www.jingyanrong.com",
+      "description": "提供工业制冷和工业热泵系统相关的开源工具和应用",
+      "author": {
+        "@type": "Person",
+        "name": "Jing Yanrong",
+        "alternateName": "荆炎荣"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.jingyanrong.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
     <link rel="stylesheet" href="/src/style.css">
+    
+    <!-- Website Analytics -->
+    <!-- Google Analytics (GA4) - 请替换 YOUR_GA4_MEASUREMENT_ID 为您的实际 Measurement ID -->
+    <!-- 获取 ID: https://analytics.google.com/ -->
+    <script>
+      (function() {
+        var gaId = 'YOUR_GA4_MEASUREMENT_ID';
+        if (gaId && gaId !== 'YOUR_GA4_MEASUREMENT_ID') {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId, {
+            'page_title': document.title,
+            'page_location': window.location.href
+          });
+          
+          // 跟踪页面浏览
+          gtag('event', 'page_view', {
+            'page_title': document.title,
+            'page_location': window.location.href,
+            'page_path': window.location.pathname
+          });
+        }
+      })();
+    </script>
+    
+    <!-- 百度统计 - 请替换 YOUR_BAIDU_SITE_ID 为您的实际站点ID -->
+    <!-- 获取 ID: https://tongji.baidu.com/ -->
+    <script>
+      (function() {
+        var baiduId = 'YOUR_BAIDU_SITE_ID';
+        if (baiduId && baiduId !== 'YOUR_BAIDU_SITE_ID') {
+          var _hmt = _hmt || [];
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?" + baiduId;
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        }
+      })();
+    </script>
+    
+    <!-- 简单的访问计数器（使用 localStorage） -->
+    <script>
+      (function() {
+        // 检查是否是新的会话（非刷新）
+        if (!sessionStorage.getItem('pageViewed')) {
+          sessionStorage.setItem('pageViewed', 'true');
+          
+          // 增加总访问量
+          let totalViews = parseInt(localStorage.getItem('totalPageViews') || '0');
+          totalViews++;
+          localStorage.setItem('totalPageViews', totalViews.toString());
+          
+          // 记录访问时间
+          const visitDate = new Date().toISOString().split('T')[0];
+          let dailyViews = JSON.parse(localStorage.getItem('dailyViews') || '{}');
+          dailyViews[visitDate] = (dailyViews[visitDate] || 0) + 1;
+          localStorage.setItem('dailyViews', JSON.stringify(dailyViews));
+        }
+        
+        // 可选：在控制台显示统计信息（仅用于调试）
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          console.log('访问统计:', {
+            '总访问量': localStorage.getItem('totalPageViews') || '0',
+            '今日访问': JSON.parse(localStorage.getItem('dailyViews') || '{}')[new Date().toISOString().split('T')[0]] || '0'
+          });
+        }
+      })();
+    </script>
+    
     <script type="module" src="/src/main.js"></script>
 </head>
 <body>
@@ -39,15 +194,6 @@
         </div>
     </header>
 
-    <!-- Website Purpose Notice -->
-    <section class="purpose-notice">
-        <div class="container">
-            <div class="purpose-notice-content">
-                <p data-i18n="purpose.notice">This website is established for open-source and non-commercial purposes. All self-developed applications are provided for public benefit and research purposes only. The site operates on a voluntary, non-profit basis to share knowledge and tools with the engineering community.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
@@ -55,7 +201,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p data-i18n="about.text1">Jing Yanrong (荆炎荣), specializing in industrial refrigeration and industrial heat pump systems. Focus on advancing green low-carbon technologies through innovative design and intelligent applications in refrigeration and heat pump engineering.</p>
-                    <p data-i18n="about.text2">This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, focusing on design optimization, energy efficiency analysis, and performance calculation.</p>
+                    <p data-i18n="about.text2">This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, focusing on design optimization, energy efficiency analysis, and performance calculation. All self-developed applications are provided for public benefit and research purposes only, on a non-commercial, open-source basis.</p>
                 </div>
             </div>
         </div>
