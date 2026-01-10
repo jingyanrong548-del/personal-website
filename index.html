@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>荆炎荣 / Thomas Jing - Personal Homepage</title>
+    <title>Jing Yanrong - Personal Homepage</title>
     <meta name="description" content="Public Equipment Engineer specializing in refrigeration and heat pump systems, committed to green low-carbon and sustainable development.">
     <link rel="stylesheet" href="/src/style.css">
     <script type="module" src="/src/main.js"></script>
@@ -12,28 +12,33 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">荆炎荣 / Thomas Jing</div>
-            <ul class="nav-menu">
-                <li><a href="#about">关于我 / About</a></li>
-                <li><a href="#education">教育 / Education</a></li>
-                <li><a href="#experience">经历 / Experience</a></li>
-                <li><a href="#skills">技能 / Skills</a></li>
-                <li><a href="#contact">联系 / Contact</a></li>
-            </ul>
+            <div class="nav-brand" data-i18n="nav.brand">Jing Yanrong</div>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                    <button class="lang-btn" data-lang="ja">日本語</button>
+                    <button class="lang-btn" data-lang="ru">Рус</button>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#apps" data-i18n="nav.apps">Apps</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>个人主页 / Personal Homepage</h1>
-            <p class="subtitle">公用设备工程师（动力）| Public Equipment Engineer (Power)</p>
-            <p class="tagline">致力于推进绿色低碳和可持续发展 | Committed to Green Low-Carbon and Sustainable Development</p>
+            <h1 data-i18n="hero.name">Jing Yanrong</h1>
+            <p class="subtitle" data-i18n="hero.subtitle">Public Equipment Engineer (Power)</p>
             <div class="hero-badges">
-                <span class="badge">制冷工程 / Refrigeration</span>
-                <span class="badge">热泵系统 / Heat Pumps</span>
-                <span class="badge">AI应用 / AI Applications</span>
+                <span class="badge" data-i18n="hero.badge1">Refrigeration</span>
+                <span class="badge" data-i18n="hero.badge2">Heat Pumps</span>
+                <span class="badge" data-i18n="hero.badge3">AI Applications</span>
+                <span class="badge" data-i18n="hero.badge4">Industrial Systems</span>
             </div>
         </div>
     </header>
@@ -41,211 +46,88 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">关于我 / About Me</h2>
+            <h2 class="section-title" data-i18n="about.title">About</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>你好！我是荆炎荣（英文名Thomas），一名公用设备工程师（动力）。我专注于能源和设备工程领域的技术工作，致力于推进绿色低碳和可持续发展。目前，我正在探索人工智能技术在工业领域的应用，特别擅长工业用制冷设备和热泵系统的设计与改进。欢迎来到我的个人主页。</p>
-                    <p>Hello! I'm Thomas Jing (荆炎荣), a Public Equipment Engineer (Power). I specialize in technical work in the energy and equipment engineering field, committed to advancing green low-carbon and sustainable development. Currently, I am exploring the application of artificial intelligence technology in industrial fields, with particular expertise in the design and improvement of industrial refrigeration equipment and heat pump systems. Welcome to my personal homepage.</p>
-                    <blockquote class="motto">
-                        <p>"己所不欲勿施于人"</p>
-                        <p>"Don't do to others what you wouldn't want done to you."</p>
-                    </blockquote>
+                    <p data-i18n="about.text1">I'm Jing Yanrong (荆炎荣), a Public Equipment Engineer (Power) specializing in industrial refrigeration and heat pump systems. I focus on advancing green low-carbon technologies through innovative design and AI applications in industrial equipment engineering.</p>
+                    <p data-i18n="about.text2">I develop practical applications and tools for the refrigeration and heat pump industry, focusing on design optimization, energy efficiency analysis, and system performance calculation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section section-gray">
+    <!-- Apps Section -->
+    <section id="apps" class="section section-gray">
         <div class="container">
-            <h2 class="section-title">教育背景 / Educational Background</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>华中科技大学动力系制冷与低温技术专业</h3>
-                        <p>Huazhong University of Science and Technology, Refrigeration and Cryogenic Technology Major</p>
-                        <span class="date">1998年毕业 / Graduated in 1998</span>
+            <h2 class="section-title" data-i18n="apps.title">Applications</h2>
+            <p class="section-description" data-i18n="apps.description">Refrigeration & Heat Pump Application Tools</p>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">❄️</div>
+                    <h3 class="app-title" data-i18n="apps.app1.title">Heat Pump Calculator</h3>
+                    <p class="app-description" data-i18n="apps.app1.description">Industrial heat pump system performance calculation tool</p>
+                    <div class="app-tags">
+                        <span class="app-tag" data-i18n="apps.tags.calculation">Calculation</span>
+                        <span class="app-tag" data-i18n="apps.tags.heatPump">Heat Pump</span>
                     </div>
+                    <div class="app-status coming-soon" data-i18n="apps.comingSoon">Coming Soon</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>注册公用设备工程师—动力专业</h3>
-                        <p>Registered Public Equipment Engineer - Power Engineering Specialty</p>
-                        <span class="date">2014年</span>
+                <div class="app-card">
+                    <div class="app-icon">🔧</div>
+                    <h3 class="app-title" data-i18n="apps.app2.title">Refrigeration System Designer</h3>
+                    <p class="app-description" data-i18n="apps.app2.description">Design and optimization tool for industrial refrigeration systems</p>
+                    <div class="app-tags">
+                        <span class="app-tag" data-i18n="apps.tags.design">Design</span>
+                        <span class="app-tag" data-i18n="apps.tags.refrigeration">Refrigeration</span>
                     </div>
+                    <div class="app-status coming-soon" data-i18n="apps.comingSoon">Coming Soon</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>高级工程师-制冷专业</h3>
-                        <p>Senior Engineer - Refrigeration Specialty</p>
+                <div class="app-card">
+                    <div class="app-icon">📊</div>
+                    <h3 class="app-title" data-i18n="apps.app3.title">Energy Efficiency Analyzer</h3>
+                    <p class="app-description" data-i18n="apps.app3.description">Analyze and optimize energy consumption of HVAC systems</p>
+                    <div class="app-tags">
+                        <span class="app-tag" data-i18n="apps.tags.analysis">Analysis</span>
+                        <span class="app-tag" data-i18n="apps.tags.energy">Energy</span>
                     </div>
+                    <div class="app-status coming-soon" data-i18n="apps.comingSoon">Coming Soon</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>压力容器审核资格证书-D类</h3>
-                        <p>Pressure Vessel Audit Qualification Certificate - Class D</p>
+                <div class="app-card">
+                    <div class="app-icon">🌡️</div>
+                    <h3 class="app-title" data-i18n="apps.app4.title">Temperature Range Optimizer</h3>
+                    <p class="app-description" data-i18n="apps.app4.description">Optimize temperature ranges for wide-range heat pump systems</p>
+                    <div class="app-tags">
+                        <span class="app-tag" data-i18n="apps.tags.optimization">Optimization</span>
+                        <span class="app-tag" data-i18n="apps.tags.temperature">Temperature</span>
                     </div>
+                    <div class="app-status coming-soon" data-i18n="apps.comingSoon">Coming Soon</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>瑞士温特图苏尔寿培训离心压缩机及机组</h3>
-                        <p>Sulzer Winterthur (Switzerland) Training on Centrifugal Compressors and Units</p>
-                        <span class="date">2005年3月 / March 2005</span>
+                <div class="app-card">
+                    <div class="app-icon">🔬</div>
+                    <h3 class="app-title" data-i18n="apps.app5.title">Component Sizing Tool</h3>
+                    <p class="app-description" data-i18n="apps.app5.description">Size compressors, heat exchangers, and other components</p>
+                    <div class="app-tags">
+                        <span class="app-tag" data-i18n="apps.tags.sizing">Sizing</span>
+                        <span class="app-tag" data-i18n="apps.tags.components">Components</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">工作经历 / Work Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>冰山冷热科技股份有限公司</h3>
-                        <p>Bingshan Cool & Heat Technology Co., Ltd.</p>
-                    </div>
-                    <div class="experience-role">研发统括部副统括部长兼研发部长、压力容器技术负责人</div>
-                    <div class="experience-role-en">Deputy Director of R&D Division and R&D Department Director, Pressure Vessel Technical Director</div>
-                    <div class="experience-period">2000年10月-2015年5月、2021年3月-2025年4月</div>
-                    <ul class="experience-list">
-                        <li>CCUS增压机组的设计 / Design of CCUS booster units</li>
-                        <li>复叠、开式氨热泵设计 / Design of cascade and open ammonia heat pumps</li>
-                        <li>系列冷媒机组的规划设计 / Planning and design of refrigeration units</li>
-                        <li>宽温域工业热泵机组（30-200度）的研发 / Development of wide temperature range industrial heat pump units (30-200 degrees)</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>福建雪人股份有限公司</h3>
-                        <p>Fujian Snowman Corporation</p>
-                    </div>
-                    <div class="experience-role">技术副总监、高级工程师</div>
-                    <div class="experience-role-en">Deputy Technical Director & Senior Engineer</div>
-                    <div class="experience-period">2015年5月-2021年3月</div>
-                    <ul class="experience-list">
-                        <li>主导了氦气压缩机组设计与测试 / Led the design and testing of helium compressor units</li>
-                        <li>鳗鱼用热泵设计推广 / Design and promotion of heat pumps for eel farming</li>
-                        <li>氨热泵用于德国、荷兰、中国等 / Implementation of ammonia heat pumps in Germany, Netherlands, China, etc.</li>
-                        <li>二氧化碳热泵研发 / Research and development of carbon dioxide heat pumps</li>
-                        <li>ORC与WST膨胀发电机应用与推广 / Application and promotion of ORC and WST expansion generators</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>武汉新世界制冷工业有限公司</h3>
-                        <p>Wuhan New World Refrigeration Industry Co., Ltd.</p>
-                    </div>
-                    <div class="experience-role">助理工程师 / Assistant Engineer</div>
-                    <div class="experience-period">1998年6月-2000年10月</div>
-                    <ul class="experience-list">
-                        <li>螺杆压缩机组设计 / Design of screw compressor units</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section section-gray">
-        <div class="container">
-            <h2 class="section-title">技能 / Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🔧</div>
-                    <h3>软件工具 / Software Tools</h3>
-                    <p>HTRI、ASPEN 熟练用于化工制冷换热器计算</p>
-                    <p>Proficient in HTRI, ASPEN for chemical refrigeration heat exchanger calculations</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">❄️</div>
-                    <h3>制冷系统 / Refrigeration Systems</h3>
-                    <p>工业制冷、工业热泵及系统的熟练掌握</p>
-                    <p>Proficient in industrial refrigeration, heat pumps, and systems</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🌱</div>
-                    <h3>天然制冷剂 / Natural Refrigerants</h3>
-                    <p>氨、二氧化碳等配套制冷制热设备的熟练设计</p>
-                    <p>Proficient in designing equipment for natural refrigerants like ammonia and CO₂</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>压缩机技术 / Compressor Technology</h3>
-                    <p>对螺杆压缩机的型线、结构、能量调节等有深入理解</p>
-                    <p>Deep understanding of screw compressor profiles, structure, and load regulation</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📋</div>
-                    <h3>标准规范 / Standards</h3>
-                    <p>熟练掌握 ASHRAE15、IIAR2、GB/T9237等标准</p>
-                    <p>Proficient in ASHRAE15, IIAR2, GB/T9237, and other standards</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🔬</div>
-                    <h3>计算分析 / Calculations</h3>
-                    <p>制冷用气液分离器计算及换热器设计</p>
-                    <p>Gas-liquid separator calculations and heat exchanger design</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="section">
-        <div class="container">
-            <h2 class="section-title">绿色低碳和可持续发展事业策划</h2>
-            <h3 class="section-subtitle">Green Low-Carbon and Sustainable Development Planning (Before 2033)</h3>
-            
-            <div class="vision-content">
-                <div class="vision-item">
-                    <h4>热泵体系建设 / Heat Pump System Development</h4>
-                    <ul>
-                        <li>冰山冷热30-200度热泵系统 / Bingshan 30-200°C Heat Pump System</li>
-                        <li>中温氟系统开发 (90度) / Medium Temperature Fluorine System (90°C)</li>
-                        <li>高温氟系统开发 (120度) / High-Temperature Fluorine System (120°C)</li>
-                        <li>耦合系统研发 (200度以下) / Coupled System Development (Below 200°C)</li>
-                        <li>多元化发展 / Diversified Development</li>
-                    </ul>
+                    <div class="app-status coming-soon" data-i18n="apps.comingSoon">Coming Soon</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section section-gray">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">联系方式 / Contact Information</h2>
-            <div class="contact-grid">
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <div class="contact-list">
                 <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>电子邮件 / Email</h3>
+                    <span class="contact-icon">📧</span>
                     <a href="mailto:jingyanrong@126.com">jingyanrong@126.com</a>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3>电话 / Phone</h3>
-                    <a href="tel:+8615280122625">+86 152 8012 2625</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💬</div>
-                    <h3>微信号 / WeChat</h3>
-                    <p>jingyanrongdalian</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h3>通讯地址 / Mailing Address</h3>
-                    <p>福建省福州市螺洲镇泰禾福州院子</p>
-                    <p>Taihe Fuzhou Garden, Luozhou Town, Fuzhou City, Fujian Province</p>
+                    <span class="contact-icon">💬</span>
+                    <span data-i18n="contact.wechat">WeChat: jingyanrongdalian</span>
                 </div>
             </div>
         </div>
@@ -254,8 +136,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 荆炎荣 / Thomas Jing. All rights reserved.</p>
-            <p>地球千疮百孔，需要更多有识之士来努力修复！</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Jing Yanrong. All rights reserved.</p>
         </div>
     </footer>
 </body>
