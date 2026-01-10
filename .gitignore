@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# 构建产物（不应提交到仓库）
+assets/
+index.html.bak
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
