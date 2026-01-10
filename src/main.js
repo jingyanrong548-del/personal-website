@@ -15,8 +15,8 @@ const translations = {
         
         // About
         'about.title': 'About',
-        'about.text1': 'Jing Yanrong (荆炎荣), specializing in industrial refrigeration and industrial heat pump systems. Focus on advancing green low-carbon technologies through innovative design and intelligent applications in refrigeration and heat pump engineering.',
-        'about.text2': 'This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, focusing on design optimization, energy efficiency analysis, and performance calculation. All self-developed applications are provided for public benefit and research purposes only, on a non-commercial, open-source basis.',
+        'about.text1': 'Jing Yanrong (荆炎荣) specializes in industrial refrigeration and industrial heat pump systems, focusing on advancing green low-carbon technologies through innovative design and intelligent applications in refrigeration and heat pump engineering.',
+        'about.text2': 'This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, covering design optimization, energy efficiency analysis, and performance calculation. All self-developed applications are provided on a non-commercial, open-source basis for public benefit and research purposes only.',
         
         // Apps
         'apps.title': 'My Applications',
@@ -72,10 +72,10 @@ const translations = {
         'hero.badge2': '工业热泵',
         'hero.badge3': '智能制冷热泵',
         'about.title': '关于',
-        'about.text1': '荆炎荣（Jing Yanrong），专注于工业制冷和工业热泵系统。致力于通过创新设计和智能化应用推进绿色低碳技术在制冷热泵工程中的发展。',
-        'about.text2': '本网站为工业制冷和工业热泵系统提供实用的应用程序和工具，专注于设计优化、能效分析和系统性能计算。所有自编应用均以开源、非商业的方式提供，仅供公益和研究目的使用。',
-        'apps.title': '自编应用工具',
-        'apps.description': '自编应用工具集',
+        'about.text1': '荆炎荣（Jing Yanrong）专注于工业制冷和工业热泵系统，致力于通过创新设计与智能化应用推进绿色低碳技术在制冷热泵工程中的应用与发展。',
+        'about.text2': '本网站为工业制冷和工业热泵系统提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面。所有应用均以开源、非商业的方式提供，仅供公益和研究目的使用。',
+        'apps.title': '我的应用',
+        'apps.description': '应用工具集',
         'apps.app0.title': '工程单位换算器',
         'apps.app0.description': '快速、准确的工程计算单位转换工具',
         'apps.app1.title': '膨胀机性能计算器',
@@ -103,7 +103,7 @@ const translations = {
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
         'disclaimer.title': '免责声明',
-        'disclaimer.text1': '本网站所有自编应用仅供个人研究和教育目的使用。这些工具以非商业、开源方式提供。',
+        'disclaimer.text1': '本网站所有应用仅供个人研究和教育目的使用。这些工具以非商业、开源方式提供。',
         'disclaimer.text2': '如用于任何商业用途或商业目的，请事先与我联系以获得授权。严禁未经授权的商业使用。',
         'disclaimer.text3': '虽已尽力确保准确性，但这些工具按"现状"提供，不提供任何形式的保证。使用风险自负。',
         'contact.title': '联系方式',
