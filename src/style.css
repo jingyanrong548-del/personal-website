@@ -6,47 +6,50 @@
 }
 
 :root {
-    /* Warm Color System with Green for Public Service */
-    --warm-orange: #FF6B6B;
-    --warm-orange-light: #FF8E53;
-    --warm-orange-dark: #FF5252;
-    --warm-peach: #FFA07A;
-    --warm-light: #FFF8F5;
-    --warm-gradient: linear-gradient(135deg, #FF6B6B, #FF8E53);
-    
-    /* Green for Public Service & Environmental */
+    /* Green Color System - Main Theme */
     --green-primary: #10B981;
     --green-dark: #059669;
     --green-light: #34D399;
+    --green-lighter: #6EE7B7;
     --green-bg: #ECFDF5;
+    --green-bg-light: #F0FDF4;
+    --green-gradient: linear-gradient(135deg, #10B981, #34D399);
+    
+    /* Legacy warm colors (kept for compatibility, now using green instead) */
+    --warm-orange: #10B981;
+    --warm-orange-light: #34D399;
+    --warm-orange-dark: #059669;
+    --warm-peach: #6EE7B7;
+    --warm-light: #F0FDF4;
+    --warm-gradient: linear-gradient(135deg, #10B981, #34D399);
     
     /* Primary Colors */
-    --primary-color: #2C2C2C;
-    --secondary-color: #FF6B6B;
-    --accent-color: #FF8E53;
+    --primary-color: #1F2937;
+    --secondary-color: #10B981;
+    --accent-color: #34D399;
     
     /* Text Colors */
-    --text-color: #2C2C2C;
-    --text-light: #666666;
-    --text-lighter: #999999;
+    --text-color: #1F2937;
+    --text-light: #4B5563;
+    --text-lighter: #6B7280;
     --text-white: #FFFFFF;
     
-    /* Background Colors */
+    /* Background Colors - Green Theme */
     --bg-white: #FFFFFF;
-    --bg-light: #FFF8F5;
-    --bg-section: #FFF8F5;
-    --bg-gradient: linear-gradient(135deg, #FFF8F5 0%, #FFFFFF 100%);
-    --bg-gradient-hero: linear-gradient(135deg, #FFE5D9 0%, #FFF8F5 50%, #FFFFFF 100%);
+    --bg-light: #F0FDF4;
+    --bg-section: #ECFDF5;
+    --bg-gradient: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+    --bg-gradient-hero: linear-gradient(135deg, #D1FAE5 0%, #ECFDF5 50%, #FFFFFF 100%);
     
-    /* Border Colors */
-    --border-color: #F0E0D6;
-    --border-dark: #E8D4C4;
-    --border-gradient: linear-gradient(135deg, #FF6B6B, #FF8E53);
+    /* Border Colors - Green Theme */
+    --border-color: #D1FAE5;
+    --border-dark: #A7F3D0;
+    --border-gradient: linear-gradient(135deg, #10B981, #34D399);
     
-    /* Shadows */
-    --shadow: 0 4px 12px rgba(255, 110, 107, 0.15);
-    --shadow-hover: 0 12px 32px rgba(255, 110, 107, 0.25);
-    --shadow-soft: 0 2px 8px rgba(255, 142, 83, 0.1);
+    /* Shadows - Green Theme */
+    --shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+    --shadow-hover: 0 12px 32px rgba(16, 185, 129, 0.25);
+    --shadow-soft: 0 2px 8px rgba(52, 211, 153, 0.1);
 }
 
 body {
@@ -194,7 +197,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 142, 83, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -221,13 +224,14 @@ body {
     font-size: 1.125rem;
     color: var(--text-light);
     margin-bottom: 2rem;
-    font-weight: 400;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
 }
 
 /* Purpose Notice Section */
 .purpose-notice {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(255, 142, 83, 0.05));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(52, 211, 153, 0.08));
     padding: 2.5rem 0;
     border-top: 2px solid var(--border-dark);
     border-bottom: 2px solid var(--border-dark);
@@ -398,7 +402,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 142, 83, 0.1), transparent);
+          background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
     transition: left 0.5s ease;
 }
 
@@ -429,7 +433,7 @@ body {
 .app-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    filter: drop-shadow(0 4px 8px rgba(255, 110, 107, 0.2));
+    filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.2));
     transition: transform 0.3s ease;
 }
 
@@ -469,7 +473,7 @@ body {
     border-radius: 15px;
     font-size: 0.75rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 110, 107, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -530,7 +534,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 142, 83, 0.1), transparent);
+          background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
     transition: left 0.5s ease;
 }
 
@@ -546,7 +550,7 @@ body {
 .skill-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    filter: drop-shadow(0 4px 8px rgba(255, 110, 107, 0.2));
+    filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.2));
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
 }
@@ -671,7 +675,7 @@ body {
 
 .contact-icon {
     font-size: 2rem;
-    filter: drop-shadow(0 2px 4px rgba(255, 110, 107, 0.2));
+    filter: drop-shadow(0 2px 4px rgba(16, 185, 129, 0.2));
     transition: transform 0.3s ease;
 }
 
@@ -1058,7 +1062,7 @@ html {
 
 /* Selection Color */
 ::selection {
-    background: var(--warm-orange);
+    background: var(--green-primary);
     color: white;
 }
 

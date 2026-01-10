@@ -7,20 +7,17 @@ const translations = {
         'nav.apps': 'Apps',
         
         // Hero
-        'hero.title': 'Industrial Refrigeration & Heat Pump Systems',
-        'hero.subtitle': 'Open-source tools for engineering applications',
-        'hero.badge1': 'Industrial Refrigeration',
-        'hero.badge2': 'Industrial Heat Pumps',
-        'hero.badge3': 'Smart Refrigeration & Heat Pumps',
+        'hero.title': 'Intelligent Green Energy Engineering',
+        'hero.subtitle': 'Professional Tools · Engineering Applications · Open Source',
         
         // About
         'about.title': 'About',
-        'about.text1': 'Jing Yanrong (荆炎荣) specializes in industrial refrigeration and industrial heat pump systems, focusing on advancing green low-carbon technologies through innovative design and intelligent applications in refrigeration and heat pump engineering.',
-        'about.text2': 'This website provides practical applications and tools for energy-efficient industrial refrigeration and industrial heat pump systems, covering design optimization, energy efficiency analysis, and performance calculation. All self-developed applications are provided on a non-commercial, open-source basis for public benefit and research purposes only.',
+        'about.text1': 'Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.',
+        'about.text2': 'Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.',
         
         // Apps
         'apps.title': 'My Applications',
-        'apps.description': 'Self-Developed Application Tools',
+        'apps.description': '',
         'apps.app0.title': 'Engineering Unit Converter',
         'apps.app0.description': 'Fast and accurate unit conversion tool for engineering calculations',
         'apps.app1.title': 'Expander Performance Calculator',
@@ -50,9 +47,8 @@ const translations = {
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
-        'disclaimer.text1': 'All self-developed applications on this website are provided for personal research and educational purposes only. These tools are made available on a non-commercial, open-source basis.',
-        'disclaimer.text2': 'For any commercial use or commercial purposes, please contact me in advance to obtain proper authorization. Unauthorized commercial use is strictly prohibited.',
-        'disclaimer.text3': 'While every effort has been made to ensure accuracy, the tools are provided "as is" without warranty of any kind. Use at your own risk.',
+        'disclaimer.text1': 'All applications are provided for personal research, educational, and public benefit purposes only on a non-commercial, open-source basis. For commercial use, please contact me in advance to obtain authorization.',
+        'disclaimer.text2': 'Tools are provided "as is" without warranty of any kind. Use at your own risk.',
         
         // Contact
         'contact.title': 'Contact',
@@ -60,22 +56,19 @@ const translations = {
         
         // Footer
         'footer.copyright': '© {year} Jing Yanrong. All rights reserved.',
-        'footer.privacy': 'This website uses localStorage to save your language preference. No personal data is collected or transmitted.'
+        'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.'
     },
     zh: {
         'nav.brand': '荆炎荣 / Jing Yanrong',
         'nav.about': '关于',
         'nav.apps': '应用',
-        'hero.title': '工业制冷与热泵系统',
-        'hero.subtitle': '面向工程应用的开源工具',
-        'hero.badge1': '工业制冷',
-        'hero.badge2': '工业热泵',
-        'hero.badge3': '智能制冷热泵',
+        'hero.title': '智能绿色节能工程',
+        'hero.subtitle': '专业工具 · 工程应用 · 开源共享',
         'about.title': '关于',
-        'about.text1': '荆炎荣（Jing Yanrong）专注于工业制冷和工业热泵系统，致力于通过创新设计与智能化应用推进绿色低碳技术在制冷热泵工程中的应用与发展。',
-        'about.text2': '本网站为工业制冷和工业热泵系统提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面。所有应用均以开源、非商业的方式提供，仅供公益和研究目的使用。',
+        'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
+        'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
         'apps.title': '我的应用',
-        'apps.description': '应用工具集',
+        'apps.description': '',
         'apps.app0.title': '工程单位换算器',
         'apps.app0.description': '快速、准确的工程计算单位转换工具',
         'apps.app1.title': '膨胀机性能计算器',
@@ -103,13 +96,12 @@ const translations = {
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
         'disclaimer.title': '免责声明',
-        'disclaimer.text1': '本网站所有应用仅供个人研究和教育目的使用。这些工具以非商业、开源方式提供。',
-        'disclaimer.text2': '如用于任何商业用途或商业目的，请事先与我联系以获得授权。严禁未经授权的商业使用。',
-        'disclaimer.text3': '虽已尽力确保准确性，但这些工具按"现状"提供，不提供任何形式的保证。使用风险自负。',
+        'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
+        'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
         'contact.wechat': '微信: jingyanrongdalian',
         'footer.copyright': '© {year} 荆炎荣. 保留所有权利.',
-        'footer.privacy': '本网站使用本地存储保存您的语言偏好。不收集或传输任何个人数据。'
+        'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。'
     }
 };
 
@@ -143,6 +135,12 @@ function setLanguage(lang) {
         // Safely set text content
         try {
             element.textContent = text;
+            // Hide element if text is empty
+            if (!text || text.trim() === '') {
+                element.style.display = 'none';
+            } else {
+                element.style.display = '';
+            }
         } catch (error) {
             console.warn('Failed to update element with key:', key, error);
         }
