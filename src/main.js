@@ -1,3 +1,5 @@
+import './style.css'
+
 // Smooth scroll behavior for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Handle navigation clicks
