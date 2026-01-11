@@ -1,0 +1,5 @@
+请将您的微信二维码图片保存为 wechat-qrcode.png 并放在此目录（public/）下
+或者您也可以重命名您的二维码图片文件为 wechat-qrcode.png
+
+建议尺寸：180x180 像素或更高（会自动缩放）
+格式：PNG、JPG 或 SVG

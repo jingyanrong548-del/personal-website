@@ -9,6 +9,15 @@ const translations = {
         // Hero
         'hero.title': 'Intelligent Green Energy Engineering',
         'hero.subtitle': 'Professional Tools · Engineering Applications · Open Source',
+        'hero.cta': 'Browse Apps',
+        
+        // Stats
+        'stats.experience.number': '27+ Years',
+        'stats.experience.label': 'Industry Experience',
+        'stats.title.number': 'Registered Public Utility Equipment Engineer',
+        'stats.title.label': 'Professional Certification',
+        'stats.projects.number': '100+',
+        'stats.projects.label': 'Projects Delivered',
         
         // About
         'about.title': 'About',
@@ -64,6 +73,13 @@ const translations = {
         'nav.apps': '应用',
         'hero.title': '智能绿色节能工程',
         'hero.subtitle': '专业工具 · 工程应用 · 开源共享',
+        'hero.cta': '浏览应用',
+        'stats.experience.number': '27年+',
+        'stats.experience.label': '行业经验',
+        'stats.title.number': '注册公用设备工程师（动力）',
+        'stats.title.label': '执业资格',
+        'stats.projects.number': '100+',
+        'stats.projects.label': '项目案例',
         'about.title': '关于',
         'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
         'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
@@ -190,6 +206,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Handle hero CTA button click
+    const heroCtaBtn = document.querySelector('.hero-cta-btn');
+    if (heroCtaBtn) {
+        heroCtaBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.querySelector('#apps');
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 
     // Intersection Observer for scroll animations
     const observerOptions = {

@@ -198,11 +198,33 @@
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="hero-pattern"></div>
         <div class="hero-content">
             <h1 data-i18n="hero.title">Intelligent Green Energy Engineering</h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">Professional Tools · Engineering Applications · Open Source</p>
+            <a href="#apps" class="hero-cta-btn" data-i18n="hero.cta">浏览应用</a>
         </div>
     </header>
+
+    <!-- Stats Section -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-i18n="stats.experience.number">26年+</div>
+                    <div class="stat-label" data-i18n="stats.experience.label">行业经验</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-i18n="stats.title.number">高级工程师</div>
+                    <div class="stat-label" data-i18n="stats.title.label">职称认证</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-i18n="stats.projects.number">100+</div>
+                    <div class="stat-label" data-i18n="stats.projects.label">项目案例</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -212,6 +234,16 @@
                 <div class="about-text">
                     <p data-i18n="about.text1">Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.</p>
                     <p data-i18n="about.text2">Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.</p>
+                </div>
+                <div class="about-icon">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                        <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                        <path d="M 100 50 L 100 150 M 50 100 L 150 100" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                        <circle cx="100" cy="80" r="8" fill="currentColor" opacity="0.4"/>
+                        <circle cx="100" cy="120" r="8" fill="currentColor" opacity="0.4"/>
+                        <path d="M 70 100 Q 100 70 130 100 Q 100 130 70 100" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -266,9 +298,12 @@
                     <span class="contact-icon">📧</span>
                     <a href="mailto:jingyanrong@126.com">jingyanrong@126.com</a>
                 </div>
-                <div class="contact-item-simple">
+                <div class="contact-item-simple contact-wechat">
                     <span class="contact-icon">💬</span>
                     <span data-i18n="contact.wechat">WeChat: jingyanrongdalian</span>
+                    <div class="wechat-qrcode">
+                        <img src="/wechat-qrcode.png" alt="微信二维码" />
+                    </div>
                 </div>
             </div>
 
