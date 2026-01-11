@@ -60,6 +60,35 @@ const translations = {
         'apps.available': 'Available',
         'apps.comingSoon': 'Coming Soon',
         'apps.moreComing': 'Currently {count} applications available. More tools are in development!',
+        'apps.production.title': 'Production',
+        'apps.staging.title': 'Staging',
+        'apps.staging.unlock': 'Unlock Staging Environment',
+        'apps.staging.password': 'Password',
+        'apps.staging.passwordPlaceholder': 'Enter password',
+        'apps.staging.unlockBtn': 'Unlock',
+        'apps.staging.locked': 'Staging environment is locked',
+        'apps.staging.error': 'Incorrect password',
+        'apps.staging.app0.title': 'Oil-Free Compressor Performance Calculator',
+        'apps.staging.app0.version': 'v8.53',
+        'apps.staging.app0.description': 'Comprehensive performance calculation tool for oil-free compressors',
+        'apps.staging.app1.title': 'Oil-injected Compressor Calculator',
+        'apps.staging.app1.version': 'v3.0.0',
+        'apps.staging.app1.description': 'Performance calculation tool for oil-lubricated compressors',
+        'apps.staging.app2.title': 'Expander Comprehensive Performance Calculator',
+        'apps.staging.app2.version': 'v2.2.0',
+        'apps.staging.app2.description': 'Comprehensive performance calculation tool for expander systems',
+        'apps.staging.app3.title': 'Industrial Integrated Energy System Simulator',
+        'apps.staging.app3.version': 'v0.0.0',
+        'apps.staging.app3.description': 'Simulation tool for industrial integrated energy systems',
+        'apps.staging.app4.title': 'Double Pipe Heat Exchanger Calculator',
+        'apps.staging.app4.version': 'v1.0.0',
+        'apps.staging.app4.description': 'Heat exchanger design and calculation tool',
+        'apps.staging.app5.title': 'Gas-Liquid Separator Sizing Calculator',
+        'apps.staging.app5.version': 'v1.0.0',
+        'apps.staging.app5.description': 'Design and calculation tool for separators',
+        'apps.staging.app6.title': 'Reciprocating Compressor Calculator',
+        'apps.staging.app6.version': 'v3.0.0',
+        'apps.staging.app6.description': 'System calculation tool for compressors',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -125,6 +154,35 @@ const translations = {
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
         'apps.moreComing': '目前提供 {count} 个应用，更多实用工具正在开发中，敬请期待！',
+        'apps.production.title': '生产环境',
+        'apps.staging.title': '暂存环境',
+        'apps.staging.unlock': '解锁暂存环境',
+        'apps.staging.password': '密码',
+        'apps.staging.passwordPlaceholder': '请输入密码',
+        'apps.staging.unlockBtn': '解锁',
+        'apps.staging.locked': '暂存环境已锁定',
+        'apps.staging.error': '密码错误',
+        'apps.staging.app0.title': '无油压缩机性能计算器',
+        'apps.staging.app0.version': 'v8.53',
+        'apps.staging.app0.description': '无油压缩机综合性能计算工具',
+        'apps.staging.app1.title': '油润滑压缩机计算器',
+        'apps.staging.app1.version': 'v3.0.0',
+        'apps.staging.app1.description': '油润滑压缩机性能计算工具',
+        'apps.staging.app2.title': '膨胀机综合性能计算器',
+        'apps.staging.app2.version': 'v2.2.0',
+        'apps.staging.app2.description': '膨胀机综合性能计算工具',
+        'apps.staging.app3.title': '工业综合能源系统仿真',
+        'apps.staging.app3.version': 'v0.0.0',
+        'apps.staging.app3.description': '工业综合能源系统仿真工具',
+        'apps.staging.app4.title': '套管换热器计算器',
+        'apps.staging.app4.version': 'v1.0.0',
+        'apps.staging.app4.description': '套管换热器热力计算工具',
+        'apps.staging.app5.title': '气液分离器选型计算器',
+        'apps.staging.app5.version': 'v1.0.0',
+        'apps.staging.app5.description': '气液分离器选型与计算工具',
+        'apps.staging.app6.title': '开启活塞压缩机计算',
+        'apps.staging.app6.version': 'v3.0.0',
+        'apps.staging.app6.description': '开启活塞压缩机计算工具',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
@@ -180,9 +238,21 @@ function setLanguage(lang) {
         
         // Special handling for app titles: append version number if available
         if (key.startsWith('apps.app') && key.endsWith('.title')) {
-            const appIndex = key.match(/apps\.app(\d+)\.title/);
+            // Handle production apps: apps.app0.title, apps.app1.title, etc.
+            const appIndex = key.match(/apps\.app(\d+)\.title$/);
             if (appIndex) {
                 const versionKey = `apps.app${appIndex[1]}.version`;
+                const version = translations[lang][versionKey];
+                if (version && version.trim() !== '') {
+                    text = `${text} ${version}`;
+                }
+            }
+        }
+        // Handle staging app titles: apps.staging.app0.title, apps.staging.app1.title, etc.
+        if (key.startsWith('apps.staging.app') && key.endsWith('.title')) {
+            const stagingAppIndex = key.match(/apps\.staging\.app(\d+)\.title$/);
+            if (stagingAppIndex) {
+                const versionKey = `apps.staging.app${stagingAppIndex[1]}.version`;
                 const version = translations[lang][versionKey];
                 if (version && version.trim() !== '') {
                     text = `${text} ${version}`;
@@ -208,6 +278,14 @@ function setLanguage(lang) {
             }
         } catch (error) {
             console.warn('Failed to update element with key:', key, error);
+        }
+    });
+    
+    // Handle placeholder translations
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (key && translations[lang] && translations[lang][key]) {
+            element.placeholder = translations[lang][key];
         }
     });
     
@@ -346,6 +424,74 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+
+    // Staging Environment Password Protection
+    const STAGING_PASSWORD = 'aa86538311';
+    const STAGING_STORAGE_KEY = 'staging_unlocked';
+    
+    const stagingApps = document.getElementById('stagingApps');
+    const stagingPasswordInput = document.getElementById('stagingPassword');
+    const stagingUnlockBtn = document.getElementById('stagingUnlockBtn');
+    const stagingError = document.getElementById('stagingError');
+    
+    if (stagingApps && stagingPasswordInput && stagingUnlockBtn) {
+        // Check if staging is already unlocked
+        const isStagingUnlocked = localStorage.getItem(STAGING_STORAGE_KEY) === 'true';
+        if (isStagingUnlocked) {
+            stagingApps.style.display = 'grid';
+            const unlockForm = document.getElementById('stagingUnlockForm');
+            if (unlockForm) {
+                unlockForm.style.display = 'none';
+            }
+        }
+        
+        // Unlock staging environment
+        function unlockStaging() {
+            const password = stagingPasswordInput.value.trim();
+            if (password === STAGING_PASSWORD) {
+                localStorage.setItem(STAGING_STORAGE_KEY, 'true');
+                stagingApps.style.display = 'grid';
+                const unlockForm = document.getElementById('stagingUnlockForm');
+                if (unlockForm) {
+                    unlockForm.style.display = 'none';
+                }
+                if (stagingError) {
+                    stagingError.textContent = '';
+                }
+                stagingPasswordInput.value = '';
+            } else {
+                if (stagingError) {
+                    stagingError.textContent = currentLanguage === 'zh' ? '密码错误' : 'Incorrect password';
+                }
+                stagingPasswordInput.value = '';
+                stagingPasswordInput.focus();
+                stagingPasswordInput.style.animation = 'shake 0.5s';
+                setTimeout(() => {
+                    stagingPasswordInput.style.animation = '';
+                }, 500);
+            }
+        }
+        
+        // Add shake animation
+        const shakeStyle = document.createElement('style');
+        shakeStyle.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(shakeStyle);
+        
+        // Event listeners
+        stagingUnlockBtn.addEventListener('click', unlockStaging);
+        
+        stagingPasswordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                unlockStaging();
+            }
+        });
+    }
 
     console.log('Personal homepage loaded successfully!');
 });

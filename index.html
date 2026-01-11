@@ -254,40 +254,128 @@
         <div class="container">
             <h2 class="section-title" data-i18n="apps.title">My Applications</h2>
             <p class="section-description" data-i18n="apps.description"></p>
-            <div class="apps-grid">
-                <a href="https://jingyanrong548-del.github.io/Engineering-Unit-Converter-V1.3.3/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
-                    <div class="app-icon">📏</div>
-                    <h3 class="app-title" data-i18n="apps.app0.title">Engineering Unit Converter</h3>
-                    <p class="app-description" data-i18n="apps.app0.description">Fast and accurate unit conversion tool for engineering calculations</p>
-                    <div class="app-tags">
-                        <span class="app-tag" data-i18n="apps.tags.converter">Converter</span>
-                        <span class="app-tag" data-i18n="apps.tags.unit">Unit</span>
-                    </div>
-                    <div class="app-status available" data-i18n="apps.available">Available</div>
-                </a>
-                <a href="https://jingyanrong548-del.github.io/Industrial-Heat-Pump-Matching-Calculator-V5.3.0-/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
-                    <div class="app-icon">🔥</div>
-                    <h3 class="app-title" data-i18n="apps.app2.title">Industrial Heat Pump Matching Calculator</h3>
-                    <p class="app-description" data-i18n="apps.app2.description">Matching calculation tool for industrial heat pump systems with MVR support</p>
-                    <div class="app-tags">
-                        <span class="app-tag" data-i18n="apps.tags.heatPump">Heat Pump</span>
-                        <span class="app-tag" data-i18n="apps.tags.calculation">Calculation</span>
-                    </div>
-                    <div class="app-status available" data-i18n="apps.available">Available</div>
-                </a>
-                <a href="https://jingyanrong548-del.github.io/heat-pump-analyzer-pro/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
-                    <div class="app-icon">📊</div>
-                    <h3 class="app-title" data-i18n="apps.app3.title">Heat Pump Benefit Analyzer</h3>
-                    <p class="app-description" data-i18n="apps.app3.description">Comprehensive economic and environmental benefit analysis for industrial heat pumps</p>
-                    <div class="app-tags">
-                        <span class="app-tag" data-i18n="apps.tags.heatPump">Heat Pump</span>
-                        <span class="app-tag" data-i18n="apps.tags.analysis">Analysis</span>
-                    </div>
-                    <div class="app-status available" data-i18n="apps.available">Available</div>
-                </a>
+            
+            <!-- Production Environment -->
+            <div class="env-section">
+                <h3 class="env-title production-title" data-i18n="apps.production.title">Production</h3>
+                <div class="apps-grid production-apps">
+                    <a href="https://jingyanrong548-del.github.io/Engineering-Unit-Converter-V1.3.3/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">📏</div>
+                        <h3 class="app-title" data-i18n="apps.app0.title">Engineering Unit Converter</h3>
+                        <p class="app-description" data-i18n="apps.app0.description">Fast and accurate unit conversion tool for engineering calculations</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.converter">Converter</span>
+                            <span class="app-tag" data-i18n="apps.tags.unit">Unit</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">Available</div>
+                    </a>
+                    <a href="https://jingyanrong548-del.github.io/Industrial-Heat-Pump-Matching-Calculator-V5.3.0-/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🔥</div>
+                        <h3 class="app-title" data-i18n="apps.app2.title">Industrial Heat Pump Matching Calculator</h3>
+                        <p class="app-description" data-i18n="apps.app2.description">Matching calculation tool for industrial heat pump systems with MVR support</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.heatPump">Heat Pump</span>
+                            <span class="app-tag" data-i18n="apps.tags.calculation">Calculation</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">Available</div>
+                    </a>
+                    <a href="https://jingyanrong548-del.github.io/heat-pump-analyzer-pro/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">📊</div>
+                        <h3 class="app-title" data-i18n="apps.app3.title">Heat Pump Benefit Analyzer</h3>
+                        <p class="app-description" data-i18n="apps.app3.description">Comprehensive economic and environmental benefit analysis for industrial heat pumps</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.heatPump">Heat Pump</span>
+                            <span class="app-tag" data-i18n="apps.tags.analysis">Analysis</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">Available</div>
+                    </a>
+                </div>
             </div>
-            <div class="apps-more-notice">
-                <p data-i18n="apps.moreComing">目前提供 3 个应用，更多实用工具正在开发中，敬请期待！</p>
+            
+            <!-- Staging Environment -->
+            <div class="env-section staging-section">
+                <div class="staging-header">
+                    <h3 class="env-title staging-title" data-i18n="apps.staging.title">Staging</h3>
+                    <div id="stagingUnlock" class="staging-unlock-container">
+                        <div class="staging-unlock-form" id="stagingUnlockForm">
+                            <input type="password" id="stagingPassword" class="staging-password-input" placeholder="请输入密码" data-i18n-placeholder="apps.staging.passwordPlaceholder" />
+                            <button type="button" class="staging-unlock-btn" id="stagingUnlockBtn" data-i18n="apps.staging.unlockBtn">解锁</button>
+                        </div>
+                        <div id="stagingError" class="staging-error"></div>
+                    </div>
+                </div>
+                <div id="stagingApps" class="apps-grid staging-apps" style="display: none;">
+                    <a href="https://ofc.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">💨</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app0.title">Oil-Free Compressor Calculator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app0.description">Comprehensive performance calculation tool for oil-free compressors</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.calculation">计算</span>
+                            <span class="app-tag" data-i18n="apps.tags.components">部件</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://oc.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">⚙️</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app1.title">Oil Compressor Calculator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app1.description">Performance calculation tool for oil-lubricated compressors</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.calculation">计算</span>
+                            <span class="app-tag" data-i18n="apps.tags.components">部件</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://exp.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🌀</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app2.title">Expander Performance Calculator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app2.description">Comprehensive performance calculation tool for expander systems</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.calculation">计算</span>
+                            <span class="app-tag" data-i18n="apps.tags.energy">能源</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://hbhe.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🌐</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app3.title">Integrated Energy System Simulator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app3.description">Simulation tool for industrial integrated energy systems</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.energy">能源</span>
+                            <span class="app-tag" data-i18n="apps.tags.analysis">分析</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://dphe.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🔥</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app4.title">Heat Pump System Calculator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app4.description">Calculation tool for heat pump systems</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.heatPump">热泵</span>
+                            <span class="app-tag" data-i18n="apps.tags.calculation">计算</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://separator.jingyanrong.com" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🔧</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app5.title">Separator Design Tool</h3>
+                        <p class="app-description" data-i18n="apps.staging.app5.description">Design and calculation tool for separators</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.design">设计</span>
+                            <span class="app-tag" data-i18n="apps.tags.components">部件</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                    <a href="https://rcc.jingyanrong.com/" target="_blank" rel="noopener noreferrer" class="app-card app-card-link">
+                        <div class="app-icon">🔄</div>
+                        <h3 class="app-title" data-i18n="apps.staging.app6.title">Compressor System Calculator</h3>
+                        <p class="app-description" data-i18n="apps.staging.app6.description">System calculation tool for compressors</p>
+                        <div class="app-tags">
+                            <span class="app-tag" data-i18n="apps.tags.calculation">计算</span>
+                            <span class="app-tag" data-i18n="apps.tags.components">部件</span>
+                        </div>
+                        <div class="app-status available" data-i18n="apps.available">可用</div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
