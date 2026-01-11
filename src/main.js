@@ -12,7 +12,7 @@ const translations = {
         'hero.cta': 'Browse Apps',
         
         // Stats
-        'stats.experience.number': '27+ Years',
+        'stats.experience.number': '{experienceYears}+ Years',
         'stats.experience.label': 'Industry Experience',
         'stats.title.number': 'Registered Public Utility Equipment Engineer',
         'stats.title.label': 'Professional Certification',
@@ -53,6 +53,7 @@ const translations = {
         'apps.tags.components': 'Components',
         'apps.available': 'Available',
         'apps.comingSoon': 'Coming Soon',
+        'apps.moreComing': 'Currently {count} applications available. More tools are in development!',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -74,7 +75,7 @@ const translations = {
         'hero.title': '智能绿色节能工程',
         'hero.subtitle': '专业工具 · 工程应用 · 开源共享',
         'hero.cta': '浏览应用',
-        'stats.experience.number': '27年+',
+        'stats.experience.number': '{experienceYears}年+',
         'stats.experience.label': '行业经验',
         'stats.title.number': '注册公用设备工程师（动力）',
         'stats.title.label': '执业资格',
@@ -111,6 +112,7 @@ const translations = {
         'apps.tags.components': '部件',
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
+        'apps.moreComing': '目前提供 {count} 个应用，更多实用工具正在开发中，敬请期待！',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
@@ -135,6 +137,24 @@ function setLanguage(lang) {
     
     // Update all elements with data-i18n attribute
     const currentYear = new Date().getFullYear();
+    const currentDate = new Date();
+    // Count available apps (app-card elements in apps-grid)
+    const appCount = document.querySelectorAll('.apps-grid > .app-card').length;
+    
+    // Calculate experience years (starting from July 1, 1998)
+    // Each year on July 1st, the experience increases by 1
+    const startYear = 1998;
+    const startMonth = 6; // July (0-indexed, so 6 = July)
+    const startDay = 1;
+    
+    let experienceYears = currentYear - startYear;
+    // If current date is before July 1st of current year, subtract 1
+    const currentMonth = currentDate.getMonth(); // 0-indexed (0 = January, 6 = July)
+    const currentDay = currentDate.getDate();
+    if (currentMonth < startMonth || (currentMonth === startMonth && currentDay < startDay)) {
+        experienceYears--;
+    }
+    
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(element => {
@@ -147,6 +167,10 @@ function setLanguage(lang) {
         let text = translations[lang][key];
         // Replace {year} placeholder with current year
         text = text.replace(/{year}/g, currentYear.toString());
+        // Replace {count} placeholder with app count
+        text = text.replace(/{count}/g, appCount.toString());
+        // Replace {experienceYears} placeholder with experience years
+        text = text.replace(/{experienceYears}/g, experienceYears.toString());
         
         // Safely set text content
         try {

@@ -653,6 +653,27 @@ body {
     transform: translateX(3px);
 }
 
+.apps-more-notice {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(52, 211, 153, 0.05));
+    border-radius: 16px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.apps-more-notice p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+    background: linear-gradient(135deg, var(--warm-orange), var(--warm-orange-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -1190,6 +1211,15 @@ body {
         margin-bottom: 0.875rem;
     }
     
+    .apps-more-notice {
+        margin-top: 2rem;
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .apps-more-notice p {
+        font-size: 0.9rem;
+    }
+    
     .footer-contact {
         flex-direction: column;
         gap: 1rem;
@@ -1320,6 +1350,15 @@ body {
     .purpose-notice-content p {
         padding: 0 2rem;
         font-size: 0.875rem;
+    }
+    
+    .apps-more-notice {
+        margin-top: 1.5rem;
+        padding: 1rem 1.25rem;
+    }
+    
+    .apps-more-notice p {
+        font-size: 0.85rem;
     }
 
     .footer-section::before {
