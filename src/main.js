@@ -66,6 +66,7 @@ const translations = {
         'apps.staging.password': 'Password',
         'apps.staging.passwordPlaceholder': 'Enter password',
         'apps.staging.unlockBtn': 'Unlock',
+        'apps.staging.closeBtn': 'Close',
         'apps.staging.locked': 'Staging environment is locked',
         'apps.staging.error': 'Incorrect password',
         'apps.staging.app0.title': 'Oil-Free Compressor Performance Calculator',
@@ -160,6 +161,7 @@ const translations = {
         'apps.staging.password': '密码',
         'apps.staging.passwordPlaceholder': '请输入密码',
         'apps.staging.unlockBtn': '解锁',
+        'apps.staging.closeBtn': '关闭',
         'apps.staging.locked': '暂存环境已锁定',
         'apps.staging.error': '密码错误',
         'apps.staging.app0.title': '无油压缩机性能计算器',
@@ -432,29 +434,49 @@ document.addEventListener('DOMContentLoaded', function() {
     const stagingApps = document.getElementById('stagingApps');
     const stagingPasswordInput = document.getElementById('stagingPassword');
     const stagingUnlockBtn = document.getElementById('stagingUnlockBtn');
+    const stagingCloseBtn = document.getElementById('stagingCloseBtn');
     const stagingError = document.getElementById('stagingError');
+    const unlockForm = document.getElementById('stagingUnlockForm');
     
     if (stagingApps && stagingPasswordInput && stagingUnlockBtn) {
-        // Check if staging is already unlocked
-        const isStagingUnlocked = localStorage.getItem(STAGING_STORAGE_KEY) === 'true';
-        if (isStagingUnlocked) {
-            stagingApps.style.display = 'grid';
-            const unlockForm = document.getElementById('stagingUnlockForm');
-            if (unlockForm) {
-                unlockForm.style.display = 'none';
+        // Function to update UI based on unlock state
+        function updateStagingUI(isUnlocked) {
+            if (isUnlocked) {
+                // Show staging apps and close button, hide unlock form
+                stagingApps.style.display = 'grid';
+                if (unlockForm) {
+                    unlockForm.style.display = 'none';
+                }
+                if (stagingCloseBtn) {
+                    stagingCloseBtn.style.display = 'block';
+                }
+            } else {
+                // Hide staging apps and close button, show unlock form
+                stagingApps.style.display = 'none';
+                if (unlockForm) {
+                    unlockForm.style.display = 'flex';
+                }
+                if (stagingCloseBtn) {
+                    stagingCloseBtn.style.display = 'none';
+                }
             }
         }
+        
+        // Ensure close button is hidden initially (only show when staging is unlocked)
+        if (stagingCloseBtn) {
+            stagingCloseBtn.style.display = 'none';
+        }
+        
+        // Check if staging is already unlocked
+        const isStagingUnlocked = localStorage.getItem(STAGING_STORAGE_KEY) === 'true';
+        updateStagingUI(isStagingUnlocked);
         
         // Unlock staging environment
         function unlockStaging() {
             const password = stagingPasswordInput.value.trim();
             if (password === STAGING_PASSWORD) {
                 localStorage.setItem(STAGING_STORAGE_KEY, 'true');
-                stagingApps.style.display = 'grid';
-                const unlockForm = document.getElementById('stagingUnlockForm');
-                if (unlockForm) {
-                    unlockForm.style.display = 'none';
-                }
+                updateStagingUI(true);
                 if (stagingError) {
                     stagingError.textContent = '';
                 }
@@ -472,6 +494,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
+        // Close staging environment
+        function closeStaging() {
+            localStorage.removeItem(STAGING_STORAGE_KEY);
+            updateStagingUI(false);
+            if (stagingError) {
+                stagingError.textContent = '';
+            }
+            stagingPasswordInput.value = '';
+        }
+        
         // Add shake animation
         const shakeStyle = document.createElement('style');
         shakeStyle.textContent = `
@@ -485,6 +517,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Event listeners
         stagingUnlockBtn.addEventListener('click', unlockStaging);
+        
+        if (stagingCloseBtn) {
+            stagingCloseBtn.addEventListener('click', closeStaging);
+        }
         
         stagingPasswordInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
