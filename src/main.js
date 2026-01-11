@@ -28,16 +28,22 @@ const translations = {
         'apps.title': 'My Applications',
         'apps.description': '',
         'apps.app0.title': 'Engineering Unit Converter',
+        'apps.app0.version': 'V2.0.0',
         'apps.app0.description': 'Fast and accurate unit conversion tool for engineering calculations',
         'apps.app1.title': 'Expander Performance Calculator',
+        'apps.app1.version': '',
         'apps.app1.description': 'Comprehensive performance calculation tool for expander systems',
         'apps.app2.title': 'Industrial Heat Pump Matching Calculator',
+        'apps.app2.version': 'V7.0.0',
         'apps.app2.description': 'Matching calculation tool for industrial heat pump systems with MVR support',
         'apps.app3.title': 'Heat Pump Benefit Analyzer',
+        'apps.app3.version': 'V9.0.0',
         'apps.app3.description': 'Comprehensive economic and environmental benefit analysis for industrial heat pumps',
         'apps.app4.title': 'Temperature Range Optimizer',
+        'apps.app4.version': '',
         'apps.app4.description': 'Optimize temperature ranges for wide-range heat pump systems',
         'apps.app5.title': 'Component Sizing Tool',
+        'apps.app5.version': '',
         'apps.app5.description': 'Size compressors, heat exchangers, and other components',
         'apps.tags.converter': 'Converter',
         'apps.tags.unit': 'Unit',
@@ -87,16 +93,22 @@ const translations = {
         'apps.title': '我的应用',
         'apps.description': '',
         'apps.app0.title': '工程单位换算器',
+        'apps.app0.version': 'V2.0.0',
         'apps.app0.description': '快速、准确的工程计算单位转换工具',
         'apps.app1.title': '膨胀机性能计算器',
+        'apps.app1.version': '',
         'apps.app1.description': '膨胀机综合性能计算工具',
         'apps.app2.title': '工业热泵匹配计算器',
+        'apps.app2.version': 'V7.0.0',
         'apps.app2.description': '工业热泵系统匹配计算工具，支持MVR模式',
         'apps.app3.title': '热泵效益分析器',
+        'apps.app3.version': 'V9.0.0',
         'apps.app3.description': '工业热泵经济效益与环境效益综合分析工具',
         'apps.app4.title': '温度范围优化器',
+        'apps.app4.version': '',
         'apps.app4.description': '优化宽温域热泵系统的温度范围',
         'apps.app5.title': '部件选型工具',
+        'apps.app5.version': '',
         'apps.app5.description': '压缩机、换热器等部件的选型',
         'apps.tags.converter': '换算器',
         'apps.tags.unit': '单位',
@@ -165,6 +177,19 @@ function setLanguage(lang) {
         }
         
         let text = translations[lang][key];
+        
+        // Special handling for app titles: append version number if available
+        if (key.startsWith('apps.app') && key.endsWith('.title')) {
+            const appIndex = key.match(/apps\.app(\d+)\.title/);
+            if (appIndex) {
+                const versionKey = `apps.app${appIndex[1]}.version`;
+                const version = translations[lang][versionKey];
+                if (version && version.trim() !== '') {
+                    text = `${text} ${version}`;
+                }
+            }
+        }
+        
         // Replace {year} placeholder with current year
         text = text.replace(/{year}/g, currentYear.toString());
         // Replace {count} placeholder with app count

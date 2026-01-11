@@ -1,7 +1,7 @@
 {
-  "name": "personal-website",
+  "name": "jing-yanrong",
   "version": "1.0.0",
-  "description": "Personal homepage for Thomas Jing",
+  "description": "Personal homepage for Jing Yanrong (荆炎荣)",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "keywords": [
-    "personal-website",
+    "jing-yanrong",
     "vite"
   ],
   "author": "Thomas Jing",
