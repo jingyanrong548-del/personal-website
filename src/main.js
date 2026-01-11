@@ -102,6 +102,7 @@ const translations = {
         
         // Footer
         'footer.copyright': '© {year} Jing Yanrong. All rights reserved.',
+        'footer.version': 'Version',
         'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.'
     },
     zh: {
@@ -191,6 +192,7 @@ const translations = {
         'contact.title': '联系方式',
         'contact.wechat': '微信: jingyanrongdalian',
         'footer.copyright': '© {year} 荆炎荣. 保留所有权利.',
+        'footer.version': '版本',
         'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。'
     }
 };
@@ -302,6 +304,14 @@ function setLanguage(lang) {
 
 // Smooth scroll behavior and interactive features
 document.addEventListener('DOMContentLoaded', function() {
+    // Display version number immediately
+    const versionElement = document.getElementById('app-version');
+    if (versionElement) {
+        // @ts-ignore - __APP_VERSION__ is defined by Vite in vite.config.js
+        const appVersion = __APP_VERSION__ || '1.0.0';
+        versionElement.textContent = appVersion;
+    }
+    
     // Set initial language
     setLanguage(currentLanguage);
     
