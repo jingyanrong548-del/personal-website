@@ -1623,3 +1623,74 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, var(--warm-orange-light), var(--warm-peach));
 }
+
+/* App Viewer (iframe container) */
+.app-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.app-viewer-header {
+    position: relative;
+    z-index: 10001;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.app-viewer-close-btn {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #6B7280, #9CA3AF);
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+    font-family: inherit;
+    min-height: 44px; /* 移动端最小触摸目标 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-viewer-close-btn:hover {
+    background: linear-gradient(135deg, #9CA3AF, #D1D5DB);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(107, 114, 128, 0.4);
+}
+
+.app-viewer-close-btn:active {
+    transform: translateY(0);
+}
+
+.app-viewer-iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: var(--bg-white);
+}
+
+@media (max-width: 768px) {
+    .app-viewer-header {
+        padding: 0.875rem;
+    }
+    
+    .app-viewer-close-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9375rem;
+        min-height: 48px; /* 移动端更大的触摸目标 */
+    }
+}
