@@ -368,40 +368,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // 处理外部应用链接，使用 window.open() 打开以便应用可以关闭
     const appCardLinks = document.querySelectorAll('.app-card-link');
     
-    // 在PWA模式下处理外部链接，确保可以返回
-    if (isStandaloneMode()) {
-        // 在PWA模式下，移除所有外部链接的 target="_blank" 属性
-        // 这样链接会在当前窗口打开，用户可以正常使用返回按钮
-        appCardLinks.forEach(link => {
-            const href = link.getAttribute('href');
+    // 统一使用 window.open() 打开外部应用，确保应用内的退出按钮可以正常工作
+    // 这样无论是普通浏览器模式还是PWA模式，外部应用都可以通过 window.close() 关闭窗口
+    appCardLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
             if (href && href.startsWith('http')) {
-                // 移除 target="_blank"，让链接在当前窗口打开
-                link.removeAttribute('target');
-                link.removeAttribute('rel');
-            }
-            // 监听点击保存滚动位置
-            link.addEventListener('click', function() {
+                e.preventDefault();
                 saveScrollPosition();
-            });
-        });
-    } else {
-        // 在普通浏览器模式下，使用 window.open() 打开链接
-        // 这样外部应用可以通过 window.close() 关闭窗口
-        appCardLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href && href.startsWith('http')) {
-                    e.preventDefault();
-                    saveScrollPosition();
-                    // 使用 window.open() 打开，这样应用可以通过 window.close() 关闭
-                    window.open(href, '_blank', 'noopener,noreferrer');
-                } else {
-                    // 非外部链接，正常处理
-                    saveScrollPosition();
+                // 使用 window.open() 打开，这样应用可以通过 window.close() 关闭
+                // 即使在PWA模式下，也应该尝试使用 window.open()，以便退出功能正常工作
+                const newWindow = window.open(href, '_blank', 'noopener,noreferrer');
+                // 如果 window.open() 失败（某些PWA环境可能限制），则回退到当前窗口打开
+                if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                    // 如果无法打开新窗口，则在当前窗口打开（用户可以使用浏览器返回按钮）
+                    window.location.href = href;
                 }
-            });
+            } else {
+                // 非外部链接，正常处理
+                saveScrollPosition();
+            }
         });
-    }
+    });
     
     // 监听页面可见性变化（当用户从其他标签页返回时）
     document.addEventListener('visibilitychange', function() {
