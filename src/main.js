@@ -318,47 +318,76 @@ document.addEventListener('DOMContentLoaded', function() {
     // 保存和恢复滚动位置（用于应用打开/关闭后返回）
     const SCROLL_POSITION_KEY = 'homepage_scroll_position';
     
-    // 恢复滚动位置（如果存在）
-    const savedScrollPosition = sessionStorage.getItem(SCROLL_POSITION_KEY);
-    if (savedScrollPosition !== null) {
-        // 使用 requestAnimationFrame 确保 DOM 完全加载后再滚动
-        requestAnimationFrame(() => {
-            window.scrollTo({
-                top: parseInt(savedScrollPosition, 10),
-                behavior: 'auto' // 使用 'auto' 而不是 'smooth'，避免用户看到滚动动画
+    // 恢复滚动位置的函数
+    function restoreScrollPosition() {
+        const savedScrollPosition = sessionStorage.getItem(SCROLL_POSITION_KEY);
+        if (savedScrollPosition !== null) {
+            // 使用 requestAnimationFrame 确保 DOM 完全加载后再滚动
+            requestAnimationFrame(() => {
+                const scrollTop = parseInt(savedScrollPosition, 10);
+                if (!isNaN(scrollTop) && scrollTop >= 0) {
+                    window.scrollTo({
+                        top: scrollTop,
+                        behavior: 'auto' // 使用 'auto' 而不是 'smooth'，避免用户看到滚动动画
+                    });
+                }
+                // 清除已使用的滚动位置
+                sessionStorage.removeItem(SCROLL_POSITION_KEY);
             });
-            // 清除已使用的滚动位置
-            sessionStorage.removeItem(SCROLL_POSITION_KEY);
-        });
+        }
     }
+    
+    // 保存当前滚动位置的函数
+    function saveScrollPosition() {
+        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop || window.scrollY || 0;
+        if (currentScrollPosition > 0) {
+            sessionStorage.setItem(SCROLL_POSITION_KEY, currentScrollPosition.toString());
+        }
+    }
+    
+    // 页面加载时恢复滚动位置
+    restoreScrollPosition();
     
     // 监听应用卡片点击，保存当前滚动位置
     const appCardLinks = document.querySelectorAll('.app-card-link');
     appCardLinks.forEach(link => {
         link.addEventListener('click', function() {
-            // 保存当前滚动位置
-            const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            sessionStorage.setItem(SCROLL_POSITION_KEY, currentScrollPosition.toString());
+            saveScrollPosition();
         });
     });
     
     // 监听页面可见性变化（当用户从其他标签页返回时）
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
-            // 页面变为可见时，检查是否有保存的滚动位置
-            const savedScrollPosition = sessionStorage.getItem(SCROLL_POSITION_KEY);
-            if (savedScrollPosition !== null) {
-                // 延迟一下，确保页面完全可见
-                setTimeout(() => {
-                    window.scrollTo({
-                        top: parseInt(savedScrollPosition, 10),
-                        behavior: 'auto'
-                    });
-                    // 清除已使用的滚动位置
-                    sessionStorage.removeItem(SCROLL_POSITION_KEY);
-                }, 100);
-            }
+            // 页面变为可见时，延迟恢复滚动位置，确保页面完全可见
+            setTimeout(() => {
+                restoreScrollPosition();
+            }, 100);
         }
+    });
+    
+    // 监听 pageshow 事件（处理从浏览器缓存恢复页面的情况，包括生产环境）
+    window.addEventListener('pageshow', function(event) {
+        // event.persisted 为 true 表示页面是从缓存中恢复的
+        if (event.persisted) {
+            // 从缓存恢复时，延迟恢复滚动位置
+            setTimeout(() => {
+                restoreScrollPosition();
+            }, 50);
+        } else {
+            // 正常加载时也尝试恢复
+            restoreScrollPosition();
+        }
+    });
+    
+    // 监听 pagehide 事件，确保在页面隐藏前保存滚动位置
+    window.addEventListener('pagehide', function() {
+        saveScrollPosition();
+    });
+    
+    // 监听 beforeunload 事件，作为备用保存机制
+    window.addEventListener('beforeunload', function() {
+        saveScrollPosition();
     });
     
     // Language switcher buttons
