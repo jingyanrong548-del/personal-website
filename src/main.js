@@ -315,6 +315,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial language
     setLanguage(currentLanguage);
     
+    // 保存和恢复滚动位置（用于应用打开/关闭后返回）
+    const SCROLL_POSITION_KEY = 'homepage_scroll_position';
+    
+    // 恢复滚动位置（如果存在）
+    const savedScrollPosition = sessionStorage.getItem(SCROLL_POSITION_KEY);
+    if (savedScrollPosition !== null) {
+        // 使用 requestAnimationFrame 确保 DOM 完全加载后再滚动
+        requestAnimationFrame(() => {
+            window.scrollTo({
+                top: parseInt(savedScrollPosition, 10),
+                behavior: 'auto' // 使用 'auto' 而不是 'smooth'，避免用户看到滚动动画
+            });
+            // 清除已使用的滚动位置
+            sessionStorage.removeItem(SCROLL_POSITION_KEY);
+        });
+    }
+    
+    // 监听应用卡片点击，保存当前滚动位置
+    const appCardLinks = document.querySelectorAll('.app-card-link');
+    appCardLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // 保存当前滚动位置
+            const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            sessionStorage.setItem(SCROLL_POSITION_KEY, currentScrollPosition.toString());
+        });
+    });
+    
+    // 监听页面可见性变化（当用户从其他标签页返回时）
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+            // 页面变为可见时，检查是否有保存的滚动位置
+            const savedScrollPosition = sessionStorage.getItem(SCROLL_POSITION_KEY);
+            if (savedScrollPosition !== null) {
+                // 延迟一下，确保页面完全可见
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: parseInt(savedScrollPosition, 10),
+                        behavior: 'auto'
+                    });
+                    // 清除已使用的滚动位置
+                    sessionStorage.removeItem(SCROLL_POSITION_KEY);
+                }, 100);
+            }
+        }
+    });
+    
     // Language switcher buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', function() {
