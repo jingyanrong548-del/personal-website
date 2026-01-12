@@ -68,7 +68,6 @@ const translations = {
         'apps.staging.unlockBtn': 'Unlock',
         'apps.staging.closeBtn': 'Close',
         'apps.staging.locked': 'Staging environment is locked',
-        'apps.viewer.close': 'Close',
         'apps.staging.error': 'Incorrect password',
         'apps.staging.app0.title': 'Oil-Free Compressor Performance Calculator',
         'apps.staging.app0.version': 'v8.53',
@@ -165,7 +164,6 @@ const translations = {
         'apps.staging.unlockBtn': '解锁',
         'apps.staging.closeBtn': '关闭',
         'apps.staging.locked': '暂存环境已锁定',
-        'apps.viewer.close': '关闭',
         'apps.staging.error': '密码错误',
         'apps.staging.app0.title': '无油压缩机性能计算器',
         'apps.staging.app0.version': 'v8.53',
@@ -537,49 +535,6 @@ document.addEventListener('DOMContentLoaded', function() {
         stagingPasswordInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 unlockStaging();
-            }
-        });
-    }
-
-    // App Viewer - Open apps in iframe with close button
-    const appViewer = document.getElementById('app-viewer');
-    const appViewerIframe = document.getElementById('app-viewer-iframe');
-    const appViewerCloseBtn = document.getElementById('app-viewer-close');
-    const appCardLinks = document.querySelectorAll('.app-card-link');
-    
-    if (appViewer && appViewerIframe && appViewerCloseBtn) {
-        // Open app in viewer
-        function openAppInViewer(url) {
-            appViewerIframe.src = url;
-            appViewer.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        }
-        
-        // Close app viewer
-        function closeAppViewer() {
-            appViewer.style.display = 'none';
-            appViewerIframe.src = ''; // Clear iframe source
-            document.body.style.overflow = ''; // Restore scrolling
-        }
-        
-        // Add click handlers to app card links
-        appCardLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const url = this.getAttribute('href');
-                if (url) {
-                    openAppInViewer(url);
-                }
-            });
-        });
-        
-        // Close button handler
-        appViewerCloseBtn.addEventListener('click', closeAppViewer);
-        
-        // Close on Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && appViewer.style.display === 'flex') {
-                closeAppViewer();
             }
         });
     }
