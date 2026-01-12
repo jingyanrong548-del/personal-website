@@ -348,6 +348,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // 页面加载时恢复滚动位置
     restoreScrollPosition();
     
+    // 检测是否在PWA模式（standalone模式）
+    function isStandaloneMode() {
+        // iOS Safari
+        if (window.navigator.standalone === true) {
+            return true;
+        }
+        // Android Chrome和其他浏览器
+        if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) {
+            return true;
+        }
+        // 备用检测：检查是否在非浏览器环境中
+        if (window.matchMedia && window.matchMedia('(display-mode: fullscreen)').matches) {
+            return true;
+        }
+        return false;
+    }
+    
+    // 在PWA模式下处理外部链接，确保可以返回
+    if (isStandaloneMode()) {
+        // 在PWA模式下，移除所有外部链接的 target="_blank" 属性
+        // 这样链接会在当前窗口打开，用户可以正常使用返回按钮
+        const appCardLinks = document.querySelectorAll('.app-card-link');
+        appCardLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('http')) {
+                // 移除 target="_blank"，让链接在当前窗口打开
+                link.removeAttribute('target');
+                link.removeAttribute('rel');
+            }
+        });
+    }
+    
     // 监听应用卡片点击，保存当前滚动位置
     const appCardLinks = document.querySelectorAll('.app-card-link');
     appCardLinks.forEach(link => {
