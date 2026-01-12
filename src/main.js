@@ -365,11 +365,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
     
+    // 处理外部应用链接，使用 window.open() 打开以便应用可以关闭
+    const appCardLinks = document.querySelectorAll('.app-card-link');
+    
     // 在PWA模式下处理外部链接，确保可以返回
     if (isStandaloneMode()) {
         // 在PWA模式下，移除所有外部链接的 target="_blank" 属性
         // 这样链接会在当前窗口打开，用户可以正常使用返回按钮
-        const appCardLinks = document.querySelectorAll('.app-card-link');
         appCardLinks.forEach(link => {
             const href = link.getAttribute('href');
             if (href && href.startsWith('http')) {
@@ -377,16 +379,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.removeAttribute('target');
                 link.removeAttribute('rel');
             }
+            // 监听点击保存滚动位置
+            link.addEventListener('click', function() {
+                saveScrollPosition();
+            });
+        });
+    } else {
+        // 在普通浏览器模式下，使用 window.open() 打开链接
+        // 这样外部应用可以通过 window.close() 关闭窗口
+        appCardLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('http')) {
+                    e.preventDefault();
+                    saveScrollPosition();
+                    // 使用 window.open() 打开，这样应用可以通过 window.close() 关闭
+                    window.open(href, '_blank', 'noopener,noreferrer');
+                } else {
+                    // 非外部链接，正常处理
+                    saveScrollPosition();
+                }
+            });
         });
     }
-    
-    // 监听应用卡片点击，保存当前滚动位置
-    const appCardLinks = document.querySelectorAll('.app-card-link');
-    appCardLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            saveScrollPosition();
-        });
-    });
     
     // 监听页面可见性变化（当用户从其他标签页返回时）
     document.addEventListener('visibilitychange', function() {
@@ -414,11 +429,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 监听 pagehide 事件，确保在页面隐藏前保存滚动位置
     window.addEventListener('pagehide', function() {
-        saveScrollPosition();
-    });
-    
-    // 监听 beforeunload 事件，作为备用保存机制
-    window.addEventListener('beforeunload', function() {
         saveScrollPosition();
     });
     
