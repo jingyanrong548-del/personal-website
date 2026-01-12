@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -184,7 +186,7 @@ body {
 .hero {
     background: var(--bg-gradient-hero);
     color: var(--text-color);
-    padding: 6rem 2rem;
+    padding: 3.5rem 2rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -254,12 +256,22 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+.hero-description {
+    font-size: 1rem;
     color: var(--text-light);
-    margin-bottom: 2.5rem;
-    font-weight: 500;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
+    margin-bottom: 2rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 .hero-cta-btn {
@@ -292,8 +304,7 @@ body {
 
 /* Stats Bar Section */
 .stats-bar {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
+    background: #F9FAFB;
     padding: 2.5rem 0;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
@@ -315,7 +326,7 @@ body {
 }
 
 .stat-number {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--green-primary), var(--green-light));
     -webkit-background-clip: text;
@@ -453,6 +464,68 @@ body {
     margin-bottom: 3.5rem;
     font-size: 1rem;
     font-weight: 400;
+}
+
+/* Technical Expertise Section */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 3rem auto 0;
+}
+
+.expertise-card {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.expertise-card-cool {
+    border-color: #3B82F6;
+}
+
+.expertise-card-cool:hover {
+    border-color: #2563EB;
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);
+}
+
+.expertise-card-warm {
+    border-color: #F97316;
+}
+
+.expertise-card-warm:hover {
+    border-color: #EA580C;
+    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.2);
+}
+
+.expertise-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.expertise-card-cool .expertise-card-title {
+    color: #2563EB;
+}
+
+.expertise-card-warm .expertise-card-title {
+    color: #EA580C;
+}
+
+.expertise-card-content {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0;
 }
 
 /* About Section */
@@ -610,6 +683,13 @@ body {
     transform: translateY(-2px);
 }
 
+.app-tag-beta {
+    background: linear-gradient(135deg, #F59E0B, #FBBF24);
+    color: white;
+    border-color: transparent;
+    font-weight: 600;
+}
+
 .app-status {
     font-size: 0.875rem;
     font-weight: 500;
@@ -724,6 +804,14 @@ body {
     width: 80px;
     height: 2px;
     background: linear-gradient(135deg, #F59E0B, #FBBF24);
+}
+
+.staging-unlock-simple {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(245, 158, 11, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
 }
 
 .staging-section {
@@ -1133,6 +1221,35 @@ body {
     padding: 0.25rem 0;
 }
 
+.footer-github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.footer-github-link:hover {
+    color: var(--green-primary);
+    text-decoration: none;
+}
+
+.footer-github-link svg {
+    transition: all 0.3s ease;
+}
+
+.footer-github-link:hover svg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer-tech-stack {
+    font-size: 0.875rem;
+    color: var(--text-lighter);
+}
+
 /* WeChat QR Code */
 .contact-wechat {
     position: relative;
@@ -1303,7 +1420,12 @@ body {
 
     .hero-subtitle {
         font-size: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9375rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-cta-btn {
@@ -1320,7 +1442,20 @@ body {
     }
 
     .stat-number {
-        font-size: 1.75rem;
+        font-size: 2rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .expertise-card {
+        padding: 1.5rem;
+    }
+
+    .expertise-card-title {
+        font-size: 1.25rem;
     }
 
     .stat-label {
@@ -1503,7 +1638,15 @@ body {
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+    }
+
+    .expertise-card-title {
+        font-size: 1.125rem;
+    }
+
+    .expertise-card-content {
+        font-size: 0.9375rem;
     }
 
     .stat-label {

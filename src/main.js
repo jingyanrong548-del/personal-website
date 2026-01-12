@@ -7,25 +7,48 @@ const translations = {
         'nav.apps': 'Apps',
         
         // Hero
-        'hero.title': 'Intelligent Green Energy Engineering',
-        'hero.subtitle': 'Professional Tools · Engineering Applications · Open Source',
+        'hero.title': 'Jing Yanrong',
+        'hero.subtitle': 'Industrial Refrigeration & Heat Pump Expert | Full-Stack Developer',
+        'hero.description': 'Focusing on -100°C to +250°C industrial thermal energy solutions, refactoring engineering calculations with code.',
         'hero.cta': 'Browse Apps',
         
         // Stats
         'stats.experience.number': '{experienceYears}+ Years',
         'stats.experience.label': 'Industry Experience',
         'stats.title.number': 'Registered Public Utility Equipment Engineer',
-        'stats.title.label': 'Professional Certification',
+        'stats.title.label': 'Professional Qualification',
         'stats.projects.number': '100+',
-        'stats.projects.label': 'Projects Delivered',
+        'stats.projects.label': 'Success Cases',
         
         // About
         'about.title': 'About',
         'about.text1': 'Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.',
         'about.text2': 'Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.',
         
+        // Technical Expertise
+        'expertise.title': 'Technical Capabilities',
+        'expertise.lowMedium.title': '-100°C ~ +85°C',
+        'expertise.lowMedium.content': 'Refrigeration & Conventional Heating. Refrigerants: R134a, R515B, R410A. Applications: Lithium Battery Coating, PV Cleaning, HVAC.',
+        'expertise.highTemp.title': '+85°C ~ +250°C',
+        'expertise.highTemp.content': 'Industrial High-Temp Heat Pumps & Steam. Technologies: Cascade Systems, Steam Compression. Applications: Industrial Drying, Waste Heat Recovery, Steam Replacement.',
+        'expertise.highTemp.highlight': 'R&D Target: 200°C (Steam) | Proven Max: 120°C',
+        'expertise.highTemp.tempRange': 'Temperature Range: <span class="font-semibold text-orange-600">30°C - 120°C</span> (Industrial Applications).',
+        'expertise.highTemp.regions': 'Service Regions: Germany, Netherlands, & Leading Domestic Enterprises.',
+        'expertise.highTemp.applications': 'Applications: Food & Beverage, Petrochemical, Consumer Goods, Construction Machinery, New Energy & other industries.',
+        'expertise.highTemp.refrigerants': 'Refrigerants: R134a, R410a, R1233zd(E), R245fa, R507A, R717, R744, etc.',
+        'expertise.highTemp.lowGrade': 'Low-Grade Energy: ORC & Screw Expander Power Gen (&lt;<span class="font-semibold text-orange-600">250°C</span> source).',
+        'expertise.highTemp.capacity': 'Capacity: 30 kW - 10 MW.',
+        'expertise.lowTemp.title': '❄️ Ind. Refrigeration & Gas Compression',
+        'expertise.lowTemp.highlight': '20 Years Experience: Deep Cold down to -100°C',
+        'expertise.lowTemp.tempRange': 'Temperature Range: <span class="font-semibold text-cyan-600">-100°C to +30°C</span> (Industrial Applications).',
+        'expertise.lowTemp.clients': 'Clients: Served BASF, Dow Chemical, PetroChina, Sinopec, CAS, etc.',
+        'expertise.lowTemp.refrigerants': 'Refrigerants: Ammonia, CO2, Propane, Propylene, R507A, R23, Ethylene, Helium, Methane, etc.',
+        'expertise.lowTemp.gas': 'Gas Expertise: Helium (He) Compression & CO2 Capture (CCUS).',
+        'expertise.lowTemp.process': 'Process Cooling: Complex cascading systems & Natural Refrigerants (NH3/CO2).',
+        'expertise.lowTemp.capacity': 'Capacity: 100 kW - 10,000 kW.',
+        
         // Apps
-        'apps.title': 'My Applications',
+        'apps.title': 'Engineering Tools',
         'apps.description': '',
         'apps.app0.title': 'Engineering Unit Converter',
         'apps.app0.version': 'V2.0.0',
@@ -60,36 +83,6 @@ const translations = {
         'apps.available': 'Available',
         'apps.comingSoon': 'Coming Soon',
         'apps.moreComing': 'Currently {count} applications available. More tools are in development!',
-        'apps.production.title': 'Production',
-        'apps.staging.title': 'Staging',
-        'apps.staging.unlock': 'Unlock Staging Environment',
-        'apps.staging.password': 'Password',
-        'apps.staging.passwordPlaceholder': 'Enter password',
-        'apps.staging.unlockBtn': 'Unlock',
-        'apps.staging.closeBtn': 'Close',
-        'apps.staging.locked': 'Staging environment is locked',
-        'apps.staging.error': 'Incorrect password',
-        'apps.staging.app0.title': 'Oil-Free Compressor Performance Calculator',
-        'apps.staging.app0.version': 'v8.53',
-        'apps.staging.app0.description': 'Comprehensive performance calculation tool for oil-free compressors',
-        'apps.staging.app1.title': 'Oil-injected Compressor Calculator',
-        'apps.staging.app1.version': 'v3.0.0',
-        'apps.staging.app1.description': 'Performance calculation tool for oil-lubricated compressors',
-        'apps.staging.app2.title': 'Expander Comprehensive Performance Calculator',
-        'apps.staging.app2.version': 'v2.2.0',
-        'apps.staging.app2.description': 'Comprehensive performance calculation tool for expander systems',
-        'apps.staging.app3.title': 'Industrial Integrated Energy System Simulator',
-        'apps.staging.app3.version': 'v0.0.0',
-        'apps.staging.app3.description': 'Simulation tool for industrial integrated energy systems',
-        'apps.staging.app4.title': 'Double Pipe Heat Exchanger Calculator',
-        'apps.staging.app4.version': 'v1.0.0',
-        'apps.staging.app4.description': 'Heat exchanger design and calculation tool',
-        'apps.staging.app5.title': 'Gas-Liquid Separator Sizing Calculator',
-        'apps.staging.app5.version': 'v1.0.0',
-        'apps.staging.app5.description': 'Design and calculation tool for separators',
-        'apps.staging.app6.title': 'Reciprocating Compressor Calculator',
-        'apps.staging.app6.version': 'v3.0.0',
-        'apps.staging.app6.description': 'System calculation tool for compressors',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -101,7 +94,9 @@ const translations = {
         'contact.wechat': 'WeChat: jingyanrongdalian',
         
         // Footer
-        'footer.copyright': '© {year} Jing Yanrong. All rights reserved.',
+        'footer.copyright': '© {year} Jing Yanrong. Open Source Engineering.',
+        'footer.github': 'GitHub',
+        'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': 'Version',
         'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.'
     },
@@ -109,19 +104,40 @@ const translations = {
         'nav.brand': '荆炎荣 / Jing Yanrong',
         'nav.about': '关于',
         'nav.apps': '应用',
-        'hero.title': '智能绿色节能工程',
-        'hero.subtitle': '专业工具 · 工程应用 · 开源共享',
+        'hero.title': '荆炎荣',
+        'hero.subtitle': '工业制冷与工业热泵专家 | 全栈开发者',
+        'hero.description': '专注 -100°C 至 +250°C 工业热能解决方案，用代码重构工程计算。',
         'hero.cta': '浏览应用',
         'stats.experience.number': '{experienceYears}年+',
         'stats.experience.label': '行业经验',
-        'stats.title.number': '注册公用设备工程师（动力）',
-        'stats.title.label': '执业资格',
+        'stats.title.number': '注册公用设备工程师',
+        'stats.title.label': '专业资格',
         'stats.projects.number': '100+',
-        'stats.projects.label': '项目案例',
+        'stats.projects.label': '成功案例',
         'about.title': '关于',
         'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
         'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
-        'apps.title': '我的应用',
+        'expertise.title': '技术能力',
+        'expertise.lowMedium.title': '-100°C ~ +85°C',
+        'expertise.lowMedium.content': '冷冻与常规供热。制冷剂: R134a, R515B, R410A。场景: 锂电涂布, 光伏清洗, HVAC。',
+        'expertise.highTemp.title': '+85°C ~ +250°C',
+        'expertise.highTemp.content': '工业高温热泵与蒸汽。技术: 复叠系统, 蒸汽压缩。场景: 工业烘干, 废热回收, 蒸汽替代。',
+        'expertise.highTemp.highlight': '研发目标：200°C（蒸汽）| 已验证最高：120°C',
+        'expertise.highTemp.tempRange': '温区范围：<span class="font-semibold text-orange-600">30°C - 120°C</span>（工业应用）。',
+        'expertise.highTemp.regions': '服务区域：德国、荷兰及国内头部企业。',
+        'expertise.highTemp.applications': '应用领域：食品饮料、石油化工、日化、工程机械、新能源等行业。',
+        'expertise.highTemp.refrigerants': '制冷剂：R134a、R410a、R1233zd（E）、R245fa、R507A、R717、R744 等。',
+        'expertise.highTemp.lowGrade': '低品位能源：ORC 及螺杆膨胀机发电（&lt;<span class="font-semibold text-orange-600">250°C</span> 热源）。',
+        'expertise.highTemp.capacity': '容量范围：30 kW - 10 MW。',
+        'expertise.lowTemp.title': '❄️ 工业制冷与气体压缩',
+        'expertise.lowTemp.highlight': '20 年经验：深冷技术低至 -100°C',
+        'expertise.lowTemp.tempRange': '温区范围：<span class="font-semibold text-cyan-600">-100°C 至 +30°C</span>（工业应用）。',
+        'expertise.lowTemp.clients': '服务过巴斯夫、陶氏化学、中石油、中石化、中科院等。',
+        'expertise.lowTemp.refrigerants': '制冷剂：氨、二氧化碳、丙烷、丙烯、R507A、R23、乙烯、氦气、甲烷等。',
+        'expertise.lowTemp.gas': '气体专长：氦气（He）压缩及 CO2 捕集（CCUS）。',
+        'expertise.lowTemp.process': '工艺冷却：复杂级联系统及天然制冷剂（NH3/CO2）。',
+        'expertise.lowTemp.capacity': '容量范围：100 kW - 10,000 kW。',
+        'apps.title': '工程计算工具箱',
         'apps.description': '',
         'apps.app0.title': '工程单位换算器',
         'apps.app0.version': 'V2.0.0',
@@ -156,42 +172,14 @@ const translations = {
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
         'apps.moreComing': '目前提供 {count} 个应用，更多实用工具正在开发中，敬请期待！',
-        'apps.production.title': '生产环境',
-        'apps.staging.title': '暂存环境',
-        'apps.staging.unlock': '解锁暂存环境',
-        'apps.staging.password': '密码',
-        'apps.staging.passwordPlaceholder': '请输入密码',
-        'apps.staging.unlockBtn': '解锁',
-        'apps.staging.closeBtn': '关闭',
-        'apps.staging.locked': '暂存环境已锁定',
-        'apps.staging.error': '密码错误',
-        'apps.staging.app0.title': '无油压缩机性能计算器',
-        'apps.staging.app0.version': 'v8.53',
-        'apps.staging.app0.description': '无油压缩机综合性能计算工具',
-        'apps.staging.app1.title': '油润滑压缩机计算器',
-        'apps.staging.app1.version': 'v3.0.0',
-        'apps.staging.app1.description': '油润滑压缩机性能计算工具',
-        'apps.staging.app2.title': '膨胀机综合性能计算器',
-        'apps.staging.app2.version': 'v2.2.0',
-        'apps.staging.app2.description': '膨胀机综合性能计算工具',
-        'apps.staging.app3.title': '工业综合能源系统仿真',
-        'apps.staging.app3.version': 'v0.0.0',
-        'apps.staging.app3.description': '工业综合能源系统仿真工具',
-        'apps.staging.app4.title': '套管换热器计算器',
-        'apps.staging.app4.version': 'v1.0.0',
-        'apps.staging.app4.description': '套管换热器热力计算工具',
-        'apps.staging.app5.title': '气液分离器选型计算器',
-        'apps.staging.app5.version': 'v1.0.0',
-        'apps.staging.app5.description': '气液分离器选型与计算工具',
-        'apps.staging.app6.title': '开启活塞压缩机计算',
-        'apps.staging.app6.version': 'v3.0.0',
-        'apps.staging.app6.description': '开启活塞压缩机计算工具',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
         'contact.wechat': '微信: jingyanrongdalian',
-        'footer.copyright': '© {year} 荆炎荣. 保留所有权利.',
+        'footer.copyright': '© {year} 荆炎荣. Open Source Engineering.',
+        'footer.github': 'GitHub',
+        'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': '版本',
         'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。'
     }
@@ -252,17 +240,6 @@ function setLanguage(lang) {
                 }
             }
         }
-        // Handle staging app titles: apps.staging.app0.title, apps.staging.app1.title, etc.
-        if (key.startsWith('apps.staging.app') && key.endsWith('.title')) {
-            const stagingAppIndex = key.match(/apps\.staging\.app(\d+)\.title$/);
-            if (stagingAppIndex) {
-                const versionKey = `apps.staging.app${stagingAppIndex[1]}.version`;
-                const version = translations[lang][versionKey];
-                if (version && version.trim() !== '') {
-                    text = `${text} ${version}`;
-                }
-            }
-        }
         
         // Replace {year} placeholder with current year
         text = text.replace(/{year}/g, currentYear.toString());
@@ -273,7 +250,13 @@ function setLanguage(lang) {
         
         // Safely set text content
         try {
-            element.textContent = text;
+            // Check if HTML content is allowed
+            const allowHtml = element.getAttribute('data-i18n-html') === 'true';
+            if (allowHtml) {
+                element.innerHTML = text;
+            } else {
+                element.textContent = text;
+            }
             // Hide element if text is empty
             if (!text || text.trim() === '') {
                 element.style.display = 'none';
@@ -304,6 +287,7 @@ function setLanguage(lang) {
 
 // Smooth scroll behavior and interactive features
 document.addEventListener('DOMContentLoaded', function() {
+    
     // Display version number immediately
     const versionElement = document.getElementById('app-version');
     if (versionElement) {
@@ -365,32 +349,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
     
-    // 处理外部应用链接，使用 window.open() 打开以便应用可以关闭
-    const appCardLinks = document.querySelectorAll('.app-card-link');
-    
-    // 统一使用 window.open() 打开外部应用，确保应用内的退出按钮可以正常工作
-    // 这样无论是普通浏览器模式还是PWA模式，外部应用都可以通过 window.close() 关闭窗口
-    appCardLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href && href.startsWith('http')) {
-                e.preventDefault();
-                saveScrollPosition();
-                // 使用 window.open() 打开，这样应用可以通过 window.close() 关闭
-                // 即使在PWA模式下，也应该尝试使用 window.open()，以便退出功能正常工作
-                const newWindow = window.open(href, '_blank', 'noopener,noreferrer');
-                // 如果 window.open() 失败（某些PWA环境可能限制），则回退到当前窗口打开
-                if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-                    // 如果无法打开新窗口，则在当前窗口打开（用户可以使用浏览器返回按钮）
-                    window.location.href = href;
-                }
-            } else {
-                // 非外部链接，正常处理
-                saveScrollPosition();
-            }
-        });
-    });
-    
     // 监听页面可见性变化（当用户从其他标签页返回时）
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
@@ -418,6 +376,43 @@ document.addEventListener('DOMContentLoaded', function() {
     // 监听 pagehide 事件，确保在页面隐藏前保存滚动位置
     window.addEventListener('pagehide', function() {
         saveScrollPosition();
+    });
+    
+    // 处理应用链接点击 - 使用最简单的方式，确保只打开一次
+    const appCards = document.querySelectorAll('.app-card[href]');
+    
+    appCards.forEach(card => {
+        // 移除target属性，由JavaScript控制
+        card.removeAttribute('target');
+        
+        card.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (!href || !href.startsWith('http')) {
+                return;
+            }
+            
+            // 阻止默认行为
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            
+            // 检查是否已经在打开
+            const openingKey = 'opening_' + btoa(href).substring(0, 10);
+            if (sessionStorage.getItem(openingKey) === 'true') {
+                return;
+            }
+            
+            // 设置标志
+            sessionStorage.setItem(openingKey, 'true');
+            
+            // 打开链接
+            window.open(href, '_blank', 'noopener,noreferrer');
+            
+            // 1秒后清除标志
+            setTimeout(() => {
+                sessionStorage.removeItem(openingKey);
+            }, 1000);
+        }, { once: false, passive: false, capture: true });
     });
     
     // Language switcher buttons
@@ -541,108 +536,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-
-    // Staging Environment Password Protection
-    const STAGING_PASSWORD = 'aa86538311';
-    const STAGING_STORAGE_KEY = 'staging_unlocked';
-    
-    const stagingApps = document.getElementById('stagingApps');
-    const stagingPasswordInput = document.getElementById('stagingPassword');
-    const stagingUnlockBtn = document.getElementById('stagingUnlockBtn');
-    const stagingCloseBtn = document.getElementById('stagingCloseBtn');
-    const stagingError = document.getElementById('stagingError');
-    const unlockForm = document.getElementById('stagingUnlockForm');
-    
-    if (stagingApps && stagingPasswordInput && stagingUnlockBtn) {
-        // Function to update UI based on unlock state
-        function updateStagingUI(isUnlocked) {
-            if (isUnlocked) {
-                // Show staging apps and close button, hide unlock form
-                stagingApps.style.display = 'grid';
-                if (unlockForm) {
-                    unlockForm.style.display = 'none';
-                }
-                if (stagingCloseBtn) {
-                    stagingCloseBtn.style.display = 'block';
-                }
-            } else {
-                // Hide staging apps and close button, show unlock form
-                stagingApps.style.display = 'none';
-                if (unlockForm) {
-                    unlockForm.style.display = 'flex';
-                }
-                if (stagingCloseBtn) {
-                    stagingCloseBtn.style.display = 'none';
-                }
-            }
-        }
-        
-        // Ensure close button is hidden initially (only show when staging is unlocked)
-        if (stagingCloseBtn) {
-            stagingCloseBtn.style.display = 'none';
-        }
-        
-        // Check if staging is already unlocked
-        const isStagingUnlocked = localStorage.getItem(STAGING_STORAGE_KEY) === 'true';
-        updateStagingUI(isStagingUnlocked);
-        
-        // Unlock staging environment
-        function unlockStaging() {
-            const password = stagingPasswordInput.value.trim();
-            if (password === STAGING_PASSWORD) {
-                localStorage.setItem(STAGING_STORAGE_KEY, 'true');
-                updateStagingUI(true);
-                if (stagingError) {
-                    stagingError.textContent = '';
-                }
-                stagingPasswordInput.value = '';
-            } else {
-                if (stagingError) {
-                    stagingError.textContent = currentLanguage === 'zh' ? '密码错误' : 'Incorrect password';
-                }
-                stagingPasswordInput.value = '';
-                stagingPasswordInput.focus();
-                stagingPasswordInput.style.animation = 'shake 0.5s';
-                setTimeout(() => {
-                    stagingPasswordInput.style.animation = '';
-                }, 500);
-            }
-        }
-        
-        // Close staging environment
-        function closeStaging() {
-            localStorage.removeItem(STAGING_STORAGE_KEY);
-            updateStagingUI(false);
-            if (stagingError) {
-                stagingError.textContent = '';
-            }
-            stagingPasswordInput.value = '';
-        }
-        
-        // Add shake animation
-        const shakeStyle = document.createElement('style');
-        shakeStyle.textContent = `
-            @keyframes shake {
-                0%, 100% { transform: translateX(0); }
-                25% { transform: translateX(-10px); }
-                75% { transform: translateX(10px); }
-            }
-        `;
-        document.head.appendChild(shakeStyle);
-        
-        // Event listeners
-        stagingUnlockBtn.addEventListener('click', unlockStaging);
-        
-        if (stagingCloseBtn) {
-            stagingCloseBtn.addEventListener('click', closeStaging);
-        }
-        
-        stagingPasswordInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                unlockStaging();
-            }
-        });
-    }
 
     console.log('Personal homepage loaded successfully!');
 });

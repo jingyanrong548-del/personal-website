@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { readFileSync } from 'fs'
+import tailwindcss from '@tailwindcss/vite'
 
 // 读取 package.json 获取版本号
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'))
@@ -7,6 +8,9 @@ const version = packageJson.version
 
 export default defineConfig({
   base: './',
+  plugins: [
+    tailwindcss(),
+  ],
   define: {
     '__APP_VERSION__': JSON.stringify(version)
   },
