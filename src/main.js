@@ -754,5 +754,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Handle "Read Analysis" button clicks in Insights section
+    const insightReadMoreButtons = document.querySelectorAll('.insight-read-more');
+    insightReadMoreButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // 阻止默认行为，防止跳转到页面顶部
+            
+            const insightCard = this.closest('.insight-card');
+            if (!insightCard) return;
+            
+            const excerpt = insightCard.querySelector('.insight-excerpt');
+            if (!excerpt) return;
+            
+            // 切换展开/收起状态
+            const isExpanded = insightCard.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // 收起
+                insightCard.classList.remove('expanded');
+                excerpt.style.webkitLineClamp = '3';
+                excerpt.style.display = '-webkit-box';
+            } else {
+                // 展开
+                insightCard.classList.add('expanded');
+                excerpt.style.webkitLineClamp = 'none';
+                excerpt.style.display = 'block';
+            }
+        });
+    });
+
     console.log('Personal homepage loaded successfully!');
 });

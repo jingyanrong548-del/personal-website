@@ -857,6 +857,14 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.insight-card.expanded .insight-excerpt {
+    display: block;
+    -webkit-line-clamp: none;
+    overflow: visible;
+    text-overflow: clip;
 }
 
 .insight-read-more {
