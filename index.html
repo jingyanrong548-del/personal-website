@@ -206,7 +206,15 @@
                     </div>
                     <h1 class="hero-headline" data-i18n="hero.headline">{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.</h1>
                     <p class="hero-subheadline" data-i18n="hero.subheadline">Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.</p>
-                    <a href="#apps" class="hero-cta-btn" data-i18n="hero.cta">Explore My Tools</a>
+                    <div class="hero-cta-container">
+                        <a href="#apps" class="hero-cta-btn" data-i18n="hero.cta">Explore My Tools</a>
+                        <a href="#insights" class="hero-secondary-link">
+                            <span data-i18n="hero.secondaryCta">Read Engineering Insights</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <div class="hero-portrait-container">
@@ -302,7 +310,9 @@
             <div class="apps-grid">
                 <!-- Production Apps -->
                 <div class="app-card">
-                    <div class="app-icon">📏</div>
+                    <svg class="app-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5 2v6M3.5 2v6M2 8.5h20M12 2v20M19.5 2l-2 2M19.5 8l-2-2M4.5 2l2 2M4.5 8l2-2"/>
+                    </svg>
                     <h3 class="app-title" data-i18n="apps.app0.title">Engineering Unit Converter</h3>
                     <p class="app-description" data-i18n="apps.app0.description">Fast and accurate unit conversion tool for engineering calculations</p>
                     <div class="app-tags">
@@ -320,7 +330,17 @@
                     </div>
                 </div>
                 <div class="app-card">
-                    <div class="app-icon">🔥</div>
+                    <svg class="app-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                        <path d="M12 2v2"/>
+                        <path d="M12 20v2"/>
+                        <path d="M16 14h4"/>
+                        <path d="M4 14h4"/>
+                        <path d="M16 10h1"/>
+                        <path d="M4 10h1"/>
+                        <path d="M20 10h2"/>
+                        <path d="M2 10h2"/>
+                    </svg>
                     <h3 class="app-title" data-i18n="apps.app2.title">Industrial Heat Pump Matching Calculator</h3>
                     <p class="app-description" data-i18n="apps.app2.description">Matching calculation tool for industrial heat pump systems with MVR support</p>
                     <div class="app-tags">
@@ -338,7 +358,9 @@
                     </div>
                 </div>
                 <div class="app-card">
-                    <div class="app-icon">📊</div>
+                    <svg class="app-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
                     <h3 class="app-title" data-i18n="apps.app3.title">Heat Pump Benefit Analyzer</h3>
                     <p class="app-description" data-i18n="apps.app3.description">Comprehensive economic and environmental benefit analysis for industrial heat pumps</p>
                     <div class="app-tags">
@@ -360,31 +382,37 @@
     </section>
 
     <!-- Insights Section -->
-    <section class="insights-section">
+    <section id="insights" class="insights-section">
         <div class="container">
             <h2 class="section-title" data-i18n="insights.title">Engineering Insights</h2>
             <div class="insights-grid">
                 <article class="insight-card">
                     <div class="insight-badge">💡</div>
-                    <span class="insight-tag" data-i18n="insights.article1.tag">Critical Troubleshooting</span>
+                    <div class="insight-meta">
+                        <span class="insight-tag" data-i18n="insights.article1.tag">Critical Troubleshooting</span>
+                        <span class="insight-date" data-i18n="insights.article1.date">Oct 2023</span>
+                    </div>
                     <h3 class="insight-title" data-i18n="insights.article1.title">5 Site Visits to Solve a "Mystery" Seizure: The -70°C Liquid Trap</h3>
-                    <p class="insight-date" data-i18n="insights.article1.date">Oct 2023</p>
                     <p class="insight-excerpt" data-i18n="insights.article1.excerpt">Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article1.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>
                 <article class="insight-card">
                     <div class="insight-badge">💡</div>
-                    <span class="insight-tag" data-i18n="insights.article2.tag">Strategic Decision</span>
+                    <div class="insight-meta">
+                        <span class="insight-tag" data-i18n="insights.article2.tag">Strategic Decision</span>
+                        <span class="insight-date" data-i18n="insights.article2.date">Feb 2025</span>
+                    </div>
                     <h3 class="insight-title" data-i18n="insights.article2.title">Compression vs. Absorption: Why I Bet on Electric Drive</h3>
-                    <p class="insight-date" data-i18n="insights.article2.date">Feb 2025</p>
                     <p class="insight-excerpt" data-i18n="insights.article2.excerpt">Textbooks say "use waste heat for absorption", but reality demands stability. By locking in R1234ze(E) and a COP of 4.44, I proved that electric compression offers lower delivery risk than complex steam-balance absorption systems.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article2.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>
                 <article class="insight-card">
                     <div class="insight-badge">💡</div>
-                    <span class="insight-tag" data-i18n="insights.article3.tag">Industry Outlook</span>
+                    <div class="insight-meta">
+                        <span class="insight-tag" data-i18n="insights.article3.tag">Industry Outlook</span>
+                        <span class="insight-date" data-i18n="insights.article3.date">Sep 2025</span>
+                    </div>
                     <h3 class="insight-title" data-i18n="insights.article3.title">Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)</h3>
-                    <p class="insight-date" data-i18n="insights.article3.date">Sep 2025</p>
                     <p class="insight-excerpt" data-i18n="insights.article3.excerpt">Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article3.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>

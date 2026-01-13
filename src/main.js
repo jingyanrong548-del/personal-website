@@ -12,6 +12,7 @@ const translations = {
         'hero.headline': '{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.',
         'hero.subheadline': 'Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.',
         'hero.cta': 'Explore My Tools',
+        'hero.secondaryCta': 'Read Engineering Insights',
         
         // About
         'about.title': 'About',
@@ -133,6 +134,7 @@ const translations = {
         'hero.headline': '将{experienceYears}年+工程判断力编码为工具。',
         'hero.subheadline': '专注于工业制冷与热泵系统（-100°C至+200°C）。连接物理热力学与数字代码的桥梁。',
         'hero.cta': '探索我的工具',
+        'hero.secondaryCta': '阅读工程洞察',
         'about.title': '关于',
         'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
         'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
@@ -479,6 +481,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Helper function to calculate scroll offset
+    function getScrollOffset() {
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            return navbar.offsetHeight + 20; // Add 20px extra spacing
+        }
+        return 100; // Fallback
+    }
+
+    // Helper function to scroll to section
+    function scrollToSection(sectionId) {
+        const targetSection = document.querySelector(sectionId);
+        if (targetSection) {
+            const offset = getScrollOffset();
+            // Use scrollIntoView with block: 'start' and then adjust for navbar offset
+            // This is more reliable than scrollTo
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // After scrollIntoView, we need to adjust for navbar height
+            // Use requestAnimationFrame to ensure scrollIntoView has started
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    const currentScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+                    const adjustedScrollY = currentScrollY - offset;
+                    window.scrollTo({
+                        top: Math.max(0, adjustedScrollY),
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            return true;
+        }
+        return false;
+    }
+
     // Handle navigation clicks
     const navLinks = document.querySelectorAll('.nav-menu a');
     
@@ -486,15 +523,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-                
+            if (scrollToSection(targetId)) {
                 // Update active state
                 navLinks.forEach(l => l.classList.remove('active'));
                 this.classList.add('active');
@@ -502,19 +531,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Handle hero CTA button click
+    // Handle hero CTA button click - 探索我的工具 -> 工程计算工具箱 (#apps)
     const heroCtaBtn = document.querySelector('.hero-cta-btn');
     if (heroCtaBtn) {
         heroCtaBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            const targetSection = document.querySelector('#apps');
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
+            scrollToSection('#apps');
+        });
+    }
+
+    // Handle hero secondary link click - 阅读工程洞察 -> 工程洞察 (#insights)
+    const heroSecondaryLink = document.querySelector('.hero-secondary-link');
+    if (heroSecondaryLink) {
+        heroSecondaryLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            scrollToSection('#insights');
         });
     }
 
