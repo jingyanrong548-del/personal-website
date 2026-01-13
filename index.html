@@ -204,7 +204,7 @@
                     <div class="hero-badge">
                         <span class="badge-text" data-i18n="hero.badge">✓ Licensed PE & Human Verified</span>
                     </div>
-                    <h1 class="hero-headline" data-i18n="hero.headline">{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.</h1>
+                    <h1 class="hero-headline" data-i18n="hero.headline" data-i18n-html="true">{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.</h1>
                     <p class="hero-subheadline" data-i18n="hero.subheadline">Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.</p>
                     <div class="hero-cta-container">
                         <a href="#apps" class="hero-cta-btn" data-i18n="hero.cta">Explore My Tools</a>
@@ -292,18 +292,32 @@
             <h2 class="section-title" data-i18n="about.title">About</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-i18n="about.text1">Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.</p>
-                    <p data-i18n="about.text2">Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.</p>
+                    <h3 class="about-headline" data-i18n="about.headline">My Philosophy</h3>
+                    <p data-i18n="about.text1" data-i18n-html="true">Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.</p>
+                    <p data-i18n="about.text2" data-i18n-html="true">Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.</p>
+                    <p data-i18n="about.text3" data-i18n-html="true">I build this website not to showcase, but to deliver. I encapsulate my physical thermodynamics experience into Python and React, only to eliminate that 1% of uncertainty on the engineering site.</p>
                 </div>
-                <div class="about-icon">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2" opacity="0.2"/>
-                        <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-                        <path d="M 100 50 L 100 150 M 50 100 L 150 100" stroke="currentColor" stroke-width="2" opacity="0.2"/>
-                        <circle cx="100" cy="80" r="8" fill="currentColor" opacity="0.4"/>
-                        <circle cx="100" cy="120" r="8" fill="currentColor" opacity="0.4"/>
-                        <path d="M 70 100 Q 100 70 130 100 Q 100 130 70 100" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
-                    </svg>
+                <div class="about-matrix">
+                    <div class="matrix-card">
+                        <div class="matrix-label" data-i18n="about.matrix.1.label">Industry Experience</div>
+                        <div class="matrix-value" data-i18n="about.matrix.1.value">27 Years</div>
+                        <div class="matrix-sub" data-i18n="about.matrix.1.sub">Bingshan / Snowman / Devotion</div>
+                    </div>
+                    <div class="matrix-card">
+                        <div class="matrix-label" data-i18n="about.matrix.2.label">Core Domain</div>
+                        <div class="matrix-value" data-i18n="about.matrix.2.value">-100°C ~ +200°C</div>
+                        <div class="matrix-sub" data-i18n="about.matrix.2.sub">Full Temperature Range</div>
+                    </div>
+                    <div class="matrix-card">
+                        <div class="matrix-label" data-i18n="about.matrix.3.label">Delivery Tools</div>
+                        <div class="matrix-value" data-i18n="about.matrix.3.value">Python / React</div>
+                        <div class="matrix-sub" data-i18n="about.matrix.3.sub">Algorithm Encapsulation</div>
+                    </div>
+                    <div class="matrix-card">
+                        <div class="matrix-label" data-i18n="about.matrix.4.label">Engineering Goal</div>
+                        <div class="matrix-value" data-i18n="about.matrix.4.value">Eliminate Uncertainty</div>
+                        <div class="matrix-sub" data-i18n="about.matrix.4.sub">Digital Delivery</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -402,7 +416,7 @@
                         <span class="insight-date" data-i18n="insights.article1.date">Oct 2023</span>
                     </div>
                     <h3 class="insight-title" data-i18n="insights.article1.title">5 Site Visits to Solve a "Mystery" Seizure: The -70°C Liquid Trap</h3>
-                    <p class="insight-excerpt" data-i18n="insights.article1.excerpt">Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.</p>
+                    <p class="insight-excerpt" data-i18n="insights.article1.excerpt" data-i18n-html="true">Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article1.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>
                 <article class="insight-card">
@@ -412,7 +426,7 @@
                         <span class="insight-date" data-i18n="insights.article2.date">Feb 2025</span>
                     </div>
                     <h3 class="insight-title" data-i18n="insights.article2.title">Compression vs. Absorption: Why I Bet on Electric Drive</h3>
-                    <p class="insight-excerpt" data-i18n="insights.article2.excerpt">Textbooks say "use waste heat for absorption", but reality demands stability. By locking in R1234ze(E) and a COP of 4.44, I proved that electric compression offers lower delivery risk than complex steam-balance absorption systems.</p>
+                    <p class="insight-excerpt" data-i18n="insights.article2.excerpt" data-i18n-html="true">Textbooks say "use waste heat for absorption", but reality demands stability. By locking in R1234ze(E) and a COP of 4.44, I proved that electric compression offers lower delivery risk than complex steam-balance absorption systems.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article2.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>
                 <article class="insight-card">
@@ -422,7 +436,7 @@
                         <span class="insight-date" data-i18n="insights.article3.date">Sep 2025</span>
                     </div>
                     <h3 class="insight-title" data-i18n="insights.article3.title">Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)</h3>
-                    <p class="insight-excerpt" data-i18n="insights.article3.excerpt">Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.</p>
+                    <p class="insight-excerpt" data-i18n="insights.article3.excerpt" data-i18n-html="true">Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.</p>
                     <a href="#" class="insight-read-more" data-i18n="insights.article3.readMore">Read Analysis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </article>
             </div>

@@ -16,8 +16,22 @@ const translations = {
         
         // About
         'about.title': 'About',
-        'about.text1': 'Specializing in industrial energy systems engineering, covering refrigeration, heat pump, thermal energy, compression, energy storage, waste heat recovery, and thermal coupling, focusing on optimizing system performance through innovative design and intelligent applications to advance green low-carbon engineering practices.',
-        'about.text2': 'Provides practical applications and tools covering design optimization, energy efficiency analysis, and performance calculation to support engineering applications and optimization in industrial energy systems.',
+        'about.headline': 'My Philosophy',
+        'about.text1': 'Throughout my career at <strong class="company-name">Bingshan</strong>, <strong class="company-name">Snowman</strong>, and <strong class="company-name">Devotion</strong>, I\'ve witnessed the evolution of industrial refrigeration and the transition from coal-fired to heat pump systems.',
+        'about.text2': 'I discovered that the ultimate path to solving complex engineering problems is not through memory, but through <strong>reusable algorithms</strong>.',
+        'about.text3': 'I build this website not to showcase, but to <strong>deliver</strong>. I encapsulate my physical thermodynamics experience into Python and React, only to <em class="highlight-quote">eliminate that 1% of uncertainty on the engineering site</em>.',
+        'about.matrix.1.label': 'Industry Experience',
+        'about.matrix.1.value': 'Long-term',
+        'about.matrix.1.sub': 'Bingshan / Snowman / Devotion',
+        'about.matrix.2.label': 'Core Domain',
+        'about.matrix.2.value': 'Full Range',
+        'about.matrix.2.sub': '-100°C ~ +200°C',
+        'about.matrix.3.label': 'Delivery Tools',
+        'about.matrix.3.value': 'Python / React',
+        'about.matrix.3.sub': 'Algorithm Encapsulation',
+        'about.matrix.4.label': 'Engineering Goal',
+        'about.matrix.4.value': 'Eliminate Uncertainty',
+        'about.matrix.4.sub': 'Digital Delivery',
         
         // Technical Expertise
         'expertise.title': 'Technical Capabilities',
@@ -114,10 +128,10 @@ const translations = {
         'insights.article1.date': 'Oct 2023',
         'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.',
         'insights.article1.readMore': 'Read Analysis',
-        'insights.article2.title': 'Compression vs. Absorption: Why I Bet on Electric Drive',
-        'insights.article2.tag': 'Strategic Decision',
-        'insights.article2.date': 'Feb 2025',
-        'insights.article2.excerpt': 'Textbooks say "use waste heat for absorption", but reality demands stability. By locking in R1234ze(E) and a COP of 4.44, I proved that electric compression offers lower delivery risk than complex steam-balance absorption systems.',
+        'insights.article2.title': 'Large Screw Compressor Seizure: Not "Oil Starvation", but "Deadly Stacking of Tolerance & Thermal Deformation"',
+        'insights.article2.tag': 'Deep Failure Review',
+        'insights.article2.date': 'Jun 2024',
+        'insights.article2.excerpt': '<strong>Misconception:</strong> Normal oil level (60%+) ≠ effective lubrication. Simply replacing bearings cannot solve "critical friction".<br/><br/><strong>Truth:</strong> Deep disassembly revealed that <strong>a certain series of heavy-duty models</strong> under maximum tolerance combination, the male rotor engages the female rotor by approximately <strong>35μm</strong>. Combined with asymmetric oil supply at the suction end and thermal deformation, the sealing line collapses without an oil film.<br/><br/><strong>Conclusion:</strong> True repair must address both "reconstructing the tolerance chain from the manufacturing side" and "adding critical protection on the operational side".',
         'insights.article2.readMore': 'Read Analysis',
         'insights.article3.title': 'Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)',
         'insights.article3.tag': 'Industry Outlook',
@@ -139,13 +153,27 @@ const translations = {
         'nav.apps': '应用',
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
-        'hero.headline': '将{experienceYears}年+工程判断力编码为工具。',
-        'hero.subheadline': '专注于工业制冷与热泵系统（-100°C至+200°C）。连接物理热力学与数字代码的桥梁。',
+        'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，封装为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
+        'hero.subheadline': '深耕工业制冷与热泵 (-100°C 至 +200°C)，用代码重构物理热力学，让经验数据化。',
         'hero.cta': '探索我的工具',
         'hero.secondaryCta': '阅读工程洞察',
         'about.title': '关于',
-        'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
-        'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
+        'about.headline': '我的工程哲学',
+        'about.text1': '在 <strong class="company-name">冰山冷热</strong>、<strong class="company-name">雪人股份</strong>、<strong class="company-name">迪森股份</strong> 的职业生涯中，我见证了工业冷冻的发展历程，以及工业热能从燃煤到热泵的每一次迭代。',
+        'about.text2': '我发现，解决复杂工程问题的终极路径，不是靠记忆，而是靠<strong>可复用的算法</strong>。',
+        'about.text3': '我构建这个网站，不是为了展示，而是为了<strong>交付</strong>。我将物理热力学的经验封装进 Python 和 React，只为<em class="highlight-quote">消除工程现场的那 1% 的不确定性</em>。',
+        'about.matrix.1.label': '行业积淀',
+        'about.matrix.1.value': '长期深耕',
+        'about.matrix.1.sub': '冰山 / 雪人 / 迪森',
+        'about.matrix.2.label': '核心领域',
+        'about.matrix.2.value': '全温域',
+        'about.matrix.2.sub': '-100°C ~ +200°C',
+        'about.matrix.3.label': '交付工具',
+        'about.matrix.3.value': 'Python / React',
+        'about.matrix.3.sub': '算法封装经验',
+        'about.matrix.4.label': '工程目标',
+        'about.matrix.4.value': '消除不确定性',
+        'about.matrix.4.sub': '数字化交付',
         'expertise.title': '技术能力',
         'expertise.lowMedium.title': '-100°C ~ +85°C',
         'expertise.lowMedium.content': '冷冻与常规供热。制冷剂: R134a, R515B, R410A。场景: 锂电涂布, 光伏清洗, HVAC。',
@@ -229,20 +257,20 @@ const translations = {
         
         // Insights
         'insights.title': '工程洞察',
-        'insights.article1.title': '5次现场排查解决"神秘"抱死：-70°C液压缩陷阱',
+        'insights.article1.title': '5次现场排查：终结 -70°C 液击"悬案"',
         'insights.article1.tag': '关键故障排查',
         'insights.article1.date': '2023年10月',
-        'insights.article1.excerpt': '多台大型压缩机抱死，最初被归咎于制造缺陷。经过5次现场检查，我追踪到根本原因不在机器本身，而在系统：由有缺陷的-70°C蒸发器设计引起的偶然液压缩。我们修复了系统，保住了压缩机。',
+        'insights.article1.excerpt': '<strong>现象：</strong>多台大机组频繁抱死，原厂判定为设备制造缺陷。<br/><br/><strong>真相：</strong>历经 5 次现场深挖，我将根因锁定为系统侧蒸发器设计导致的"偶发性液击"。<br/><br/><strong>结果：</strong>修正系统设计逻辑后，彻底根治了抱死隐患。',
         'insights.article1.readMore': '阅读分析',
-        'insights.article2.title': '压缩式 vs 吸收式：为何我坚持在工业项目中首选"电驱动"',
-        'insights.article2.tag': '技术决策',
-        'insights.article2.date': '2025年2月',
-        'insights.article2.excerpt': '当书本建议"利用废热做吸收式"时，工程直觉告诉我：不要低估蒸汽平衡的复杂性。通过COP 4.44的实测数据与R1234ze(E)的环保优势，证明了在电力充足场景下，压缩式热泵才是交付风险最低、可控性最强的路径。',
+        'insights.article2.title': '大型螺杆机抱死真相：不是"缺油"，是"公差与热变形的死亡叠加"',
+        'insights.article2.tag': '深度故障复盘',
+        'insights.article2.date': '2024年6月',
+        'insights.article2.excerpt': '<strong>误区：</strong>油位正常 (60%+) ≠ 有效润滑。单纯换轴承无法解决"临界摩擦"。<br/><br/><strong>真相：</strong>深度拆解发现，<strong>某系列重载机型</strong>在最大公差组合下，阳转子咬合阴转子约 <strong>35μm</strong>。叠加吸气端供油不对称与热变形，导致密封线在无油膜状态下崩塌。<br/><br/><strong>结论：</strong>真正的修复必须从"制造侧重构公差链"与"运行侧增加临界保护"双向入手。',
         'insights.article2.readMore': '阅读分析',
-        'insights.article3.title': '拒绝"PPT造车"：工业热泵的下一个护城河是"极端工况测试"',
+        'insights.article3.title': '行业深水区：拒绝"参数造车"',
         'insights.article3.tag': '行业前瞻',
         'insights.article3.date': '2025年9月',
-        'insights.article3.excerpt': '行业都在卷120°C/160°C的指标，但谁能证明它？真正的门槛不是造出样机，而是建立一套能模拟-40°C到+200°C蒸汽热汇的CNAS级验证体系。未来属于"能测、能证、能复现"的企业。',
+        'insights.article3.excerpt': '<strong>现状：</strong>行业都在卷 160°C 指标，却缺乏极端工况验证。<br/><br/><strong>壁垒：</strong>真正的护城河是 <strong>CNAS 级全温域测试体系</strong> (-40°C 至 +200°C)。<br/><br/><strong>未来：</strong>从"制造机器"转型为"交付可复现的真实性能"。',
         'insights.article3.readMore': '阅读分析',
         
         // Footer
@@ -254,6 +282,100 @@ const translations = {
         'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。'
     }
 };
+
+// App repository configuration for version fetching
+const appRepositories = {
+    'app0': {
+        repo: 'Engineering-Unit-Converter',
+        owner: 'jingyanrong548-del'
+    },
+    'app2': {
+        repo: 'Industrial-Heat-Pump-Matching-Calculator',
+        owner: 'jingyanrong548-del'
+    },
+    'app3': {
+        repo: 'heat-pump-analyzer-pro',
+        owner: 'jingyanrong548-del'
+    }
+};
+
+// Function to fetch version from GitHub API
+async function fetchAppVersion(appKey) {
+    const appConfig = appRepositories[appKey];
+    if (!appConfig) return null;
+    
+    try {
+        // Use GitHub API to get latest release
+        const response = await fetch(
+            `https://api.github.com/repos/${appConfig.owner}/${appConfig.repo}/releases/latest`,
+            {
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            }
+        );
+        
+        if (!response.ok) {
+            // Fallback: try to get from tags if no releases
+            const tagsResponse = await fetch(
+                `https://api.github.com/repos/${appConfig.owner}/${appConfig.repo}/tags`,
+                {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                }
+            );
+            
+            if (tagsResponse.ok) {
+                const tags = await tagsResponse.json();
+                if (tags.length > 0) {
+                    // Extract version from tag (e.g., "v1.3.3" or "1.3.3" -> "V1.3.3")
+                    let tag = tags[0].name.replace(/^v/i, '');
+                    // Ensure it starts with V
+                    if (!tag.match(/^V/i)) {
+                        tag = `V${tag}`;
+                    }
+                    return tag;
+                }
+            }
+            return null;
+        }
+        
+        const data = await response.json();
+        // Extract version from tag_name (e.g., "v1.3.3" or "1.3.3" -> "V1.3.3")
+        let version = data.tag_name.replace(/^v/i, '');
+        // Ensure it starts with V
+        if (!version.match(/^V/i)) {
+            version = `V${version}`;
+        }
+        return version;
+    } catch (error) {
+        console.warn(`Failed to fetch version for ${appKey}:`, error);
+        return null;
+    }
+}
+
+// Function to update app versions
+async function updateAppVersions() {
+    const versionKeys = Object.keys(appRepositories);
+    
+    for (const appKey of versionKeys) {
+        const version = await fetchAppVersion(appKey);
+        if (version) {
+            // Update translations for both languages
+            const versionKey = `apps.${appKey}.version`;
+            if (translations.en[versionKey] !== undefined) {
+                translations.en[versionKey] = version;
+            }
+            if (translations.zh[versionKey] !== undefined) {
+                translations.zh[versionKey] = version;
+            }
+        }
+    }
+    
+    // Re-apply language to update displayed versions
+    setLanguage(currentLanguage);
+}
 
 // Language management
 let currentLanguage = localStorage.getItem('language') || 'zh';
@@ -368,6 +490,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set initial language
     setLanguage(currentLanguage);
+    
+    // Fetch and update app versions from GitHub
+    updateAppVersions();
     
     // 保存和恢复滚动位置（用于应用打开/关闭后返回）
     const SCROLL_POSITION_KEY = 'homepage_scroll_position';
@@ -772,13 +897,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isExpanded) {
                 // 收起
                 insightCard.classList.remove('expanded');
-                excerpt.style.webkitLineClamp = '3';
+                excerpt.style.webkitLineClamp = '8';
                 excerpt.style.display = '-webkit-box';
+                excerpt.style.overflow = 'hidden';
             } else {
                 // 展开
                 insightCard.classList.add('expanded');
                 excerpt.style.webkitLineClamp = 'none';
                 excerpt.style.display = 'block';
+                excerpt.style.overflow = 'visible';
             }
         });
     });
