@@ -123,10 +123,10 @@ const translations = {
         
         // Insights
         'insights.title': 'Engineering Insights',
-        'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -70°C Liquid Trap',
+        'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -45°C Liquid Trap',
         'insights.article1.tag': 'Critical Troubleshooting',
         'insights.article1.date': 'Oct 2023',
-        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.',
+        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -45°C evaporator design. We fixed the system, saving the compressors.',
         'insights.article1.readMore': 'Read Analysis',
         'insights.article2.title': 'Large Screw Compressor Seizure: Not "Oil Starvation", but "Deadly Stacking of Tolerance & Thermal Deformation"',
         'insights.article2.tag': 'Deep Failure Review',
@@ -257,10 +257,10 @@ const translations = {
         
         // Insights
         'insights.title': '工程洞察',
-        'insights.article1.title': '5次现场排查：终结 -70°C 液击"悬案"',
+        'insights.article1.title': '5次现场排查：终结 -45°C 液击"悬案"',
         'insights.article1.tag': '关键故障排查',
         'insights.article1.date': '2023年10月',
-        'insights.article1.excerpt': '<strong>现象：</strong>多台大机组频繁抱死，原厂判定为设备制造缺陷。<br/><br/><strong>真相：</strong>历经 5 次现场深挖，我将根因锁定为系统侧蒸发器设计导致的"偶发性液击"。<br/><br/><strong>结果：</strong>修正系统设计逻辑后，彻底根治了抱死隐患。',
+        'insights.article1.excerpt': '<strong>现象：</strong>多台大机组偶发振动严重超标达 20mm/s，原厂判定为设备制造缺陷。<br/><br/><strong>真相：</strong>历经 5 次现场深挖，我将根因锁定为系统侧蒸发器设计导致的"偶发性液击"。<br/><br/><strong>结果：</strong>修正系统设计逻辑后，彻底根治了振动隐患。',
         'insights.article1.readMore': '阅读分析',
         'insights.article2.title': '大型螺杆机抱死真相：不是"缺油"，是"公差与热变形的死亡叠加"',
         'insights.article2.tag': '深度故障复盘',
