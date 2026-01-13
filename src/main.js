@@ -126,7 +126,7 @@ const translations = {
         'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -45°C Liquid Trap',
         'insights.article1.tag': 'Critical Troubleshooting',
         'insights.article1.date': 'Oct 2023',
-        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -45°C evaporator design. We fixed the system, saving the compressors.',
+        'insights.article1.excerpt': '<strong>Phenomenon:</strong> Multiple large units experienced occasional severe vibration exceeding 20mm/s, initially attributed to manufacturing defects by the original equipment manufacturer.<br/><br/><strong>Truth:</strong> After 5 on-site investigations, I identified the root cause as "occasional liquid slugging" caused by flawed evaporator design on the system side.<br/><br/><strong>Result:</strong> After correcting the system design logic, the vibration issue was completely resolved.',
         'insights.article1.readMore': 'Read Analysis',
         'insights.article2.title': 'Large Screw Compressor Seizure: Not "Oil Starvation", but "Deadly Stacking of Tolerance & Thermal Deformation"',
         'insights.article2.tag': 'Deep Failure Review',
