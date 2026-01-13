@@ -88,7 +88,15 @@ const translations = {
         // Contact
         'contact.title': 'Contact',
         'contact.email': 'Email',
-        'contact.wechat': 'WeChat',
+        'contact.wechat': 'Contact',
+        'contact.tab.saveContact': 'Save Contact',
+        'contact.tab.wechat': 'WeChat',
+        'contact.modal.headline': "Let's Connect",
+        'contact.modal.scanToDownload': 'Save Full Contact Info (Bilingual & Verified).',
+        'contact.modal.downloadVCard': 'Download vCard',
+        'contact.modal.emailLabel': 'Email:',
+        'contact.modal.companyBadge': '🏢 Guangzhou Devotion Thermal Technology (Stock: 300335)',
+        'contact.modal.wechatHeadline': '微信扫一扫',
         
         // Partners
         'partners.title': 'Trusted Partners',
@@ -200,7 +208,15 @@ const translations = {
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
         'contact.email': '邮箱',
-        'contact.wechat': '微信',
+        'contact.wechat': '联系方式',
+        'contact.tab.saveContact': '保存联系人',
+        'contact.tab.wechat': '微信',
+        'contact.modal.headline': '让我们联系',
+        'contact.modal.scanToDownload': '保存完整联系信息（双语 & 已验证）。',
+        'contact.modal.downloadVCard': '下载 vCard',
+        'contact.modal.emailLabel': '邮箱：',
+        'contact.modal.companyBadge': '🏢 广州迪森热能技术股份有限公司（股票代码：300335）',
+        'contact.modal.wechatHeadline': '微信扫一扫',
         
         // Partners
         'partners.title': '值得信赖的合作伙伴',
@@ -630,6 +646,112 @@ document.addEventListener('DOMContentLoaded', function() {
             // Image exists, keep it visible
         };
         checkImage.src = img.src;
+    });
+
+    // Contact Modal functionality
+    const contactModal = document.getElementById('contact-modal');
+    const openContactModalBtn = document.getElementById('open-contact-modal');
+    const closeContactModalBtn = document.getElementById('contact-modal-close');
+    const contactModalOverlay = document.getElementById('contact-modal-overlay');
+    const contactModalTabs = document.querySelectorAll('.contact-modal-tab');
+    const contactModalContents = document.querySelectorAll('.contact-modal-tab-content');
+    
+    // Function to generate vCard QR code URL
+    function generateVCardQRCodeURL() {
+        const vcardPath = '/jingyanrong.vcf';
+        // Get current origin (works for both localhost and production)
+        const baseURL = window.location.origin;
+        const vcardURL = baseURL + vcardPath;
+        // Use QR Server API to generate QR code
+        return `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(vcardURL)}`;
+    }
+    
+    // Update QR code image source on page load
+    const vcardQRCodeImg = document.getElementById('vcard-qrcode');
+    if (vcardQRCodeImg) {
+        vcardQRCodeImg.src = generateVCardQRCodeURL();
+    }
+    
+    // Function to reset modal to default tab (global)
+    function resetModalToDefault() {
+        contactModalTabs.forEach(t => {
+            if (t.getAttribute('data-tab') === 'global') {
+                t.classList.add('active');
+            } else {
+                t.classList.remove('active');
+            }
+        });
+        contactModalContents.forEach(content => {
+            if (content.getAttribute('data-content') === 'global') {
+                content.classList.add('active');
+            } else {
+                content.classList.remove('active');
+            }
+        });
+    }
+    
+    // Open modal
+    if (openContactModalBtn && contactModal) {
+        openContactModalBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            resetModalToDefault();
+            contactModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent body scroll
+            
+            // Reset scroll position of modal body to top
+            const modalBody = contactModal.querySelector('.contact-modal-body');
+            if (modalBody) {
+                modalBody.scrollTop = 0;
+            }
+        });
+    } else {
+        console.warn('Contact modal elements not found:', {
+            button: !!openContactModalBtn,
+            modal: !!contactModal
+        });
+    }
+    
+    // Close modal
+    function closeContactModal() {
+        if (contactModal) {
+            contactModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore body scroll
+        }
+    }
+    
+    if (closeContactModalBtn) {
+        closeContactModalBtn.addEventListener('click', closeContactModal);
+    }
+    
+    if (contactModalOverlay) {
+        contactModalOverlay.addEventListener('click', closeContactModal);
+    }
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && contactModal && contactModal.classList.contains('active')) {
+            closeContactModal();
+        }
+    });
+    
+    // Tab switching
+    contactModalTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Update active tab
+            contactModalTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update active content
+            contactModalContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.getAttribute('data-content') === targetTab) {
+                    content.classList.add('active');
+                }
+            });
+        });
     });
 
     console.log('Personal homepage loaded successfully!');

@@ -448,13 +448,13 @@
                     <span class="contact-icon">📧</span>
                     <span data-i18n="contact.email">Email</span>
                 </a>
-                <div class="footer-link contact-wechat">
-                    <span class="contact-icon">💬</span>
-                    <span data-i18n="contact.wechat">WeChat</span>
-                    <div class="wechat-qrcode">
-                        <img src="/wechat-qrcode.png" alt="微信二维码" />
-                    </div>
-                </div>
+                <button class="footer-link contact-wechat-btn" id="open-contact-modal" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span data-i18n="contact.wechat">Contact</span>
+                </button>
             </div>
 
             <!-- Disclaimer -->
@@ -472,5 +472,68 @@
             </div>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="contact-modal">
+        <div class="contact-modal-overlay" id="contact-modal-overlay"></div>
+        <div class="contact-modal-content">
+            <button class="contact-modal-close" id="contact-modal-close" type="button" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Tab Navigation -->
+            <div class="contact-modal-tabs">
+                <button class="contact-modal-tab active" data-tab="global" type="button">
+                    <span data-i18n="contact.tab.saveContact">Save Contact</span>
+                </button>
+                <button class="contact-modal-tab" data-tab="wechat" type="button">
+                    <span data-i18n="contact.tab.wechat">WeChat</span>
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="contact-modal-body">
+                <!-- Global Tab (Save Contact) -->
+                <div class="contact-modal-tab-content active" data-content="global">
+                    <h2 class="contact-modal-headline" data-i18n="contact.modal.headline">Let's Connect</h2>
+                    <div class="contact-modal-actions">
+                        <!-- QR Code for vCard Download -->
+                        <div class="contact-modal-qrcode-container">
+                            <p class="contact-modal-qrcode-label" data-i18n="contact.modal.scanToDownload">Scan to download vCard</p>
+                            <div class="contact-modal-qrcode-vcard">
+                                <img id="vcard-qrcode" src="" alt="vCard QR Code" />
+                            </div>
+                        </div>
+                        <a href="/jingyanrong.vcf" download="jingyanrong.vcf" class="contact-modal-vcard-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span data-i18n="contact.modal.downloadVCard">Download vCard</span>
+                        </a>
+                        <div class="contact-modal-company-badge">
+                            <span data-i18n="contact.modal.companyBadge">🏢 Guangzhou Devotion Thermal Technology (Stock: 300335)</span>
+                        </div>
+                        <div class="contact-modal-email">
+                            <span class="contact-modal-email-label" data-i18n="contact.modal.emailLabel">Email:</span>
+                            <span class="contact-modal-email-value">jingyanrong548@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WeChat Tab -->
+                <div class="contact-modal-tab-content" data-content="wechat">
+                    <h2 class="contact-modal-headline" data-i18n="contact.modal.wechatHeadline">微信扫一扫</h2>
+                    <div class="contact-modal-qrcode">
+                        <img src="/wechat-qrcode.png" alt="微信二维码" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

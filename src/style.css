@@ -1816,6 +1816,310 @@ body {
     pointer-events: auto;
 }
 
+/* Contact Modal */
+.contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.contact-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.contact-modal-content {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background: var(--bg-white);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 480px;
+    max-height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 10001;
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: all 0.2s ease;
+    z-index: 10002;
+}
+
+.contact-modal-close:hover {
+    background: var(--slate-200);
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+.contact-modal-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    padding: 0 24px;
+    background: var(--bg-light);
+    flex-shrink: 0;
+}
+
+.contact-modal-tab {
+    flex: 1;
+    padding: 16px 24px;
+    border: none;
+    background: transparent;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.contact-modal-tab:hover {
+    color: var(--emerald-700);
+    background: rgba(4, 120, 87, 0.05);
+}
+
+.contact-modal-tab.active {
+    color: var(--emerald-700);
+    border-bottom-color: var(--emerald-700);
+    background: var(--bg-white);
+}
+
+.contact-modal-body {
+    padding: 4px 24px 12px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.contact-modal-tab-content {
+    display: none;
+}
+
+.contact-modal-tab-content.active {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-modal-headline {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    margin-top: 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.contact-modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 0;
+}
+
+.contact-modal-vcard-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background: var(--emerald-700);
+    color: var(--text-white);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.3);
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-modal-vcard-btn:hover {
+    background: var(--emerald-600);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(4, 120, 87, 0.4);
+}
+
+.contact-modal-vcard-btn:active {
+    transform: translateY(0);
+}
+
+.contact-modal-vcard-btn svg {
+    flex-shrink: 0;
+}
+
+.contact-modal-qrcode-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.contact-modal-qrcode-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.contact-modal-qrcode-vcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: var(--bg-white);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-modal-qrcode-vcard img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.contact-modal-company-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.contact-modal-company-badge span {
+    font-size: 0.8125rem;
+    color: var(--text-lighter);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.contact-modal-email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 16px;
+    background: var(--bg-light);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+.contact-modal-email-label {
+    font-size: 0.875rem;
+    color: var(--text-lighter);
+    font-weight: 500;
+}
+
+.contact-modal-email-value {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 600;
+    word-break: break-all;
+    text-align: center;
+    user-select: all;
+    cursor: text;
+}
+
+.contact-modal-qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--bg-light);
+    border-radius: 12px;
+}
+
+.contact-modal-qrcode img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Update footer link button style */
+.contact-wechat-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .footer-disclaimer {
     max-width: 800px;
     margin: 0 auto;
@@ -2250,6 +2554,85 @@ body {
         width: 140px;
         height: 140px;
         padding: 8px;
+    }
+
+    /* Contact Modal Mobile Styles */
+    .contact-modal-content {
+        width: 95%;
+        max-width: 95%;
+        max-height: 85vh;
+        border-radius: 12px;
+    }
+
+    .contact-modal-body {
+        padding: 12px 16px 20px;
+        justify-content: flex-start;
+    }
+
+    .contact-modal-headline {
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .contact-modal-actions {
+        gap: 12px;
+    }
+
+    .contact-modal-tabs {
+        padding: 0 16px;
+    }
+
+    .contact-modal-tab {
+        padding: 12px 16px;
+        font-size: 0.9375rem;
+    }
+
+    .contact-modal-vcard-btn {
+        padding: 14px 24px;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .contact-modal-email {
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .contact-modal-email-value {
+        font-size: 1.125rem;
+    }
+
+    .contact-modal-qrcode {
+        padding: 16px;
+    }
+
+    .contact-modal-qrcode img {
+        max-width: 100%;
+    }
+
+    .contact-modal-qrcode-vcard {
+        padding: 12px;
+    }
+
+    .contact-modal-qrcode-vcard img {
+        max-width: 200px;
+    }
+
+    .contact-modal-qrcode-label {
+        font-size: 0.875rem;
+    }
+
+    .contact-modal-company-badge span {
+        font-size: 0.75rem;
+        padding: 0 8px;
+    }
+
+    .contact-modal-close {
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
     }
 
     .purpose-notice::before,
