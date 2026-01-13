@@ -8,17 +8,10 @@ const translations = {
         
         // Hero
         'hero.title': 'Jing Yanrong',
-        'hero.subtitle': 'Industrial Refrigeration & Heat Pump Expert | Full-Stack Developer',
-        'hero.description': 'Focusing on -100°C to +250°C industrial thermal energy solutions, refactoring engineering calculations with code.',
-        'hero.cta': 'Browse Apps',
-        
-        // Stats
-        'stats.experience.number': '{experienceYears}+ Years',
-        'stats.experience.label': 'Industry Experience',
-        'stats.title.number': 'Registered Public Utility Equipment Engineer',
-        'stats.title.label': 'Professional Qualification',
-        'stats.projects.number': '100+',
-        'stats.projects.label': 'Success Cases',
+        'hero.badge': '✓ Licensed PE & Human Verified',
+        'hero.headline': '{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.',
+        'hero.subheadline': 'Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.',
+        'hero.cta': 'Explore My Tools',
         
         // About
         'about.title': 'About',
@@ -48,8 +41,8 @@ const translations = {
         'expertise.lowTemp.capacity': 'Capacity: 100 kW - 10,000 kW.',
         
         // Apps
-        'apps.title': 'Engineering Tools',
-        'apps.description': '',
+        'apps.title': 'Engineering Toolbox',
+        'apps.description': 'Open-source tools with verifiable logic and real physics formulas',
         'apps.app0.title': 'Engineering Unit Converter',
         'apps.app0.version': 'V2.0.0',
         'apps.app0.description': 'Fast and accurate unit conversion tool for engineering calculations',
@@ -83,6 +76,8 @@ const translations = {
         'apps.available': 'Available',
         'apps.comingSoon': 'Coming Soon',
         'apps.moreComing': 'Currently {count} applications available. More tools are in development!',
+        'apps.launch': 'Launch App',
+        'apps.viewSource': 'View Source / Logic',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -91,9 +86,38 @@ const translations = {
         
         // Contact
         'contact.title': 'Contact',
-        'contact.wechat': 'WeChat: jingyanrongdalian',
+        'contact.email': 'Email',
+        'contact.wechat': 'WeChat',
+        
+        // Partners
+        'partners.title': 'Trusted Partners',
+        
+        // Testimonials
+        'testimonials.text1': '"Solved a complex compressor vibration issue that AI models couldn\'t predict."',
+        'testimonials.author1': '— Industrial Client, Germany',
+        'testimonials.text2': '"Exceptional engineering judgment combined with practical digital solutions."',
+        'testimonials.author2': '— Partner, Leading International Enterprise',
+        
+        // Insights
+        'insights.title': 'Engineering Insights',
+        'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -70°C Liquid Trap',
+        'insights.article1.tag': 'Critical Troubleshooting',
+        'insights.article1.date': 'Oct 2023',
+        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -70°C evaporator design. We fixed the system, saving the compressors.',
+        'insights.article1.readMore': 'Read Analysis',
+        'insights.article2.title': 'Compression vs. Absorption: Why I Bet on Electric Drive',
+        'insights.article2.tag': 'Strategic Decision',
+        'insights.article2.date': 'Feb 2025',
+        'insights.article2.excerpt': 'Textbooks say "use waste heat for absorption", but reality demands stability. By locking in R1234ze(E) and a COP of 4.44, I proved that electric compression offers lower delivery risk than complex steam-balance absorption systems.',
+        'insights.article2.readMore': 'Read Analysis',
+        'insights.article3.title': 'Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)',
+        'insights.article3.tag': 'Industry Outlook',
+        'insights.article3.date': 'Sep 2025',
+        'insights.article3.excerpt': 'Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.',
+        'insights.article3.readMore': 'Read Analysis',
         
         // Footer
+        'footer.introTitle': 'Open Source Engineering. Connect with my Digital Twin.',
         'footer.copyright': '© {year} Jing Yanrong. Open Source Engineering.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
@@ -105,15 +129,10 @@ const translations = {
         'nav.about': '关于',
         'nav.apps': '应用',
         'hero.title': '荆炎荣',
-        'hero.subtitle': '工业制冷与工业热泵专家 | 全栈开发者',
-        'hero.description': '专注 -100°C 至 +250°C 工业热能解决方案，用代码重构工程计算。',
-        'hero.cta': '浏览应用',
-        'stats.experience.number': '{experienceYears}年+',
-        'stats.experience.label': '行业经验',
-        'stats.title.number': '注册公用设备工程师',
-        'stats.title.label': '专业资格',
-        'stats.projects.number': '100+',
-        'stats.projects.label': '成功案例',
+        'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
+        'hero.headline': '将{experienceYears}年+工程判断力编码为工具。',
+        'hero.subheadline': '专注于工业制冷与热泵系统（-100°C至+200°C）。连接物理热力学与数字代码的桥梁。',
+        'hero.cta': '探索我的工具',
         'about.title': '关于',
         'about.text1': '专注于工业能源系统工程，涵盖制冷、热泵、热能、压缩、储能、余热回收及冷热耦合等领域，致力于通过创新设计与智能化应用，优化系统性能，推进绿色低碳技术的工程实践与发展。',
         'about.text2': '提供实用的应用程序和工具，涵盖设计优化、能效分析和系统性能计算等方面，助力工业能源系统的工程应用与优化。',
@@ -138,7 +157,7 @@ const translations = {
         'expertise.lowTemp.process': '工艺冷却：复杂级联系统及天然制冷剂（NH3/CO2）。',
         'expertise.lowTemp.capacity': '容量范围：100 kW - 10,000 kW。',
         'apps.title': '工程计算工具箱',
-        'apps.description': '',
+        'apps.description': '开源工具，具有可验证的逻辑和真实的物理公式',
         'apps.app0.title': '工程单位换算器',
         'apps.app0.version': 'V2.0.0',
         'apps.app0.description': '快速、准确的工程计算单位转换工具',
@@ -172,11 +191,44 @@ const translations = {
         'apps.available': '可用',
         'apps.comingSoon': '即将推出',
         'apps.moreComing': '目前提供 {count} 个应用，更多实用工具正在开发中，敬请期待！',
+        'apps.launch': '启动应用',
+        'apps.viewSource': '查看源码 / 逻辑',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
-        'contact.wechat': '微信: jingyanrongdalian',
+        'contact.email': '邮箱',
+        'contact.wechat': '微信',
+        
+        // Partners
+        'partners.title': '值得信赖的合作伙伴',
+        
+        // Testimonials
+        'testimonials.text1': '"解决了一个AI模型无法预测的复杂压缩机振动问题。"',
+        'testimonials.author1': '— 德国某工业客户',
+        'testimonials.text2': '"卓越的工程判断力与实用的数字解决方案相结合。"',
+        'testimonials.author2': '— 国际头部企业合作伙伴',
+        
+        // Insights
+        'insights.title': '工程洞察',
+        'insights.article1.title': '5次现场排查解决"神秘"抱死：-70°C液压缩陷阱',
+        'insights.article1.tag': '关键故障排查',
+        'insights.article1.date': '2023年10月',
+        'insights.article1.excerpt': '多台大型压缩机抱死，最初被归咎于制造缺陷。经过5次现场检查，我追踪到根本原因不在机器本身，而在系统：由有缺陷的-70°C蒸发器设计引起的偶然液压缩。我们修复了系统，保住了压缩机。',
+        'insights.article1.readMore': '阅读分析',
+        'insights.article2.title': '压缩式 vs 吸收式：为何我坚持在工业项目中首选"电驱动"',
+        'insights.article2.tag': '技术决策',
+        'insights.article2.date': '2025年2月',
+        'insights.article2.excerpt': '当书本建议"利用废热做吸收式"时，工程直觉告诉我：不要低估蒸汽平衡的复杂性。通过COP 4.44的实测数据与R1234ze(E)的环保优势，证明了在电力充足场景下，压缩式热泵才是交付风险最低、可控性最强的路径。',
+        'insights.article2.readMore': '阅读分析',
+        'insights.article3.title': '拒绝"PPT造车"：工业热泵的下一个护城河是"极端工况测试"',
+        'insights.article3.tag': '行业前瞻',
+        'insights.article3.date': '2025年9月',
+        'insights.article3.excerpt': '行业都在卷120°C/160°C的指标，但谁能证明它？真正的门槛不是造出样机，而是建立一套能模拟-40°C到+200°C蒸汽热汇的CNAS级验证体系。未来属于"能测、能证、能复现"的企业。',
+        'insights.article3.readMore': '阅读分析',
+        
+        // Footer
+        'footer.introTitle': '开源工程。与我的数字孪生连接。',
         'footer.copyright': '© {year} 荆炎荣. Open Source Engineering.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
@@ -378,41 +430,45 @@ document.addEventListener('DOMContentLoaded', function() {
         saveScrollPosition();
     });
     
-    // 处理应用链接点击 - 使用最简单的方式，确保只打开一次
-    const appCards = document.querySelectorAll('.app-card[href]');
+    // 处理应用链接点击 - 现在应用卡片包含独立的Launch和Source链接
+    const appLaunchBtns = document.querySelectorAll('.app-launch-btn');
+    const appSourceLinks = document.querySelectorAll('.app-source-link');
     
-    appCards.forEach(card => {
-        // 移除target属性，由JavaScript控制
-        card.removeAttribute('target');
-        
-        card.addEventListener('click', function(e) {
+    // 处理Launch按钮点击
+    appLaunchBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             if (!href || !href.startsWith('http')) {
                 return;
             }
             
-            // 阻止默认行为
-            e.preventDefault();
-            e.stopPropagation();
-            e.stopImmediatePropagation();
-            
             // 检查是否已经在打开
             const openingKey = 'opening_' + btoa(href).substring(0, 10);
             if (sessionStorage.getItem(openingKey) === 'true') {
+                e.preventDefault();
                 return;
             }
             
             // 设置标志
             sessionStorage.setItem(openingKey, 'true');
             
-            // 打开链接
-            window.open(href, '_blank', 'noopener,noreferrer');
-            
             // 1秒后清除标志
             setTimeout(() => {
                 sessionStorage.removeItem(openingKey);
             }, 1000);
-        }, { once: false, passive: false, capture: true });
+        });
+    });
+    
+    // 处理Source链接点击（GitHub链接）
+    appSourceLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (!href || !href.startsWith('http')) {
+                return;
+            }
+            
+            // GitHub链接直接打开，不需要特殊处理
+        });
     });
     
     // Language switcher buttons
@@ -536,6 +592,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+
+    // Hide partner logos that failed to load
+    const partnerLogos = document.querySelectorAll('.partner-logo img');
+    partnerLogos.forEach(img => {
+        img.addEventListener('error', function() {
+            this.parentElement.style.display = 'none';
+        });
+        
+        // Also check if image loaded successfully after a short delay
+        const checkImage = new Image();
+        checkImage.onerror = () => {
+            img.parentElement.style.display = 'none';
+        };
+        checkImage.onload = () => {
+            // Image exists, keep it visible
+        };
+        checkImage.src = img.src;
+    });
 
     console.log('Personal homepage loaded successfully!');
 });
