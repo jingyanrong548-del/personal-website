@@ -490,26 +490,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return 100; // Fallback
     }
 
-    // Helper function to scroll to section
+    // Helper function to scroll to section (centered in viewport)
     function scrollToSection(sectionId) {
         const targetSection = document.querySelector(sectionId);
         if (targetSection) {
-            const offset = getScrollOffset();
-            // Use scrollIntoView with block: 'start' and then adjust for navbar offset
-            // This is more reliable than scrollTo
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            
-            // After scrollIntoView, we need to adjust for navbar height
-            // Use requestAnimationFrame to ensure scrollIntoView has started
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    const currentScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-                    const adjustedScrollY = currentScrollY - offset;
-                    window.scrollTo({
-                        top: Math.max(0, adjustedScrollY),
-                        behavior: 'smooth'
-                    });
-                });
+            // Use scrollIntoView with block: 'center' to center the section in viewport
+            // This is the most reliable method for centering elements
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'nearest'
             });
             return true;
         }
