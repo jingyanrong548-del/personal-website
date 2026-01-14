@@ -782,13 +782,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactModalContents = document.querySelectorAll('.contact-modal-tab-content');
     
     // Function to generate vCard QR code URL
+    // 直接在二维码中嵌入vCard内容，而不是URL，这样可以避免服务器连接问题
     function generateVCardQRCodeURL() {
-        const vcardPath = '/jingyanrong.vcf';
-        // Get current origin (works for both localhost and production)
-        const baseURL = window.location.origin;
-        const vcardURL = baseURL + vcardPath;
-        // Use QR Server API to generate QR code
-        return `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(vcardURL)}`;
+        // vCard内容（与 public/jingyanrong.vcf 保持一致）
+        const vcardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:Jing Yanrong (荆炎荣)
+N:Jing;Yanrong;;;
+TITLE:Senior Engineer | Heat Pump Expert
+ROLE:Industrial Heat Pump Expert
+ORG:Guangzhou Devotion Thermal Technology Co., Ltd.;(Stock: 300335)
+TEL;TYPE=CELL,VOICE:+8615280122625
+EMAIL;TYPE=WORK,INTERNET:jingyanrong548@gmail.com
+EMAIL;TYPE=HOME,INTERNET:jingyanrong@126.com
+URL:https://jingyanrong.com
+ADR;TYPE=WORK:;;No. 5, Second Canglian Road, Huangpu District;Guangzhou;Guangdong;510760;China
+NOTE:Specializing in High-Temp Heat Pumps & Industrial Refrigeration (-100°C to +200°C) | System Optimization.
+END:VCARD`;
+        // 使用QR Server API生成二维码，直接嵌入vCard内容
+        return `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(vcardContent)}`;
     }
     
     // Update QR code image source on page load
