@@ -475,6 +475,62 @@ function setLanguage(lang) {
             btn.classList.add('active');
         }
     });
+    
+    // Update vCard download button and QR code based on language
+    // 直接在这里更新，避免作用域问题
+    const vcardDownloadBtn = document.getElementById('vcard-download-btn');
+    if (vcardDownloadBtn) {
+        if (lang === 'zh') {
+            vcardDownloadBtn.href = '/jingyanrong-zh.vcf';
+            vcardDownloadBtn.download = 'jingyanrong-zh.vcf';
+        } else {
+            vcardDownloadBtn.href = '/jingyanrong-en.vcf';
+            vcardDownloadBtn.download = 'jingyanrong-en.vcf';
+        }
+    }
+    
+    // Update QR code - 生成对应语言的 vCard 内容
+    const vcardQRCodeImg = document.getElementById('vcard-qrcode');
+    if (vcardQRCodeImg) {
+        // 生成对应语言的 vCard 内容
+        let vcardContent;
+        if (lang === 'zh') {
+            vcardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:荆炎荣 (Jing Yanrong)
+N:荆;炎荣;;;
+TITLE:高级工程师 | 热泵专家
+ROLE:工业热泵专家
+ORG:广州迪森热能技术股份有限公司;(股票代码: 300335)
+TEL;TYPE=CELL,VOICE:+8615280122625
+EMAIL;TYPE=WORK,INTERNET:jingyanrong548@gmail.com
+EMAIL;TYPE=HOME,INTERNET:jingyanrong@126.com
+URL:https://jingyanrong.com
+ADR;TYPE=WORK:;;黄埔区沧联二路5号;广州市;广东省;510760;中国
+NOTE:专注于高温热泵与工业制冷 (-100°C 至 +200°C) | 系统优化。
+END:VCARD`;
+        } else {
+            vcardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:Jing Yanrong (荆炎荣)
+N:Jing;Yanrong;;;
+TITLE:Senior Engineer | Heat Pump Expert
+ROLE:Industrial Heat Pump Expert
+ORG:Guangzhou Devotion Thermal Technology Co., Ltd.;(Stock: 300335)
+TEL;TYPE=CELL,VOICE:+8615280122625
+EMAIL;TYPE=WORK,INTERNET:jingyanrong548@gmail.com
+EMAIL;TYPE=HOME,INTERNET:jingyanrong@126.com
+URL:https://jingyanrong.com
+ADR;TYPE=WORK:;;No. 5, Second Canglian Road, Huangpu District;Guangzhou;Guangdong;510760;China
+NOTE:Specializing in High-Temp Heat Pumps & Industrial Refrigeration (-100°C to +200°C) | System Optimization.
+END:VCARD`;
+        }
+        // 先清空 src，强制浏览器重新加载
+        vcardQRCodeImg.src = '';
+        // 添加时间戳参数防止缓存
+        const qrCodeURL = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(vcardContent)}&t=${Date.now()}`;
+        vcardQRCodeImg.src = qrCodeURL;
+    }
 }
 
 // Smooth scroll behavior and interactive features
@@ -783,9 +839,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to generate vCard QR code URL
     // 直接在二维码中嵌入vCard内容，而不是URL，这样可以避免服务器连接问题
-    function generateVCardQRCodeURL() {
-        // vCard内容（与 public/jingyanrong.vcf 保持一致）
-        const vcardContent = `BEGIN:VCARD
+    function generateVCardQRCodeURL(lang = currentLanguage) {
+        // 根据语言选择对应的 vCard 内容
+        let vcardContent;
+        if (lang === 'zh') {
+            // 中文版 vCard
+            vcardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:荆炎荣 (Jing Yanrong)
+N:荆;炎荣;;;
+TITLE:高级工程师 | 热泵专家
+ROLE:工业热泵专家
+ORG:广州迪森热能技术股份有限公司;(股票代码: 300335)
+TEL;TYPE=CELL,VOICE:+8615280122625
+EMAIL;TYPE=WORK,INTERNET:jingyanrong548@gmail.com
+EMAIL;TYPE=HOME,INTERNET:jingyanrong@126.com
+URL:https://jingyanrong.com
+ADR;TYPE=WORK:;;黄埔区沧联二路5号;广州市;广东省;510760;中国
+NOTE:专注于高温热泵与工业制冷 (-100°C 至 +200°C) | 系统优化。
+END:VCARD`;
+        } else {
+            // 英文版 vCard
+            vcardContent = `BEGIN:VCARD
 VERSION:3.0
 FN:Jing Yanrong (荆炎荣)
 N:Jing;Yanrong;;;
@@ -799,15 +874,38 @@ URL:https://jingyanrong.com
 ADR;TYPE=WORK:;;No. 5, Second Canglian Road, Huangpu District;Guangzhou;Guangdong;510760;China
 NOTE:Specializing in High-Temp Heat Pumps & Industrial Refrigeration (-100°C to +200°C) | System Optimization.
 END:VCARD`;
+        }
         // 使用QR Server API生成二维码，直接嵌入vCard内容
         return `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(vcardContent)}`;
     }
     
-    // Update QR code image source on page load
-    const vcardQRCodeImg = document.getElementById('vcard-qrcode');
-    if (vcardQRCodeImg) {
-        vcardQRCodeImg.src = generateVCardQRCodeURL();
+    // Function to update vCard download button and QR code based on language
+    function updateVCardForLanguage(lang) {
+        // Update download button
+        const vcardDownloadBtn = document.getElementById('vcard-download-btn');
+        if (vcardDownloadBtn) {
+            if (lang === 'zh') {
+                vcardDownloadBtn.href = '/jingyanrong-zh.vcf';
+                vcardDownloadBtn.download = 'jingyanrong-zh.vcf';
+            } else {
+                vcardDownloadBtn.href = '/jingyanrong-en.vcf';
+                vcardDownloadBtn.download = 'jingyanrong-en.vcf';
+            }
+        }
+        
+        // Update QR code - 添加时间戳防止缓存
+        const vcardQRCodeImg = document.getElementById('vcard-qrcode');
+        if (vcardQRCodeImg) {
+            // 先清空 src，强制浏览器重新加载
+            vcardQRCodeImg.src = '';
+            // 添加时间戳参数防止缓存
+            const qrCodeURL = generateVCardQRCodeURL(lang) + '&t=' + Date.now();
+            vcardQRCodeImg.src = qrCodeURL;
+        }
     }
+    
+    // Update QR code image source on page load
+    updateVCardForLanguage(currentLanguage);
     
     // Function to reset modal to default tab (global)
     function resetModalToDefault() {
