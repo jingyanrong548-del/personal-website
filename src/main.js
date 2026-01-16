@@ -25,7 +25,7 @@ const translations = {
         'about.matrix.1.sub': 'Leading Enterprises',
         'about.matrix.2.label': 'Core Domain',
         'about.matrix.2.value': 'Full Range',
-        'about.matrix.2.sub': 'Wide Temperature Range',
+        'about.matrix.2.sub': 'Wide-Range Technology',
         'about.matrix.3.label': 'Delivery Tools',
         'about.matrix.3.value': 'Python / React',
         'about.matrix.3.sub': 'Algorithm Encapsulation',
@@ -133,10 +133,10 @@ const translations = {
         'insights.article2.date': 'Jun 2024',
         'insights.article2.excerpt': '<strong>Misconception:</strong> Normal oil level (60%+) ≠ effective lubrication. Simply replacing bearings cannot solve "critical friction".<br/><br/><strong>Truth:</strong> Deep disassembly revealed that <strong>a certain series of heavy-duty models</strong> under maximum tolerance combination, the male rotor engages the female rotor by approximately <strong>35μm</strong>. Combined with asymmetric oil supply at the suction end and thermal deformation, the sealing line collapses without an oil film.<br/><br/><strong>Conclusion:</strong> True repair must address both "reconstructing the tolerance chain from the manufacturing side" and "adding critical protection on the operational side".',
         'insights.article2.readMore': 'Read Analysis',
-        'insights.article3.title': 'Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)',
+        'insights.article3.title': 'Industry Deep Waters: Rejecting "Spec-Sheet Engineering"',
         'insights.article3.tag': 'Industry Outlook',
         'insights.article3.date': 'Sep 2025',
-        'insights.article3.excerpt': 'Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.',
+        'insights.article3.excerpt': '<strong>Current State:</strong> The industry is racing for 160°C specifications, yet lacks extreme condition verification.<br/><br/><strong>Barrier:</strong> The real moat is a <strong>CNAS-level full temperature range testing system</strong> (-40°C to +200°C).<br/><br/><strong>Future:</strong> Transition from "manufacturing machines" to "delivering verifiable real performance".',
         'insights.article3.readMore': 'Read Analysis',
         
         // Footer
