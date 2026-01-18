@@ -1,3 +1,9 @@
+// Vercel Analytics
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Analytics
+inject();
+
 // Language data
 const translations = {
     en: {
