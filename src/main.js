@@ -58,6 +58,15 @@ const translations = {
         // Apps
         'apps.title': 'Engineering Toolbox',
         'apps.description': 'Open-source tools with verifiable logic and real physics formulas',
+        'apps.appOfc.title': 'Oil-Free Compressor Performance Calculator',
+        'apps.appOfc.version': 'V9.0',
+        'apps.appOfc.description': 'Comprehensive performance calculation tool for oil-free compressors with refrigeration, heat pump, gas compression, and MVR support',
+        'apps.appOc.title': 'Oil-injected Compressor Calculator',
+        'apps.appOc.version': 'V7.2.23',
+        'apps.appOc.description': 'Performance calculation tool for oil-injected compressors with refrigeration, heat pump, gas compression, single-stage, two-stage, and ammonia heat pump support',
+        'apps.appExp.title': 'Expander Performance Calculator',
+        'apps.appExp.version': 'V7.2.0',
+        'apps.appExp.description': 'Comprehensive performance calculation tool for expanders with ORC, steam, and gas expansion support',
         'apps.app0.title': 'Engineering Unit Converter',
         'apps.app0.version': 'V2.0.0',
         'apps.app0.description': 'Fast and accurate unit conversion tool for engineering calculations',
@@ -196,6 +205,15 @@ const translations = {
         'expertise.lowTemp.capacity': '容量范围：100 kW - 10,000 kW。',
         'apps.title': '工程计算工具箱',
         'apps.description': '开源工具，具有可验证的逻辑和真实的物理公式',
+        'apps.appOfc.title': '无油压缩机性能计算器',
+        'apps.appOfc.version': 'V9.0',
+        'apps.appOfc.description': '无油压缩机性能计算工具，支持制冷热泵、气体压缩、MVR等多种模式',
+        'apps.appOc.title': '喷油螺杆压缩机计算器',
+        'apps.appOc.version': 'V7.2.23',
+        'apps.appOc.description': '喷油螺杆压缩机性能计算工具，支持制冷热泵、气体压缩、单级、复叠、单机双级、双机双级、氨热泵等模式',
+        'apps.appExp.title': '膨胀机性能计算器',
+        'apps.appExp.version': 'V7.2.0',
+        'apps.appExp.description': '膨胀机综合性能计算工具，支持ORC、水蒸汽、气体膨胀等模式',
         'apps.app0.title': '工程单位换算器',
         'apps.app0.version': 'V2.0.0',
         'apps.app0.description': '快速、准确的工程计算单位转换工具',
@@ -422,10 +440,11 @@ function setLanguage(lang) {
         
         // Special handling for app titles: append version number if available
         if (key.startsWith('apps.app') && key.endsWith('.title')) {
-            // Handle production apps: apps.app0.title, apps.app1.title, etc.
-            const appIndex = key.match(/apps\.app(\d+)\.title$/);
-            if (appIndex) {
-                const versionKey = `apps.app${appIndex[1]}.version`;
+            // Handle production apps: apps.app0.title, apps.app1.title, apps.appOfc.title, etc.
+            const appMatch = key.match(/apps\.app(.+?)\.title$/);
+            if (appMatch) {
+                const appKey = appMatch[1];
+                const versionKey = `apps.app${appKey}.version`;
                 const version = translations[lang][versionKey];
                 if (version && version.trim() !== '') {
                     text = `${text} ${version}`;
