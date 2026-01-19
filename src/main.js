@@ -63,7 +63,7 @@ const translations = {
         
         // Apps
         'apps.title': 'Engineering Toolbox',
-        'apps.description': 'Open-source tools with verifiable logic and real physics formulas',
+        'apps.description': 'Publicly available tools with verifiable logic and real physics formulas',
         'apps.appOfc.title': 'Oil-Free Compressor Performance Calculator',
         'apps.appOfc.version': 'V9.0',
         'apps.appOfc.description': 'Comprehensive performance calculation tool for oil-free compressors with refrigeration, heat pump, gas compression, and MVR support',
@@ -114,7 +114,7 @@ const translations = {
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
-        'disclaimer.text1': 'All applications are provided for personal research, educational, and public benefit purposes only on a non-commercial, open-source basis. For commercial use, please contact me in advance to obtain authorization.',
+        'disclaimer.text1': 'All applications are provided for personal research, educational, and public benefit purposes only on a non-commercial, free-to-use basis. For commercial use, please contact me in advance to obtain authorization.',
         'disclaimer.text2': 'Tools are provided "as is" without warranty of any kind. Use at your own risk.',
         
         // Contact
@@ -158,8 +158,8 @@ const translations = {
         'insights.article3.readMore': 'Read Analysis',
         
         // Footer
-        'footer.introTitle': 'Open Source Engineering. Connect with my Digital Twin.',
-        'footer.copyright': '© {year} Jing Yanrong. Open Source Engineering.',
+        'footer.introTitle': 'Public Engineering Tools. Connect with my Digital Twin.',
+        'footer.copyright': '© {year} Jing Yanrong. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': 'Version',
@@ -213,7 +213,7 @@ const translations = {
         'expertise.lowTemp.process': '工艺冷却：复杂级联系统及天然制冷剂（NH3/CO2）。',
         'expertise.lowTemp.capacity': '容量范围：100 kW - 10,000 kW。',
         'apps.title': '工程计算工具箱',
-        'apps.description': '开源工具，具有可验证的逻辑和真实的物理公式',
+        'apps.description': '公开可用的工具，具有可验证的逻辑和真实的物理公式',
         'apps.appOfc.title': '无油压缩机性能计算器',
         'apps.appOfc.version': 'V9.0',
         'apps.appOfc.description': '无油压缩机性能计算工具，支持制冷热泵、气体压缩、MVR等多种模式',
@@ -262,7 +262,7 @@ const translations = {
         'apps.launch': '启动应用',
         'apps.viewSource': '查看源码 / 逻辑',
         'disclaimer.title': '免责声明',
-        'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、开源方式提供。如用于商业用途，请事先联系获得授权。',
+        'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、免费方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
         'contact.email': '邮箱',
@@ -304,8 +304,8 @@ const translations = {
         'insights.article3.readMore': '阅读分析',
         
         // Footer
-        'footer.introTitle': '开源工程。与我的数字孪生连接。',
-        'footer.copyright': '© {year} 荆炎荣. Open Source Engineering.',
+        'footer.introTitle': '公共工程工具。与我的数字孪生连接。',
+        'footer.copyright': '© {year} 荆炎荣. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': '版本',
