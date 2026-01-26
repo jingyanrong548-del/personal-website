@@ -1111,6 +1111,271 @@ body {
     color: var(--text-light);
 }
 
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resume-section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.resume-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-list li {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.resume-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--emerald-600);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.resume-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Experience Items */
+.resume-experience-item {
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    background: var(--slate-50);
+    border-radius: 8px;
+    border-left: 3px solid var(--emerald-600);
+    transition: all 0.3s ease;
+}
+
+.resume-experience-item:hover {
+    background: var(--bg-white);
+    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.1);
+    transform: translateX(4px);
+}
+
+.resume-experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.resume-company {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.875rem;
+    line-height: 1.5;
+}
+
+.resume-company::before {
+    content: '🏢';
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Skills Categories */
+.resume-skills-category {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--slate-50);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.resume-skills-category:hover {
+    background: var(--bg-white);
+    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.08);
+}
+
+.resume-skills-category:last-child {
+    margin-bottom: 0;
+}
+
+.resume-skills-digital {
+    background: linear-gradient(135deg, rgba(4, 120, 87, 0.05), rgba(5, 150, 105, 0.03));
+    border: 1px solid rgba(4, 120, 87, 0.15);
+}
+
+.resume-skills-digital:hover {
+    background: linear-gradient(135deg, rgba(4, 120, 87, 0.08), rgba(5, 150, 105, 0.05));
+    border-color: rgba(4, 120, 87, 0.25);
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.15);
+}
+
+.resume-skills-category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    margin-bottom: 0.625rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-skills-category-title::before {
+    content: '▸';
+    color: var(--emerald-600);
+    font-size: 0.875rem;
+}
+
+.resume-skills-content {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.resume-skills-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-lighter);
+    margin-bottom: 0.875rem;
+    font-style: italic;
+}
+
+.resume-app-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.75rem;
+}
+
+.resume-app-list li {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 0.625rem;
+    padding-left: 1.75rem;
+    position: relative;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.resume-app-list li::before {
+    content: '⚙️';
+    position: absolute;
+    left: 0;
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+.resume-app-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for resume */
+@media (max-width: 768px) {
+    .resume-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .resume-section-title {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .resume-list li {
+        font-size: 0.875rem;
+        padding-left: 1.25rem;
+    }
+
+    .resume-experience-item {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .resume-company {
+        font-size: 0.9375rem;
+    }
+
+    .resume-skills-category {
+        padding: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .resume-skills-category-title {
+        font-size: 0.9375rem;
+    }
+
+    .resume-skills-content {
+        font-size: 0.875rem;
+    }
+
+    .resume-app-list li {
+        font-size: 0.8125rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-section {
+        margin-bottom: 1.75rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .resume-section-title {
+        font-size: 1rem;
+    }
+
+    .resume-list li {
+        font-size: 0.8125rem;
+        line-height: 1.7;
+    }
+
+    .resume-experience-item {
+        padding: 0.875rem;
+    }
+
+    .resume-company {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .resume-skills-category {
+        padding: 0.75rem;
+    }
+
+    .resume-skills-category-title {
+        font-size: 0.875rem;
+    }
+
+    .resume-skills-content {
+        font-size: 0.8125rem;
+    }
+
+    .resume-app-list li {
+        font-size: 0.75rem;
+    }
+}
+
 .about-toggle-btn {
     display: inline-flex;
     align-items: center;
