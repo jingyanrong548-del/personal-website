@@ -3037,30 +3037,52 @@ body {
         padding: 0 20px;
     }
 
+    .navbar {
+        padding: 1.25rem 0 1.5rem 0; /* 增加底部padding */
+    }
+
     .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.75rem; /* 增加第一行和第二行之间的间距 */
         padding-right: 80px; /* 为右上角语言切换器留出空间 */
+        position: relative;
+    }
+
+    .nav-brand {
+        font-size: 1.15rem;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     .nav-right {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: flex-end;
+        width: 100%;
+        align-items: flex-start;
         flex: 0 1 auto;
-        margin-right: 180px; /* 大幅左移，为右上角语言切换器留出空间 */
-        max-width: calc(100% - 200px);
+        margin-right: 0;
+        max-width: 100%;
+        order: 2; /* 放在第二行 */
+        margin-top: 1rem; /* 向下移动按钮区域 */
+        padding-top: 0.75rem; /* 增加顶部间距 */
     }
 
     .nav-menu {
+        flex-direction: row;
         gap: 1.5rem;
         font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
     }
 
     .language-switcher {
         position: absolute;
-        top: 50%;
+        top: 1.25rem; /* 与navbar padding保持一致 */
         right: 20px;
-        transform: translateY(-50%);
+        transform: none;
         margin-top: 0;
+        z-index: 10; /* 确保在按钮上方 */
     }
 
     .hero {
@@ -3454,34 +3476,56 @@ body {
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 1.25rem 0 1.5rem 0; /* 增加底部padding，给按钮更多空间 */
+    }
+
     .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.75rem; /* 增加第一行和第二行之间的间距 */
         padding-right: 70px; /* 为右上角语言切换器留出空间 */
+        position: relative;
+    }
+
+    .nav-brand {
+        font-size: 1.1rem;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     .nav-right {
         width: 100%;
-        align-items: stretch;
-        margin-right: 150px; /* 大幅左移，为右上角语言切换器留出空间 */
-        max-width: calc(100% - 170px);
+        align-items: flex-start;
+        margin-right: 0;
+        max-width: 100%;
+        order: 2; /* 放在第二行 */
+        margin-top: 1rem; /* 向下移动按钮区域 */
+        padding-top: 0.75rem; /* 增加顶部间距 */
     }
 
     .nav-menu {
-        flex-direction: column;
-        gap: 0.75rem;
+        flex-direction: row;
+        gap: 1rem;
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-menu li {
-        width: 100%;
-        text-align: right;
+        width: auto;
+        text-align: left;
     }
 
     .language-switcher {
         position: absolute;
-        top: 50%;
+        top: 1.25rem; /* 与navbar padding保持一致 */
         right: 20px;
-        transform: translateY(-50%);
+        transform: none;
         margin-top: 0;
+        z-index: 10; /* 确保在按钮上方 */
     }
 
     .lang-btn {
