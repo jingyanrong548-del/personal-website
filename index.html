@@ -184,14 +184,15 @@
         <div class="container">
             <div class="nav-brand" data-i18n="nav.brand">Jing Yanrong</div>
             <div class="nav-right">
-                <div class="language-switcher">
-                    <button class="lang-btn active" data-lang="zh">中文</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
                 <ul class="nav-menu">
-                    <li><a href="#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="#apps" data-i18n="nav.apps">Apps</a></li>
+                    <li><a href="#apps" data-i18n="nav.apps">工具箱</a></li>
+                    <li><a href="#insights" data-i18n="nav.insights">工程洞察</a></li>
+                    <li><a href="#about" data-i18n="nav.about">关于我</a></li>
                 </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="en">EN</button>
             </div>
         </div>
     </nav>
@@ -207,9 +208,9 @@
                     <h1 class="hero-headline" data-i18n="hero.headline" data-i18n-html="true">{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.</h1>
                     <p class="hero-subheadline" data-i18n="hero.subheadline">Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.</p>
                     <div class="hero-cta-container">
-                        <a href="#apps" class="hero-cta-btn" data-i18n="hero.cta">Explore My Tools</a>
+                        <a href="#apps" class="hero-cta-btn hero-cta-primary" data-i18n="hero.cta">浏览工具箱</a>
                         <a href="#insights" class="hero-secondary-link">
-                            <span data-i18n="hero.secondaryCta">Read Engineering Insights</span>
+                            <span data-i18n="hero.secondaryCta">阅读工程洞察</span>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
@@ -217,7 +218,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="hero-portrait-container">
+                    <div class="hero-portrait-container hero-portrait-circle">
                         <img src="/portrait.jpg" alt="Jing Yanrong - Industrial Heat Pump Expert" class="hero-portrait-img" />
                     </div>
                 </div>
@@ -286,48 +287,22 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="about.title">About</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-headline" data-i18n="about.headline">My Philosophy</h3>
-                    <p data-i18n="about.text1" data-i18n-html="true">Throughout my career at <strong class="company-name">Bingshan</strong>, <strong class="company-name">Snowman</strong>, and <strong class="company-name">Devotion</strong>, I've witnessed the evolution of industrial refrigeration and the transition from coal-fired to heat pump systems.</p>
-                    <p data-i18n="about.text2" data-i18n-html="true">I discovered that the ultimate path to solving complex engineering problems is not through memory, but through <strong>reusable algorithms</strong>.</p>
-                    <p data-i18n="about.text3" data-i18n-html="true">I build this website not to showcase, but to <strong>deliver</strong>. I encapsulate my physical thermodynamics experience into Python and React, only to <em class="highlight-quote">eliminate that 1% of uncertainty on the engineering site</em>.</p>
-                </div>
-                <div class="about-matrix">
-                    <div class="matrix-card">
-                        <div class="matrix-label" data-i18n="about.matrix.1.label">Industry Experience</div>
-                        <div class="matrix-value" data-i18n="about.matrix.1.value">Long-term</div>
-                        <div class="matrix-sub" data-i18n="about.matrix.1.sub">Bingshan / Snowman / Devotion</div>
-                    </div>
-                    <div class="matrix-card">
-                        <div class="matrix-label" data-i18n="about.matrix.2.label">Core Domain</div>
-                        <div class="matrix-value" data-i18n="about.matrix.2.value">Full Range</div>
-                        <div class="matrix-sub" data-i18n="about.matrix.2.sub">-100°C ~ +200°C</div>
-                    </div>
-                    <div class="matrix-card">
-                        <div class="matrix-label" data-i18n="about.matrix.3.label">Delivery Tools</div>
-                        <div class="matrix-value" data-i18n="about.matrix.3.value">Python / React</div>
-                        <div class="matrix-sub" data-i18n="about.matrix.3.sub">Algorithm Encapsulation</div>
-                    </div>
-                    <div class="matrix-card">
-                        <div class="matrix-label" data-i18n="about.matrix.4.label">Engineering Goal</div>
-                        <div class="matrix-value" data-i18n="about.matrix.4.value">Eliminate Uncertainty</div>
-                        <div class="matrix-sub" data-i18n="about.matrix.4.sub">Digital Delivery</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Apps Section -->
     <section id="apps" class="section section-gray">
         <div class="container">
-            <h2 class="section-title" data-i18n="apps.title">Engineering Toolbox</h2>
-            <p class="section-description" data-i18n="apps.description">Open-source tools with verifiable logic and real physics formulas</p>
+            <div class="apps-header">
+                <div class="apps-header-content">
+                    <h2 class="section-title" data-i18n="apps.title">工程计算工具箱</h2>
+                    <p class="section-description" data-i18n="apps.description">公开可用的工具，具有可验证的逻辑和真实的物理公式</p>
+                </div>
+                <!-- 预留分类标签区域 -->
+                <div class="apps-filter-tabs">
+                    <button class="filter-tab active" data-filter="all">全部</button>
+                    <button class="filter-tab" data-filter="refrigeration">制冷类</button>
+                    <button class="filter-tab" data-filter="heatpump">热泵类</button>
+                    <button class="filter-tab" data-filter="general">通用类</button>
+                </div>
+            </div>
             
             <!-- Apps Grid -->
             <div class="apps-grid">
@@ -485,6 +460,145 @@
                             </svg>
                             <span data-i18n="apps.viewSource">View Source / Logic</span>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">关于我</h2>
+            
+            <!-- 左右两列布局：左侧工程哲学 + 右侧核心指标 -->
+            <div class="about-main-layout">
+                <!-- 左侧：工程哲学（60%） -->
+                <div class="about-philosophy-column">
+                    <h3 class="about-headline" data-i18n="about.headline">我的工程哲学</h3>
+                    <div class="about-philosophy-content">
+                        <p class="about-philosophy-text" data-i18n="about.text2" data-i18n-html="true">我发现，解决复杂工程问题的终极路径，不是靠记忆，而是靠<strong>可复用的算法</strong>。</p>
+                        <p class="about-philosophy-text" data-i18n="about.text3" data-i18n-html="true">我构建这个网站，不是为了展示，而是为了<strong>交付</strong>。我将物理热力学的经验封装进 Python 和 React，只为<em class="highlight-quote">消除工程现场的那 1% 的不确定性</em>。</p>
+                    </div>
+                    <button class="about-toggle-btn" id="about-toggle-btn" type="button">
+                        <span class="toggle-text-expand">查看完整履历</span>
+                        <span class="toggle-text-collapse" style="display: none;">收起履历</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <!-- 折叠的详细履历 -->
+                    <div class="about-details-collapsible" id="about-details" style="display: none;">
+                        <div class="about-details-content">
+                            <p data-i18n="about.text1" data-i18n-html="true">在 <strong class="company-name">冰山冷热</strong>、<strong class="company-name">雪人股份</strong>、<strong class="company-name">迪森股份</strong> 的职业生涯中，我见证了工业冷冻的发展历程，以及工业热能从燃煤到热泵的每一次迭代。</p>
+                            <p>更多详细履历信息...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧：核心指标（40%） -->
+                <div class="about-metrics-column">
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-label" data-i18n="about.matrix.1.label">行业积淀</div>
+                            <div class="metric-value" data-i18n="about.matrix.1.value">长期深耕</div>
+                            <div class="metric-sub" data-i18n="about.matrix.1.sub">头部企业</div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                            </svg>
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-label" data-i18n="about.matrix.2.label">核心领域</div>
+                            <div class="metric-value" data-i18n="about.matrix.2.value">全温域</div>
+                            <div class="metric-sub" data-i18n="about.matrix.2.sub">-100°C ~ +200°C</div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                            </svg>
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-label" data-i18n="about.matrix.3.label">交付工具</div>
+                            <div class="metric-value" data-i18n="about.matrix.3.value">Python / React</div>
+                            <div class="metric-sub" data-i18n="about.matrix.3.sub">算法封装</div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <div class="metric-content">
+                            <div class="metric-label" data-i18n="about.matrix.4.label">工程目标</div>
+                            <div class="metric-value" data-i18n="about.matrix.4.value">消除不确定性</div>
+                            <div class="metric-sub" data-i18n="about.matrix.4.sub">数字化交付</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下方：专业技能标签（胶囊型，分类展示） -->
+            <div class="about-skills-section">
+                <h3 class="about-skills-title">专业技能</h3>
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <div class="skill-category-label">数字化工具</div>
+                        <div class="skills-pills">
+                            <span class="skill-pill skill-pill-tech">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                                Python / React
+                            </span>
+                            <span class="skill-pill skill-pill-tech">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                                </svg>
+                                CoolProp
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-label">热能工程</div>
+                        <div class="skills-pills">
+                            <span class="skill-pill skill-pill-thermal">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                                </svg>
+                                工业热泵设计
+                            </span>
+                            <span class="skill-pill skill-pill-thermal">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                制冷系统优化
+                            </span>
+                            <span class="skill-pill skill-pill-thermal">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 12h18M6 6l6 6-6 6M18 6l-6 6 6 6"/>
+                                </svg>
+                                气体压缩工程
+                            </span>
+                            <span class="skill-pill skill-pill-thermal">
+                                <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                                能效分析
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

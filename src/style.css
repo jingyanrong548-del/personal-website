@@ -74,20 +74,24 @@ body {
 
 /* Navigation */
 .navbar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1.25rem 0;
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    overflow: visible; /* 确保元素不会被裁剪 */
 }
 
 .nav-brand {
@@ -110,12 +114,18 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-right: 220px; /* 大幅左移，为右上角语言切换按钮留出足够空间 */
+    flex: 0 1 auto; /* 允许收缩，但不强制扩展 */
+    justify-content: flex-end;
+    max-width: calc(100% - 240px); /* 限制最大宽度，确保不重叠 */
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu a {
@@ -135,7 +145,7 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--border-gradient);
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(-50%);
 }
@@ -162,6 +172,13 @@ body {
     border-radius: 6px;
     padding: 0.25rem;
     background: var(--bg-light);
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    z-index: 10;
+    flex-shrink: 0; /* 防止被压缩 */
+    min-width: 90px; /* 确保有足够宽度 */
 }
 
 .lang-btn {
@@ -314,7 +331,7 @@ body {
 
 .hero-headline {
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
     color: var(--text-color);
@@ -367,16 +384,21 @@ body {
 
 .hero-portrait-container {
     width: 100%;
-    max-width: 420px;
-    aspect-ratio: 4 / 5;
+    max-width: 320px;
+    aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 1.5rem;
+    border-radius: 50%;
     background: linear-gradient(135deg, #ECFDF5 0%, #F1F5F9 100%);
     position: relative;
     box-shadow: 
         0 20px 60px -15px rgba(4, 120, 87, 0.2),
-        0 0 0 1px rgba(4, 120, 87, 0.05);
+        0 0 0 4px rgba(4, 120, 87, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
+}
+
+.hero-portrait-circle {
+    border-radius: 50%;
 }
 
 .hero-portrait-container::before {
@@ -497,6 +519,12 @@ body {
     border: 2px solid var(--emerald-700);
     position: relative;
     overflow: hidden;
+}
+
+.hero-cta-primary {
+    font-size: 1.125rem;
+    padding: 1.125rem 3rem;
+    box-shadow: 0 6px 20px rgba(4, 120, 87, 0.4);
 }
 
 .hero-cta-btn::before {
@@ -1023,17 +1051,34 @@ body {
 }
 
 /* About Section */
-.about-content {
+.about-main-layout {
     max-width: 1200px;
     margin: 3rem auto 0;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 5rem;
+    grid-template-columns: 60% 40%;
+    gap: 4rem;
     align-items: flex-start;
 }
 
-.about-text {
-    max-width: 100%;
+.about-philosophy-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-philosophy-content {
+    margin-bottom: 2rem;
+}
+
+.about-philosophy-text {
+    font-size: 1.0625rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.about-philosophy-text:last-of-type {
+    margin-bottom: 0;
 }
 
 .about-headline {
@@ -1045,17 +1090,265 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: left;
 }
 
-.about-text p {
-    font-size: 1.0625rem;
-    line-height: 1.9;
-    margin-bottom: 1.5rem;
+.about-details-collapsible {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    animation: fadeIn 0.3s ease;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-details-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    color: var(--text-light);
+}
+
+.about-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    border: 1.5px solid var(--emerald-700);
+    border-radius: 6px;
+    color: var(--emerald-700);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+.about-toggle-btn:hover {
+    background: rgba(4, 120, 87, 0.05);
+    border-color: var(--emerald-600);
+    color: var(--emerald-600);
+    transform: translateX(4px);
+}
+
+.about-toggle-btn:active {
+    transform: translateX(2px);
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.about-toggle-btn.expanded .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* 右侧：核心指标（2x2网格布局） */
+.about-metrics-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--slate-50);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.metric-item:hover {
+    border-color: rgba(4, 120, 87, 0.3);
+    background: var(--bg-white);
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.1);
+    transform: translateY(-2px);
+}
+
+.metric-item:hover::before {
+    transform: scaleY(1);
+}
+
+.metric-icon {
+    color: var(--emerald-700);
+    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.metric-item:hover .metric-icon {
+    transform: scale(1.1);
+}
+
+.metric-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.metric-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-lighter);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 1.25rem;
+    font-weight: 700;
     color: var(--text-color);
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
 }
 
-.about-text p:last-of-type {
-    margin-bottom: 0;
+.metric-sub {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.about-skills-section {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.about-skills-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left;
+}
+
+.skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-category-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-lighter);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.skills-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.skill-pill-tech {
+    background: rgba(4, 120, 87, 0.08);
+    color: var(--emerald-700);
+    border-color: rgba(4, 120, 87, 0.15);
+}
+
+.skill-pill-tech:hover {
+    background: rgba(4, 120, 87, 0.12);
+    border-color: rgba(4, 120, 87, 0.25);
+    transform: translateY(-2px);
+}
+
+.skill-pill-thermal {
+    background: rgba(5, 150, 105, 0.08);
+    color: var(--emerald-700);
+    border-color: rgba(5, 150, 105, 0.15);
+}
+
+.skill-pill-thermal:hover {
+    background: rgba(5, 150, 105, 0.12);
+    border-color: rgba(5, 150, 105, 0.25);
+    transform: translateY(-2px);
+}
+
+.pill-icon {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.skill-pill:hover .pill-icon {
+    transform: scale(1.15);
+}
+
+/* 技能标签图标颜色区分 */
+.skill-pill-tech .pill-icon {
+    color: #2563EB; /* Python蓝色 */
+}
+
+.skill-pill-tech:nth-child(2) .pill-icon {
+    color: var(--emerald-700); /* CoolProp绿色 */
+}
+
+.skill-pill-thermal .pill-icon {
+    color: #DC2626; /* 热能工程红色 */
+}
+
+.skill-pill-thermal:nth-child(2) .pill-icon {
+    color: #0891B2; /* 制冷系统青色 */
+}
+
+.skill-pill-thermal:nth-child(3) .pill-icon {
+    color: #7C3AED; /* 压缩工程紫色 */
+}
+
+.skill-pill-thermal:nth-child(4) .pill-icon {
+    color: #F59E0B; /* 能效分析橙色 */
 }
 
 .about-text .company-name {
@@ -1086,21 +1379,23 @@ body {
     max-width: 400px;
 }
 
+/* 保留原有的 matrix-card 样式用于其他地方（如果需要） */
 .matrix-card {
-    background: var(--slate-50);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1.5rem;
+    background: var(--bg-white);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.08);
 }
 
 .matrix-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(4, 120, 87, 0.15);
-    border-color: rgba(4, 120, 87, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(4, 120, 87, 0.2);
+    border-color: var(--emerald-600);
 }
 
 .matrix-label {
@@ -1112,7 +1407,7 @@ body {
 }
 
 .matrix-value {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-color);
     background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
@@ -1120,6 +1415,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.2;
+    margin-top: 0.25rem;
 }
 
 .matrix-sub {
@@ -1132,6 +1428,52 @@ body {
 /* About purpose removed - now in purpose-notice section */
 
 /* Apps Section */
+.apps-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.apps-header-content {
+    text-align: center;
+}
+
+.apps-filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.filter-tab {
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    border: 1.5px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+}
+
+.filter-tab:hover {
+    border-color: var(--emerald-600);
+    color: var(--emerald-700);
+    background: rgba(4, 120, 87, 0.05);
+    transform: translateY(-1px);
+}
+
+.filter-tab.active {
+    background: var(--emerald-700);
+    color: var(--text-white);
+    border-color: var(--emerald-700);
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.3);
+    transform: translateY(-1px);
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1149,6 +1491,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .app-card::before {
@@ -1167,8 +1510,8 @@ body {
 }
 
 .app-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(4, 120, 87, 0.2);
     border-color: var(--emerald-700);
 }
 
@@ -1215,7 +1558,7 @@ body {
 .app-description {
     font-size: 0.9rem;
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.75;
     margin-bottom: 0.875rem;
     flex-grow: 1;
 }
@@ -1265,7 +1608,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 1.5rem;
     background: var(--emerald-700);
     color: var(--text-white);
     font-size: 0.9375rem;
@@ -1274,6 +1617,7 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease;
     border: 2px solid var(--emerald-700);
+    width: 100%;
 }
 
 .app-launch-btn:hover {
@@ -2314,10 +2658,17 @@ body {
         padding: 0 20px;
     }
 
+    .navbar .container {
+        padding-right: 80px; /* 为右上角语言切换器留出空间 */
+    }
+
     .nav-right {
         flex-direction: column;
         gap: 1rem;
         align-items: flex-end;
+        flex: 0 1 auto;
+        margin-right: 180px; /* 大幅左移，为右上角语言切换器留出空间 */
+        max-width: calc(100% - 200px);
     }
 
     .nav-menu {
@@ -2326,7 +2677,11 @@ body {
     }
 
     .language-switcher {
-        order: -1;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        margin-top: 0;
     }
 
     .hero {
@@ -2459,10 +2814,50 @@ body {
         font-size: 0.875rem;
     }
 
-    .about-content {
+    .about-main-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
-        text-align: left;
+        margin: 2rem auto 0;
+    }
+
+    .about-philosophy-column {
+        order: 1;
+    }
+
+    .about-metrics-column {
+        order: 2;
+    }
+
+    .about-skills-section {
+        order: 3;
+        margin: 3rem auto 0;
+        padding-top: 2rem;
+    }
+
+    .about-philosophy-text {
+        font-size: 1rem;
+    }
+
+    .skills-pills {
+        gap: 0.625rem;
+    }
+
+    .skill-pill {
+        font-size: 0.8125rem;
+        padding: 0.4375rem 0.875rem;
+    }
+
+    .apps-header {
+        gap: 1.5rem;
+    }
+
+    .apps-filter-tabs {
+        gap: 0.5rem;
+    }
+
+    .filter-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.8125rem;
     }
 
     .about-headline {
@@ -2474,18 +2869,52 @@ body {
         text-align: left;
     }
 
+    .about-philosophy {
+        margin: 1.5rem auto 1rem;
+        padding: 0 1rem;
+    }
+
+    .about-headline {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-philosophy-text {
+        font-size: 0.9375rem;
+        line-height: 1.8;
+    }
+
+    .about-matrix-section {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
     .about-matrix {
-        max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.875rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .matrix-card {
-        padding: 1.25rem;
+        padding: 1.5rem;
     }
 
     .matrix-value {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
+    }
+
+    .about-skills-section {
+        margin: 2rem auto 0;
+        padding: 0 1rem;
+    }
+
+    .about-skills-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-tags {
+        grid-template-columns: 1fr;
+        gap: 0.875rem;
     }
 
     .purpose-notice {
@@ -2629,9 +3058,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    .navbar .container {
+        padding-right: 70px; /* 为右上角语言切换器留出空间 */
+    }
+
     .nav-right {
         width: 100%;
         align-items: stretch;
+        margin-right: 150px; /* 大幅左移，为右上角语言切换器留出空间 */
+        max-width: calc(100% - 170px);
     }
 
     .nav-menu {
@@ -2646,7 +3081,11 @@ body {
     }
 
     .language-switcher {
-        align-self: flex-end;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        margin-top: 0;
     }
 
     .lang-btn {
@@ -2723,8 +3162,56 @@ body {
         font-size: 1rem;
     }
 
+    .about-main-layout {
+        gap: 2rem;
+        margin: 1.5rem auto 0;
+    }
+
     .about-headline {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .about-philosophy-text {
+        font-size: 0.9375rem;
+        line-height: 1.8;
+    }
+
+    .about-metrics-column {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .metric-item {
+        padding: 1.25rem;
+    }
+
+    .metric-value {
         font-size: 1.125rem;
+    }
+
+    .about-skills-section {
+        margin: 2rem auto 0;
+        padding-top: 1.5rem;
+    }
+
+    .about-skills-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-categories {
+        gap: 1.5rem;
+    }
+
+    .skill-pill {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .pill-icon {
+        width: 14px;
+        height: 14px;
     }
 
     .contact-item-simple {

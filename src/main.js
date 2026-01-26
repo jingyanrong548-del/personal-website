@@ -10,7 +10,8 @@ const translations = {
         // Navigation
         'nav.brand': 'Jing Yanrong',
         'nav.about': 'About',
-        'nav.apps': 'Apps',
+        'nav.apps': 'Toolbox',
+        'nav.insights': 'Engineering Insights',
         
         // Hero
         'hero.title': 'Jing Yanrong',
@@ -167,8 +168,9 @@ const translations = {
     },
     zh: {
         'nav.brand': '荆炎荣 / Jing Yanrong',
-        'nav.about': '关于',
-        'nav.apps': '应用',
+        'nav.about': '关于我',
+        'nav.apps': '工具箱',
+        'nav.insights': '工程洞察',
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
         'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，封装为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
@@ -994,6 +996,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 excerpt.style.display = 'block';
                 excerpt.style.overflow = 'visible';
             }
+        });
+    });
+
+    // About section toggle functionality
+    const aboutToggleBtn = document.getElementById('about-toggle-btn');
+    const aboutDetails = document.getElementById('about-details');
+    const toggleTextExpand = aboutToggleBtn?.querySelector('.toggle-text-expand');
+    const toggleTextCollapse = aboutToggleBtn?.querySelector('.toggle-text-collapse');
+    
+    if (aboutToggleBtn && aboutDetails) {
+        aboutToggleBtn.addEventListener('click', function() {
+            const isExpanded = aboutDetails.style.display !== 'none';
+            
+            if (isExpanded) {
+                aboutDetails.style.display = 'none';
+                aboutToggleBtn.classList.remove('expanded');
+                if (toggleTextExpand) toggleTextExpand.style.display = 'inline';
+                if (toggleTextCollapse) toggleTextCollapse.style.display = 'none';
+            } else {
+                aboutDetails.style.display = 'block';
+                aboutToggleBtn.classList.add('expanded');
+                if (toggleTextExpand) toggleTextExpand.style.display = 'none';
+                if (toggleTextCollapse) toggleTextCollapse.style.display = 'inline';
+            }
+        });
+    }
+
+    // Filter tabs functionality (placeholder for future filtering)
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            // Future: Add filtering logic here
         });
     });
 
