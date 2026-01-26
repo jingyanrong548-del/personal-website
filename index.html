@@ -176,6 +176,13 @@
       })();
     </script>
     
+    <!-- Vercel Web Analytics -->
+    <!-- This will only work when deployed to Vercel after enabling Web Analytics in the dashboard -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    
     <script type="module" src="/src/main.js"></script>
 </head>
 <body>
