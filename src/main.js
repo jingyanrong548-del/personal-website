@@ -149,7 +149,7 @@ const translations = {
         'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -45°C Liquid Trap',
         'insights.article1.tag': 'Critical Troubleshooting',
         'insights.article1.date': 'Oct 2023',
-        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -45°C evaporator design. We fixed the system, saving the compressors.',
+        'insights.article1.excerpt': '<strong>Initial Diagnosis:</strong> Multiple large compressors seized and were initially blamed on manufacturing defects.<br/><br/><strong>Root Cause:</strong> After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -45°C evaporator design.<br/><br/><strong>Resolution:</strong> We fixed the system, saving the compressors.',
         'insights.article1.readMore': 'Read Analysis',
         'insights.article2.title': 'Large Screw Compressor Seizure: Not "Oil Starvation", but "Deadly Stacking of Tolerance & Thermal Deformation"',
         'insights.article2.tag': 'Deep Failure Review',
@@ -159,7 +159,7 @@ const translations = {
         'insights.article3.title': 'Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)',
         'insights.article3.tag': 'Industry Outlook',
         'insights.article3.date': 'Sep 2025',
-        'insights.article3.excerpt': 'Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.',
+        'insights.article3.excerpt': '<strong>Claim:</strong> Everyone claims 160°C capability, but few can prove it.<br/><br/><strong>Reality:</strong> The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries.<br/><br/><strong>Principle:</strong> Verification > Specification.',
         'insights.article3.readMore': 'Read Analysis',
         
         // Footer
@@ -356,7 +356,7 @@ const translations = {
         'insights.article1.title': '5次现场排查：终结 -45°C 液击"悬案"',
         'insights.article1.tag': '关键故障排查',
         'insights.article1.date': '2023年10月',
-        'insights.article1.excerpt': '多台大型压缩机抱死，最初被归咎于制造缺陷。经过 5 次现场检查，根因并非机器本身，而是系统：由有缺陷的 -45°C 蒸发器设计导致的偶发性液击。修复系统后，压缩机得以保全。',
+        'insights.article1.excerpt': '<strong>初步诊断：</strong>多台大型压缩机抱死，最初被归咎于制造缺陷。<br/><br/><strong>根因分析：</strong>经过 5 次现场检查，根因并非机器本身，而是系统：由有缺陷的 -45°C 蒸发器设计导致的偶发性液击。<br/><br/><strong>解决方案：</strong>修复系统后，压缩机得以保全。',
         'insights.article1.readMore': '阅读分析',
         'insights.article2.title': '大型螺杆机抱死真相：不是"缺油"，是"公差与热变形的死亡叠加"',
         'insights.article2.tag': '深度故障复盘',
@@ -366,7 +366,7 @@ const translations = {
         'insights.article3.title': '超越炒作：真正的护城河是极端测试 (-40°C 至 +200°C)',
         'insights.article3.tag': '行业前瞻',
         'insights.article3.date': '2025年9月',
-        'insights.article3.excerpt': '行业都在宣称 160°C 能力，但鲜有能证明者。未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。验证 > 规格。',
+        'insights.article3.excerpt': '<strong>行业宣称：</strong>行业都在宣称 160°C 能力，但鲜有能证明者。<br/><br/><strong>现实情况：</strong>未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。<br/><br/><strong>核心原则：</strong>验证 > 规格。',
         'insights.article3.readMore': '阅读分析',
         
         // Footer
