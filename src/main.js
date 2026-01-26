@@ -618,6 +618,12 @@ function setLanguage(lang) {
 }
 
 // AI Briefings Management
+// 环境检测：只在开发环境（localhost/127.0.0.1）启用简报功能
+function isDevelopmentEnvironment() {
+    const hostname = window.location.hostname;
+    return hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '::1';
+}
+
 const BRIEFINGS_STORAGE_KEY = 'ai_briefings_data';
 const UPDATE_INTERVAL_DAYS = 7; // 每周更新
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -656,6 +662,12 @@ const PROMPTS = {
 
 // Generate briefing using Google Gemini API
 async function generateBriefing(type) {
+    // 生产环境不调用 API
+    if (!isDevelopmentEnvironment()) {
+        console.warn('Briefings are only available in development environment');
+        return null;
+    }
+    
     if (!GEMINI_API_KEY) {
         console.error('Gemini API key is not configured');
         return null;
@@ -899,8 +911,18 @@ function displayBriefing(type, content, timestamp) {
     timeElement.textContent = lastUpdateText + dateStr;
 }
 
-// Initialize briefings
+// Initialize briefings (only in development environment)
 function initializeBriefings() {
+    // 只在开发环境初始化简报功能
+    if (!isDevelopmentEnvironment()) {
+        // 生产环境：隐藏整个简报区域
+        const briefingsSection = document.getElementById('ai-briefings');
+        if (briefingsSection) {
+            briefingsSection.style.display = 'none';
+        }
+        return;
+    }
+    
     const storedData = getStoredBriefings();
     
     // Load cached data immediately if available
@@ -1408,23 +1430,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize AI Briefings
+    // Initialize AI Briefings (only in development environment)
     initializeBriefings();
 
-    // Refresh button handlers
-    const refreshDomesticBtn = document.getElementById('refresh-domestic');
-    const refreshInternationalBtn = document.getElementById('refresh-international');
-    
-    if (refreshDomesticBtn) {
-        refreshDomesticBtn.addEventListener('click', function() {
-            updateBriefing('domestic', true);
-        });
-    }
-    
-    if (refreshInternationalBtn) {
-        refreshInternationalBtn.addEventListener('click', function() {
-            updateBriefing('international', true);
-        });
+    // Refresh button handlers (only in development environment)
+    if (isDevelopmentEnvironment()) {
+        const refreshDomesticBtn = document.getElementById('refresh-domestic');
+        const refreshInternationalBtn = document.getElementById('refresh-international');
+        
+        if (refreshDomesticBtn) {
+            refreshDomesticBtn.addEventListener('click', function() {
+                updateBriefing('domestic', true);
+            });
+        }
+        
+        if (refreshInternationalBtn) {
+            refreshInternationalBtn.addEventListener('click', function() {
+                updateBriefing('international', true);
+            });
+        }
     }
 
     console.log('Personal homepage loaded successfully!');
