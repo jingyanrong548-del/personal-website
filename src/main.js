@@ -137,6 +137,7 @@ const translations = {
         'contact.modal.wechatHeadline': '微信扫一扫',
         
         // Partners
+        'partners.sectionLabel': 'CAREER FOOTPRINT & INDUSTRY EXPERIENCE',
         'partners.title': 'Trusted Partners',
         
         // Testimonials
@@ -167,7 +168,7 @@ const translations = {
         'footer.introTitle': 'Open Source Engineering. Connect with my Digital Twin.',
         'footer.copyright': '© {year} Jing Yanrong. Public Engineering Tools.',
         'footer.github': 'GitHub',
-        'footer.techStack': 'Built with Vite & Vanilla JS',
+        'footer.techStack': 'Built with Python & React by Jing Yanrong',
         'footer.version': 'Version',
         'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.',
         
@@ -181,6 +182,8 @@ const translations = {
         'briefings.innovation.title': 'Technical Innovation',
         'briefings.future.title': 'Upcoming Events',
         'briefings.lastUpdate': 'Last updated: ',
+        'briefings.readMore': 'Read Full Report',
+        'briefings.readLess': 'Collapse',
         
         // About section additional
         'about.toggle.expand': 'View Full Resume',
@@ -356,6 +359,7 @@ const translations = {
         'contact.modal.wechatHeadline': '微信扫一扫',
         
         // Partners
+        'partners.sectionLabel': '职业足迹与行业经验',
         'partners.title': '值得信赖的合作伙伴',
         
         // Testimonials
@@ -386,7 +390,7 @@ const translations = {
         'footer.introTitle': '开源工程。连接数字孪生。',
         'footer.copyright': '© {year} 荆炎荣. Public Engineering Tools.',
         'footer.github': 'GitHub',
-        'footer.techStack': 'Built with Vite & Vanilla JS',
+        'footer.techStack': 'Built with Python & React by Jing Yanrong',
         'footer.version': '版本',
         'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。',
         
@@ -400,6 +404,8 @@ const translations = {
         'briefings.innovation.title': '技术创新',
         'briefings.future.title': '未来重要事项',
         'briefings.lastUpdate': '最后更新：',
+        'briefings.readMore': '阅读全文 (Read Report)',
+        'briefings.readLess': '收起',
         
         // About section additional
         'about.toggle.expand': '查看完整履历',
@@ -686,10 +692,11 @@ const briefingData = {
 // Display briefing content
 function displayBriefing() {
     const titleElement = document.getElementById('briefing-week-title');
+    const previewElement = document.getElementById('briefing-preview');
     const contentElement = document.getElementById('briefing-main-content');
     const timeElement = document.getElementById('briefing-update-time');
     
-    if (!titleElement || !contentElement || !timeElement) {
+    if (!titleElement || !previewElement || !contentElement || !timeElement) {
         return;
     }
 
@@ -706,55 +713,71 @@ function displayBriefing() {
     const innovationItems = currentLanguage === 'zh' ? briefingData.innovation : briefingData.innovationEn;
     const futureItems = currentLanguage === 'zh' ? briefingData.future : briefingData.futureEn;
     
-    // Build content HTML
-    let html = '';
+    // Build full content HTML
+    let fullHtml = '';
     
     // Domestic section
-    html += `<div class="briefing-section">
+    fullHtml += `<div class="briefing-section">
         <h4 class="briefing-section-title" data-i18n="briefings.domestic.title">${translations[currentLanguage]['briefings.domestic.title']}</h4>
         <ul class="briefing-list">`;
     domesticItems.forEach(item => {
-        html += `<li class="briefing-item">${item}</li>`;
+        fullHtml += `<li class="briefing-item">${item}</li>`;
     });
-    html += `</ul></div>`;
+    fullHtml += `</ul></div>`;
 
     // International section
-    html += `<div class="briefing-section">
+    fullHtml += `<div class="briefing-section">
         <h4 class="briefing-section-title" data-i18n="briefings.international.title">${translations[currentLanguage]['briefings.international.title']}</h4>
         <ul class="briefing-list">`;
     internationalItems.forEach(item => {
-        html += `<li class="briefing-item">${item}</li>`;
+        fullHtml += `<li class="briefing-item">${item}</li>`;
     });
-    html += `</ul></div>`;
+    fullHtml += `</ul></div>`;
 
     // Standards section
-    html += `<div class="briefing-section">
+    fullHtml += `<div class="briefing-section">
         <h4 class="briefing-section-title" data-i18n="briefings.standards.title">${translations[currentLanguage]['briefings.standards.title']}</h4>
         <ul class="briefing-list">`;
     standardsItems.forEach(item => {
-        html += `<li class="briefing-item">${item}</li>`;
+        fullHtml += `<li class="briefing-item">${item}</li>`;
     });
-    html += `</ul></div>`;
+    fullHtml += `</ul></div>`;
 
     // Technical Innovation section
-    html += `<div class="briefing-section">
+    fullHtml += `<div class="briefing-section">
         <h4 class="briefing-section-title" data-i18n="briefings.innovation.title">${translations[currentLanguage]['briefings.innovation.title']}</h4>
         <ul class="briefing-list">`;
     innovationItems.forEach(item => {
-        html += `<li class="briefing-item">${item}</li>`;
+        fullHtml += `<li class="briefing-item">${item}</li>`;
     });
-    html += `</ul></div>`;
+    fullHtml += `</ul></div>`;
 
     // Future events section
-    html += `<div class="briefing-section">
+    fullHtml += `<div class="briefing-section">
         <h4 class="briefing-section-title" data-i18n="briefings.future.title">${translations[currentLanguage]['briefings.future.title']}</h4>
         <ul class="briefing-list">`;
     futureItems.forEach(item => {
-        html += `<li class="briefing-item">${item}</li>`;
+        fullHtml += `<li class="briefing-item">${item}</li>`;
     });
-    html += `</ul></div>`;
+    fullHtml += `</ul></div>`;
 
-    contentElement.innerHTML = html;
+    contentElement.innerHTML = fullHtml;
+
+    // Build preview content (first 150 characters or first 3 key points)
+    let previewHtml = '';
+    const allItems = [...domesticItems, ...internationalItems, ...standardsItems, ...innovationItems, ...futureItems];
+    
+    // Extract first 3 key points
+    const keyPoints = allItems.slice(0, 3);
+    previewHtml += '<ul class="briefing-preview-list">';
+    keyPoints.forEach(item => {
+        // Truncate each item to 150 characters if needed
+        const truncatedItem = item.length > 150 ? item.substring(0, 150) + '...' : item;
+        previewHtml += `<li class="briefing-preview-item">${truncatedItem}</li>`;
+    });
+    previewHtml += '</ul>';
+
+    previewElement.innerHTML = previewHtml;
 
     // Format update date
     const updateDate = new Date(briefingData.updateDate);
@@ -1264,6 +1287,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Manual Briefings
     initializeBriefings();
+
+    // Briefing read more/less toggle functionality
+    const briefingReadMoreBtn = document.getElementById('briefing-read-more-btn');
+    const briefingPreview = document.getElementById('briefing-preview');
+    const briefingFull = document.getElementById('briefing-main-content');
+    const readMoreText = briefingReadMoreBtn?.querySelector('.read-more-text');
+    const readLessText = briefingReadMoreBtn?.querySelector('.read-less-text');
+    const readMoreIcon = briefingReadMoreBtn?.querySelector('.read-more-icon');
+
+    if (briefingReadMoreBtn && briefingPreview && briefingFull) {
+        briefingReadMoreBtn.addEventListener('click', function() {
+            const isExpanded = briefingFull.style.display !== 'none';
+            
+            if (isExpanded) {
+                // Collapse
+                briefingPreview.style.display = 'block';
+                briefingFull.style.display = 'none';
+                if (readMoreText) readMoreText.style.display = 'inline';
+                if (readLessText) readLessText.style.display = 'none';
+                if (readMoreIcon) readMoreIcon.style.transform = 'rotate(0deg)';
+                briefingReadMoreBtn.classList.remove('expanded');
+            } else {
+                // Expand
+                briefingPreview.style.display = 'none';
+                briefingFull.style.display = 'block';
+                if (readMoreText) readMoreText.style.display = 'none';
+                if (readLessText) readLessText.style.display = 'inline';
+                if (readMoreIcon) readMoreIcon.style.transform = 'rotate(180deg)';
+                briefingReadMoreBtn.classList.add('expanded');
+            }
+        });
+    }
 
     console.log('Personal homepage loaded successfully!');
 });

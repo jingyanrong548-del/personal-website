@@ -611,6 +611,17 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+.partners-section-label {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-lighter);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+}
+
 .partners-title {
     text-align: center;
     font-size: 1rem;
@@ -838,6 +849,128 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Featured Insight Card (重构后的简报卡片) */
+.featured-insight-card {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-insight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(4, 120, 87, 0.2);
+    border-color: var(--emerald-700);
+}
+
+.featured-insight-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.featured-insight-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    text-align: center;
+}
+
+.featured-insight-content {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.featured-insight-preview {
+    display: block;
+}
+
+.briefing-preview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.briefing-preview-item {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.briefing-preview-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--emerald-600);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.briefing-preview-item:last-child {
+    margin-bottom: 0;
+}
+
+.featured-insight-full {
+    display: none;
+}
+
+.featured-insight-footer {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.featured-insight-read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--emerald-700);
+    color: var(--text-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.featured-insight-read-more-btn:hover {
+    background: var(--emerald-600);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.3);
+}
+
+.featured-insight-read-more-btn.expanded {
+    background: var(--emerald-600);
+}
+
+.read-more-icon {
+    transition: transform 0.3s ease;
+}
+
+.featured-insight-read-more-btn.expanded .read-more-icon {
+    transform: rotate(180deg);
+}
+
+/* Legacy briefing-card styles (保持兼容性) */
 .briefing-card {
     background: var(--bg-white);
     padding: 2.5rem;
@@ -1163,16 +1296,36 @@ body {
 .about-main-layout {
     max-width: 1200px;
     margin: 3rem auto 0;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+    flex-direction: row;
     gap: 4rem;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .about-philosophy-column {
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 60%;
 }
+
+.about-metrics-column {
+    flex: 0 0 40%;
+}
+
+@media (max-width: 1024px) {
+    .about-main-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .about-philosophy-column {
+        flex: 1 1 100%;
+    }
+    
+    .about-metrics-column {
+        flex: 1 1 100%;
+    }
+}
+
+/* .about-philosophy-column moved to .about-main-layout section */
 
 .about-philosophy-content {
     margin-bottom: 2rem;
@@ -2491,15 +2644,21 @@ body {
 .footer-link:hover {
     background: rgba(4, 120, 87, 0.1);
     color: var(--emerald-700);
+    transform: translateY(-2px);
 }
 
 .footer-link svg {
     opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-link:hover svg {
     opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer-link:hover .contact-icon {
+    transform: scale(1.1);
 }
 
 .contact-item-simple {
@@ -3160,12 +3319,19 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .briefing-card {
+    .briefing-card,
+    .featured-insight-card {
         padding: 1.5rem;
     }
 
-    .briefing-title {
+    .briefing-title,
+    .featured-insight-title {
         font-size: 1.25rem;
+    }
+    
+    .featured-insight-read-more-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
     }
 
     .briefing-section-title {
@@ -3228,17 +3394,20 @@ body {
     }
 
     .about-main-layout {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 3rem;
         margin: 2rem auto 0;
+        align-items: flex-start;
     }
 
     .about-philosophy-column {
         order: 1;
+        flex: 1 1 100%;
     }
 
     .about-metrics-column {
         order: 2;
+        flex: 1 1 100%;
     }
 
     .about-skills-section {
@@ -3598,8 +3767,18 @@ body {
     }
 
     .about-main-layout {
+        flex-direction: column;
         gap: 2rem;
         margin: 1.5rem auto 0;
+        align-items: flex-start;
+    }
+    
+    .about-philosophy-column {
+        flex: 1 1 100%;
+    }
+    
+    .about-metrics-column {
+        flex: 1 1 100%;
     }
 
     .about-headline {

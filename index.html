@@ -230,6 +230,7 @@
     <!-- Partners Section -->
     <section class="partners-section">
         <div class="container">
+            <h3 class="partners-section-label" data-i18n="partners.sectionLabel">CAREER FOOTPRINT & INDUSTRY EXPERIENCE</h3>
             <h3 class="partners-title" data-i18n="partners.title">Trusted Partners</h3>
             <div class="partners-grid" id="partners-grid">
                 <div class="partner-logo" data-logo="DEVOTION.png">
@@ -484,14 +485,26 @@
                 <p class="section-description" data-i18n="briefings.description">每周更新，手工整理</p>
             </div>
             
-            <div class="briefing-card" id="briefing-content">
-                <div class="briefing-header">
-                    <h3 class="briefing-title" id="briefing-week-title" data-i18n="briefings.weekTitle">2026年第4周制冷热泵行业简报</h3>
+            <div class="featured-insight-card" id="briefing-content">
+                <div class="featured-insight-header">
+                    <h3 class="featured-insight-title" id="briefing-week-title" data-i18n="briefings.weekTitle">2026年第4周制冷热泵行业简报</h3>
                 </div>
-                <div class="briefing-content" id="briefing-main-content">
-                    <!-- 内容将通过JavaScript填充 -->
+                <div class="featured-insight-content">
+                    <div class="featured-insight-preview" id="briefing-preview">
+                        <!-- 预览内容将通过JavaScript填充 -->
+                    </div>
+                    <div class="featured-insight-full" id="briefing-main-content" style="display: none;">
+                        <!-- 完整内容将通过JavaScript填充 -->
+                    </div>
                 </div>
-                <div class="briefing-footer">
+                <div class="featured-insight-footer">
+                    <button class="featured-insight-read-more-btn" id="briefing-read-more-btn" type="button">
+                        <span class="read-more-text" data-i18n="briefings.readMore">阅读全文 (Read Report)</span>
+                        <span class="read-less-text" style="display: none;" data-i18n="briefings.readLess">收起</span>
+                        <svg class="read-more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
                     <span class="briefing-update-time" id="briefing-update-time" data-i18n="briefings.lastUpdate">最后更新：--</span>
                 </div>
             </div>
@@ -806,6 +819,9 @@
             <!-- Copyright -->
             <div class="footer-copyright">
                 <p data-i18n="footer.copyright">© {year} Jing Yanrong. Open Source Engineering.</p>
+                <p class="footer-tech-stack" style="margin-top: 0.75rem; font-size: 0.75rem; opacity: 0.7;">
+                    <span data-i18n="footer.techStack">Built with Python & React by Jing Yanrong</span>
+                </p>
                 <p class="footer-version" style="margin-top: 0.75rem; font-size: 0.75rem; opacity: 0.7;">
                     <span data-i18n="footer.version">Version</span>: <span id="app-version" style="font-family: 'Courier New', monospace; font-weight: 600;">-</span>
                 </p>
