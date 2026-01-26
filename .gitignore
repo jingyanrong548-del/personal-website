@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # 构建产物（不应提交到仓库）
 assets/
 index.html.bak

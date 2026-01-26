@@ -475,6 +475,60 @@
         </div>
     </section>
 
+    <!-- AI Briefings Section -->
+    <section id="ai-briefings" class="section briefings-section">
+        <div class="container">
+            <div class="briefings-header">
+                <h2 class="section-title" data-i18n="briefings.title">AI制冷热泵简报</h2>
+                <p class="section-description" data-i18n="briefings.description">由Google Gemini自动生成，每周更新</p>
+            </div>
+            
+            <div class="briefings-grid">
+                <!-- Domestic Briefing -->
+                <div class="briefing-card" id="briefing-domestic">
+                    <div class="briefing-header">
+                        <h3 class="briefing-title" data-i18n="briefings.domestic.title">AI国内制冷热泵简报</h3>
+                        <button class="briefing-refresh-btn" id="refresh-domestic" type="button" aria-label="刷新">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                                <path d="M21 3v5h-5"/>
+                                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                                <path d="M3 21v-5h5"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="briefing-content" id="briefing-domestic-content">
+                        <div class="briefing-loading" data-i18n="briefings.loading">加载中...</div>
+                    </div>
+                    <div class="briefing-footer">
+                        <span class="briefing-update-time" id="briefing-domestic-time" data-i18n="briefings.lastUpdate">最后更新：--</span>
+                    </div>
+                </div>
+
+                <!-- International Briefing -->
+                <div class="briefing-card" id="briefing-international">
+                    <div class="briefing-header">
+                        <h3 class="briefing-title" data-i18n="briefings.international.title">AI国际制冷热泵简报</h3>
+                        <button class="briefing-refresh-btn" id="refresh-international" type="button" aria-label="刷新">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                                <path d="M21 3v5h-5"/>
+                                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                                <path d="M3 21v-5h5"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="briefing-content" id="briefing-international-content">
+                        <div class="briefing-loading" data-i18n="briefings.loading">加载中...</div>
+                    </div>
+                    <div class="briefing-footer">
+                        <span class="briefing-update-time" id="briefing-international-time" data-i18n="briefings.lastUpdate">最后更新：--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
