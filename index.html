@@ -297,10 +297,10 @@
                 </div>
                 <!-- 预留分类标签区域 -->
                 <div class="apps-filter-tabs">
-                    <button class="filter-tab active" data-filter="all">全部</button>
-                    <button class="filter-tab" data-filter="refrigeration">制冷类</button>
-                    <button class="filter-tab" data-filter="heatpump">热泵类</button>
-                    <button class="filter-tab" data-filter="general">通用类</button>
+                    <button class="filter-tab active" data-filter="all" data-i18n="apps.filter.all">全部</button>
+                    <button class="filter-tab" data-filter="refrigeration" data-i18n="apps.filter.refrigeration">制冷类</button>
+                    <button class="filter-tab" data-filter="heatpump" data-i18n="apps.filter.heatpump">热泵类</button>
+                    <button class="filter-tab" data-filter="general" data-i18n="apps.filter.general">通用类</button>
                 </div>
             </div>
             
@@ -481,8 +481,8 @@
                         <p class="about-philosophy-text" data-i18n="about.text3" data-i18n-html="true">我构建这个网站，不是为了展示，而是为了<strong>交付</strong>。我将物理热力学的经验封装进 Python 和 React，只为<em class="highlight-quote">消除工程现场的那 1% 的不确定性</em>。</p>
                     </div>
                     <button class="about-toggle-btn" id="about-toggle-btn" type="button">
-                        <span class="toggle-text-expand">查看完整履历</span>
-                        <span class="toggle-text-collapse" style="display: none;">收起履历</span>
+                        <span class="toggle-text-expand" data-i18n="about.toggle.expand">查看完整履历</span>
+                        <span class="toggle-text-collapse" style="display: none;" data-i18n="about.toggle.collapse">收起履历</span>
                         <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 9l6 6 6-6"/>
                         </svg>
@@ -551,10 +551,10 @@
 
             <!-- 下方：专业技能标签（胶囊型，分类展示） -->
             <div class="about-skills-section">
-                <h3 class="about-skills-title">专业技能</h3>
+                <h3 class="about-skills-title" data-i18n="about.skills.title">专业技能</h3>
                 <div class="skills-categories">
                     <div class="skill-category">
-                        <div class="skill-category-label">数字化工具</div>
+                        <div class="skill-category-label" data-i18n="about.skills.category.digital">数字化工具</div>
                         <div class="skills-pills">
                             <span class="skill-pill skill-pill-tech">
                                 <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -571,32 +571,32 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-category-label">热能工程</div>
+                        <div class="skill-category-label" data-i18n="about.skills.category.thermal">热能工程</div>
                         <div class="skills-pills">
                             <span class="skill-pill skill-pill-thermal">
                                 <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
                                 </svg>
-                                工业热泵设计
+                                <span data-i18n="about.skills.industrialHeatPump">工业热泵设计</span>
                             </span>
                             <span class="skill-pill skill-pill-thermal">
                                 <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <circle cx="12" cy="12" r="10"/>
                                     <path d="M12 6v6l4 2"/>
                                 </svg>
-                                制冷系统优化
+                                <span data-i18n="about.skills.refrigerationOptimization">制冷系统优化</span>
                             </span>
                             <span class="skill-pill skill-pill-thermal">
                                 <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M3 12h18M6 6l6 6-6 6M18 6l-6 6 6 6"/>
                                 </svg>
-                                气体压缩工程
+                                <span data-i18n="about.skills.gasCompression">气体压缩工程</span>
                             </span>
                             <span class="skill-pill skill-pill-thermal">
                                 <svg class="pill-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                                 </svg>
-                                能效分析
+                                <span data-i18n="about.skills.efficiencyAnalysis">能效分析</span>
                             </span>
                         </div>
                     </div>

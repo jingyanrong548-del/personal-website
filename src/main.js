@@ -32,7 +32,7 @@ const translations = {
         'about.matrix.1.sub': 'Leading Enterprises',
         'about.matrix.2.label': 'Core Domain',
         'about.matrix.2.value': 'Full Range',
-        'about.matrix.2.sub': 'Wide-Range Technology',
+        'about.matrix.2.sub': '-100°C ~ +200°C',
         'about.matrix.3.label': 'Delivery Tools',
         'about.matrix.3.value': 'Python / React',
         'about.matrix.3.sub': 'Algorithm Encapsulation',
@@ -112,6 +112,10 @@ const translations = {
         'apps.moreComing': 'Currently {count} applications available. More tools are in development!',
         'apps.launch': 'Launch App',
         'apps.viewSource': 'View Source / Logic',
+        'apps.filter.all': 'All',
+        'apps.filter.refrigeration': 'Refrigeration',
+        'apps.filter.heatpump': 'Heat Pump',
+        'apps.filter.general': 'General',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -145,49 +149,60 @@ const translations = {
         'insights.article1.title': '5 Site Visits to Solve a "Mystery" Seizure: The -45°C Liquid Trap',
         'insights.article1.tag': 'Critical Troubleshooting',
         'insights.article1.date': 'Oct 2023',
-        'insights.article1.excerpt': '<strong>Phenomenon:</strong> Multiple large units experienced occasional severe vibration exceeding 20mm/s, initially attributed to manufacturing defects by the original equipment manufacturer.<br/><br/><strong>Truth:</strong> After 5 on-site investigations, I identified the root cause as "occasional liquid slugging" caused by flawed evaporator design on the system side.<br/><br/><strong>Result:</strong> After correcting the system design logic, the vibration issue was completely resolved.',
+        'insights.article1.excerpt': 'Multiple large compressors seized and were initially blamed on manufacturing defects. After 5 site inspections, I traced the root cause not to the machine, but to the system: incidental liquid slugging caused by a flawed -45°C evaporator design. We fixed the system, saving the compressors.',
         'insights.article1.readMore': 'Read Analysis',
         'insights.article2.title': 'Large Screw Compressor Seizure: Not "Oil Starvation", but "Deadly Stacking of Tolerance & Thermal Deformation"',
         'insights.article2.tag': 'Deep Failure Review',
         'insights.article2.date': 'Jun 2024',
         'insights.article2.excerpt': '<strong>Misconception:</strong> Normal oil level (60%+) ≠ effective lubrication. Simply replacing bearings cannot solve "critical friction".<br/><br/><strong>Truth:</strong> Deep disassembly revealed that <strong>a certain series of heavy-duty models</strong> under maximum tolerance combination, the male rotor engages the female rotor by approximately <strong>35μm</strong>. Combined with asymmetric oil supply at the suction end and thermal deformation, the sealing line collapses without an oil film.<br/><br/><strong>Conclusion:</strong> True repair must address both "reconstructing the tolerance chain from the manufacturing side" and "adding critical protection on the operational side".',
         'insights.article2.readMore': 'Read Analysis',
-        'insights.article3.title': 'Industry Deep Waters: Rejecting "Spec-Sheet Engineering"',
+        'insights.article3.title': 'Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +200°C)',
         'insights.article3.tag': 'Industry Outlook',
         'insights.article3.date': 'Sep 2025',
-        'insights.article3.excerpt': '<strong>Current State:</strong> The industry is racing for 160°C specifications, yet lacks extreme condition verification.<br/><br/><strong>Barrier:</strong> The real moat is a <strong>CNAS-level full temperature range testing system</strong> (-40°C to +200°C).<br/><br/><strong>Future:</strong> Transition from "manufacturing machines" to "delivering verifiable real performance".',
+        'insights.article3.excerpt': 'Everyone claims 160°C capability, but few can prove it. The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Verification > Specification.',
         'insights.article3.readMore': 'Read Analysis',
         
         // Footer
-        'footer.introTitle': 'Public Engineering Tools. Connect with my Digital Twin.',
+        'footer.introTitle': 'Open Source Engineering. Connect with my Digital Twin.',
         'footer.copyright': '© {year} Jing Yanrong. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': 'Version',
-        'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.'
+        'footer.privacy': 'Uses localStorage to save language preference. No personal data is collected or transmitted.',
+        
+        // About section additional
+        'about.toggle.expand': 'View Full Resume',
+        'about.toggle.collapse': 'Collapse Resume',
+        'about.skills.title': 'Technical Skills',
+        'about.skills.category.digital': 'Digital Tools',
+        'about.skills.category.thermal': 'Thermal Engineering',
+        'about.skills.industrialHeatPump': 'Industrial Heat Pump Design',
+        'about.skills.refrigerationOptimization': 'Refrigeration System Optimization',
+        'about.skills.gasCompression': 'Gas Compression Engineering',
+        'about.skills.efficiencyAnalysis': 'Efficiency Analysis'
     },
     zh: {
         'nav.brand': '荆炎荣 / Jing Yanrong',
-        'nav.about': '关于我',
+        'nav.about': '关于',
         'nav.apps': '工具箱',
         'nav.insights': '工程洞察',
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
         'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，封装为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
         'hero.subheadline': '深耕工业制冷与热泵 (-100°C 至 +200°C)，用代码重构物理热力学，让经验数据化。',
-        'hero.cta': '探索我的工具',
+        'hero.cta': '探索工具',
         'hero.secondaryCta': '阅读工程洞察',
         'about.title': '关于',
-        'about.headline': '我的工程哲学',
-        'about.text1': '在 <strong class="company-name">冰山冷热</strong>、<strong class="company-name">雪人股份</strong>、<strong class="company-name">迪森股份</strong> 的职业生涯中，我见证了工业冷冻的发展历程，以及工业热能从燃煤到热泵的每一次迭代。',
-        'about.text2': '我发现，解决复杂工程问题的终极路径，不是靠记忆，而是靠<strong>可复用的算法</strong>。',
-        'about.text3': '我构建这个网站，不是为了展示，而是为了<strong>交付</strong>。我将物理热力学的经验封装进 Python 和 React，只为<em class="highlight-quote">消除工程现场的那 1% 的不确定性</em>。',
+        'about.headline': '工程哲学',
+        'about.text1': '在 <strong class="company-name">冰山冷热</strong>、<strong class="company-name">雪人股份</strong>、<strong class="company-name">迪森股份</strong> 的职业生涯中，见证了工业冷冻的发展历程，以及工业热能从燃煤到热泵的每一次迭代。',
+        'about.text2': '实践证明，解决复杂工程问题的终极路径，不是靠记忆，而是靠<strong>可复用的算法</strong>。',
+        'about.text3': '构建这个网站，不是为了展示，而是为了<strong>交付</strong>。将物理热力学的经验封装进 Python 和 React，只为<em class="highlight-quote">消除工程现场的那 1% 的不确定性</em>。',
         'about.matrix.1.label': '行业积淀',
         'about.matrix.1.value': '长期深耕',
         'about.matrix.1.sub': '头部企业',
         'about.matrix.2.label': '核心领域',
         'about.matrix.2.value': '全温域',
-        'about.matrix.2.sub': '宽温域技术',
+        'about.matrix.2.sub': '-100°C ~ +200°C',
         'about.matrix.3.label': '交付工具',
         'about.matrix.3.value': 'Python / React',
         'about.matrix.3.sub': '算法封装经验',
@@ -263,6 +278,10 @@ const translations = {
         'apps.moreComing': '目前提供 {count} 个应用，更多实用工具正在开发中，敬请期待！',
         'apps.launch': '启动应用',
         'apps.viewSource': '查看源码 / 逻辑',
+        'apps.filter.all': '全部',
+        'apps.filter.refrigeration': '制冷类',
+        'apps.filter.heatpump': '热泵类',
+        'apps.filter.general': '通用类',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、免费方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
@@ -292,26 +311,37 @@ const translations = {
         'insights.article1.title': '5次现场排查：终结 -45°C 液击"悬案"',
         'insights.article1.tag': '关键故障排查',
         'insights.article1.date': '2023年10月',
-        'insights.article1.excerpt': '<strong>现象：</strong>多台大机组偶发振动严重超标达 20mm/s，原厂判定为设备制造缺陷。<br/><br/><strong>真相：</strong>历经 5 次现场深挖，我将根因锁定为系统侧蒸发器设计导致的"偶发性液击"。<br/><br/><strong>结果：</strong>修正系统设计逻辑后，彻底根治了振动隐患。',
+        'insights.article1.excerpt': '多台大型压缩机抱死，最初被归咎于制造缺陷。经过 5 次现场检查，根因并非机器本身，而是系统：由有缺陷的 -45°C 蒸发器设计导致的偶发性液击。修复系统后，压缩机得以保全。',
         'insights.article1.readMore': '阅读分析',
         'insights.article2.title': '大型螺杆机抱死真相：不是"缺油"，是"公差与热变形的死亡叠加"',
         'insights.article2.tag': '深度故障复盘',
         'insights.article2.date': '2024年6月',
         'insights.article2.excerpt': '<strong>误区：</strong>油位正常 (60%+) ≠ 有效润滑。单纯换轴承无法解决"临界摩擦"。<br/><br/><strong>真相：</strong>深度拆解发现，<strong>某系列重载机型</strong>在最大公差组合下，阳转子咬合阴转子约 <strong>35μm</strong>。叠加吸气端供油不对称与热变形，导致密封线在无油膜状态下崩塌。<br/><br/><strong>结论：</strong>真正的修复必须从"制造侧重构公差链"与"运行侧增加临界保护"双向入手。',
         'insights.article2.readMore': '阅读分析',
-        'insights.article3.title': '行业深水区：拒绝"参数造车"',
+        'insights.article3.title': '超越炒作：真正的护城河是极端测试 (-40°C 至 +200°C)',
         'insights.article3.tag': '行业前瞻',
         'insights.article3.date': '2025年9月',
-        'insights.article3.excerpt': '<strong>现状：</strong>行业都在卷 160°C 指标，却缺乏极端工况验证。<br/><br/><strong>壁垒：</strong>真正的护城河是 <strong>CNAS 级全温域测试体系</strong> (-40°C 至 +200°C)。<br/><br/><strong>未来：</strong>从"制造机器"转型为"交付可复现的真实性能"。',
+        'insights.article3.excerpt': '行业都在宣称 160°C 能力，但鲜有能证明者。未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。验证 > 规格。',
         'insights.article3.readMore': '阅读分析',
         
         // Footer
-        'footer.introTitle': '公共工程工具。与我的数字孪生连接。',
+        'footer.introTitle': '开源工程。连接数字孪生。',
         'footer.copyright': '© {year} 荆炎荣. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Vite & Vanilla JS',
         'footer.version': '版本',
-        'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。'
+        'footer.privacy': '使用本地存储保存语言偏好，不收集或传输任何个人数据。',
+        
+        // About section additional
+        'about.toggle.expand': '查看完整履历',
+        'about.toggle.collapse': '收起履历',
+        'about.skills.title': '专业技能',
+        'about.skills.category.digital': '数字化工具',
+        'about.skills.category.thermal': '热能工程',
+        'about.skills.industrialHeatPump': '工业热泵设计',
+        'about.skills.refrigerationOptimization': '制冷系统优化',
+        'about.skills.gasCompression': '气体压缩工程',
+        'about.skills.efficiencyAnalysis': '能效分析'
     }
 };
 
@@ -548,7 +578,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (versionElement) {
         // @ts-ignore - __APP_VERSION__ is defined by Vite in vite.config.js
         const appVersion = __APP_VERSION__ || '1.0.0';
-        versionElement.textContent = appVersion;
+        versionElement.textContent = `V${appVersion}`;
     }
     
     // Set initial language
