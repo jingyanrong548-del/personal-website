@@ -817,10 +817,22 @@ async function updateBriefing(type, force = false) {
         return;
     }
 
+    const storedData = getStoredBriefings();
+    
+    // 生产环境：只显示缓存数据，不调用API更新
+    if (!isDevelopmentEnvironment()) {
+        if (storedData && storedData[type] && storedData[type].content) {
+            displayBriefing(type, storedData[type].content, storedData[type].timestamp);
+        } else {
+            contentElement.innerHTML = `<div class="briefing-error">${translations[currentLanguage]['briefings.error'] || 'No cached data available'}</div>`;
+            timeElement.textContent = '';
+        }
+        return;
+    }
+
+    // 开发环境：可以更新
     // Show loading state
     contentElement.innerHTML = `<div class="briefing-loading">${translations[currentLanguage]['briefings.loading'] || 'Loading...'}</div>`;
-
-    const storedData = getStoredBriefings();
     
     // Check if update is needed
     if (!force && !needsUpdate(type, storedData)) {
@@ -911,21 +923,11 @@ function displayBriefing(type, content, timestamp) {
     timeElement.textContent = lastUpdateText + dateStr;
 }
 
-// Initialize briefings (only in development environment)
+// Initialize briefings
 function initializeBriefings() {
-    // 只在开发环境初始化简报功能
-    if (!isDevelopmentEnvironment()) {
-        // 生产环境：隐藏整个简报区域
-        const briefingsSection = document.getElementById('ai-briefings');
-        if (briefingsSection) {
-            briefingsSection.style.display = 'none';
-        }
-        return;
-    }
-    
     const storedData = getStoredBriefings();
     
-    // Load cached data immediately if available
+    // Load cached data immediately if available (both dev and production)
     if (storedData) {
         if (storedData.domestic) {
             displayBriefing('domestic', storedData.domestic.content, storedData.domestic.timestamp);
@@ -935,9 +937,17 @@ function initializeBriefings() {
         }
     }
 
-    // Check and update if needed
-    updateBriefing('domestic');
-    updateBriefing('international');
+    // 只在开发环境检查和更新
+    // 生产环境：只显示缓存数据，不调用API更新
+    if (isDevelopmentEnvironment()) {
+        // Check and update if needed (development only)
+        updateBriefing('domestic');
+        updateBriefing('international');
+    } else {
+        // 生产环境：只显示缓存数据
+        updateBriefing('domestic');
+        updateBriefing('international');
+    }
 }
 
 // Smooth scroll behavior and interactive features
@@ -1430,24 +1440,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize AI Briefings (only in development environment)
+    // Initialize AI Briefings
     initializeBriefings();
 
-    // Refresh button handlers (only in development environment)
-    if (isDevelopmentEnvironment()) {
-        const refreshDomesticBtn = document.getElementById('refresh-domestic');
-        const refreshInternationalBtn = document.getElementById('refresh-international');
-        
-        if (refreshDomesticBtn) {
+    // Refresh button handlers
+    const refreshDomesticBtn = document.getElementById('refresh-domestic');
+    const refreshInternationalBtn = document.getElementById('refresh-international');
+    
+    if (refreshDomesticBtn) {
+        if (isDevelopmentEnvironment()) {
+            // 开发环境：启用刷新功能
             refreshDomesticBtn.addEventListener('click', function() {
                 updateBriefing('domestic', true);
             });
+        } else {
+            // 生产环境：禁用刷新按钮
+            refreshDomesticBtn.disabled = true;
+            refreshDomesticBtn.style.opacity = '0.5';
+            refreshDomesticBtn.style.cursor = 'not-allowed';
+            refreshDomesticBtn.title = '刷新功能仅在开发环境可用';
         }
-        
-        if (refreshInternationalBtn) {
+    }
+    
+    if (refreshInternationalBtn) {
+        if (isDevelopmentEnvironment()) {
+            // 开发环境：启用刷新功能
             refreshInternationalBtn.addEventListener('click', function() {
                 updateBriefing('international', true);
             });
+        } else {
+            // 生产环境：禁用刷新按钮
+            refreshInternationalBtn.disabled = true;
+            refreshInternationalBtn.style.opacity = '0.5';
+            refreshInternationalBtn.style.cursor = 'not-allowed';
+            refreshInternationalBtn.title = '刷新功能仅在开发环境可用';
         }
     }
 
