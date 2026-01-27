@@ -66,6 +66,7 @@ const translations = {
         // Apps
         'apps.title': 'Engineering Toolbox',
         'apps.description': 'Publicly available tools with verifiable logic and real physics formulas',
+        'apps.maintenanceNotice': '⚠️ Website under maintenance, tools may be unavailable',
         'apps.appOfc.title': 'Oil-Free Compressor Performance Calculator',
         'apps.appOfc.version': 'V9.0',
         'apps.appOfc.description': 'Comprehensive performance calculation tool for oil-free compressors with refrigeration, heat pump, gas compression, and MVR support',
@@ -292,6 +293,7 @@ const translations = {
         'expertise.lowTemp.capacity': '容量范围：100 kW - 10,000 kW。',
         'apps.title': '工程计算工具箱',
         'apps.description': '公开可用的工具，具有可验证的逻辑和真实的物理公式',
+        'apps.maintenanceNotice': '⚠️ 网站维护中，工具有可能无法使用',
         'apps.appOfc.title': '无油压缩机性能计算器',
         'apps.appOfc.version': 'V9.0',
         'apps.appOfc.description': '无油压缩机性能计算工具，支持制冷热泵、气体压缩、MVR等多种模式',
