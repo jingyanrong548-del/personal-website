@@ -647,47 +647,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 4,
-    updateDate: '2026-01-25',
+    week: 5,
+    updateDate: '2026-02-03',
     domestic: [
-        '节前市场"翘尾"效应：距离丙午年春节（2月中旬）还有三周，工业热泵市场迎来节前交付高峰。据产业在线监测，长三角地区针对锂电涂布与印染烘干的高温热泵订单在1月下旬集中释放，同比增长约15%。与此同时，北方"煤改电"市场进入运维攻坚期，户用机组的售后配件补单量维持高位，保障了极端天气下的采暖稳定。',
-        '供应链排产情况：上游压缩机与阀件企业反馈，2026年Q1排产计划较为饱满。受欧洲去库存结束及国内设备更新政策双重驱动，R290（丙烷）压缩机产线负荷率已超过90%，行业对上半年复苏持乐观态度。'
+        '春节停工与检修潮：随着农历丙午年春节临近，本周是多数制造企业的最后一个完整工作周。珠三角与长三角主要热泵基地陆续发布放假通知，生产线从"赶工模式"转入"停机检修模式"。物流停运导致发货量在周三达到峰值后断崖式回落，行业正式进入假期休整期。',
+        '泳池热泵备货启动：尽管国内处于深冬，但针对欧洲及北美夏季市场的泳池热泵订单本周排产显著增加。数据显示，变频静音型泳池机组的海外询盘量环比增长20%，企业正利用节前空窗期抢抓Q2出口订单。'
     ],
     domesticEn: [
-        'Pre-Holiday Market "Tail-Up" Effect: With three weeks remaining until the Bingwu Year Spring Festival (mid-February), the industrial heat pump market is experiencing a pre-holiday delivery peak. According to industry online monitoring, high-temperature heat pump orders for lithium battery coating and printing and dyeing drying in the Yangtze River Delta region were concentrated in late January, with year-over-year growth of approximately 15%. Meanwhile, the northern "coal-to-electricity" market has entered a critical operation and maintenance period, with after-sales parts reorder volumes for residential units remaining high, ensuring heating stability during extreme weather.',
-        'Supply Chain Production Scheduling: Upstream compressor and valve component manufacturers report that Q1 2026 production schedules are relatively full. Driven by both the end of European destocking and domestic equipment renewal policies, R290 (propane) compressor production line utilization rates have exceeded 90%, and the industry is optimistic about recovery in the first half of the year.'
+        'Spring Festival Shutdown and Maintenance Wave: As the Lunar Bingwu Year Spring Festival approaches, this week is the last full working week for most manufacturers. Major heat pump bases in the Pearl River Delta and Yangtze River Delta have issued holiday notices; production lines are shifting from "rush mode" to "shutdown and maintenance mode." Logistics suspensions have caused shipments to peak on Wednesday and then drop sharply; the industry has officially entered the holiday lull.',
+        'Pool Heat Pump Stocking Kicks Off: Despite deep winter domestically, pool heat pump orders for the European and North American summer markets have seen a significant increase in production scheduling this week. Data show that overseas inquiries for variable-frequency quiet pool units have risen 20% month-over-month; companies are using the pre-holiday window to secure Q2 export orders.'
     ],
     international: [
-        '欧洲市场复苏信号：欧洲热泵协会（EHPA）本周数据显示，德国与法国的热泵安装申请量在经历了长达18个月的调整后，于1月下旬首次出现环比正增长。分析认为，这主要得益于电气比价的改善以及新补贴政策对天然工质（R290）机组的定向支持。',
-        '北美冷媒替代加速：随着美国AIM法案的深入实施，本周多家北美HVAC分销商宣布自2026年2月起全面停止采购R410A新机。市场正加速向R454B（A2L类微燃制冷剂）转型，相关安装培训与工具更新成为本周北美市场的热点。'
+        'AHR Expo 2026 直击：本周（2月2日-4日），北美最大的暖通制冷展在拉斯维加斯盛大举办。展会现场，"全电气化（Electrification）"与"寒冷气候热泵（CCHP）"占据绝对C位。开利、大金、LG等巨头集中展示了能效超越美国能源部（DOE）挑战赛标准的低温热泵新品，标志着热泵在北美寒冷地区的普及技术障碍已被彻底扫除。',
+        '冷媒替代分水岭：在AHR展会上，R410A机组几乎销声匿迹，取而代之的是采用 R454B 与 R32 的新一代设备。多家北美分销商确认，2026年将是A2L类（微燃）制冷剂全面接管市场的元年，相关的安装工具与泄漏检测设备需求暴增。'
     ],
     internationalEn: [
-        'European Market Recovery Signals: Data from the European Heat Pump Association (EHPA) this week shows that heat pump installation applications in Germany and France showed positive month-over-month growth for the first time in late January after 18 months of adjustment. Analysis suggests this is mainly due to improved electricity-to-gas price ratios and new subsidy policies\' targeted support for natural refrigerant (R290) units.',
-        'North American Refrigerant Replacement Acceleration: With the deepening implementation of the U.S. AIM Act, multiple North American HVAC distributors announced this week that they will completely stop purchasing new R410A units starting February 2026. The market is accelerating its transition to R454B (A2L class mildly flammable refrigerant), with related installation training and tool updates becoming hot topics in the North American market this week.'
+        'AHR Expo 2026 On-Site: This week (Feb 2–4), North America\'s largest HVAC&R exhibition was held in Las Vegas. On the show floor, "Electrification" and "Cold Climate Heat Pumps (CCHP)" took center stage. Carrier, Daikin, LG and other majors showcased low-temperature heat pump products exceeding U.S. DOE Challenge standards, marking the removal of technical barriers to heat pump adoption in cold North American regions.',
+        'Refrigerant Transition Watershed: At AHR, R410A units were scarcely seen; they have been replaced by next-generation equipment using R454B and R32. Multiple North American distributors confirmed that 2026 will be the first year of full market takeover by A2L (mildly flammable) refrigerants, with surging demand for related installation tools and leak detection equipment.'
     ],
     standards: [
-        '国内新标推进：GB/T 18430.1《蒸气压缩循环冷水（热泵）机组》 修订工作组本周召开了定稿前的关键研讨会。会议基本达成共识：将大幅提升"全年性能系数（APF）"在能效评价中的权重，并拟新增针对"数据中心冷却"的高温出水冷水机组评价指标，以适应算力时代的节能需求。',
-        '国际标准更新：IEC 60335-2-89（商用制冷器具安全标准）的最新修订案本周在欧洲进入公示期。新提案拟进一步放宽A3类（如R290）制冷剂在封闭式商用展示柜中的充注量限值（有望从500g提升至1.2kg），这将极大推动大容量商用环保冷柜的技术迭代。'
+        'ASHRAE 15 关注度提升：配合A2L制冷剂的普及，AHR展会期间举办了多场关于 ASHRAE 15.2（住宅安全标准）的解读会。核心讨论点集中在"可燃制冷剂充注量限值"与"有效房间面积"的计算规则上，预计后续将有针对安装商的简化版操作指南发布。',
+        '国内能效标识新规：中国能效标识中心发布通知，要求自2026年3月1日起，新出厂的低温空气源热泵机组必须在标识二维码中涵盖"全生命周期碳足迹"初级数据，这标志着碳关税应对机制在国内标准的正式落地。'
     ],
     standardsEn: [
-        'Domestic Standard Advancement: The revision working group for GB/T 18430.1 "Vapor Compression Cycle Water Chilling (Heat Pump) Packages" held a critical pre-finalization seminar this week. The meeting reached a basic consensus: significantly increase the weight of "Annual Performance Factor (APF)" in energy efficiency evaluation, and propose new evaluation indicators for high-temperature outlet water chilling units for "data center cooling" to meet energy-saving needs in the computing era.',
-        'International Standard Update: The latest revision of IEC 60335-2-89 (Safety Standard for Commercial Refrigeration Appliances) entered the public comment period in Europe this week. The new proposal aims to further relax the charge limit for A3 class refrigerants (such as R290) in closed commercial display cabinets (expected to increase from 500g to 1.2kg), which will greatly promote technological iteration of large-capacity commercial environmentally friendly refrigerators.'
+        'ASHRAE 15 in the Spotlight: In line with A2L refrigerant adoption, multiple sessions on ASHRAE 15.2 (residential safety standard) were held during AHR. Key discussions focused on "flammable refrigerant charge limits" and the calculation rules for "effective room area"; simplified installer guides are expected to follow.',
+        'Domestic Energy Label Rule Update: China\'s Energy Label Center has issued a notice requiring that, from March 1, 2026, newly manufactured low-temperature air-source heat pump units must include preliminary "full life-cycle carbon footprint" data in the label QR code, marking the formal incorporation of carbon border adjustment mechanisms into domestic standards.'
     ],
     innovation: [
-        '复叠式大温差供热技术：某国内高校实验室与领军企业本周联合发布一项测试成果。采用"CO₂ + R1234ze"复叠循环的空气源热泵机组，在-35℃的极寒环境下，成功实现了85℃的高温出水，且系统COP（能效比）保持在1.8以上。该技术突破了单级压缩在超低温下的压比限制，为极寒地区替代燃煤锅炉供暖提供了可行的技术路径。'
+        'AI自适应除霜技术：AHR展上某科技公司发布了一款基于边缘计算（Edge Computing）的除霜控制器。不同于传统的温差或时间控制，该系统通过AI分析风机电流波形与盘管热成像数据，精准识别结霜厚度。实测显示，该技术可减少40%的无效除霜动作，令冬季采暖综合能效提升约7%。'
     ],
     innovationEn: [
-        'Cascade Large Temperature Difference Heating Technology: A domestic university laboratory and leading enterprise jointly released test results this week. An air-source heat pump unit using "CO₂ + R1234ze" cascade cycle successfully achieved 85°C high-temperature outlet water in extreme cold conditions of -35°C, with system COP (Coefficient of Performance) maintained above 1.8. This technology breaks through the pressure ratio limitations of single-stage compression under ultra-low temperatures, providing a feasible technical path for replacing coal-fired boilers for heating in extremely cold regions.'
+        'AI-Adaptive Defrost Technology: A tech company at AHR launched an edge-computing-based defrost controller. Unlike traditional temperature-difference or time-based control, the system uses AI to analyze fan current waveforms and coil thermal imaging data for precise frost thickness detection. Field tests show the technology can reduce ineffective defrost cycles by 40% and improve winter heating overall efficiency by about 7%.'
     ],
     future: [
-        'AHR Expo 2026（2月2日-4日，拉斯维加斯）：下周即将开幕。作为北美最大暖通展，全直流变频技术与R454B制冷剂应用将是绝对主角。',
-        'HPE中国热泵展（3月11日-13日，石家庄）：国内最垂直的热泵展会，预计将集中展示农业烘干与特种工业热泵新品。',
-        '中国制冷展（4月，北京）：2026年中国制冷展观众预登记已开启，今年将特设"工业脱碳与余热利用"专区。'
+        'HPE中国热泵展（3月11日-13日，石家庄）：节后首个行业大展，预计将成为厂商发布2026年国内渠道政策的核心平台。',
+        'ISH China & CIHE（5月，北京）：北京供热展招展工作进入尾声，今年确认新增"多能互补"与"储能供热"专馆。',
+        '欧洲地缘政策影响：关注2月中旬欧盟关于"关键原材料法案（CRMA）"的最新细则，可能影响热泵电机（稀土永磁）的供应链成本。'
     ],
     futureEn: [
-        'AHR Expo 2026 (Feb 2-4, Las Vegas): Opens next week. As North America\'s largest HVAC exhibition, fully DC inverter technology and R454B refrigerant applications will be the absolute focus.',
-        'HPE China Heat Pump Expo (Mar 11-13, Shijiazhuang): China\'s most vertical heat pump exhibition, expected to showcase new products for agricultural drying and special industrial heat pumps.',
-        'China Refrigeration Expo (April, Beijing): Visitor pre-registration for the 2026 China Refrigeration Expo is now open, with a special "Industrial Decarbonization and Waste Heat Utilization" zone this year.'
+        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): First major industry show after the holiday; expected to be the key platform for manufacturers to announce 2026 domestic channel policies.',
+        'ISH China & CIHE (May, Beijing): Beijing heating exhibition recruitment is winding down; this year will add dedicated halls for "multi-energy integration" and "energy storage heating."',
+        'European Geopolitical Policy Impact: Watch for EU details on the Critical Raw Materials Act (CRMA) in mid-February; may affect heat pump motor (rare-earth permanent magnet) supply chain costs.'
     ]
 };
 
