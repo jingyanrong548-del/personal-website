@@ -19,7 +19,31 @@ git push origin main
 
 ---
 
-## 二、阿里云轻量服务器（需手动）
+## 二、阿里云轻量服务器
+
+### 自动部署（推荐，一次配置后推送 main 即同步）
+
+推送 `main` 分支后，GitHub Actions 会构建并**自动部署到阿里云**（需先完成下方「一次性配置」）。
+
+### 一次性配置（必做一次）
+
+1. **在服务器上添加部署公钥**  
+   - 本机生成仅用于部署的密钥（不共用日常登录密钥）：  
+     `ssh-keygen -t ed25519 -f ~/.ssh/aliyun_deploy -N ""`  
+   - 将 `~/.ssh/aliyun_deploy.pub` 内容追加到服务器：  
+     `ssh root@8.138.191.154 "mkdir -p ~/.ssh; echo '粘贴公钥内容' >> ~/.ssh/authorized_keys"`  
+   或把公钥内容复制后，SSH 登录服务器，执行 `echo '公钥内容' >> ~/.ssh/authorized_keys`。
+
+2. **在 GitHub 仓库添加 Secret**  
+   - 打开仓库 **Settings → Secrets and variables → Actions**。  
+   - 点 **New repository secret**，名称填 **`ALIYUN_SSH_PRIVATE_KEY`**，值填 **`~/.ssh/aliyun_deploy`** 文件的**整段内容**（含 `-----BEGIN ... KEY-----` 和 `-----END ... KEY-----`）。  
+   - 保存。
+
+完成后，每次 `git push origin main` 会同时部署到 GitHub Pages 和阿里云；若未配置该 Secret，阿里云部署步骤会自动跳过。
+
+### 手动部署（可选）
+
+**第一次部署**：请按 **[ALIYUN-FIRST-DEPLOY.md](./ALIYUN-FIRST-DEPLOY.md)** 的详细步骤操作（从获取宝塔面板地址到上传、解析、HTTPS）。
 
 服务器已备案，域名需在 **30 天内** 解析到阿里云内地服务器；若为新增网站，开通后 **30 日内** 需完成公安备案。
 
