@@ -78,4 +78,8 @@ jobs:
           echo "$ALIYUN_SSH_PRIVATE_KEY" > ~/.ssh/aliyun_deploy
           chmod 600 ~/.ssh/aliyun_deploy
           ssh-keyscan -H 8.138.191.154 >> ~/.ssh/known_hosts
-          rsync -avz --delete -e "ssh -i ~/.ssh/aliyun_deploy -o StrictHostKeyChecking=accept-new" ./ root@8.138.191.154:/www/wwwroot/jingyanrong.com/
+          SSH_OPTS="-i ~/.ssh/aliyun_deploy -o StrictHostKeyChecking=accept-new"
+          REMOTE="root@8.138.191.154"
+          REMOTE_DIR="/www/wwwroot/jingyanrong.com"
+          ssh $SSH_OPTS $REMOTE "mkdir -p $REMOTE_DIR && find $REMOTE_DIR -mindepth 1 -maxdepth 1 -exec rm -rf {} +"
+          tar czf - -C . . | ssh $SSH_OPTS $REMOTE "cd $REMOTE_DIR && tar xzf -"
