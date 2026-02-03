@@ -1,6 +1,6 @@
 # 个人网站 / Personal Website
 
-使用 Vite 构建的个人网站项目，自动部署到 GitHub Pages。
+使用 Vite 构建的个人网站项目，默认部署到 **GitHub Pages** 与 **阿里云轻量应用服务器**。详见 [DEPLOY.md](./DEPLOY.md)。
 
 ## 🚀 开发
 
@@ -28,9 +28,10 @@ npm run preview
 
 ## 🚢 部署
 
-本项目使用 **GitHub Actions** 自动部署到 GitHub Pages。
+- **GitHub Pages**：推送 `main` 后由 GitHub Actions 自动构建并部署。
+- **阿里云轻量服务器**：需本地构建后手动上传并在宝塔中配置站点，详见 [DEPLOY.md](./DEPLOY.md)。
 
-### 部署流程
+### GitHub 部署流程
 
 1. **提交代码**
    ```bash

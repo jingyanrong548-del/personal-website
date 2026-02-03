@@ -3156,6 +3156,15 @@ body {
     font-weight: 400;
 }
 
+.footer-beian a {
+    color: var(--text-lighter);
+    text-decoration: none;
+}
+.footer-beian a:hover {
+    text-decoration: underline;
+    color: var(--text-muted);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {

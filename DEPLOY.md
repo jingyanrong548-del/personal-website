@@ -1,0 +1,76 @@
+# 部署说明
+
+本站默认部署到 **GitHub Pages** 与 **阿里云轻量应用服务器**。备案号：闽ICP备2026003850号。
+
+---
+
+## 一、GitHub Pages（自动）
+
+- 推送 `main` 分支即触发 GitHub Actions 构建并部署。
+- 仓库 **Settings → Pages** 中 Source 选择 **GitHub Actions**。
+- 自定义域名通过 `public/CNAME`（内容为 `www.jingyanrong.com`）生效。
+
+**操作：**
+```bash
+git add .
+git commit -m "更新内容"
+git push origin main
+```
+
+---
+
+## 二、阿里云轻量服务器（需手动）
+
+服务器已备案，域名需在 **30 天内** 解析到阿里云内地服务器；若为新增网站，开通后 **30 日内** 需完成公安备案。
+
+### 1. 本机构建
+
+```bash
+npm ci
+npm run build
+```
+
+产物在 `dist/` 目录。
+
+### 2. 上传到服务器
+
+用 SSH 将 `dist/` 内容上传到服务器（示例：网站根目录为 `/www/wwwroot/jingyanrong.com`，请按你宝塔里实际路径修改）：
+
+```bash
+# 将下面替换为你的实际路径和服务器 IP
+export SERVER="root@8.138.191.154"
+export REMOTE_DIR="/www/wwwroot/jingyanrong.com"
+
+rsync -avz --delete dist/ $SERVER:$REMOTE_DIR/
+```
+
+若未安装 `rsync`，可用 `scp`：
+
+```bash
+scp -r dist/* root@8.138.191.154:/www/wwwroot/jingyanrong.com/
+```
+
+### 3. 宝塔面板配置（手动）
+
+1. 登录宝塔面板（端口 8888，从阿里云轻量控制台「应用详情」可获取面板地址与默认账号密码）。
+2. **网站** → 添加站点（若尚未添加）：
+   - 域名：`www.jingyanrong.com`（及 `jingyanrong.com` 如需）
+   - 根目录：如 `/www/wwwroot/jingyanrong.com`
+   - PHP 选「纯静态」或关闭 PHP。
+3. 将上面步骤 2 中上传的 `dist` 内容放到该站点根目录（即 `dist/*` 对应到根目录下的 `index.html` 和 `assets/` 等）。
+4. 若使用 HTTPS，在宝塔中为该站点申请 SSL 证书并开启强制 HTTPS。
+
+### 4. 域名解析（手动）
+
+在域名服务商处添加解析：
+
+- 主机记录：`www`（以及 `@` 若要用根域名）
+- 记录类型：`A`
+- 记录值：`8.138.191.154`（你的轻量服务器公网 IP，若有变请替换）
+
+---
+
+## 备案与合规
+
+- 首页底部已按工信部要求放置备案号 **闽ICP备2026003850号**，并链接至 https://beian.miit.gov.cn/
+- 新增网站需在开通后 30 日内完成 **公安备案**，详见阿里云备案邮件或控制台说明。

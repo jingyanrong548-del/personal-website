@@ -1,0 +1,9 @@
+---
+description: 默认部署目标：GitHub 与阿里云轻量服务器
+alwaysApply: true
+---
+
+# 默认部署目标
+
+- **应用默认部署到**：GitHub 与阿里云轻量服务器（阿里云轻量应用服务器）。
+- 涉及部署、CI/CD、发布流程时，优先考虑或兼容这两个目标（例如 GitHub Pages / Actions，以及轻量服务器上的部署方式）。
