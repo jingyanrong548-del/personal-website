@@ -61,12 +61,12 @@ npm run build
 
 ### 2. 上传到服务器
 
-用 SSH 将 `dist/` 内容上传到服务器（示例：网站根目录为 `/www/wwwroot/jingyanrong.com`，请按你宝塔里实际路径修改）：
+用 SSH 将 `dist/` 内容上传到服务器（网站根目录为 `/www/wwwroot/www.jingyanrong.com`，与宝塔/nginx 一致）：
 
 ```bash
 # 将下面替换为你的实际路径和服务器 IP
 export SERVER="root@8.138.191.154"
-export REMOTE_DIR="/www/wwwroot/jingyanrong.com"
+export REMOTE_DIR="/www/wwwroot/www.jingyanrong.com"
 
 rsync -avz --delete dist/ $SERVER:$REMOTE_DIR/
 ```
@@ -74,7 +74,7 @@ rsync -avz --delete dist/ $SERVER:$REMOTE_DIR/
 若未安装 `rsync`，可用 `scp`：
 
 ```bash
-scp -r dist/* root@8.138.191.154:/www/wwwroot/jingyanrong.com/
+scp -r dist/* root@8.138.191.154:/www/wwwroot/www.jingyanrong.com/
 ```
 
 ### 3. 宝塔面板配置（手动）
@@ -82,7 +82,7 @@ scp -r dist/* root@8.138.191.154:/www/wwwroot/jingyanrong.com/
 1. 登录宝塔面板（端口 8888，从阿里云轻量控制台「应用详情」可获取面板地址与默认账号密码）。
 2. **网站** → 添加站点（若尚未添加）：
    - 域名：`www.jingyanrong.com`（及 `jingyanrong.com` 如需）
-   - 根目录：如 `/www/wwwroot/jingyanrong.com`
+   - 根目录：如 `/www/wwwroot/www.jingyanrong.com`
    - PHP 选「纯静态」或关闭 PHP。
 3. 将上面步骤 2 中上传的 `dist` 内容放到该站点根目录（即 `dist/*` 对应到根目录下的 `index.html` 和 `assets/` 等）。
 4. 若使用 HTTPS，在宝塔中为该站点申请 SSL 证书并开启强制 HTTPS。
