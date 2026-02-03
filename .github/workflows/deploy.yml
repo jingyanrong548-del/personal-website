@@ -81,5 +81,5 @@ jobs:
           SSH_OPTS="-i ~/.ssh/aliyun_deploy -o StrictHostKeyChecking=accept-new"
           REMOTE="root@8.138.191.154"
           REMOTE_DIR="/www/wwwroot/www.jingyanrong.com"
-          ssh $SSH_OPTS $REMOTE "mkdir -p $REMOTE_DIR && find $REMOTE_DIR -mindepth 1 -maxdepth 1 -exec rm -rf {} +"
+          ssh $SSH_OPTS $REMOTE "mkdir -p $REMOTE_DIR && find $REMOTE_DIR -mindepth 1 -maxdepth 1 ! -name '.user.ini' ! -name '.htaccess' -exec rm -rf {} +"
           tar czf - -C . . | ssh $SSH_OPTS $REMOTE "cd $REMOTE_DIR && tar xzf -"
