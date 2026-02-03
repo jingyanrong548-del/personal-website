@@ -39,7 +39,10 @@ git push origin main
    - 点 **New repository secret**，名称填 **`ALIYUN_SSH_PRIVATE_KEY`**，值填 **`~/.ssh/aliyun_deploy`** 文件的**整段内容**（含 `-----BEGIN ... KEY-----` 和 `-----END ... KEY-----`）。  
    - 保存。
 
-完成后，每次 `git push origin main` 会同时部署到 GitHub Pages 和阿里云；若未配置该 Secret，阿里云部署步骤会自动跳过。
+3. **启用阿里云自动部署**  
+   - 在 **Settings → Secrets and variables → Actions** 中，切到 **Variables** 页。  
+   - 点 **New repository variable**，名称填 **`ALIYUN_DEPLOY_ENABLED`**，值填 **`true`**。  
+   - 保存后，每次 `git push origin main` 会同时部署到 GitHub Pages 和阿里云。若未添加该变量，阿里云部署步骤将自动跳过。
 
 ### 手动部署（可选）
 
