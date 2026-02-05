@@ -1,5 +1,5 @@
 ---
-description: 默认部署目标：GitHub 与阿里云轻量服务器
+description: 默认部署目标与阿里云自动部署约定
 alwaysApply: true
 ---
 
@@ -7,3 +7,14 @@ alwaysApply: true
 
 - **应用默认部署到**：GitHub 与阿里云轻量服务器（阿里云轻量应用服务器）。
 - 涉及部署、CI/CD、发布流程时，优先考虑或兼容这两个目标（例如 GitHub Pages / Actions，以及轻量服务器上的部署方式）。
+
+# 阿里云自动部署约定（供本站及未来其他 app 复用）
+
+- **服务器**：阿里云轻量应用服务器，SSH 为 `root@8.138.191.154`。
+- **部署路径必须与 Nginx 一致**：宝塔/nginx 的站点 root 为 **`/www/wwwroot/<域名>`**，域名为 `www.jingyanrong.com` 时路径为 **`/www/wwwroot/www.jingyanrong.com`**（注意是 `www.jingyanrong.com` 不是 `jingyanrong.com`）。新增站点时先确认宝塔里该站点的「网站目录」，再在 workflow 里使用相同路径，否则会部署到错误目录、线上仍是旧内容。
+- **传输方式**：使用 **SSH + tar** 推送构建产物，不要依赖服务器上的 `rsync`（轻量默认环境可能未安装，会报 exit code 12）。流程：清空远程目录 → `tar czf - -C . . | ssh ... "cd $REMOTE_DIR && tar xzf -"`。
+- **清空远程目录时**：必须排除宝塔/PHP 保护文件，否则会报 `rm: cannot remove '.user.ini': Operation not permitted`。使用：`find $REMOTE_DIR -mindepth 1 -maxdepth 1 ! -name '.user.ini' ! -name '.htaccess' -exec rm -rf {} +`（不要用无排除的 `find ... -exec rm -rf {} +`）。
+- **GitHub 配置**：  
+  - Secret：`ALIYUN_SSH_PRIVATE_KEY`（部署用私钥完整内容）。  
+  - Variable：`ALIYUN_DEPLOY_ENABLED` = `true` 时才执行阿里云部署，未设置则跳过。
+- **详细步骤与首次部署**：见仓库内 [DEPLOY.md](../DEPLOY.md) 与 [ALIYUN-DEPLOY-NOTES.md](../ALIYUN-DEPLOY-NOTES.md)。
