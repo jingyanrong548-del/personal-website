@@ -117,6 +117,12 @@ const translations = {
         'apps.filter.refrigeration': 'Refrigeration',
         'apps.filter.heatpump': 'Heat Pump',
         'apps.filter.general': 'General',
+        'apps.zone.open': 'Open Zone',
+        'apps.zone.invitation': 'Invitation-Only Zone',
+        'apps.invitation.hint': 'Enter password to view the following tools',
+        'apps.invitation.passwordPlaceholder': 'Password',
+        'apps.invitation.unlock': 'Unlock',
+        'apps.invitation.wrongPassword': 'Incorrect password',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -348,6 +354,12 @@ const translations = {
         'apps.filter.refrigeration': '制冷类',
         'apps.filter.heatpump': '热泵类',
         'apps.filter.general': '通用类',
+        'apps.zone.open': '开放区',
+        'apps.zone.invitation': '邀请开放区',
+        'apps.invitation.hint': '输入密码后可查看以下工具',
+        'apps.invitation.passwordPlaceholder': '请输入密码',
+        'apps.invitation.unlock': '解锁',
+        'apps.invitation.wrongPassword': '密码错误',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、免费方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
@@ -521,8 +533,8 @@ function setLanguage(lang) {
     // Update all elements with data-i18n attribute
     const currentYear = new Date().getFullYear();
     const currentDate = new Date();
-    // Count available apps (app-card elements in apps-grid)
-    const appCount = document.querySelectorAll('.apps-grid > .app-card').length;
+    // Count available apps (all app-card elements in #apps section, including both zones)
+    const appCount = document.querySelectorAll('#apps .app-card').length;
     
     // Calculate experience years (starting from July 1, 1998)
     // Each year on July 1st, the experience increases by 1
@@ -1362,6 +1374,48 @@ document.addEventListener('DOMContentLoaded', function() {
             // Future: Add filtering logic here
         });
     });
+
+    // Invitation-only zone: password gate (password: 123456), persist unlock in session
+    const INVITED_STORAGE_KEY = 'appsInvitedUnlock';
+    const INVITED_PASSWORD = '123456';
+    const gateEl = document.getElementById('apps-invited-gate');
+    const gridEl = document.getElementById('apps-invited-grid');
+    const passwordInput = document.getElementById('apps-invited-password');
+    const unlockBtn = document.getElementById('apps-invited-unlock-btn');
+    const errorEl = document.getElementById('apps-invited-error');
+
+    function setInvitedUnlocked(unlocked) {
+        if (unlocked) {
+            try { sessionStorage.setItem(INVITED_STORAGE_KEY, '1'); } catch (e) {}
+            if (gateEl) gateEl.style.display = 'none';
+            if (gridEl) { gridEl.removeAttribute('hidden'); gridEl.style.display = ''; }
+        } else {
+            try { sessionStorage.removeItem(INVITED_STORAGE_KEY); } catch (e) {}
+            if (gateEl) gateEl.style.display = '';
+            if (gridEl) { gridEl.setAttribute('hidden', ''); gridEl.style.display = 'none'; }
+        }
+    }
+
+    if (sessionStorage.getItem(INVITED_STORAGE_KEY) === '1') {
+        setInvitedUnlocked(true);
+    }
+
+    if (unlockBtn && passwordInput && errorEl) {
+        unlockBtn.addEventListener('click', function() {
+            const value = (passwordInput.value || '').trim();
+            if (value === INVITED_PASSWORD) {
+                errorEl.textContent = '';
+                setInvitedUnlocked(true);
+            } else {
+                const lang = document.documentElement.lang && document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+                const t = translations[lang];
+                errorEl.textContent = (t && t['apps.invitation.wrongPassword']) || 'Incorrect password';
+            }
+        });
+        passwordInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') unlockBtn.click();
+        });
+    }
 
     // Initialize Manual Briefings
     initializeBriefings();

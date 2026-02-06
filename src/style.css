@@ -2087,11 +2087,88 @@ body {
     transform: translateY(-1px);
 }
 
+.apps-zone-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.apps-zone-title:first-of-type {
+    margin-top: 0;
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.apps-invited-gate {
+    margin-top: 0.5rem;
+    padding: 1.5rem 2rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.apps-invited-gate-hint {
+    width: 100%;
+    margin: 0 0 0.25rem 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.apps-invited-password-input {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    min-width: 160px;
+}
+
+.apps-invited-password-input:focus {
+    outline: none;
+    border-color: var(--emerald-600);
+    box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.2);
+}
+
+.apps-invited-unlock-btn {
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, var(--emerald-600), var(--emerald-700));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.apps-invited-unlock-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.apps-invited-unlock-btn:active {
+    transform: translateY(0);
+}
+
+.apps-invited-error {
+    width: 100%;
+    font-size: 0.875rem;
+    color: var(--red-600, #dc2626);
+}
+
+.apps-grid-invited {
+    margin-top: 0.5rem;
 }
 
 .app-card {
