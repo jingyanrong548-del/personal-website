@@ -923,5 +923,18 @@
             </div>
         </div>
     </div>
+
+    <!-- 完整履历密码弹窗 -->
+    <div class="resume-password-overlay" id="resume-password-overlay" aria-hidden="true">
+        <div class="resume-password-modal" role="dialog" aria-labelledby="resume-password-title">
+            <h3 class="resume-password-title" id="resume-password-title" data-i18n="resume.password.title">输入密码查看完整履历</h3>
+            <input type="password" class="resume-password-input" id="resume-password-input" placeholder="" data-i18n-placeholder="resume.password.placeholder" autocomplete="off" />
+            <p class="resume-password-error" id="resume-password-error" style="display: none;" data-i18n="resume.password.wrong">密码错误</p>
+            <div class="resume-password-actions">
+                <button type="button" class="resume-password-btn resume-password-cancel" id="resume-password-cancel" data-i18n="resume.password.cancel">取消</button>
+                <button type="button" class="resume-password-btn resume-password-confirm" id="resume-password-confirm" data-i18n="resume.password.confirm">确认</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

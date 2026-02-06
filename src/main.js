@@ -189,6 +189,11 @@ const translations = {
         // About section additional
         'about.toggle.expand': 'View Full Resume',
         'about.toggle.collapse': 'Collapse Resume',
+        'resume.password.title': 'Enter password to view full resume',
+        'resume.password.placeholder': 'Password',
+        'resume.password.confirm': 'Confirm',
+        'resume.password.cancel': 'Cancel',
+        'resume.password.wrong': 'Incorrect password',
         'about.skills.title': 'Technical Skills',
         'about.skills.category.digital': 'Digital Tools',
         'about.skills.category.thermal': 'Thermal Engineering',
@@ -412,6 +417,11 @@ const translations = {
         // About section additional
         'about.toggle.expand': '查看完整履历',
         'about.toggle.collapse': '收起履历',
+        'resume.password.title': '输入密码查看完整履历',
+        'resume.password.placeholder': '请输入密码',
+        'resume.password.confirm': '确认',
+        'resume.password.cancel': '取消',
+        'resume.password.wrong': '密码错误',
         'about.skills.title': '专业技能',
         'about.skills.category.digital': '数字化工具',
         'about.skills.category.thermal': '热能工程',
@@ -1253,27 +1263,95 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // About section toggle functionality
+    // About section toggle functionality（完整履历需密码 123456，同会话内解锁后无需重复输入）
+    const RESUME_PASSWORD = '123456';
+    const RESUME_UNLOCK_KEY = 'resumeUnlocked';
+
     const aboutToggleBtn = document.getElementById('about-toggle-btn');
     const aboutDetails = document.getElementById('about-details');
     const toggleTextExpand = aboutToggleBtn?.querySelector('.toggle-text-expand');
     const toggleTextCollapse = aboutToggleBtn?.querySelector('.toggle-text-collapse');
-    
+    const resumePasswordOverlay = document.getElementById('resume-password-overlay');
+    const resumePasswordInput = document.getElementById('resume-password-input');
+    const resumePasswordError = document.getElementById('resume-password-error');
+    const resumePasswordConfirm = document.getElementById('resume-password-confirm');
+    const resumePasswordCancel = document.getElementById('resume-password-cancel');
+
+    function expandResumeSection() {
+        if (!aboutDetails || !aboutToggleBtn) return;
+        aboutDetails.style.display = 'block';
+        aboutToggleBtn.classList.add('expanded');
+        if (toggleTextExpand) toggleTextExpand.style.display = 'none';
+        if (toggleTextCollapse) toggleTextCollapse.style.display = 'inline';
+    }
+
+    function collapseResumeSection() {
+        if (!aboutDetails || !aboutToggleBtn) return;
+        aboutDetails.style.display = 'none';
+        aboutToggleBtn.classList.remove('expanded');
+        if (toggleTextExpand) toggleTextExpand.style.display = 'inline';
+        if (toggleTextCollapse) toggleTextCollapse.style.display = 'none';
+    }
+
+    function openResumePasswordModal() {
+        if (!resumePasswordOverlay || !resumePasswordInput) return;
+        resumePasswordOverlay.setAttribute('aria-hidden', 'false');
+        resumePasswordOverlay.classList.add('is-open');
+        resumePasswordInput.value = '';
+        if (resumePasswordError) resumePasswordError.style.display = 'none';
+        resumePasswordInput.focus();
+    }
+
+    function closeResumePasswordModal() {
+        if (!resumePasswordOverlay) return;
+        resumePasswordOverlay.setAttribute('aria-hidden', 'true');
+        resumePasswordOverlay.classList.remove('is-open');
+    }
+
+    function checkResumePasswordAndExpand() {
+        const value = resumePasswordInput?.value?.trim() || '';
+        if (value !== RESUME_PASSWORD) {
+            if (resumePasswordError) {
+                resumePasswordError.style.display = 'block';
+                resumePasswordInput.focus();
+            }
+            return;
+        }
+        try { sessionStorage.setItem(RESUME_UNLOCK_KEY, 'true'); } catch (_) {}
+        closeResumePasswordModal();
+        expandResumeSection();
+    }
+
     if (aboutToggleBtn && aboutDetails) {
         aboutToggleBtn.addEventListener('click', function() {
             const isExpanded = aboutDetails.style.display !== 'none';
-            
             if (isExpanded) {
-                aboutDetails.style.display = 'none';
-                aboutToggleBtn.classList.remove('expanded');
-                if (toggleTextExpand) toggleTextExpand.style.display = 'inline';
-                if (toggleTextCollapse) toggleTextCollapse.style.display = 'none';
+                collapseResumeSection();
             } else {
-                aboutDetails.style.display = 'block';
-                aboutToggleBtn.classList.add('expanded');
-                if (toggleTextExpand) toggleTextExpand.style.display = 'none';
-                if (toggleTextCollapse) toggleTextCollapse.style.display = 'inline';
+                const unlocked = typeof sessionStorage !== 'undefined' && sessionStorage.getItem(RESUME_UNLOCK_KEY) === 'true';
+                if (unlocked) {
+                    expandResumeSection();
+                } else {
+                    openResumePasswordModal();
+                }
             }
+        });
+    }
+
+    if (resumePasswordConfirm) {
+        resumePasswordConfirm.addEventListener('click', checkResumePasswordAndExpand);
+    }
+    if (resumePasswordCancel) {
+        resumePasswordCancel.addEventListener('click', closeResumePasswordModal);
+    }
+    if (resumePasswordInput) {
+        resumePasswordInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') checkResumePasswordAndExpand();
+        });
+    }
+    if (resumePasswordOverlay) {
+        resumePasswordOverlay.addEventListener('click', function(e) {
+            if (e.target === resumePasswordOverlay) closeResumePasswordModal();
         });
     }
 
