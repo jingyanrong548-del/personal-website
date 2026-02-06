@@ -2052,23 +2052,6 @@ body {
     text-align: center;
 }
 
-.apps-maintenance-notice {
-    margin-top: 1.5rem;
-    padding: 1rem 1.5rem;
-    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(252, 211, 77, 0.08));
-    border-radius: 12px;
-    border: 1px solid rgba(251, 191, 36, 0.3);
-    display: inline-block;
-}
-
-.apps-maintenance-notice p {
-    font-size: 0.9375rem;
-    color: #92400E;
-    line-height: 1.5;
-    margin: 0;
-    font-weight: 500;
-}
-
 .apps-filter-tabs {
     display: flex;
     justify-content: center;
@@ -3670,15 +3653,6 @@ body {
         margin-bottom: 0.875rem;
     }
     
-    .apps-maintenance-notice {
-        margin-top: 1.25rem;
-        padding: 0.875rem 1.25rem;
-    }
-
-    .apps-maintenance-notice p {
-        font-size: 0.875rem;
-    }
-
     .apps-more-notice {
         margin-top: 2rem;
         padding: 1.25rem 1.5rem;
