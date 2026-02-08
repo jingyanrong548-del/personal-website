@@ -683,47 +683,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 5,
-    updateDate: '2026-02-03',
+    week: 6,
+    updateDate: '2026-02-08',
     domestic: [
-        '春节停工与检修潮：随着农历丙午年春节临近，本周是多数制造企业的最后一个完整工作周。珠三角与长三角主要热泵基地陆续发布放假通知，生产线从"赶工模式"转入"停机检修模式"。物流停运导致发货量在周三达到峰值后断崖式回落，行业正式进入假期休整期。',
-        '泳池热泵备货启动：尽管国内处于深冬，但针对欧洲及北美夏季市场的泳池热泵订单本周排产显著增加。数据显示，变频静音型泳池机组的海外询盘量环比增长20%，企业正利用节前空窗期抢抓Q2出口订单。'
+        '春节停产与物流熔断：受丙午年春节（2月17日）临近影响，本周国内制冷热泵产业链进入全面"休眠期"。除极少数承担紧急保供任务的维修备件仓外，90%以上的整机与配件工厂已完成最后发货并封账。跨省物流干线基本停运，行业关注点由"生产交付"全面转向"回款与库存盘点"。',
+        '节前渠道库存分析：据产业在线节前最后一次摸底，家用空气源热泵渠道库存水位较往年同期偏低约8%。这主要得益于1月下旬的一波寒潮带来的终端置换需求，为节后（Q1后半段）的新品补货留出了良性空间。'
     ],
     domesticEn: [
-        'Spring Festival Shutdown and Maintenance Wave: As the Lunar Bingwu Year Spring Festival approaches, this week is the last full working week for most manufacturers. Major heat pump bases in the Pearl River Delta and Yangtze River Delta have issued holiday notices; production lines are shifting from "rush mode" to "shutdown and maintenance mode." Logistics suspensions have caused shipments to peak on Wednesday and then drop sharply; the industry has officially entered the holiday lull.',
-        'Pool Heat Pump Stocking Kicks Off: Despite deep winter domestically, pool heat pump orders for the European and North American summer markets have seen a significant increase in production scheduling this week. Data show that overseas inquiries for variable-frequency quiet pool units have risen 20% month-over-month; companies are using the pre-holiday window to secure Q2 export orders.'
+        'Spring Festival Shutdown and Logistics Freeze: With the Bingwu Year Spring Festival (Feb 17) approaching, the domestic refrigeration and heat pump industry entered a full "hibernation period" this week. Except for a handful of repair parts warehouses handling emergency supply, over 90% of OEM and component factories have completed final shipments and closed their books. Interprovincial logistics corridors have essentially shut down; industry focus has shifted from "production and delivery" to "payment collection and inventory counting."',
+        'Pre-Holiday Channel Inventory Analysis: According to industry online\'s final pre-holiday survey, residential air-source heat pump channel inventory is about 8% lower than the same period in previous years. This is largely due to replacement demand triggered by the late-January cold spell, leaving healthy room for new-product restocking in the second half of Q1 after the holiday.'
     ],
     international: [
-        'AHR Expo 2026 直击：本周（2月2日-4日），北美最大的暖通制冷展在拉斯维加斯盛大举办。展会现场，"全电气化（Electrification）"与"寒冷气候热泵（CCHP）"占据绝对C位。开利、大金、LG等巨头集中展示了能效超越美国能源部（DOE）挑战赛标准的低温热泵新品，标志着热泵在北美寒冷地区的普及技术障碍已被彻底扫除。',
-        '冷媒替代分水岭：在AHR展会上，R410A机组几乎销声匿迹，取而代之的是采用 R454B 与 R32 的新一代设备。多家北美分销商确认，2026年将是A2L类（微燃）制冷剂全面接管市场的元年，相关的安装工具与泄漏检测设备需求暴增。'
+        'AHR展后效应发酵：上周拉斯维加斯AHR展闭幕后，本周北美市场进入密集的商务跟进期。"双燃料混合热泵（Dual Fuel/Hybrid Systems）"成为本周热词，多家北美燃气公司宣布与热泵制造商达成合作，推广"燃气炉+热泵"的改造方案，以应对极端寒潮下的电网负荷压力。',
+        '欧洲MCE展前瞻：随着3月中旬米兰MCE（Mostra Convegno Expocomfort）临近，欧洲各大暖通媒体开始进行展前预热。"R290商用多联机"将是今年MCE的核心看点，多家亚洲品牌计划在米兰首发大马力R290 VRF系统，挑战传统冷媒在大型商用建筑中的地位。'
     ],
     internationalEn: [
-        'AHR Expo 2026 On-Site: This week (Feb 2–4), North America\'s largest HVAC&R exhibition was held in Las Vegas. On the show floor, "Electrification" and "Cold Climate Heat Pumps (CCHP)" took center stage. Carrier, Daikin, LG and other majors showcased low-temperature heat pump products exceeding U.S. DOE Challenge standards, marking the removal of technical barriers to heat pump adoption in cold North American regions.',
-        'Refrigerant Transition Watershed: At AHR, R410A units were scarcely seen; they have been replaced by next-generation equipment using R454B and R32. Multiple North American distributors confirmed that 2026 will be the first year of full market takeover by A2L (mildly flammable) refrigerants, with surging demand for related installation tools and leak detection equipment.'
+        'AHR Post-Show Ripples: Following the closure of last week\'s AHR in Las Vegas, the North American market entered an intensive business follow-up period this week. "Dual Fuel/Hybrid Systems" emerged as the buzzword; multiple North American gas utilities announced partnerships with heat pump manufacturers to promote "gas furnace + heat pump" retrofit solutions, addressing grid load pressure during extreme cold events.',
+        'European MCE Preview: As MCE (Mostra Convegno Expocomfort) in Milan approaches in mid-March, major European HVAC media have begun pre-show coverage. "R290 commercial VRF" will be a core highlight at MCE this year; several Asian brands plan to launch high-capacity R290 VRF systems in Milan, challenging traditional refrigerants in large commercial buildings.'
     ],
     standards: [
-        'ASHRAE 15 关注度提升：配合A2L制冷剂的普及，AHR展会期间举办了多场关于 ASHRAE 15.2（住宅安全标准）的解读会。核心讨论点集中在"可燃制冷剂充注量限值"与"有效房间面积"的计算规则上，预计后续将有针对安装商的简化版操作指南发布。',
-        '国内能效标识新规：中国能效标识中心发布通知，要求自2026年3月1日起，新出厂的低温空气源热泵机组必须在标识二维码中涵盖"全生命周期碳足迹"初级数据，这标志着碳关税应对机制在国内标准的正式落地。'
+        '美国SNAP列表更新预告：美国环保署（EPA）本周发出信号，拟在3月更新SNAP（重要新替代品政策）列表，进一步明确R454B在轻商用屋顶机（Rooftop Units）中的使用规范。这直接回应了AHR展会上厂商对"在新规下如何合规充注"的关切。',
+        'GB/T 25127修订风向：《低环境温度空气源热泵（冷水）机组》新国标修订组在本周的内部通气会中透露，拟引入"除霜供热量折减系数"，旨在更真实地反映机组在结霜工况下的实际能效，打击虚标COP现象。'
     ],
     standardsEn: [
-        'ASHRAE 15 in the Spotlight: In line with A2L refrigerant adoption, multiple sessions on ASHRAE 15.2 (residential safety standard) were held during AHR. Key discussions focused on "flammable refrigerant charge limits" and the calculation rules for "effective room area"; simplified installer guides are expected to follow.',
-        'Domestic Energy Label Rule Update: China\'s Energy Label Center has issued a notice requiring that, from March 1, 2026, newly manufactured low-temperature air-source heat pump units must include preliminary "full life-cycle carbon footprint" data in the label QR code, marking the formal incorporation of carbon border adjustment mechanisms into domestic standards.'
+        'U.S. SNAP List Update Notice: The U.S. EPA signaled this week that it intends to update the SNAP (Significant New Alternatives Policy) list in March, further clarifying R454B use rules for light commercial rooftop units. This directly addresses manufacturer concerns raised at AHR about "how to comply with charge limits under the new rules."',
+        'GB/T 25127 Revision Signal: The revision group for the national standard on low-ambient air-source heat pump (water) units revealed in an internal briefing this week that it plans to introduce a "defrost heating capacity reduction coefficient" to more accurately reflect actual efficiency under frost conditions and curb inflated COP claims.'
     ],
     innovation: [
-        'AI自适应除霜技术：AHR展上某科技公司发布了一款基于边缘计算（Edge Computing）的除霜控制器。不同于传统的温差或时间控制，该系统通过AI分析风机电流波形与盘管热成像数据，精准识别结霜厚度。实测显示，该技术可减少40%的无效除霜动作，令冬季采暖综合能效提升约7%。'
+        '光伏直驱热泵（PV-Direct）：欧洲某能源实验室本周发布测试报告，验证了一种新型DC-DC直驱技术。该技术允许屋顶光伏板产生的直流电不经过逆变器，直接驱动热泵压缩机。测试表明，该方案减少了约6%的逆变损耗，且在电网波动时展现出极强的孤岛运行稳定性，非常适合南欧等高光照地区。'
     ],
     innovationEn: [
-        'AI-Adaptive Defrost Technology: A tech company at AHR launched an edge-computing-based defrost controller. Unlike traditional temperature-difference or time-based control, the system uses AI to analyze fan current waveforms and coil thermal imaging data for precise frost thickness detection. Field tests show the technology can reduce ineffective defrost cycles by 40% and improve winter heating overall efficiency by about 7%.'
+        'PV-Direct Heat Pumps: A European energy lab released test results this week validating a new DC-DC direct-drive technology. The approach allows DC power from rooftop PV panels to drive heat pump compressors directly without an inverter. Tests show the scheme reduces inverter losses by about 6% and exhibits strong islanding stability during grid fluctuations, well suited for high-solar regions like Southern Europe.'
     ],
     future: [
-        'HPE中国热泵展（3月11日-13日，石家庄）：节后首个行业大展，预计将成为厂商发布2026年国内渠道政策的核心平台。',
-        'ISH China & CIHE（5月，北京）：北京供热展招展工作进入尾声，今年确认新增"多能互补"与"储能供热"专馆。',
-        '欧洲地缘政策影响：关注2月中旬欧盟关于"关键原材料法案（CRMA）"的最新细则，可能影响热泵电机（稀土永磁）的供应链成本。'
+        'MCE 2026（3月17日-20日，米兰）：全球HVACR行业的"欧洲主场"，也是中国企业出海欧洲最重要的展示平台，预计今年中国参展商数量将创历史新高。',
+        '中国家电及消费电子博览会（AWE 2026，3月，上海）：节后首个大型综合家电展，重点关注家用空调/热泵的智能化（AI互联）趋势。',
+        '原材料价格波动：春节期间需留意LME铜价与铝价的国际盘面走势，这将直接决定节后复工时的原材料采购成本。'
     ],
     futureEn: [
-        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): First major industry show after the holiday; expected to be the key platform for manufacturers to announce 2026 domestic channel policies.',
-        'ISH China & CIHE (May, Beijing): Beijing heating exhibition recruitment is winding down; this year will add dedicated halls for "multi-energy integration" and "energy storage heating."',
-        'European Geopolitical Policy Impact: Watch for EU details on the Critical Raw Materials Act (CRMA) in mid-February; may affect heat pump motor (rare-earth permanent magnet) supply chain costs.'
+        'MCE 2026 (Mar 17–20, Milan): The "European home turf" of the global HVACR industry and the most important showcase for Chinese companies expanding into Europe; Chinese exhibitor count is expected to hit a record high this year.',
+        'China Appliance & Electronics Expo (AWE 2026, March, Shanghai): The first major comprehensive appliance show after the holiday; focus on smart home AC/heat pump trends (AI connectivity).',
+        'Raw Material Price Volatility: Monitor LME copper and aluminum prices during the Spring Festival holiday; they will directly influence procurement costs when production resumes.'
     ]
 };
 
