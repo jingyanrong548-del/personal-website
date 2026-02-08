@@ -674,17 +674,20 @@ function setLanguage(lang) {
 // 更新简报步骤：
 // 1. 修改 year（年份）和 week（周数）
 // 2. 更新 updateDate（更新日期，格式：YYYY-MM-DD）
-// 3. 在 domestic 和 domesticEn 数组中分别添加或修改"国内动态"的中英文条目
-// 4. 在 international 和 internationalEn 数组中分别添加或修改"国外动态"的中英文条目
-// 5. 在 standards 和 standardsEn 数组中分别添加或修改"标准动态"的中英文条目
-// 6. 在 innovation 和 innovationEn 数组中分别添加或修改"技术创新"的中英文条目
-// 7. 在 future 和 futureEn 数组中分别添加或修改"未来重要事项"的中英文条目
+// 3. 更新 subtitle 和 subtitleEn（可选，本周副标题/摘要，留空则不显示）
+// 4. 在 domestic 和 domesticEn 数组中分别添加或修改"国内动态"的中英文条目
+// 5. 在 international 和 internationalEn 数组中分别添加或修改"国外动态"的中英文条目
+// 6. 在 standards 和 standardsEn 数组中分别添加或修改"标准动态"的中英文条目
+// 7. 在 innovation 和 innovationEn 数组中分别添加或修改"技术创新"的中英文条目
+// 8. 在 future 和 futureEn 数组中分别添加或修改"未来重要事项"的中英文条目
 //
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
     week: 6,
     updateDate: '2026-02-08',
+    subtitle: '春节前产业链全面休整，北美双燃料热泵、欧洲R290多联机成焦点',
+    subtitleEn: 'Industry lull before Spring Festival; North American dual-fuel heat pumps and European R290 VRF in the spotlight',
     domestic: [
         '春节停产与物流熔断：受丙午年春节（2月17日）临近影响，本周国内制冷热泵产业链进入全面"休眠期"。除极少数承担紧急保供任务的维修备件仓外，90%以上的整机与配件工厂已完成最后发货并封账。跨省物流干线基本停运，行业关注点由"生产交付"全面转向"回款与库存盘点"。',
         '节前渠道库存分析：据产业在线节前最后一次摸底，家用空气源热泵渠道库存水位较往年同期偏低约8%。这主要得益于1月下旬的一波寒潮带来的终端置换需求，为节后（Q1后半段）的新品补货留出了良性空间。'
@@ -730,6 +733,7 @@ const briefingData = {
 // Display briefing content
 function displayBriefing() {
     const titleElement = document.getElementById('briefing-week-title');
+    const subtitleElement = document.getElementById('briefing-subtitle');
     const previewElement = document.getElementById('briefing-preview');
     const contentElement = document.getElementById('briefing-main-content');
     const timeElement = document.getElementById('briefing-update-time');
@@ -743,6 +747,17 @@ function displayBriefing() {
         .replace('{year}', briefingData.year)
         .replace('{week}', briefingData.week);
     titleElement.textContent = weekTitle;
+
+    // Update subtitle (optional)
+    if (subtitleElement) {
+        const subtitle = currentLanguage === 'zh' ? (briefingData.subtitle || '') : (briefingData.subtitleEn || '');
+        if (subtitle) {
+            subtitleElement.textContent = subtitle;
+            subtitleElement.style.display = 'block';
+        } else {
+            subtitleElement.style.display = 'none';
+        }
+    }
 
     // Select content based on current language
     const domesticItems = currentLanguage === 'zh' ? briefingData.domestic : briefingData.domesticEn;
