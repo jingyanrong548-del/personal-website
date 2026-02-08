@@ -3,10 +3,9 @@
 User-agent: *
 Allow: /
 
-# Allow all major search engines
+# 主流搜索引擎爬虫（中国 + 国际）
 User-agent: Googlebot
 Allow: /
-
 User-agent: Googlebot-Image
 Allow: /
 
@@ -19,8 +18,25 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-# Sitemap location
-Sitemap: https://www.jingyanrong.com/sitemap.xml
+# 搜狗
+User-agent: Sogou web spider
+Allow: /
 
-# Crawl-delay (optional, helps prevent overloading server)
-Crawl-delay: 1
+# 360 搜索
+User-agent: 360Spider
+Allow: /
+
+# 神马搜索（UC/阿里巴巴）
+User-agent: YisouSpider
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# 字节跳动
+User-agent: Bytespider
+Allow: /
+
+# Sitemap（供所有引擎自动发现）
+Sitemap: https://www.jingyanrong.com/sitemap.xml

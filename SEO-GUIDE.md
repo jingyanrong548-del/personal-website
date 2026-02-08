@@ -1,122 +1,137 @@
 # SEO 优化指南 - 搜索引擎提交说明
 
-本网站已完成 SEO 优化，包括：
+本网站已完成 SEO 优化，备案完成后可按以下步骤提交到各主流搜索引擎，加速收录。
 
 ## ✅ 已完成的 SEO 优化
 
-1. **Meta 标签优化**
-   - Title 和 Description
-   - Keywords（关键词）
-   - Author（作者信息）
-   - Robots 指令
-
-2. **Open Graph 标签**
-   - 支持社交媒体分享（Facebook、LinkedIn 等）
-   - Twitter Card 支持
-
-3. **结构化数据（JSON-LD）**
-   - Person 结构化数据
-   - WebSite 结构化数据
-   - 帮助搜索引擎理解网站内容
-
-4. **技术 SEO**
-   - Canonical URL
-   - robots.txt 文件
-   - sitemap.xml 文件
-   - 动态语言标签支持
-
-## 📝 如何提交到搜索引擎
-
-### 1. 百度搜索资源平台
-
-1. 访问：https://ziyuan.baidu.com/
-2. 使用百度账号登录
-3. 添加网站：`www.jingyanrong.com`
-4. 验证网站所有权（推荐使用 HTML 标签验证）
-5. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
-6. 在"数据引入" → "链接提交"中主动推送网站链接
-
-**重要提示**：
-- 验证成功后，在"数据引入" → "链接提交"中提交首页 URL
-- 定期提交更新的页面链接
-
-### 2. Google Search Console
-
-1. 访问：https://search.google.com/search-console
-2. 使用 Google 账号登录
-3. 添加属性：`https://www.jingyanrong.com`
-4. 验证网站所有权（推荐使用 HTML 标签验证）
-5. 在"索引" → "站点地图"中提交：`https://www.jingyanrong.com/sitemap.xml`
-6. 使用"URL 检查"工具检查页面是否被索引
-
-**重要提示**：
-- 提交 sitemap 后，Google 通常会在几天内开始抓取
-- 使用"请求建立索引"功能加速新页面索引
-
-### 3. 必应 (Bing) Webmaster Tools
-
-1. 访问：https://www.bing.com/webmasters
-2. 使用 Microsoft 账号登录
-3. 添加网站：`www.jingyanrong.com`
-4. 验证网站所有权
-5. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
-
-### 4. 其他搜索引擎
-
-- **360 搜索**：https://zhanzhang.so.com/
-- **搜狗**：https://zhanzhang.sogou.com/
-- **神马搜索**：https://zhanzhang.sm.cn/
-
-## 🔍 验证 SEO 是否生效
-
-### 测试方法
-
-1. **搜索站点**
-   - 百度：`site:www.jingyanrong.com`
-   - Google：`site:www.jingyanrong.com`
-   - 必应：`site:www.jingyanrong.com`
-
-2. **搜索姓名**
-   - 百度：`荆炎荣` 或 `Jing Yanrong`
-   - Google：`Jing Yanrong` 或 `荆炎荣 工业制冷`
-
-3. **测试结构化数据**
-   - 访问：https://search.google.com/test/rich-results
-   - 输入您的网站 URL 测试结构化数据是否正确
-
-4. **检查 Meta 标签**
-   - 访问：https://www.opengraph.xyz/
-   - 输入您的网站 URL 查看 Open Graph 标签
-
-## ⏰ 索引时间
-
-- **Google**：通常 1-7 天
-- **百度**：通常 1-2 周
-- **必应**：通常 1-7 天
-
-首次提交后，请耐心等待搜索引擎抓取和索引。
-
-## 📊 持续优化建议
-
-1. **定期更新内容**：定期发布新内容有助于提高搜索排名
-2. **外链建设**：在其他相关网站分享您的工具链接
-3. **社交媒体**：在 LinkedIn、知乎等平台分享您的网站
-4. **监控分析**：使用 Google Analytics 和百度统计监控流量
-5. **移动优化**：确保网站在移动设备上良好显示
-
-## 🛠️ 技术维护
-
-- 确保 `robots.txt` 和 `sitemap.xml` 可访问
-- 定期更新 `sitemap.xml` 中的日期
-- 监控网站速度和可用性
-- 使用 HTTPS（SSL 证书）
-
-## 📞 需要帮助？
-
-如有问题，请参考：
-- Google Search Console 帮助中心
-- 百度搜索资源平台帮助文档
+1. **Meta 标签优化**：Title、Description、Keywords、Robots 指令
+2. **Open Graph 标签**：支持社交媒体分享、Twitter Card
+3. **结构化数据（JSON-LD）**：Person、WebSite 结构化数据
+4. **技术 SEO**：Canonical URL、robots.txt、sitemap.xml
+5. **百度自动推送**：页面被访问时自动将 URL 提交给百度（已嵌入）
+6. **IndexNow 支持**：支持 Bing、Yandex 等快速收录协议（见下文）
 
 ---
 
-**最后更新**：2024年
+## 📝 搜索引擎提交步骤（备案后必做）
+
+### 1. 百度搜索资源平台（国内首选）
+
+**站长平台**：https://ziyuan.baidu.com/
+
+1. 使用百度账号登录
+2. 添加网站：`www.jingyanrong.com`
+3. 验证网站所有权（推荐 **HTML 标签验证**，在 `<head>` 中加入百度提供的 meta 标签）
+4. 验证成功后：
+   - **站点地图**：提交 `https://www.jingyanrong.com/sitemap.xml`
+   - **主动推送**：在「数据引入」→「链接提交」→「主动推送」中提交首页及重要页面 URL
+   - **自动推送**：✅ 已在本站嵌入，用户访问页面时会自动推送，无需额外操作
+
+**百度链接提交三种方式**（可同时使用）：
+| 方式 | 说明 | 本站状态 |
+|------|------|----------|
+| 自动推送 | 页面嵌入 JS，访问时自动提交 | ✅ 已启用 |
+| 主动推送 | 通过 API 批量提交 URL | 需在站长平台操作 |
+| sitemap | 提交 sitemap.xml | 需在站长平台提交 |
+
+---
+
+### 2. 必应 (Bing) Webmaster Tools（国际搜索引擎）
+
+**站长平台**：https://www.bing.com/webmasters
+
+1. 使用 Microsoft 账号登录
+2. 添加网站：`https://www.jingyanrong.com`
+3. 验证所有权（推荐 DNS 或 HTML 标签）
+4. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
+5. （可选）使用 **URL 提交** 工具手动提交首页，加速首次收录
+
+**IndexNow 快速提交**（Bing 支持，可立即通知收录）：
+- 本站已配置 IndexNow 密钥文件：`https://www.jingyanrong.com/7f3e9a2b4c8d1e6f.txt`
+- 手动触发提交（在终端执行）：
+  ```bash
+  curl "https://www.bing.com/indexnow?url=https://www.jingyanrong.com/&key=7f3e9a2b4c8d1e6f&keyLocation=https://www.jingyanrong.com/7f3e9a2b4c8d1e6f.txt"
+  ```
+- 一次提交后，Bing 与 Yandex 会共享索引
+
+---
+
+### 3. 360 搜索站长平台
+
+**站长平台**：https://zhanzhang.so.com/
+
+1. 登录 360 账号
+2. 添加网站并验证
+3. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
+
+---
+
+### 4. 搜狗站长平台
+
+**站长平台**：https://zhanzhang.sogou.com/
+
+1. 登录搜狗账号
+2. 添加网站并验证
+3. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
+
+---
+
+### 5. 神马搜索站长平台（UC/阿里巴巴）
+
+**站长平台**：https://zhanzhang.sm.cn/
+
+1. 登录神马/阿里账号
+2. 添加网站并验证
+3. 提交 sitemap：`https://www.jingyanrong.com/sitemap.xml`
+
+---
+
+## 🔍 验证是否被收录
+
+在各搜索引擎中搜索：
+
+| 搜索引擎 | 搜索命令 |
+|----------|----------|
+| 百度 | `site:www.jingyanrong.com` |
+| Google | `site:www.jingyanrong.com` |
+| 必应 | `site:www.jingyanrong.com` |
+| 搜狗 | `site:www.jingyanrong.com` |
+| 360 | `site:www.jingyanrong.com` |
+
+也可直接搜索：`荆炎荣` 或 `Jing Yanrong 工业制冷`
+
+---
+
+## ⏰ 预期索引时间
+
+| 搜索引擎 | 首次收录通常耗时 |
+|----------|------------------|
+| Google | 1-7 天 |
+| 必应 | 1-7 天（IndexNow 可加速） |
+| 百度 | 1-2 周（自动推送+主动推送可加速） |
+| 360 / 搜狗 / 神马 | 1-4 周 |
+
+备案完成后，国内搜索引擎（百度、360、搜狗、神马）才能正常抓取，请先完成备案再提交。
+
+---
+
+## 🛠️ 技术维护
+
+- 定期更新 `public/sitemap.xml` 中的 `<lastmod>` 日期
+- 确保以下文件可访问：
+  - `https://www.jingyanrong.com/robots.txt`
+  - `https://www.jingyanrong.com/sitemap.xml`
+  - `https://www.jingyanrong.com/7f3e9a2b4c8d1e6f.txt`（IndexNow 密钥）
+
+---
+
+## 📞 参考链接
+
+- [Google Search Console](https://search.google.com/search-console)
+- [百度搜索资源平台](https://ziyuan.baidu.com/)
+- [Bing Webmaster Tools](https://www.bing.com/webmasters)
+- [IndexNow 协议说明](https://www.indexnow.org/)
+
+---
+
+**最后更新**：2026年2月

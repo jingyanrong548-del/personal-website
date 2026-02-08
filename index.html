@@ -132,6 +132,17 @@
       })();
     </script>
     
+    <!-- 百度自动推送：页面被访问时自动将 URL 提交给百度，加速收录（无需百度统计） -->
+    <script>
+      (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        bp.src = curProtocol === 'https' ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+
     <!-- 百度统计 - 请替换 YOUR_BAIDU_SITE_ID 为您的实际站点ID -->
     <!-- 获取 ID: https://tongji.baidu.com/ -->
     <script>
