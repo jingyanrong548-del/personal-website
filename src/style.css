@@ -3318,6 +3318,10 @@ body {
     text-decoration: underline;
     color: var(--text-muted);
 }
+.footer-beian .beian-icon {
+    flex-shrink: 0;
+    opacity: 0.85;
+}
 
 /* Animations */
 @keyframes fadeInUp {
