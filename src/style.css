@@ -204,6 +204,70 @@ body {
     color: white;
 }
 
+/* 春节祝福横幅 - 大红色祝福语 + 大的祝福动画福字 */
+.spring-festival-banner {
+    background: linear-gradient(135deg, #FEF2F2 0%, #FFE4E6 50%, #FFF1F2 100%);
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(220, 38, 38, 0.15);
+    border-bottom: 3px solid #DC2626;
+}
+
+.spring-festival-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 大的祝福动画福字 - 大红色 */
+.spring-festival-fu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #DC2626;
+    font-family: "KaiTi", "楷体", "STKaiti", "华文楷体", serif;
+    text-shadow: 0 2px 12px rgba(220, 38, 38, 0.4);
+    animation: spring-festival-fu-pulse 2s ease-in-out infinite;
+    transform: rotate(-5deg);
+    line-height: 1;
+}
+
+@keyframes spring-festival-fu-pulse {
+    0%, 100% {
+        transform: rotate(-5deg) scale(1);
+        text-shadow: 0 2px 12px rgba(220, 38, 38, 0.4);
+    }
+    50% {
+        transform: rotate(-5deg) scale(1.1);
+        text-shadow: 0 4px 24px rgba(220, 38, 38, 0.6), 0 0 40px rgba(220, 38, 38, 0.3);
+    }
+}
+
+/* 祝福语 - 大红色 */
+.spring-festival-greeting {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #DC2626;
+    margin: 0;
+    letter-spacing: 0.15em;
+    text-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+}
+
+@media (min-width: 640px) {
+    .spring-festival-fu {
+        font-size: 5rem;
+    }
+    .spring-festival-greeting {
+        font-size: 1.75rem;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: var(--slate-50);

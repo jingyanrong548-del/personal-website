@@ -96,6 +96,8 @@ const translations = {
         'apps.appFt.title': 'Flash Tank Expert',
         'apps.appFt.version': 'V1.0.0',
         'apps.appFt.description': 'Smart flash tank calculator for industrial refrigeration and heat pump systems',
+        'apps.appTpc.title': 'Thermophysical Property — CoolProp',
+        'apps.appTpc.description': 'CoolProp fluid thermophysical property query tool',
         'apps.appHpStd.title': 'Industrial Heat Pump Standard Quick Reference',
         'apps.appHpStd.description': 'Quick reference manual for industrial heat pump standards by category and status',
         'apps.app4.title': 'Temperature Range Optimizer',
@@ -125,6 +127,7 @@ const translations = {
         'apps.filter.refrigeration': 'Refrigeration',
         'apps.filter.heatpump': 'Heat Pump',
         'apps.filter.general': 'General',
+        'springFestival.greeting': 'Year of the Horse · AI-Powered · Pioneering Thermal Energy',
         'apps.zone.open': 'Open Zone',
         'apps.zone.invitation': 'Invitation-Only Zone',
         'apps.invitation.hint': 'Enter password to view the following tools',
@@ -341,6 +344,8 @@ const translations = {
         'apps.appFt.title': '闪蒸罐计算专家',
         'apps.appFt.version': 'V1.0.0',
         'apps.appFt.description': '智能闪蒸罐计算工具，适用于工业制冷与热泵系统',
+        'apps.appTpc.title': 'Thermophysical Property — CoolProp 物性查询',
+        'apps.appTpc.description': '基于 CoolProp 的流体热物性查询工具',
         'apps.appHpStd.title': '工业热泵标准速查手册',
         'apps.appHpStd.description': '按标准分类与实施状态速查工业热泵相关标准',
         'apps.app4.title': '温度范围优化器',
@@ -370,6 +375,7 @@ const translations = {
         'apps.filter.refrigeration': '制冷类',
         'apps.filter.heatpump': '热泵类',
         'apps.filter.general': '通用类',
+        'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创热能事业新篇章',
         'apps.zone.open': '开放区',
         'apps.zone.invitation': '邀请开放区',
         'apps.invitation.hint': '输入密码后可查看以下工具',
@@ -684,49 +690,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 6,
-    updateDate: '2026-02-08',
-    subtitle: '春节前产业链全面休整，北美双燃料热泵、欧洲R290多联机成焦点',
-    subtitleEn: 'Industry lull before Spring Festival; North American dual-fuel heat pumps and European R290 VRF in the spotlight',
+    week: 8,
+    updateDate: '2026-02-15',
+    subtitle: '国内春节保供稳价、高端AI热泵热销；海外IBS开幕聚焦住宅电气化与R454B，欧洲补贴回暖；Grid-Interactive标准引热议；相变储能热泵亮相',
+    subtitleEn: 'Domestic: holiday supply assurance, premium AI heat pumps hot; IBS focuses on electrification & R454B, EU subsidies recover; Grid-Interactive standard in spotlight; PCM heat pump debuts',
     domestic: [
-        '春节停产与物流熔断：受丙午年春节（2月17日）临近影响，本周国内制冷热泵产业链进入全面"休眠期"。除极少数承担紧急保供任务的维修备件仓外，90%以上的整机与配件工厂已完成最后发货并封账。跨省物流干线基本停运，行业关注点由"生产交付"全面转向"回款与库存盘点"。',
-        '节前渠道库存分析：据产业在线节前最后一次摸底，家用空气源热泵渠道库存水位较往年同期偏低约8%。这主要得益于1月下旬的一波寒潮带来的终端置换需求，为节后（Q1后半段）的新品补货留出了良性空间。'
+        '春节假期保供稳价：受春节假期影响，国内95%以上的制冷热泵制造企业本周处于停产休假状态。行业重心全面转向"售后运维"，特别是北方"煤改电"区域，各大品牌均启动了24小时应急响应机制，保障极寒天气下的居民采暖稳定。',
+        '节日消费新趋势：据主要电商平台春节前夕数据显示，带有"新风增氧"与"AI智慧控温"功能的高端热泵空调成为年货节的黑马，销量同比增长约15%。消费者对健康舒适家居的关注度显著提升，为节后（Q1后半段）的中高端市场复苏埋下伏笔。'
     ],
     domesticEn: [
-        'Spring Festival Shutdown and Logistics Freeze: With the Bingwu Year Spring Festival (Feb 17) approaching, the domestic refrigeration and heat pump industry entered a full "hibernation period" this week. Except for a handful of repair parts warehouses handling emergency supply, over 90% of OEM and component factories have completed final shipments and closed their books. Interprovincial logistics corridors have essentially shut down; industry focus has shifted from "production and delivery" to "payment collection and inventory counting."',
-        'Pre-Holiday Channel Inventory Analysis: According to industry online\'s final pre-holiday survey, residential air-source heat pump channel inventory is about 8% lower than the same period in previous years. This is largely due to replacement demand triggered by the late-January cold spell, leaving healthy room for new-product restocking in the second half of Q1 after the holiday.'
+        'Spring Festival Supply & Stability: With the holiday in effect, over 95% of domestic refrigeration and heat pump manufacturers are on shutdown this week. Industry focus has shifted entirely to "after-sales and operations," especially in northern "coal-to-electricity" regions where major brands have launched 24/7 emergency response to ensure residential heating stability in extreme cold.',
+        'Holiday Consumption Trend: Pre-Spring Festival data from major e-commerce platforms shows that premium heat pump ACs with "fresh air/oxygen boost" and "AI smart temperature control" were breakout hits during the year-end shopping festival, with sales up about 15% YoY. Growing consumer focus on healthy, comfortable homes bodes well for mid-to-high-end market recovery in the second half of Q1.'
     ],
     international: [
-        'AHR展后效应发酵：上周拉斯维加斯AHR展闭幕后，本周北美市场进入密集的商务跟进期。"双燃料混合热泵（Dual Fuel/Hybrid Systems）"成为本周热词，多家北美燃气公司宣布与热泵制造商达成合作，推广"燃气炉+热泵"的改造方案，以应对极端寒潮下的电网负荷压力。',
-        '欧洲MCE展前瞻：随着3月中旬米兰MCE（Mostra Convegno Expocomfort）临近，欧洲各大暖通媒体开始进行展前预热。"R290商用多联机"将是今年MCE的核心看点，多家亚洲品牌计划在米兰首发大马力R290 VRF系统，挑战传统冷媒在大型商用建筑中的地位。'
+        'IBS 2026 美国建博会开幕：本周（2月17日-19日），全美最大的建筑商展会（NAHB International Builders\' Show）在奥兰多举办。"住宅电气化"是绝对核心，Lennox、Trane等北美巨头集中展示了符合2026年新能效标准的R454B冷媒热泵，以及与光伏储能系统深度集成的"零能耗房屋"解决方案。',
+        '欧洲热泵补贴回暖：德国经济部本周透露，计划在2026年Q2微调供热补贴政策，进一步简化申请流程。受此利好预期影响，德国及波兰区域的经销商在2月中旬的提货意愿有所增强，逐步走出2025年的库存积压阴影。'
     ],
     internationalEn: [
-        'AHR Post-Show Ripples: Following the closure of last week\'s AHR in Las Vegas, the North American market entered an intensive business follow-up period this week. "Dual Fuel/Hybrid Systems" emerged as the buzzword; multiple North American gas utilities announced partnerships with heat pump manufacturers to promote "gas furnace + heat pump" retrofit solutions, addressing grid load pressure during extreme cold events.',
-        'European MCE Preview: As MCE (Mostra Convegno Expocomfort) in Milan approaches in mid-March, major European HVAC media have begun pre-show coverage. "R290 commercial VRF" will be a core highlight at MCE this year; several Asian brands plan to launch high-capacity R290 VRF systems in Milan, challenging traditional refrigerants in large commercial buildings.'
+        'IBS 2026 Opens: This week (Feb 17–19), the NAHB International Builders\' Show—the largest U.S. builder event—is being held in Orlando. "Residential electrification" is the core theme: North American majors such as Lennox and Trane showcased R454B refrigerant heat pumps meeting 2026 efficiency standards and "net-zero" homes integrated with PV and energy storage.',
+        'European Heat Pump Subsidy Recovery: Germany\'s Ministry of Economic Affairs indicated this week that it plans to fine-tune heating subsidy policy in Q2 2026 and simplify the application process. Driven by this positive outlook, distributors in Germany and Poland have shown stronger restocking interest in mid-February, gradually emerging from 2025 inventory overhang.'
     ],
     standards: [
-        '美国SNAP列表更新预告：美国环保署（EPA）本周发出信号，拟在3月更新SNAP（重要新替代品政策）列表，进一步明确R454B在轻商用屋顶机（Rooftop Units）中的使用规范。这直接回应了AHR展会上厂商对"在新规下如何合规充注"的关切。',
-        'GB/T 25127修订风向：《低环境温度空气源热泵（冷水）机组》新国标修订组在本周的内部通气会中透露，拟引入"除霜供热量折减系数"，旨在更真实地反映机组在结霜工况下的实际能效，打击虚标COP现象。'
+        'Grid-Interactive（电网交互）标准热议：在IBS展会期间，美国能源部（DOE）举办了关于CTA-2045通信标准的研讨会。会议强调，未来的热泵热水器与HVAC设备必须具备"需求响应（Demand Response）"功能，以便在电网负荷高峰期自动调节运行功率，这或将成为2027年后的强制性准入壁垒。'
     ],
     standardsEn: [
-        'U.S. SNAP List Update Notice: The U.S. EPA signaled this week that it intends to update the SNAP (Significant New Alternatives Policy) list in March, further clarifying R454B use rules for light commercial rooftop units. This directly addresses manufacturer concerns raised at AHR about "how to comply with charge limits under the new rules."',
-        'GB/T 25127 Revision Signal: The revision group for the national standard on low-ambient air-source heat pump (water) units revealed in an internal briefing this week that it plans to introduce a "defrost heating capacity reduction coefficient" to more accurately reflect actual efficiency under frost conditions and curb inflated COP claims.'
+        'Grid-Interactive Standards in Focus: During IBS, the U.S. DOE held a workshop on the CTA-2045 communication standard. It was emphasized that future heat pump water heaters and HVAC equipment must have "Demand Response" capability to automatically adjust power during grid peaks—this could become a mandatory compliance barrier after 2027.'
     ],
     innovation: [
-        '光伏直驱热泵（PV-Direct）：欧洲某能源实验室本周发布测试报告，验证了一种新型DC-DC直驱技术。该技术允许屋顶光伏板产生的直流电不经过逆变器，直接驱动热泵压缩机。测试表明，该方案减少了约6%的逆变损耗，且在电网波动时展现出极强的孤岛运行稳定性，非常适合南欧等高光照地区。'
+        '相变储能热泵一体机：一家北欧初创企业本周发布了一款集成"相变材料（PCM）热库"的空气源热泵。该机组利用PCM在相变过程中吸收/释放大量潜热的特性，能有效平抑化霜时的水温波动，并利用低谷电价时段蓄热，实测采暖运行费用较传统机组降低约12%。'
     ],
     innovationEn: [
-        'PV-Direct Heat Pumps: A European energy lab released test results this week validating a new DC-DC direct-drive technology. The approach allows DC power from rooftop PV panels to drive heat pump compressors directly without an inverter. Tests show the scheme reduces inverter losses by about 6% and exhibits strong islanding stability during grid fluctuations, well suited for high-solar regions like Southern Europe.'
+        'PCM-Integrated Heat Pump: A Nordic startup this week launched an air-source heat pump integrated with a phase-change material (PCM) thermal store. By leveraging the latent heat absorption/release of PCM during phase change, the unit smooths water temperature swings during defrost and uses off-peak electricity for storage; heating running costs are reportedly about 12% lower than conventional units.'
     ],
     future: [
-        'MCE 2026（3月17日-20日，米兰）：全球HVACR行业的"欧洲主场"，也是中国企业出海欧洲最重要的展示平台，预计今年中国参展商数量将创历史新高。',
-        '中国家电及消费电子博览会（AWE 2026，3月，上海）：节后首个大型综合家电展，重点关注家用空调/热泵的智能化（AI互联）趋势。',
-        '原材料价格波动：春节期间需留意LME铜价与铝价的国际盘面走势，这将直接决定节后复工时的原材料采购成本。'
+        'HPE中国热泵展（3月11日-13日，石家庄）：节后国内首个行业大展，预计将成为各品牌发布年度新品与招商政策的主战场。',
+        'MCE 2026（3月17日-20日，米兰）：随着签证办理进入尾声，中国参展团将于3月初陆续启程，重点关注R290商用多联机在欧洲的接受度。',
+        '原材料开盘走势：需密切关注春节后首个交易日（2月23日）的铜、铝期货价格，这将直接决定3月份排产的成本基准。'
     ],
     futureEn: [
-        'MCE 2026 (Mar 17–20, Milan): The "European home turf" of the global HVACR industry and the most important showcase for Chinese companies expanding into Europe; Chinese exhibitor count is expected to hit a record high this year.',
-        'China Appliance & Electronics Expo (AWE 2026, March, Shanghai): The first major comprehensive appliance show after the holiday; focus on smart home AC/heat pump trends (AI connectivity).',
-        'Raw Material Price Volatility: Monitor LME copper and aluminum prices during the Spring Festival holiday; they will directly influence procurement costs when production resumes.'
+        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): The first major domestic industry show after the holiday; expected to be the main stage for brands to launch annual products and distributor policies.',
+        'MCE 2026 (Mar 17–20, Milan): As visa processing wraps up, Chinese exhibitors will depart in early March; focus on European acceptance of R290 commercial VRF.',
+        'Raw Material Opening: Watch copper and aluminum futures on the first trading day after the holiday (Feb 23); they will directly set the cost baseline for March production.'
     ]
 };
 
