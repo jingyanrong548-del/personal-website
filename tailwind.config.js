@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'green-primary': '#10B981',
-        'green-dark': '#059669',
-        'green-light': '#34D399',
-        'warm-orange': '#10B981',
-        'warm-orange-light': '#34D399',
+        'green-primary': '#6BA47A',
+        'green-dark': '#5A8F6B',
+        'green-light': '#7AB089',
+        'warm-orange': '#6BA47A',
+        'warm-orange-light': '#7AB089',
       },
     },
   },
