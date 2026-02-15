@@ -375,7 +375,7 @@ const translations = {
         'apps.filter.refrigeration': '制冷类',
         'apps.filter.heatpump': '热泵类',
         'apps.filter.general': '通用类',
-        'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创热能事业新篇章',
+        'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创冷热事业新篇章',
         'apps.zone.open': '开放区',
         'apps.zone.invitation': '邀请开放区',
         'apps.invitation.hint': '输入密码后可查看以下工具',

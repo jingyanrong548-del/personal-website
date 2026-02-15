@@ -56,6 +56,18 @@
     --warm-orange: #047857;
     --warm-orange-light: #059669;
     --warm-gradient: linear-gradient(135deg, #047857, #059669);
+
+    /* 苹果风格玻璃拟态 (Glassmorphism) */
+    --glass-bg: rgba(255, 255, 255, 0.45);
+    --glass-bg-strong: rgba(255, 255, 255, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-border-subtle: rgba(255, 255, 255, 0.25);
+    --glass-blur: 20px;
+    --glass-blur-strong: 28px;
+    --glass-radius: 16px;
+    --glass-radius-sm: 12px;
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --glass-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -63,7 +75,10 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     overflow-x: hidden;
-    background-color: var(--slate-50);
+    /* 玻璃屏底层：柔和渐变 + 微纹理，让毛玻璃透出层次 */
+    background: linear-gradient(160deg, #F0F4F8 0%, #E8EEF4 35%, #F5F7FA 70%, #EEF2F6 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .container {
@@ -72,17 +87,17 @@ body {
     padding: 0 24px;
 }
 
-/* Navigation */
+/* Navigation - 苹果风格毛玻璃顶栏 */
 .navbar {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color);
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+    -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+    border-bottom: 1px solid var(--glass-border);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1.25rem 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
 }
 
@@ -164,14 +179,16 @@ body {
     background-clip: text;
 }
 
-/* Language Switcher */
+/* Language Switcher - 玻璃胶囊 */
 .language-switcher {
     display: flex;
     gap: 0.25rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
     padding: 0.25rem;
-    background: var(--bg-light);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     position: absolute;
     top: 50%;
     right: 24px;
@@ -204,13 +221,15 @@ body {
     color: white;
 }
 
-/* 春节祝福横幅 - 大红色祝福语 + 大的祝福动画福字 */
+/* 春节祝福横幅 - 玻璃 + 红色主题 */
 .spring-festival-banner {
-    background: linear-gradient(135deg, #FEF2F2 0%, #FFE4E6 50%, #FFF1F2 100%);
+    background: rgba(254, 242, 242, 0.6);
+    backdrop-filter: blur(var(--glass-blur)) saturate(150%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(150%);
     padding: 1.25rem 1.5rem;
     text-align: center;
-    box-shadow: 0 4px 16px rgba(220, 38, 38, 0.15);
-    border-bottom: 3px solid #DC2626;
+    box-shadow: 0 4px 24px rgba(220, 38, 38, 0.12);
+    border-bottom: 1px solid rgba(220, 38, 38, 0.25);
 }
 
 .spring-festival-content {
@@ -268,9 +287,9 @@ body {
     }
 }
 
-/* Hero Section */
+/* Hero Section - 玻璃感主视觉区 */
 .hero {
-    background: var(--slate-50);
+    background: transparent;
     color: var(--text-color);
     padding: 5rem 0;
     position: relative;
@@ -377,13 +396,14 @@ body {
 .badge-text {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    background: rgba(4, 120, 87, 0.08);
+    background: var(--glass-bg);
     color: var(--emerald-700);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
-    border: 1px solid rgba(4, 120, 87, 0.15);
-    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     transition: all 0.3s ease;
 }
 
@@ -452,11 +472,12 @@ body {
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ECFDF5 0%, #F1F5F9 100%);
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     position: relative;
-    box-shadow: 
-        0 20px 60px -15px rgba(4, 120, 87, 0.2),
-        0 0 0 4px rgba(4, 120, 87, 0.1);
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow), 0 0 0 1px var(--glass-border-subtle);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
 }
@@ -662,17 +683,17 @@ body {
 
 /* Stats Bar Section */
 .stats-bar {
-    background: var(--bg-white);
+    background: transparent;
     padding: 2.5rem 0;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--glass-border-subtle);
+    border-bottom: 1px solid var(--glass-border-subtle);
 }
 
 /* Partners Section */
 .partners-section {
-    background: var(--slate-50);
+    background: transparent;
     padding: 4rem 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--glass-border-subtle);
 }
 
 .partners-section-label {
@@ -714,9 +735,12 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background: var(--bg-white);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0.6;
     filter: grayscale(100%);
@@ -726,8 +750,9 @@ body {
     opacity: 1;
     filter: grayscale(0%);
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(4, 120, 87, 0.15);
-    border-color: rgba(4, 120, 87, 0.2);
+    box-shadow: var(--glass-shadow-hover);
+    border-color: var(--glass-border);
+    background: var(--glass-bg-strong);
 }
 
 .partner-logo-img {
@@ -741,7 +766,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-    background: var(--bg-white);
+    background: transparent;
     padding: 4rem 0;
 }
 
@@ -754,10 +779,13 @@ body {
 }
 
 .testimonial-card {
-    background: var(--slate-50);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
 }
 
 .testimonial-text {
@@ -809,12 +837,14 @@ body {
     word-wrap: break-word;
 }
 
-/* Purpose Notice Section */
+/* Purpose Notice Section - 玻璃条 */
 .purpose-notice {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(52, 211, 153, 0.08));
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2.5rem 0;
-    border-top: 2px solid var(--border-dark);
-    border-bottom: 2px solid var(--border-dark);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
     position: relative;
 }
 
@@ -867,17 +897,15 @@ body {
 }
 
 .badge {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--glass-bg);
     padding: 0.6rem 1.25rem;
     border-radius: 25px;
     font-size: 0.875rem;
     color: var(--warm-orange);
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white), var(--border-gradient);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border: 1px solid var(--glass-border);
     font-weight: 500;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     transition: all 0.3s ease;
 }
 
@@ -893,18 +921,18 @@ body {
 }
 
 .section-gray {
-    background: var(--slate-50);
+    background: transparent;
 }
 
 /* Insights Section */
 .insights-section {
-    background: var(--bg-white);
+    background: transparent;
     padding: 5rem 0;
 }
 
 /* Briefings Section */
 .briefings-section {
-    background: var(--slate-50);
+    background: transparent;
     padding: 5rem 0;
 }
 
@@ -913,16 +941,18 @@ body {
     margin-bottom: 3rem;
 }
 
-/* Featured Insight Card (重构后的简报卡片) */
+/* Featured Insight Card (重构后的简报卡片) - 玻璃卡片 */
 .featured-insight-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2.5rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--glass-radius);
+    border: 1px solid var(--glass-border);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--glass-shadow);
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -1042,16 +1072,18 @@ body {
     transform: rotate(180deg);
 }
 
-/* Legacy briefing-card styles (保持兼容性) */
+/* Legacy briefing-card styles (保持兼容性) - 玻璃 */
 .briefing-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2.5rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--glass-shadow);
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -1149,11 +1181,14 @@ body {
 }
 
 .insight-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
     border-left: 4px solid var(--emerald-500);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     display: flex;
@@ -1312,10 +1347,13 @@ body {
 }
 
 .expertise-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2rem;
-    border-radius: 12px;
-    border: 2px solid var(--border-color);
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s ease;
 }
 
@@ -1504,15 +1542,19 @@ body {
 .resume-experience-item {
     margin-bottom: 2rem;
     padding: 1.25rem;
-    background: var(--slate-50);
-    border-radius: 8px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
     border-left: 3px solid var(--emerald-600);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s ease;
 }
 
 .resume-experience-item:hover {
-    background: var(--bg-white);
-    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.1);
+    background: var(--glass-bg-strong);
+    box-shadow: var(--glass-shadow-hover);
     transform: translateX(4px);
 }
 
@@ -1538,14 +1580,18 @@ body {
 .resume-skills-category {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: var(--slate-50);
-    border-radius: 8px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border-subtle);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s ease;
 }
 
 .resume-skills-category:hover {
-    background: var(--bg-white);
-    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.08);
+    background: var(--glass-bg-strong);
+    box-shadow: var(--glass-shadow-hover);
 }
 
 .resume-skills-category:last-child {
@@ -1751,9 +1797,9 @@ body {
 .resume-password-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(15, 23, 42, 0.6);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    background: rgba(15, 23, 42, 0.35);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1767,13 +1813,15 @@ body {
     visibility: visible;
 }
 .resume-password-modal {
-    background: var(--slate-50);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--glass-blur-strong));
+    -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
     padding: 1.5rem 1.75rem;
     min-width: 320px;
     max-width: 90vw;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--glass-shadow-hover);
 }
 .resume-password-title {
     margin: 0 0 1rem;
@@ -1846,9 +1894,12 @@ body {
     align-items: flex-start;
     gap: 0.75rem;
     padding: 1.5rem;
-    background: var(--slate-50);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius-sm);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -1867,9 +1918,9 @@ body {
 }
 
 .metric-item:hover {
-    border-color: rgba(4, 120, 87, 0.3);
-    background: var(--bg-white);
-    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.1);
+    border-color: var(--glass-border);
+    background: var(--glass-bg-strong);
+    box-shadow: var(--glass-shadow-hover);
     transform: translateY(-2px);
 }
 
@@ -2066,15 +2117,17 @@ body {
 
 /* 保留原有的 matrix-card 样式用于其他地方（如果需要） */
 .matrix-card {
-    background: var(--bg-white);
-    border: 2px solid var(--border-color);
-    border-radius: 16px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
     padding: 2rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.08);
+    box-shadow: var(--glass-shadow);
 }
 
 .matrix-card:hover {
@@ -2133,8 +2186,10 @@ body {
 
 .filter-tab {
     padding: 0.625rem 1.25rem;
-    background: transparent;
-    border: 1.5px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -2181,14 +2236,16 @@ body {
 .apps-invited-gate {
     margin-top: 0.5rem;
     padding: 1.5rem 2rem;
-    background: var(--bg-white);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius-sm);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--glass-shadow);
 }
 
 .apps-invited-gate-hint {
@@ -2244,16 +2301,18 @@ body {
 }
 
 .app-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border-radius: var(--glass-radius);
+    border: 1px solid var(--glass-border);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--glass-shadow);
 }
 
 .app-card::before {
@@ -2273,8 +2332,9 @@ body {
 
 .app-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(4, 120, 87, 0.2);
-    border-color: var(--emerald-700);
+    box-shadow: var(--glass-shadow-hover);
+    border-color: var(--glass-border);
+    background: var(--glass-bg-strong);
 }
 
 .app-card:active {
@@ -2416,9 +2476,12 @@ body {
     text-align: center;
     margin-top: 3rem;
     padding: 1.5rem 2rem;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(52, 211, 153, 0.05));
-    border-radius: 16px;
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--glass-radius);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
 }
 
 .apps-more-notice p {
@@ -2637,13 +2700,13 @@ body {
 }
 
 .skill-card {
-    background: var(--bg-white);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2.5rem;
-    border-radius: 16px;
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white), var(--border-gradient);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border-radius: var(--glass-radius);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     text-align: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -2667,7 +2730,8 @@ body {
 
 .skill-card:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--glass-shadow-hover);
+    background: var(--glass-bg-strong);
 }
 
 .skill-icon {
@@ -2782,12 +2846,12 @@ body {
     align-items: center;
     gap: 1.25rem;
     padding: 1.5rem;
-    background: var(--bg-white);
-    border-radius: 12px;
-    border: 2px solid transparent;
-    background-image: linear-gradient(white, white), var(--border-gradient);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2825,11 +2889,13 @@ body {
     color: var(--text-color);
 }
 
-/* Footer Section */
+/* Footer Section - 玻璃底栏 */
 .footer-section {
-    background: var(--slate-50);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur-strong)) saturate(150%);
+    -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(150%);
     padding: 4rem 0 2rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--glass-border);
     position: relative;
 }
 
@@ -3065,9 +3131,12 @@ body {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -30%);
-    background: var(--bg-white);
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+    -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    box-shadow: var(--glass-shadow-hover);
     width: 90%;
     max-width: 480px;
     max-height: 70vh;
