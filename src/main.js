@@ -17,7 +17,7 @@ const translations = {
         // Hero
         'hero.title': 'Jing Yanrong',
         'hero.badge': '✓ Licensed PE & Human Verified',
-        'hero.headline': '{experienceYears}+ Years of Engineering Judgment, Encoded into Tools.',
+        'hero.headline': '{experienceYears}+ Years of Engineering Judgment, Built into Tools.',
         'hero.subheadline': 'Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.',
         'hero.cta': 'Explore My Tools',
         'hero.secondaryCta': 'Read Engineering Insights',
@@ -271,7 +271,7 @@ const translations = {
         'nav.insights': '工程洞察',
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
-        'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，封装为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
+        'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，沉淀为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
         'hero.subheadline': '深耕工业制冷与热泵 (-100°C 至 +200°C)，用代码重构物理热力学，让经验数据化。',
         'hero.cta': '探索工具',
         'hero.secondaryCta': '阅读工程洞察',
