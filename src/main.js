@@ -690,47 +690,49 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 8,
-    updateDate: '2026-02-15',
-    subtitle: '国内春节保供稳价、高端AI热泵热销；海外IBS开幕聚焦住宅电气化与R454B，欧洲补贴回暖；Grid-Interactive标准引热议；相变储能热泵亮相',
-    subtitleEn: 'Domestic: holiday supply assurance, premium AI heat pumps hot; IBS focuses on electrification & R454B, EU subsidies recover; Grid-Interactive standard in spotlight; PCM heat pump debuts',
+    week: 9,
+    updateDate: '2026-02-22',
+    subtitle: '全面复工排产加速、展前新品预热升温；欧洲春季装机潮、北美A2L培训热；F-Gas配套细则更新、极寒超高温复叠技术亮相',
+    subtitleEn: 'Domestic: full resumption & production ramp-up, pre-show product launches heat up; Europe spring installation wave, North American A2L training surge; F-Gas guidelines update, ultra-low-temp cascade tech debuts',
     domestic: [
-        '春节假期保供稳价：受春节假期影响，国内95%以上的制冷热泵制造企业本周处于停产休假状态。行业重心全面转向"售后运维"，特别是北方"煤改电"区域，各大品牌均启动了24小时应急响应机制，保障极寒天气下的居民采暖稳定。',
-        '节日消费新趋势：据主要电商平台春节前夕数据显示，带有"新风增氧"与"AI智慧控温"功能的高端热泵空调成为年货节的黑马，销量同比增长约15%。消费者对健康舒适家居的关注度显著提升，为节后（Q1后半段）的中高端市场复苏埋下伏笔。'
+        '全面复工排产加速：元宵节后国内制冷热泵产业链迎来100%复工。为迎接"金三银四"旺季，各大基地进入满负荷排产，R290等环保冷媒机组出口订单交付提速。',
+        '展前新品预热升温：距离HPE热泵展开幕不足两周，头部企业密集发布预热海报。"超高能效变频"与"120℃工业高温热泵"成为春季新品的核心卖点。'
     ],
     domesticEn: [
-        'Spring Festival Supply & Stability: With the holiday in effect, over 95% of domestic refrigeration and heat pump manufacturers are on shutdown this week. Industry focus has shifted entirely to "after-sales and operations," especially in northern "coal-to-electricity" regions where major brands have launched 24/7 emergency response to ensure residential heating stability in extreme cold.',
-        'Holiday Consumption Trend: Pre-Spring Festival data from major e-commerce platforms shows that premium heat pump ACs with "fresh air/oxygen boost" and "AI smart temperature control" were breakout hits during the year-end shopping festival, with sales up about 15% YoY. Growing consumer focus on healthy, comfortable homes bodes well for mid-to-high-end market recovery in the second half of Q1.'
+        'Full Resumption & Production Acceleration: Post–Lantern Festival, the domestic refrigeration and heat pump supply chain has reached 100% resumption. Gearing up for the "Golden March, Silver April" peak season, major production bases have entered full-capacity operation, with R290 and other eco-friendly refrigerant units seeing faster export order delivery.',
+        'Pre-Show Product Launches Heat Up: With less than two weeks until the HPE Heat Pump Expo, leading OEMs are intensively releasing teaser posters. "Ultra-high-efficiency inverter" and "120°C industrial high-temperature heat pumps" have become the core selling points of spring new products.'
     ],
     international: [
-        'IBS 2026 美国建博会开幕：本周（2月17日-19日），全美最大的建筑商展会（NAHB International Builders\' Show）在奥兰多举办。"住宅电气化"是绝对核心，Lennox、Trane等北美巨头集中展示了符合2026年新能效标准的R454B冷媒热泵，以及与光伏储能系统深度集成的"零能耗房屋"解决方案。',
-        '欧洲热泵补贴回暖：德国经济部本周透露，计划在2026年Q2微调供热补贴政策，进一步简化申请流程。受此利好预期影响，德国及波兰区域的经销商在2月中旬的提货意愿有所增强，逐步走出2025年的库存积压阴影。'
+        '欧洲春季装机潮：随着气温回暖及2026年清洁供热补贴资金下发，德、法等核心市场热泵安装申请量环比激增约15%，渠道库存压力显著缓解。',
+        '北美A2L培训热：受EPA环保新规驱动，北美HVAC市场迎来R454B等微燃（A2L）制冷剂的安装实操培训高峰，各大分销商正积极备战夏秋季替换潮。'
     ],
     internationalEn: [
-        'IBS 2026 Opens: This week (Feb 17–19), the NAHB International Builders\' Show—the largest U.S. builder event—is being held in Orlando. "Residential electrification" is the core theme: North American majors such as Lennox and Trane showcased R454B refrigerant heat pumps meeting 2026 efficiency standards and "net-zero" homes integrated with PV and energy storage.',
-        'European Heat Pump Subsidy Recovery: Germany\'s Ministry of Economic Affairs indicated this week that it plans to fine-tune heating subsidy policy in Q2 2026 and simplify the application process. Driven by this positive outlook, distributors in Germany and Poland have shown stronger restocking interest in mid-February, gradually emerging from 2025 inventory overhang.'
+        'European Spring Installation Wave: As temperatures warm and 2026 clean heating subsidy funds are being distributed, heat pump installation applications in core markets such as Germany and France surged about 15% WoW; channel inventory pressure has eased significantly.',
+        'North American A2L Training Surge: Driven by EPA environmental regulations, the North American HVAC market is seeing a spike in hands-on installation training for R454B and other A2L (mildly flammable) refrigerants; major distributors are actively preparing for the summer–fall replacement wave.'
     ],
     standards: [
-        'Grid-Interactive（电网交互）标准热议：在IBS展会期间，美国能源部（DOE）举办了关于CTA-2045通信标准的研讨会。会议强调，未来的热泵热水器与HVAC设备必须具备"需求响应（Demand Response）"功能，以便在电网负荷高峰期自动调节运行功率，这或将成为2027年后的强制性准入壁垒。'
+        'F-Gas配套细则更新：欧洲本周发布了F-Gas法案的最新配套指南，进一步明确了R290等A3类冷媒在户用室内机中的安全充注量上限及防爆测试要求。',
+        '国内热泵新标报批：《低环境温度空气源热泵机组》修订版进入报批倒计时，新标拟引入"除霜供热量折减系数"，旨在更真实反映结霜工况下的实际能效。'
     ],
     standardsEn: [
-        'Grid-Interactive Standards in Focus: During IBS, the U.S. DOE held a workshop on the CTA-2045 communication standard. It was emphasized that future heat pump water heaters and HVAC equipment must have "Demand Response" capability to automatically adjust power during grid peaks—this could become a mandatory compliance barrier after 2027.'
+        'F-Gas Supporting Guidelines Update: Europe this week released the latest F-Gas supplementary guidelines, further clarifying safe charge limits for R290 and other A3 refrigerants in residential indoor units, as well as explosion-proof testing requirements.',
+        'Domestic Heat Pump Standard Nearing Approval: The revision of the "Low Ambient Air Source Heat Pump Unit" standard has entered the final approval countdown; the new standard will introduce a "defrost heat output reduction coefficient" to better reflect actual efficiency under frosting conditions.'
     ],
     innovation: [
-        '相变储能热泵一体机：一家北欧初创企业本周发布了一款集成"相变材料（PCM）热库"的空气源热泵。该机组利用PCM在相变过程中吸收/释放大量潜热的特性，能有效平抑化霜时的水温波动，并利用低谷电价时段蓄热，实测采暖运行费用较传统机组降低约12%。'
+        '极寒超高温复叠技术：某头部企业发布新一代双级复叠热泵原型机，突破性地在-30℃极寒环境下实现了90℃的稳定出水，且系统COP保持在1.8以上，为严寒地区替代燃气锅炉提供了新路径。'
     ],
     innovationEn: [
-        'PCM-Integrated Heat Pump: A Nordic startup this week launched an air-source heat pump integrated with a phase-change material (PCM) thermal store. By leveraging the latent heat absorption/release of PCM during phase change, the unit smooths water temperature swings during defrost and uses off-peak electricity for storage; heating running costs are reportedly about 12% lower than conventional units.'
+        'Ultra-Low-Temp High-Temp Cascade Technology: A leading OEM released a next-generation two-stage cascade heat pump prototype, achieving stable 90°C water output at -30°C ambient—a breakthrough—with system COP maintained above 1.8, opening a new path for gas boiler replacement in severe cold regions.'
     ],
     future: [
-        'HPE中国热泵展（3月11日-13日，石家庄）：节后国内首个行业大展，预计将成为各品牌发布年度新品与招商政策的主战场。',
-        'MCE 2026（3月17日-20日，米兰）：随着签证办理进入尾声，中国参展团将于3月初陆续启程，重点关注R290商用多联机在欧洲的接受度。',
-        '原材料开盘走势：需密切关注春节后首个交易日（2月23日）的铜、铝期货价格，这将直接决定3月份排产的成本基准。'
+        'HPE中国热泵展（3月11日-13日，石家庄）：国内上半年最核心的热泵垂直展会。',
+        '米兰MCE展（3月24日-27日）：欧洲暖通顶级盛会，重点关注低GWP冷媒在欧洲的普及度。',
+        '中国制冷展（4月，北京）：亚太地区制冷风向标，今年特设的"工业脱碳与余热利用"专区值得期待。'
     ],
     futureEn: [
-        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): The first major domestic industry show after the holiday; expected to be the main stage for brands to launch annual products and distributor policies.',
-        'MCE 2026 (Mar 17–20, Milan): As visa processing wraps up, Chinese exhibitors will depart in early March; focus on European acceptance of R290 commercial VRF.',
-        'Raw Material Opening: Watch copper and aluminum futures on the first trading day after the holiday (Feb 23); they will directly set the cost baseline for March production.'
+        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): The most important domestic heat pump vertical exhibition in the first half of the year.',
+        'Milan MCE (Mar 24–27): Europe\'s top HVAC event; focus on the adoption of low-GWP refrigerants in Europe.',
+        'China Refrigeration Expo (April, Beijing): Asia-Pacific refrigeration industry bellwether; this year\'s dedicated "Industrial Decarbonization & Waste Heat Utilization" zone is worth watching.'
     ]
 };
 
@@ -1308,8 +1310,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // About section toggle functionality（完整履历需密码 123456，同会话内解锁后无需重复输入）
-    const RESUME_PASSWORD = '123456';
+    // About section toggle functionality（完整履历需密码 123456!，同会话内解锁后无需重复输入）
+    const RESUME_PASSWORD = '123456!';
     const RESUME_UNLOCK_KEY = 'resumeUnlocked';
 
     const aboutToggleBtn = document.getElementById('about-toggle-btn');
@@ -1410,9 +1412,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Invitation-only zone: password gate (password: 123456), persist unlock in session
+    // Invitation-only zone: password gate (password: 123456!), persist unlock in session
     const INVITED_STORAGE_KEY = 'appsInvitedUnlock';
-    const INVITED_PASSWORD = '123456';
+    const INVITED_PASSWORD = '123456!';
     const gateEl = document.getElementById('apps-invited-gate');
     const gridEl = document.getElementById('apps-invited-grid');
     const passwordInput = document.getElementById('apps-invited-password');
