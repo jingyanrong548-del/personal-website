@@ -691,48 +691,44 @@ function setLanguage(lang) {
 const briefingData = {
     year: 2026,
     week: 9,
-    updateDate: '2026-02-22',
-    subtitle: '全面复工排产加速、展前新品预热升温；欧洲春季装机潮、北美A2L培训热；F-Gas配套细则更新、极寒超高温复叠技术亮相',
-    subtitleEn: 'Domestic: full resumption & production ramp-up, pre-show product launches heat up; Europe spring installation wave, North American A2L training surge; F-Gas guidelines update, ultra-low-temp cascade tech debuts',
+    updateDate: '2026-03-02',
+    subtitle: '"金三银四"产能拉满、展前造势火热；北美促销与加拿大极寒榜单、双燃料与AI液冷技术；HPE/米兰MCE/制冷展档期临近',
+    subtitleEn: 'Domestic: capacity at full tilt for "Golden March, Silver April", pre-show buzz heats up; North America promotions & Canada cold-climate rankings; dual-fuel and AI datacenter cooling; HPE, MCE Milan, and China Refrigeration Expo ahead',
     domestic: [
-        '全面复工排产加速：元宵节后国内制冷热泵产业链迎来100%复工。为迎接"金三银四"旺季，各大基地进入满负荷排产，R290等环保冷媒机组出口订单交付提速。',
-        '展前新品预热升温：距离HPE热泵展开幕不足两周，头部企业密集发布预热海报。"超高能效变频"与"120℃工业高温热泵"成为春季新品的核心卖点。'
+        '"金三银四"产能拉满：节后工厂产能快速爬坡，各大热泵生产线已进入满负荷状态。随着全球工业脱碳需求上涨，大型工业及商用热泵的排产比例正显著提升。',
+        '展前造势火热：国内头部品牌（如格力等）在出海拿下大量北美严寒市场订单后，正将目光转回国内，密集预热即将发布的高压变频及高温热回收新品。'
     ],
     domesticEn: [
-        'Full Resumption & Production Acceleration: Post–Lantern Festival, the domestic refrigeration and heat pump supply chain has reached 100% resumption. Gearing up for the "Golden March, Silver April" peak season, major production bases have entered full-capacity operation, with R290 and other eco-friendly refrigerant units seeing faster export order delivery.',
-        'Pre-Show Product Launches Heat Up: With less than two weeks until the HPE Heat Pump Expo, leading OEMs are intensively releasing teaser posters. "Ultra-high-efficiency inverter" and "120°C industrial high-temperature heat pumps" have become the core selling points of spring new products.'
+        '"Golden March, Silver April" at Full Capacity: Post-holiday factory output is ramping quickly, and major heat pump production lines are running at full load. As global industrial decarbonization demand rises, the share of large industrial and commercial heat pump production is increasing significantly.',
+        'Pre-Show Buzz Heats Up: After winning large orders in North American cold-climate markets, leading domestic brands (e.g. Gree) are turning focus back home and intensively teasing new high-voltage inverter and high-temperature heat recovery products.'
     ],
     international: [
-        '欧洲春季装机潮：随着气温回暖及2026年清洁供热补贴资金下发，德、法等核心市场热泵安装申请量环比激增约15%，渠道库存压力显著缓解。',
-        '北美A2L培训热：受EPA环保新规驱动，北美HVAC市场迎来R454B等微燃（A2L）制冷剂的安装实操培训高峰，各大分销商正积极备战夏秋季替换潮。'
+        '北美花式促销刺激装机：为了应对部分税收抵免政策的退坡，美国头部安装商 Endless Energy 本月推出了高达两万美元的"热泵疯狂月（Heat Pump Madness）"抽奖免单活动，大力拉动春季家庭电气化换新需求。',
+        '加拿大发布极寒热泵榜单：魁北克主流服务商 AirGreen 刚发布了2026年极寒气候热泵采购指南，明确指出今年主流设备必须能在 -30℃ 下高效运行，且已全面淘汰R-410A，转向R-32或R-454B环保冷媒。'
     ],
     internationalEn: [
-        'European Spring Installation Wave: As temperatures warm and 2026 clean heating subsidy funds are being distributed, heat pump installation applications in core markets such as Germany and France surged about 15% WoW; channel inventory pressure has eased significantly.',
-        'North American A2L Training Surge: Driven by EPA environmental regulations, the North American HVAC market is seeing a spike in hands-on installation training for R454B and other A2L (mildly flammable) refrigerants; major distributors are actively preparing for the summer–fall replacement wave.'
+        'North American Promotions Drive Installations: To counter the phase-down of some tax credits, U.S. installer Endless Energy launched a "Heat Pump Madness" sweepstakes this month with up to $20,000 in free installations to boost spring electrification upgrades.',
+        'Canada Releases Cold-Climate Heat Pump Rankings: Quebec-based AirGreen has published its 2026 cold-climate heat pump buying guide, stating that mainstream units must run efficiently at -30°C and that R-410A is being phased out in favor of R-32 or R-454B.'
     ],
-    standards: [
-        'F-Gas配套细则更新：欧洲本周发布了F-Gas法案的最新配套指南，进一步明确了R290等A3类冷媒在户用室内机中的安全充注量上限及防爆测试要求。',
-        '国内热泵新标报批：《低环境温度空气源热泵机组》修订版进入报批倒计时，新标拟引入"除霜供热量折减系数"，旨在更真实反映结霜工况下的实际能效。'
-    ],
-    standardsEn: [
-        'F-Gas Supporting Guidelines Update: Europe this week released the latest F-Gas supplementary guidelines, further clarifying safe charge limits for R290 and other A3 refrigerants in residential indoor units, as well as explosion-proof testing requirements.',
-        'Domestic Heat Pump Standard Nearing Approval: The revision of the "Low Ambient Air Source Heat Pump Unit" standard has entered the final approval countdown; the new standard will introduce a "defrost heat output reduction coefficient" to better reflect actual efficiency under frosting conditions.'
-    ],
+    standards: [],
+    standardsEn: [],
     innovation: [
-        '极寒超高温复叠技术：某头部企业发布新一代双级复叠热泵原型机，突破性地在-30℃极寒环境下实现了90℃的稳定出水，且系统COP保持在1.8以上，为严寒地区替代燃气锅炉提供了新路径。'
+        '双燃料混动技术成熟：针对北美等极寒且电价波动大的地区，兼容天然气与电能的"双热源热泵系统"大放异彩。该技术能智能切换热源，严寒下燃炉热效率高达97%，既抗冻又省钱。',
+        'AI与数据中心冷却技术：随着AI算力爆发，下一代数据中心高密度HVAC冷却技术（如液冷）成为行业创新焦点，将是今年厂商争夺的新风口。'
     ],
     innovationEn: [
-        'Ultra-Low-Temp High-Temp Cascade Technology: A leading OEM released a next-generation two-stage cascade heat pump prototype, achieving stable 90°C water output at -30°C ambient—a breakthrough—with system COP maintained above 1.8, opening a new path for gas boiler replacement in severe cold regions.'
+        'Dual-Fuel Hybrid Technology Matures: In cold, high-electricity-price markets such as North America, "dual-source" heat pump systems that combine gas and electricity are gaining traction. The technology switches heat sources intelligently, with furnace efficiency up to 97% in severe cold—reliable and cost-effective.',
+        'AI and Data Center Cooling: As AI compute demand surges, next-generation high-density HVAC cooling (e.g. liquid cooling) for data centers has become an innovation hotspot and a key battleground for vendors this year.'
     ],
     future: [
-        'HPE中国热泵展（3月11日-13日，石家庄）：国内上半年最核心的热泵垂直展会。',
-        '米兰MCE展（3月24日-27日）：欧洲暖通顶级盛会，重点关注低GWP冷媒在欧洲的普及度。',
-        '中国制冷展（4月，北京）：亚太地区制冷风向标，今年特设的"工业脱碳与余热利用"专区值得期待。'
+        'HPE中国热泵展（3月16日-18日，石家庄）：下周开幕！国内开年第一大展，重点看各家渠道招商政策以及农业烘干、工业特种热泵机型。',
+        '米兰MCE展（3月24日-27日）：欧洲暖通主场。国内厂商（如SPRSUN等）已宣布将带去最新由AI驱动的R290环保热泵，全面冲击欧洲高端市场。',
+        '中国制冷展（4月8日-10日，北京）：亚太行业风向标，目前的观众预登记正在火热进行中。'
     ],
     futureEn: [
-        'HPE China Heat Pump Expo (Mar 11–13, Shijiazhuang): The most important domestic heat pump vertical exhibition in the first half of the year.',
-        'Milan MCE (Mar 24–27): Europe\'s top HVAC event; focus on the adoption of low-GWP refrigerants in Europe.',
-        'China Refrigeration Expo (April, Beijing): Asia-Pacific refrigeration industry bellwether; this year\'s dedicated "Industrial Decarbonization & Waste Heat Utilization" zone is worth watching.'
+        'HPE China Heat Pump Expo (Mar 16–18, Shijiazhuang): Opens next week—the first major domestic show of the year; focus on channel policies and agricultural drying and industrial specialty heat pump models.',
+        'Milan MCE (Mar 24–27): Europe\'s premier HVAC show. Domestic OEMs (e.g. SPRSUN) have announced AI-driven R290 heat pump launches targeting the European premium market.',
+        'China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific industry bellwether; visitor pre-registration is in full swing.'
     ]
 };
 
