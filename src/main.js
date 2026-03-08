@@ -197,6 +197,7 @@ const translations = {
         'briefings.international.title': 'International News',
         'briefings.standards.title': 'Standards Update',
         'briefings.innovation.title': 'Technical Innovation',
+        'briefings.standardsInnovation.title': 'Standards & Technical Innovation',
         'briefings.future.title': 'Upcoming Events',
         'briefings.lastUpdate': 'Last updated: ',
         'briefings.readMore': 'Read Full Report',
@@ -441,6 +442,7 @@ const translations = {
         'briefings.international.title': '国外动态',
         'briefings.standards.title': '标准动态',
         'briefings.innovation.title': '技术创新',
+        'briefings.standardsInnovation.title': '标准动态与技术创新',
         'briefings.future.title': '未来重要事项',
         'briefings.lastUpdate': '最后更新：',
         'briefings.readMore': '阅读全文 (Read Report)',
@@ -690,45 +692,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 9,
-    updateDate: '2026-03-02',
-    subtitle: '"金三银四"产能拉满、展前造势火热；北美促销与加拿大极寒榜单、双燃料与AI液冷技术；HPE/米兰MCE/制冷展档期临近',
-    subtitleEn: 'Domestic: capacity at full tilt for "Golden March, Silver April", pre-show buzz heats up; North America promotions & Canada cold-climate rankings; dual-fuel and AI datacenter cooling; HPE, MCE Milan, and China Refrigeration Expo ahead',
+    week: 10,
+    updateDate: '2026-03-08',
+    subtitle: '备战HPE大展与产能拉满、供应链涨价初现；欧洲本土制造韧性、北美高电价与双燃料热销；工业超高温脱碳与AI液冷商业化；HPE/米兰MCE/北京供热展/制冷展档期临近',
+    subtitleEn: 'Domestic: HPE prep and full capacity, supply chain price rises; International: Europe\'s resilient local manufacturing, North America\'s high electricity costs and dual-fuel boom; Innovation: industrial ultra-high-temp decarbonization, AI liquid cooling; HPE, MCE Milan, ISH China, and China Refrigeration Expo ahead',
     domestic: [
-        '"金三银四"产能拉满：节后工厂产能快速爬坡，各大热泵生产线已进入满负荷状态。随着全球工业脱碳需求上涨，大型工业及商用热泵的排产比例正显著提升。',
-        '展前造势火热：国内头部品牌（如格力等）在出海拿下大量北美严寒市场订单后，正将目光转回国内，密集预热即将发布的高压变频及高温热回收新品。'
+        '备战HPE大展与产能拉满：国内工厂已全面进入"金三银四"排产高峰期。各家整机与零配件厂商正将火力集中在即将开幕的"HPE中国热泵展"上，针对涡旋压缩机及大型商用热泵的预热尤为火爆。',
+        '供应链涨价初现：受近期大宗原材料（特别是铜）价格波动影响，国内外部分暖通制造商开始微调设备出厂价。由于铜制管件与核心零部件涨幅较为明显，不少渠道经销商正抓紧利用节后这段空窗期提前囤货备库。'
     ],
     domesticEn: [
-        '"Golden March, Silver April" at Full Capacity: Post-holiday factory output is ramping quickly, and major heat pump production lines are running at full load. As global industrial decarbonization demand rises, the share of large industrial and commercial heat pump production is increasing significantly.',
-        'Pre-Show Buzz Heats Up: After winning large orders in North American cold-climate markets, leading domestic brands (e.g. Gree) are turning focus back home and intensively teasing new high-voltage inverter and high-temperature heat recovery products.'
+        'HPE Prep & Full Capacity: Domestic factories have entered the "Golden March, Silver April" production peak. OEMs and component suppliers are focusing on the upcoming HPE China Heat Pump Expo, with strong pre-show buzz around scroll compressors and large commercial heat pumps.',
+        'Supply Chain Price Rises: Affected by recent commodity (especially copper) price swings, some domestic and international HVAC manufacturers have begun adjusting equipment prices. With copper tubing and core components rising noticeably, many channel distributors are stocking up during the post-holiday window.'
     ],
     international: [
-        '北美花式促销刺激装机：为了应对部分税收抵免政策的退坡，美国头部安装商 Endless Energy 本月推出了高达两万美元的"热泵疯狂月（Heat Pump Madness）"抽奖免单活动，大力拉动春季家庭电气化换新需求。',
-        '加拿大发布极寒热泵榜单：魁北克主流服务商 AirGreen 刚发布了2026年极寒气候热泵采购指南，明确指出今年主流设备必须能在 -30℃ 下高效运行，且已全面淘汰R-410A，转向R-32或R-454B环保冷媒。'
+        '欧洲本土制造韧性强：欧洲热泵协会最新数据显示，目前超过80%的空气源热泵（水系统）在欧洲本土组装，其境内的300多家工厂已具备年产800万台的能力。欧洲产业链"近岸化"趋势明显，对国内出海企业的本土化运营能力提出了更高要求。',
+        '北美遭遇"高电价"阻力：尽管美国各州大力补贴家庭电气化，但日益高昂的电价成为痛点。在部分严寒地区，彻底换用纯电热泵可能导致冬季账单不降反升，这促使"气电双驱"的双燃料混合系统（Dual Fuel）在北美市场持续热销。'
     ],
     internationalEn: [
-        'North American Promotions Drive Installations: To counter the phase-down of some tax credits, U.S. installer Endless Energy launched a "Heat Pump Madness" sweepstakes this month with up to $20,000 in free installations to boost spring electrification upgrades.',
-        'Canada Releases Cold-Climate Heat Pump Rankings: Quebec-based AirGreen has published its 2026 cold-climate heat pump buying guide, stating that mainstream units must run efficiently at -30°C and that R-410A is being phased out in favor of R-32 or R-454B.'
+        'Europe\'s Local Manufacturing Resilient: EHPA data shows over 80% of air-source heat pumps (water systems) are assembled in Europe, with 300+ factories capable of 8M units/year. The "nearshoring" trend is clear, raising the bar for Chinese exporters\' localization.',
+        'North America Hits "High Electricity" Wall: Despite generous state subsidies for electrification, rising electricity costs are a concern. In some cold regions, going all-electric with heat pumps can increase winter bills. This fuels continued demand for dual-fuel (gas + electric) hybrid systems in North America.'
     ],
     standards: [],
     standardsEn: [],
     innovation: [
-        '双燃料混动技术成熟：针对北美等极寒且电价波动大的地区，兼容天然气与电能的"双热源热泵系统"大放异彩。该技术能智能切换热源，严寒下燃炉热效率高达97%，既抗冻又省钱。',
-        'AI与数据中心冷却技术：随着AI算力爆发，下一代数据中心高密度HVAC冷却技术（如液冷）成为行业创新焦点，将是今年厂商争夺的新风口。'
+        '工业超高温脱碳破局：国际前沿研究团队正在评估新型固态与气态循环热泵技术。这些技术旨在突破传统冷媒的温区极限，未来有望为钢铁、化工等重工业提供超高温的清洁热源替代方案。',
+        'AI算力液冷大爆发：AI大模型竞赛拉动了高密度智算中心的建设。专为极高发热量设计的冷板式、浸没式液冷技术，以及配套的高效冷却分配单元（CDU）正加速商业化落地，成为暖通企业竞逐的新蓝海。'
     ],
     innovationEn: [
-        'Dual-Fuel Hybrid Technology Matures: In cold, high-electricity-price markets such as North America, "dual-source" heat pump systems that combine gas and electricity are gaining traction. The technology switches heat sources intelligently, with furnace efficiency up to 97% in severe cold—reliable and cost-effective.',
-        'AI and Data Center Cooling: As AI compute demand surges, next-generation high-density HVAC cooling (e.g. liquid cooling) for data centers has become an innovation hotspot and a key battleground for vendors this year.'
+        'Industrial Ultra-High-Temp Decarbonization: International research teams are evaluating novel solid-state and gas-cycle heat pump technologies to break through traditional refrigerant temperature limits. These could provide clean high-temperature heat for steel, chemicals, and other heavy industries.',
+        'AI Compute Liquid Cooling Boom: The AI model race is driving high-density data center buildout. Cold-plate and immersion liquid cooling, plus efficient CDUs, are commercializing rapidly—a new frontier for HVAC vendors.'
     ],
     future: [
-        'HPE中国热泵展（3月16日-18日，石家庄）：下周开幕！国内开年第一大展，重点看各家渠道招商政策以及农业烘干、工业特种热泵机型。',
-        '米兰MCE展（3月24日-27日）：欧洲暖通主场。国内厂商（如SPRSUN等）已宣布将带去最新由AI驱动的R290环保热泵，全面冲击欧洲高端市场。',
-        '中国制冷展（4月8日-10日，北京）：亚太行业风向标，目前的观众预登记正在火热进行中。'
+        'HPE中国热泵展（3月16日-18日，石家庄国际会展中心）：国内开年首个垂直大展。',
+        '米兰MCE展（3月24日-27日）：欧洲暖通行业主场，中国环保冷媒军团将集中亮相。',
+        'ISH China & CIHE 北京供热展（3月31日-4月2日，北京·中国国际展览中心顺义馆）：重点展示清洁供暖、能源解决方案与舒适家居系统。',
+        '第37届中国制冷展（4月8日-10日，北京）：亚太制冷空调行业年度绝对风向标，目前观众预登记已全面开启。'
     ],
     futureEn: [
-        'HPE China Heat Pump Expo (Mar 16–18, Shijiazhuang): Opens next week—the first major domestic show of the year; focus on channel policies and agricultural drying and industrial specialty heat pump models.',
-        'Milan MCE (Mar 24–27): Europe\'s premier HVAC show. Domestic OEMs (e.g. SPRSUN) have announced AI-driven R290 heat pump launches targeting the European premium market.',
-        'China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific industry bellwether; visitor pre-registration is in full swing.'
+        'HPE China Heat Pump Expo (Mar 16–18, Shijiazhuang International Exhibition Center): First major vertical show of the year.',
+        'Milan MCE (Mar 24–27): Europe\'s premier HVAC show; Chinese eco-refrigerant vendors will showcase.',
+        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2, China International Exhibition Center, Shunyi, Beijing): Focus on clean heating, energy solutions, and comfort systems.',
+        '37th China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific refrigeration industry bellwether; visitor pre-registration is open.'
     ]
 };
 
@@ -789,23 +793,17 @@ function displayBriefing() {
     });
     fullHtml += `</ul></div>`;
 
-    // Standards section
-    fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.standards.title">${translations[currentLanguage]['briefings.standards.title']}</h4>
-        <ul class="briefing-list">`;
-    standardsItems.forEach(item => {
-        fullHtml += `<li class="briefing-item">${item}</li>`;
-    });
-    fullHtml += `</ul></div>`;
-
-    // Technical Innovation section
-    fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.innovation.title">${translations[currentLanguage]['briefings.innovation.title']}</h4>
-        <ul class="briefing-list">`;
-    innovationItems.forEach(item => {
-        fullHtml += `<li class="briefing-item">${item}</li>`;
-    });
-    fullHtml += `</ul></div>`;
+    // Standards & Technical Innovation (merged section)
+    const standardsInnovationItems = [...standardsItems, ...innovationItems];
+    if (standardsInnovationItems.length > 0) {
+        fullHtml += `<div class="briefing-section">
+            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${translations[currentLanguage]['briefings.standardsInnovation.title']}</h4>
+            <ul class="briefing-list">`;
+        standardsInnovationItems.forEach(item => {
+            fullHtml += `<li class="briefing-item">${item}</li>`;
+        });
+        fullHtml += `</ul></div>`;
+    }
 
     // Future events section
     fullHtml += `<div class="briefing-section">
