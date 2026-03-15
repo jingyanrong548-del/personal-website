@@ -692,47 +692,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 10,
-    updateDate: '2026-03-08',
-    subtitle: '备战HPE大展与产能拉满、供应链涨价初现；欧洲本土制造韧性、北美高电价与双燃料热销；工业超高温脱碳与AI液冷商业化；HPE/米兰MCE/北京供热展/制冷展档期临近',
-    subtitleEn: 'Domestic: HPE prep and full capacity, supply chain price rises; International: Europe\'s resilient local manufacturing, North America\'s high electricity costs and dual-fuel boom; Innovation: industrial ultra-high-temp decarbonization, AI liquid cooling; HPE, MCE Milan, ISH China, and China Refrigeration Expo ahead',
+    week: 11,
+    updateDate: '2026-03-15',
+    subtitle: 'HPE石家庄开幕、工业高温与天然工质；AWE核心部件与平嵌压缩机；米兰MCE临战、北美R454B咨询激增；磁悬浮国标发布、地热+磁悬浮融合；MCE/北京供热展/制冷展档期',
+    subtitleEn: 'Domestic: HPE opens in Shijiazhuang, industrial high-temp & natural refrigerants; AWE core components and slim embedded compressors; International: MCE Milan countdown, North America R454B install surge; Standards: magnetic bearing GB, geothermal + maglev; MCE, ISH China, Refrigeration Expo ahead',
     domestic: [
-        '备战HPE大展与产能拉满：国内工厂已全面进入"金三银四"排产高峰期。各家整机与零配件厂商正将火力集中在即将开幕的"HPE中国热泵展"上，针对涡旋压缩机及大型商用热泵的预热尤为火爆。',
-        '供应链涨价初现：受近期大宗原材料（特别是铜）价格波动影响，国内外部分暖通制造商开始微调设备出厂价。由于铜制管件与核心零部件涨幅较为明显，不少渠道经销商正抓紧利用节后这段空窗期提前囤货备库。'
+        'HPE中国热泵展盛大开幕：3月16日，2026中国热泵展（HPE）在石家庄正式开展。作为开年首个大型垂直展会，现场集中展示了兆瓦级工业热泵、R290超低温采暖机组等核心新品，反映出行业正加速向"工业高温"与"天然工质"转型。',
+        '核心部件亮相AWE：在上周闭幕的上海AWE 2026上，美芝（GMCC）、威灵（Welling）等巨头展示了针对移动房车、商用采暖的定制化压缩机与电机方案，其中高度仅125mm的超薄冰箱压缩机直击"平嵌"家电痛点。'
     ],
     domesticEn: [
-        'HPE Prep & Full Capacity: Domestic factories have entered the "Golden March, Silver April" production peak. OEMs and component suppliers are focusing on the upcoming HPE China Heat Pump Expo, with strong pre-show buzz around scroll compressors and large commercial heat pumps.',
-        'Supply Chain Price Rises: Affected by recent commodity (especially copper) price swings, some domestic and international HVAC manufacturers have begun adjusting equipment prices. With copper tubing and core components rising noticeably, many channel distributors are stocking up during the post-holiday window.'
+        'HPE China Heat Pump Expo Opens: On Mar 16, 2026 HPE kicked off in Shijiazhuang. As the first major vertical show of the year, it featured MW-scale industrial heat pumps and R290 low-temperature heating units, underscoring the shift toward "industrial high-temp" and "natural refrigerants."',
+        'Core Components at AWE: At the recently concluded AWE 2026 in Shanghai, GMCC, Welling and other majors showcased custom compressors and motor solutions for RVs and commercial heating, including a 125mm ultra-slim fridge compressor targeting flush-embedded appliances.'
     ],
     international: [
-        '欧洲本土制造韧性强：欧洲热泵协会最新数据显示，目前超过80%的空气源热泵（水系统）在欧洲本土组装，其境内的300多家工厂已具备年产800万台的能力。欧洲产业链"近岸化"趋势明显，对国内出海企业的本土化运营能力提出了更高要求。',
-        '北美遭遇"高电价"阻力：尽管美国各州大力补贴家庭电气化，但日益高昂的电价成为痛点。在部分严寒地区，彻底换用纯电热泵可能导致冬季账单不降反升，这促使"气电双驱"的双燃料混合系统（Dual Fuel）在北美市场持续热销。'
+        '米兰MCE展进入临战状态：欧洲最重要的供暖制冷展MCE（3月24日开幕）本周进入搭建冲刺期。中国参展团规模创历史新高，预计将大规模首发专为欧洲F-Gas法案设计的AI驱动型R290热泵，直接冲击高端市场。',
+        '北美高能效补贴反响热烈：受加州及五大湖区高额热泵补贴政策驱动，北美分销商本周反馈R454B（微燃）新冷媒设备的安装咨询量环比增长约20%，市场正处于冷媒切换的爆发前夜。'
     ],
     internationalEn: [
-        'Europe\'s Local Manufacturing Resilient: EHPA data shows over 80% of air-source heat pumps (water systems) are assembled in Europe, with 300+ factories capable of 8M units/year. The "nearshoring" trend is clear, raising the bar for Chinese exporters\' localization.',
-        'North America Hits "High Electricity" Wall: Despite generous state subsidies for electrification, rising electricity costs are a concern. In some cold regions, going all-electric with heat pumps can increase winter bills. This fuels continued demand for dual-fuel (gas + electric) hybrid systems in North America.'
+        'Milan MCE in Final Sprint: Europe\'s premier heating and cooling show MCE (opening Mar 24) is in setup phase. Chinese exhibitor presence is at a record high; AI-driven R290 heat pumps designed for EU F-Gas rules are expected to debut in force, targeting the premium segment.',
+        'North America High-Efficiency Subsidy Boom: Driven by generous heat pump incentives in California and the Great Lakes, North American distributors report R454B (mildly flammable) equipment install inquiries up ~20% WoW—the market is on the eve of a refrigerant transition surge.'
     ],
-    standards: [],
-    standardsEn: [],
+    standards: [
+        '磁悬浮热泵国标发布：3月14日，我国发布了《主动磁悬浮轴承稳定性评价》等两项国家标准。这为磁悬浮热泵装备设定了统一的"中国规则"，有效解决了行业定子检测与稳定性评价的规范缺失问题。'
+    ],
+    standardsEn: [
+        'Magnetic Bearing Heat Pump National Standards: On Mar 14, China issued two national standards including "Stability evaluation of active magnetic bearings." They set a unified "Chinese rulebook" for maglev heat pump equipment and address the lack of norms for stator testing and stability evaluation.'
+    ],
     innovation: [
-        '工业超高温脱碳破局：国际前沿研究团队正在评估新型固态与气态循环热泵技术。这些技术旨在突破传统冷媒的温区极限，未来有望为钢铁、化工等重工业提供超高温的清洁热源替代方案。',
-        'AI算力液冷大爆发：AI大模型竞赛拉动了高密度智算中心的建设。专为极高发热量设计的冷板式、浸没式液冷技术，以及配套的高效冷却分配单元（CDU）正加速商业化落地，成为暖通企业竞逐的新蓝海。'
+        '地热+磁悬浮技术融合：中国科学院院士滕吉文在近期大会上强调，磁悬浮技术与地源热泵的结合让装备能效实现了质的飞跃，是未来深层地岩换热利用的核心动力。'
     ],
     innovationEn: [
-        'Industrial Ultra-High-Temp Decarbonization: International research teams are evaluating novel solid-state and gas-cycle heat pump technologies to break through traditional refrigerant temperature limits. These could provide clean high-temperature heat for steel, chemicals, and other heavy industries.',
-        'AI Compute Liquid Cooling Boom: The AI model race is driving high-density data center buildout. Cold-plate and immersion liquid cooling, plus efficient CDUs, are commercializing rapidly—a new frontier for HVAC vendors.'
+        'Geothermal + Maglev Integration: Academician Teng Jiwen (CAS) stressed at a recent conference that combining magnetic levitation with ground-source heat pumps has brought a step change in equipment efficiency and is key to future deep geothermal rock heat exchange.'
     ],
     future: [
-        'HPE中国热泵展（3月16日-18日，石家庄国际会展中心）：国内开年首个垂直大展。',
-        '米兰MCE展（3月24日-27日）：欧洲暖通行业主场，中国环保冷媒军团将集中亮相。',
-        'ISH China & CIHE 北京供热展（3月31日-4月2日，北京·中国国际展览中心顺义馆）：重点展示清洁供暖、能源解决方案与舒适家居系统。',
-        '第37届中国制冷展（4月8日-10日，北京）：亚太制冷空调行业年度绝对风向标，目前观众预登记已全面开启。'
+        '米兰MCE展：3月24日-27日。观察全球低GWP冷媒渗透率与AI节能控制技术的关键窗口。',
+        'ISH China & CIHE（北京供热展）：3月31日-4月2日。重点展示全产业链清洁供暖解决方案。',
+        '第37届中国制冷展：4月8日-10日，北京。亚太地区年度绝对行业风向标。'
     ],
     futureEn: [
-        'HPE China Heat Pump Expo (Mar 16–18, Shijiazhuang International Exhibition Center): First major vertical show of the year.',
-        'Milan MCE (Mar 24–27): Europe\'s premier HVAC show; Chinese eco-refrigerant vendors will showcase.',
-        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2, China International Exhibition Center, Shunyi, Beijing): Focus on clean heating, energy solutions, and comfort systems.',
-        '37th China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific refrigeration industry bellwether; visitor pre-registration is open.'
+        'Milan MCE (Mar 24–27): Key window for global low-GWP refrigerant penetration and AI energy-saving controls.',
+        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2): Full-industry clean heating solutions.',
+        '37th China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific industry bellwether of the year.'
     ]
 };
 
