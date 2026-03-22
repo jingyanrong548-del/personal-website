@@ -692,47 +692,47 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 11,
-    updateDate: '2026-03-15',
-    subtitle: 'HPE石家庄开幕、工业高温与天然工质；AWE核心部件与平嵌压缩机；米兰MCE临战、北美R454B咨询激增；磁悬浮国标发布、地热+磁悬浮融合；MCE/北京供热展/制冷展档期',
-    subtitleEn: 'Domestic: HPE opens in Shijiazhuang, industrial high-temp & natural refrigerants; AWE core components and slim embedded compressors; International: MCE Milan countdown, North America R454B install surge; Standards: magnetic bearing GB, geothermal + maglev; MCE, ISH China, Refrigeration Expo ahead',
+    week: 12,
+    updateDate: '2026-03-22',
+    subtitle: 'HPE石家庄收官与全场景极寒性能；湖州8MW/400℃超高温热泵示范；MCE智慧能源焦点、北美R454B/R32与多冷媒压缩机；地热大会磁悬浮国标、松洋R32 25HP涡旋；MCE/北京供热展/制冷展',
+    subtitleEn: 'HPE Shijiazhuang wraps with full-scenario & arctic performance; Huzhou 8 MW / 400 °C UHTHP demo; MCE "That\'s Smart," NA R454B/R32 & multi-refrigerant compressors; geothermal summit maglev GBs, Songyang R32 25 HP scroll; MCE, ISH China, Refrigeration Expo',
     domestic: [
-        'HPE中国热泵展盛大开幕：3月16日，2026中国热泵展（HPE）在石家庄正式开展。作为开年首个大型垂直展会，现场集中展示了兆瓦级工业热泵、R290超低温采暖机组等核心新品，反映出行业正加速向"工业高温"与"天然工质"转型。',
-        '核心部件亮相AWE：在上周闭幕的上海AWE 2026上，美芝（GMCC）、威灵（Welling）等巨头展示了针对移动房车、商用采暖的定制化压缩机与电机方案，其中高度仅125mm的超薄冰箱压缩机直击"平嵌"家电痛点。'
+        'HPE中国热泵展圆满收官：3月16日至18日，第16届中国热泵展在石家庄盛大举行，展览面积达75,000平方米，吸引超850家展商。海信、松洋等巨头展示了覆盖户采、公建供热及工农业烘干的全系列新品，强调"全场景"应用与极寒环境下的强劲性能。',
+        '超高温热泵重大项目开工：全球功率最大的超高温热泵储能示范工程（8MW/400℃）在浙江湖州正式启动。该项目利用绿电制取380℃蒸汽，精准对接冶金、化工等高耗能行业的低碳转型需求，提供零碳蒸汽解决方案。'
     ],
     domesticEn: [
-        'HPE China Heat Pump Expo Opens: On Mar 16, 2026 HPE kicked off in Shijiazhuang. As the first major vertical show of the year, it featured MW-scale industrial heat pumps and R290 low-temperature heating units, underscoring the shift toward "industrial high-temp" and "natural refrigerants."',
-        'Core Components at AWE: At the recently concluded AWE 2026 in Shanghai, GMCC, Welling and other majors showcased custom compressors and motor solutions for RVs and commercial heating, including a 125mm ultra-slim fridge compressor targeting flush-embedded appliances.'
+        'HPE China Heat Pump Expo Concludes: Mar 16–18, the 16th China Heat Pump Expo wrapped up in Shijiazhuang with 75,000 m² of floorspace and 850+ exhibitors. Hisense, Songyang and other majors showcased full-line products for residential heating, public-building heat supply, and industrial/agricultural drying, stressing "all-scenario" use and strong performance in extreme cold.',
+        'Ultra-High-Temperature Heat Pump Megaproject Starts: The world\'s largest ultra-high-temperature heat pump energy storage demo (8 MW / 400 °C) has launched in Huzhou, Zhejiang. Green power produces 380 °C steam for metallurgy, chemicals and other energy-intensive sectors, offering a zero-carbon steam pathway for low-carbon transition.'
     ],
     international: [
-        '米兰MCE展进入临战状态：欧洲最重要的供暖制冷展MCE（3月24日开幕）本周进入搭建冲刺期。中国参展团规模创历史新高，预计将大规模首发专为欧洲F-Gas法案设计的AI驱动型R290热泵，直接冲击高端市场。',
-        '北美高能效补贴反响热烈：受加州及五大湖区高额热泵补贴政策驱动，北美分销商本周反馈R454B（微燃）新冷媒设备的安装咨询量环比增长约20%，市场正处于冷媒切换的爆发前夜。'
+        '米兰MCE展临战冲刺：作为全球顶级暖通盛会，意大利米兰MCE展将于下周（3月24-27日）开幕。本次展会将智慧能源（That\'s Smart）设为焦点，中国出海品牌正密集备战，重点展示适配欧洲市场的环保冷媒与智能家居集成系统。',
+        '北美冷媒切换稳步推进：随着2026年新规执行，北美市场对低GWP冷媒（如R454B、R32）的关注度持续高涨。松洋等零部件厂商已推出多冷媒兼容的压缩机产品，以适配全球不同地区的环保法规要求。'
     ],
     internationalEn: [
-        'Milan MCE in Final Sprint: Europe\'s premier heating and cooling show MCE (opening Mar 24) is in setup phase. Chinese exhibitor presence is at a record high; AI-driven R290 heat pumps designed for EU F-Gas rules are expected to debut in force, targeting the premium segment.',
-        'North America High-Efficiency Subsidy Boom: Driven by generous heat pump incentives in California and the Great Lakes, North American distributors report R454B (mildly flammable) equipment install inquiries up ~20% WoW—the market is on the eve of a refrigerant transition surge.'
+        'Milan MCE Final Sprint: As a top global HVAC event, MCE Milan opens next week (Mar 24–27). This edition spotlights smart energy ("That\'s Smart"). Chinese brands exporting to Europe are in intensive prep, highlighting low-GWP refrigerants for the European market and smart-home integration.',
+        'North America Refrigerant Transition Steady: With 2026 rules taking effect, interest in low-GWP refrigerants (e.g. R454B, R32) remains high. Songyang and other component makers have rolled out multi-refrigerant compatible compressors to meet differing environmental regulations worldwide.'
     ],
     standards: [
-        '磁悬浮热泵国标发布：3月14日，我国发布了《主动磁悬浮轴承稳定性评价》等两项国家标准。这为磁悬浮热泵装备设定了统一的"中国规则"，有效解决了行业定子检测与稳定性评价的规范缺失问题。'
+        '磁悬浮热泵国标发布：3月13日，地热（热泵）高质量发展大会发布了两项磁悬浮领域国家标准，为磁悬浮热泵机组的可靠性与技术规范"立规矩"，推动地热能的高效开发利用。'
     ],
     standardsEn: [
-        'Magnetic Bearing Heat Pump National Standards: On Mar 14, China issued two national standards including "Stability evaluation of active magnetic bearings." They set a unified "Chinese rulebook" for maglev heat pump equipment and address the lack of norms for stator testing and stability evaluation.'
+        'Maglev Heat Pump National Standards: On Mar 13, the High-Quality Geothermal (Heat Pump) Development Conference released two national standards in the magnetic levitation field, setting reliability and technical norms for maglev heat pump units and advancing efficient geothermal development.'
     ],
     innovation: [
-        '地热+磁悬浮技术融合：中国科学院院士滕吉文在近期大会上强调，磁悬浮技术与地源热泵的结合让装备能效实现了质的飞跃，是未来深层地岩换热利用的核心动力。'
+        '压缩机技术突破：松洋在HPE展会上发布了R32冷媒25HP涡旋压缩机，蒸发温度低至-42℃，配合喷气增焓技术，大幅提升了热泵在极寒环境下的采暖能力。'
     ],
     innovationEn: [
-        'Geothermal + Maglev Integration: Academician Teng Jiwen (CAS) stressed at a recent conference that combining magnetic levitation with ground-source heat pumps has brought a step change in equipment efficiency and is key to future deep geothermal rock heat exchange.'
+        'Compressor Technology Breakthrough: At HPE, Songyang launched a 25 HP R32 scroll compressor with evaporation temperature down to -42 °C, combined with vapor injection, greatly boosting heat-pump heating capacity in severe cold.'
     ],
     future: [
-        '米兰MCE展：3月24日-27日。观察全球低GWP冷媒渗透率与AI节能控制技术的关键窗口。',
-        'ISH China & CIHE（北京供热展）：3月31日-4月2日。重点展示全产业链清洁供暖解决方案。',
-        '第37届中国制冷展：4月8日-10日，北京。亚太地区年度绝对行业风向标。'
+        '米兰MCE展：3月24日-27日。观察全球暖通趋势与低碳能源解决方案的风向标。',
+        '北京供热展（ISH China & CIHE）：3月31日-4月2日。重点展示清洁供暖、舒适家居及智能安装技术。',
+        '第37届中国制冷展：4月8日-10日，北京。亚太地区制冷空调行业年度盛会。'
     ],
     futureEn: [
-        'Milan MCE (Mar 24–27): Key window for global low-GWP refrigerant penetration and AI energy-saving controls.',
-        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2): Full-industry clean heating solutions.',
-        '37th China Refrigeration Expo (Apr 8–10, Beijing): Asia-Pacific industry bellwether of the year.'
+        'Milan MCE (Mar 24–27): Bellwether for global HVAC trends and low-carbon energy solutions.',
+        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2): Clean heating, comfort home, and smart installation technology.',
+        '37th China Refrigeration Expo (Apr 8–10, Beijing): Annual flagship event for refrigeration and air conditioning in the Asia-Pacific region.'
     ]
 };
 
