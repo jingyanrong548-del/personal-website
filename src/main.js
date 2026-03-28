@@ -692,47 +692,45 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 12,
-    updateDate: '2026-03-22',
-    subtitle: 'HPE石家庄收官与全场景极寒性能；湖州8MW/400℃超高温热泵示范；MCE智慧能源焦点、北美R454B/R32与多冷媒压缩机；地热大会磁悬浮国标、松洋R32 25HP涡旋；MCE/北京供热展/制冷展',
-    subtitleEn: 'HPE Shijiazhuang wraps with full-scenario & arctic performance; Huzhou 8 MW / 400 °C UHTHP demo; MCE "That\'s Smart," NA R454B/R32 & multi-refrigerant compressors; geothermal summit maglev GBs, Songyang R32 25 HP scroll; MCE, ISH China, Refrigeration Expo',
+    week: 13,
+    updateDate: '2026-03-29',
+    subtitle: '“光储热”多能互补与清洁算力调度；R290出海抢单；MCE米兰中国军团与数据中心液冷/AI空调；新加坡能效新规；松洋超低压比涡旋；北京供热展与制冷展',
+    subtitleEn: 'PV–storage–heat & clean compute dispatch; R290 export push; MCE Milan Chinese OEMs, data-center liquid cooling & AI AC; Singapore MEPS; Songyang ultra-low pressure-ratio scroll; ISH China & Refrigeration Expo',
     domestic: [
-        'HPE中国热泵展圆满收官：3月16日至18日，第16届中国热泵展在石家庄盛大举行，展览面积达75,000平方米，吸引超850家展商。海信、松洋等巨头展示了覆盖户采、公建供热及工农业烘干的全系列新品，强调"全场景"应用与极寒环境下的强劲性能。',
-        '超高温热泵重大项目开工：全球功率最大的超高温热泵储能示范工程（8MW/400℃）在浙江湖州正式启动。该项目利用绿电制取380℃蒸汽，精准对接冶金、化工等高耗能行业的低碳转型需求，提供零碳蒸汽解决方案。'
+        '“光储热”多能互补成脱碳新宠：近期国内一系列展会结束后，“光伏+储能+热泵”的零碳能源组合加速在项目端落地。部分头部企业（如太阳雨）推出的清洁算力平台，通过AI动态调度园区电、热负荷，大幅缩短了系统投资回报周期，成为工商业“算本账”时的优选方案。',
+        '高端产能全面出海抢单：国内热泵制造基地在“金三银四”期间加速向海外交付订单。面对欧洲日益严格的环保门槛，国内各大工厂正密集提升R290（丙烷）等天然工质变频热泵的排产比例，以抢占海外市场的春季装机潮。'
     ],
     domesticEn: [
-        'HPE China Heat Pump Expo Concludes: Mar 16–18, the 16th China Heat Pump Expo wrapped up in Shijiazhuang with 75,000 m² of floorspace and 850+ exhibitors. Hisense, Songyang and other majors showcased full-line products for residential heating, public-building heat supply, and industrial/agricultural drying, stressing "all-scenario" use and strong performance in extreme cold.',
-        'Ultra-High-Temperature Heat Pump Megaproject Starts: The world\'s largest ultra-high-temperature heat pump energy storage demo (8 MW / 400 °C) has launched in Huzhou, Zhejiang. Green power produces 380 °C steam for metallurgy, chemicals and other energy-intensive sectors, offering a zero-carbon steam pathway for low-carbon transition.'
+        'PV–Storage–Heat Multi-Energy Synergy Gains Traction: After a run of domestic trade shows, the zero-carbon trio of solar PV, energy storage, and heat pumps is landing faster at project sites. Leading vendors (e.g. Sunrain) offer clean-compute platforms that use AI to orchestrate campus electrical and thermal loads, shortening payback and becoming a go-to when businesses run the numbers.',
+        'High-End Capacity Chases Export Orders: During the spring order season, domestic heat-pump plants are stepping up overseas deliveries. With Europe\'s tightening environmental rules, factories are raising output of natural-refrigerant (e.g. R290 propane) inverter heat pumps to capture the spring installation window abroad.'
     ],
     international: [
-        '米兰MCE展临战冲刺：作为全球顶级暖通盛会，意大利米兰MCE展将于下周（3月24-27日）开幕。本次展会将智慧能源（That\'s Smart）设为焦点，中国出海品牌正密集备战，重点展示适配欧洲市场的环保冷媒与智能家居集成系统。',
-        '北美冷媒切换稳步推进：随着2026年新规执行，北美市场对低GWP冷媒（如R454B、R32）的关注度持续高涨。松洋等零部件厂商已推出多冷媒兼容的压缩机产品，以适配全球不同地区的环保法规要求。'
+        'MCE米兰大展重磅举行：本周（3月24-27日），全球暖通制冷风向标——意大利米兰MCE展圆满落幕。中国热泵军团表现极其抢眼，例如纽恩泰（NEWNTIDE）首发了集成光伏智能导航（PV-PILOT）及超静音设计的R290旗舰系统，向欧洲本土高端市场发起了强势冲击。',
+        'AI与液冷技术抢尽风头：除了传统的民用供热，满足AI算力爆发的“数据中心冷却”在MCE展上大放异彩。丹佛斯（Danfoss）重点展示了专为高算力液冷设计的Turbocor新一代磁悬浮压缩机；而三星等家电巨头则展出了能通过AI自动感知人体和环境温度分布的智能空调系统。'
     ],
     internationalEn: [
-        'Milan MCE Final Sprint: As a top global HVAC event, MCE Milan opens next week (Mar 24–27). This edition spotlights smart energy ("That\'s Smart"). Chinese brands exporting to Europe are in intensive prep, highlighting low-GWP refrigerants for the European market and smart-home integration.',
-        'North America Refrigerant Transition Steady: With 2026 rules taking effect, interest in low-GWP refrigerants (e.g. R454B, R32) remains high. Songyang and other component makers have rolled out multi-refrigerant compatible compressors to meet differing environmental regulations worldwide.'
+        'MCE Milan Wraps: This week (Mar 24–27), MCE Milan—the global HVAC&R bellwether—concluded successfully. Chinese heat-pump brands stood out: NEWNTIDE debuted an R290 flagship with PV-PILOT solar navigation and ultra-quiet design, challenging Europe\'s premium segment.',
+        'AI and Liquid Cooling in the Spotlight: Beyond residential heating, data-center cooling for AI compute drew heavy attention at MCE. Danfoss highlighted next-gen Turbocor maglev compressors for high-density liquid cooling; Samsung and peers showed AI-driven room air conditioners that sense occupant and ambient temperature patterns.'
     ],
     standards: [
-        '磁悬浮热泵国标发布：3月13日，地热（热泵）高质量发展大会发布了两项磁悬浮领域国家标准，为磁悬浮热泵机组的可靠性与技术规范"立规矩"，推动地热能的高效开发利用。'
+        '能效准入门槛继续拉高：新加坡等泛亚地区国家本月正式更新了能效法令，将热泵热水器及商用冷柜纳入强制能效管理体系。这要求后续的出口产品必须通过更严格的电压及能效指标考核，出海合规成本有所增加。'
     ],
     standardsEn: [
-        'Maglev Heat Pump National Standards: On Mar 13, the High-Quality Geothermal (Heat Pump) Development Conference released two national standards in the magnetic levitation field, setting reliability and technical norms for maglev heat pump units and advancing efficient geothermal development.'
+        'Efficiency Bar Rises: Singapore and other Asia-Pacific economies updated mandatory MEPS this month, bringing heat-pump water heaters and commercial refrigerators under tighter energy-management rules. Exporters face stricter voltage and efficiency tests and higher compliance cost.'
     ],
     innovation: [
-        '压缩机技术突破：松洋在HPE展会上发布了R32冷媒25HP涡旋压缩机，蒸发温度低至-42℃，配合喷气增焓技术，大幅提升了热泵在极寒环境下的采暖能力。'
+        '超低压比变频技术落地：针对大型工农业烘干及储能温控，行业核心部件商（如松洋压缩机）展出了新型浮动结构涡旋压缩机。该技术彻底解决了热泵在极低压比工况下容易损坏的痛点，大大拓宽了特种高温烘干热泵的应用场景。'
     ],
     innovationEn: [
-        'Compressor Technology Breakthrough: At HPE, Songyang launched a 25 HP R32 scroll compressor with evaporation temperature down to -42 °C, combined with vapor injection, greatly boosting heat-pump heating capacity in severe cold.'
+        'Ultra-Low Pressure-Ratio Inverter in the Field: For large-scale drying and energy-storage temperature control, core suppliers (e.g. Songyang) showcased floating-structure scroll compressors that address reliability under very low pressure ratios—widening use cases for specialty high-temperature drying heat pumps.'
     ],
     future: [
-        '米兰MCE展：3月24日-27日。观察全球暖通趋势与低碳能源解决方案的风向标。',
-        '北京供热展（ISH China & CIHE）：3月31日-4月2日。重点展示清洁供暖、舒适家居及智能安装技术。',
-        '第37届中国制冷展：4月8日-10日，北京。亚太地区制冷空调行业年度盛会。'
+        'ISH China & CIHE（北京供热展）：下周（3月31日-4月2日）即将在北京新国展举办，这是国内舒适家居和清洁供暖领域开春的又一重头戏。',
+        '第37届中国制冷展：4月8日-10日于北京举办。亚太地区旗舰大展，本届的创新技术评奖结果即将在展前揭晓，非常值得期待。'
     ],
     futureEn: [
-        'Milan MCE (Mar 24–27): Bellwether for global HVAC trends and low-carbon energy solutions.',
-        'ISH China & CIHE Beijing Heating Expo (Mar 31–Apr 2): Clean heating, comfort home, and smart installation technology.',
-        '37th China Refrigeration Expo (Apr 8–10, Beijing): Annual flagship event for refrigeration and air conditioning in the Asia-Pacific region.'
+        'ISH China & CIHE (Beijing Heating Expo), Mar 31–Apr 2 at New China International Exhibition Center—a major spring event for comfort home and clean heating in China.',
+        '37th China Refrigeration Expo, Apr 8–10 in Beijing: Asia-Pacific flagship show; innovation award results will be announced before the opening—worth watching.'
     ]
 };
 
