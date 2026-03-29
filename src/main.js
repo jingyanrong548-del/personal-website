@@ -694,43 +694,43 @@ const briefingData = {
     year: 2026,
     week: 13,
     updateDate: '2026-03-29',
-    subtitle: '“光储热”多能互补与清洁算力调度；R290出海抢单；MCE米兰中国军团与数据中心液冷/AI空调；新加坡能效新规；松洋超低压比涡旋；北京供热展与制冷展',
-    subtitleEn: 'PV–storage–heat & clean compute dispatch; R290 export push; MCE Milan Chinese OEMs, data-center liquid cooling & AI AC; Singapore MEPS; Songyang ultra-low pressure-ratio scroll; ISH China & Refrigeration Expo',
+    subtitle: '全场景压缩机与工业热泵扩张；MCE收官与北美补贴；超低压比涡旋80℃出风；R290防爆安全设计；北京供热展与制冷展',
+    subtitleEn: 'All-scenario compressors & industrial HP growth; MCE wrap & North America incentives; ultra-low π scroll to 80 °C; R290 safety; ISH China & Refrigeration Expo',
     domestic: [
-        '“光储热”多能互补成脱碳新宠：近期国内一系列展会结束后，“光伏+储能+热泵”的零碳能源组合加速在项目端落地。部分头部企业（如太阳雨）推出的清洁算力平台，通过AI动态调度园区电、热负荷，大幅缩短了系统投资回报周期，成为工商业“算本账”时的优选方案。',
-        '高端产能全面出海抢单：国内热泵制造基地在“金三银四”期间加速向海外交付订单。面对欧洲日益严格的环保门槛，国内各大工厂正密集提升R290（丙烷）等天然工质变频热泵的排产比例，以抢占海外市场的春季装机潮。'
+        '热泵全场景应用走红：继HPE中国热泵展落幕后，行业进入技术转化期。松洋等零部件巨头本周展示了涵盖家用、商用、工业、农业等五大方向的定制化压缩机产品，重点突破-42℃极寒采暖及105℃高温工业供热技术。',
+        '工业热泵市场加速扩张：随着工业脱碳需求增长，2026年全球工业热泵市场规模已达到1560亿美元。国内针对高耗能行业的“以泵代锅”项目本周询盘量显著上升。'
     ],
     domesticEn: [
-        'PV–Storage–Heat Multi-Energy Synergy Gains Traction: After a run of domestic trade shows, the zero-carbon trio of solar PV, energy storage, and heat pumps is landing faster at project sites. Leading vendors (e.g. Sunrain) offer clean-compute platforms that use AI to orchestrate campus electrical and thermal loads, shortening payback and becoming a go-to when businesses run the numbers.',
-        'High-End Capacity Chases Export Orders: During the spring order season, domestic heat-pump plants are stepping up overseas deliveries. With Europe\'s tightening environmental rules, factories are raising output of natural-refrigerant (e.g. R290 propane) inverter heat pumps to capture the spring installation window abroad.'
+        'Heat Pumps Across All Scenarios: After HPE China Heat Pump Expo, the sector is moving into technology adoption. Component leaders such as Songyang showcased customized compressors for five segments—residential, commercial, industrial, agricultural, and more—with emphasis on -42 °C arctic heating and 105 °C high-temperature industrial heat supply.',
+        'Industrial Heat Pump Market Expands: Driven by industrial decarbonization, the global industrial heat pump market is estimated at USD 156 billion in 2026. Domestic inquiry volume for “heat pump instead of boiler” projects in energy-intensive industries rose noticeably this week.'
     ],
     international: [
-        'MCE米兰大展重磅举行：本周（3月24-27日），全球暖通制冷风向标——意大利米兰MCE展圆满落幕。中国热泵军团表现极其抢眼，例如纽恩泰（NEWNTIDE）首发了集成光伏智能导航（PV-PILOT）及超静音设计的R290旗舰系统，向欧洲本土高端市场发起了强势冲击。',
-        'AI与液冷技术抢尽风头：除了传统的民用供热，满足AI算力爆发的“数据中心冷却”在MCE展上大放异彩。丹佛斯（Danfoss）重点展示了专为高算力液冷设计的Turbocor新一代磁悬浮压缩机；而三星等家电巨头则展出了能通过AI自动感知人体和环境温度分布的智能空调系统。'
+        '米兰MCE展收官效应：全球暖通制冷盛会MCE（3月24-27日）在米兰圆满闭幕。展会聚焦“智慧能源”，中国企业大规模展示了适配欧洲F-Gas法案的低GWP环保冷媒机组，展现了强大的全球适配能力。',
+        '北美补贴政策利好：本周北美多地更新热泵安装补贴明细。受环保法规驱动，R454B与R32冷媒设备在当地市场的渗透率持续攀升，零部件供应商正加速提升兼容多冷媒产品的产能。'
     ],
     internationalEn: [
-        'MCE Milan Wraps: This week (Mar 24–27), MCE Milan—the global HVAC&R bellwether—concluded successfully. Chinese heat-pump brands stood out: NEWNTIDE debuted an R290 flagship with PV-PILOT solar navigation and ultra-quiet design, challenging Europe\'s premium segment.',
-        'AI and Liquid Cooling in the Spotlight: Beyond residential heating, data-center cooling for AI compute drew heavy attention at MCE. Danfoss highlighted next-gen Turbocor maglev compressors for high-density liquid cooling; Samsung and peers showed AI-driven room air conditioners that sense occupant and ambient temperature patterns.'
+        'MCE Milan Afterglow: Global HVAC&R show MCE (Mar 24–27) closed in Milan with a focus on “smart energy.” Chinese manufacturers showcased large numbers of low-GWP units aligned with Europe’s F-Gas regulation, underscoring strong global adaptability.',
+        'North America Incentive Tailwind: Several regions updated heat-pump installation subsidy details this week. Driven by environmental rules, market share of R454B and R32 equipment keeps climbing; component suppliers are ramping capacity for multi-refrigerant compatible products.'
     ],
     standards: [
-        '能效准入门槛继续拉高：新加坡等泛亚地区国家本月正式更新了能效法令，将热泵热水器及商用冷柜纳入强制能效管理体系。这要求后续的出口产品必须通过更严格的电压及能效指标考核，出海合规成本有所增加。'
+        '超低压比设计突破：针对工农业大型烘干需求，具备“浮动结构”的新型变频涡旋技术本周获得广泛关注。该技术解决了传统压缩机在低压比工况下的可靠性难题，可实现最高80℃稳定出风。'
     ],
     standardsEn: [
-        'Efficiency Bar Rises: Singapore and other Asia-Pacific economies updated mandatory MEPS this month, bringing heat-pump water heaters and commercial refrigerators under tighter energy-management rules. Exporters face stricter voltage and efficiency tests and higher compliance cost.'
+        'Ultra-Low Pressure-Ratio Design: For large-scale industrial and agricultural drying, new inverter scroll technology with a “floating structure” drew wide attention this week. It addresses reliability under low pressure ratios and enables stable supply air up to 80 °C.'
     ],
     innovation: [
-        '超低压比变频技术落地：针对大型工农业烘干及储能温控，行业核心部件商（如松洋压缩机）展出了新型浮动结构涡旋压缩机。该技术彻底解决了热泵在极低压比工况下容易损坏的痛点，大大拓宽了特种高温烘干热泵的应用场景。'
+        '环保冷媒安全升级：R290（丙烷）天然制冷剂技术持续进化。本周行业重点关注具备金属接线盒安全防护等防爆设计的变频机组，助力25kW以上大功率R290采暖设备的安全落地。'
     ],
     innovationEn: [
-        'Ultra-Low Pressure-Ratio Inverter in the Field: For large-scale drying and energy-storage temperature control, core suppliers (e.g. Songyang) showcased floating-structure scroll compressors that address reliability under very low pressure ratios—widening use cases for specialty high-temperature drying heat pumps.'
+        'Greener Refrigerant, Safer Install: R290 (propane) technology keeps evolving. This week the focus was on inverter units with explosion-proof features such as metal junction boxes, supporting safe deployment of R290 heating systems above 25 kW.'
     ],
     future: [
-        'ISH China & CIHE（北京供热展）：下周（3月31日-4月2日）即将在北京新国展举办，这是国内舒适家居和清洁供暖领域开春的又一重头戏。',
-        '第37届中国制冷展：4月8日-10日于北京举办。亚太地区旗舰大展，本届的创新技术评奖结果即将在展前揭晓，非常值得期待。'
+        '2026北京供热展（ISH China & CIHE）：3月31日-4月2日，北京·中国国际展览中心（顺义馆）。展会将围绕能源、供热等五大板块，展示1000余家企业的全链路解决方案。',
+        '第37届中国制冷展：4月8日-10日，北京·中国国际展览中心。作为亚太旗舰展会，届时将集中展示低碳转型的空气系统解决方案。'
     ],
     futureEn: [
-        'ISH China & CIHE (Beijing Heating Expo), Mar 31–Apr 2 at New China International Exhibition Center—a major spring event for comfort home and clean heating in China.',
-        '37th China Refrigeration Expo, Apr 8–10 in Beijing: Asia-Pacific flagship show; innovation award results will be announced before the opening—worth watching.'
+        'ISH China & CIHE 2026, Mar 31–Apr 2, China International Exhibition Center (Shunyi), Beijing—five themed zones spanning energy and heating, with end-to-end solutions from 1,000+ exhibitors.',
+        '37th China Refrigeration Expo, Apr 8–10, China International Exhibition Center, Beijing—the Asia-Pacific flagship event showcasing air-system solutions for the low-carbon transition.'
     ]
 };
 
