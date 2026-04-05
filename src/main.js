@@ -692,45 +692,37 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 13,
-    updateDate: '2026-03-29',
-    subtitle: '全场景压缩机与工业热泵扩张；MCE收官与北美补贴；超低压比涡旋80℃出风；R290防爆安全设计；北京供热展与制冷展',
-    subtitleEn: 'All-scenario compressors & industrial HP growth; MCE wrap & North America incentives; ultra-low π scroll to 80 °C; R290 safety; ISH China & Refrigeration Expo',
+    week: 14,
+    updateDate: '2026-04-05',
+    subtitle: '北京供热展启幕与零碳标杆；米兰展后中国品牌热度；AI 智慧控温与能效；制冷展即将开幕与创新产品奖',
+    subtitleEn: 'ISH Beijing & zero-carbon showcases; post-MCE Chinese brands in EU; AI smart control & efficiency; China Refrigeration Expo & innovation awards',
     domestic: [
-        '热泵全场景应用走红：继HPE中国热泵展落幕后，行业进入技术转化期。松洋等零部件巨头本周展示了涵盖家用、商用、工业、农业等五大方向的定制化压缩机产品，重点突破-42℃极寒采暖及105℃高温工业供热技术。',
-        '工业热泵市场加速扩张：随着工业脱碳需求增长，2026年全球工业热泵市场规模已达到1560亿美元。国内针对高耗能行业的“以泵代锅”项目本周询盘量显著上升。'
+        '北京供热展开幕：ISH China & CIHE（北京供热展）于3月31日至4月2日在北京顺义新国展举行。展会聚焦“能源、供热、水路、舒适家居、智能安装”五大板块，展示了全链路系统化综合解决方案，成为探讨清洁供暖及未来市场机遇的核心平台。',
+        '零碳项目落地：本周“2026零碳中国论坛”在京举办，强调了热泵在建筑与工业脱碳中的基石作用。同时，福建等地通过“零碳机场”等标杆工程，展示了大型公建通过高效热泵系统实现节能减排的最新应用案例。'
     ],
     domesticEn: [
-        'Heat Pumps Across All Scenarios: After HPE China Heat Pump Expo, the sector is moving into technology adoption. Component leaders such as Songyang showcased customized compressors for five segments—residential, commercial, industrial, agricultural, and more—with emphasis on -42 °C arctic heating and 105 °C high-temperature industrial heat supply.',
-        'Industrial Heat Pump Market Expands: Driven by industrial decarbonization, the global industrial heat pump market is estimated at USD 156 billion in 2026. Domestic inquiry volume for “heat pump instead of boiler” projects in energy-intensive industries rose noticeably this week.'
+        'ISH China & CIHE Opens: The Beijing heating expo ran Mar 31–Apr 2 at the new CIEC in Shunyi. Five focus areas—energy, heating, water, comfort living, and smart installation—showcased end-to-end integrated solutions and anchored discussion on clean heating and market opportunities.',
+        'Zero-Carbon Projects in Action: The “2026 Zero-Carbon China Forum” in Beijing stressed heat pumps as foundational for building and industrial decarbonization. Fujian and other regions highlighted benchmarks such as “zero-carbon airports,” with large public buildings cutting emissions through high-efficiency heat pump systems.'
     ],
     international: [
-        '米兰MCE展收官效应：全球暖通制冷盛会MCE（3月24-27日）在米兰圆满闭幕。展会聚焦“智慧能源”，中国企业大规模展示了适配欧洲F-Gas法案的低GWP环保冷媒机组，展现了强大的全球适配能力。',
-        '北美补贴政策利好：本周北美多地更新热泵安装补贴明细。受环保法规驱动，R454B与R32冷媒设备在当地市场的渗透率持续攀升，零部件供应商正加速提升兼容多冷媒产品的产能。'
+        '米兰展后热度延续：格力、海尔等中国领军品牌在上周结束的米兰MCE展上大放异彩，本周海外媒体持续关注其发布的“零碳高科技”及“冷暖风水智”全屋能源管理方案，标志着中国热泵在欧洲高端市场的品牌认可度进一步提升。',
+        'AI与能源管理融合：近期福布斯中国AI科技峰会等活动反映出，AI驱动的智慧控温与能耗预测正成为全球暖通巨头的竞逐热点，旨在通过算法优化将热泵运行效率提升至新高度。'
     ],
     internationalEn: [
-        'MCE Milan Afterglow: Global HVAC&R show MCE (Mar 24–27) closed in Milan with a focus on “smart energy.” Chinese manufacturers showcased large numbers of low-GWP units aligned with Europe’s F-Gas regulation, underscoring strong global adaptability.',
-        'North America Incentive Tailwind: Several regions updated heat-pump installation subsidy details this week. Driven by environmental rules, market share of R454B and R32 equipment keeps climbing; component suppliers are ramping capacity for multi-refrigerant compatible products.'
+        'Post-MCE Momentum: Gree, Haier, and other Chinese leaders drew strong attention at MCE Milan last week; overseas media continued to cover their “zero-carbon high-tech” positioning and whole-home energy solutions (“comfort, air, water, intelligence”), reflecting growing brand acceptance for Chinese heat pumps in Europe’s premium segment.',
+        'AI Meets Energy Management: Events such as the Forbes China AI Summit underscore a global race among HVAC majors on AI-driven smart temperature control and load forecasting—using algorithms to push heat pump operating efficiency higher.'
     ],
-    standards: [
-        '超低压比设计突破：针对工农业大型烘干需求，具备“浮动结构”的新型变频涡旋技术本周获得广泛关注。该技术解决了传统压缩机在低压比工况下的可靠性难题，可实现最高80℃稳定出风。'
-    ],
-    standardsEn: [
-        'Ultra-Low Pressure-Ratio Design: For large-scale industrial and agricultural drying, new inverter scroll technology with a “floating structure” drew wide attention this week. It addresses reliability under low pressure ratios and enables stable supply air up to 80 °C.'
-    ],
-    innovation: [
-        '环保冷媒安全升级：R290（丙烷）天然制冷剂技术持续进化。本周行业重点关注具备金属接线盒安全防护等防爆设计的变频机组，助力25kW以上大功率R290采暖设备的安全落地。'
-    ],
-    innovationEn: [
-        'Greener Refrigerant, Safer Install: R290 (propane) technology keeps evolving. This week the focus was on inverter units with explosion-proof features such as metal junction boxes, supporting safe deployment of R290 heating systems above 25 kW.'
-    ],
+    standards: [],
+    standardsEn: [],
+    innovation: [],
+    innovationEn: [],
     future: [
-        '2026北京供热展（ISH China & CIHE）：3月31日-4月2日，北京·中国国际展览中心（顺义馆）。展会将围绕能源、供热等五大板块，展示1000余家企业的全链路解决方案。',
-        '第37届中国制冷展：4月8日-10日，北京·中国国际展览中心。作为亚太旗舰展会，届时将集中展示低碳转型的空气系统解决方案。'
+        '第37届中国制冷展：4月8日-10日，北京·中国国际展览中心（顺义馆）。本届展会以“数智塑冷暖 零碳启新程”为主题，规模达11.5万平方米，将汇聚全球30个国家和地区的1041家展商，同期举办70余场专业会议。',
+        '制冷展创新奖揭晓：作为行业风向标，中国制冷展期间将评选并展示年度“创新产品”，涵盖工业制冷、空调系统、热泵机组等多个领域，值得业界重点关注。'
     ],
     futureEn: [
-        'ISH China & CIHE 2026, Mar 31–Apr 2, China International Exhibition Center (Shunyi), Beijing—five themed zones spanning energy and heating, with end-to-end solutions from 1,000+ exhibitors.',
-        '37th China Refrigeration Expo, Apr 8–10, China International Exhibition Center, Beijing—the Asia-Pacific flagship event showcasing air-system solutions for the low-carbon transition.'
+        '37th China Refrigeration Expo, Apr 8–10, China International Exhibition Center (Shunyi), Beijing—theme “Digital intelligence shapes cold & heat; zero carbon opens a new journey,” 115,000 m², 1,041 exhibitors from 30 countries and regions, with 70+ concurrent technical conferences.',
+        'Expo Innovation Awards: The expo will select and display annual “Innovative Products”—a barometer for the industry—spanning industrial refrigeration, air conditioning, heat pump units, and more; worth close attention from the trade.'
     ]
 };
 
