@@ -693,36 +693,44 @@ function setLanguage(lang) {
 const briefingData = {
     year: 2026,
     week: 14,
-    updateDate: '2026-04-05',
-    subtitle: '北京供热展启幕与零碳标杆；米兰展后中国品牌热度；AI 智慧控温与能效；制冷展即将开幕与创新产品奖',
-    subtitleEn: 'ISH Beijing & zero-carbon showcases; post-MCE Chinese brands in EU; AI smart control & efficiency; China Refrigeration Expo & innovation awards',
+    updateDate: '2026-04-06',
+    subtitle: '供热展全链路与清洁供暖风口；零碳论坛与热泵压舱石；米兰后国货出海与 AI+热泵；公建热回收与制冷展创新奖',
+    subtitleEn: 'ISH full-chain & clean heating; zero-carbon forums & HP as anchor; post-MCE Chinese brands & AI+HP; large-building heat recovery & Refrigeration Expo awards',
     domestic: [
-        '北京供热展开幕：ISH China & CIHE（北京供热展）于3月31日至4月2日在北京顺义新国展举行。展会聚焦“能源、供热、水路、舒适家居、智能安装”五大板块，展示了全链路系统化综合解决方案，成为探讨清洁供暖及未来市场机遇的核心平台。',
-        '零碳项目落地：本周“2026零碳中国论坛”在京举办，强调了热泵在建筑与工业脱碳中的基石作用。同时，福建等地通过“零碳机场”等标杆工程，展示了大型公建通过高效热泵系统实现节能减排的最新应用案例。'
+        '北京供热展火热开幕：3月31日至4月2日，ISH China（北京供热展）顺利举办。今年展会主打“全链路系统化综合解决方案”，清洁供暖和智能安装成了大家最关心的赚钱新风口。',
+        '零碳标杆项目落地：本周各类“零碳论坛”频频提及热泵。从“零碳机场”到大型公建，高效热泵系统已成为各大建筑和工业脱碳的标配“压舱石”。'
     ],
     domesticEn: [
-        'ISH China & CIHE Opens: The Beijing heating expo ran Mar 31–Apr 2 at the new CIEC in Shunyi. Five focus areas—energy, heating, water, comfort living, and smart installation—showcased end-to-end integrated solutions and anchored discussion on clean heating and market opportunities.',
-        'Zero-Carbon Projects in Action: The “2026 Zero-Carbon China Forum” in Beijing stressed heat pumps as foundational for building and industrial decarbonization. Fujian and other regions highlighted benchmarks such as “zero-carbon airports,” with large public buildings cutting emissions through high-efficiency heat pump systems.'
+        'ISH China in Full Swing: Mar 31–Apr 2, ISH China (Beijing heating expo) ran successfully. This year’s pitch was “end-to-end integrated solutions”; clean heating and smart installation stood out as the commercial themes drawing the most attention.',
+        'Zero-Carbon Benchmarks Land: Heat pumps were repeatedly highlighted across zero-carbon forums this week. From “zero-carbon airports” to large public buildings, high-efficiency heat pump systems are becoming the default anchor for decarbonizing buildings and industry.'
     ],
     international: [
-        '米兰展后热度延续：格力、海尔等中国领军品牌在上周结束的米兰MCE展上大放异彩，本周海外媒体持续关注其发布的“零碳高科技”及“冷暖风水智”全屋能源管理方案，标志着中国热泵在欧洲高端市场的品牌认可度进一步提升。',
-        'AI与能源管理融合：近期福布斯中国AI科技峰会等活动反映出，AI驱动的智慧控温与能耗预测正成为全球暖通巨头的竞逐热点，旨在通过算法优化将热泵运行效率提升至新高度。'
+        '米兰展后“国货”热度延续：上周米兰大展结束后，海外媒体依然在热议格力、海尔等国产品牌。咱们的“全屋能源管理”和“零碳黑科技”在欧洲高端市场狠狠刷了一波存在感，品牌认可度稳步提升。',
+        '巨头竞逐AI节能：全球暖通巨头正疯狂竞逐“AI+热泵”。通过算法提前预测能耗和智慧控温，把热泵的运行效率压榨到极致，这成了现阶段争夺海外高端客户的杀手锏。'
     ],
     internationalEn: [
-        'Post-MCE Momentum: Gree, Haier, and other Chinese leaders drew strong attention at MCE Milan last week; overseas media continued to cover their “zero-carbon high-tech” positioning and whole-home energy solutions (“comfort, air, water, intelligence”), reflecting growing brand acceptance for Chinese heat pumps in Europe’s premium segment.',
-        'AI Meets Energy Management: Events such as the Forbes China AI Summit underscore a global race among HVAC majors on AI-driven smart temperature control and load forecasting—using algorithms to push heat pump operating efficiency higher.'
+        'Post-Milan Buzz for Chinese Brands: After last week’s major Milan show, overseas media still spotlight Gree, Haier, and other domestic names. Whole-home energy management and “zero-carbon” tech stacks made a strong impression in Europe’s premium segment, with brand recognition climbing steadily.',
+        'Majors Race on AI Efficiency: Global HVAC giants are pushing hard on “AI + heat pumps.” Predictive energy use and intelligent temperature control—driven by algorithms—are being used to squeeze operating efficiency to the limit, a key differentiator for winning high-end customers abroad.'
     ],
-    standards: [],
-    standardsEn: [],
-    innovation: [],
-    innovationEn: [],
+    standards: [
+        'AI赋能智慧控温：技术端越来越“软”。单纯拼硬件制热效率遇到瓶颈，现在的创新方向开始向AI算法倾斜，通过动态感知环境和人体需求来调节系统，实现整机综合能效的大幅跃升。'
+    ],
+    standardsEn: [
+        'AI-Powered Smart Control: The technology stack is shifting “softer.” Pure hardware COP gains are hitting limits; innovation is tilting toward AI algorithms that sense environment and occupant needs in real time to lift overall system energy performance.'
+    ],
+    innovation: [
+        '大型公建热回收技术：针对机场、园区等超大空间，集成式的废热回收与多能互补系统（如光储热一体化）技术日益成熟，系统集成商的利润空间和应用场景正在加速打开。'
+    ],
+    innovationEn: [
+        'Large-Building Heat Recovery: For airports, campuses, and other very large spaces, integrated waste-heat recovery and multi-energy complementary systems (e.g., PV–storage–heat integration) are maturing—expanding margins and use cases for system integrators.'
+    ],
     future: [
-        '第37届中国制冷展：4月8日-10日，北京·中国国际展览中心（顺义馆）。本届展会以“数智塑冷暖 零碳启新程”为主题，规模达11.5万平方米，将汇聚全球30个国家和地区的1041家展商，同期举办70余场专业会议。',
-        '制冷展创新奖揭晓：作为行业风向标，中国制冷展期间将评选并展示年度“创新产品”，涵盖工业制冷、空调系统、热泵机组等多个领域，值得业界重点关注。'
+        '第37届中国制冷展（4月8日-10日，北京）：下周重头戏！亚太地区规模最大、级别最高的暖通风向标将在新国展举办，今年的核心主题是“数智塑冷暖 零碳启新程”。',
+        '年度创新产品发榜：制冷展期间将正式揭晓涵盖空调、热泵、工业制冷等领域的年度“创新产品奖”，这是全行业抄作业、看技术趋势的绝佳机会。'
     ],
     futureEn: [
-        '37th China Refrigeration Expo, Apr 8–10, China International Exhibition Center (Shunyi), Beijing—theme “Digital intelligence shapes cold & heat; zero carbon opens a new journey,” 115,000 m², 1,041 exhibitors from 30 countries and regions, with 70+ concurrent technical conferences.',
-        'Expo Innovation Awards: The expo will select and display annual “Innovative Products”—a barometer for the industry—spanning industrial refrigeration, air conditioning, heat pump units, and more; worth close attention from the trade.'
+        '37th China Refrigeration Expo (Apr 8–10, Beijing)—the headline event next week. The Asia-Pacific region’s largest and highest-profile HVAC&R show returns to the new CIEC; this year’s theme is “Digital intelligence shapes cold & heat; zero carbon opens a new journey.”',
+        'Annual Innovation Awards: The expo will announce the year’s “Innovative Product” awards across air conditioning, heat pumps, industrial refrigeration, and more—a prime window to benchmark peers and spot technology trends.'
     ]
 };
 
