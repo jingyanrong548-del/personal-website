@@ -963,6 +963,28 @@ body {
     border-color: var(--emerald-700);
 }
 
+.exhibition-trends-card {
+    margin-top: 3rem;
+}
+
+.exhibition-trends-body .briefing-section:first-of-type {
+    margin-top: 1.25rem;
+}
+
+.exhibition-trends-intro {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    color: var(--text-light);
+    margin: 0 0 0.5rem;
+}
+
+.briefing-trend-text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 0;
+}
+
 .featured-insight-header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
