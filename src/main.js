@@ -16,9 +16,9 @@ const translations = {
         
         // Hero
         'hero.title': 'Jing Yanrong',
-        'hero.badge': '✓ Licensed PE & Human Verified',
+        'hero.badge': '✓ Licensed PE · Verifiable thermodynamics, not hype',
         'hero.headline': '{experienceYears}+ Years of Engineering Judgment, Built into Tools.',
-        'hero.subheadline': 'Specializing in Industrial Refrigeration & Heat Pumps (-100°C to +200°C). Bridging the gap between physical thermodynamics and digital code.',
+        'hero.subheadline': 'Industrial refrigeration & heat pumps (−100°C to +200°C): electrified cold and heat, measurable decarbonization, and physics-first tools you can audit—bridging thermodynamics and code.',
         'hero.cta': 'Explore My Tools',
         'hero.secondaryCta': 'Read Engineering Insights',
         
@@ -33,7 +33,7 @@ const translations = {
         'about.matrix.1.sub': 'Leading Enterprises',
         'about.matrix.2.label': 'Core Domain',
         'about.matrix.2.value': 'Full Range',
-        'about.matrix.2.sub': '-100°C ~ +200°C',
+        'about.matrix.2.sub': 'Electrified HP & cold · −100°C ~ +200°C',
         'about.matrix.3.label': 'Delivery Tools',
         'about.matrix.3.value': 'Python / React',
         'about.matrix.3.sub': 'Algorithm Encapsulation',
@@ -128,12 +128,23 @@ const translations = {
         'apps.filter.heatpump': 'Heat Pump',
         'apps.filter.general': 'General',
         'springFestival.greeting': 'Year of the Horse · AI-Powered · Pioneering Thermal Energy',
+        'missionStrip.greeting': 'Electrified industrial cold & heat · Measurable decarbonization · Verifiable engineering in the AI era',
+        'pillars.kicker': 'Decarbonization · Electrification · Verifiable AI',
+        'pillars.title': 'Three themes for the heat-pump transition',
+        'pillars.card1.title': 'Electrified process heat & cold',
+        'pillars.card1.text': 'Heat pumps displacing fossil boilers and efficient electric-driven refrigeration—turning plant temperature needs into schedulable electrical loads.',
+        'pillars.card2.title': 'Measurable decarbonization',
+        'pillars.card2.text': 'Waste-heat recovery, system efficiency, and lower-GWP fluids together—stated as engineering metrics, not slogans.',
+        'pillars.card3.title': 'AI × open, auditable tools',
+        'pillars.card3.text': 'Beyond digital twins and controls, this site emphasizes formulas and reproducible logic—verification beats marketing.',
+        'partners.tagline': 'Chemicals & materials · Equipment · Energy services & thermal engineering',
         'apps.zone.open': 'Open Zone',
         'apps.zone.invitation': 'Invitation-Only Zone',
         'apps.invitation.hint': 'Enter password to view the following tools',
         'apps.invitation.passwordPlaceholder': 'Password',
         'apps.invitation.unlock': 'Unlock',
         'apps.invitation.wrongPassword': 'Incorrect password',
+        'apps.filter.empty': 'No tools in this category with the current view.',
         
         // Disclaimer
         'disclaimer.title': 'Disclaimer',
@@ -182,7 +193,7 @@ const translations = {
         'insights.article3.readMore': 'Read Analysis',
         
         // Footer
-        'footer.introTitle': 'Open Source Engineering. Connect with my Digital Twin.',
+        'footer.introTitle': 'Open tools for decarbonization and electrified thermal systems—physics you can inspect.',
         'footer.copyright': '© {year} Jing Yanrong. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Python & React by Jing Yanrong',
@@ -202,8 +213,22 @@ const translations = {
         'briefings.lastUpdate': 'Last updated: ',
         'briefings.readMore': 'Read Full Report',
         'briefings.readLess': 'Collapse',
-        'briefings.exhibitionTrends.title': 'Major trade show signals',
+        'briefings.exhibitionTrends.sectionTitle': 'Recent major trade show trend notes',
+        'briefings.exhibitionTrends.heatingTitle': 'China Heating Exhibition forum notes',
         'briefings.exhibitionTrends.source': 'China Heating Exhibition forum · Mar 31, 2026 · Beijing',
+        'briefings.exhibitionTrendsCrh2026.title': 'China Refrigeration Expo 2026 (CRH 2026)',
+        'briefings.exhibitionTrendsCrh2026.source': '37th China Refrigeration Expo · Apr 8–10, 2026 · Beijing (Capital International Convention & Exhibition Center)',
+        'briefings.exhibitionTrendsCrh2026.intro': 'With dual-carbon goals deepening, heat pumps drew the most attention and their application scope widened sharply. Five themes distilled from exhibitors, forums, and industry–academia updates:',
+        'briefings.exhibitionTrendsCrh2026.trend1.title': 'Trend 1: Industrial ultra-high-temperature steam heat pumps challenge conventional process heat',
+        'briefings.exhibitionTrendsCrh2026.trend1.text': 'Industrial heat pumps are moving to large pressure ratios and 120–200°C steam/hot water, targeting boiler replacements. Beibingyang launched a 140°C centrifugal steam heat pump (high outlet temperature certified); Gree showed 120–200°C large-ratio cascade screw and centrifugal water-vapor compressors; Shenling’s lineup reaches 120–150°C steam, Midea presented 150°C steam-class centrifugal heat pump packages. Moon Environment and others integrate heat pumps with petrochemical distillation, brewing, and district cascade waste heat; the industrial heat & waste-heat recovery forum reinforced “using every joule of waste heat.”',
+        'briefings.exhibitionTrendsCrh2026.trend2.title': 'Trend 2: HVAC and traditional thermal (combi boiler / water heater) majors share the stage',
+        'briefings.exhibitionTrendsCrh2026.trend2.text': 'Beyond leading HVAC brands, Viessmann, Bosch, Vaillant, A.O. Smith, Rinnai, Vanward and other thermal majors exhibited prominently. A dedicated “heating & hot-water boiler G20 zone” and a northern clean-heating transition forum signaled gas-equipment vendors accelerating adoption of heat pumps and multi-energy mixes—cross-industry competition is heating up.',
+        'briefings.exhibitionTrendsCrh2026.trend3.title': 'Trend 3: Hardware–software integration & AI-enabled integrated energy operations',
+        'briefings.exhibitionTrendsCrh2026.trend3.text': 'Leaders are shifting from selling boxes to integrated energy and intelligent O&M: Midea Building Technologies ties products to the iBUILDING stack for edge-to-cloud synergy. Forums on green-factory smart energy and hospital energy efficiency, plus USST’s digital-twin smart plant room (AI across operating points, ~10–20% system-wide savings), highlight software and algorithms as differentiators.',
+        'briefings.exhibitionTrendsCrh2026.trend4.title': 'Trend 4: Aluminum-for-copper cost relief & natural refrigerants in projects',
+        'briefings.exhibitionTrendsCrh2026.trend4.text': 'The industry conference’s aluminum-for-copper track pushes aluminum in heat exchangers to ease material cost. Danfoss and partners showcased mobile CO₂ transcritical training rigs; Tianjin University of Commerce showed a CO₂ heat pump prototype; BJUT presented low-charge R290 finned-tube heat exchangers—accelerating natural refrigerants for safety and efficiency.',
+        'briefings.exhibitionTrendsCrh2026.trend5.title': 'Trend 5: Industry–academia scenarios move into field validation',
+        'briefings.exhibitionTrendsCrh2026.trend5.text': 'BJUT’s flue-gas deep-cooling cascade heat pump has run in Mentougou for over two years and entered small-batch trials. COLDNOT’s dual-source high-temperature heat pump (PVT / waste heat / air to ~150°C steam) and Beijing University of Civil Engineering’s PV DC-direct module (GaN, ~98–99% conversion) are advancing toward engineering validation.',
         'briefings.exhibitionTrends.intro': 'Based on the Industrial Heat Pump Technology Innovation & Application Development Forum and the policy briefing held the same day, industry and R&D stakeholders highlighted the following themes.',
         'briefings.exhibitionTrends.trend1.title': 'Trend 1: Ultra-high temperature equipment & domestic core components',
         'briefings.exhibitionTrends.trend1.text': 'Industrial heat pumps are pushing past conventional temperature ceilings: two-stage magnetic levitation steam compressors at around 150°C are entering real projects, while R&D targets extend toward 200°C-class systems. The supply chain is focusing on domestic production and system matching for natural-refrigerant high-temperature compressors and cost-effective, efficient expanders.',
@@ -282,9 +307,9 @@ const translations = {
         'nav.briefings': '行业简报',
         'nav.insights': '工程洞察',
         'hero.title': '荆炎荣',
-        'hero.badge': '✓ 注册公用设备工程师 · 真实经验',
+        'hero.badge': '✓ 注册公用设备工程师 · 物理可验证，拒绝空泛智能',
         'hero.headline': '<span class="hero-headline-emphasis">{experienceYears} 年</span>工程积淀，沉淀为可计算的<span class="hero-headline-emphasis">决策工具</span>。',
-        'hero.subheadline': '深耕工业制冷与热泵 (-100°C 至 +200°C)，用代码重构物理热力学，让经验数据化。',
+        'hero.subheadline': '工业制冷与热泵（−100°C 至 +200°C）：冷热电气化、可度量的脱碳路径，以及可审计的物理工具——在热力学与代码之间建立可验证闭环。',
         'hero.cta': '探索工具',
         'hero.secondaryCta': '阅读工程洞察',
         'about.title': '关于',
@@ -297,7 +322,7 @@ const translations = {
         'about.matrix.1.sub': '头部企业',
         'about.matrix.2.label': '核心领域',
         'about.matrix.2.value': '全温域',
-        'about.matrix.2.sub': '-100°C ~ +200°C',
+        'about.matrix.2.sub': '冷热电气化 · −100°C ~ +200°C',
         'about.matrix.3.label': '交付工具',
         'about.matrix.3.value': 'Python / React',
         'about.matrix.3.sub': '算法封装经验',
@@ -388,12 +413,23 @@ const translations = {
         'apps.filter.heatpump': '热泵类',
         'apps.filter.general': '通用类',
         'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创冷热事业新篇章',
+        'missionStrip.greeting': '电气化工业冷热 · 可度量脱碳 · AI 年代的可验证工程',
+        'pillars.kicker': '脱碳 · 电气化 · 可验证 AI',
+        'pillars.title': '工业热泵时代的三条主线',
+        'pillars.card1.title': '电气化供热与冷端',
+        'pillars.card1.text': '热泵替代化石锅炉、高效电驱动制冷，把工业温区需求变成可调度、可优化的电力负荷。',
+        'pillars.card2.title': '可度量的脱碳路径',
+        'pillars.card2.text': '余热回收、系统能效与低 GWP 冷媒协同，用工程指标而非口号描述减排与运行边界。',
+        'pillars.card3.title': 'AI × 开源可审计',
+        'pillars.card3.text': '数字孪生与智控之外，本站工具强调物理公式与可复现逻辑——验证优先于营销话术。',
+        'partners.tagline': '化工与材料 · 高端装备 · 能源服务与冷热工程',
         'apps.zone.open': '开放区',
         'apps.zone.invitation': '邀请开放区',
         'apps.invitation.hint': '输入密码后可查看以下工具',
         'apps.invitation.passwordPlaceholder': '请输入密码',
         'apps.invitation.unlock': '解锁',
         'apps.invitation.wrongPassword': '密码错误',
+        'apps.filter.empty': '当前分类下没有可见工具（请切换分类或解锁邀请区）。',
         'disclaimer.title': '免责声明',
         'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、免费方式提供。如用于商业用途，请事先联系获得授权。',
         'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
@@ -438,7 +474,7 @@ const translations = {
         'insights.article3.readMore': '阅读分析',
         
         // Footer
-        'footer.introTitle': '开源工程。连接数字孪生。',
+        'footer.introTitle': '面向脱碳与电气化热工系统的开源工具——可检视的物理，而非口号。',
         'footer.copyright': '© {year} 荆炎荣. Public Engineering Tools.',
         'footer.github': 'GitHub',
         'footer.techStack': 'Built with Python & React by Jing Yanrong',
@@ -458,8 +494,22 @@ const translations = {
         'briefings.lastUpdate': '最后更新：',
         'briefings.readMore': '阅读全文 (Read Report)',
         'briefings.readLess': '收起',
-        'briefings.exhibitionTrends.title': '近期重大展会趋势观察',
+        'briefings.exhibitionTrends.sectionTitle': '近期重大展会趋势观察',
+        'briefings.exhibitionTrends.heatingTitle': '中国供热展论坛观察',
         'briefings.exhibitionTrends.source': '中国供热展论坛 · 2026年3月31日 · 北京',
+        'briefings.exhibitionTrendsCrh2026.title': '2026中国制冷展（CRH 2026）',
+        'briefings.exhibitionTrendsCrh2026.source': '第三十七届中国制冷展 · 2026年4月8–10日 · 北京首都国际会展中心',
+        'briefings.exhibitionTrendsCrh2026.intro': '双碳战略深化背景下，热泵成为全场最受关注的产品线，应用边界明显拓宽。综合展商、论坛与产学研动态，可归纳为五条主线。',
+        'briefings.exhibitionTrendsCrh2026.trend1.title': '趋势一：工业超高温蒸汽热泵冲击传统工业用热',
+        'briefings.exhibitionTrendsCrh2026.trend1.text': '工业热泵向大压比、120–200℃ 级蒸汽/热水延伸，直指锅炉类存量替代。北冰洋发布 140℃ 高温离心蒸汽热泵（高温出水已获权威认证）；格力展示 120–200℃ 大压比复叠螺杆与离心水蒸气压缩；申菱矩阵覆盖 120–150℃ 出汽，美的公开 150℃ 蒸汽级离心热泵联合机组。冰轮等将热泵耦合石化精馏、酿酒与区域梯级余热；“工业用热及余热回收技术论坛”强化废热吃干榨尽。',
+        'briefings.exhibitionTrendsCrh2026.trend2.title': '趋势二：暖通与热能（锅炉/壁挂炉）巨头同台',
+        'briefings.exhibitionTrendsCrh2026.trend2.text': '除美的、格力等暖通龙头外，菲斯曼、博世、威能、A.O.史密斯、林内、万和等传统热能品牌悉数参展；展会设“采暖热水炉 G20 专区”，并举办北方清洁供热转型论坛——传统燃气设备商加速拥抱热泵与多能互补，跨界竞争加剧。',
+        'briefings.exhibitionTrendsCrh2026.trend3.title': '趋势三：软硬一体与 AI 综合能源运营',
+        'briefings.exhibitionTrendsCrh2026.trend3.text': '龙头由卖设备转向综合能源与智控服务：美的以 iBUILDING 贯通产品与边缘—云端协同；绿色工厂智慧能源、医院节能运维论坛及上海理工“数字孪生机房”智慧控制（全工况 AI 驱动，系统综合节能约 10%–20%）凸显软件与算法溢价。',
+        'briefings.exhibitionTrendsCrh2026.trend4.title': '趋势四：铝代铜降本与天然冷媒工程化',
+        'briefings.exhibitionTrendsCrh2026.trend4.text': '信息大会暨“铝代铜”论坛推动换热器以铝代铜、缓解成本压力；丹佛斯等与高校推出 CO₂ 跨临界移动实训装置，天津商大 CO₂ 热泵样机、北工大 R290 小充注翅片换热器等，加速天然工质应用与安全性、能效提升。',
+        'briefings.exhibitionTrendsCrh2026.trend5.title': '趋势五：产学研场景方案进入工程验证',
+        'briefings.exhibitionTrendsCrh2026.trend5.text': '北工大烟气深冷梯级回收热泵在北京门头沟示范已逾两年并小批量试产；佧诺双源高温热泵（PVT/余热/空气能协同至 150℃ 蒸汽）、北建大光伏直流直驱模块（GaN，直驱效率约 98%–99%）等迈向工程验证阶段。',
         'briefings.exhibitionTrends.intro': '综合《工业热泵技术创新及应用发展论坛》与工业热泵领域政策宣贯会资料，产业与产学研代表释放的主线信号如下。',
         'briefings.exhibitionTrends.trend1.title': '趋势一：超高温化与核心零部件自主化',
         'briefings.exhibitionTrends.trend1.text': '工业热泵正快速突破传统温度上限：150℃ 级超高温双级磁悬浮水蒸汽压缩机等已进入工程视野，前沿研发目标指向 200℃ 级系统。产业链将集中力量攻克自然工质高温压缩机、低成本高效膨胀装置等关键部件的国产化与系统匹配问题。',
@@ -563,6 +613,42 @@ async function updateAppVersions() {
     // ... implementation ...
 }
 */
+
+function isAppCardInView(card) {
+    const invitedGrid = card.closest('#apps-invited-grid');
+    if (invitedGrid && invitedGrid.hasAttribute('hidden')) {
+        return false;
+    }
+    return true;
+}
+
+function applyAppsFilter(filter) {
+    const appsFilterEmptyEl = document.getElementById('apps-filter-empty');
+    const cards = document.querySelectorAll('#apps .app-card');
+    let visibleDisplayed = 0;
+    cards.forEach(card => {
+        const cat = card.getAttribute('data-category') || 'general';
+        const match = filter === 'all' || cat === filter;
+        card.classList.toggle('app-card--hidden', !match);
+        if (match && isAppCardInView(card)) {
+            visibleDisplayed++;
+        }
+    });
+    if (appsFilterEmptyEl) {
+        const lang = document.documentElement.lang && document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+        const msg = translations[lang] && translations[lang]['apps.filter.empty'];
+        if (msg) {
+            appsFilterEmptyEl.textContent = msg;
+        }
+        appsFilterEmptyEl.hidden = visibleDisplayed > 0;
+    }
+}
+
+function refreshAppsFilterFromUI() {
+    const tab = document.querySelector('.filter-tab.active');
+    const f = tab ? (tab.getAttribute('data-filter') || 'all') : 'all';
+    applyAppsFilter(f);
+}
 
 // Language management
 let currentLanguage = localStorage.getItem('language') || 'zh';
@@ -696,6 +782,7 @@ function setLanguage(lang) {
     
     // Update briefing content when language changes
     displayBriefing();
+    refreshAppsFilterFromUI();
 }
 
 // Manual Briefings Management
@@ -1416,15 +1503,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Filter tabs functionality (placeholder for future filtering)
     const filterTabs = document.querySelectorAll('.filter-tab');
     filterTabs.forEach(tab => {
         tab.addEventListener('click', function() {
             filterTabs.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
-            // Future: Add filtering logic here
+            const f = this.getAttribute('data-filter') || 'all';
+            applyAppsFilter(f);
         });
     });
+    refreshAppsFilterFromUI();
 
     // Invitation-only zone: password gate (password: 123456!), persist unlock in session
     const INVITED_STORAGE_KEY = 'appsInvitedUnlock';
@@ -1445,6 +1533,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (gateEl) gateEl.style.display = '';
             if (gridEl) { gridEl.setAttribute('hidden', ''); gridEl.style.display = 'none'; }
         }
+        refreshAppsFilterFromUI();
     }
 
     if (sessionStorage.getItem(INVITED_STORAGE_KEY) === '1') {

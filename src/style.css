@@ -15,6 +15,7 @@
     --emerald-400: #43A047;
     --emerald-300: #66BB6A;
     --emerald-50: #E8F5E9;
+    --emerald-100: #C8E6C9;
     
     /* Slate Background System */
     --slate-50: #F8FAFC;
@@ -68,6 +69,27 @@
     --glass-radius-sm: 12px;
     --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     --glass-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+
+    /* 冷端 / 热端 / 电气化 accent（脱碳叙事） */
+    --cold-600: #0E7490;
+    --cold-500: #0891B2;
+    --cold-100: #CFFAFE;
+    --heat-600: #B45309;
+    --heat-500: #D97706;
+    --heat-100: #FEF3C7;
+    --accent-electrification: var(--cold-600);
+    --accent-decarbon: var(--emerald-700);
+    --ink-900: #0F172A;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pillar-card:hover {
+        transform: none;
+    }
+
+    .hero-portrait-container:hover .hero-portrait-img {
+        transform: none;
+    }
 }
 
 body {
@@ -221,70 +243,136 @@ body {
     color: white;
 }
 
-/* 春节祝福横幅 - 玻璃 + 红色主题 */
-.spring-festival-banner {
-    background: rgba(254, 242, 242, 0.6);
-    backdrop-filter: blur(var(--glass-blur)) saturate(150%);
-    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(150%);
-    padding: 1.25rem 1.5rem;
+/* 顶栏下使命条：脱碳 · 电气化 · AI 可验证 */
+.mission-strip {
+    background: linear-gradient(90deg, rgba(8, 145, 178, 0.08) 0%, rgba(232, 245, 233, 0.65) 50%, rgba(217, 119, 6, 0.08) 100%);
+    backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+    padding: 1rem 1.5rem;
     text-align: center;
-    box-shadow: 0 4px 24px rgba(220, 38, 38, 0.12);
-    border-bottom: 1px solid rgba(220, 38, 38, 0.25);
+    box-shadow: 0 2px 20px rgba(14, 116, 144, 0.08);
+    border-bottom: 1px solid rgba(14, 116, 144, 0.15);
 }
 
-.spring-festival-content {
+.mission-strip-inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* 大的祝福动画福字 - 大红色 */
-.spring-festival-fu {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    font-weight: 900;
-    color: #DC2626;
-    font-family: "KaiTi", "楷体", "STKaiti", "华文楷体", serif;
-    text-shadow: 0 2px 12px rgba(220, 38, 38, 0.4);
-    animation: spring-festival-fu-pulse 2s ease-in-out infinite;
-    transform: rotate(-5deg);
-    line-height: 1;
+.mission-strip-icon {
+    flex-shrink: 0;
+    color: var(--accent-electrification);
+    opacity: 0.9;
 }
 
-@keyframes spring-festival-fu-pulse {
-    0%, 100% {
-        transform: rotate(-5deg) scale(1);
-        text-shadow: 0 2px 12px rgba(220, 38, 38, 0.4);
-    }
-    50% {
-        transform: rotate(-5deg) scale(1.1);
-        text-shadow: 0 4px 24px rgba(220, 38, 38, 0.6), 0 0 40px rgba(220, 38, 38, 0.3);
-    }
-}
-
-/* 祝福语 - 大红色 */
-.spring-festival-greeting {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #DC2626;
+.mission-strip-greeting {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink-900);
     margin: 0;
-    letter-spacing: 0.15em;
-    text-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+    letter-spacing: 0.04em;
+    line-height: 1.5;
 }
 
 @media (min-width: 640px) {
-    .spring-festival-fu {
-        font-size: 5rem;
+    .mission-strip-greeting {
+        font-size: 1.125rem;
     }
-    .spring-festival-greeting {
-        font-size: 1.75rem;
+}
+
+/* 三支柱：电气化 / 脱碳 / AI×开源 */
+.pillars-section {
+    padding: 2.5rem 0 1rem;
+    border-bottom: 1px solid var(--glass-border-subtle);
+}
+
+.pillars-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pillars-kicker {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-lighter);
+    margin-bottom: 0.35rem;
+}
+
+.pillars-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .pillars-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
     }
+}
+
+.pillar-card {
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius-sm);
+    padding: 1.25rem 1.35rem;
+    box-shadow: var(--glass-shadow);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.pillar-card:hover {
+    box-shadow: var(--glass-shadow-hover);
+    transform: translateY(-2px);
+}
+
+.pillar-card--electrify {
+    border-top: 3px solid var(--cold-500);
+}
+
+.pillar-card--decarbon {
+    border-top: 3px solid var(--emerald-600);
+}
+
+.pillar-card--ai {
+    border-top: 3px solid var(--heat-500);
+}
+
+.pillar-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 0.5rem;
+}
+
+.pillar-card-text {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.partners-section-tagline {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: -0.5rem auto 1.75rem;
+    max-width: 42rem;
+    line-height: 1.6;
 }
 
 /* Hero Section - 玻璃感主视觉区 */
@@ -303,14 +391,16 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(46, 125, 50, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(67, 160, 71, 0.04) 0%, transparent 50%);
+    background:
+        linear-gradient(105deg, rgba(8, 145, 178, 0.07) 0%, rgba(248, 250, 252, 0.5) 42%, rgba(217, 119, 6, 0.06) 100%),
+        radial-gradient(circle at 18% 45%, rgba(46, 125, 50, 0.07) 0%, transparent 52%),
+        radial-gradient(circle at 82% 48%, rgba(8, 145, 178, 0.05) 0%, transparent 48%),
+        radial-gradient(circle at 50% 100%, rgba(217, 119, 6, 0.04) 0%, transparent 45%);
     pointer-events: none;
     z-index: 0;
 }
 
-/* Engineering Texture - Dot Pattern */
+/* Engineering Texture - Dot Pattern + 细网格（电气化 / 工况隐喻） */
 .hero::after {
     content: '';
     position: absolute;
@@ -318,16 +408,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        radial-gradient(circle, rgba(148, 163, 184, 0.3) 1px, transparent 1px);
-    background-size: 24px 24px;
-    background-position: 0 0;
-    opacity: 0.4;
+    background-image:
+        linear-gradient(rgba(14, 116, 144, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 116, 144, 0.06) 1px, transparent 1px),
+        radial-gradient(circle, rgba(148, 163, 184, 0.28) 1px, transparent 1px);
+    background-size:
+        48px 48px,
+        48px 48px,
+        24px 24px;
+    background-position: 0 0, 0 0, 0 0;
+    opacity: 0.45;
     pointer-events: none;
     z-index: 0;
-    /* Fade out towards bottom */
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 55%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 55%, rgba(0, 0, 0, 0) 100%);
 }
 
 .hero-pattern {
@@ -963,8 +1057,30 @@ body {
     border-color: var(--emerald-700);
 }
 
-.exhibition-trends-card {
+.exhibition-trends-group {
     margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exhibition-trends-section-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+.exhibition-trends-card {
+    margin-top: 0;
+}
+
+.exhibition-trends-card--follow {
+    margin-top: 2rem;
 }
 
 .exhibition-trends-body .briefing-section:first-of-type {
@@ -1155,6 +1271,13 @@ body {
     border-bottom: 2px solid var(--emerald-100);
 }
 
+.exhibition-trends-body .briefing-section-title {
+    border-bottom: none;
+    padding-left: 0.65rem;
+    border-left: 3px solid var(--cold-500);
+    margin-bottom: 0.75rem;
+}
+
 .briefing-list {
     list-style: none;
     padding: 0;
@@ -1257,6 +1380,22 @@ body {
     font-size: 0.75rem;
     font-weight: 600;
     align-self: flex-start;
+}
+
+.insight-tag--field {
+    background: var(--cold-100);
+    color: var(--cold-600);
+}
+
+.insight-tag--deep {
+    background: #F1F5F9;
+    color: #475569;
+    border: 1px solid var(--border-color);
+}
+
+.insight-tag--outlook {
+    background: var(--heat-100);
+    color: var(--heat-600);
 }
 
 .insight-title {
@@ -2430,6 +2569,33 @@ body {
     color: white;
     border-color: transparent;
     transform: translateY(-2px);
+}
+
+.app-card[data-category="refrigeration"] .app-tag {
+    border-color: rgba(8, 145, 178, 0.35);
+    color: var(--cold-600);
+    background: linear-gradient(135deg, var(--slate-50), rgba(207, 250, 254, 0.35));
+}
+
+.app-card[data-category="heatpump"] .app-tag {
+    border-color: rgba(217, 119, 6, 0.35);
+    color: var(--heat-600);
+    background: linear-gradient(135deg, var(--slate-50), rgba(254, 243, 199, 0.45));
+}
+
+.app-card[data-category="general"] .app-tag {
+    border-color: rgba(46, 125, 50, 0.25);
+}
+
+.app-card--hidden {
+    display: none !important;
+}
+
+.apps-filter-empty {
+    margin: 0.75rem 0 0;
+    font-size: 0.875rem;
+    color: var(--text-lighter);
+    text-align: center;
 }
 
 .app-tag-beta {
