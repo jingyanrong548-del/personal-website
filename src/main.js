@@ -714,45 +714,45 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 14,
-    updateDate: '2026-04-06',
-    subtitle: '供热展全链路与清洁供暖风口；零碳论坛与热泵压舱石；米兰后国货出海与 AI+热泵；公建热回收与制冷展创新奖',
-    subtitleEn: 'ISH full-chain & clean heating; zero-carbon forums & HP as anchor; post-MCE Chinese brands & AI+HP; large-building heat recovery & Refrigeration Expo awards',
+    week: 15,
+    updateDate: '2026-04-12',
+    subtitle: '制冷展收官与工业脱碳热泵焦点；冷媒 LRM 与无油离心；液冷合规与 AHRI 严寒标定；Q2 交付与大宗成本',
+    subtitleEn: 'CRH 2026 wrap & industrial-decarbonization HP focus; refrigerant LRM & oil-free centrifugal; liquid-cooling compliance & AHRI cold-climate ratings; Q2 delivery & commodity cost pressure',
     domestic: [
-        '北京供热展火热开幕：3月31日至4月2日，ISH China（北京供热展）顺利举办。今年展会主打“全链路系统化综合解决方案”，清洁供暖和智能安装成了大家最关心的赚钱新风口。',
-        '零碳标杆项目落地：本周各类“零碳论坛”频频提及热泵。从“零碳机场”到大型公建，高效热泵系统已成为各大建筑和工业脱碳的标配“压舱石”。'
+        '中国制冷展重磅收官：第37届中国制冷展（CRH 2026）于4月8日-10日在北京圆满落幕。今年展会主打“数智塑冷暖 零碳启新程”，展览面积达11.5万平方米。除常规机组外，面向工业脱碳的超高温热泵、大型数智化冷水机组以及全热交换系统成为全场关注焦点。',
+        '研发组织架构变革提速：面对技术竞争加剧与海外交期压力，业内正兴起流程优化热潮。部分跨区域实体制造企业加速成立专项“研发创新部门”，理顺从总部研发评审到异地工厂量产的技术闭环，以打通堵点、提升跨部门协作效率。'
     ],
     domesticEn: [
-        'ISH China in Full Swing: Mar 31–Apr 2, ISH China (Beijing heating expo) ran successfully. This year’s pitch was “end-to-end integrated solutions”; clean heating and smart installation stood out as the commercial themes drawing the most attention.',
-        'Zero-Carbon Benchmarks Land: Heat pumps were repeatedly highlighted across zero-carbon forums this week. From “zero-carbon airports” to large public buildings, high-efficiency heat pump systems are becoming the default anchor for decarbonizing buildings and industry.'
+        'China Refrigeration Expo Wraps: The 37th China Refrigeration Expo (CRH 2026) closed Apr 8–10 in Beijing under the theme “Digital intelligence shapes cold & heat; zero carbon opens a new journey,” with 115,000 m² of floorspace. Beyond conventional units, ultra-high-temperature heat pumps for industrial decarbonization, large digital chillers, and total heat-exchange systems drew the most attention.',
+        'R&D Org Shifts Accelerate: Facing tougher technology competition and overseas lead-time pressure, many firms are streamlining processes. Some multi-site manufacturers are standing up dedicated “R&D innovation” teams to close the loop from HQ design review to remote-factory ramp—clearing handoff bottlenecks and improving cross-functional collaboration.'
     ],
     international: [
-        '米兰展后“国货”热度延续：上周米兰大展结束后，海外媒体依然在热议格力、海尔等国产品牌。咱们的“全屋能源管理”和“零碳黑科技”在欧洲高端市场狠狠刷了一波存在感，品牌认可度稳步提升。',
-        '巨头竞逐AI节能：全球暖通巨头正疯狂竞逐“AI+热泵”。通过算法提前预测能耗和智慧控温，把热泵的运行效率压榨到极致，这成了现阶段争夺海外高端客户的杀手锏。'
+        '冷媒全生命周期管理（LRM）成海外门槛：在本周“臭氧气候技术（O2C）”高级别圆桌会上，联合国相关机构释放明确信号：为落实基加利修正案，海外市场除要求出厂设备采用低 GWP 环保冷媒外，还将对冷媒“全生命周期数字化追踪”与综合能效提出捆绑式硬性考核。',
+        '无油离心技术冲击高端商用：面向商用冷水机组与大系统，盖瑞特（Garrett）等外资巨头展示了专为环保冷媒优化的“全无油离心式压缩技术”。取消润滑油系统后设备体积约减半，长期能效与免维护优势突出，正成为角逐欧美高端公建项目的关键卖点。'
     ],
     internationalEn: [
-        'Post-Milan Buzz for Chinese Brands: After last week’s major Milan show, overseas media still spotlight Gree, Haier, and other domestic names. Whole-home energy management and “zero-carbon” tech stacks made a strong impression in Europe’s premium segment, with brand recognition climbing steadily.',
-        'Majors Race on AI Efficiency: Global HVAC giants are pushing hard on “AI + heat pumps.” Predictive energy use and intelligent temperature control—driven by algorithms—are being used to squeeze operating efficiency to the limit, a key differentiator for winning high-end customers abroad.'
+        'Refrigerant LRM as an Export Barrier: At this week’s high-level Ozone2Climate Technology (O2C) roundtable, UN bodies signaled that to implement the Kigali Amendment, overseas markets will tie low-GWP charge at shipment to mandatory digital lifecycle tracking of refrigerant and holistic efficiency performance.',
+        'Oil-Free Centrifugal in Premium Commercial: For large chillers and plant-scale systems, Garrett and other majors showcased oil-free centrifugal compression tuned for lower-GWP fluids. Removing the lube circuit cuts footprint roughly in half while lifting long-run efficiency and service intervals—a strong lever in premium public-building bids in Europe and North America.'
     ],
     standards: [
-        'AI赋能智慧控温：技术端越来越“软”。单纯拼硬件制热效率遇到瓶颈，现在的创新方向开始向AI算法倾斜，通过动态感知环境和人体需求来调节系统，实现整机综合能效的大幅跃升。'
+        '算力中心冷却“立规矩”：随 AI 算力带动的液冷市场加速合规化。Intertek 等国际检测机构本周集中解析数据中心风冷、液冷设备的最新安全标准与北美准入要求，对跨界进入高密度机房散热赛道的厂商而言已成为必修课。'
     ],
     standardsEn: [
-        'AI-Powered Smart Control: The technology stack is shifting “softer.” Pure hardware COP gains are hitting limits; innovation is tilting toward AI algorithms that sense environment and occupant needs in real time to lift overall system energy performance.'
+        'Data-Center Cooling Standards Firm Up: As AI drives liquid cooling, compliance is tightening. Intertek and peers briefed the industry this week on the latest safety standards and North American market entry rules for air- and liquid-cooled data-center equipment—essential homework for newcomers chasing high-density rack cooling.'
     ],
     innovation: [
-        '大型公建热回收技术：针对机场、园区等超大空间，集成式的废热回收与多能互补系统（如光储热一体化）技术日益成熟，系统集成商的利润空间和应用场景正在加速打开。'
+        '严寒热泵标定规则收紧：针对北美极寒采暖场景，AHRI 进一步细化“热泵低温切入/切出温度”的第三方实测与标定方法。出海热泵在宣称极寒性能（如 -30℃ 运行）时需具备更扎实的数据支撑以应对抽检。'
     ],
     innovationEn: [
-        'Large-Building Heat Recovery: For airports, campuses, and other very large spaces, integrated waste-heat recovery and multi-energy complementary systems (e.g., PV–storage–heat integration) are maturing—expanding margins and use cases for system integrators.'
+        'Cold-Climate HP Ratings Get Stricter: For severe North American heating, AHRI refined third-party test and rating methods for heat-pump low-temperature cut-in/cut-out behavior. Exporters claiming extreme-cold performance (e.g., −30 °C operation) need stronger evidence to survive spot checks.'
     ],
     future: [
-        '第37届中国制冷展（4月8日-10日，北京）：下周重头戏！亚太地区规模最大、级别最高的暖通风向标将在新国展举办，今年的核心主题是“数智塑冷暖 零碳启新程”。',
-        '年度创新产品发榜：制冷展期间将正式揭晓涵盖空调、热泵、工业制冷等领域的年度“创新产品奖”，这是全行业抄作业、看技术趋势的绝佳机会。'
+        '展后订单转化与产能冲刺：国内开年三大展会（HPE、供热展、制冷展）已收官，行业重心正从“展台展示”转向客户跟进与 Q2 交付抢单。',
+        '大宗物料涨价预警：铜等核心原材料价格持续高位震荡，建议研发与采购密切联动，在项目匹配与系统设计中提前落实成本与替代预案。'
     ],
     futureEn: [
-        '37th China Refrigeration Expo (Apr 8–10, Beijing)—the headline event next week. The Asia-Pacific region’s largest and highest-profile HVAC&R show returns to the new CIEC; this year’s theme is “Digital intelligence shapes cold & heat; zero carbon opens a new journey.”',
-        'Annual Innovation Awards: The expo will announce the year’s “Innovative Product” awards across air conditioning, heat pumps, industrial refrigeration, and more—a prime window to benchmark peers and spot technology trends.'
+        'From Expo Buzz to Q2 Execution: With HPE, ISH China, and CRH 2026 behind us, the focus shifts from booth presence to customer follow-up and Q2 delivery push.',
+        'Commodity Cost Alert: Copper and other key materials remain volatile at elevated levels—R&D and procurement should align early on project costing and design substitutions.'
     ]
 };
 
