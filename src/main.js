@@ -251,6 +251,21 @@ const translations = {
         'briefings.exhibitionTrends.trend3.text': 'Heat pumps are evolving from “static efficiency” to wide-range efficiency and intelligent coordination: digital twins and AI-based predictive maintenance support piping/pressure/temperature monitoring and dynamic efficiency optimization; control shifts from isolated operation to IoT-enabled system synergy. Full life-cycle management and VFD intelligent control are emphasized to address fouling, harsh conditions, and oversizing.',
         'briefings.exhibitionTrends.trend4.title': 'Trend 4: Integrated heating & cooling and multi-energy coupling',
         'briefings.exhibitionTrends.trend4.text': 'To tackle capex and single-service efficiency limits, “same-source” heating–cooling integration is gaining traction—for example CO₂ transcritical systems supplying steam or high-temperature water while recovering cooling duty, with demonstration projects showing major energy savings and emissions cuts. Heat pumps will also couple more deeply with solar and industrial waste heat for plant-wide energy cycling.',
+        'briefings.annex68.kicker': 'IEA Heat Pumping Technologies TCP · Annex 68',
+        'briefings.annex68.mainTitle': 'HPT Annex 68 Progress Snapshot',
+        'briefings.annex68.edition': 'April 2026 edition',
+        'briefings.annex68.intro': 'Three workstreams are advancing in parallel—the global technical database, industry integration templates, and the Skills4HP training cluster—signaling a shift from selling equipment toward process coupling and workforce readiness in industrial high-temperature heat pumps.',
+        'briefings.annex68.task1.title': 'Task 1: Step-change update to the global technical database',
+        'briefings.annex68.task1.bullet1': 'Temperature leap: The latest analytical review confirms that commercially available high-temperature heat pumps (HTHPs) now routinely exceed 165°C supply temperature, with laboratory prototypes reaching about 200°C.',
+        'briefings.annex68.task1.bullet2': 'Working-fluid momentum: Technology readiness (TRL) of natural working fluids—R718 (water vapor), R717 (ammonia), R744 (CO₂)—has risen markedly. The report highlights the potential of the Reverse Brayton cycle in the ultra-high-temperature range.',
+        'briefings.annex68.task1.bullet3': 'Scale economics: Field data for centrifugal compressors in large megawatt-class plants are growing fast; higher per-unit capacity is materially reducing the cost of useful heat.',
+        'briefings.annex68.task2.title': 'Task 2: First drafts of industry-specific integration templates',
+        'briefings.annex68.task2.bullet1': 'Priority sectors: Expert groups have drafted early integration templates for chemicals processing, pulp & paper, and textiles.',
+        'briefings.annex68.task2.bullet2': 'Core logic: The framing moves beyond “selling a box” toward thermal coupling between heat pumps and process units—e.g., reboilers at column bottoms, sludge dryers, and dyeing machines.',
+        'briefings.annex68.task3.title': 'Task 3: Education & skills (Skills4HP)',
+        'briefings.annex68.task3.bullet1': 'The Skills4HP cluster for installation and O&M personnel is underway—recognizing that breakthrough technology still needs qualified teams in the field.',
+        'briefings.annex68.disclaimer': 'This is a non-official summary of publicly reported task progress and does not represent the position of the IEA or its Implementing Agreements.',
+        'briefings.annex68.learnMore': 'IEA Heat Pumping Technologies TCP (official site)',
         
         // About section additional
         'about.toggle.expand': 'View Full Resume',
@@ -545,6 +560,21 @@ const translations = {
         'briefings.exhibitionTrends.trend3.text': '热泵正从“静态高效”走向宽域高效与智能协同：数字孪生、AI 预测性维护用于管路/压力/温度监测与能效动态优化；控制上由独立运行转向物联网支撑的系统协同。全生命周期管理与变频智能控制亦被强调，以缓解结垢、极端工况与“大马拉小车”等工程痛点。',
         'briefings.exhibitionTrends.trend4.title': '趋势四：冷热一体化与多能耦合',
         'briefings.exhibitionTrends.trend4.text': '针对初投资与单一供热（冷）效率瓶颈，“冷热同源一体化”设计被视作破局路径：例如 CO₂ 跨临界装备在供蒸汽/高温水同时回收冷量，示范项目中可实现显著节能与减排。热泵还将与太阳能及工业余热深度耦合，推动体系内能量循环利用。',
+        'briefings.annex68.kicker': 'IEA 热泵技术合作 · Annex 68',
+        'briefings.annex68.mainTitle': 'HPT Annex 68 最新进展简报',
+        'briefings.annex68.edition': '2026年4月版',
+        'briefings.annex68.intro': '全球技术数据库、行业集成模版与 Skills4HP 培训集群三条任务线同步推进，反映工业高温热泵正从设备供给走向工艺耦合与人才体系。',
+        'briefings.annex68.task1.title': 'Task 1：全球技术数据库完成「跨越式」更新',
+        'briefings.annex68.task1.bullet1': '高温突破：最新分析报告显示，市面可选购的高温热泵（HTHP）出水温度已稳定突破 165°C，实验室样机甚至达到 200°C。',
+        'briefings.annex68.task1.bullet2': '工质趋势：天然工质（R718 水蒸气、R717 氨、R744 二氧化碳）的技术成熟度（TRL）显著提高；报告特别强调逆布雷顿循环（Reverse Brayton Cycle）在超高温领域的潜力。',
+        'briefings.annex68.task1.bullet3': '规模效益：离心式压缩机在大容量（MW 级）项目中的应用数据大幅增加，单机容量提升显著降低了单位制热成本。',
+        'briefings.annex68.task2.title': 'Task 2：行业定制化「模版」初稿流出',
+        'briefings.annex68.task2.bullet1': '三大优先行业：专家组针对化学品加工、造纸、纺织三个行业开发了初步的集成模版。',
+        'briefings.annex68.task2.bullet2': '核心逻辑：由过去「卖单机」转向研究热泵与工艺过程（如精馏塔底再沸器、污泥干化机、染色机）的热力耦合。',
+        'briefings.annex68.task3.title': 'Task 3：教育与技能培训（Skills4HP）',
+        'briefings.annex68.task3.bullet1': '面向工程安装与运维人员的 SKILLS4HP 集群正式启动——行业已意识到：仅有技术不够，还需要会安装、会维护的专业队伍。',
+        'briefings.annex68.disclaimer': '本文为基于公开任务进展的摘要整理，不代表 IEA 或其执行机构的官方立场或全文。',
+        'briefings.annex68.learnMore': 'IEA 热泵技术合作项目（HPT TCP）',
         
         // About section additional
         'about.toggle.expand': '查看完整履历',
@@ -749,11 +779,11 @@ function setLanguage(lang) {
             } else {
                 element.textContent = text;
             }
-            // Hide element if text is empty
+            // Hide element if text is empty (use class; avoid inline display for Edge Tools)
             if (!text || text.trim() === '') {
-                element.style.display = 'none';
+                element.classList.add('u-hidden');
             } else {
-                element.style.display = '';
+                element.classList.remove('u-hidden');
             }
         } catch (error) {
             console.warn('Failed to update element with key:', key, error);
@@ -892,9 +922,9 @@ function displayBriefing() {
         const subtitle = currentLanguage === 'zh' ? (briefingData.subtitle || '') : (briefingData.subtitleEn || '');
         if (subtitle) {
             subtitleElement.textContent = subtitle;
-            subtitleElement.style.display = 'block';
+            subtitleElement.classList.remove('u-hidden');
         } else {
-            subtitleElement.style.display = 'none';
+            subtitleElement.classList.add('u-hidden');
         }
     }
 
@@ -1453,18 +1483,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function expandResumeSection() {
         if (!aboutDetails || !aboutToggleBtn) return;
-        aboutDetails.style.display = 'block';
+        aboutDetails.classList.remove('u-hidden');
         aboutToggleBtn.classList.add('expanded');
-        if (toggleTextExpand) toggleTextExpand.style.display = 'none';
-        if (toggleTextCollapse) toggleTextCollapse.style.display = 'inline';
+        if (toggleTextExpand) toggleTextExpand.classList.add('u-hidden');
+        if (toggleTextCollapse) toggleTextCollapse.classList.remove('u-hidden');
     }
 
     function collapseResumeSection() {
         if (!aboutDetails || !aboutToggleBtn) return;
-        aboutDetails.style.display = 'none';
+        aboutDetails.classList.add('u-hidden');
         aboutToggleBtn.classList.remove('expanded');
-        if (toggleTextExpand) toggleTextExpand.style.display = 'inline';
-        if (toggleTextCollapse) toggleTextCollapse.style.display = 'none';
+        if (toggleTextExpand) toggleTextExpand.classList.remove('u-hidden');
+        if (toggleTextCollapse) toggleTextCollapse.classList.add('u-hidden');
     }
 
     function openResumePasswordModal() {
@@ -1472,7 +1502,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resumePasswordOverlay.setAttribute('aria-hidden', 'false');
         resumePasswordOverlay.classList.add('is-open');
         resumePasswordInput.value = '';
-        if (resumePasswordError) resumePasswordError.style.display = 'none';
+        if (resumePasswordError) resumePasswordError.classList.add('u-hidden');
         resumePasswordInput.focus();
     }
 
@@ -1486,7 +1516,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const value = resumePasswordInput?.value?.trim() || '';
         if (value !== RESUME_PASSWORD) {
             if (resumePasswordError) {
-                resumePasswordError.style.display = 'block';
+                resumePasswordError.classList.remove('u-hidden');
                 resumePasswordInput.focus();
             }
             return;
@@ -1498,7 +1528,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (aboutToggleBtn && aboutDetails) {
         aboutToggleBtn.addEventListener('click', function() {
-            const isExpanded = aboutDetails.style.display !== 'none';
+            const isExpanded = aboutDetails && !aboutDetails.classList.contains('u-hidden');
             if (isExpanded) {
                 collapseResumeSection();
             } else {
@@ -1596,22 +1626,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (briefingReadMoreBtn && briefingPreview && briefingFull) {
         briefingReadMoreBtn.addEventListener('click', function() {
-            const isExpanded = briefingFull.style.display !== 'none';
+            const isExpanded = !briefingFull.classList.contains('u-hidden');
             
             if (isExpanded) {
                 // Collapse
-                briefingPreview.style.display = 'block';
-                briefingFull.style.display = 'none';
-                if (readMoreText) readMoreText.style.display = 'inline';
-                if (readLessText) readLessText.style.display = 'none';
+                briefingPreview.classList.remove('u-hidden');
+                briefingFull.classList.add('u-hidden');
+                if (readMoreText) readMoreText.classList.remove('u-hidden');
+                if (readLessText) readLessText.classList.add('u-hidden');
                 if (readMoreIcon) readMoreIcon.style.transform = 'rotate(0deg)';
                 briefingReadMoreBtn.classList.remove('expanded');
             } else {
                 // Expand
-                briefingPreview.style.display = 'none';
-                briefingFull.style.display = 'block';
-                if (readMoreText) readMoreText.style.display = 'none';
-                if (readLessText) readLessText.style.display = 'inline';
+                briefingPreview.classList.add('u-hidden');
+                briefingFull.classList.remove('u-hidden');
+                if (readMoreText) readMoreText.classList.add('u-hidden');
+                if (readLessText) readLessText.classList.remove('u-hidden');
                 if (readMoreIcon) readMoreIcon.style.transform = 'rotate(180deg)';
                 briefingReadMoreBtn.classList.add('expanded');
             }
