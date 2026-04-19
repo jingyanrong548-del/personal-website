@@ -208,8 +208,8 @@ const translations = {
         'briefings.international.title': 'International News',
         'briefings.standards.title': 'Standards Update',
         'briefings.innovation.title': 'Technical Innovation',
-        'briefings.standardsInnovation.title': 'Standards & Technical Innovation',
-        'briefings.future.title': 'Upcoming Events',
+        'briefings.standardsInnovation.title': 'Standards & Innovation',
+        'briefings.future.title': 'Upcoming Trade Shows & Events',
         'briefings.lastUpdate': 'Last updated: ',
         'briefings.readMore': 'Read Full Report',
         'briefings.readLess': 'Collapse',
@@ -517,8 +517,8 @@ const translations = {
         'briefings.international.title': '国外动态',
         'briefings.standards.title': '标准动态',
         'briefings.innovation.title': '技术创新',
-        'briefings.standardsInnovation.title': '标准动态与技术创新',
-        'briefings.future.title': '未来重要事项',
+        'briefings.standardsInnovation.title': '标准与创新',
+        'briefings.future.title': '即将来临的重要展会信息',
         'briefings.lastUpdate': '最后更新：',
         'briefings.readMore': '阅读全文 (Read Report)',
         'briefings.readLess': '收起',
@@ -852,52 +852,77 @@ function setLanguage(lang) {
 // 5. 在 international 和 internationalEn 数组中分别添加或修改"国外动态"的中英文条目
 // 6. 在 standards 和 standardsEn 数组中分别添加或修改"标准动态"的中英文条目
 // 7. 在 innovation 和 innovationEn 数组中分别添加或修改"技术创新"的中英文条目
-// 8. 在 future 和 futureEn 数组中分别添加或修改"未来重要事项"的中英文条目
+// 8. 在 future 和 futureEn 数组中分别添加或修改「即将来临的重要展会/行业会议」的中英文条目（以名称、时间、地点为主）
 //
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 15,
-    updateDate: '2026-04-12',
-    subtitle: '制冷展收官与工业脱碳热泵焦点；冷媒 LRM 与无油离心；液冷合规与 AHRI 严寒标定；Q2 交付与大宗成本',
-    subtitleEn: 'CRH 2026 wrap & industrial-decarbonization HP focus; refrigerant LRM & oil-free centrifugal; liquid-cooling compliance & AHRI cold-climate ratings; Q2 delivery & commodity cost pressure',
+    week: 16,
+    updateDate: '2026-04-19',
+    subtitle: '节能装备方案牵引工业热泵；欧盟 F-gas 与 OSH 双轨合规；安规—现场—技能闭环；秋展档期（上海 ISH、纽伦堡 Chillventa）',
+    subtitleEn: 'MIIT plan drives industrial HPs; EU F-gas plus OSH compliance; safety–field–skills loop; autumn show calendar (ISH Shanghai, Chillventa)',
     domestic: [
-        '中国制冷展重磅收官：第37届中国制冷展（CRH 2026）于4月8日-10日在北京圆满落幕。今年展会主打“数智塑冷暖 零碳启新程”，展览面积达11.5万平方米。除常规机组外，面向工业脱碳的超高温热泵、大型数智化冷水机组以及全热交换系统成为全场关注焦点。',
-        '研发组织架构变革提速：面对技术竞争加剧与海外交期压力，业内正兴起流程优化热潮。部分跨区域实体制造企业加速成立专项“研发创新部门”，理顺从总部研发评审到异地工厂量产的技术闭环，以打通堵点、提升跨部门协作效率。'
+        '政策牵引明确：多部委《节能装备高质量发展实施方案（2026—2028年）》将工业热泵列入重点装备，量化提出到 2028 年热泵产品能效较 2025 年提升 10% 以上，技术清单覆盖跨临界 CO₂、大功率高温/工业蒸汽热泵、冷热同源及自然工质压缩机等，为制造端与系统集成商提供清晰的研发与立项坐标。',
+        '制冷展后首轮回访与漏斗梳理：第 16 周正值 CRH 闭幕不久，渠道侧普遍进入「线索清洗—方案深化—样机/试点排期」；工业余热与蒸汽替代类项目更强调 IPLV 与部分负荷策略、变频与智控联动，与地方节能监察、设备更新补贴窗口衔接的项目占比上升。'
     ],
     domesticEn: [
-        'China Refrigeration Expo Wraps: The 37th China Refrigeration Expo (CRH 2026) closed Apr 8–10 in Beijing under the theme “Digital intelligence shapes cold & heat; zero carbon opens a new journey,” with 115,000 m² of floorspace. Beyond conventional units, ultra-high-temperature heat pumps for industrial decarbonization, large digital chillers, and total heat-exchange systems drew the most attention.',
-        'R&D Org Shifts Accelerate: Facing tougher technology competition and overseas lead-time pressure, many firms are streamlining processes. Some multi-site manufacturers are standing up dedicated “R&D innovation” teams to close the loop from HQ design review to remote-factory ramp—clearing handoff bottlenecks and improving cross-functional collaboration.'
+        'Policy pull-in is explicit: the Energy-Saving Equipment High-Quality Development Plan (2026–2028) lists industrial heat pumps as priority equipment, targets ≥10% heat-pump efficiency gain by 2028 vs 2025, and names transcritical CO₂, large high-temperature/industrial steam HPs, integrated heating–cooling, and natural-refrigerant compressors—giving OEMs and integrators a clear R&D and project baseline.',
+        'First post-CRH pipeline pass: in the week after the expo, channels focus on lead scrubbing, solution depth, and pilot scheduling; industrial waste-heat and steam-substitution bids stress IPLV/part-load strategy, VFD plus controls, and a rising share of projects aligned with local efficiency enforcement and equipment-renewal incentives.'
     ],
     international: [
-        '冷媒全生命周期管理（LRM）成海外门槛：在本周“臭氧气候技术（O2C）”高级别圆桌会上，联合国相关机构释放明确信号：为落实基加利修正案，海外市场除要求出厂设备采用低 GWP 环保冷媒外，还将对冷媒“全生命周期数字化追踪”与综合能效提出捆绑式硬性考核。',
-        '无油离心技术冲击高端商用：面向商用冷水机组与大系统，盖瑞特（Garrett）等外资巨头展示了专为环保冷媒优化的“全无油离心式压缩技术”。取消润滑油系统后设备体积约减半，长期能效与免维护优势突出，正成为角逐欧美高端公建项目的关键卖点。'
+        '欧盟监管「双线并行」再确认：针对天然冷媒热泵与制冷设备维保，欧委会重申 F-gas 资质与职业安全与健康（OSH）义务互不替代——雇主仍须完成风险评价、培训与防护；对我方设备出口、欧洲本地安装及运维分包合同中的责任界面划分具有直接指导意义。',
+        '欧洲天然工质生态继续扩容：跨临界 CO₂ 等路线在食品零售与工业场景渗透率提高，叠加安装维保标准化诉求，主机厂与协会正把「产品交付」延伸为包含培训、认证与备件策略的服务包，与中国供应链出海的服务化布局形成对照。'
     ],
     internationalEn: [
-        'Refrigerant LRM as an Export Barrier: At this week’s high-level Ozone2Climate Technology (O2C) roundtable, UN bodies signaled that to implement the Kigali Amendment, overseas markets will tie low-GWP charge at shipment to mandatory digital lifecycle tracking of refrigerant and holistic efficiency performance.',
-        'Oil-Free Centrifugal in Premium Commercial: For large chillers and plant-scale systems, Garrett and other majors showcased oil-free centrifugal compression tuned for lower-GWP fluids. Removing the lube circuit cuts footprint roughly in half while lifting long-run efficiency and service intervals—a strong lever in premium public-building bids in Europe and North America.'
+        'EU “two-track” rules clarified: for servicing natural-refrigerant heat pumps and refrigeration, the Commission reiterates F-gas certification does not replace OSH duties—employers must still run risk assessment, training, and PPE programs—directly shaping liability splits in equipment export, local install, and O&M subcontracting in Europe.',
+        'Europe’s natural-refrigerant ecosystem scales: wider transcritical CO₂ uptake in retail and industry, plus demand for standardized service, pushes OEMs and associations toward bundled offers—training, certification, spares—mirroring how Chinese suppliers think about service-led exports.'
     ],
     standards: [
-        '算力中心冷却“立规矩”：随 AI 算力带动的液冷市场加速合规化。Intertek 等国际检测机构本周集中解析数据中心风冷、液冷设备的最新安全标准与北美准入要求，对跨界进入高密度机房散热赛道的厂商而言已成为必修课。'
+        '标准侧焦点仍在「型式合规」与「现场一致」：围绕 EN IEC 60335-2-40 等安规，可燃工质机型需与维保后检漏、充注控制、通风与 ATEX 分区等工程措施一体设计；出口资料包建议同步给出现场检查表与典型故障处置路径，减少验收争议。'
     ],
     standardsEn: [
-        'Data-Center Cooling Standards Firm Up: As AI drives liquid cooling, compliance is tightening. Intertek and peers briefed the industry this week on the latest safety standards and North American market entry rules for air- and liquid-cooled data-center equipment—essential homework for newcomers chasing high-density rack cooling.'
+        'Standards stress lab-type compliance vs field consistency: under EN IEC 60335-2-40-type safety rules, flammable-refrigerant units should be engineered with post-service leak checks, charge control, ventilation, and ATEX zoning—export dossiers benefit from on-site checklists and fault-playbooks to cut acceptance disputes.'
     ],
     innovation: [
-        '严寒热泵标定规则收紧：针对北美极寒采暖场景，AHRI 进一步细化“热泵低温切入/切出温度”的第三方实测与标定方法。出海热泵在宣称极寒性能（如 -30℃ 运行）时需具备更扎实的数据支撑以应对抽检。'
+        '创新侧落在「人会修、敢修、修得合规」：欧盟 LIFE SKILLSAFE 等倡议联合协会与厂商推进天然工质系统维保能力框架（如 R290 密封性、维保场景爆炸防护分区），与我方在海外办培训、拿本地资质、绑定服务商网络的路径高度同频。'
     ],
     innovationEn: [
-        'Cold-Climate HP Ratings Get Stricter: For severe North American heating, AHRI refined third-party test and rating methods for heat-pump low-temperature cut-in/cut-out behavior. Exporters claiming extreme-cold performance (e.g., −30 °C operation) need stronger evidence to survive spot checks.'
+        'Innovation centers on “qualified hands”: EU initiatives such as LIFE SKILLSAFE work with associations and OEMs on competence frameworks for natural-refrigerant service (e.g., R290 hermeticity, ATEX scoping)—aligned with running overseas training, local qualifications, and installer networks.'
     ],
     future: [
-        '展后订单转化与产能冲刺：国内开年三大展会（HPE、供热展、制冷展）已收官，行业重心正从“展台展示”转向客户跟进与 Q2 交付抢单。',
-        '大宗物料涨价预警：铜等核心原材料价格持续高位震荡，建议研发与采购密切联动，在项目匹配与系统设计中提前落实成本与替代预案。'
+        'ISH Shanghai & CIHE 2026（上海国际供热通风空调及舒适家居系统展览会）：法兰克福展览官方资料定位为 2026 年秋季、上海新国际博览中心，与 IGB 绿色建筑平台多个联展同期；热泵、舒适系统与楼宇节能仍是核心观展线，具体日程以 messefrankfurt.com 更新为准。',
+        'Chillventa 2026（德国纽伦堡国际制冷、空调、通风及热泵展）：偶数年举办，业界常见公布档期约 10 月 13–15 日 · 纽伦堡展览中心，覆盖制冷空调全产业链与热泵技术前沿，行前建议以 chillventa.de 最终公告为准。'
     ],
     futureEn: [
-        'From Expo Buzz to Q2 Execution: With HPE, ISH China, and CRH 2026 behind us, the focus shifts from booth presence to customer follow-up and Q2 delivery push.',
-        'Commodity Cost Alert: Copper and other key materials remain volatile at elevated levels—R&D and procurement should align early on project costing and design substitutions.'
+        'ISH Shanghai & CIHE 2026 (Shanghai International Trade Fair for Heating, Ventilation, Air-conditioning & Home Comfort): Messe Frankfurt lists Autumn 2026 at Shanghai New International Expo Centre, alongside the IGB cluster—heat pumps and comfort systems remain core visit tracks; confirm dates on messefrankfurt.com.',
+        'Chillventa 2026 (refrigeration, AC, ventilation & heat pumps), Nuremberg: biennial; industry calendars commonly cite about Oct 13–15, 2026 at Messe Nürnberg—full supply-chain and HP technology coverage; verify final dates on chillventa.de before travel.'
     ]
 };
+
+/** 简报折叠预览用短摘要：优先首句/首分句，否则硬截断并加省略号 */
+function briefingPreviewSnippet(text, maxLen) {
+    const limit = maxLen ?? 96;
+    if (!text || typeof text !== 'string') return '';
+    const t = text.trim();
+    let sentenceEnd = t.length;
+    const iPeriod = t.indexOf('。');
+    const iSemi = t.indexOf('；');
+    if (iPeriod >= 0) {
+        sentenceEnd = iPeriod + 1;
+    } else if (iSemi >= 0) {
+        sentenceEnd = iSemi + 1;
+    } else {
+        const m = t.match(/\.\s/);
+        if (m && m.index !== undefined) {
+            sentenceEnd = m.index + 1;
+        }
+    }
+    if (sentenceEnd <= limit) {
+        return t.slice(0, sentenceEnd);
+    }
+    const hard = t.slice(0, limit).replace(/\s+$/, '');
+    return hard.length < t.length ? `${hard}…` : hard;
+}
 
 // Display briefing content
 function displayBriefing() {
@@ -956,16 +981,30 @@ function displayBriefing() {
     });
     fullHtml += `</ul></div>`;
 
-    // Standards & Technical Innovation (merged section)
-    const standardsInnovationItems = [...standardsItems, ...innovationItems];
-    if (standardsInnovationItems.length > 0) {
-        fullHtml += `<div class="briefing-section">
-            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${translations[currentLanguage]['briefings.standardsInnovation.title']}</h4>
-            <ul class="briefing-list">`;
-        standardsInnovationItems.forEach(item => {
-            fullHtml += `<li class="briefing-item">${item}</li>`;
-        });
-        fullHtml += `</ul></div>`;
+    // Standards & Innovation: one parent title, two sub-blocks for readability
+    const hasStdInv = standardsItems.length > 0 || innovationItems.length > 0;
+    if (hasStdInv) {
+        fullHtml += `<div class="briefing-section briefing-section--stdinv">
+            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${translations[currentLanguage]['briefings.standardsInnovation.title']}</h4>`;
+        if (standardsItems.length > 0) {
+            fullHtml += `<div class="briefing-subsection">
+                <h5 class="briefing-subsection-title" data-i18n="briefings.standards.title">${translations[currentLanguage]['briefings.standards.title']}</h5>
+                <ul class="briefing-list">`;
+            standardsItems.forEach(item => {
+                fullHtml += `<li class="briefing-item">${item}</li>`;
+            });
+            fullHtml += `</ul></div>`;
+        }
+        if (innovationItems.length > 0) {
+            fullHtml += `<div class="briefing-subsection">
+                <h5 class="briefing-subsection-title" data-i18n="briefings.innovation.title">${translations[currentLanguage]['briefings.innovation.title']}</h5>
+                <ul class="briefing-list">`;
+            innovationItems.forEach(item => {
+                fullHtml += `<li class="briefing-item">${item}</li>`;
+            });
+            fullHtml += `</ul></div>`;
+        }
+        fullHtml += `</div>`;
     }
 
     // Future events section
@@ -979,17 +1018,28 @@ function displayBriefing() {
 
     contentElement.innerHTML = fullHtml;
 
-    // Build preview content (first 150 characters or first 3 key points)
-    let previewHtml = '';
-    const allItems = [...domesticItems, ...internationalItems, ...standardsItems, ...innovationItems, ...futureItems];
-    
-    // Extract first 3 key points
-    const keyPoints = allItems.slice(0, 3);
-    previewHtml += '<ul class="briefing-preview-list">';
-    keyPoints.forEach(item => {
-        // Truncate each item to 150 characters if needed
-        const truncatedItem = item.length > 150 ? item.substring(0, 150) + '...' : item;
-        previewHtml += `<li class="briefing-preview-item">${truncatedItem}</li>`;
+    // Preview: 每块「小标题 + 短摘要」分行，避免一栏过长难扫读
+    const tBrief = translations[currentLanguage];
+    const previewBlocks = [];
+    if (domesticItems[0]) {
+        previewBlocks.push({ label: tBrief['briefings.domestic.title'], text: briefingPreviewSnippet(domesticItems[0], 100) });
+    }
+    if (internationalItems[0]) {
+        previewBlocks.push({ label: tBrief['briefings.international.title'], text: briefingPreviewSnippet(internationalItems[0], 100) });
+    }
+    if (standardsItems[0]) {
+        previewBlocks.push({ label: tBrief['briefings.standards.title'], text: briefingPreviewSnippet(standardsItems[0], 100) });
+    }
+    if (innovationItems[0]) {
+        previewBlocks.push({ label: tBrief['briefings.innovation.title'], text: briefingPreviewSnippet(innovationItems[0], 100) });
+    }
+    if (futureItems[0]) {
+        previewBlocks.push({ label: tBrief['briefings.future.title'], text: briefingPreviewSnippet(futureItems[0], 110) });
+    }
+
+    let previewHtml = '<ul class="briefing-preview-list">';
+    previewBlocks.forEach(({ label, text }) => {
+        previewHtml += `<li class="briefing-preview-item"><span class="briefing-preview-label">${label}</span><span class="briefing-preview-snippet">${text}</span></li>`;
     });
     previewHtml += '</ul>';
 
