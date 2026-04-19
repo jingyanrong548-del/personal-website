@@ -899,31 +899,6 @@ const briefingData = {
     ]
 };
 
-/** 简报折叠预览用短摘要：优先首句/首分句，否则硬截断并加省略号 */
-function briefingPreviewSnippet(text, maxLen) {
-    const limit = maxLen ?? 96;
-    if (!text || typeof text !== 'string') return '';
-    const t = text.trim();
-    let sentenceEnd = t.length;
-    const iPeriod = t.indexOf('。');
-    const iSemi = t.indexOf('；');
-    if (iPeriod >= 0) {
-        sentenceEnd = iPeriod + 1;
-    } else if (iSemi >= 0) {
-        sentenceEnd = iSemi + 1;
-    } else {
-        const m = t.match(/\.\s/);
-        if (m && m.index !== undefined) {
-            sentenceEnd = m.index + 1;
-        }
-    }
-    if (sentenceEnd <= limit) {
-        return t.slice(0, sentenceEnd);
-    }
-    const hard = t.slice(0, limit).replace(/\s+$/, '');
-    return hard.length < t.length ? `${hard}…` : hard;
-}
-
 // Display briefing content
 function displayBriefing() {
     const titleElement = document.getElementById('briefing-week-title');
@@ -1018,28 +993,36 @@ function displayBriefing() {
 
     contentElement.innerHTML = fullHtml;
 
-    // Preview: 每块「小标题 + 短摘要」分行，避免一栏过长难扫读
+    // Preview: 与全文同口径的完整段落，不做字数截断（避免末尾被「…」裁掉）
     const tBrief = translations[currentLanguage];
     const previewBlocks = [];
-    if (domesticItems[0]) {
-        previewBlocks.push({ label: tBrief['briefings.domestic.title'], text: briefingPreviewSnippet(domesticItems[0], 100) });
-    }
-    if (internationalItems[0]) {
-        previewBlocks.push({ label: tBrief['briefings.international.title'], text: briefingPreviewSnippet(internationalItems[0], 100) });
-    }
-    if (standardsItems[0]) {
-        previewBlocks.push({ label: tBrief['briefings.standards.title'], text: briefingPreviewSnippet(standardsItems[0], 100) });
-    }
-    if (innovationItems[0]) {
-        previewBlocks.push({ label: tBrief['briefings.innovation.title'], text: briefingPreviewSnippet(innovationItems[0], 100) });
-    }
-    if (futureItems[0]) {
-        previewBlocks.push({ label: tBrief['briefings.future.title'], text: briefingPreviewSnippet(futureItems[0], 110) });
-    }
+
+    const pushSectionItems = (items, titleKey) => {
+        const title = tBrief[titleKey];
+        items.forEach((text, idx) => {
+            const label = items.length > 1 ? `${title}（${idx + 1}/${items.length}）` : title;
+            previewBlocks.push({ label, text });
+        });
+    };
+
+    pushSectionItems(domesticItems, 'briefings.domestic.title');
+    pushSectionItems(internationalItems, 'briefings.international.title');
+    pushSectionItems(standardsItems, 'briefings.standards.title');
+    pushSectionItems(innovationItems, 'briefings.innovation.title');
+    pushSectionItems(futureItems, 'briefings.future.title');
+
+    const escapeBriefHtml = (s) => {
+        if (!s) return '';
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    };
 
     let previewHtml = '<ul class="briefing-preview-list">';
     previewBlocks.forEach(({ label, text }) => {
-        previewHtml += `<li class="briefing-preview-item"><span class="briefing-preview-label">${label}</span><span class="briefing-preview-snippet">${text}</span></li>`;
+        previewHtml += `<li class="briefing-preview-item"><span class="briefing-preview-label">${escapeBriefHtml(label)}</span><span class="briefing-preview-snippet">${escapeBriefHtml(text)}</span></li>`;
     });
     previewHtml += '</ul>';
 
