@@ -857,37 +857,37 @@ function setLanguage(lang) {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 16,
-    updateDate: '2026-04-19',
-    subtitle: '节能装备方案牵引工业热泵；欧盟 F-gas 与 OSH 双轨合规；安规—现场—技能闭环；秋展档期（上海 ISH、纽伦堡 Chillventa）',
-    subtitleEn: 'MIIT plan drives industrial HPs; EU F-gas plus OSH compliance; safety–field–skills loop; autumn show calendar (ISH Shanghai, Chillventa)',
+    week: 17,
+    updateDate: '2026-04-26',
+    subtitle: '中办国办意见点名高温热泵推广；欧盟 AccelerateEU 降税与余热回收导向；芬兰纸厂级异丁烷蒸汽热泵投运；F-gas 维保窗口与工程化文档并重',
+    subtitleEn: 'Top-level Opinion boosts high-temperature HPs; EU AccelerateEU on VAT & waste heat; Finland mill-scale isobutane steam HP; F-gas service rules plus field dossiers',
     domestic: [
-        '政策牵引明确：多部委《节能装备高质量发展实施方案（2026—2028年）》将工业热泵列入重点装备，量化提出到 2028 年热泵产品能效较 2025 年提升 10% 以上，技术清单覆盖跨临界 CO₂、大功率高温/工业蒸汽热泵、冷热同源及自然工质压缩机等，为制造端与系统集成商提供清晰的研发与立项坐标。',
-        '制冷展后首轮回访与漏斗梳理：第 16 周正值 CRH 闭幕不久，渠道侧普遍进入「线索清洗—方案深化—样机/试点排期」；工业余热与蒸汽替代类项目更强调 IPLV 与部分负荷策略、变频与智控联动，与地方节能监察、设备更新补贴窗口衔接的项目占比上升。'
+        '中办国办印发《关于更高水平更高质量做好节能降碳工作的意见》（2026 年 4 月 11 日），权威媒体与行业平台于 4 月下旬集中解读；文件将「加快节能锅炉、永磁电机、高效制冷、绿色照明、高温热泵等先进适用装备推广应用」写入重点任务，并与工业园区基础设施共建共享、企业间能量交换与梯级利用等表述并列——有利于将工业与园区热泵纳入地方节能降碳工程包与改造清单。',
+        '在《节能装备高质量发展实施方案（2026—2028年）》已形成行业共识的基础上，本周讨论更多下沉到「如何把 IPLV/NPLV 与变频控制写进初设、如何用热泵承接园区供热与制冷协同」；设计单位与节能服务公司倾向打包「诊断—仿真—分期投运」，以降低高温机组长期低负荷运行带来的寄生电耗与验收争议。'
     ],
     domesticEn: [
-        'Policy pull-in is explicit: the Energy-Saving Equipment High-Quality Development Plan (2026–2028) lists industrial heat pumps as priority equipment, targets ≥10% heat-pump efficiency gain by 2028 vs 2025, and names transcritical CO₂, large high-temperature/industrial steam HPs, integrated heating–cooling, and natural-refrigerant compressors—giving OEMs and integrators a clear R&D and project baseline.',
-        'First post-CRH pipeline pass: in the week after the expo, channels focus on lead scrubbing, solution depth, and pilot scheduling; industrial waste-heat and steam-substitution bids stress IPLV/part-load strategy, VFD plus controls, and a rising share of projects aligned with local efficiency enforcement and equipment-renewal incentives.'
+        'The General Offices of the CPC Central Committee and the State Council issued an Opinion on higher-level, higher-quality energy saving and carbon reduction (Apr 11, 2026), widely interpreted in late April; it tasks authorities to accelerate promotion of advanced equipment including high-temperature heat pumps, alongside efficient chillers, and ties this to shared park infrastructure and cascade energy exchange—helping list industrial and campus heat pumps in local retrofit portfolios.',
+        'With the MIIT-led Energy-Saving Equipment plan (2026–2028) already internalized, discourse shifts to embedding IPLV/NPLV and VFD logic in front-end design and aligning heat pumps with park-level heating–cooling synergy; designers and ESCOs increasingly bundle diagnosis, simulation, and phased commissioning to curb parasitic power and acceptance disputes from chronic part-load operation of high-temperature units.'
     ],
     international: [
-        '欧盟监管「双线并行」再确认：针对天然冷媒热泵与制冷设备维保，欧委会重申 F-gas 资质与职业安全与健康（OSH）义务互不替代——雇主仍须完成风险评价、培训与防护；对我方设备出口、欧洲本地安装及运维分包合同中的责任界面划分具有直接指导意义。',
-        '欧洲天然工质生态继续扩容：跨临界 CO₂ 等路线在食品零售与工业场景渗透率提高，叠加安装维保标准化诉求，主机厂与协会正把「产品交付」延伸为包含培训、认证与备件策略的服务包，与中国供应链出海的服务化布局形成对照。'
+        '欧盟委员会在「AccelerateEU」能源工具箱中提出降低热泵增值税、鼓励工业余热回收，并预告将就电力税费与电网收费提出立法动议；欧洲热泵协会（EHPA）肯定其对建筑、区域供热与工业电气化的导向，同时呼吁成员国尽快落地以降低「气电价格比」导致的投资犹豫。',
+        '意大利 Turboden 宣布在芬兰 Tervakoski 的 Delfort 纸厂投运其宣称的全球最大「产蒸汽」热泵，采用异丁烷工质，项目属约 5000 万欧元级能源转型投资的一部分并指向显著年度碳减排——为大型烃类工质蒸汽热泵的可靠性叙事、O&M 手册化与保险/融资尽调提供了新的公开案例锚点。'
     ],
     internationalEn: [
-        'EU “two-track” rules clarified: for servicing natural-refrigerant heat pumps and refrigeration, the Commission reiterates F-gas certification does not replace OSH duties—employers must still run risk assessment, training, and PPE programs—directly shaping liability splits in equipment export, local install, and O&M subcontracting in Europe.',
-        'Europe’s natural-refrigerant ecosystem scales: wider transcritical CO₂ uptake in retail and industry, plus demand for standardized service, pushes OEMs and associations toward bundled offers—training, certification, spares—mirroring how Chinese suppliers think about service-led exports.'
+        'Under the Commission’s AccelerateEU toolbox, the EU flags reduced VAT on heat pumps, encourages industrial waste-heat recovery, and foreshadows legislative work on electricity taxes and network charges; EHPA welcomed the electrification signal for buildings, districts, and industry while urging rapid national rollout to ease investor hesitation driven by power-to-gas price gaps.',
+        'Turboden reports startup of what it calls the world’s largest steam-producing heat pump at Delfort’s Tervakoski paper mill in Finland, using isobutane in a roughly €50 million decarbonization envelope with major annual emissions cuts—a public anchor for reliability narratives, O&M standardization, and insurer/finance due diligence on large hydrocarbon steam systems.'
     ],
     standards: [
-        '标准侧焦点仍在「型式合规」与「现场一致」：围绕 EN IEC 60335-2-40 等安规，可燃工质机型需与维保后检漏、充注控制、通风与 ATEX 分区等工程措施一体设计；出口资料包建议同步给出现场检查表与典型故障处置路径，减少验收争议。'
+        '修订版欧盟 F-gas（EU）2024/573 下，空调与热泵维保对「原生高 GWP 工质」的限制在 2026 年进入业界执行与合同谈判窗口（与制冷设备时间表不同，EHPA 等指南有专门拆解）；出口交付与欧洲服务分包宜同步列明：回收/再生工质路径、检漏与再充注频次、替代工质兼容性，并对照 EN IEC 60335-2-40 等安规校核现场充注量、通风与可燃工质分区的一致性声明。'
     ],
     standardsEn: [
-        'Standards stress lab-type compliance vs field consistency: under EN IEC 60335-2-40-type safety rules, flammable-refrigerant units should be engineered with post-service leak checks, charge control, ventilation, and ATEX zoning—export dossiers benefit from on-site checklists and fault-playbooks to cut acceptance disputes.'
+        'Under revised EU F-gas (EU) 2024/573, 2026 marks the industry contracting window for virgin high-GWP refrigerants in air-conditioning and heat pump servicing (distinct from refrigeration timelines; EHPA-style guides parse the split); export and EU subcontract dossiers should spell out reclaimed/recycled routes, leak-check and recharge cadence, fluid compatibility, and IEC 60335-2-40-type alignment on charge limits, ventilation, and flammable-refrigerant zoning declarations.'
     ],
     innovation: [
-        '创新侧落在「人会修、敢修、修得合规」：欧盟 LIFE SKILLSAFE 等倡议联合协会与厂商推进天然工质系统维保能力框架（如 R290 密封性、维保场景爆炸防护分区），与我方在海外办培训、拿本地资质、绑定服务商网络的路径高度同频。'
+        '创新叙事从「单机发布」转向「锅炉替代 + 可审计减碳」：芬兰纸厂级蒸汽热泵把异丁烷大容量热泵与工艺蒸汽需求直接对齐，对压缩机密封与振动、换热器防爆分区设计、部分负荷性能曲线标定与在线计量提出更高要求，亦为中资供应链在离心/螺杆主机、板换与边缘—云端智控上的差异化跟进留出空间。'
     ],
     innovationEn: [
-        'Innovation centers on “qualified hands”: EU initiatives such as LIFE SKILLSAFE work with associations and OEMs on competence frameworks for natural-refrigerant service (e.g., R290 hermeticity, ATEX scoping)—aligned with running overseas training, local qualifications, and installer networks.'
+        'The story moves from product launches to boiler replacement plus auditable decarbonization: Finland’s mill-scale steam heat pump aligns large isobutane heat pumps with process steam, raising the bar for compressor sealing and vibration, ATEX-scoped heat exchangers, part-load test disclosure, and metering—creating differentiation room for Chinese suppliers on screw/centrifugal packages, plate HX, and edge-to-cloud controls.'
     ],
     future: [
         'ISH Shanghai & CIHE 2026（上海国际供热通风空调及舒适家居系统展览会）：法兰克福展览官方资料定位为 2026 年秋季、上海新国际博览中心，与 IGB 绿色建筑平台多个联展同期；热泵、舒适系统与楼宇节能仍是核心观展线，具体日程以 messefrankfurt.com 更新为准。',
