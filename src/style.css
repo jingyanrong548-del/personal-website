@@ -253,15 +253,15 @@ body {
     color: white;
 }
 
-/* 顶栏下使命条：脱碳 · 电气化 · AI 可验证 */
+/* 顶栏下使命条：轻量提示，避免与 Hero / 三支柱抢视觉权重 */
 .mission-strip {
-    background: linear-gradient(90deg, rgba(8, 145, 178, 0.08) 0%, rgba(232, 245, 233, 0.65) 50%, rgba(217, 119, 6, 0.08) 100%);
-    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-    backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-    padding: 1rem 1.5rem;
+    background: linear-gradient(90deg, rgba(8, 145, 178, 0.04) 0%, rgba(241, 245, 249, 0.55) 50%, rgba(217, 119, 6, 0.04) 100%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    padding: 0.65rem 1.25rem;
     text-align: center;
-    box-shadow: 0 2px 20px rgba(14, 116, 144, 0.08);
-    border-bottom: 1px solid rgba(14, 116, 144, 0.15);
+    box-shadow: 0 1px 8px rgba(15, 23, 42, 0.04);
+    border-bottom: 1px solid rgba(14, 116, 144, 0.1);
 }
 
 .mission-strip-inner {
@@ -281,23 +281,23 @@ body {
 }
 
 .mission-strip-greeting {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--ink-900);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-color);
     margin: 0;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
+    letter-spacing: 0.02em;
+    line-height: 1.45;
 }
 
 @media (min-width: 640px) {
     .mission-strip-greeting {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 }
 
 /* 三支柱：电气化 / 脱碳 / AI×开源 */
 .pillars-section {
-    padding: 2.5rem 0 1rem;
+    padding: 3rem 0 1.25rem;
     border-bottom: 1px solid var(--glass-border-subtle);
 }
 
@@ -1018,9 +1018,9 @@ body {
     box-shadow: var(--shadow-soft);
 }
 
-/* Sections */
+/* Sections — 统一上下留白阶梯 */
 .section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
     position: relative;
 }
 
@@ -1031,18 +1031,92 @@ body {
 /* Insights Section */
 .insights-section {
     background: transparent;
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 /* Briefings Section */
 .briefings-section {
     background: transparent;
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 .briefings-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.25rem;
+}
+
+.briefings-panels {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.briefing-panel {
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius-sm);
+    box-shadow: var(--glass-shadow);
+    overflow: hidden;
+}
+
+.briefing-panel-summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+    color: var(--ink-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    user-select: none;
+}
+
+.briefing-panel-summary::-webkit-details-marker {
+    display: none;
+}
+
+.briefing-panel-summary::after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid var(--text-light);
+    border-bottom: 2px solid var(--text-light);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    margin-top: -0.25rem;
+    opacity: 0.7;
+    transition: transform 0.2s ease;
+}
+
+.briefing-panel[open] > .briefing-panel-summary::after {
+    transform: rotate(-135deg);
+    margin-top: 0.15rem;
+}
+
+.briefing-panel[open] > .briefing-panel-summary {
+    border-bottom: 1px solid var(--glass-border-subtle);
+}
+
+.briefing-panel-body {
+    padding: 1rem 1rem 1.25rem;
+}
+
+.briefing-panel-body > .featured-insight-card {
+    margin-top: 0.75rem;
+}
+
+.briefing-panel-body > .featured-insight-card:first-child {
+    margin-top: 0;
+}
+
+.briefing-panel-body .exhibition-trends-group {
+    margin-top: 0.5rem;
 }
 
 /* Featured Insight Card (重构后的简报卡片) - 玻璃卡片 */
@@ -2449,12 +2523,32 @@ body {
 .apps-header {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .apps-header-content {
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .apps-header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1rem 2rem;
+    }
+
+    .apps-header-content {
+        text-align: left;
+        flex: 1 1 260px;
+    }
+
+    .apps-filter-tabs {
+        justify-content: flex-end;
+        flex: 1 1 220px;
+    }
 }
 
 .apps-filter-tabs {
@@ -3767,6 +3861,15 @@ body {
 .footer-copyright #app-version {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
+}
+
+.footer-beian-note {
+    margin: 0.5rem auto 0;
+    max-width: 36rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--text-light);
+    text-align: center;
 }
 
 .footer-beian {

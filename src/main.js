@@ -7,6 +7,11 @@ inject();
 // Language data
 const translations = {
     en: {
+        'seo.pageTitle': 'Jing Yanrong — Industrial Energy Systems & Open Engineering Tools',
+        'seo.pageDescription': 'Jing Yanrong: industrial refrigeration & heat pumps, electrified thermal systems, and measurable decarbonization—public tools with verifiable physics and open logic.',
+        'ui.closeModal': 'Close',
+        'contact.wechatQrAlt': 'WeChat QR code',
+        'footer.beianNote': 'Official China ICP and PSB registration numbers are linked below.',
         // Navigation
         'nav.brand': 'Jing Yanrong',
         'nav.about': 'About',
@@ -130,13 +135,13 @@ const translations = {
         'springFestival.greeting': 'Year of the Horse · AI-Powered · Pioneering Thermal Energy',
         'missionStrip.greeting': 'Electrified industrial cold & heat · Measurable decarbonization · Verifiable engineering in the AI era',
         'pillars.kicker': 'Decarbonization · Electrification · Verifiable AI',
-        'pillars.title': 'Three themes for the heat-pump transition',
-        'pillars.card1.title': 'Electrified process heat & cold',
-        'pillars.card1.text': 'Heat pumps displacing fossil boilers and efficient electric-driven refrigeration—turning plant temperature needs into schedulable electrical loads.',
-        'pillars.card2.title': 'Measurable decarbonization',
-        'pillars.card2.text': 'Waste-heat recovery, system efficiency, and lower-GWP fluids together—stated as engineering metrics, not slogans.',
-        'pillars.card3.title': 'AI × open, auditable tools',
-        'pillars.card3.text': 'Beyond digital twins and controls, this site emphasizes formulas and reproducible logic—verification beats marketing.',
+        'pillars.title': 'Three global trends shaping the future of industrial thermal systems',
+        'pillars.card1.title': 'Electrification becomes an economic decision',
+        'pillars.card1.text': 'Electricity cost, carbon cost, and grid interaction drive adoption: flexible operation, thermal storage, and demand response turn heat & cold into optimizable power loads.',
+        'pillars.card2.title': 'From single machines to process integration',
+        'pillars.card2.text': 'The winning projects couple heat pumps with waste heat and the process itself—especially 80–200°C hot water/steam replacement—where system boundaries matter more than nameplate COP.',
+        'pillars.card3.title': 'Scale needs standards, refrigerants, and verification',
+        'pillars.card3.text': 'Low‑GWP / natural refrigerants, standardized test methods (SPF), and reliability engineering—supported by digital monitoring—are what unlock repeatable deployment and bankable performance.',
         'partners.tagline': 'Chemicals & materials · Equipment · Energy services & thermal engineering',
         'apps.zone.open': 'Open Zone',
         'apps.zone.invitation': 'Invitation-Only Zone',
@@ -203,6 +208,9 @@ const translations = {
         // Briefings section
         'briefings.title': 'Refrigeration & Heat Pump Industry Briefings',
         'briefings.description': 'Manually curated, updated weekly',
+        'briefings.panel.weekly': 'Weekly briefing',
+        'briefings.panel.annex68': 'Annex 68 & IEA HPT',
+        'briefings.panel.conferences': 'Conferences & forums',
         'briefings.weekTitle': 'Week {week} {year} Refrigeration & Heat Pump Industry Briefing',
         'briefings.domestic.title': 'Domestic News',
         'briefings.international.title': 'International News',
@@ -329,6 +337,11 @@ const translations = {
         'resume.skills.digital.appFt': 'Flash Tank Expert (V1.0.0) - Smart flash tank calculation'
     },
     zh: {
+        'seo.pageTitle': '荆炎荣 (Jing Yanrong) - 工业能源系统工程专家 | Industrial Energy Systems Engineering',
+        'seo.pageDescription': '荆炎荣（Jing Yanrong）个人网站：工业制冷与热泵、电气化冷热与可度量脱碳，提供可验证物理逻辑的开源工程工具（工程工具箱、热泵匹配与效益分析等），服务绿色低碳与工业能源系统。',
+        'ui.closeModal': '关闭',
+        'contact.wechatQrAlt': '微信二维码',
+        'footer.beianNote': '以下为工信部 ICP 备案号与公安联网备案号（点击可前往官方查询页）。',
         'nav.brand': '荆炎荣 / Jing Yanrong',
         'nav.about': '关于',
         'nav.apps': '工具箱',
@@ -443,13 +456,13 @@ const translations = {
         'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创冷热事业新篇章',
         'missionStrip.greeting': '电气化工业冷热 · 可度量脱碳 · AI 年代的可验证工程',
         'pillars.kicker': '脱碳 · 电气化 · 可验证 AI',
-        'pillars.title': '工业热泵时代的三条主线',
-        'pillars.card1.title': '电气化供热与冷端',
-        'pillars.card1.text': '热泵替代化石锅炉、高效电驱动制冷，把工业温区需求变成可调度、可优化的电力负荷。',
-        'pillars.card2.title': '可度量的脱碳路径',
-        'pillars.card2.text': '余热回收、系统能效与低 GWP 冷媒协同，用工程指标而非口号描述减排与运行边界。',
-        'pillars.card3.title': 'AI × 开源可审计',
-        'pillars.card3.text': '数字孪生与智控之外，本站工具强调物理公式与可复现逻辑——验证优先于营销话术。',
+        'pillars.title': '未来工业冷热的三条国际主线',
+        'pillars.card1.title': '电气化进入“经济账”阶段',
+        'pillars.card1.text': '电价、碳价与电网友好性共同决定项目成败：柔性运行、蓄热（冷）与需求响应，把冷热负荷变成可优化的电力负荷。',
+        'pillars.card2.title': '从卖单机到“工艺耦合”',
+        'pillars.card2.text': '国际主流正在从单台设备效率转向系统边界：热泵与余热回收、工艺热源/热汇深度耦合，尤其聚焦 80–200°C 工艺热与蒸汽替代。',
+        'pillars.card3.title': '规模化取决于标准、工质与可验证',
+        'pillars.card3.text': '低 GWP/天然工质工程化 + 标准化测评方法（SPF 等）+ 可靠性工程，并由数字化监测与运维支撑，才能实现可复制交付与可融资的性能承诺。',
         'partners.tagline': '化工与材料 · 高端装备 · 能源服务与冷热工程',
         'apps.zone.open': '开放区',
         'apps.zone.invitation': '邀请开放区',
@@ -512,6 +525,9 @@ const translations = {
         // Briefings section
         'briefings.title': '制冷热泵行业简报',
         'briefings.description': '每周更新，手工整理',
+        'briefings.panel.weekly': '每周行业简报',
+        'briefings.panel.annex68': 'Annex 68 与 IEA 热泵技术合作',
+        'briefings.panel.conferences': '展会与论坛观察',
         'briefings.weekTitle': '{year}年第{week}周制冷热泵行业简报',
         'briefings.domestic.title': '国内动态',
         'briefings.international.title': '国外动态',
@@ -707,7 +723,7 @@ function refreshAppsFilterFromUI() {
 }
 
 // Language management
-let currentLanguage = localStorage.getItem('language') || 'zh';
+let currentLanguage = localStorage.getItem('language') || 'en';
 
 function setLanguage(lang) {
     if (!translations[lang]) return;
@@ -717,6 +733,41 @@ function setLanguage(lang) {
     
     // Update HTML lang attribute
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+
+    const seoTitle = translations[lang]['seo.pageTitle'];
+    const seoDesc = translations[lang]['seo.pageDescription'];
+    if (seoTitle) document.title = seoTitle;
+    document.getElementById('meta-page-description')?.setAttribute('content', seoDesc || '');
+    document.getElementById('meta-page-title')?.setAttribute('content', seoTitle || '');
+    document.getElementById('meta-og-title')?.setAttribute('content', seoTitle || '');
+    document.getElementById('meta-og-description')?.setAttribute('content', seoDesc || '');
+    document.getElementById('meta-twitter-title')?.setAttribute('content', seoTitle || '');
+    document.getElementById('meta-twitter-description')?.setAttribute('content', seoDesc || '');
+
+    const ogLoc = document.querySelector('meta[property="og:locale"]');
+    const ogLocAlt = document.querySelector('meta[property="og:locale:alternate"]');
+    if (ogLoc && ogLocAlt) {
+        if (lang === 'zh') {
+            ogLoc.setAttribute('content', 'zh_CN');
+            ogLocAlt.setAttribute('content', 'en_US');
+        } else {
+            ogLoc.setAttribute('content', 'en_US');
+            ogLocAlt.setAttribute('content', 'zh_CN');
+        }
+    }
+
+    document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-aria-label');
+        if (key && translations[lang][key]) {
+            el.setAttribute('aria-label', translations[lang][key]);
+        }
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-alt');
+        if (key && translations[lang][key]) {
+            el.setAttribute('alt', translations[lang][key]);
+        }
+    });
     
     // Update all elements with data-i18n attribute
     const currentYear = new Date().getFullYear();
