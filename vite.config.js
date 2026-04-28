@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { readFileSync } from 'fs'
+import { resolve } from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
 // 读取 package.json 获取版本号
@@ -19,6 +20,10 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
     rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        knowledge: resolve(__dirname, 'knowledge.html'),
+      },
       output: {
         assetFileNames: 'assets/[name].[hash].[ext]'
       }

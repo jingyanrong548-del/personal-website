@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags (default EN; setLanguage updates for zh) -->
+    <title>Heat pump basics — Why so many cycles?</title>
+    <meta id="meta-page-title" name="title" content="Heat pump basics — Why so many cycles?">
+    <meta id="meta-page-description" name="description" content="A non-expert friendly explainer: why boilers feel simple, while heat pumps branch into many cycles, working fluids, and compressor types.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge.html">
+    <meta id="meta-og-title" property="og:title" content="Heat pump basics — Why so many cycles?">
+    <meta id="meta-og-description" property="og:description" content="Why boilers feel simple, while heat pumps branch into many cycles, working fluids, and compressor types.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Heat pump basics — Why so many cycles?">
+    <meta id="meta-twitter-description" name="twitter:description" content="A non-expert friendly explainer on heat pump complexity.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledge.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="./#apps" data-i18n="nav.apps">Toolbox</a></li>
+                    <li><a href="./#briefings" data-i18n="nav.briefings">Industry Briefings</a></li>
+                    <li><a href="./#insights" data-i18n="nav.insights">Engineering Insights</a></li>
+                    <li><a href="./#about" data-i18n="nav.about">About</a></li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="knowledge-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledge.kicker">Heat pump basics · For non-experts</p>
+                    <h1 class="knowledge-title" data-i18n="knowledge.article1.title">Why boilers feel simple, but heat pumps look “complicated”</h1>
+                    <p class="knowledge-lede" data-i18n="knowledge.article1.lede">A boiler “makes heat”. A heat pump “moves heat”. The moment you must lift heat across a temperature gap, the design space explodes—cycles, fluids, compressors, and integration details.</p>
+
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./#apps" data-i18n="knowledge.cta.tools">Go to Toolbox</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./" data-i18n="knowledge.cta.home">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="knowledge-section">
+            <div class="container">
+                <div class="knowledge-grid">
+                    <article class="knowledge-card knowledge-card--boiler">
+                        <h2 class="knowledge-card-title" data-i18n="knowledge.article1.boiler.title">Why a boiler solves “any heating” so easily</h2>
+                        <ul class="knowledge-list">
+                            <li data-i18n="knowledge.article1.boiler.b1" data-i18n-html="true"><strong>Human version:</strong> it’s like a big kettle: fuel/electricity goes in, hot water/steam comes out.</li>
+                            <li data-i18n="knowledge.article1.boiler.b2" data-i18n-html="true"><strong>Engineering version:</strong> it converts energy to heat directly; you mainly manage combustion/electrics, heat transfer area, and safety codes.</li>
+                            <li data-i18n="knowledge.article1.boiler.b3" data-i18n-html="true"><strong>What you “spec”:</strong> outlet temperature/pressure and capacity; the rest is relatively standardized.</li>
+                        </ul>
+                    </article>
+
+                    <article class="knowledge-card knowledge-card--heatpump">
+                        <h2 class="knowledge-card-title" data-i18n="knowledge.article1.hp.title">Why heat pumps branch into so many “types”</h2>
+                        <ul class="knowledge-list">
+                            <li data-i18n="knowledge.article1.hp.b1" data-i18n-html="true"><strong>Human version:</strong> it’s a “heat elevator”: you must lift heat from low temperature to high temperature.</li>
+                            <li data-i18n="knowledge.article1.hp.b2" data-i18n-html="true"><strong>Engineering version:</strong> the required temperature lift (ΔT) sets pressure ratio, discharge temperature, and efficiency limits—forcing different cycles.</li>
+                            <li data-i18n="knowledge.article1.hp.b3" data-i18n-html="true"><strong>What you must fit:</strong> the heat source, heat sink, temperature curves, and site constraints; the “machine” is only one part.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledge-section">
+            <div class="container">
+                <h2 class="knowledge-section-title" data-i18n="knowledge.article1.six.title">The 6 real reasons heat pumps look complex</h2>
+
+                <div class="knowledge-reasons">
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r1.title">1) Temperature lift (ΔT) changes everything</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r1.text">Small ΔT: single-stage vapor compression may work well. Large ΔT: you may need economizers, two-stage, cascade, absorption, steam compression, or other cycles to stay within safe and efficient boundaries.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r2.title">2) Heat sources vary wildly</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r2.text">Air, water, brine, flue gas, process waste heat, solvent streams… each brings different fouling, corrosion, freezing risk, and temperature stability—so the “best” cycle and heat exchanger choices change.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r3.title">3) The heat sink is not just “hot water”</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r3.text">Hot water, hot air, steam, thermal oil—each has different temperature requirements and curve shapes. Matching those curves often matters more than the nameplate COP.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r4.title">4) Working fluid is constrained by physics + safety + regulation</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r4.text">Not “pick any refrigerant”. Critical temperature, operating pressures, glide, material compatibility, flammability/toxicity class, PFAS/F-gas rules—these constraints push designs into different families.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r5.title">5) Compressor/expander type sets the feasible operating map</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r5.text">Scroll/screw/reciprocating/centrifugal, vapor vs steam compression, oil-free vs oil-injected—each has a different “safe & efficient” map, affecting cycle choice and staging.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article1.six.r6.title">6) Industrial reality: integration and reliability dominate</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article1.six.r6.text">Plants cannot stop. Redundancy, defrosting, part-load control, bypass, thermal storage, and commissioning measurement turn a heat pump into a system engineering problem—not just a box.</p>
+                    </div>
+                </div>
+
+                <div class="knowledge-memory">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledge.article1.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledge.article1.memory.text">Boilers are “energy → heat”. Heat pumps are “heat → higher heat”, so they must obey more boundaries—and boundaries create variants.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledge-section knowledge-section--faq">
+            <div class="container">
+                <h2 class="knowledge-section-title" data-i18n="knowledge.article1.faq.title">Common misconceptions</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item" open>
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article1.faq.q1.q">“Isn’t a heat pump just an air-conditioner in reverse?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article1.faq.q1.a">The core idea is related, but industrial heat pumps face much larger ΔT, harsher sources, stricter reliability, and often steam/hot-water targets—so the required cycles and equipment scale are different.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article1.faq.q2.q">“Can I just pick a higher-COP unit?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article1.faq.q2.a">COP depends on your source/sink temperatures and part-load behavior. The best project is usually about process coupling and stable operating hours, not a single catalog COP number.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledge.footer.title">Want this explained for your specific process?</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledge.footer.text">Share your heat source & target (temperatures, flow, and schedule). I’ll help map the right heat-pump family and integration approach.</p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./#briefings" data-i18n="knowledge.cta.briefings">Read industry briefings</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./#about" data-i18n="knowledge.cta.contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -11,6 +11,14 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Heat pump basics (knowledge page) -->
+  <url>
+    <loc>https://www.jingyanrong.com/knowledge.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <!-- About Section -->
   <url>
