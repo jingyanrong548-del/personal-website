@@ -113,8 +113,12 @@ function displayBriefing() {
         return;
     }
 
-    // Update title
-    const weekTitle = translations[getCurrentLanguage()]['briefings.weekTitle']
+    const lang = getCurrentLanguage();
+    const tPage = translations[lang] || translations.en;
+
+    // Update title（zh 若缺键则回退 en，避免 .replace 抛错）
+    const weekTemplate = tPage['briefings.weekTitle'] || translations.en['briefings.weekTitle'];
+    const weekTitle = String(weekTemplate)
         .replace('{year}', briefingData.year)
         .replace('{week}', briefingData.week);
     titleElement.textContent = weekTitle;
@@ -142,7 +146,7 @@ function displayBriefing() {
     
     // Domestic section
     fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.domestic.title">${translations[getCurrentLanguage()]['briefings.domestic.title']}</h4>
+        <h4 class="briefing-section-title" data-i18n="briefings.domestic.title">${tPage['briefings.domestic.title'] || translations.en['briefings.domestic.title']}</h4>
         <ul class="briefing-list">`;
     domesticItems.forEach(item => {
         fullHtml += `<li class="briefing-item">${item}</li>`;
@@ -151,7 +155,7 @@ function displayBriefing() {
 
     // International section
     fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.international.title">${translations[getCurrentLanguage()]['briefings.international.title']}</h4>
+        <h4 class="briefing-section-title" data-i18n="briefings.international.title">${tPage['briefings.international.title'] || translations.en['briefings.international.title']}</h4>
         <ul class="briefing-list">`;
     internationalItems.forEach(item => {
         fullHtml += `<li class="briefing-item">${item}</li>`;
@@ -162,10 +166,10 @@ function displayBriefing() {
     const hasStdInv = standardsItems.length > 0 || innovationItems.length > 0;
     if (hasStdInv) {
         fullHtml += `<div class="briefing-section briefing-section--stdinv">
-            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${translations[getCurrentLanguage()]['briefings.standardsInnovation.title']}</h4>`;
+            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${tPage['briefings.standardsInnovation.title'] || translations.en['briefings.standardsInnovation.title']}</h4>`;
         if (standardsItems.length > 0) {
             fullHtml += `<div class="briefing-subsection">
-                <h5 class="briefing-subsection-title" data-i18n="briefings.standards.title">${translations[getCurrentLanguage()]['briefings.standards.title']}</h5>
+                <h5 class="briefing-subsection-title" data-i18n="briefings.standards.title">${tPage['briefings.standards.title'] || translations.en['briefings.standards.title']}</h5>
                 <ul class="briefing-list">`;
             standardsItems.forEach(item => {
                 fullHtml += `<li class="briefing-item">${item}</li>`;
@@ -174,7 +178,7 @@ function displayBriefing() {
         }
         if (innovationItems.length > 0) {
             fullHtml += `<div class="briefing-subsection">
-                <h5 class="briefing-subsection-title" data-i18n="briefings.innovation.title">${translations[getCurrentLanguage()]['briefings.innovation.title']}</h5>
+                <h5 class="briefing-subsection-title" data-i18n="briefings.innovation.title">${tPage['briefings.innovation.title'] || translations.en['briefings.innovation.title']}</h5>
                 <ul class="briefing-list">`;
             innovationItems.forEach(item => {
                 fullHtml += `<li class="briefing-item">${item}</li>`;
@@ -186,7 +190,7 @@ function displayBriefing() {
 
     // Future events section
     fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.future.title">${translations[getCurrentLanguage()]['briefings.future.title']}</h4>
+        <h4 class="briefing-section-title" data-i18n="briefings.future.title">${tPage['briefings.future.title'] || translations.en['briefings.future.title']}</h4>
         <ul class="briefing-list">`;
     futureItems.forEach(item => {
         fullHtml += `<li class="briefing-item">${item}</li>`;
@@ -196,11 +200,11 @@ function displayBriefing() {
     contentElement.innerHTML = fullHtml;
 
     // Preview: 与全文同口径的完整段落，不做字数截断（避免末尾被「…」裁掉）
-    const tBrief = translations[getCurrentLanguage()];
+    const tBrief = tPage;
     const previewBlocks = [];
 
     const pushSectionItems = (items, titleKey) => {
-        const title = tBrief[titleKey];
+        const title = tBrief[titleKey] || translations.en[titleKey];
         items.forEach((text, idx) => {
             const label = items.length > 1 ? `${title}（${idx + 1}/${items.length}）` : title;
             previewBlocks.push({ label, text });
@@ -237,7 +241,7 @@ function displayBriefing() {
         month: 'long',
         day: 'numeric'
     });
-    const lastUpdateText = translations[getCurrentLanguage()]['briefings.lastUpdate'] || 'Last updated: ';
+    const lastUpdateText = tPage['briefings.lastUpdate'] || translations.en['briefings.lastUpdate'] || 'Last updated: ';
     timeElement.textContent = lastUpdateText + dateStr;
 }
 
