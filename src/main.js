@@ -426,8 +426,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href') || '';
+            if (!targetId.startsWith('#')) {
+                // 跨页（如 knowledge.html）或外站链接：不拦截
+                return;
+            }
             e.preventDefault();
-            const targetId = this.getAttribute('href');
             if (scrollToSection(targetId)) {
                 // Update active state
                 navLinks.forEach(l => l.classList.remove('active'));
