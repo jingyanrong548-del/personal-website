@@ -4855,6 +4855,83 @@ html {
     max-width: 48rem;
 }
 
+.knowledge-toc {
+    margin-top: 1.35rem;
+    max-width: 48rem;
+}
+
+.knowledge-toc-title {
+    margin: 0 0 0.65rem;
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--ink-900);
+    letter-spacing: 0.02em;
+}
+
+.knowledge-toc-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.knowledge-toc-link {
+    display: block;
+    padding: 0.75rem 0.95rem;
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.knowledge-toc-link:hover {
+    border-color: rgba(46, 125, 50, 0.35);
+    box-shadow: var(--glass-shadow);
+}
+
+.knowledge-toc-kicker {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-lighter);
+    margin-bottom: 0.25rem;
+}
+
+.knowledge-toc-link-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.45;
+    color: var(--emerald-700);
+}
+
+.knowledge-article {
+    scroll-margin-top: 5.5rem;
+}
+
+.knowledge-article-heading {
+    max-width: 980px;
+    margin: 0 auto 0.65rem;
+    font-size: 1.35rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--ink-900);
+}
+
+.knowledge-article-lede {
+    max-width: 980px;
+    margin: 0 auto 1.25rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
 .knowledge-actions {
     display: flex;
     gap: 0.75rem;
@@ -5043,6 +5120,77 @@ html {
 
 .knowledge-section--faq {
     padding-bottom: 3rem;
+}
+
+.knowledge-section--article2 {
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.knowledge-article2-lede {
+    max-width: 980px;
+    margin: 0 auto 1.75rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.knowledge-card--article2 {
+    max-width: 980px;
+    margin: 0 auto 1.75rem;
+}
+
+.knowledge-reasons--article2 {
+    margin-bottom: 1.75rem;
+}
+
+.knowledge-takeaway {
+    max-width: 980px;
+    margin: 0 auto 1.75rem;
+    padding: 1rem 1.15rem;
+    border-left: 3px solid var(--glass-border);
+    background: var(--glass-bg);
+    border-radius: 0 var(--glass-radius-sm) var(--glass-radius-sm) 0;
+    color: var(--ink-900);
+    line-height: 1.75;
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.knowledge-ai-note {
+    max-width: 980px;
+    margin: 0 auto 1.75rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius-sm);
+    box-shadow: var(--glass-shadow);
+}
+
+.knowledge-ai-note-title {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ink-900);
+}
+
+.knowledge-ai-note-text {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.75;
+    font-size: 0.9375rem;
+}
+
+.knowledge-memory--article2 {
+    margin-bottom: 1.75rem;
+}
+
+.knowledge-section-subtitle {
+    max-width: 980px;
+    margin: 0 auto 1rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--ink-900);
 }
 
 .knowledge-faq {
