@@ -59,45 +59,45 @@ function refreshAppsFilterFromUI() {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 17,
-    updateDate: '2026-04-26',
-    subtitle: '中办国办意见点名高温热泵推广；欧盟 AccelerateEU 降税与余热回收导向；芬兰纸厂级异丁烷蒸汽热泵投运；F-gas 维保窗口与工程化文档并重',
-    subtitleEn: 'Top-level Opinion boosts high-temperature HPs; EU AccelerateEU on VAT & waste heat; Finland mill-scale isobutane steam HP; F-gas service rules plus field dossiers',
+    week: 18,
+    updateDate: '2026-05-03',
+    subtitle: '园区节能降碳「施工图」细化；甘宁将空气热能/热泵写入清洁供热路径；欧元市场 R290 认证占比与化工基地巨型热泵并进；F-gas 人员取证细则对接服务合同；Copeland 推动 ThermBooster 北美供应与 Vilter 整合',
+    subtitleEn: 'Park retrofit playbooks sharpen; Gansu–Ningxia clean heat paths lift air-energy HPs; EU R290 certification share plus BASF mega-IHP; F-gas personnel certification in service contracts; Copeland scales ThermBooster in NA under Vilter roadmap',
     domestic: [
-        '中办国办印发《关于更高水平更高质量做好节能降碳工作的意见》（2026 年 4 月 11 日），权威媒体与行业平台于 4 月下旬集中解读；文件将「加快节能锅炉、永磁电机、高效制冷、绿色照明、高温热泵等先进适用装备推广应用」写入重点任务，并与工业园区基础设施共建共享、企业间能量交换与梯级利用等表述并列——有利于将工业与园区热泵纳入地方节能降碳工程包与改造清单。',
-        '在《节能装备高质量发展实施方案（2026—2028年）》已形成行业共识的基础上，本周讨论更多下沉到「如何把 IPLV/NPLV 与变频控制写进初设、如何用热泵承接园区供热与制冷协同」；设计单位与节能服务公司倾向打包「诊断—仿真—分期投运」，以降低高温机组长期低负荷运行带来的寄生电耗与验收争议。'
+        '4 月底至 5 月初，中央《关于更高水平更高质量做好节能降碳工作的意见》在地方与园区层面的「施工图」讨论继续走深：焦点落在工业园区「供热、制冷等基础设施共建共享」与「企业间能量交换与梯级利用」如何与存量锅炉替代、分时电价及绿电直连试点衔接；部分招标文件已要求单列热泵子系统边界条件与可核查节能量/降碳量测算附件，推动主机、自控与计量分包在同一技术条款下闭环。',
+        '甘肃省《「新源行动」实施方案》等将空气热能、太阳能、地热能等纳入城镇供热制冷清洁替代组合；宁夏回族自治区「十五五」规划纲要提出到 2030 年实现城区和县城清洁供热全覆盖并推广空气源热泵等分户清洁取暖——省级规划与中央表述同向，利好中温余热热泵与空气源调峰耦合、区域能源站与政策性资金拼盘（具体指标与适用范围以政府公报为准）。'
     ],
     domesticEn: [
-        'The General Offices of the CPC Central Committee and the State Council issued an Opinion on higher-level, higher-quality energy saving and carbon reduction (Apr 11, 2026), widely interpreted in late April; it tasks authorities to accelerate promotion of advanced equipment including high-temperature heat pumps, alongside efficient chillers, and ties this to shared park infrastructure and cascade energy exchange—helping list industrial and campus heat pumps in local retrofit portfolios.',
-        'With the MIIT-led Energy-Saving Equipment plan (2026–2028) already internalized, discourse shifts to embedding IPLV/NPLV and VFD logic in front-end design and aligning heat pumps with park-level heating–cooling synergy; designers and ESCOs increasingly bundle diagnosis, simulation, and phased commissioning to curb parasitic power and acceptance disputes from chronic part-load operation of high-temperature units.'
+        'From late April into early May, implementation talk on the Central Committee–State Council Opinion on higher-level energy saving and carbon reduction deepens for parks and local governments: shared heating–cooling infrastructure and inter-firm cascade energy exchange are being tied to boiler replacements, time-of-use tariffs, and green-power direct-supply pilots; some tenders now require explicit heat-pump boundary conditions plus auditable savings/carbon worksheets—pushing OEM, BMS, and metering scopes under one technical envelope.',
+        'Gansu’s “New Source Action” plan bundles air thermal, solar, and geothermal options for cleaner urban heating and cooling; Ningxia’s draft 15th Five-Year Plan targets full clean heating in urban built-up areas and counties by 2030 and promotes household air-source heat pumps—provincial plans align with central language and support mid-temperature waste-heat heat pumps paired with air-source peaking, district energy hubs, and blended public funding (verify metrics in official gazettes).'
     ],
     international: [
-        '欧盟委员会在「AccelerateEU」能源工具箱中提出降低热泵增值税、鼓励工业余热回收，并预告将就电力税费与电网收费提出立法动议；欧洲热泵协会（EHPA）肯定其对建筑、区域供热与工业电气化的导向，同时呼吁成员国尽快落地以降低「气电价格比」导致的投资犹豫。',
-        '意大利 Turboden 宣布在芬兰 Tervakoski 的 Delfort 纸厂投运其宣称的全球最大「产蒸汽」热泵，采用异丁烷工质，项目属约 5000 万欧元级能源转型投资的一部分并指向显著年度碳减排——为大型烃类工质蒸汽热泵的可靠性叙事、O&M 手册化与保险/融资尽调提供了新的公开案例锚点。'
+        '独立机构 Heat Pumps Watch 据 2026 年 4 月 15 日报道，基于欧盟新认证数据的统计显示丙烷（R290）在 2024 年欧洲住宅热泵新增认证中约占 38%；文章将走势置于修订版 F-gas 与 PFAS/HFO 大气降解物（如 TFA）监管预期之下，并提到 Copeland 与 Daikin 计划在 2026 年扩大既有合资、向欧洲户式热泵市场导入 R290 变频摆动转子压缩机——可燃工质整机安规、充注量与安装培训链同步承压。',
+        'Innomotics 于 2026 年 4 月 21 日披露，已获 Piller Blowers & Compressors 大额订单，为德国巴斯夫（BASF）路德维希港基地「全球最大级别工业热泵」之一配套交付多台水冷高压电机与中压变频器——凸显化工园区深度脱碳场景中电驱—压缩机—工艺热的长周期耦合，以及对部件交付窗口与谐波/电能质量条款的刚性要求。'
     ],
     internationalEn: [
-        'Under the Commission’s AccelerateEU toolbox, the EU flags reduced VAT on heat pumps, encourages industrial waste-heat recovery, and foreshadows legislative work on electricity taxes and network charges; EHPA welcomed the electrification signal for buildings, districts, and industry while urging rapid national rollout to ease investor hesitation driven by power-to-gas price gaps.',
-        'Turboden reports startup of what it calls the world’s largest steam-producing heat pump at Delfort’s Tervakoski paper mill in Finland, using isobutane in a roughly €50 million decarbonization envelope with major annual emissions cuts—a public anchor for reliability narratives, O&M standardization, and insurer/finance due diligence on large hydrocarbon steam systems.'
+        'On 15 Apr 2026, Heat Pumps Watch reported that EU certificate data show propane (R290) captured about 38% of new residential heat pump certifications in 2024; the piece links the shift to revised F-gas rules and PFAS/HFO concerns (e.g., atmospheric TFA), and notes Copeland and Daikin plan to expand their joint venture in 2026 to bring R290 inverter swing-rotary compressors to the European residential market—raising the bar for A3 safety, charge limits, and installer training.',
+        'On 21 Apr 2026, Innomotics announced a major order from Piller Blowers & Compressors to supply water-cooled HV motors and medium-voltage drives for one of the world’s largest industrial heat pumps at BASF Ludwigshafen—underscoring long-horizon coupling of electrified drives, compressors, and process heat in chemical-site decarbonization, plus tight delivery windows and power-quality clauses.'
     ],
     standards: [
-        '修订版欧盟 F-gas（EU）2024/573 下，空调与热泵维保对「原生高 GWP 工质」的限制在 2026 年进入业界执行与合同谈判窗口（与制冷设备时间表不同，EHPA 等指南有专门拆解）；出口交付与欧洲服务分包宜同步列明：回收/再生工质路径、检漏与再充注频次、替代工质兼容性，并对照 EN IEC 60335-2-40 等安规校核现场充注量、通风与可燃工质分区的一致性声明。'
+        '欧盟 F-gas 条例（EU）2024/573 要求欧盟委员会不晚于 2026 年 3 月 12 日以授权立法确立对含氟气体设备从事密封、维修、回收等作业人员的培训与认证最低要求；进入第 18 周后，跨国安装维保分包、多国证书互认与现场作业授权边界成为主机厂与服务商的合规盘点项，宜将 IEC 60335-2-40、EN 378 等与欧盟取证条款一并写入技术服务附件及责任矩阵。'
     ],
     standardsEn: [
-        'Under revised EU F-gas (EU) 2024/573, 2026 marks the industry contracting window for virgin high-GWP refrigerants in air-conditioning and heat pump servicing (distinct from refrigeration timelines; EHPA-style guides parse the split); export and EU subcontract dossiers should spell out reclaimed/recycled routes, leak-check and recharge cadence, fluid compatibility, and IEC 60335-2-40-type alignment on charge limits, ventilation, and flammable-refrigerant zoning declarations.'
+        'EU F-gas Regulation (EU) 2024/573 sets a 12 Mar 2026 deadline for Commission implementing acts on minimum training and certification requirements for personnel servicing F-gas equipment; from week 18 onward, cross-border maintenance packages are revisiting mutual recognition of certificates and on-site authorizations—map EU attestation rules alongside IEC 60335-2-40 and EN 378 in technical schedules and RACI matrices.'
     ],
     innovation: [
-        '创新叙事从「单机发布」转向「锅炉替代 + 可审计减碳」：芬兰纸厂级蒸汽热泵把异丁烷大容量热泵与工艺蒸汽需求直接对齐，对压缩机密封与振动、换热器防爆分区设计、部分负荷性能曲线标定与在线计量提出更高要求，亦为中资供应链在离心/螺杆主机、板换与边缘—云端智控上的差异化跟进留出空间。'
+        'Copeland 在 IIAR 2026 相关传播中宣布已将 SPH 的 ThermBooster 高温热泵推向北美市场供应，名义供热容量约 0.4–1.5MW、蒸汽温度可达约 180°C，工质路线覆盖烃类与其他低 GWP；公司计划在未来数季将 SPH 并入 Vilter 品牌线，与现有氨（R717）与二氧化碳（R744）工业热泵形成温度阶梯互补——全球头部压缩机企业正通过并购补齐非氨系中高温蒸汽段产品矩阵，并为现场「先 HFO、后烃类」的渐进切换保留压缩机设计裕度。'
     ],
     innovationEn: [
-        'The story moves from product launches to boiler replacement plus auditable decarbonization: Finland’s mill-scale steam heat pump aligns large isobutane heat pumps with process steam, raising the bar for compressor sealing and vibration, ATEX-scoped heat exchangers, part-load test disclosure, and metering—creating differentiation room for Chinese suppliers on screw/centrifugal packages, plate HX, and edge-to-cloud controls.'
+        'Around IIAR 2026, Copeland announced North American availability of SPH’s ThermBooster high-temperature heat pump, with nominal heating duty about 0.4–1.5MW and steam up to roughly 180°C using hydrocarbons or other low-GWP fluids; SPH is slated to fold into the Vilter brand over the next few quarters alongside existing R717 and R744 industrial lines—top-tier compressor houses are filling the mid–ultra-high temperature steam portfolio via M&A and compressor headroom for staged HFO-to-hydrocarbon transitions.'
     ],
     future: [
-        'ISH Shanghai & CIHE 2026（上海国际供热通风空调及舒适家居系统展览会）：法兰克福展览官方资料定位为 2026 年秋季、上海新国际博览中心，与 IGB 绿色建筑平台多个联展同期；热泵、舒适系统与楼宇节能仍是核心观展线，具体日程以 messefrankfurt.com 更新为准。',
-        'Chillventa 2026（德国纽伦堡国际制冷、空调、通风及热泵展）：偶数年举办，业界常见公布档期约 10 月 13–15 日 · 纽伦堡展览中心，覆盖制冷空调全产业链与热泵技术前沿，行前建议以 chillventa.de 最终公告为准。'
+        'ISH Shanghai & CIHE 2026：法兰克福展览仍将档期放在 2026 年秋季、上海新国际博览中心，常与「上海建筑设计博览会」等 IGB 系列展同期；供热空调、热泵两联供与楼宇智控仍是主线，建议行前在 messefrankfurt.com 核对最新日程与展馆分区。',
+        'Chillventa 2026：纽伦堡偶数年大展，业界日历多指向约 10 月 13–15 日；除整机与阀件外，天然工质压缩机、工业热泵系统论坛与欧洲服务资质话题通常集中出现，最终以 chillventa.de 公布为准。'
     ],
     futureEn: [
-        'ISH Shanghai & CIHE 2026 (Shanghai International Trade Fair for Heating, Ventilation, Air-conditioning & Home Comfort): Messe Frankfurt lists Autumn 2026 at Shanghai New International Expo Centre, alongside the IGB cluster—heat pumps and comfort systems remain core visit tracks; confirm dates on messefrankfurt.com.',
-        'Chillventa 2026 (refrigeration, AC, ventilation & heat pumps), Nuremberg: biennial; industry calendars commonly cite about Oct 13–15, 2026 at Messe Nürnberg—full supply-chain and HP technology coverage; verify final dates on chillventa.de before travel.'
+        'ISH Shanghai & CIHE 2026: Messe Frankfurt still targets Autumn 2026 at Shanghai New International Expo Centre, often co-located with IGB shows such as Shanghai Intelligent Building Technology—heating, AC, heat-pump dual-fuel kits, and smart-building stacks remain the main tracks; re-check halls and dates on messefrankfurt.com before travel.',
+        'Chillventa 2026, Nuremberg: the biennial flagship is widely penciled for about 13–15 Oct 2026; expect natural-refrigerant compressors, industrial heat pump forums, and EU service-qualification topics alongside components—confirm the program on chillventa.de.'
     ]
 };
 
