@@ -1074,6 +1074,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -4915,6 +4916,33 @@ html {
     scroll-margin-top: 5.5rem;
 }
 
+/* In-flow chapter label (same copy as TOC kickers); helps scanning between long articles */
+.knowledge-chapter-kicker {
+    display: block;
+    max-width: 980px;
+    margin: 0 auto 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--emerald-600);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--emerald-700);
+    line-height: 1.35;
+}
+
+.knowledge-article--1 > .container:first-child > .knowledge-chapter-kicker {
+    margin-top: 0.75rem;
+}
+
+.knowledge-chapter-kicker + .knowledge-section-title {
+    margin-top: 0;
+}
+
+.knowledge-chapter-kicker + .knowledge-article-heading {
+    margin-top: 0;
+}
+
 .knowledge-article-heading {
     max-width: 980px;
     margin: 0 auto 0.65rem;
@@ -5123,8 +5151,33 @@ html {
 }
 
 .knowledge-section--article2 {
-    padding-top: 2.5rem;
-    border-top: 1px solid var(--glass-border);
+    padding-top: 3.15rem;
+    border-top: 2px solid rgba(46, 125, 50, 0.2);
+    box-shadow: inset 0 4px 0 -1px rgba(8, 145, 178, 0.06);
+}
+
+/* Gradient rule between chapters; following section drops its own top border to avoid double dividers */
+.knowledge-chapter-rule {
+    border: 0;
+    display: block;
+    max-width: 980px;
+    width: min(980px, calc(100% - 2rem));
+    margin: 2.75rem auto 0;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(46, 125, 50, 0.32) 22%,
+        rgba(8, 145, 178, 0.26) 78%,
+        transparent 100%
+    );
+}
+
+.knowledge-chapter-rule + section.knowledge-section--article2 {
+    border-top: none;
+    box-shadow: none;
+    padding-top: 2rem;
 }
 
 .knowledge-article2-lede {
@@ -5155,6 +5208,18 @@ html {
     line-height: 1.75;
     font-size: 0.98rem;
     font-weight: 600;
+}
+
+.knowledge-disclaimer {
+    max-width: 980px;
+    margin: 0 auto 1.5rem;
+    padding: 0.85rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--text-light);
+    border-left: 3px solid rgba(46, 125, 50, 0.25);
+    background: rgba(15, 23, 42, 0.03);
+    border-radius: 0 var(--glass-radius-sm) var(--glass-radius-sm) 0;
 }
 
 .knowledge-memory--article2 {
