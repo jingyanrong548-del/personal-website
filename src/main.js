@@ -59,37 +59,41 @@ function refreshAppsFilterFromUI() {
 // 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
 const briefingData = {
     year: 2026,
-    week: 18,
-    updateDate: '2026-05-03',
-    subtitle: '园区节能降碳「施工图」细化；甘宁将空气热能/热泵写入清洁供热路径；欧元市场 R290 认证占比与化工基地巨型热泵并进；F-gas 人员取证细则对接服务合同；Copeland 推动 ThermBooster 北美供应与 Vilter 整合',
-    subtitleEn: 'Park retrofit playbooks sharpen; Gansu–Ningxia clean heat paths lift air-energy HPs; EU R290 certification share plus BASF mega-IHP; F-gas personnel certification in service contracts; Copeland scales ThermBooster in NA under Vilter roadmap',
+    week: 19,
+    updateDate: '2026-05-10',
+    subtitle: 'EHPA 通报欧洲十一国一季度热泵销量同比走强；美国 AHRI 三月热泵出货同比约 +9.8%；国内 HCFC-22 多联机淘汰路径征求意见收官；GB/T 10891-2025 施行；IIR 高温热泵技术简报与中意天然工质培训对话同日发酵',
+    subtitleEn: 'EHPA Q1 bulletin for 11 countries; AHRI March heat-pump shipments ~+9.8% YoY; China HCFC-22 VRF consultation closes; GB/T 10891-2025 in force; IIR HTHP brief plus Italy–China natural-refrigerant dialogue',
     domestic: [
-        '4 月底至 5 月初，中央《关于更高水平更高质量做好节能降碳工作的意见》在地方与园区层面的「施工图」讨论继续走深：焦点落在工业园区「供热、制冷等基础设施共建共享」与「企业间能量交换与梯级利用」如何与存量锅炉替代、分时电价及绿电直连试点衔接；部分招标文件已要求单列热泵子系统边界条件与可核查节能量/降碳量测算附件，推动主机、自控与计量分包在同一技术条款下闭环。',
-        '甘肃省《「新源行动」实施方案》等将空气热能、太阳能、地热能等纳入城镇供热制冷清洁替代组合；宁夏回族自治区「十五五」规划纲要提出到 2030 年实现城区和县城清洁供热全覆盖并推广空气源热泵等分户清洁取暖——省级规划与中央表述同向，利好中温余热热泵与空气源调峰耦合、区域能源站与政策性资金拼盘（具体指标与适用范围以政府公报为准）。'
+        '生态环境部《关于禁止生产以一氯二氟甲烷（HCFC-22）为制冷剂的多联式空调（热泵）机组产品的公告（征求意见稿）》征求意见已于 2026 年 4 月 30 日截止；编制说明衔接《中国履行〈关于消耗臭氧层物质的蒙特利尔议定书〉国家方案（2025—2030 年）》提出的工商制冷空调行业自 2027 年 1 月 1 日起禁止生产以 HCFCs 为制冷剂的多联机路径。主机厂与工程商宜跟踪正式公告与标准清单，提前梳理在产机型、售后冷媒与回收处置链条。',
+        '国家标准 GB/T 10891-2025《制冷系统及热泵 环境适应性要求》于 2026 年 5 月 1 日起实施，替代 GB/T 10891-1989，由全国冷冻空调设备标准化技术委员会（SAC/TC 238）归口；标准细化温湿度、腐蚀、振动等环境类别及试验方法。整机与关键部件型式试验报告、用户现场运行环境声明与质保条款建议按新版作一致性校核。'
     ],
     domesticEn: [
-        'From late April into early May, implementation talk on the Central Committee–State Council Opinion on higher-level energy saving and carbon reduction deepens for parks and local governments: shared heating–cooling infrastructure and inter-firm cascade energy exchange are being tied to boiler replacements, time-of-use tariffs, and green-power direct-supply pilots; some tenders now require explicit heat-pump boundary conditions plus auditable savings/carbon worksheets—pushing OEM, BMS, and metering scopes under one technical envelope.',
-        'Gansu’s “New Source Action” plan bundles air thermal, solar, and geothermal options for cleaner urban heating and cooling; Ningxia’s draft 15th Five-Year Plan targets full clean heating in urban built-up areas and counties by 2030 and promotes household air-source heat pumps—provincial plans align with central language and support mid-temperature waste-heat heat pumps paired with air-source peaking, district energy hubs, and blended public funding (verify metrics in official gazettes).'
+        'China MEE’s draft announcement to prohibit production of VRF/heat-pump units using HCFC-22 closed its public comment period on 30 Apr 2026; the explanatory note ties to the national Montreal Protocol implementation plan (2025–2030), including a 1 Jan 2027 ban on manufacturing VRF products using HCFCs as refrigerant in the RAC sector. OEMs and contractors should track the final text and standard lists and align production models, service refrigerants, and recovery logistics.',
+        'National standard GB/T 10891-2025 “Refrigerating systems and heat pumps—Environmental adaptability requirements” entered into force on 1 May 2026, replacing GB/T 10891-1989 under SAC/TC 238; it refines environmental classes (temperature/humidity, corrosion, vibration, etc.) and test methods. Re-check type-test reports, site environmental declarations, and warranty clauses for consistency with the new revision.'
     ],
     international: [
-        '独立机构 Heat Pumps Watch 据 2026 年 4 月 15 日报道，基于欧盟新认证数据的统计显示丙烷（R290）在 2024 年欧洲住宅热泵新增认证中约占 38%；文章将走势置于修订版 F-gas 与 PFAS/HFO 大气降解物（如 TFA）监管预期之下，并提到 Copeland 与 Daikin 计划在 2026 年扩大既有合资、向欧洲户式热泵市场导入 R290 变频摆动转子压缩机——可燃工质整机安规、充注量与安装培训链同步承压。',
-        'Innomotics 于 2026 年 4 月 21 日披露，已获 Piller Blowers & Compressors 大额订单，为德国巴斯夫（BASF）路德维希港基地「全球最大级别工业热泵」之一配套交付多台水冷高压电机与中压变频器——凸显化工园区深度脱碳场景中电驱—压缩机—工艺热的长周期耦合，以及对部件交付窗口与谐波/电能质量条款的刚性要求。'
+        '欧洲热泵协会（EHPA）2026 年 5 月 4 日新闻稿：统计口径内的 11 个欧洲国家在 2026 年一季度合计售出约 57.5 万台热泵，较 2025 年同期约 49.4 万台上升约 17%；其中法国、德国、波兰三国住宅热泵销量同比平均约 +25%，奥地利因补贴退坡下滑约 30%。稿中在解释需求驱动时一并提及能源价格与供应担忧等因素，各国分项与因果判断建议以 EHPA 原文及各国官方统计为准。',
+        '据 ACHR NEWS 2026 年 3 月 11 日报道转引美国空调供暖与制冷工业协会（AHRI）月度出货数据：2026 年 3 月热泵（不含空调）出货量约 41.99 万台，较 2025 年 3 月约 38.25 万台上升约 9.8%；同期热泵再次高于燃气暖风炉合计销量。文章同时指出经销商与安装商仍在制冷剂切换后库存与培训再平衡过程中，宜结合本地政策与供应链节奏评估短期波动。'
     ],
     internationalEn: [
-        'On 15 Apr 2026, Heat Pumps Watch reported that EU certificate data show propane (R290) captured about 38% of new residential heat pump certifications in 2024; the piece links the shift to revised F-gas rules and PFAS/HFO concerns (e.g., atmospheric TFA), and notes Copeland and Daikin plan to expand their joint venture in 2026 to bring R290 inverter swing-rotary compressors to the European residential market—raising the bar for A3 safety, charge limits, and installer training.',
-        'On 21 Apr 2026, Innomotics announced a major order from Piller Blowers & Compressors to supply water-cooled HV motors and medium-voltage drives for one of the world’s largest industrial heat pumps at BASF Ludwigshafen—underscoring long-horizon coupling of electrified drives, compressors, and process heat in chemical-site decarbonization, plus tight delivery windows and power-quality clauses.'
+        'In a 4 May 2026 press release, the European Heat Pump Association (EHPA) reported about 575,000 heat pumps sold in Q1 2026 across 11 European countries in its series, up about 17% from roughly 494,000 in Q1 2025; residential sales in France, Germany, and Poland averaged about +25% year-on-year, while Austria fell about 30% amid weaker subsidies. EHPA also links part of the demand swing to energy-price and supply concerns—verify country splits and causality in the original EHPA text and national statistics.',
+        'ACHR NEWS (11 Mar 2026) citing AHRI shipment data: March 2026 heat-pump-only shipments were about 419,917 units, up about 9.8% year-on-year from about 382,470 in March 2025, again outselling combined warm-air gas furnaces. The piece notes distributors and contractors are still normalizing inventories and training after the refrigerant transition—expect regional volatility against policy and supply-chain timing.'
     ],
     standards: [
-        '欧盟 F-gas 条例（EU）2024/573 要求欧盟委员会不晚于 2026 年 3 月 12 日以授权立法确立对含氟气体设备从事密封、维修、回收等作业人员的培训与认证最低要求；进入第 18 周后，跨国安装维保分包、多国证书互认与现场作业授权边界成为主机厂与服务商的合规盘点项，宜将 IEC 60335-2-40、EN 378 等与欧盟取证条款一并写入技术服务附件及责任矩阵。'
+        '欧盟 F-gas 条例（EU）2024/573 要求欧盟委员会不晚于 2026 年 3 月 12 日以授权立法确立对含氟气体设备从事密封、维修、回收等作业人员的培训与认证最低要求；进入第 19 周后，中英双语作业指导书、可燃气制冷剂附加培训模块与 OEM 现场授权链（MOP）仍是公对公审计与 EPC 合同附件的高频缺口，宜继续与 IEC 60335-2-40、EN 378 及欧盟取证条款在同一责任矩阵中对齐。',
+        '国家标准 GB/T 10891-2025 已随 5 月 1 日实施同步进入符合性评价窗口：与 GB/T 9237、产品专用安全标准及即将生效的制冷剂切换机型并列时，建议在出厂检验与现场调试记录中单列「环境类别—实测工况—合格判据」三联表，减少海外项目与内销项目对同一机组引用不同环境假设时的争议。'
     ],
     standardsEn: [
-        'EU F-gas Regulation (EU) 2024/573 sets a 12 Mar 2026 deadline for Commission implementing acts on minimum training and certification requirements for personnel servicing F-gas equipment; from week 18 onward, cross-border maintenance packages are revisiting mutual recognition of certificates and on-site authorizations—map EU attestation rules alongside IEC 60335-2-40 and EN 378 in technical schedules and RACI matrices.'
+        'EU F-gas (EU) 2024/573 sets a 12 Mar 2026 milestone for Commission implementing acts on minimum training/certification for personnel servicing F-gas equipment; in week 19, bilingual work instructions, add-on training for flammable refrigerants, and OEM method-of-permission chains remain common gaps in audits and EPC schedules—keep these aligned with IEC 60335-2-40, EN 378, and EU attestation clauses in one RACI matrix.',
+        'With GB/T 10891-2025 effective 1 May 2026, conformity reviews should treat environmental class, measured operating conditions, and pass/fail criteria explicitly—especially alongside GB/T 9237, product-specific safety standards, and refrigerant-transition model lines—to avoid disputes when export and domestic projects assume different environmental envelopes for the same unit.'
     ],
     innovation: [
-        'Copeland 在 IIAR 2026 相关传播中宣布已将 SPH 的 ThermBooster 高温热泵推向北美市场供应，名义供热容量约 0.4–1.5MW、蒸汽温度可达约 180°C，工质路线覆盖烃类与其他低 GWP；公司计划在未来数季将 SPH 并入 Vilter 品牌线，与现有氨（R717）与二氧化碳（R744）工业热泵形成温度阶梯互补——全球头部压缩机企业正通过并购补齐非氨系中高温蒸汽段产品矩阵，并为现场「先 HFO、后烃类」的渐进切换保留压缩机设计裕度。'
+        '据国际制冷学会（IIR）及行业媒体报道，IIR 于 2026 年 5 月前后发布《高温热泵》技术简报（Technical Brief），由上海交通大学王如竹教授团队与国际专家共同撰写；内容覆盖压缩式、吸收式及吸收—压缩混合高温热泵路线，并讨论 90–300℃ 商用谱系、储热耦合与电价/碳强度对经济性的影响——关键图表与边界条件请以 IIR Fridoc 发布的 PDF 为准。',
+        '据行业媒体 Refindustry 2026 年 5 月 4 日报道，中意机构与企业在罗马举行约三小时的技术与制度交流，议题涵盖天然制冷剂应用、热泵培训体系及中国制冷行业减排路径；意大利制冷技术人员协会（ATF）方面强调天然工质场景下安全能力更新与继续教育的战略意义。此类双边对话为后续认证互认与联合实训课程设计提供线索，具体落地以各自主管部门与行业协会通报为准。'
     ],
     innovationEn: [
-        'Around IIAR 2026, Copeland announced North American availability of SPH’s ThermBooster high-temperature heat pump, with nominal heating duty about 0.4–1.5MW and steam up to roughly 180°C using hydrocarbons or other low-GWP fluids; SPH is slated to fold into the Vilter brand over the next few quarters alongside existing R717 and R744 industrial lines—top-tier compressor houses are filling the mid–ultra-high temperature steam portfolio via M&A and compressor headroom for staged HFO-to-hydrocarbon transitions.'
+        'Industry outlets report that the International Institute of Refrigeration published a Technical Brief on high-temperature heat pumps around early May 2026, led by Prof. Ruzhu Wang (Shanghai Jiao Tong University) with an international author team; it surveys compression, absorption, and hybrid absorption–compression routes, commercial temperature spans up to roughly 300°C, thermal-storage coupling, and economics vs. power prices and grid carbon intensity—verify figures and boundaries in the IIR Fridoc PDF.',
+        'Refindustry (4 May 2026) covered a Rome meeting of Italian and Chinese institutions and firms on natural refrigerants, heat-pump training, and China’s RAC decarbonization pathway; Italy’s ATF highlighted upgrading technician competencies for natural-refrigerant systems. Treat outcomes as signals for future mutual recognition and joint curricula until national associations publish formal follow-ups.'
     ],
     future: [
         'ISH Shanghai & CIHE 2026：法兰克福展览仍将档期放在 2026 年秋季、上海新国际博览中心，常与「上海建筑设计博览会」等 IGB 系列展同期；供热空调、热泵两联供与楼宇智控仍是主线，建议行前在 messefrankfurt.com 核对最新日程与展馆分区。',
