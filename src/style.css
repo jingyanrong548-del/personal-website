@@ -5157,6 +5157,28 @@ html {
     font-size: 1.25rem;
 }
 
+/* CO₂ 篇「商业算账」：li 内含 <strong>+正文 时，整段作为 flex 子项换行才与首行对齐 */
+.knowledge-co2-biz-list.knowledge-list > li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-left: 0;
+}
+
+.knowledge-co2-biz-list.knowledge-list > li::before {
+    position: static;
+    flex: 0 0 auto;
+    margin-top: 0.12em;
+    line-height: 1.45;
+    top: auto;
+    left: auto;
+}
+
+.knowledge-co2-biz-list .knowledge-list-item-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 .knowledge-section-title {
     max-width: 980px;
     margin: 0 auto 1.25rem;
@@ -5440,13 +5462,16 @@ html {
 .knowledge-co2-arch-ol {
     max-width: 980px;
     margin: 0 auto 1rem;
-    padding-left: 1.35rem;
+    padding-left: 0;
+    padding-inline-start: 1.15rem;
+    list-style-position: outside;
     color: var(--text-light);
     line-height: 1.75;
 }
 
 .knowledge-co2-arch-ol li {
     margin-bottom: 0.65rem;
+    padding-left: 0.15rem;
 }
 
 .knowledge-co2-biz-list {
