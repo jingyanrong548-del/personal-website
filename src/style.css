@@ -5157,26 +5157,50 @@ html {
     font-size: 1.25rem;
 }
 
-/* CO₂ 篇「商业算账」：li 内含 <strong>+正文 时，整段作为 flex 子项换行才与首行对齐 */
+/* CO₂ 篇「商业算账」：网格固定「圆点列 + 正文列」，换行与首行左缘对齐 */
 .knowledge-co2-biz-list.knowledge-list > li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1.125rem 1fr;
+    column-gap: 0.45rem;
+    align-items: start;
     padding-left: 0;
 }
 
 .knowledge-co2-biz-list.knowledge-list > li::before {
+    content: '•';
     position: static;
-    flex: 0 0 auto;
-    margin-top: 0.12em;
+    grid-column: 1;
+    justify-self: center;
+    align-self: start;
+    margin-top: 0.1em;
     line-height: 1.45;
     top: auto;
     left: auto;
+    color: var(--emerald-600);
+    font-weight: 900;
+    font-size: 1.25rem;
 }
 
 .knowledge-co2-biz-list .knowledge-list-item-content {
-    flex: 1 1 auto;
+    grid-column: 2;
+    display: block;
     min-width: 0;
+}
+
+.knowledge-co2-biz-block {
+    max-width: 980px;
+    margin: 0 auto 1.5rem;
+}
+
+/* 引言首字与列表正文列左缘对齐（与 grid 第一列 + gap 等宽） */
+.knowledge-co2-biz-block > .knowledge-reason-text {
+    margin-bottom: 0.75rem;
+    padding-inline-start: 1.575rem;
+    box-sizing: border-box;
+}
+
+.knowledge-co2-biz-block .knowledge-co2-biz-list {
+    margin-bottom: 0;
 }
 
 .knowledge-section-title {
@@ -5459,29 +5483,61 @@ html {
     font-size: 1rem;
 }
 
-.knowledge-co2-arch-ol {
+.knowledge-co2-arch-block {
     max-width: 980px;
     margin: 0 auto 1rem;
-    padding-left: 0;
-    padding-inline-start: 1.15rem;
-    list-style-position: outside;
+}
+
+.knowledge-co2-arch-block > .knowledge-reason-text {
+    margin-bottom: 0.75rem;
+}
+
+.knowledge-co2-arch-ol {
+    list-style: none;
+    margin: 0 0 0.85rem;
+    padding: 0;
+    counter-reset: knowledge-co2-arch;
     color: var(--text-light);
     line-height: 1.75;
 }
 
-.knowledge-co2-arch-ol li {
+.knowledge-co2-arch-ol > li {
+    display: grid;
+    grid-template-columns: 1.65rem 1fr;
+    column-gap: 0.35rem;
+    align-items: start;
     margin-bottom: 0.65rem;
-    padding-left: 0.15rem;
+    counter-increment: knowledge-co2-arch;
+}
+
+.knowledge-co2-arch-ol > li:last-child {
+    margin-bottom: 0;
+}
+
+.knowledge-co2-arch-ol > li::before {
+    content: counter(knowledge-co2-arch) '.';
+    grid-column: 1;
+    justify-self: end;
+    align-self: start;
+    margin-top: 0.08em;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: var(--emerald-600);
+    line-height: 1.65;
+}
+
+.knowledge-co2-arch-ol .knowledge-list-item-content {
+    grid-column: 2;
+    display: block;
+    min-width: 0;
 }
 
 .knowledge-co2-biz-list {
-    max-width: 980px;
-    margin: 0 auto 1.5rem;
+    margin: 0;
 }
 
 .knowledge-co2-closing {
-    max-width: 980px;
-    margin: 0 auto 0.5rem;
+    margin: 0;
     font-weight: 600;
     color: var(--ink-900);
 }
