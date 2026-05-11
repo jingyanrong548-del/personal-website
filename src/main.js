@@ -1,6 +1,7 @@
 // Vercel Analytics
 import { inject } from '@vercel/analytics';
 import { translations, initLanguageSwitcher, getCurrentLanguage } from './i18n.js';
+import { initHomepageDisclaimerFooter } from './siteSectionDisclaimer.js';
 
 // Initialize Vercel Analytics
 inject();
@@ -272,7 +273,9 @@ document.addEventListener('DOMContentLoaded', function() {
             refreshAppsFilterFromUI();
         }
     });
-    
+
+    initHomepageDisclaimerFooter();
+
     // Version checking from GitHub is disabled to avoid 404 errors
     // Static versions are already defined in translations
     // Uncomment the line below if you want to enable GitHub version checking:

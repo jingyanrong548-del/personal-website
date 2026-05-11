@@ -1,4 +1,7 @@
 import { heatPumpStandardsData } from './data/heatPumpStandards.js';
+import { getHpStdEnglishFields } from './data/heatPumpStandardsTranslations.js';
+import { getHpStdCategoryLabel, hpStdCategorySearchText } from './heatPumpStandardsCategories.js';
+import { initHeatPumpStandardsPageDisclaimers } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
 
 function escapeHtml(s) {
@@ -26,6 +29,18 @@ function updateHpStdMeta(lang) {
     }
 }
 
+/** Stacked bilingual: primary = UI language, secondary = other language */
+function bilingualCell(textZh, textEn, lang) {
+    const en = (textEn || '').trim();
+    if (!en || en === String(textZh).trim()) {
+        return escapeHtml(textZh);
+    }
+    if (lang === 'en') {
+        return `<div class="hp-std-bilingual-primary">${escapeHtml(en)}</div><div class="hp-std-bilingual-secondary">${escapeHtml(textZh)}</div>`;
+    }
+    return `<div class="hp-std-bilingual-primary">${escapeHtml(textZh)}</div><div class="hp-std-bilingual-secondary">${escapeHtml(en)}</div>`;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('hpStdSearchInput');
     const categoryFilter = document.getElementById('hpStdCategoryFilter');
@@ -36,12 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    function populateCategories() {
+    function repopulateCategoryOptions(lang) {
+        while (categoryFilter.options.length > 1) {
+            categoryFilter.remove(1);
+        }
         const categories = [...new Set(heatPumpStandardsData.map((item) => item.category))].sort();
         categories.forEach((category) => {
             const option = document.createElement('option');
             option.value = category;
-            option.textContent = category;
+            option.textContent = getHpStdCategoryLabel(category, lang);
             categoryFilter.appendChild(option);
         });
     }
@@ -70,12 +88,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 row.classList.add('hp-std-row--upcoming');
             }
 
-            ['category', 'stdNumber', 'stdName', 'coreContent'].forEach((key) => {
+            const catEn = getHpStdCategoryLabel(item.category, 'en');
+            const catCell = bilingualCell(item.category, catEn, lang);
+            const enF = getHpStdEnglishFields(item.stdNumber) || {};
+            const titleCell = bilingualCell(item.stdName, enF.stdNameEn, lang);
+            const scopeCell = bilingualCell(item.coreContent, enF.coreContentEn, lang);
+            const cells = [
+                { html: catCell, className: 'hp-std-cell--bilingual' },
+                { html: escapeHtml(item.stdNumber), className: 'hp-std-std-number' },
+                { html: titleCell, className: 'hp-std-cell--bilingual' },
+                { html: scopeCell, className: 'hp-std-cell--bilingual' },
+            ];
+            cells.forEach(({ html, className }) => {
                 const td = document.createElement('td');
-                if (key === 'stdNumber') {
-                    td.className = 'hp-std-std-number';
-                }
-                td.innerHTML = escapeHtml(item[key]);
+                if (className) td.className = className;
+                td.innerHTML = html;
                 row.appendChild(td);
             });
             tableBody.appendChild(row);
@@ -86,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchText = searchInput.value.toLowerCase().trim();
         const category = categoryFilter.value;
         const latestOnly = latestOnlyToggle.checked;
+        const lang = getCurrentLanguage();
 
         let filtered = heatPumpStandardsData;
 
@@ -96,28 +124,34 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered = filtered.filter((item) => item.status === 'latest' || item.status === 'upcoming');
         }
         if (searchText) {
-            filtered = filtered.filter(
-                (item) =>
+            filtered = filtered.filter((item) => {
+                const catHay = hpStdCategorySearchText(item.category).toLowerCase();
+                const enF = getHpStdEnglishFields(item.stdNumber) || {};
+                const enHay = [enF.stdNameEn, enF.coreContentEn].filter(Boolean).join(' ').toLowerCase();
+                return (
                     item.stdNumber.toLowerCase().includes(searchText) ||
                     item.stdName.toLowerCase().includes(searchText) ||
                     item.coreContent.toLowerCase().includes(searchText) ||
-                    item.category.toLowerCase().includes(searchText)
-            );
+                    item.category.toLowerCase().includes(searchText) ||
+                    catHay.includes(searchText) ||
+                    enHay.includes(searchText)
+                );
+            });
         }
 
         renderTable(filtered);
     }
 
-    populateCategories();
-    renderTable(heatPumpStandardsData);
-
     searchInput.addEventListener('input', filterAndRender);
     categoryFilter.addEventListener('change', filterAndRender);
     latestOnlyToggle.addEventListener('change', filterAndRender);
 
+    initHeatPumpStandardsPageDisclaimers();
+
     initLanguageSwitcher({
         afterSet: (lang) => {
             updateHpStdMeta(lang);
+            repopulateCategoryOptions(lang);
             filterAndRender();
         },
     });
