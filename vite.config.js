@@ -23,6 +23,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'index.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
+        heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),
       },
       output: {
         assetFileNames: 'assets/[name].[hash].[ext]'

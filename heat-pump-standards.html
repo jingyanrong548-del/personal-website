@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Industrial heat pump standards — Quick reference</title>
+    <meta id="meta-page-title" name="title" content="Industrial heat pump standards — Quick reference">
+    <meta id="meta-page-description" name="description" content="Searchable quick reference of common industrial heat-pump related Chinese national and industry standards by category, with latest and upcoming highlights.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/heat-pump-standards.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/heat-pump-standards.html">
+    <meta id="meta-og-title" property="og:title" content="Industrial heat pump standards — Quick reference">
+    <meta id="meta-og-description" property="og:description" content="Searchable table of industrial heat-pump standards (Chinese titles); filter by category and status.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Industrial heat pump standards — Quick reference">
+    <meta id="meta-twitter-description" name="twitter:description" content="Searchable table of industrial heat-pump standards; filter by category and status.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/heatPumpStandards.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="./knowledge.html" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                    <li><a href="./heat-pump-standards.html" aria-current="page" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                    <li><a href="./#apps" data-i18n="nav.apps">Toolbox</a></li>
+                    <li><a href="./#briefings" data-i18n="nav.briefings">Industry Briefings</a></li>
+                    <li><a href="./#insights" data-i18n="nav.insights">Engineering Insights</a></li>
+                    <li><a href="./#about" data-i18n="nav.about">About</a></li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hp-std-page">
+        <header class="hp-std-hero">
+            <div class="container">
+                <div class="hp-std-hero-card">
+                    <p class="hp-std-kicker" data-i18n="hpStd.kicker">Industrial heat pumps · Standards quick reference</p>
+                    <h1 class="hp-std-title" data-i18n="hpStd.pageTitle">Industrial heat pump standards</h1>
+                    <p class="hp-std-lede" data-i18n="hpStd.lede">Filter and search GB/JB/NB and related norms used in industrial heat-pump work. Table rows are kept in Chinese as in the source compilation.</p>
+
+                    <div class="hp-std-controls" role="search" aria-label="Standards filter">
+                        <input type="search" id="hpStdSearchInput" class="hp-std-search" data-i18n-placeholder="hpStd.searchPlaceholder" placeholder="Search by number, title, or keywords…" autocomplete="off">
+                        <select id="hpStdCategoryFilter" class="hp-std-select" aria-label="Category">
+                            <option value="all" data-i18n="hpStd.filter.allCategories">All categories</option>
+                        </select>
+                        <label class="hp-std-toggle">
+                            <input type="checkbox" id="hpStdLatestOnlyToggle">
+                            <span data-i18n="hpStd.filter.latestOnly">Latest / upcoming only</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hp-std-section" aria-labelledby="hp-std-table-heading">
+            <div class="container">
+                <h2 id="hp-std-table-heading" class="u-visually-hidden" data-i18n="hpStd.table.caption">Standards table</h2>
+                <div class="hp-std-table-wrap">
+                    <table class="hp-std-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="hpStd.table.category">Category</th>
+                                <th scope="col" data-i18n="hpStd.table.stdNumber">Standard No.</th>
+                                <th scope="col" data-i18n="hpStd.table.stdName">Title</th>
+                                <th scope="col" data-i18n="hpStd.table.coreContent">Scope &amp; notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hpStdTableBody"></tbody>
+                    </table>
+                </div>
+                <footer class="hp-std-footnote">
+                    <p data-i18n="hpStd.footer.line">Data: industrial heat-pump standards compilation, updated 2026-05-11 · Editor: Jing Yanrong</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
