@@ -89,7 +89,7 @@ export function initHomepageDisclaimerFooter() {
     }
 }
 
-/** knowledge.html — footer only */
+/** knowledge.html & useful-links.html — footer only */
 export function initKnowledgePageDisclaimers() {
     if (!document.querySelector('main.knowledge-page')) return;
     if (hasDisclaimerRoot()) return;

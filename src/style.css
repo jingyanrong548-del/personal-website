@@ -2601,6 +2601,82 @@ body {
     margin-top: 0;
 }
 
+.apps-external-links {
+    margin-top: 2rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.apps-external-links .apps-zone-title {
+    margin-top: 0;
+}
+
+.apps-external-links-lede {
+    margin: 0 0 1.25rem 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--text-light);
+    max-width: 52rem;
+}
+
+.apps-external-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apps-external-links-item {
+    margin-bottom: 1.25rem;
+}
+
+.apps-external-links-item:last-child {
+    margin-bottom: 0.75rem;
+}
+
+.apps-external-links-anchor {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.apps-external-links-anchor:hover {
+    color: var(--emerald-800);
+}
+
+.apps-external-links-desc {
+    margin: 0.4rem 0 0 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-light);
+    max-width: 52rem;
+}
+
+.apps-external-links-disclaimer {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--text-lighter);
+    max-width: 52rem;
+}
+
+.apps-external-links--page {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.useful-links-section {
+    padding-top: 0.25rem;
+    padding-bottom: 2.5rem;
+}
+
+.useful-links-section .knowledge-section-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

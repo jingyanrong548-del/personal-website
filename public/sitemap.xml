@@ -20,6 +20,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Useful engineering links (OEM selection & data) -->
+  <url>
+    <loc>https://www.jingyanrong.com/useful-links.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
   <!-- Industrial heat pump standards quick reference -->
   <url>
     <loc>https://www.jingyanrong.com/heat-pump-standards.html</loc>
