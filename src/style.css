@@ -5454,6 +5454,23 @@ html {
     margin-right: auto;
 }
 
+.knowledge-co2-lifecycle-heading {
+    max-width: 980px;
+    margin: 0.35rem auto 0.85rem;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.45;
+    color: var(--ink-900);
+}
+
+.knowledge-co2-lifecycle-heading .knowledge-co2-lifecycle-scope {
+    display: inline-block;
+    margin-top: 0.2rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
 .knowledge-co2-figure {
     max-width: 980px;
     margin: 1.5rem auto 2rem;
