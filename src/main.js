@@ -264,6 +264,38 @@ function displayBriefing() {
     });
     const lastUpdateText = tPage['briefings.lastUpdate'] || tEn['briefings.lastUpdate'] || 'Last updated: ';
     timeElement.textContent = lastUpdateText + dateStr;
+
+    setBriefingExpanded(briefingExpanded);
+}
+
+let briefingExpanded = true;
+
+function setBriefingExpanded(expanded) {
+    briefingExpanded = expanded;
+    const btn = document.getElementById('briefing-read-more-btn');
+    const preview = document.getElementById('briefing-preview');
+    const full = document.getElementById('briefing-main-content');
+    if (!btn || !preview || !full) return;
+
+    const readMoreText = btn.querySelector('.read-more-text');
+    const readLessText = btn.querySelector('.read-less-text');
+    const readMoreIcon = btn.querySelector('.read-more-icon');
+
+    preview.classList.remove('u-hidden');
+
+    if (expanded) {
+        full.classList.remove('u-hidden');
+        if (readMoreText) readMoreText.classList.add('u-hidden');
+        if (readLessText) readLessText.classList.remove('u-hidden');
+        if (readMoreIcon) readMoreIcon.style.transform = 'rotate(180deg)';
+        btn.classList.add('expanded');
+    } else {
+        full.classList.add('u-hidden');
+        if (readMoreText) readMoreText.classList.remove('u-hidden');
+        if (readLessText) readLessText.classList.add('u-hidden');
+        if (readMoreIcon) readMoreIcon.style.transform = 'rotate(0deg)';
+        btn.classList.remove('expanded');
+    }
 }
 
 // Initialize briefings
@@ -885,31 +917,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const briefingReadMoreBtn = document.getElementById('briefing-read-more-btn');
     const briefingPreview = document.getElementById('briefing-preview');
     const briefingFull = document.getElementById('briefing-main-content');
-    const readMoreText = briefingReadMoreBtn?.querySelector('.read-more-text');
-    const readLessText = briefingReadMoreBtn?.querySelector('.read-less-text');
-    const readMoreIcon = briefingReadMoreBtn?.querySelector('.read-more-icon');
 
     if (briefingReadMoreBtn && briefingPreview && briefingFull) {
         briefingReadMoreBtn.addEventListener('click', function() {
-            const isExpanded = !briefingFull.classList.contains('u-hidden');
-            
-            if (isExpanded) {
-                // Collapse
-                briefingPreview.classList.remove('u-hidden');
-                briefingFull.classList.add('u-hidden');
-                if (readMoreText) readMoreText.classList.remove('u-hidden');
-                if (readLessText) readLessText.classList.add('u-hidden');
-                if (readMoreIcon) readMoreIcon.style.transform = 'rotate(0deg)';
-                briefingReadMoreBtn.classList.remove('expanded');
-            } else {
-                // Expand
-                briefingPreview.classList.add('u-hidden');
-                briefingFull.classList.remove('u-hidden');
-                if (readMoreText) readMoreText.classList.add('u-hidden');
-                if (readLessText) readLessText.classList.remove('u-hidden');
-                if (readMoreIcon) readMoreIcon.style.transform = 'rotate(180deg)';
-                briefingReadMoreBtn.classList.add('expanded');
-            }
+            setBriefingExpanded(!briefingExpanded);
         });
     }
 

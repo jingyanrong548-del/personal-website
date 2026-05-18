@@ -1365,8 +1365,9 @@ body {
     margin-bottom: 0;
 }
 
-.featured-insight-full {
-    display: none;
+.featured-insight-full:not(.u-hidden) {
+    display: block;
+    margin-top: 1.5rem;
 }
 
 .featured-insight-footer {
