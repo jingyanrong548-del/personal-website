@@ -38,7 +38,7 @@ export const translations = {
         'hpStd.table.caption': 'Standards table',
         'hpStd.table.bilingualNote': 'English lines follow common GB / IEC-style wording or concise technical English for engineering notes; always confirm against the signed Chinese publication or tender documents.',
         'hpStd.table.empty': 'No matching standards.',
-        'hpStd.footer.line': 'Data: industrial heat-pump standards compilation, updated 2026-05-11 · Editor: Jing Yanrong',
+        'hpStd.footer.line': 'Data: industrial heat-pump standards compilation, updated 2026-05-18 · Editor: Jing Yanrong',
 
         // Hero
         'hero.title': 'Jing Yanrong',
@@ -569,7 +569,7 @@ export const translations = {
         'hpStd.table.caption': '标准列表',
         'hpStd.table.bilingualNote': '英文行采用国标/IEC 常用英文题名或工程摘要；签约与执法适用仍以中文正式出版物及合同文本为准。',
         'hpStd.table.empty': '未找到匹配的标准',
-        'hpStd.footer.line': '数据来源：工业热泵标准整理（2026-05-11 更新）｜编制：荆炎荣',
+        'hpStd.footer.line': '数据来源：工业热泵标准整理（2026-05-18 更新）｜编制：荆炎荣',
 
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 物理可验证，拒绝空泛智能',

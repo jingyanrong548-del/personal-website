@@ -132,7 +132,12 @@ export const HP_STD_EN_BY_NUMBER = {
     'JB/T 15213-2025': {
         stdNameEn: 'Steam compression heat pump type steam generator units',
         coreContentEn:
-            'Published by MIIT; effective 2026-03-01. Refrigerant-neutral; covers types, technical requirements, test methods and energy limits for heat-pump steam generators under defined steam output and temperature conditions.',
+            'Published by MIIT; effective 2026-03-01. Refrigerant-neutral; covers types, technical requirements, test methods and energy limits for heat-pump steam generators under defined steam output and temperature conditions. A national standard with the same title is under approval (see “(submitted for approval / TBD) GB/T” row).',
+    },
+    '（报批稿/TBD）GB/T': {
+        stdNameEn: 'Vapor-compression heat pump type steam generator units (national standard, submitted for approval)',
+        coreContentEn:
+            'Chinese national standard, submitted-for-approval draft; SAC/TC238. First dedicated national standard in this product class. Final GB/T number not yet published. Scope extends beyond GB/T 25861-2023 water-source high-temperature heat pumps; normative references expanded (e.g. NB/T 47012 pressure vessels, GB 50041 boiler-house design). Proposed dual metrics: specific power per steam output (SP) plus COP. Distinct from published industry standard JB/T 15213-2025; confirm on std.samr.gov.cn. Source: 2nd China High-Temperature & Industrial Heat Pump Innovation Conference (May 2026).',
     },
     'GB 50235-2010': {
         stdNameEn: 'Code for construction of industrial metallic piping',
