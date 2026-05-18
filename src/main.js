@@ -46,63 +46,102 @@ function refreshAppsFilterFromUI() {
 
 // Manual Briefings Management
 // 手工输入的简报数据
-// 
+//
 // 更新简报步骤：
 // 1. 修改 year（年份）和 week（周数）
 // 2. 更新 updateDate（更新日期，格式：YYYY-MM-DD）
-// 3. 更新 subtitle 和 subtitleEn（可选，本周副标题/摘要，留空则不显示）
-// 4. 在 domestic 和 domesticEn 数组中分别添加或修改"国内动态"的中英文条目
-// 5. 在 international 和 internationalEn 数组中分别添加或修改"国外动态"的中英文条目
-// 6. 在 standards 和 standardsEn 数组中分别添加或修改"标准动态"的中英文条目
-// 7. 在 innovation 和 innovationEn 数组中分别添加或修改"技术创新"的中英文条目
-// 8. 在 future 和 futureEn 数组中分别添加或修改「即将来临的重要展会/行业会议」的中英文条目（以名称、时间、地点为主）
+// 3. 更新 subtitle / subtitleEn（可选，本周副标题，留空则不显示）
+// 4. 更新 highlights.zh / highlights.en（3–5 条要点，仅用于预览区）
+// 5. 在 sections 各板块的 items.zh / items.en 中维护正文（每板块建议 1–3 条）
+//    板块 id：policy | market | standards | technology | calendar
 //
-// 注意：每个数组项是一个字符串，会自动显示为列表项。中英文数组的条目数量应该对应。
+// 注意：中英文条目数量宜对应；数据请标注公开来源并以原文为准。
 const briefingData = {
     year: 2026,
-    week: 19,
-    updateDate: '2026-05-10',
-    subtitle: 'EHPA 通报欧洲十一国一季度热泵销量同比走强；美国 AHRI 三月热泵出货同比约 +9.8%；国内 HCFC-22 多联机淘汰路径征求意见收官；GB/T 10891-2025 施行；IIR 高温热泵技术简报与中意天然工质培训对话同日发酵',
-    subtitleEn: 'EHPA Q1 bulletin for 11 countries; AHRI March heat-pump shipments ~+9.8% YoY; China HCFC-22 VRF consultation closes; GB/T 10891-2025 in force; IIR HTHP brief plus Italy–China natural-refrigerant dialogue',
-    domestic: [
-        '生态环境部《关于禁止生产以一氯二氟甲烷（HCFC-22）为制冷剂的多联式空调（热泵）机组产品的公告（征求意见稿）》征求意见已于 2026 年 4 月 30 日截止；编制说明衔接《中国履行〈关于消耗臭氧层物质的蒙特利尔议定书〉国家方案（2025—2030 年）》提出的工商制冷空调行业自 2027 年 1 月 1 日起禁止生产以 HCFCs 为制冷剂的多联机路径。主机厂与工程商宜跟踪正式公告与标准清单，提前梳理在产机型、售后冷媒与回收处置链条。',
-        '国家标准 GB/T 10891-2025《制冷系统及热泵 环境适应性要求》于 2026 年 5 月 1 日起实施，替代 GB/T 10891-1989，由全国冷冻空调设备标准化技术委员会（SAC/TC 238）归口；标准细化温湿度、腐蚀、振动等环境类别及试验方法。整机与关键部件型式试验报告、用户现场运行环境声明与质保条款建议按新版作一致性校核。'
-    ],
-    domesticEn: [
-        'China MEE’s draft announcement to prohibit production of VRF/heat-pump units using HCFC-22 closed its public comment period on 30 Apr 2026; the explanatory note ties to the national Montreal Protocol implementation plan (2025–2030), including a 1 Jan 2027 ban on manufacturing VRF products using HCFCs as refrigerant in the RAC sector. OEMs and contractors should track the final text and standard lists and align production models, service refrigerants, and recovery logistics.',
-        'National standard GB/T 10891-2025 “Refrigerating systems and heat pumps—Environmental adaptability requirements” entered into force on 1 May 2026, replacing GB/T 10891-1989 under SAC/TC 238; it refines environmental classes (temperature/humidity, corrosion, vibration, etc.) and test methods. Re-check type-test reports, site environmental declarations, and warranty clauses for consistency with the new revision.'
-    ],
-    international: [
-        '欧洲热泵协会（EHPA）2026 年 5 月 4 日新闻稿：统计口径内的 11 个欧洲国家在 2026 年一季度合计售出约 57.5 万台热泵，较 2025 年同期约 49.4 万台上升约 17%；其中法国、德国、波兰三国住宅热泵销量同比平均约 +25%，奥地利因补贴退坡下滑约 30%。稿中在解释需求驱动时一并提及能源价格与供应担忧等因素，各国分项与因果判断建议以 EHPA 原文及各国官方统计为准。',
-        '据 ACHR NEWS 2026 年 3 月 11 日报道转引美国空调供暖与制冷工业协会（AHRI）月度出货数据：2026 年 3 月热泵（不含空调）出货量约 41.99 万台，较 2025 年 3 月约 38.25 万台上升约 9.8%；同期热泵再次高于燃气暖风炉合计销量。文章同时指出经销商与安装商仍在制冷剂切换后库存与培训再平衡过程中，宜结合本地政策与供应链节奏评估短期波动。'
-    ],
-    internationalEn: [
-        'In a 4 May 2026 press release, the European Heat Pump Association (EHPA) reported about 575,000 heat pumps sold in Q1 2026 across 11 European countries in its series, up about 17% from roughly 494,000 in Q1 2025; residential sales in France, Germany, and Poland averaged about +25% year-on-year, while Austria fell about 30% amid weaker subsidies. EHPA also links part of the demand swing to energy-price and supply concerns—verify country splits and causality in the original EHPA text and national statistics.',
-        'ACHR NEWS (11 Mar 2026) citing AHRI shipment data: March 2026 heat-pump-only shipments were about 419,917 units, up about 9.8% year-on-year from about 382,470 in March 2025, again outselling combined warm-air gas furnaces. The piece notes distributors and contractors are still normalizing inventories and training after the refrigerant transition—expect regional volatility against policy and supply-chain timing.'
-    ],
-    standards: [
-        '欧盟 F-gas 条例（EU）2024/573 要求欧盟委员会不晚于 2026 年 3 月 12 日以授权立法确立对含氟气体设备从事密封、维修、回收等作业人员的培训与认证最低要求；进入第 19 周后，中英双语作业指导书、可燃气制冷剂附加培训模块与 OEM 现场授权链（MOP）仍是公对公审计与 EPC 合同附件的高频缺口，宜继续与 IEC 60335-2-40、EN 378 及欧盟取证条款在同一责任矩阵中对齐。',
-        '国家标准 GB/T 10891-2025 已随 5 月 1 日实施同步进入符合性评价窗口：与 GB/T 9237、产品专用安全标准及即将生效的制冷剂切换机型并列时，建议在出厂检验与现场调试记录中单列「环境类别—实测工况—合格判据」三联表，减少海外项目与内销项目对同一机组引用不同环境假设时的争议。'
-    ],
-    standardsEn: [
-        'EU F-gas (EU) 2024/573 sets a 12 Mar 2026 milestone for Commission implementing acts on minimum training/certification for personnel servicing F-gas equipment; in week 19, bilingual work instructions, add-on training for flammable refrigerants, and OEM method-of-permission chains remain common gaps in audits and EPC schedules—keep these aligned with IEC 60335-2-40, EN 378, and EU attestation clauses in one RACI matrix.',
-        'With GB/T 10891-2025 effective 1 May 2026, conformity reviews should treat environmental class, measured operating conditions, and pass/fail criteria explicitly—especially alongside GB/T 9237, product-specific safety standards, and refrigerant-transition model lines—to avoid disputes when export and domestic projects assume different environmental envelopes for the same unit.'
-    ],
-    innovation: [
-        '据国际制冷学会（IIR）及行业媒体报道，IIR 于 2026 年 5 月前后发布《高温热泵》技术简报（Technical Brief），由上海交通大学王如竹教授团队与国际专家共同撰写；内容覆盖压缩式、吸收式及吸收—压缩混合高温热泵路线，并讨论 90–300℃ 商用谱系、储热耦合与电价/碳强度对经济性的影响——关键图表与边界条件请以 IIR Fridoc 发布的 PDF 为准。',
-        '据行业媒体 Refindustry 2026 年 5 月 4 日报道，中意机构与企业在罗马举行约三小时的技术与制度交流，议题涵盖天然制冷剂应用、热泵培训体系及中国制冷行业减排路径；意大利制冷技术人员协会（ATF）方面强调天然工质场景下安全能力更新与继续教育的战略意义。此类双边对话为后续认证互认与联合实训课程设计提供线索，具体落地以各自主管部门与行业协会通报为准。'
-    ],
-    innovationEn: [
-        'Industry outlets report that the International Institute of Refrigeration published a Technical Brief on high-temperature heat pumps around early May 2026, led by Prof. Ruzhu Wang (Shanghai Jiao Tong University) with an international author team; it surveys compression, absorption, and hybrid absorption–compression routes, commercial temperature spans up to roughly 300°C, thermal-storage coupling, and economics vs. power prices and grid carbon intensity—verify figures and boundaries in the IIR Fridoc PDF.',
-        'Refindustry (4 May 2026) covered a Rome meeting of Italian and Chinese institutions and firms on natural refrigerants, heat-pump training, and China’s RAC decarbonization pathway; Italy’s ATF highlighted upgrading technician competencies for natural-refrigerant systems. Treat outcomes as signals for future mutual recognition and joint curricula until national associations publish formal follow-ups.'
-    ],
-    future: [
-        'ISH Shanghai & CIHE 2026：法兰克福展览仍将档期放在 2026 年秋季、上海新国际博览中心，常与「上海建筑设计博览会」等 IGB 系列展同期；供热空调、热泵两联供与楼宇智控仍是主线，建议行前在 messefrankfurt.com 核对最新日程与展馆分区。',
-        'Chillventa 2026：纽伦堡偶数年大展，业界日历多指向约 10 月 13–15 日；除整机与阀件外，天然工质压缩机、工业热泵系统论坛与欧洲服务资质话题通常集中出现，最终以 chillventa.de 公布为准。'
-    ],
-    futureEn: [
-        'ISH Shanghai & CIHE 2026: Messe Frankfurt still targets Autumn 2026 at Shanghai New International Expo Centre, often co-located with IGB shows such as Shanghai Intelligent Building Technology—heating, AC, heat-pump dual-fuel kits, and smart-building stacks remain the main tracks; re-check halls and dates on messefrankfurt.com before travel.',
-        'Chillventa 2026, Nuremberg: the biennial flagship is widely penciled for about 13–15 Oct 2026; expect natural-refrigerant compressors, industrial heat pump forums, and EU service-qualification topics alongside components—confirm the program on chillventa.de.'
+    week: 20,
+    updateDate: '2026-05-17',
+    subtitle: '国内 5 月空调排产承压、铜价抬升成本；IEA《全球能源回顾 2026》披露 2025 年全球热泵销量区域分化；SKILLSAFE EU 推进 R290 安全实训与 Real Alternatives 平台合作；第 15 届 IEA 热泵大会 5 月 26 日维也纳开幕',
+    subtitleEn: 'China May AC production under pressure; IEA Global Energy Review 2026 regional heat-pump splits; SKILLSAFE EU × Real Alternatives on R290 training; 15th IEA Heat Pump Conference opens Vienna 26 May',
+    highlights: {
+        zh: [
+            '5 月家用空调总排产约 -11.7%、内销约 -8.6%，铜价同比约 +18.6% 挤压成本',
+            'IEA：2025 年全球热泵销量约 -2%，欧洲 +11%、美国约 -13%、中国大致持平',
+            'HCFC-22 多联机禁产路径进入执行准备，衔接 2027-01-01 节点',
+            'SKILLSAFE EU 与 Real Alternatives 合作推进 R290 热泵安全实训',
+            '第 15 届 IEA 热泵大会 5 月 26–29 日维也纳开幕'
+        ],
+        en: [
+            'May 2026 residential AC production ~-11.7% YoY; domestic schedule ~-8.6%; copper ~+18.6% YoY',
+            'IEA: 2025 global heat-pump sales ~-2%; Europe +11%; US ~-13%; China broadly flat',
+            'HCFC-22 VRF ban path: execution prep toward 1 Jan 2027 manufacturing cutoff',
+            'SKILLSAFE EU × Real Alternatives advancing R290 heat-pump safety training',
+            '15th IEA Heat Pump Conference, Vienna, 26–29 May 2026'
+        ]
+    },
+    sections: [
+        {
+            id: 'policy',
+            items: {
+                zh: [
+                    '生态环境部《关于禁止生产以一氯二氟甲烷（HCFC-22）为制冷剂的多联式空调（热泵）机组产品的公告（征求意见稿）》已于 2026 年 4 月 30 日完成征求意见；进入第 20 周，主机厂与工程商宜按《中国履行〈关于消耗臭氧层物质的蒙特利尔议定书〉国家方案（2025—2030 年）》提出的 2027 年 1 月 1 日起禁止生产以 HCFCs 为制冷剂的多联机路径，梳理在产机型清单、售后充注冷媒、回收处置与存量改造方案，并跟踪正式公告发布——行业替代技术已成熟，HCFC-22 在多联机中的用量占比已极低。',
+                    '欧盟 F-gas 条例（EU）2024/573 配套培训取证体系持续落地：Commission Implementing Regulation (EU) 2025/1893（2025 年 9 月 17 日发布）确立含氟气体移动设备等场景下从业人员培训证明的最低要求与互认条件；Commission Implementing Regulation (EU) 2025/1907 规范成员国培训计划通报格式。宜将上述要求与 A2L/R290 附加培训、OEM 现场授权链（MOP）及 IEC 60335-2-40、EN 378 纳入同一 RACI 矩阵，减少 EPC 与审计缺口。'
+                ],
+                en: [
+                    'China MEE’s draft ban on manufacturing VRF/heat-pump units using HCFC-22 closed public comment on 30 Apr 2026. In week 20, OEMs and contractors should prepare for the national Montreal Protocol plan path banning HCFC-based VRF production from 1 Jan 2027: align active model lists, service refrigerants, recovery logistics, and retrofit options, and watch for the final announcement—industry alternatives are already mature with negligible HCFC-22 share in VRF.',
+                    'EU F-gas (EU) 2024/573 training attestation continues to roll out: Implementing Regulation (EU) 2025/1893 (17 Sep 2025) sets minimum training-proof requirements and mutual recognition for certain mobile equipment with F-gases; Implementing Regulation (EU) 2025/1907 standardizes Member State programme notifications. Map these alongside A2L/R290 add-on training, OEM method-of-permission chains, IEC 60335-2-40, and EN 378 in one RACI matrix to close audit and EPC gaps.'
+                ]
+            }
+        },
+        {
+            id: 'market',
+            items: {
+                zh: [
+                    '据产业在线、中国家电网等公开报道，2026 年 5 月中国家用场景空调总排产约 2197.7 万台，同比下滑约 11.7%；其中内销排产同比下滑约 8.6%。铜价同比涨幅约 18.6%（由约 8.6 万元/吨升至约 10.2 万元/吨）直接推高制造成本，叠加房地产竣工疲软、国补退坡与渠道库存压力，终端涨价策略反馈冷淡。住宅热泵、两联供等细分品类排产需单独跟踪，不宜与全品类家用空调数据简单等同。',
+                    '国际能源署（IEA）《全球能源回顾 2026》热泵章节：2025 年全球热泵销量同比下滑约 2%。分区域：欧洲全年销量同比增长约 11%（2022 年以来首次增长，德国上半年约 +55%）；美国约 -13%（A2L 制冷剂切换、库存与新房开工放缓）；中国销量大致与 2024 年持平。该年度口径与 EHPA 2026 年一季度欧洲走强等指标存在时间尺度差异，区域分项与因果判断请以 IEA 原文为准。'
+                ],
+                en: [
+                    'Industry outlets (e.g. CHEAA, HVACR press) report May 2026 China residential-scene AC total production schedule at about 21.98 million units, down ~11.7% year-on-year, with domestic schedule down ~8.6%. Copper prices rose ~18.6% YoY (roughly 86k to 102k CNY/t), squeezing margins amid weak property completions, fading subsidies, and channel inventory. Track heat-pump and dual-fuel sub-segments separately—do not equate them with whole-category AC schedules.',
+                    'IEA Global Energy Review 2026 (heat pumps chapter): global sales fell about 2% in 2025. Europe rose ~11% (first growth since 2022; Germany H1 ~+55%); the United States fell ~13% (A2L transition, inventories, slower housing); China stayed broadly flat vs 2024. This annual lens differs from EHPA’s strong Q1 2026 Europe bulletin—verify regional splits in the IEA source text.'
+                ]
+            }
+        },
+        {
+            id: 'standards',
+            items: {
+                zh: [
+                    '国家标准 GB/T 10891-2025《制冷系统及热泵 环境适应性要求》自 2026 年 5 月 1 日施行后进入符合性评价窗口：建议在出厂检验、型式试验与现场调试记录中单列「环境类别—实测工况—合格判据」三联表，并与 GB/T 9237、产品专用安全标准及制冷剂切换机型并列校核，减少内销与出口项目对同一机组引用不同环境假设时的争议。'
+                ],
+                en: [
+                    'With GB/T 10891-2025 in force since 1 May 2026, conformity reviews should document environmental class, measured operating conditions, and pass/fail criteria explicitly in factory tests and commissioning records—alongside GB/T 9237, product safety standards, and refrigerant-transition lines—to avoid disputes when export and domestic projects assume different envelopes for the same unit.'
+                ]
+            }
+        },
+        {
+            id: 'technology',
+            items: {
+                zh: [
+                    'SKILLSAFE EU 项目（EHPA 牵头、欧盟共同资助）2026 年 4–5 月宣布与 Real Alternatives 培训计划战略合作：将 R290（丙烷）热泵安全教材纳入 Real Alternatives 多语言 e-learning 平台，并在荷兰、西班牙等地 LG 等设施开展安装商试点培训。项目目标是为可燃制冷剂热泵全生命周期提供统一安全指引，缓解欧洲各国培训标准碎片化问题。',
+                    'EHPA 2026 年 5 月公开「Heat pumps need people」议题及 SKILLS4HP 技能集群动态，指出安装商、规划师与技术人员短缺仍是热泵普及瓶颈；与 SKILLSAFE 的 R290 实训、各国继续教育体系形成「人力缺口—标准实训」闭环。工业高温热泵技术路线详见 IIR 第 61 号技术简报（第 19 周已报道）。'
+                ],
+                en: [
+                    'SKILLSAFE EU (EHPA-led, EU co-funded) announced a strategic partnership with Real Alternatives in Apr–May 2026: integrate R290 heat-pump safety materials into the multilingual Real Alternatives e-learning platform and run installer pilot trainings at facilities including LG sites in the Netherlands and Spain—addressing fragmented national safety rules for flammable refrigerants.',
+                    'EHPA’s May 2026 “Heat pumps need people” messaging and the SKILLS4HP cluster highlight installer, planner, and technician shortages as a key adoption bottleneck—complementing SKILLSAFE R290 pilots and national continuing-education systems. For industrial high-temperature heat pump technology, see the IIR Technical Brief No. 61 (covered in week 19).'
+                ]
+            }
+        },
+        {
+            id: 'calendar',
+            items: {
+                zh: [
+                    '第 15 届 IEA 热泵大会（15th IEA Heat Pump Conference）：2026 年 5 月 26–29 日，奥地利维也纳 Hofburg，主题「Decarbonisation through Innovation」；含主题演讲、科学报告、工作坊、示范项目参观与政策论坛。常规注册截至 5 月 15 日，议程与签证邀请函见 hpc2026.org。',
+                    'ISH Shanghai & CIHE 2026 仍计划 2026 年秋季于上海新国际博览中心举办（常与 IGB 系列展同期）；Chillventa 2026 纽伦堡业界日历多指向约 10 月 13–15 日。行前请分别在 messefrankfurt.com 与 chillventa.de 核对最新日程。'
+                ],
+                en: [
+                    '15th IEA Heat Pump Conference: 26–29 May 2026, Hofburg, Vienna, Austria—theme “Decarbonisation through Innovation”; keynotes, papers, workshops, site visits, and policy forum. Standard registration until 15 May; program and visa letters at hpc2026.org.',
+                    'ISH Shanghai & CIHE 2026 remains scheduled for Autumn 2026 at SNIEC (often with IGB co-located shows); Chillventa 2026 Nuremberg is widely penciled for about 13–15 Oct 2026. Re-check dates on messefrankfurt.com and chillventa.de before travel.'
+                ]
+            }
+        }
     ]
 };
 
@@ -119,108 +158,9 @@ function displayBriefing() {
     }
 
     const lang = getCurrentLanguage();
+    const isZh = lang === 'zh';
     const tPage = translations[lang] || translations.en;
-
-    // Update title（zh 若缺键则回退 en，避免 .replace 抛错）
-    const weekTemplate = tPage['briefings.weekTitle'] || translations.en['briefings.weekTitle'];
-    const weekTitle = String(weekTemplate)
-        .replace('{year}', briefingData.year)
-        .replace('{week}', briefingData.week);
-    titleElement.textContent = weekTitle;
-
-    // Update subtitle (optional)
-    if (subtitleElement) {
-        const subtitle = getCurrentLanguage() === 'zh' ? (briefingData.subtitle || '') : (briefingData.subtitleEn || '');
-        if (subtitle) {
-            subtitleElement.textContent = subtitle;
-            subtitleElement.classList.remove('u-hidden');
-        } else {
-            subtitleElement.classList.add('u-hidden');
-        }
-    }
-
-    // Select content based on current language
-    const domesticItems = getCurrentLanguage() === 'zh' ? briefingData.domestic : briefingData.domesticEn;
-    const internationalItems = getCurrentLanguage() === 'zh' ? briefingData.international : briefingData.internationalEn;
-    const standardsItems = getCurrentLanguage() === 'zh' ? briefingData.standards : briefingData.standardsEn;
-    const innovationItems = getCurrentLanguage() === 'zh' ? briefingData.innovation : briefingData.innovationEn;
-    const futureItems = getCurrentLanguage() === 'zh' ? briefingData.future : briefingData.futureEn;
-    
-    // Build full content HTML
-    let fullHtml = '';
-    
-    // Domestic section
-    fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.domestic.title">${tPage['briefings.domestic.title'] || translations.en['briefings.domestic.title']}</h4>
-        <ul class="briefing-list">`;
-    domesticItems.forEach(item => {
-        fullHtml += `<li class="briefing-item">${item}</li>`;
-    });
-    fullHtml += `</ul></div>`;
-
-    // International section
-    fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.international.title">${tPage['briefings.international.title'] || translations.en['briefings.international.title']}</h4>
-        <ul class="briefing-list">`;
-    internationalItems.forEach(item => {
-        fullHtml += `<li class="briefing-item">${item}</li>`;
-    });
-    fullHtml += `</ul></div>`;
-
-    // Standards & Innovation: one parent title, two sub-blocks for readability
-    const hasStdInv = standardsItems.length > 0 || innovationItems.length > 0;
-    if (hasStdInv) {
-        fullHtml += `<div class="briefing-section briefing-section--stdinv">
-            <h4 class="briefing-section-title" data-i18n="briefings.standardsInnovation.title">${tPage['briefings.standardsInnovation.title'] || translations.en['briefings.standardsInnovation.title']}</h4>`;
-        if (standardsItems.length > 0) {
-            fullHtml += `<div class="briefing-subsection">
-                <h5 class="briefing-subsection-title" data-i18n="briefings.standards.title">${tPage['briefings.standards.title'] || translations.en['briefings.standards.title']}</h5>
-                <ul class="briefing-list">`;
-            standardsItems.forEach(item => {
-                fullHtml += `<li class="briefing-item">${item}</li>`;
-            });
-            fullHtml += `</ul></div>`;
-        }
-        if (innovationItems.length > 0) {
-            fullHtml += `<div class="briefing-subsection">
-                <h5 class="briefing-subsection-title" data-i18n="briefings.innovation.title">${tPage['briefings.innovation.title'] || translations.en['briefings.innovation.title']}</h5>
-                <ul class="briefing-list">`;
-            innovationItems.forEach(item => {
-                fullHtml += `<li class="briefing-item">${item}</li>`;
-            });
-            fullHtml += `</ul></div>`;
-        }
-        fullHtml += `</div>`;
-    }
-
-    // Future events section
-    fullHtml += `<div class="briefing-section">
-        <h4 class="briefing-section-title" data-i18n="briefings.future.title">${tPage['briefings.future.title'] || translations.en['briefings.future.title']}</h4>
-        <ul class="briefing-list">`;
-    futureItems.forEach(item => {
-        fullHtml += `<li class="briefing-item">${item}</li>`;
-    });
-    fullHtml += `</ul></div>`;
-
-    contentElement.innerHTML = fullHtml;
-
-    // Preview: 与全文同口径的完整段落，不做字数截断（避免末尾被「…」裁掉）
-    const tBrief = tPage;
-    const previewBlocks = [];
-
-    const pushSectionItems = (items, titleKey) => {
-        const title = tBrief[titleKey] || translations.en[titleKey];
-        items.forEach((text, idx) => {
-            const label = items.length > 1 ? `${title}（${idx + 1}/${items.length}）` : title;
-            previewBlocks.push({ label, text });
-        });
-    };
-
-    pushSectionItems(domesticItems, 'briefings.domestic.title');
-    pushSectionItems(internationalItems, 'briefings.international.title');
-    pushSectionItems(standardsItems, 'briefings.standards.title');
-    pushSectionItems(innovationItems, 'briefings.innovation.title');
-    pushSectionItems(futureItems, 'briefings.future.title');
+    const tEn = translations.en;
 
     const escapeBriefHtml = (s) => {
         if (!s) return '';
@@ -231,22 +171,98 @@ function displayBriefing() {
             .replace(/"/g, '&quot;');
     };
 
-    let previewHtml = '<ul class="briefing-preview-list">';
-    previewBlocks.forEach(({ label, text }) => {
-        previewHtml += `<li class="briefing-preview-item"><span class="briefing-preview-label">${escapeBriefHtml(label)}</span><span class="briefing-preview-snippet">${escapeBriefHtml(text)}</span></li>`;
+    const sectionTitle = (sectionId) =>
+        tPage[`briefings.sections.${sectionId}`] || tEn[`briefings.sections.${sectionId}`] || sectionId;
+
+    const getSectionItems = (section) => {
+        const items = section.items || {};
+        return isZh ? (items.zh || []) : (items.en || []);
+    };
+
+    // Update title
+    const weekTemplate = tPage['briefings.weekTitle'] || tEn['briefings.weekTitle'];
+    titleElement.textContent = String(weekTemplate)
+        .replace('{year}', briefingData.year)
+        .replace('{week}', briefingData.week);
+
+    // Update subtitle (optional)
+    if (subtitleElement) {
+        const subtitle = isZh ? (briefingData.subtitle || '') : (briefingData.subtitleEn || '');
+        if (subtitle) {
+            subtitleElement.textContent = subtitle;
+            subtitleElement.classList.remove('u-hidden');
+        } else {
+            subtitleElement.classList.add('u-hidden');
+        }
+    }
+
+    const sections = briefingData.sections || [];
+
+    // Build full content HTML (five thematic sections)
+    let fullHtml = '';
+    sections.forEach((section) => {
+        const items = getSectionItems(section);
+        if (items.length === 0) return;
+        const title = sectionTitle(section.id);
+        fullHtml += `<div class="briefing-section briefing-section--${escapeBriefHtml(section.id)}">
+        <h4 class="briefing-section-title">${escapeBriefHtml(title)}</h4>
+        <ul class="briefing-list">`;
+        items.forEach((item) => {
+            fullHtml += `<li class="briefing-item">${escapeBriefHtml(item)}</li>`;
+        });
+        fullHtml += `</ul></div>`;
+    });
+    contentElement.innerHTML = fullHtml;
+
+    // Preview: highlights only (fallback to first sentence of each section)
+    const highlights = isZh
+        ? (briefingData.highlights?.zh || [])
+        : (briefingData.highlights?.en || []);
+
+    let previewItems = highlights;
+    if (previewItems.length === 0) {
+        previewItems = sections.flatMap((section) => {
+            const items = getSectionItems(section);
+            if (items.length === 0) return [];
+            const text = items[0];
+            const dot = text.indexOf('。');
+            const period = text.indexOf('. ');
+            let cut = -1;
+            if (dot > 0 && period > 0) cut = Math.min(dot, period);
+            else if (dot > 0) cut = dot;
+            else if (period > 0) cut = period;
+            const snippet = cut > 0 ? text.slice(0, cut + 1) : text;
+            return [snippet];
+        });
+    }
+
+    const highlightsTitle =
+        tPage['briefings.highlights.title'] || tEn['briefings.highlights.title'] || '';
+    const previewNote =
+        tPage['briefings.previewNote'] || tEn['briefings.previewNote'] || '';
+
+    let previewHtml = '';
+    if (previewNote) {
+        previewHtml += `<p class="briefing-preview-note">${escapeBriefHtml(previewNote)}</p>`;
+    }
+    if (highlightsTitle) {
+        previewHtml += `<p class="briefing-preview-heading">${escapeBriefHtml(highlightsTitle)}</p>`;
+    }
+    previewHtml += '<ul class="briefing-preview-list briefing-preview-list--highlights">';
+    previewItems.forEach((text) => {
+        previewHtml += `<li class="briefing-preview-item briefing-preview-item--highlight">${escapeBriefHtml(text)}</li>`;
     });
     previewHtml += '</ul>';
-
     previewElement.innerHTML = previewHtml;
 
     // Format update date
     const updateDate = new Date(briefingData.updateDate);
-    const dateStr = updateDate.toLocaleDateString(getCurrentLanguage() === 'zh' ? 'zh-CN' : 'en-US', {
+    const dateStr = updateDate.toLocaleDateString(isZh ? 'zh-CN' : 'en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     });
-    const lastUpdateText = tPage['briefings.lastUpdate'] || translations.en['briefings.lastUpdate'] || 'Last updated: ';
+    const lastUpdateText = tPage['briefings.lastUpdate'] || tEn['briefings.lastUpdate'] || 'Last updated: ';
     timeElement.textContent = lastUpdateText + dateStr;
 }
 

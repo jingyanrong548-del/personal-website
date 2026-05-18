@@ -1339,6 +1339,32 @@ body {
     margin-bottom: 0;
 }
 
+.briefing-preview-note {
+    font-size: 0.8125rem;
+    color: var(--text-light);
+    margin: 0 0 0.75rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.briefing-preview-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    margin: 0 0 0.65rem;
+    letter-spacing: 0.02em;
+}
+
+.briefing-preview-list--highlights .briefing-preview-item--highlight {
+    margin-bottom: 0.65rem;
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
+.briefing-preview-list--highlights .briefing-preview-item--highlight:last-child {
+    margin-bottom: 0;
+}
+
 .featured-insight-full {
     display: none;
 }
@@ -1430,12 +1456,31 @@ body {
     margin-bottom: 1.5rem;
 }
 
+#briefing-main-content .briefing-section {
+    margin-bottom: 2rem;
+    padding-left: 0.85rem;
+    border-left: 3px solid var(--emerald-200);
+}
+
+#briefing-main-content .briefing-section:last-child {
+    margin-bottom: 0;
+}
+
 .briefing-section {
     margin-bottom: 2.5rem;
 }
 
 .briefing-section:last-child {
     margin-bottom: 0;
+}
+
+#briefing-main-content .briefing-section-title {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    margin-bottom: 0.85rem;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .briefing-section-title {
@@ -1445,25 +1490,6 @@ body {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--emerald-100);
-}
-
-/* 标准与创新：总标题下分子板块 */
-.briefing-section--stdinv .briefing-subsection {
-    margin-bottom: 1.5rem;
-}
-
-.briefing-section--stdinv .briefing-subsection:last-child {
-    margin-bottom: 0;
-}
-
-.briefing-subsection-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-color);
-    margin: 0 0 0.65rem;
-    padding-left: 0.5rem;
-    border-left: 3px solid var(--emerald-500);
-    line-height: 1.4;
 }
 
 .exhibition-trends-body .briefing-section-title {
