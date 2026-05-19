@@ -1,5 +1,5 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
-import { initKnowledgePageDisclaimers } from './siteSectionDisclaimer.js';
+import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     initLanguageSwitcher({ afterSet: updateKnowledgeMeta });
-    initKnowledgePageDisclaimers();
+    initSiteLegalDisclaimer();
     initNavChipHighlight();
 });
 

@@ -1,5 +1,5 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
-import { initKnowledgePageDisclaimers } from './siteSectionDisclaimer.js';
+import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 
 function updateUsefulLinksMeta(lang) {
@@ -20,6 +20,6 @@ function updateUsefulLinksMeta(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher({ afterSet: updateUsefulLinksMeta });
-    initKnowledgePageDisclaimers();
+    initSiteLegalDisclaimer();
     initNavChipHighlight();
 });

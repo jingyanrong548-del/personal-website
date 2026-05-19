@@ -71,7 +71,6 @@ export const translations = {
         'hpPolicy.table.row6.date': '2025',
         'hpPolicy.table.row6.domain': 'Refrigerants, natural working fluids',
         'hpPolicy.table.row6.summary': 'Tightens quotas on high-GWP fluorinated refrigerants, accelerating natural-fluid (CO₂/R290) technology upgrades.',
-        'hpPolicy.disclaimer': 'This page is an engineering orientation map compiled from public policy summaries, not legal counsel. Verify effective dates and applicability against primary sources before binding decisions.',
         'hpPolicy.deep1.title': '1. Technology & equipment direction (R&D and innovation)',
         'hpPolicy.deep1.lede': 'Policy emphasis has shifted from broad “promotion” toward high-quality, high-efficiency, high-temperature supply.',
         'hpPolicy.deep1.item1': '<strong>High-temperature breakthrough:</strong> National policy explicitly supports breaking high-temperature heat pump barriers, especially for industrial heat in the <strong>100–200&nbsp;°C</strong> range—policy backing for high-temperature compressor and system suppliers.',
@@ -246,7 +245,6 @@ export const translations = {
         'apps.invitation.passwordPlaceholder': 'Password',
         'apps.invitation.unlock': 'Unlock',
         'apps.invitation.wrongPassword': 'Incorrect password',
-        'apps.invitation.disclaimer': 'Note: The public toolbox is free and open-source for industry benefit. This password-protected area covers highly complex, non-standard commercial calculations (e.g., ultra-low-temperature helium compression, MVR, ORC expanders, extreme-cold cascade systems) and is open only to deeply engaged consulting clients. For advanced technical diagnostics or system assessments, please contact me via the email in the footer to request access.',
         'apps.filter.empty': 'No tools in this category with the current view.',
         'apps.oemLinks.title': 'Vendor selection & data (external)',
         'apps.oemLinks.lede': 'Official OEM web tools for compressor selection and published performance data—use alongside your own verification.',
@@ -258,12 +256,6 @@ export const translations = {
         'apps.oemLinks.bitzer.desc': 'Bitzer’s official WEBsoftware portal with China region/language parameters—software downloads, selection tools, and documentation hub.',
         'apps.oemLinks.bock.label': 'Bock VAP — transcritical CO₂ semi-hermetics',
         'apps.oemLinks.bock.desc': 'Bock’s online stationary-application performance database (VAP); this deep link opens the transcritical CO₂ semi-hermetic compressor family (e.g. HG CO₂ T)—navigate from there for other refrigerants and ranges.',
-        'apps.oemLinks.disclaimer': 'Third-party sites: availability, licensing, and accuracy are governed by each manufacturer; this site does not endorse or warrant their content.',
-        
-        // Disclaimer
-        'disclaimer.title': 'Disclaimer',
-        'disclaimer.text1': 'All applications are provided for personal research, educational, and public benefit purposes only on a non-commercial, free-to-use basis. For commercial use, please contact me in advance to obtain authorization.',
-        'disclaimer.text2': 'Tools are provided "as is" without warranty of any kind. Use at your own risk.',
         
         // Contact
         'contact.title': 'Contact',
@@ -402,7 +394,6 @@ export const translations = {
         'briefings.annex68.task2.bullet2': 'Core logic: The framing moves beyond “selling a box” toward thermal coupling between heat pumps and process units—e.g., reboilers at column bottoms, sludge dryers, and dyeing machines. At the Feb 2026 Copenhagen HTHP symposium, parallel sector workshops (chemicals via Fraunhofer IEG, pulp & paper via DLR, textiles via DTI) gathered end users, suppliers, and researchers; Project 68 states those insights feed directly into Task 1 and Task 2.',
         'briefings.annex68.task3.title': 'Task 3: Education & skills (Skills4HP)',
         'briefings.annex68.task3.bullet1': 'The Skills4HP cluster for installation and O&M personnel is underway—recognizing that breakthrough technology still needs qualified teams in the field. New Zealand joined Project 68 as a limited sponsor (IEA HPT news, 27 Jan 2026), adding potential for case and training exchange in the Southern Hemisphere—confirm details on the official Project 68 site.',
-        'briefings.annex68.disclaimer': 'This is a non-official summary of publicly reported task progress and does not represent the position of the IEA or its Implementing Agreements.',
         'briefings.annex68.learnMore': 'IEA Heat Pumping Technologies TCP (official site)',
         
         // About section additional
@@ -607,7 +598,6 @@ export const translations = {
         'knowledge.article4.eu.text': 'Since 2015, Regulation (EU) No <strong>517/2014</strong> (the EU “F-Gas Regulation”) has used quotas, service bans, and product bans to drive high-GWP fluids out of many new stationary applications; <strong>revision packages</strong> after 2022 aim to tighten leakage control and phase-down trajectories—check the <strong>currently consolidated</strong> EU text before quoting deadlines. Separately, <strong>REACH</strong> and EU-wide PFAS restriction debates add long-term chemistry risk for some organofluorine substances—not identical to F-Gas law, but relevant when choosing a 15-year fluid strategy. <strong>United Kingdom:</strong> after Brexit, UK F-Gas rules <strong>parallel but are not identical</strong> to the EU—treat the UK as its own compliance box for imports and service fleets.',
         'knowledge.article4.us.title': 'United States: AIM Act phasedown + SNAP + state overlays (2020s)',
         'knowledge.article4.us.text': 'The <strong>American Innovation and Manufacturing (AIM) Act of 2020</strong> directs EPA to phasedown HFC production and consumption on schedules aligned with U.S. Kigali obligations; read EPA rules together with <strong>SNAP</strong> listings that accept or delist substitutes for specific end-uses. <strong>California</strong> and a handful of other states can move faster than federal minimums—equipment lines sold “for the U.S.” often need <strong>federal plus strictest-state</strong> compliance thinking, not a single national sticker date.',
-        'knowledge.article4.disclaimer': 'This page is engineering communication, not legal counsel. Refrigerant rules change with statutes, agency rules, and court interpretations—verify dates, annexes, and product categories against primary sources (e.g. MEE/SEPA, EU Official Journal, EPA) before binding decisions.',
         'knowledge.article4.memory.title': 'One-sentence memory',
         'knowledge.article4.memory.text': 'Physics picks what can work; <strong>the market you ship to</strong> picks what may be sold and serviced—map Kigali first, then national and state instruments, then your safety case.',
         'knowledge.article4.faq.title': 'Refrigerant policy: quick FAQs',
@@ -687,7 +677,6 @@ export const translations = {
         'hpPolicy.table.row6.date': '2025年',
         'hpPolicy.table.row6.domain': '制冷剂、天然工质',
         'hpPolicy.table.row6.summary': '对高 GWP 氟利昂严控配额，倒逼天然工质（CO₂/R290）技术升级。',
-        'hpPolicy.disclaimer': '本页为基于公开政策资料的工程梳理与解读，不构成法律意见；签约与合规适用请以主管部门现行有效文本为准。',
         'hpPolicy.deep1.title': '1. 产业技术与装备导向（支撑研发创新）',
         'hpPolicy.deep1.lede': '政策重心已从早期的「推广」转向「高质量、高效、高温度」的精细化供给。',
         'hpPolicy.deep1.item1': '<strong>高温突破：</strong>国家明确支持突破高温热泵的技术壁垒，特别是针对工业用热需求（<strong>100–200&nbsp;℃</strong>），为高温压缩机与系统供应商布局高温技术提供政策底气。',
@@ -855,7 +844,6 @@ export const translations = {
         'apps.invitation.passwordPlaceholder': '请输入密码',
         'apps.invitation.unlock': '解锁',
         'apps.invitation.wrongPassword': '密码错误',
-        'apps.invitation.disclaimer': '注：公共工具区为行业公益免费开源。本密码区域涉及极其复杂的非标系统商业测算（如超低温氦气压缩、MVR、ORC膨胀机、极寒复叠系统等），仅面向深度合作的咨询客户开放。如需高端技术诊断或系统评估，请通过底部邮箱联系获取授权。',
         'apps.filter.empty': '当前分类下没有可见工具（请切换分类或解锁邀请区）。',
         'apps.oemLinks.title': '常用厂商选型与数据（外链）',
         'apps.oemLinks.lede': '以下为压缩机厂商官方网页选型或在线性能数据入口，便于与样本册、试验及现场数据交叉验证后使用。',
@@ -867,10 +855,6 @@ export const translations = {
         'apps.oemLinks.bitzer.desc': '德国 Bitzer 官网 WEBsoftware 入口（链接含中文区域参数）：选型软件、下载与文档等资源汇总。',
         'apps.oemLinks.bock.label': 'Bock VAP — CO₂ 跨临界半封活塞',
         'apps.oemLinks.bock.desc': 'Bock 固定式应用在线性能数据（VAP）；当前链接直达 CO₂ 跨临界半封活塞压缩机产品族（如 HG CO₂ T 系列），可在站内导航切换其他工质与排量档。',
-        'apps.oemLinks.disclaimer': '第三方网站的服务条款、可用性与数据准确性由各厂商负责；本站仅作工程便利索引，不作背书或担保。',
-        'disclaimer.title': '免责声明',
-        'disclaimer.text1': '所有应用仅供个人研究、教育和公益目的使用，以非商业、免费方式提供。如用于商业用途，请事先联系获得授权。',
-        'disclaimer.text2': '工具按"现状"提供，不提供任何形式的保证，使用风险自负。',
         'contact.title': '联系方式',
         'contact.email': '邮箱',
         'contact.wechat': '联系方式',
@@ -998,7 +982,6 @@ export const translations = {
         'briefings.annex68.task2.bullet2': '核心逻辑：由过去「卖单机」转向研究热泵与工艺过程（如精馏塔底再沸器、污泥干化机、染色机）的热力耦合。哥本哈根 HTHP 2026 次日平行研讨会由 Fraunhofer IEG、DLR、DTI 等分别牵头化工、造纸与纺织方向；据 IEA HPT 新闻稿，现场讨论将直接进入 Task 1 与 Task 2 工作包。',
         'briefings.annex68.task3.title': 'Task 3：教育与技能培训（Skills4HP）',
         'briefings.annex68.task3.bullet1': '面向工程安装与运维人员的 Skills4HP 集群持续推进。另据官网 2026 年 1 月新闻，新西兰以有限赞助方加入 Project 68，为南半球案例与培训资源互通提供新的合作接口（细节以英文官方稿为准）。',
-        'briefings.annex68.disclaimer': '本文为基于公开任务进展的摘要整理，不代表 IEA 或其执行机构的官方立场或全文。',
         'briefings.annex68.learnMore': 'IEA 热泵技术合作项目（HPT TCP）',
 
         'about.toggle.expand': '查看完整履历',
@@ -1201,7 +1184,6 @@ export const translations = {
         'knowledge.article4.eu.text': '2015 年起，<strong>欧盟第 517/2014 号法规（常被称作欧盟「F-gas 法规」）</strong>以配额、服务禁令与产品禁令等组合，推动多类固定式应用削减高 GWP 工质；2022 年后的<strong>修订草案/修订包</strong>意在收紧泄漏管控与削减轨迹——<strong>引用具体禁令日期前务必核对欧盟现行合并文本</strong>。另轨上，<strong>REACH</strong> 及欧盟层面对 PFAS 等物质的限制讨论，会给部分含氟化学品带来<strong>中长期不确定性</strong>，与 F-gas 不是同一套法律逻辑，但会影响「十五年工质战略」。<strong>英国</strong>：脱欧后实行<strong>独立的 UK F-gas</strong> 体系，与欧盟<strong>并行但不等同</strong>——进出口与维保备件需单独建档。',
         'knowledge.article4.us.title': '美国：AIM 法案削减路径 + SNAP + 州法叠加（2020 年代）',
         'knowledge.article4.us.text': '<strong>2020 年《美国创新与制造法案》（AIM Act）</strong>授权 EPA 按美国承担的基加利义务，对 HFC 生产与消费做<strong>分阶段削减</strong>；解读时需把 EPA 各阶段规则与 <strong>SNAP</strong>（可接受替代物清单/用途限制）一并阅读。<strong>加利福尼亚等州</strong>往往走在联邦底线之前——面向美国市场的产品线，实务上经常是「<strong>联邦 + 最严州</strong>」双层合规，而不是只看一张「全美统一」日历。',
-        'knowledge.article4.disclaimer': '本站内容为工程沟通与科普，不构成法律意见。制冷剂规则随立法、机构规章与判例演变；在作出具有约束力的结论前，请向生态环境主管部门、欧盟官方公报、EPA 等一手来源核对附件、产品类别与日期。',
         'knowledge.article4.memory.title': '一句话记忆',
         'knowledge.article4.memory.text': '物性决定「能不能转得动」；<strong>你出货与运维所在的法域</strong>决定「能不能卖、能不能修」——先看基加利外缘，再落到国别与州别，最后才落到你的安全与工艺边界。',
         'knowledge.article4.faq.title': '工质政策：快问快答',

@@ -4,6 +4,7 @@
  */
 
 const DATA_ROOT = 'data-site-disclaimer-root';
+const DATA_SLOT = 'data-site-disclaimer-slot';
 
 /** Visible by default — one line per language. */
 const SUMMARY_ZH =
@@ -34,15 +35,10 @@ function p(lang, cls, text) {
     return el;
 }
 
-/**
- * @param {{ variant?: 'footer' | 'inline' }} [opts]
- * @returns {HTMLElement}
- */
-export function createBilingualSiteDisclaimerCompact(opts = {}) {
-    const variant = opts.variant === 'inline' ? 'inline' : 'footer';
-
+/** @returns {HTMLElement} */
+export function createBilingualSiteDisclaimerCompact() {
     const aside = document.createElement('aside');
-    aside.className = `site-legal-disclaimer site-legal-disclaimer--${variant}`;
+    aside.className = 'site-legal-disclaimer site-legal-disclaimer--footer';
     aside.setAttribute(DATA_ROOT, '');
     aside.setAttribute('role', 'note');
     aside.setAttribute('aria-label', '法律与人工智能说明 / Legal and AI notice');
@@ -79,34 +75,17 @@ function hasDisclaimerRoot() {
     return Boolean(document.querySelector(`[${DATA_ROOT}]`));
 }
 
-/** index.html — single block after .footer-disclaimer */
-export function initHomepageDisclaimerFooter() {
-    if (!document.getElementById('apps')) return;
+/** Mount unified legal notice into every page's `[data-site-disclaimer-slot]`. */
+export function initSiteLegalDisclaimer() {
     if (hasDisclaimerRoot()) return;
-    const footerDisc = document.querySelector('footer.footer-section .footer-disclaimer');
-    if (footerDisc?.parentNode) {
-        footerDisc.parentNode.insertBefore(createBilingualSiteDisclaimerCompact({ variant: 'footer' }), footerDisc.nextSibling);
-    }
-}
 
-/** knowledge.html & useful-links.html — footer only */
-export function initKnowledgePageDisclaimers() {
-    if (!document.querySelector('main.knowledge-page')) return;
-    if (hasDisclaimerRoot()) return;
-    const kf = document.querySelector('footer.knowledge-footer .container');
-    if (kf) kf.insertBefore(createBilingualSiteDisclaimerCompact({ variant: 'footer' }), kf.firstChild);
-}
+    const slots = document.querySelectorAll(`[${DATA_SLOT}]`);
+    if (slots.length === 0) return;
 
-/** heat-pump-standards.html — after hero, before standards table section */
-export function initHeatPumpStandardsPageDisclaimers() {
-    const main = document.querySelector('main.hp-std-page');
-    if (!main) return;
-    if (hasDisclaimerRoot()) return;
-    const block = createBilingualSiteDisclaimerCompact({ variant: 'inline' });
-    const hero = main.querySelector('header.hp-std-hero');
-    if (hero) {
-        hero.insertAdjacentElement('afterend', block);
-    } else {
-        main.insertBefore(block, main.firstChild);
-    }
+    const block = createBilingualSiteDisclaimerCompact();
+    slots.forEach((slot) => {
+        if (!slot.querySelector(`[${DATA_ROOT}]`)) {
+            slot.appendChild(block.cloneNode(true));
+        }
+    });
 }

@@ -427,7 +427,6 @@
                 <label for="apps-invited-password" class="sr-only" data-i18n="apps.invitation.passwordPlaceholder">Password</label>
                 <input type="password" id="apps-invited-password" class="apps-invited-password-input" placeholder="" maxlength="32" autocomplete="off" data-i18n-placeholder="apps.invitation.passwordPlaceholder">
                 <button type="button" id="apps-invited-unlock-btn" class="apps-invited-unlock-btn" data-i18n="apps.invitation.unlock">Unlock</button>
-                <p class="apps-invited-disclaimer" data-i18n="apps.invitation.disclaimer">Note: The public toolbox is free and open-source for industry benefit. This password-protected area covers highly complex, non-standard commercial calculations (e.g., ultra-low-temperature helium compression, MVR, ORC expanders, extreme-cold cascade systems) and is open only to deeply engaged consulting clients. For advanced technical diagnostics or system assessments, please contact me via the email in the footer to request access.</p>
                 <span id="apps-invited-error" class="apps-invited-error" aria-live="polite"></span>
             </div>
             <div id="apps-invited-grid" class="apps-grid apps-grid-invited" hidden>
@@ -740,7 +739,6 @@
                     </div>
                 </div>
                 <div class="annex68-card-footer">
-                    <p class="annex68-disclaimer" data-i18n="briefings.annex68.disclaimer">本文为基于公开任务进展的摘要整理，不代表 IEA 或其执行机构的官方立场或全文。</p>
                     <p class="annex68-link-wrap">
                         <a href="https://www.heatpumpingtechnologies.org/" target="_blank" rel="noopener noreferrer" class="annex68-external-link" data-i18n="briefings.annex68.learnMore">IEA 热泵技术合作项目（HPT TCP）</a>
                     </p>
@@ -1185,11 +1183,7 @@
                 </button>
             </div>
 
-            <!-- Disclaimer -->
-            <div class="footer-disclaimer">
-                <p class="disclaimer-text-simple" data-i18n="disclaimer.text1">All applications are provided for personal research, educational, and public benefit purposes only on a non-commercial, open-source basis. For commercial use, please contact me in advance to obtain authorization.</p>
-                <p class="disclaimer-text-simple" data-i18n="disclaimer.text2">Tools are provided "as is" without warranty of any kind. Use at your own risk.</p>
-            </div>
+            <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
 
             <!-- Copyright -->
             <div class="footer-copyright">

@@ -1,5 +1,5 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
-import { initKnowledgePageDisclaimers } from './siteSectionDisclaimer.js';
+import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 
 function updateHpPolicyMeta(lang) {
@@ -20,6 +20,6 @@ function updateHpPolicyMeta(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher({ afterSet: updateHpPolicyMeta });
-    initKnowledgePageDisclaimers();
+    initSiteLegalDisclaimer();
     initNavChipHighlight();
 });

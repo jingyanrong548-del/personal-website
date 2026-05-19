@@ -1257,13 +1257,6 @@ body {
     text-align: center;
 }
 
-.annex68-disclaimer {
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    color: var(--text-muted, var(--text-light));
-    margin: 0 0 0.75rem;
-}
-
 .annex68-link-wrap {
     margin: 0;
 }
@@ -2844,15 +2837,6 @@ body {
     color: var(--text-light);
 }
 
-.useful-links-disclaimer {
-    margin: 1rem 0 0;
-    padding-top: 1rem;
-    border-top: 1px solid var(--glass-border);
-    font-size: 0.8125rem;
-    line-height: 1.45;
-    color: var(--text-lighter);
-}
-
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2915,14 +2899,6 @@ body {
 
 .apps-invited-unlock-btn:active {
     transform: translateY(0);
-}
-
-.apps-invited-disclaimer {
-    width: 100%;
-    margin: 0.5rem 0 0;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--text-light);
 }
 
 .apps-invited-error {
@@ -4073,27 +4049,27 @@ body {
     font-size: inherit;
 }
 
-.footer-disclaimer {
-    max-width: 800px;
+/* Bilingual legal & AI: short summary + <details> full notice */
+.site-legal-disclaimer-slot {
+    max-width: 52rem;
     margin: 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2.5rem;
     border-top: 1px solid var(--border-color);
 }
 
-.disclaimer-text-simple {
-    font-size: 0.8125rem;
-    line-height: 1.6;
-    color: var(--text-light);
-    margin-bottom: 0.75rem;
-    text-align: center;
+.knowledge-footer .site-legal-disclaimer-slot {
+    max-width: 980px;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
-.disclaimer-text-simple:last-child {
-    margin-bottom: 0;
+.hp-std-page .site-legal-disclaimer-slot {
+    max-width: 72rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top-color: var(--glass-border);
 }
 
-/* Bilingual legal & AI: short summary + <details> full notice */
 .site-legal-disclaimer {
     --site-legal-pad: 0.75rem 1rem;
     text-align: left;
@@ -4106,12 +4082,6 @@ body {
 .site-legal-disclaimer--footer {
     max-width: 52rem;
     margin: 1rem auto 0;
-    padding: var(--site-legal-pad);
-}
-
-.site-legal-disclaimer--inline {
-    max-width: 72rem;
-    margin: 0 auto 1rem;
     padding: var(--site-legal-pad);
 }
 
@@ -4165,14 +4135,10 @@ body {
     margin-bottom: 0.55rem;
 }
 
-.knowledge-footer .site-legal-disclaimer--footer {
-    margin-bottom: 1.25rem;
-}
-
-.hp-std-page .site-legal-disclaimer--inline {
-    max-width: 72rem;
-    margin-left: auto;
-    margin-right: auto;
+.knowledge-footer .site-legal-disclaimer--footer,
+.hp-std-page .site-legal-disclaimer--footer {
+    max-width: 100%;
+    margin-top: 0;
 }
 
 .footer-copyright {
@@ -4708,9 +4674,8 @@ body {
         padding: 2.5rem 0 1.5rem;
     }
     
-    .footer-disclaimer {
+    .site-legal-disclaimer-slot {
         padding-top: 2rem;
-        padding-bottom: 2rem;
     }
 
     .footer-copyright {
@@ -4722,11 +4687,6 @@ body {
         margin-bottom: 2rem;
     }
     
-    .disclaimer-text-simple {
-        font-size: 0.75rem;
-        line-height: 1.5;
-    }
-
     .experience-item,
     .education-item {
         padding: 1rem 0;
@@ -5616,18 +5576,6 @@ html {
     font-weight: 600;
 }
 
-.knowledge-disclaimer {
-    max-width: 980px;
-    margin: 0 auto 1.5rem;
-    padding: 0.85rem 1rem;
-    font-size: 0.875rem;
-    line-height: 1.65;
-    color: var(--text-light);
-    border-left: 3px solid rgba(46, 125, 50, 0.25);
-    background: rgba(15, 23, 42, 0.03);
-    border-radius: 0 var(--glass-radius-sm) var(--glass-radius-sm) 0;
-}
-
 .knowledge-memory--article2 {
     margin-bottom: 1.75rem;
 }
@@ -5785,7 +5733,6 @@ html {
 
 .hp-policy-page .knowledge-section-title,
 .hp-policy-page .knowledge-article2-lede,
-.hp-policy-page .knowledge-disclaimer,
 .hp-policy-page .knowledge-co2-callout,
 .useful-links-page .useful-links-section .knowledge-section-title {
     margin-left: 0;

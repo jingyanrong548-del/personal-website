@@ -1,7 +1,7 @@
 import { heatPumpStandardsData } from './data/heatPumpStandards.js';
 import { getHpStdEnglishFields } from './data/heatPumpStandardsTranslations.js';
 import { getHpStdCategoryLabel, hpStdCategorySearchText } from './heatPumpStandardsCategories.js';
-import { initHeatPumpStandardsPageDisclaimers } from './siteSectionDisclaimer.js';
+import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
 import { initNavChipHighlight } from './navHighlight.js';
 
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     categoryFilter.addEventListener('change', filterAndRender);
     latestOnlyToggle.addEventListener('change', filterAndRender);
 
-    initHeatPumpStandardsPageDisclaimers();
+    initSiteLegalDisclaimer();
     initNavChipHighlight();
 
     initLanguageSwitcher({
