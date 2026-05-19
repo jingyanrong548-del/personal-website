@@ -25,6 +25,7 @@ export default defineConfig({
         knowledge: resolve(__dirname, 'knowledge.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),
         usefulLinks: resolve(__dirname, 'useful-links.html'),
+        heatPumpPolicies: resolve(__dirname, 'heat-pump-policies.html'),
       },
       output: {
         assetFileNames: 'assets/[name].[hash].[ext]'

@@ -5626,6 +5626,20 @@ html {
     border-bottom: none;
 }
 
+.hp-policy-table {
+    min-width: 920px;
+}
+
+.hp-policy-table tbody th[scope='row'] {
+    white-space: normal;
+    min-width: 10rem;
+    max-width: 14rem;
+}
+
+.hp-policy-page .knowledge-co2-table-wrap {
+    max-width: 100%;
+}
+
 .knowledge-co2-pill {
     display: inline-block;
     font-weight: 800;

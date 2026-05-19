@@ -35,6 +35,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Industrial high-temperature heat pump policies -->
+  <url>
+    <loc>https://www.jingyanrong.com/heat-pump-policies.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <!-- About Section -->
   <url>
