@@ -2793,6 +2793,66 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Useful links page — dedicated list (not toolbox apps-external-links) */
+.useful-links-panel {
+    max-width: 980px;
+    margin-left: 0;
+    margin-right: auto;
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    box-shadow: var(--glass-shadow);
+    padding: 1.25rem 1.5rem;
+}
+
+.useful-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.useful-links-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.useful-links-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.useful-links-anchor {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: var(--emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.useful-links-anchor:hover {
+    color: var(--emerald-800);
+}
+
+.useful-links-desc {
+    margin: 0.4rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+
+.useful-links-disclaimer {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glass-border);
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--text-lighter);
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -5701,8 +5761,52 @@ html {
     max-width: 14rem;
 }
 
+/* Resource subpages: policies + useful links — left-aligned reading column */
+.hp-policy-page,
+.useful-links-page {
+    text-align: left;
+}
+
+.hp-policy-page .knowledge-hero-card,
+.hp-policy-page .knowledge-footer-card,
+.useful-links-page .knowledge-hero-card,
+.useful-links-page .knowledge-footer-card {
+    max-width: 980px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.hp-policy-page .knowledge-section .container > *,
+.useful-links-page .useful-links-section .container > * {
+    max-width: 980px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.hp-policy-page .knowledge-section-title,
+.hp-policy-page .knowledge-article2-lede,
+.hp-policy-page .knowledge-disclaimer,
+.hp-policy-page .knowledge-co2-callout,
+.useful-links-page .useful-links-section .knowledge-section-title {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.hp-policy-page #hp-policy-expert .knowledge-reason-text {
+    max-width: 980px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.hp-policy-page .knowledge-chapter-rule {
+    margin-left: 0;
+    margin-right: auto;
+}
+
 .hp-policy-page .knowledge-co2-table-wrap {
-    max-width: 100%;
+    max-width: 980px;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .knowledge-co2-pill {
