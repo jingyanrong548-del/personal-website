@@ -160,55 +160,102 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-right: 220px; /* 大幅左移，为右上角语言切换按钮留出足够空间 */
-    flex: 0 1 auto; /* 允许收缩，但不强制扩展 */
+    gap: 1rem;
+    margin-right: 200px;
+    flex: 1 1 auto;
     justify-content: flex-end;
-    max-width: calc(100% - 240px); /* 限制最大宽度，确保不重叠 */
+    max-width: calc(100% - 220px);
 }
 
 .nav-menu {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     list-style: none;
-    gap: 2rem;
+    gap: 0.75rem 1.25rem;
     margin: 0;
     padding: 0;
 }
 
-.nav-menu a {
+.nav-menu__group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu__sublist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu__group--anchors {
+    padding-left: 0.25rem;
+    border-left: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    color: var(--text-color);
     font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    padding: 0.25rem 0;
+    font-size: 0.8125rem;
+    line-height: 1.25;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(-50%);
-}
-
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-    width: 100%;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
+/* Resource pages — pill chips (aligned with app-tag) */
+.nav-link--chip {
+    min-height: 2rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
     color: var(--emerald-700);
+    background: linear-gradient(135deg, var(--slate-50), rgba(255, 255, 255, 0.85));
+    border: 1px solid rgba(46, 125, 50, 0.22);
+}
+
+.nav-link--chip:hover {
+    color: white;
     background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    border-color: transparent;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.nav-link--chip.active {
+    color: white;
+    background: linear-gradient(135deg, var(--emerald-700), var(--emerald-600));
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(46, 125, 50, 0.28);
+}
+
+/* Home anchors — light outline */
+.nav-link--anchor {
+    min-height: 2rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-link--anchor:hover {
+    color: var(--emerald-700);
+    background: rgba(46, 125, 50, 0.06);
+    border-color: rgba(46, 125, 50, 0.2);
+}
+
+.nav-link--anchor.active {
+    color: var(--emerald-700);
+    font-weight: 600;
+    background: rgba(46, 125, 50, 0.1);
+    border-color: rgba(46, 125, 50, 0.35);
 }
 
 /* Language Switcher - 玻璃胶囊 */
@@ -4223,13 +4270,26 @@ body {
     }
 
     .nav-menu {
-        flex-direction: row;
-        gap: 1.5rem;
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
         margin: 0;
         padding: 0;
+    }
+
+    .nav-menu__group--anchors {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 0.25rem;
+        border-top: 1px solid rgba(15, 23, 42, 0.1);
+    }
+
+    .nav-menu__sublist {
+        gap: 0.4rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
     }
 
     .language-switcher {
@@ -4670,18 +4730,23 @@ body {
     }
 
     .nav-menu {
-        flex-direction: row;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.65rem;
         width: 100%;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         margin: 0;
         padding: 0;
     }
 
-    .nav-menu li {
-        width: auto;
-        text-align: left;
+    .nav-menu__group--anchors {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 0.25rem;
+        border-top: 1px solid rgba(15, 23, 42, 0.1);
+    }
+
+    .nav-menu__sublist {
+        gap: 0.35rem;
     }
 
     .language-switcher {

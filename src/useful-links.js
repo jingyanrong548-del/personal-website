@@ -1,5 +1,6 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
 import { initKnowledgePageDisclaimers } from './siteSectionDisclaimer.js';
+import { initNavChipHighlight } from './navHighlight.js';
 
 function updateUsefulLinksMeta(lang) {
     const title = translations[lang]?.['usefulLinks.seo.title'];
@@ -20,4 +21,5 @@ function updateUsefulLinksMeta(lang) {
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher({ afterSet: updateUsefulLinksMeta });
     initKnowledgePageDisclaimers();
+    initNavChipHighlight();
 });

@@ -121,7 +121,7 @@ export const translations = {
         'hero.title': 'Jing Yanrong',
         'hero.badge': '✓ Licensed PE · Verifiable thermodynamics, not hype',
         'hero.headline': '30-Year Thermal Veteran, AI-Enabled Systems Architect',
-        'hero.subheadline': 'Spanning thermodynamic limits from −272°C to +200°C—from superfluid helium compression to high-temperature steam and ORC systems. Committed to open-sourcing foundational algorithms and contributing engineer-grade wisdom to dual-carbon decarbonization.',
+        'hero.subheadline': 'Spanning thermodynamic limits from −272°C to +300°C—from superfluid helium compression to high-temperature steam and ORC systems. Committed to open-sourcing foundational algorithms and contributing engineer-grade wisdom to dual-carbon decarbonization.',
         'hero.cta': 'Explore My Tools',
         'hero.secondaryCta': 'Read Engineering Insights',
         
@@ -736,7 +736,7 @@ export const translations = {
         'hero.title': '荆炎荣',
         'hero.badge': '✓ 注册公用设备工程师 · 物理可验证，拒绝空泛智能',
         'hero.headline': '30年冷热老兵，AI 赋能的系统架构师',
-        'hero.subheadline': '跨越 -272℃ 到 +200℃ 的热力学极限（从超流氦压缩到高温蒸汽与ORC系统）。致力于底层算法的开源共享，为双碳脱碳贡献工程师的极致智慧。',
+        'hero.subheadline': '跨越 -272℃ 到 +300℃ 的热力学极限（从超流氦压缩到高温蒸汽与ORC系统）。致力于底层算法的开源共享，为双碳脱碳贡献工程师的极致智慧。',
         'hero.cta': '探索工具',
         'hero.secondaryCta': '阅读工程洞察',
         'about.title': '关于',

@@ -2,6 +2,7 @@
 import { inject } from '@vercel/analytics';
 import { translations, initLanguageSwitcher, getCurrentLanguage } from './i18n.js';
 import { initHomepageDisclaimerFooter } from './siteSectionDisclaimer.js';
+import { initNavChipHighlight } from './navHighlight.js';
 
 // Initialize Vercel Analytics
 inject();
@@ -476,20 +477,21 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
 
-    // Handle navigation clicks
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    
-    navLinks.forEach(link => {
+    initNavChipHighlight();
+
+    const navAnchorLinks = document.querySelectorAll('.nav-link--anchor');
+
+    navAnchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href') || '';
-            if (!targetId.startsWith('#')) {
-                // 跨页（如 knowledge.html）或外站链接：不拦截
+            const href = this.getAttribute('href') || '';
+            const hashIndex = href.indexOf('#');
+            if (hashIndex === -1) {
                 return;
             }
+            const targetId = href.slice(hashIndex);
             e.preventDefault();
             if (scrollToSection(targetId)) {
-                // Update active state
-                navLinks.forEach(l => l.classList.remove('active'));
+                navAnchorLinks.forEach((l) => l.classList.remove('active'));
                 this.classList.add('active');
             }
         });
@@ -554,9 +556,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        navLinks.forEach(link => {
+        navAnchorLinks.forEach((link) => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
+            const href = link.getAttribute('href') || '';
+            if (href === '#' + current || href.endsWith('#' + current)) {
                 link.classList.add('active');
             }
         });
@@ -573,20 +576,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
             
-            // Reset active nav state
-            navLinks.forEach(link => link.classList.remove('active'));
+            navAnchorLinks.forEach((link) => link.classList.remove('active'));
         });
     }
-
-    // Add active class style for navigation
-    const style = document.createElement('style');
-    style.textContent = `
-        .nav-menu a.active {
-            color: var(--secondary-color);
-            font-weight: 500;
-        }
-    `;
-    document.head.appendChild(style);
 
     // Hide partner logos that failed to load
     const partnerLogos = document.querySelectorAll('.partner-logo img');

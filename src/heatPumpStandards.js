@@ -3,6 +3,7 @@ import { getHpStdEnglishFields } from './data/heatPumpStandardsTranslations.js';
 import { getHpStdCategoryLabel, hpStdCategorySearchText } from './heatPumpStandardsCategories.js';
 import { initHeatPumpStandardsPageDisclaimers } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
+import { initNavChipHighlight } from './navHighlight.js';
 
 function escapeHtml(s) {
     if (s == null) return '';
@@ -147,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     latestOnlyToggle.addEventListener('change', filterAndRender);
 
     initHeatPumpStandardsPageDisclaimers();
+    initNavChipHighlight();
 
     initLanguageSwitcher({
         afterSet: (lang) => {
