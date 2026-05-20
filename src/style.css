@@ -436,9 +436,18 @@ body {
 .hero {
     background: transparent;
     color: var(--text-color);
-    padding: 5rem 0;
+    padding: 6rem 0 5rem;
     position: relative;
     overflow: hidden;
+}
+
+.hero-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin: 0 0 1rem;
 }
 
 .hero::before {
@@ -536,8 +545,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding-right: 2rem;
-    padding-top: 2rem;
-    min-height: 500px;
+    padding-top: 1rem;
+    min-height: auto;
 }
 
 .hero-badge {
@@ -565,14 +574,14 @@ body {
 }
 
 .hero-headline {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-    margin-top: 0.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    margin-top: 0.25rem;
     color: var(--text-color);
-    line-height: 1.15;
+    line-height: 1.2;
     letter-spacing: -0.03em;
-    max-width: 100%;
+    max-width: 16em;
 }
 
 .hero-headline-emphasis {
@@ -585,26 +594,26 @@ body {
 
 @media (min-width: 768px) {
     .hero-headline {
-        font-size: 3rem;
-        line-height: 1.1;
+        font-size: 2.5rem;
+        line-height: 1.18;
     }
 }
 
 @media (min-width: 1024px) {
     .hero-headline {
-        font-size: 3.5rem;
-        line-height: 1.1;
-        letter-spacing: -0.04em;
+        font-size: 2.75rem;
+        line-height: 1.18;
+        letter-spacing: -0.035em;
     }
 }
 
 .hero-subheadline {
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     color: #475569;
-    margin-bottom: 2.5rem;
-    margin-top: 1.5rem;
-    line-height: 1.7;
-    max-width: 100%;
+    margin-bottom: 2.25rem;
+    margin-top: 0.75rem;
+    line-height: 1.65;
+    max-width: 36rem;
     font-weight: 400;
 }
 
@@ -743,6 +752,7 @@ body {
 
 .hero-cta-btn {
     display: inline-block;
+    font-family: inherit;
     padding: 1rem 2.5rem;
     background: var(--emerald-700);
     color: var(--text-white);
@@ -6192,4 +6202,222 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, var(--emerald-600), var(--emerald-500));
+}
+
+/* —— Consultant positioning: minimal sections —— */
+.container--narrow {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header-minimal {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-kicker {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin: 0 0 0.75rem;
+}
+
+.section-title-minimal {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+    color: var(--text-color);
+}
+
+.section-lede-minimal {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin: 0 auto;
+    max-width: 32rem;
+}
+
+.section-title--left {
+    text-align: left;
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tools-showcase-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.tools-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.tools-showcase-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: rgba(255, 255, 255, 0.72);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tools-showcase-card:hover {
+    border-color: rgba(14, 116, 144, 0.35);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.tools-showcase-card-title {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+    line-height: 1.35;
+}
+
+.tools-showcase-card-desc {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--text-light);
+    margin: 0 0 1.25rem;
+}
+
+.tools-showcase-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    text-decoration: none;
+}
+
+.tools-showcase-link:hover {
+    text-decoration: underline;
+}
+
+.tools-showcase-footer {
+    text-align: center;
+    margin: 0;
+}
+
+.tools-showcase-view-all {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+}
+
+.methodology-section {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.methodology-steps {
+    list-style: none;
+    margin: 0 0 3.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.methodology-step {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.methodology-step:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.methodology-step-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+}
+
+.methodology-step-text {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-light);
+    margin: 0;
+    max-width: 40rem;
+}
+
+.consultant-cta {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(165deg, rgba(8, 145, 178, 0.06) 0%, rgba(248, 250, 252, 0.9) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.consultant-cta-text {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--text-color);
+    margin: 0 auto 1.5rem;
+    max-width: 28rem;
+    font-weight: 500;
+}
+
+.consultant-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--emerald-700);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.consultant-cta-btn:hover {
+    background: var(--emerald-600);
+    transform: translateY(-1px);
+}
+
+.about-main-layout--minimal {
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-metrics-column--compact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.metric-item--minimal {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.metric-item--minimal .metric-value {
+    font-size: 1.0625rem;
+}
+
+@media (max-width: 900px) {
+    .tools-showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-headline {
+        max-width: none;
+    }
 }

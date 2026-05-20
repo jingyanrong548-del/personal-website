@@ -666,22 +666,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Open modal
-    if (openContactModalBtn && contactModal) {
-        openContactModalBtn.addEventListener('click', function(e) {
+    function openContactModal(e) {
+        if (!contactModal) return;
+        if (e) {
             e.preventDefault();
             e.stopPropagation();
-            resetModalToDefault();
-            contactModal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent body scroll
-            
-            // Reset scroll position of modal body to top
-            const modalBody = contactModal.querySelector('.contact-modal-body');
-            if (modalBody) {
-                modalBody.scrollTop = 0;
-            }
-        });
+        }
+        resetModalToDefault();
+        contactModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        const modalBody = contactModal.querySelector('.contact-modal-body');
+        if (modalBody) {
+            modalBody.scrollTop = 0;
+        }
     }
+
+    [openContactModalBtn, document.getElementById('hero-cta-diagnostic'), document.getElementById('methodology-cta-btn')]
+        .filter(Boolean)
+        .forEach((btn) => btn.addEventListener('click', openContactModal));
     
     // Close modal
     function closeContactModal() {
