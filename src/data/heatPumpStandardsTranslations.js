@@ -222,10 +222,10 @@ export const HP_STD_EN_BY_NUMBER = {
         stdNameEn: 'CEN/TS 17990 series — Industrial heat pump testing and rating (draft)',
         coreContentEn: 'European technical specification under development for testing and rating high-temperature industrial heat pumps.',
     },
-    '(TBD/草S) VDI 4646': {
-        stdNameEn: 'VDI 4646 — Planning, installation, operation and maintenance of industrial heat pumps (revision)',
+    'VDI 4646': {
+        stdNameEn: 'VDI 4646 — Application of large-scale heat pumps',
         coreContentEn:
-            'VDI guideline under revision; widely used as application guidance for industrial heat pump projects in German-speaking engineering practice.',
+            'VDI guideline (published May 2026; German/English text, ~123 pages). Covers planning and evaluation of non-standardized heat pump systems for commerce, industry and district heating with nominal capacity >100 kWth: system layout, baseline data, pre-planning, energy/economic/CO₂ assessment, and O&M; includes plants aiming at simultaneous heat and cold use. Widely cited as application guidance for large industrial heat pump projects. Confirm scope and edition with the official VDI/DIN Media publication.',
     },
 };
 
