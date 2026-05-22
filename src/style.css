@@ -5573,6 +5573,74 @@ html {
     margin-bottom: 1.75rem;
 }
 
+/* 热泵小知识：章节正文统一 980px 阅读栏，避免标题/卡片居中而段落铺满 container 导致左右不齐 */
+.knowledge-page .knowledge-section--article2 > .container > *:not(.knowledge-reasons):not(.knowledge-grid),
+.knowledge-page .knowledge-article--co2 > .container > * {
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.knowledge-page .knowledge-section--article2 > .container > .knowledge-reason-text,
+.knowledge-page .knowledge-article--co2 > .container > .knowledge-reason-text {
+    margin-bottom: 1rem;
+}
+
+.knowledge-page .knowledge-section--article2 > .container > .knowledge-reason-text:last-child,
+.knowledge-page .knowledge-article--co2 > .container > .knowledge-reason-text:last-child {
+    margin-bottom: 0;
+}
+
+/* 块级分组（举例、图示前后说明等）：内部与章节同宽，新增篇章请用 .knowledge-block 包裹 */
+.knowledge-block {
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.knowledge-block .knowledge-section-subtitle {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.knowledge-block .knowledge-reasons {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.knowledge-block .knowledge-reason-text {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.knowledge-block--examples {
+    margin-bottom: 1.75rem;
+}
+
+.knowledge-block--examples .knowledge-section-subtitle {
+    margin-top: 0;
+}
+
+/* 举例等宜纵向堆叠，避免与全宽小标题左右缘不一致 */
+.knowledge-reasons--stacked {
+    grid-template-columns: 1fr;
+}
+
+.knowledge-page .knowledge-article--1 .knowledge-section > .container > *:not(.knowledge-reasons):not(.knowledge-grid) {
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
 .knowledge-takeaway {
     max-width: 980px;
     margin: 0 auto 1.75rem;
@@ -5592,10 +5660,19 @@ html {
 
 .knowledge-section-subtitle {
     max-width: 980px;
-    margin: 0 auto 1rem;
+    margin: 1.5rem auto 1rem;
     font-size: 1.15rem;
     font-weight: 800;
     color: var(--ink-900);
+}
+
+.knowledge-section--article2 > .container > .knowledge-co2-callout + .knowledge-article2-lede,
+.knowledge-section--article2 > .container > .knowledge-chapter-kicker + .knowledge-section-title + .knowledge-co2-callout + .knowledge-article2-lede {
+    margin-top: 0;
+}
+
+.knowledge-block--examples .knowledge-section-subtitle {
+    margin-top: 0;
 }
 
 /* CO₂ severe-cold article (knowledge.html) */

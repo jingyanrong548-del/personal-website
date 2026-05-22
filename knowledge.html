@@ -100,6 +100,12 @@
                                     <span class="knowledge-toc-link-title" data-i18n="knowledge.toc.item5.linkTitle">Industrial heat-pump refrigerants: how China, the EU, and the US pull policy in different directions</span>
                                 </a>
                             </li>
+                            <li class="knowledge-toc-item">
+                                <a class="knowledge-toc-link" href="#kp-article-5">
+                                    <span class="knowledge-toc-kicker" data-i18n="knowledge.toc.item6.kicker">Part 6 · AI industrial heat pump expert</span>
+                                    <span class="knowledge-toc-link-title" data-i18n="knowledge.toc.item6.linkTitle">Heat pumps are sold as low-carbon—why can measured emissions beat a gas boiler?</span>
+                                </a>
+                            </li>
                         </ol>
                     </nav>
 
@@ -451,6 +457,103 @@
                         <p class="knowledge-faq-a" data-i18n="knowledge.article4.faq.q2.a" data-i18n-html="true">Those fluids avoid many HFC-specific quotas.</p>
                     </details>
                 </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kp-article-5" class="knowledge-article knowledge-article--5 knowledge-section knowledge-section--article2" aria-labelledby="knowledge-article5-title">
+            <div class="container">
+                <p class="knowledge-chapter-kicker" data-i18n="knowledge.toc.item6.kicker">Part 6 · AI industrial heat pump expert</p>
+                <h2 class="knowledge-section-title" id="knowledge-article5-title" data-i18n="knowledge.article5.title">Heat pumps are sold as low-carbon—why can measured emissions beat a gas boiler?</h2>
+                <p class="knowledge-co2-callout" data-i18n="knowledge.article5.expert.callout">AI industrial heat pump expert · Q&amp;A</p>
+                <p class="knowledge-article2-lede" data-i18n="knowledge.article5.lede" data-i18n-html="true">The contradiction is real in many project spreadsheets—but it is usually not because heat pumps are “physically dirtier” than gas. More often, people compare different kinds of carbon, different system boundaries, or brochure COP against field gas use.</p>
+
+                <div class="knowledge-block knowledge-block--examples">
+                    <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article5.examples.title">Simple examples: when is carbon lower or higher?</h3>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article5.examples.intro" data-i18n-html="true">Use the same operating-carbon shortcut: heat pump ≈ grid factor ÷ system COP; gas boiler ≈ gas factor ÷ boiler efficiency. Numbers below are <strong>illustrative only</strong>—replace with your audit factors.</p>
+                    <div class="knowledge-reasons knowledge-reasons--article2 knowledge-reasons--stacked">
+                        <div class="knowledge-reason">
+                            <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.examples.lower.title">Heat pump often wins (lower kgCO₂ per kWh of heat)</h3>
+                            <ul class="knowledge-list">
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.lower.li1" data-i18n-html="true"></span></li>
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.lower.li2" data-i18n-html="true"></span></li>
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.lower.li3" data-i18n-html="true"></span></li>
+                            </ul>
+                        </div>
+                        <div class="knowledge-reason">
+                            <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.examples.higher.title">Gas boiler often wins (heat pump looks “dirtier”)</h3>
+                            <ul class="knowledge-list">
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.higher.li1" data-i18n-html="true"></span></li>
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.higher.li2" data-i18n-html="true"></span></li>
+                                <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.examples.higher.li3" data-i18n-html="true"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article5.examples.note" data-i18n-html="true">Rule of thumb with the illustrative factors above: if system COP is well above grid factor ÷ gas factor × boiler efficiency (roughly COP ≳ 2.5–3 for a 0.55 grid and 90% gas boiler), the heat pump tends to win on operating carbon; below that, gas can catch up or lead.</p>
+                </div>
+
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r1.title">1) Align what “carbon” means first</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r1.text" data-i18n-html="true">Scope 1 at the site: gas boilers emit CO₂ from combustion; heat pumps have no stack—so chimney-only accounting makes heat pumps look perfect. Operating carbon: electricity × grid emission factor—where heat-pump emissions actually live. LCA / corporate inventories may add manufacturing, refrigerant leakage (GWP), and logistics; gas-only “fuel use” comparisons are not the same ledger.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r2.title">2) Grid emission factor can veto the conclusion</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r2.text" data-i18n-html="true">Average vs marginal factors, regional vs national defaults, and outdated yearbooks all swing results. Rough operating intensity: heat pump ≈ EF<sub>grid</sub> / COP<sub>system</sub>; gas boiler ≈ EF<sub>gas</sub> / η<sub>boiler</sub> (include pumps, fans, defrost, and standby in COP<sub>system</sub>). When COP<sub>system</sub> is low or EF<sub>grid</sub> is high—common in high-temperature industrial lifts—heat pumps can lose on carbon even if the brochure COP looks fine. Always use the factor your carbon audit or contract requires.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r3.title">3) Field COP is often far below catalog COP</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r3.text" data-i18n-html="true">Large temperature lift (steam / high-temperature water), part load, frequent stops, defrost, and antifreeze cycles all drag real performance—see <a href="#kp-article-1">Part 2 · Cognition</a> and <a href="#kp-article-2">Part 3 · Pricing &amp; standards</a> for why industrial duty differs from comfort ratings. Auxiliary power (source pumps, cooling towers, controls, trace heating) is often left out of “compressor COP”. Comparing a +7 °C air-source nameplate to a 120 °C steam heat pump’s annual curve will distort carbon accounting.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r4.title">4) Unfair system boundaries</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r4.text">Boiler comparisons often stop at “furnace efficiency”. Heat-pump quotes sometimes count only the compressor while omitting source-side heat exchange, distribution pumps, thermal storage, backup electric or gas peaking, and tower/fan power—so equipment COP looks good while system carbon does not.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r5.title">5) Operating strategy and power mix</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r5.text" data-i18n-html="true">Grey grid without green power or PPA caps how “clean” electrified heat can be. Long hours on electric backup or gas peaking in cold windows load high-carbon energy into the heat-pump scheme total. A condensing gas boiler at high load factor vs a heat pump idling at low load compares “best boiler hour” to “worst heat-pump window”. For assessment context, see <a href="./heat-pump-policies.html">industrial heat pump policies</a> (encouragement → mandatory carbon metrics).</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r6.title">6) Fair comparison checklist</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r6.intro">Before declaring a winner, walk this list with the same period, boundary, and emission factors:</p>
+                        <ul class="knowledge-list">
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li1" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li2" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li3" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li4" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li5" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li6" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li7" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article5.checklist.li8" data-i18n-html="true"></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="knowledge-memory knowledge-memory--article2">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledge.article5.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledge.article5.memory.text" data-i18n-html="true">A heat pump is not born green—<strong>greenness ≈ how clean the grid is × how high system COP is × whether the boundary is complete</strong>.</p>
+                </div>
+
+                <p class="knowledge-reason-text" data-i18n="knowledge.article5.cta" data-i18n-html="true">For project numbers, use the <a href="./#apps">Heat Pump Benefit Analyzer</a> in the toolbox with aligned boundaries; cross-check steam metrics against the <a href="./heat-pump-standards.html">industrial heat pump standards</a> quick reference where applicable.</p>
+
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article5.faq.title">Carbon comparison: quick FAQs</h3>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article5.faq.q1.q">“The heat pump has zero emissions on site—why does the report say it’s worse than the gas boiler?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article5.faq.q1.a" data-i18n-html="true">Because indirect emissions from electricity—and often omitted auxiliary loads—are included. Stack zero ≠ carbon zero.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article5.faq.q2.q">“COP 2—doesn’t that automatically beat a gas boiler on carbon?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article5.faq.q2.a" data-i18n-html="true">Not necessarily. It depends on EF<sub>grid</sub>, boiler efficiency, system boundary, and operating hours. In coal-heavy regions or low system COP, gas can win on operating carbon intensity.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article5.faq.q3.q">“How do we make the heat pump genuinely beat the boiler on carbon?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article5.faq.q3.a" data-i18n-html="true">Raise weighted system COP and process coupling, cut auxiliaries and peaking hours, add green power or storage, and run the comparison with audited factors—not AI-invented grid or COP numbers.</p>
+                    </details>
+                </div>
+
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledge.article5.disclaimer">Emission factors and carbon accounting rules vary by region and reporting regime; this chapter is engineering orientation, not a carbon audit or legal opinion.</p>
             </div>
         </section>
 
