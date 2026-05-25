@@ -59,24 +59,24 @@ function refreshAppsFilterFromUI() {
 // 注意：中英文条目数量宜对应；数据请标注公开来源并以原文为准。
 const briefingData = {
     year: 2026,
-    week: 20,
-    updateDate: '2026-05-17',
-    subtitle: '国内 5 月空调排产承压、铜价抬升成本；IEA《全球能源回顾 2026》披露 2025 年全球热泵销量区域分化；SKILLSAFE EU 推进 R290 安全实训与 Real Alternatives 平台合作；第 15 届 IEA 热泵大会 5 月 26 日维也纳开幕',
-    subtitleEn: 'China May AC production under pressure; IEA Global Energy Review 2026 regional heat-pump splits; SKILLSAFE EU × Real Alternatives on R290 training; 15th IEA Heat Pump Conference opens Vienna 26 May',
+    week: 21,
+    updateDate: '2026-05-24',
+    subtitle: '欧盟 IF25 工业用热拍卖公布约 4 亿欧元中标、EHPA 通报欧洲 Q1 热泵销量回暖；国内能效标识 2026 版目录 6 月起实施；维也纳 IEA 热泵大会即将开幕；本站工业热泵标准速查 5/22 更新',
+    subtitleEn: 'EU IF25 Heat Auction ~€400M awards; EHPA Q1 2026 Europe heat-pump rebound; China energy-label catalog 2026 from 1 Jun; Vienna IEA HPC opens 26 May; site standards quick reference updated 22 May',
     highlights: {
         zh: [
-            '5 月家用空调总排产约 -11.7%、内销约 -8.6%，铜价同比约 +18.6% 挤压成本',
-            'IEA：2025 年全球热泵销量约 -2%，欧洲 +11%、美国约 -13%、中国大致持平',
-            'HCFC-22 多联机禁产路径进入执行准备，衔接 2027-01-01 节点',
-            'SKILLSAFE EU 与 Real Alternatives 合作推进 R290 热泵安全实训',
-            '第 15 届 IEA 热泵大会 5 月 26–29 日维也纳开幕'
+            '欧盟 IF25 工业用热拍卖：5/22 公布 65 个项目、约 3.96 亿欧元、10 国中标',
+            '欧委会 5/19 确认年内将举办第二轮工业用热拍卖',
+            'EHPA：欧洲 11 国 2026 Q1 热泵销量约 57.5 万台、同比约 +17%',
+            '发改环资规〔2026〕550 号：能效标识目录（2026 版）多项 6/1 起施行',
+            '第 15 届 IEA 热泵大会 5/26–29 维也纳开幕（约 380 篇投稿）'
         ],
         en: [
-            'May 2026 residential AC production ~-11.7% YoY; domestic schedule ~-8.6%; copper ~+18.6% YoY',
-            'IEA: 2025 global heat-pump sales ~-2%; Europe +11%; US ~-13%; China broadly flat',
-            'HCFC-22 VRF ban path: execution prep toward 1 Jan 2027 manufacturing cutoff',
-            'SKILLSAFE EU × Real Alternatives advancing R290 heat-pump safety training',
-            '15th IEA Heat Pump Conference, Vienna, 26–29 May 2026'
+            'EU IF25 Heat Auction: 22 May — 65 projects, ~€396M, 10 Member States',
+            'Commission confirms second industrial heat auction later in 2026 (19 May)',
+            'EHPA: ~575k residential units in 11 EU countries in Q1 2026, ~+17% YoY',
+            'NDRC/FAS 2026/550: revised energy-label catalog; key rules from 1 Jun 2026',
+            '15th IEA Heat Pump Conference, Vienna, 26–29 May (~380 submissions)'
         ]
     },
     sections: [
@@ -84,12 +84,12 @@ const briefingData = {
             id: 'policy',
             items: {
                 zh: [
-                    '生态环境部《关于禁止生产以一氯二氟甲烷（HCFC-22）为制冷剂的多联式空调（热泵）机组产品的公告（征求意见稿）》已于 2026 年 4 月 30 日完成征求意见；进入第 20 周，主机厂与工程商宜按《中国履行〈关于消耗臭氧层物质的蒙特利尔议定书〉国家方案（2025—2030 年）》提出的 2027 年 1 月 1 日起禁止生产以 HCFCs 为制冷剂的多联机路径，梳理在产机型清单、售后充注冷媒、回收处置与存量改造方案，并跟踪正式公告发布——行业替代技术已成熟，HCFC-22 在多联机中的用量占比已极低。',
-                    '欧盟 F-gas 条例（EU）2024/573 配套培训取证体系持续落地：Commission Implementing Regulation (EU) 2025/1893（2025 年 9 月 17 日发布）确立含氟气体移动设备等场景下从业人员培训证明的最低要求与互认条件；Commission Implementing Regulation (EU) 2025/1907 规范成员国培训计划通报格式。宜将上述要求与 A2L/R290 附加培训、OEM 现场授权链（MOP）及 IEC 60335-2-40、EN 378 纳入同一 RACI 矩阵，减少 EPC 与审计缺口。'
+                    '国家发展改革委、市场监管总局印发《中华人民共和国实行能源效率标识的产品目录（2026年版）》及相关实施规则（发改环资规〔2026〕550号，2026年4月30日发布）：修订道路和隧道照明用LED灯具、家用电冰箱、电动洗衣机、室内照明用LED产品、投影机、家用太阳能热水系统、吸油烟机和换气扇等七类产品能效标识实施规则，其中多项自2026年6月1日起施行；2026年6月1日前出厂或进口的产品，可按公告允许延迟至2028年6月1日前加施新版标识。制冷空调与热泵企业宜同步评估家电能效门槛抬升对终端价格沟通、渠道库存与「一级能效」重评的影响，并以国家发改委官网原文为准。',
+                    '欧洲热泵协会（EHPA）等组织2026年5月13日发布联名信《能源安全与可负担性：新地缘政治时代的选择》，强调俄乌冲突与中东局势加剧化石燃料依赖风险，2030年后能源框架将决定欧洲长期能源安全；信函呼应欧盟能源危机应对路径中对热泵的VAT/税收减免与社会租赁等支持，并呼吁成员国加快落地。5月12日另有《加速欧盟灵活电气化需求》联名信，将建筑、交通与工业电气化与清洁、可调度能源系统挂钩——与热泵作为需求侧灵活性资源的定位相互印证。'
                 ],
                 en: [
-                    'China MEE’s draft ban on manufacturing VRF/heat-pump units using HCFC-22 closed public comment on 30 Apr 2026. In week 20, OEMs and contractors should prepare for the national Montreal Protocol plan path banning HCFC-based VRF production from 1 Jan 2027: align active model lists, service refrigerants, recovery logistics, and retrofit options, and watch for the final announcement—industry alternatives are already mature with negligible HCFC-22 share in VRF.',
-                    'EU F-gas (EU) 2024/573 training attestation continues to roll out: Implementing Regulation (EU) 2025/1893 (17 Sep 2025) sets minimum training-proof requirements and mutual recognition for certain mobile equipment with F-gases; Implementing Regulation (EU) 2025/1907 standardizes Member State programme notifications. Map these alongside A2L/R290 add-on training, OEM method-of-permission chains, IEC 60335-2-40, and EN 378 in one RACI matrix to close audit and EPC gaps.'
+                    'China’s NDRC and SAMR issued the 2026 catalogue of products subject to energy-efficiency labelling and revised implementation rules (FAS 2026/550, published 30 Apr 2026), covering seven groups including domestic refrigerators, washing machines, indoor and road/tunnel LED lighting, projectors, solar water heaters, range hoods, and ventilation fans—many effective from 1 Jun 2026, with transitional labelling for goods placed on the market before that date as set out in the notice. HVAC and heat-pump firms should assess knock-on effects on retail messaging, channel inventory, and “Grade 1” efficiency claims; verify all dates and product scopes on the NDRC website.',
+                    'EHPA and partners published a joint letter on 13 May 2026 on energy security and affordability in a new geopolitical era, stressing fossil-fuel exposure and urging rapid delivery of EU crisis-plan tools for heat pumps (VAT/tax relief, social leasing). A 12 May letter on accelerating flexible electrification demand links buildings, transport, and industry to clean, dispatchable systems—aligning with heat pumps as flexible demand resources.'
                 ]
             }
         },
@@ -97,12 +97,12 @@ const briefingData = {
             id: 'market',
             items: {
                 zh: [
-                    '据产业在线、中国家电网等公开报道，2026 年 5 月中国家用场景空调总排产约 2197.7 万台，同比下滑约 11.7%；其中内销排产同比下滑约 8.6%。铜价同比涨幅约 18.6%（由约 8.6 万元/吨升至约 10.2 万元/吨）直接推高制造成本，叠加房地产竣工疲软、国补退坡与渠道库存压力，终端涨价策略反馈冷淡。住宅热泵、两联供等细分品类排产需单独跟踪，不宜与全品类家用空调数据简单等同。',
-                    '国际能源署（IEA）《全球能源回顾 2026》热泵章节：2025 年全球热泵销量同比下滑约 2%。分区域：欧洲全年销量同比增长约 11%（2022 年以来首次增长，德国上半年约 +55%）；美国约 -13%（A2L 制冷剂切换、库存与新房开工放缓）；中国销量大致与 2024 年持平。该年度口径与 EHPA 2026 年一季度欧洲走强等指标存在时间尺度差异，区域分项与因果判断请以 IEA 原文为准。'
+                    'EHPA 2026年5月4日通报：2026年一季度欧洲11国住宅热泵销量合计约57.5万台，较2025年同期约49.4万台增长约17%；法国、德国、波兰三国平均增速约25%，数据亦覆盖3月霍尔木兹海峡局势升级后能源价格上行阶段。奥地利因补贴缺位销量同比下滑约30%，拉低整体均值。EHPA 秘书长 Paul Kenny 指出，气价与供应波动正推动消费者转向热泵；该季度口径与 IEA《全球能源回顾 2026》披露的2025年全年全球约-2%形成时间尺度差异，不宜混用。媒体同期报道：德国2025年热泵约占新采暖系统销量48%、燃气锅炉降至约44%（Euronews，援引 EHPA 初步数据）。',
+                    '欧盟创新基金2025工业用热拍卖（IF25 Heat Auction）2026年5月22日公布中标结果：65个项目将获得近4亿欧元资助，覆盖奥地利、比利时、捷克、丹麦、法国、德国、匈牙利、葡萄牙、斯洛文尼亚和西班牙共10国；行业涵盖造纸、玻璃、陶瓷、建材、钢铁及食品、纺织、制药等，高温与中温主题预算分别约6210万与约3344万欧元。5月19日欧委会确认年内将举办第二轮工业用热拍卖；EHPA 欢迎该信号，并呼吁提前公布时间表、降低现行约3 MW最低门槛、简化申请流程，以扩大食品等中小用热项目参与。'
                 ],
                 en: [
-                    'Industry outlets (e.g. CHEAA, HVACR press) report May 2026 China residential-scene AC total production schedule at about 21.98 million units, down ~11.7% year-on-year, with domestic schedule down ~8.6%. Copper prices rose ~18.6% YoY (roughly 86k to 102k CNY/t), squeezing margins amid weak property completions, fading subsidies, and channel inventory. Track heat-pump and dual-fuel sub-segments separately—do not equate them with whole-category AC schedules.',
-                    'IEA Global Energy Review 2026 (heat pumps chapter): global sales fell about 2% in 2025. Europe rose ~11% (first growth since 2022; Germany H1 ~+55%); the United States fell ~13% (A2L transition, inventories, slower housing); China stayed broadly flat vs 2024. This annual lens differs from EHPA’s strong Q1 2026 Europe bulletin—verify regional splits in the IEA source text.'
+                    'EHPA reported on 4 May 2026 that residential heat-pump sales in 11 European countries reached about 575,000 units in Q1 2026, up ~17% from ~494,000 in Q1 2025; France, Germany, and Poland averaged ~25% growth, including the period after March Strait of Hormuz tensions lifted gas and oil prices. Austria fell ~30% amid weak subsidies. This quarterly lens differs from IEA’s 2025 full-year global ~-2% figure—do not conflate. Press coverage (e.g. Euronews, 13 May) notes heat pumps reached ~48% of new heating systems sold in Germany in 2025 vs ~44% for gas boilers, citing EHPA preliminary data.',
+                    'The European Commission announced IF25 Heat Auction results on 22 May 2026: 65 projects awarded nearly €400 million across ten Member States, spanning pulp & paper, glass, ceramics, construction materials, steel, food, textiles, and pharmaceuticals, with high- and medium-temperature topics funded at roughly €62.1M and €334.4M respectively. On 19 May the Commission confirmed a second industrial heat auction later in 2026; EHPA welcomed the signal and called for earlier timelines, thresholds below the current ~3 MW minimum, and simpler applications to widen participation (e.g. food sector).'
                 ]
             }
         },
@@ -110,10 +110,12 @@ const briefingData = {
             id: 'standards',
             items: {
                 zh: [
-                    '国家标准 GB/T 10891-2025《制冷系统及热泵 环境适应性要求》自 2026 年 5 月 1 日施行后进入符合性评价窗口：建议在出厂检验、型式试验与现场调试记录中单列「环境类别—实测工况—合格判据」三联表，并与 GB/T 9237、产品专用安全标准及制冷剂切换机型并列校核，减少内销与出口项目对同一机组引用不同环境假设时的争议。'
+                    '围绕550号文实施，企业宜在6月1日前完成在库产品能效标识换版策划、检测与标签印制排期，并关注家用电冰箱等品类在新标准下「一级能效」门槛显著抬升（部分媒体测算同容量日耗电需进一步下降方可维持一级）——对外宣传与招投标技术响应须与备案型号及实测报告一致，避免新旧标准混标争议。',
+                    '本站「工业热泵标准速查」页面（heat-pump-standards.html）已于2026年5月22日按公开信息核对更新数据集，并自5月11日起增补全国冷冻空调标准化技术委员会（SAC/TC238）热泵标准化体系图摘录条目；表中 GB/T 10891-2025 等条目与第20周所述符合性评价窗口一致。项目适用性、采标关系及强制性条文请以现行有效标准文本为准。'
                 ],
                 en: [
-                    'With GB/T 10891-2025 in force since 1 May 2026, conformity reviews should document environmental class, measured operating conditions, and pass/fail criteria explicitly in factory tests and commissioning records—alongside GB/T 9237, product safety standards, and refrigerant-transition lines—to avoid disputes when export and domestic projects assume different envelopes for the same unit.'
+                    'Ahead of FAS 2026/550, manufacturers should plan relabelling, testing, and print runs for inventory before 1 Jun 2026, noting tighter Grade-1 thresholds for products such as domestic refrigerators under the revised rules—marketing and tender responses must match registered models and test reports to avoid mixed-standard disputes.',
+                    'This site’s Industrial Heat Pump Standards quick reference (heat-pump-standards.html) was refreshed on 22 May 2026 against public sources, including SAC/TC238 system-map excerpts added from 11 May; GB/T 10891-2025 entries align with the week-20 conformity window. Project applicability and mandatory clauses remain subject to the current official standard text.'
                 ]
             }
         },
@@ -121,12 +123,10 @@ const briefingData = {
             id: 'technology',
             items: {
                 zh: [
-                    'SKILLSAFE EU 项目（EHPA 牵头、欧盟共同资助）2026 年 4–5 月宣布与 Real Alternatives 培训计划战略合作：将 R290（丙烷）热泵安全教材纳入 Real Alternatives 多语言 e-learning 平台，并在荷兰、西班牙等地 LG 等设施开展安装商试点培训。项目目标是为可燃制冷剂热泵全生命周期提供统一安全指引，缓解欧洲各国培训标准碎片化问题。',
-                    'EHPA 2026 年 5 月公开「Heat pumps need people」议题及 SKILLS4HP 技能集群动态，指出安装商、规划师与技术人员短缺仍是热泵普及瓶颈；与 SKILLSAFE 的 R290 实训、各国继续教育体系形成「人力缺口—标准实训」闭环。工业高温热泵技术路线详见 IIR 第 61 号技术简报（第 19 周已报道）。'
+                    'EHPA 2026年5月18日议题聚焦人工智能与能源系统数字化：在风光装机与负荷波动加剧背景下，热泵及综合能源系统的多模态预测、多源寻优与全栈控制正与「能源大脑」类物理—数据双驱动方法交汇；与第20周 SKILLSAFE / SKILLS4HP 人力实训线形成「软控升级—硬技能供给」互补。工业高温热泵路线与示范案例详见本站简报区「2026第二届中国高温及工业热泵创新发展大会」趋势观察及 IIR 第61号技术简报（第19周已报道）。'
                 ],
                 en: [
-                    'SKILLSAFE EU (EHPA-led, EU co-funded) announced a strategic partnership with Real Alternatives in Apr–May 2026: integrate R290 heat-pump safety materials into the multilingual Real Alternatives e-learning platform and run installer pilot trainings at facilities including LG sites in the Netherlands and Spain—addressing fragmented national safety rules for flammable refrigerants.',
-                    'EHPA’s May 2026 “Heat pumps need people” messaging and the SKILLS4HP cluster highlight installer, planner, and technician shortages as a key adoption bottleneck—complementing SKILLSAFE R290 pilots and national continuing-education systems. For industrial high-temperature heat pump technology, see the IIR Technical Brief No. 61 (covered in week 19).'
+                    'EHPA’s 18 May 2026 focus on AI and energy-system digitalisation highlights multimodal forecasting, multi-source optimisation, and stack-wide control for heat pumps and integrated energy systems amid rising variable renewables—complementing week-20 SKILLSAFE / SKILLS4HP workforce tracks. For industrial high-temperature heat pumps, see this site’s Taiyuan HTHP 2026 trend panel and IIR Technical Brief No. 61 (week 19).'
                 ]
             }
         },
@@ -134,11 +134,11 @@ const briefingData = {
             id: 'calendar',
             items: {
                 zh: [
-                    '第 15 届 IEA 热泵大会（15th IEA Heat Pump Conference）：2026 年 5 月 26–29 日，奥地利维也纳 Hofburg，主题「Decarbonisation through Innovation」；含主题演讲、科学报告、工作坊、示范项目参观与政策论坛。常规注册截至 5 月 15 日，议程与签证邀请函见 hpc2026.org。',
-                    'ISH Shanghai & CIHE 2026 仍计划 2026 年秋季于上海新国际博览中心举办（常与 IGB 系列展同期）；Chillventa 2026 纽伦堡业界日历多指向约 10 月 13–15 日。行前请分别在 messefrankfurt.com 与 chillventa.de 核对最新日程。'
+                    '第15届IEA热泵大会（15th IEA Heat Pump Conference）：2026年5月26–29日奥地利维也纳Hofburg，主题「Decarbonisation through Innovation」；据官网，约380篇科学投稿，5月26日举办IEA HPT TCP Annex系列工作坊及技术参观，5月27日起主会含能源气候政策与产业转型主题演讲、分会与展览，28日政策论坛。常规注册已于5月15日截止，议程、签证邀请函与现场信息见 hpc2026.org。',
+                    'ISH Shanghai & CIHE 2026仍计划2026年秋季于上海新国际博览中心举办（常与IGB系列展同期）；Chillventa 2026纽伦堡业界日历多指向约10月13–15日。行前请分别在 messefrankfurt.com 与 chillventa.de 核对最新日程。'
                 ],
                 en: [
-                    '15th IEA Heat Pump Conference: 26–29 May 2026, Hofburg, Vienna, Austria—theme “Decarbonisation through Innovation”; keynotes, papers, workshops, site visits, and policy forum. Standard registration until 15 May; program and visa letters at hpc2026.org.',
+                    '15th IEA Heat Pump Conference: 26–29 May 2026, Hofburg, Vienna—theme “Decarbonisation through Innovation”; ~380 scientific submissions per the official site; 26 May IEA HPT Annex workshops and site visits, main programme from 27 May with policy and industry plenaries, exhibition, and a policy forum on 28 May. Standard registration closed 15 May; program and visa letters at hpc2026.org.',
                     'ISH Shanghai & CIHE 2026 remains scheduled for Autumn 2026 at SNIEC (often with IGB co-located shows); Chillventa 2026 Nuremberg is widely penciled for about 13–15 Oct 2026. Re-check dates on messefrankfurt.com and chillventa.de before travel.'
                 ]
             }
