@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jing Yanrong — Industrial Heat Pump Articles</title>
+    <link>https://www.jingyanrong.com/articles.html</link>
+    <description>Weekly industry briefings and engineering insights by Jing Yanrong</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 May 2026 01:19:27 GMT</lastBuildDate>
+    <atom:link href="https://www.jingyanrong.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Week 21 2026 Refrigeration &amp; Heat Pump Industry Briefing / 2026年第21周制冷与热泵行业简报</title>
+    <link>https://www.jingyanrong.com/briefings/2026-w21.html</link>
+    <guid isPermaLink="true">https://www.jingyanrong.com/briefings/2026-w21.html</guid>
+    <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
+    <description>EU IF25 Heat Auction ~€400M awards; EHPA Q1 2026 Europe heat-pump rebound; China energy-label catalog 2026 from 1 Jun; Vienna IEA HPC opens 26 May; site standards quick reference updated 22 May</description>
+  </item>
+  <item>
+    <title>Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +300°C) / 超越炒作：真正的护城河是极端测试 (-40°C 至 +300°C)</title>
+    <link>https://www.jingyanrong.com/insights/extreme-testing-moat.html</link>
+    <guid isPermaLink="true">https://www.jingyanrong.com/insights/extreme-testing-moat.html</guid>
+    <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
+    <description>Claim: Everyone claims 160°C capability, but few can prove it. Reality: The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Prin</description>
+  </item>
+  <item>
+    <title>Large Screw Compressor Seizure: Not &quot;Oil Starvation&quot;, but &quot;Deadly Stacking of Tolerance &amp; Thermal Deformation&quot; / 大型螺杆机抱死真相：不是&quot;缺油&quot;，是&quot;公差与热变形的死亡叠加&quot;</title>
+    <link>https://www.jingyanrong.com/insights/screw-seizure-tolerance.html</link>
+    <guid isPermaLink="true">https://www.jingyanrong.com/insights/screw-seizure-tolerance.html</guid>
+    <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+    <description>Misconception: Normal oil level (60%+) ≠ effective lubrication. Simply replacing bearings cannot solve &quot;critical friction&quot;. Truth: Deep disassembly revealed that a certain series of heavy-duty models </description>
+  </item>
+  <item>
+    <title>5 Site Visits to Solve a &quot;Mystery&quot; Seizure: The -45°C Liquid Trap / 5次现场排查：终结 -45°C 液击&quot;悬案&quot;</title>
+    <link>https://www.jingyanrong.com/insights/liquid-trap-45c.html</link>
+    <guid isPermaLink="true">https://www.jingyanrong.com/insights/liquid-trap-45c.html</guid>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate>
+    <description>Initial Diagnosis: Multiple large compressors seized and were initially blamed on manufacturing defects. Root Cause: After 5 site inspections, I traced the root cause not to the machine, but to the sy</description>
+  </item>
+  </channel>
+</rss>

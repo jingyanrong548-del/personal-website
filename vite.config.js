@@ -1,19 +1,29 @@
 import { defineConfig } from 'vite'
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import { readFileSync, readdirSync, existsSync } from 'fs'
+import { resolve, join } from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
-// 读取 package.json 获取版本号
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'))
 const version = packageJson.version
 
+function collectHtmlInputs(rootDir, subfolder) {
+  const dir = join(rootDir, subfolder)
+  const inputs = {}
+  if (!existsSync(dir)) return inputs
+  readdirSync(dir)
+    .filter((f) => f.endsWith('.html'))
+    .forEach((f) => {
+      const name = f.replace('.html', '')
+      inputs[`${subfolder}/${name}`] = resolve(dir, f)
+    })
+  return inputs
+}
+
 export default defineConfig({
   base: './',
-  plugins: [
-    tailwindcss(),
-  ],
+  plugins: [tailwindcss()],
   define: {
-    '__APP_VERSION__': JSON.stringify(version)
+    __APP_VERSION__: JSON.stringify(version),
   },
   build: {
     outDir: 'dist',
@@ -22,18 +32,21 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
+        articles: resolve(__dirname, 'articles.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),
         usefulLinks: resolve(__dirname, 'useful-links.html'),
         heatPumpPolicies: resolve(__dirname, 'heat-pump-policies.html'),
+        ...collectHtmlInputs(__dirname, 'briefings'),
+        ...collectHtmlInputs(__dirname, 'insights'),
       },
       output: {
-        assetFileNames: 'assets/[name].[hash].[ext]'
-      }
-    }
+        assetFileNames: 'assets/[name].[hash].[ext]',
+      },
+    },
   },
   server: {
     port: 3000,
-    open: true
-  }
+    open: true,
+  },
 })

@@ -26,6 +26,15 @@ npm run preview
 
 构建后的文件将输出到 `dist` 目录。
 
+构建前会自动执行 `scripts/build-content.mjs`，从 `content/` 生成周报/洞察文章页、`public/feed.xml` 与 `public/sitemap.xml`。
+
+## 📰 文章与周报
+
+- **内容数据**：`content/briefings/*.json`、`content/insights/*.json`
+- **内容中心**：`articles.html`
+- **更新周报**：编辑 JSON 后运行 `npm run build`（或 `node scripts/build-content.mjs`）
+- **RSS**：`https://www.jingyanrong.com/feed.xml`（构建时生成）
+
 ## 🚢 部署
 
 - **GitHub Pages**：推送 `main` 后由 GitHub Actions 自动构建并部署。

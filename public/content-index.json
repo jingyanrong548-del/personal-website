@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-05-25",
+  "latestBriefing": {
+    "id": "briefing-2026-w21",
+    "slug": "2026-w21",
+    "year": 2026,
+    "week": 21,
+    "published": "2026-05-24",
+    "title": {
+      "en": "Week 21 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第21周制冷与热泵行业简报"
+    },
+    "subtitle": {
+      "en": "EU IF25 Heat Auction ~€400M awards; EHPA Q1 2026 Europe heat-pump rebound; China energy-label catalog 2026 from 1 Jun; Vienna IEA HPC opens 26 May; site standards quick reference updated 22 May",
+      "zh": "欧盟 IF25 工业用热拍卖公布约 4 亿欧元中标、EHPA 通报欧洲 Q1 热泵销量回暖；国内能效标识 2026 版目录 6 月起实施；维也纳 IEA 热泵大会即将开幕；本站工业热泵标准速查 5/22 更新"
+    },
+    "highlights": {
+      "en": [
+        "EU IF25 Heat Auction: 22 May — 65 projects, ~€396M, 10 Member States",
+        "Commission confirms second industrial heat auction later in 2026 (19 May)",
+        "EHPA: ~575k residential units in 11 EU countries in Q1 2026, ~+17% YoY",
+        "NDRC/FAS 2026/550: revised energy-label catalog; key rules from 1 Jun 2026",
+        "15th IEA Heat Pump Conference, Vienna, 26–29 May (~380 submissions)"
+      ],
+      "zh": [
+        "欧盟 IF25 工业用热拍卖：5/22 公布 65 个项目、约 3.96 亿欧元、10 国中标",
+        "欧委会 5/19 确认年内将举办第二轮工业用热拍卖",
+        "EHPA：欧洲 11 国 2026 Q1 热泵销量约 57.5 万台、同比约 +17%",
+        "发改环资规〔2026〕550 号：能效标识目录（2026 版）多项 6/1 起施行",
+        "第 15 届 IEA 热泵大会 5/26–29 维也纳开幕（约 380 篇投稿）"
+      ]
+    },
+    "url": "/briefings/2026-w21.html"
+  },
+  "items": [
+    {
+      "id": "briefing-2026-w21",
+      "type": "briefing",
+      "slug": "2026-w21",
+      "series": "weekly-briefing",
+      "published": "2026-05-24",
+      "title": {
+        "en": "Week 21 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第21周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "EU IF25 Heat Auction ~€400M awards; EHPA Q1 2026 Europe heat-pump rebound; China energy-label catalog 2026 from 1 Jun; Vienna IEA HPC opens 26 May; site standards quick reference updated 22 May",
+        "zh": "欧盟 IF25 工业用热拍卖公布约 4 亿欧元中标、EHPA 通报欧洲 Q1 热泵销量回暖；国内能效标识 2026 版目录 6 月起实施；维也纳 IEA 热泵大会即将开幕；本站工业热泵标准速查 5/22 更新"
+      },
+      "highlights": {
+        "en": [
+          "EU IF25 Heat Auction: 22 May — 65 projects, ~€396M, 10 Member States",
+          "Commission confirms second industrial heat auction later in 2026 (19 May)",
+          "EHPA: ~575k residential units in 11 EU countries in Q1 2026, ~+17% YoY",
+          "NDRC/FAS 2026/550: revised energy-label catalog; key rules from 1 Jun 2026",
+          "15th IEA Heat Pump Conference, Vienna, 26–29 May (~380 submissions)"
+        ],
+        "zh": [
+          "欧盟 IF25 工业用热拍卖：5/22 公布 65 个项目、约 3.96 亿欧元、10 国中标",
+          "欧委会 5/19 确认年内将举办第二轮工业用热拍卖",
+          "EHPA：欧洲 11 国 2026 Q1 热泵销量约 57.5 万台、同比约 +17%",
+          "发改环资规〔2026〕550 号：能效标识目录（2026 版）多项 6/1 起施行",
+          "第 15 届 IEA 热泵大会 5/26–29 维也纳开幕（约 380 篇投稿）"
+        ]
+      },
+      "url": "/briefings/2026-w21.html",
+      "year": 2026,
+      "week": 21
+    },
+    {
+      "id": "insight-extreme-testing-moat",
+      "type": "insight",
+      "slug": "extreme-testing-moat",
+      "series": "engineering-insights",
+      "published": "2025-09-01",
+      "title": {
+        "en": "Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +300°C)",
+        "zh": "超越炒作：真正的护城河是极端测试 (-40°C 至 +300°C)"
+      },
+      "tag": {
+        "en": "Industry Outlook",
+        "zh": "行业前瞻"
+      },
+      "dateLabel": {
+        "en": "Sep 2025",
+        "zh": "2025年9月"
+      },
+      "excerptPlain": {
+        "en": "Claim: Everyone claims 160°C capability, but few can prove it. Reality: The future belongs to those who build CNAS-level infrastructure to verify R744/Steam systems under extreme load boundaries. Prin",
+        "zh": "行业宣称： 行业都在宣称 160°C 能力，但鲜有能证明者。 现实情况： 未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。 核心原则： 验证 > 规格。"
+      },
+      "url": "/insights/extreme-testing-moat.html"
+    },
+    {
+      "id": "insight-screw-seizure-tolerance",
+      "type": "insight",
+      "slug": "screw-seizure-tolerance",
+      "series": "engineering-insights",
+      "published": "2024-06-01",
+      "title": {
+        "en": "Large Screw Compressor Seizure: Not \"Oil Starvation\", but \"Deadly Stacking of Tolerance & Thermal Deformation\"",
+        "zh": "大型螺杆机抱死真相：不是\"缺油\"，是\"公差与热变形的死亡叠加\""
+      },
+      "tag": {
+        "en": "Deep Failure Review",
+        "zh": "深度故障复盘"
+      },
+      "dateLabel": {
+        "en": "Jun 2024",
+        "zh": "2024年6月"
+      },
+      "excerptPlain": {
+        "en": "Misconception: Normal oil level (60%+) ≠ effective lubrication. Simply replacing bearings cannot solve \"critical friction\". Truth: Deep disassembly revealed that a certain series of heavy-duty models ",
+        "zh": "误区： 油位正常 (60%+) ≠ 有效润滑。单纯换轴承无法解决\"临界摩擦\"。 真相： 深度拆解发现， 某系列重载机型 在最大公差组合下，阳转子咬合阴转子约 35μm 。叠加吸气端供油不对称与热变形，导致密封线在无油膜状态下崩塌。 结论： 真正的修复必须从\"制造侧重构公差链\"与\"运行侧增加临界保护\"双向入手。"
+      },
+      "url": "/insights/screw-seizure-tolerance.html"
+    },
+    {
+      "id": "insight-liquid-trap-45c",
+      "type": "insight",
+      "slug": "liquid-trap-45c",
+      "series": "engineering-insights",
+      "published": "2023-10-01",
+      "title": {
+        "en": "5 Site Visits to Solve a \"Mystery\" Seizure: The -45°C Liquid Trap",
+        "zh": "5次现场排查：终结 -45°C 液击\"悬案\""
+      },
+      "tag": {
+        "en": "Critical Troubleshooting",
+        "zh": "关键故障排查"
+      },
+      "dateLabel": {
+        "en": "Oct 2023",
+        "zh": "2023年10月"
+      },
+      "excerptPlain": {
+        "en": "Initial Diagnosis: Multiple large compressors seized and were initially blamed on manufacturing defects. Root Cause: After 5 site inspections, I traced the root cause not to the machine, but to the sy",
+        "zh": "初步诊断： 多台大型压缩机抱死，最初被归咎于制造缺陷。 根因分析： 经过 5 次现场检查，根因并非机器本身，而是系统：由有缺陷的 -45°C 蒸发器设计导致的偶发性液击。 解决方案： 修复系统后，压缩机得以保全。"
+      },
+      "url": "/insights/liquid-trap-45c.html"
+    }
+  ],
+  "briefings": [
+    {
+      "slug": "2026-w21",
+      "published": "2026-05-24",
+      "title": {
+        "en": "Week 21 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第21周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w21.html"
+    }
+  ],
+  "insights": [
+    {
+      "slug": "extreme-testing-moat",
+      "published": "2025-09-01",
+      "title": {
+        "en": "Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +300°C)",
+        "zh": "超越炒作：真正的护城河是极端测试 (-40°C 至 +300°C)"
+      },
+      "url": "/insights/extreme-testing-moat.html"
+    },
+    {
+      "slug": "liquid-trap-45c",
+      "published": "2023-10-01",
+      "title": {
+        "en": "5 Site Visits to Solve a \"Mystery\" Seizure: The -45°C Liquid Trap",
+        "zh": "5次现场排查：终结 -45°C 液击\"悬案\""
+      },
+      "url": "/insights/liquid-trap-45c.html"
+    },
+    {
+      "slug": "screw-seizure-tolerance",
+      "published": "2024-06-01",
+      "title": {
+        "en": "Large Screw Compressor Seizure: Not \"Oil Starvation\", but \"Deadly Stacking of Tolerance & Thermal Deformation\"",
+        "zh": "大型螺杆机抱死真相：不是\"缺油\"，是\"公差与热变形的死亡叠加\""
+      },
+      "url": "/insights/screw-seizure-tolerance.html"
+    }
+  ]
+}

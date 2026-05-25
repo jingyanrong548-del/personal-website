@@ -10,6 +10,20 @@
 4. **技术 SEO**：Canonical URL、robots.txt、sitemap.xml
 5. **百度自动推送**：页面被访问时自动将 URL 提交给百度（已嵌入）
 6. **IndexNow 支持**：支持 Bing、Yandex 等快速收录协议（见下文）
+7. **内容站与 RSS**（2026-05）：[`articles.html`](articles.html) 内容中心；周报/洞察独立 URL；[`feed.xml`](public/feed.xml) RSS 订阅；构建时自动更新 `sitemap.xml`
+
+### 可收录的文章 URL（示例）
+
+| 类型 | URL |
+|------|-----|
+| 内容中心 | `https://www.jingyanrong.com/articles.html` |
+| 最新周报 | `https://www.jingyanrong.com/briefings/2026-w21.html` |
+| 工程洞察 | `https://www.jingyanrong.com/insights/liquid-trap-45c.html` 等 |
+| Annex 68 笔记 | `https://www.jingyanrong.com/briefings/annex68-iea-hpt.html` |
+| 展会观察 | `https://www.jingyanrong.com/briefings/conferences.html` |
+| RSS | `https://www.jingyanrong.com/feed.xml` |
+
+**更新周报**：编辑 `content/briefings/<slug>.json` 后执行 `npm run build`（或 `node scripts/build-content.mjs`），会重新生成文章页、`feed.xml` 与 `public/content-index.json`。
 
 ---
 

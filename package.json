@@ -4,7 +4,8 @@
   "description": "Personal homepage for Jing Yanrong (荆炎荣)",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/build-content.mjs && vite",
+    "prebuild": "node scripts/build-content.mjs",
     "build": "vite build && node scripts/remove-crossorigin.js",
     "preview": "vite preview",
     "version:patch": "node scripts/bump-version.js patch",
