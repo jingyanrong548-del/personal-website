@@ -125,9 +125,9 @@ export const HP_STD_EN_BY_NUMBER = {
         coreContentEn: 'CO₂ heat pumps for space heating; emphasizes low-ambient performance.',
     },
     'GB/T 45650-2025': {
-        stdNameEn: 'Carbon dioxide air-source heat pump steam packages',
+        stdNameEn: 'Air source heat pump packages with carbon dioxide as refrigerants',
         coreContentEn:
-            'Published 2025-04-25; effective 2025-11-01. Milestone national standard for heat-pump steam generation on the CO₂ route; applies to units producing space-heating, domestic or commercial/industrial hot water or steam with air as heat source and CO₂ as refrigerant.',
+            'Published 2025-04-25; effective 2025-11-01 (ICS 27.200, CCS J 73). Specifies terms and definitions, basic parameters, technical requirements, test methods, inspection rules, marking, packaging, transportation and storage for CO₂ air-source heat pump packages. Applies to packages using CO₂ as refrigerant that exchange heat with air to produce hot water, domestic hot water, industrial/commercial hot water or steam.',
     },
     'JB/T 15213-2025': {
         stdNameEn: 'Steam compression heat pump type steam generator units',

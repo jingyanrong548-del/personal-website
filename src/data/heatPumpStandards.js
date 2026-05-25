@@ -176,18 +176,19 @@ export const heatPumpStandardsData = [
         status: 'current',
     },
     {
+        category: 'CO₂(R744) 热泵 (专用)',
+        stdNumber: 'GB/T 45650-2025',
+        stdName: '(最新版) 二氧化碳空气源热泵机组',
+        coreContent:
+            '2025-04-25 发布，2025-11-01 实施（ICS 27.200，CCS J 73）。规定二氧化碳空气源热泵机组的术语和定义、基本参数、技术要求、试验方法、检验规则、标志、包装、运输和贮存。适用于以二氧化碳为制冷剂、与空气进行换热制取热水、生活热水、工业（商业）热水或蒸汽的热泵机组。',
+        status: 'latest',
+    },
+    {
         category: '蒸汽 (高温突破)',
         stdNumber: 'NB/T 11236-2023',
         stdName: '二氧化碳空气源热泵供暖机组',
         coreContent: '专门针对CO₂热泵在供暖场景的应用，关注其在低温环境下的性能。',
         status: 'current',
-    },
-    {
-        category: '蒸汽 (高温突破)',
-        stdNumber: 'GB/T 45650-2025',
-        stdName: '(最新版) 二氧化碳空气源热泵蒸汽机组',
-        coreContent: '2025-04-25 发布，2025-11-01 起实施。我国热泵制取蒸汽（CO₂ 技术路线）的里程碑式国标，适用于以空气为热源、以二氧化碳为制冷剂制取采暖/生活/工商业热水或蒸汽的机组的设计、制造与检验。',
-        status: 'latest',
     },
     {
         category: '蒸汽 (高温突破)',
