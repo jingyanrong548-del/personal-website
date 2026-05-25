@@ -1,7 +1,7 @@
 export const translations = {
     en: {
-        'seo.pageTitle': 'Jing Yanrong — Industrial Heat Pump Systems Architect',
-        'seo.pageDescription': 'Jing Yanrong: industrial heat pump systems architect—extreme-cold & CO₂ cascade deployment. Proprietary matching & benefit tools; deployable architecture for demanding industrial heating.',
+        'seo.pageTitle': 'Jing Yanrong — Industrial Refrigeration & Heat Pump Architecture | −100°C to 300°C · Extreme-cold CO₂',
+        'seo.pageDescription': 'Jing Yanrong: industrial refrigeration and wide-temperature heat pumps (−100°C class through 300°C process heat), with CO₂ cascade deployment in extreme cold. Proprietary matching & benefit tools; deployable architecture for demanding industrial heating and cooling.',
         'ui.closeModal': 'Close',
         'ui.skipToMain': 'Skip to main content',
         'nav.menu': 'Menu',
@@ -122,8 +122,8 @@ export const translations = {
         // Hero
         'hero.title': 'Jing Yanrong',
         'hero.badge': 'Industrial Heat Pump Systems Architect · Licensed PE',
-        'hero.headline': 'Extreme-cold & CO₂ cascade cycles—engineered for field deployment',
-        'hero.subheadline': 'No internal tech churn—only deployable architecture for demanding industrial heating. Independent problem-solving, cost-down, verifiable delivery.',
+        'hero.headline': 'Industrial refrigeration (−100°C class) through 300°C process heat · CO₂ cascade deployment in extreme cold',
+        'hero.subheadline': 'Three decades in industrial refrigeration and heat pumps—deployable architecture for demanding industrial heating, cooling coupling, and verifiable delivery.',
         'hero.cta': 'Book a 15-min diagnostic',
         'hero.secondaryCta': 'View proprietary tools',
         
@@ -159,7 +159,7 @@ export const translations = {
         'about.phil2026.blurb': 'Thirty years in industrial refrigeration and heat pumps, distilled into <strong>auditable algorithms and architecture</strong>. I solve hard industrial heating problems independently—cutting waste, improving ROI, and closing the loop to field-ready delivery. <em class="highlight-quote">Rejecting tech churn; only deployable schemes for high-difficulty thermal projects.</em>',
         'about.text1': 'Deep experience across industrial cold chain, high-temperature heat pumps, CO₂ cascade, and ammonia systems—now focused on independent architecture consulting and open engineering tools.',
         'about.matrix.1.label': 'Focus',
-        'about.matrix.1.value': 'Extreme cold & industrial heat',
+        'about.matrix.1.value': 'Wide-range industrial cold & heat',
         'about.matrix.1.sub': 'CO₂ cascade · −40°C and below',
         'about.matrix.2.label': 'Delivery',
         'about.matrix.2.value': 'Architecture + tools',
@@ -255,7 +255,7 @@ export const translations = {
         'apps.filter.heatpump': 'Heat Pump',
         'apps.filter.general': 'General',
         'springFestival.greeting': 'Year of the Horse · AI-Powered · Pioneering Thermal Energy',
-        'missionStrip.greeting': 'Extreme-cold CO₂ cascade · Industrial heating architecture · Verifiable field delivery',
+        'missionStrip.greeting': '−100°C refrigeration to 300°C process heat · Extreme-cold CO₂ cascade · Verifiable field delivery',
         'pillars.kicker': 'Electrification · Decarbonization through process coupling · Standards, refrigerants & verification',
         'pillars.title': 'Three global trends shaping the future of industrial thermal systems',
         'pillars.card1.title': 'Electrification becomes an economic decision',
@@ -706,8 +706,8 @@ export const translations = {
         'knowledge.article5.disclaimer': 'Emission factors and carbon accounting rules vary by region and reporting regime; this chapter is engineering orientation, not a carbon audit or legal opinion.',
     },
     zh: {
-        'seo.pageTitle': '荆炎荣 — 工业热泵技术架构师 | 极寒场景与 CO₂ 复叠循环',
-        'seo.pageDescription': '荆炎荣：工业热泵技术架构师，专注极寒场景与 CO₂ 复叠循环工程落地。自研热泵匹配、效益分析等可验证工具；为高难度工业供热提供可落地技术架构方案。',
+        'seo.pageTitle': '荆炎荣 — 工业冷冻与热泵架构 | −100℃～300℃ · 极寒 CO₂',
+        'seo.pageDescription': '荆炎荣：工业冷冻与宽温域工业热泵（−100℃ 级至 300℃ 级工艺供热），极寒 CO₂ 复叠工程落地。自研热泵匹配、效益分析等可验证工具；为高难度工业供热与制冷耦合提供可落地技术架构方案。',
         'ui.closeModal': '关闭',
         'ui.skipToMain': '跳到主要内容',
         'nav.menu': '菜单',
@@ -826,8 +826,8 @@ export const translations = {
 
         'hero.title': '荆炎荣',
         'hero.badge': '工业热泵技术架构师 · 注册公用设备工程师',
-        'hero.headline': '专注极寒场景与 CO₂ 复叠循环的工程落地',
-        'hero.subheadline': '拒绝技术内耗，只为高难度工业供热场景提供可落地的技术架构方案。独立解决、降本增效、工程可验证。',
+        'hero.headline': '−100℃ 工业冷冻至 300℃ 工业供热 · 极寒 CO₂ 复叠工程落地',
+        'hero.subheadline': '三十年工业冷冻与热泵现场经验，为高难度工业供热与制冷耦合提供可落地架构。独立解决、降本增效、工程可验证。',
         'hero.cta': '预约技术诊断',
         'hero.secondaryCta': '查看自研工具',
         
@@ -860,7 +860,7 @@ export const translations = {
         'about.phil2026.blurb': '三十年工业制冷与热泵现场，沉淀为<strong>可审计的算法与架构能力</strong>。独立解决高难度工业供热问题——降本增效、工程落地、闭环可验证。<em class="highlight-quote">拒绝技术内耗，只为可落地的技术架构方案负责。</em>',
         'about.text1': '深耕工业冷冻、高温热泵、CO₂ 复叠与氨系统；现以独立技术架构咨询与开源工程工具为主业。',
         'about.matrix.1.label': '专注领域',
-        'about.matrix.1.value': '极寒 & 工业供热',
+        'about.matrix.1.value': '工业冷热宽温域',
         'about.matrix.1.sub': 'CO₂ 复叠 · −40℃ 及以下',
         'about.matrix.2.label': '交付方式',
         'about.matrix.2.value': '架构 + 工具验证',
@@ -952,7 +952,7 @@ export const translations = {
         'apps.filter.heatpump': '热泵类',
         'apps.filter.general': '通用类',
         'springFestival.greeting': '马年奔腾 · AI 赋能 · 开创冷热事业新篇章',
-        'missionStrip.greeting': '极寒 CO₂ 复叠 · 工业供热架构 · 可验证工程交付',
+        'missionStrip.greeting': '−100℃ 冷冻～300℃ 供热 · 极寒 CO₂ 复叠 · 可验证交付',
         'pillars.kicker': '电气化 · 脱碳与工艺耦合 · 标准与可验证',
         'pillars.title': '未来工业冷热的三条国际主线',
         'pillars.card1.title': '电气化进入“经济账”阶段',
