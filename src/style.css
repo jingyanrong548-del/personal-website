@@ -2847,6 +2847,77 @@ body {
     color: var(--text-light);
 }
 
+.useful-links-publication {
+    margin-top: 0.85rem;
+    padding: 0.9rem 1rem;
+    border-radius: var(--glass-radius-sm);
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.useful-links-publication-kicker {
+    margin: 0 0 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--emerald-700);
+}
+
+.useful-links-publication-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--emerald-800);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.useful-links-publication-title:hover {
+    color: var(--emerald-900);
+}
+
+.useful-links-publication-meta,
+.useful-links-publication-authors {
+    margin: 0.45rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+
+.useful-links-publication-summary-label,
+.useful-links-publication-download-label {
+    margin: 0.75rem 0 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.useful-links-publication-summary,
+.useful-links-publication-downloads {
+    margin: 0;
+    padding-left: 1.15rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+
+.useful-links-publication-summary li,
+.useful-links-publication-downloads li {
+    margin-bottom: 0.35rem;
+}
+
+.useful-links-publication-downloads a {
+    color: var(--emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.useful-links-publication-downloads a:hover {
+    color: var(--emerald-800);
+}
+
 .apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
