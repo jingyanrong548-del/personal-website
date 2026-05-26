@@ -34,6 +34,23 @@ function updateHpRefMeta(lang) {
     }
 }
 
+/** Stacked bilingual: primary = UI language, secondary = other language */
+function bilingualChemNameCell(row, lang) {
+    const en = (row.chemNameEn || '').trim();
+    const zh = (row.chemNameZh || '').trim();
+    if (!en && !zh) return '';
+    if (!en || en === zh) {
+        return escapeHtml(zh || en);
+    }
+    if (!zh) {
+        return escapeHtml(en);
+    }
+    if (lang === 'en') {
+        return `<div class="hp-std-bilingual-primary">${escapeHtml(en)}</div><div class="hp-std-bilingual-secondary">${escapeHtml(zh)}</div>`;
+    }
+    return `<div class="hp-std-bilingual-primary">${escapeHtml(zh)}</div><div class="hp-std-bilingual-secondary">${escapeHtml(en)}</div>`;
+}
+
 function groupByType(rows) {
     const groups = [];
     let current = null;
@@ -63,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         typeFilter.appendChild(option);
     });
 
-    function renderTable(filterType) {
+    function renderTable(filterType, lang = getCurrentLanguage()) {
         tableBody.innerHTML = '';
         const rows =
             filterType === 'all'
@@ -78,17 +95,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (index === 0) {
                     const typeTd = document.createElement('td');
-                    typeTd.className = 'hp-ref-type-cell';
+                    typeTd.className = 'hp-ref-type-cell hp-ref-col-left';
                     typeTd.rowSpan = rowspan;
                     typeTd.textContent = row.type;
                     tr.appendChild(typeTd);
                 }
 
                 const refTd = document.createElement('td');
-                refTd.className = 'hp-ref-refrigerant-cell';
+                refTd.className = 'hp-ref-refrigerant-cell hp-ref-col-left';
                 const refLabel = row.refrigerantRef || row.dataRef;
                 refTd.innerHTML = cellWithRef(row.refrigerant, refLabel);
                 tr.appendChild(refTd);
+
+                const nameTd = document.createElement('td');
+                nameTd.className = 'hp-ref-chem-name-cell hp-ref-col-left hp-ref-cell--bilingual';
+                nameTd.innerHTML = bilingualChemNameCell(row, lang);
+                tr.appendChild(nameTd);
+
+                const formulaTd = document.createElement('td');
+                formulaTd.className = 'hp-ref-formula-cell hp-ref-col-left';
+                formulaTd.textContent = row.formula || '—';
+                tr.appendChild(formulaTd);
 
                 const columnDefs = [
                     ['tCr', null, 'hp-ref-col-tcr'],
@@ -111,14 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     typeFilter.addEventListener('change', () => {
-        renderTable(typeFilter.value);
+        renderTable(typeFilter.value, getCurrentLanguage());
     });
 
     initLanguageSwitcher((lang) => {
         updateHpRefMeta(lang);
+        renderTable(typeFilter.value, lang);
     });
     updateHpRefMeta(getCurrentLanguage());
     initNavChipHighlight();
     initSiteLegalDisclaimer();
-    renderTable('all');
+    renderTable('all', getCurrentLanguage());
 });

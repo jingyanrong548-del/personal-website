@@ -6376,7 +6376,7 @@ html {
 }
 
 .hp-ref-table {
-    min-width: 720px;
+    min-width: 960px;
     font-size: 0.875rem;
 }
 
@@ -6386,10 +6386,8 @@ html {
     vertical-align: middle;
 }
 
-.hp-ref-table th:first-child,
-.hp-ref-table td:first-child,
-.hp-ref-table th:nth-child(2),
-.hp-ref-table td:nth-child(2) {
+.hp-ref-table th.hp-ref-col-left,
+.hp-ref-table td.hp-ref-col-left {
     text-align: left;
 }
 
@@ -6407,6 +6405,24 @@ html {
 .hp-ref-refrigerant-cell {
     font-weight: 600;
     white-space: nowrap;
+}
+
+.hp-ref-chem-name-cell {
+    min-width: 11rem;
+    max-width: 18rem;
+    line-height: 1.45;
+    font-size: 0.8125rem;
+}
+
+.hp-ref-cell--bilingual {
+    vertical-align: top;
+}
+
+.hp-ref-formula-cell {
+    white-space: nowrap;
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
 }
 
 .hp-ref-sup {
