@@ -6343,6 +6343,90 @@ html {
     }
 }
 
+/* HTHP working fluids (IIR Table 2) */
+.hp-ref-page .hp-std-lede {
+    max-width: 52rem;
+}
+
+.hp-ref-source {
+    margin: 1rem 0 0;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+
+.hp-ref-source a {
+    color: var(--emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.hp-ref-table-caption {
+    margin: 0 0 0.85rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--ink-900);
+    line-height: 1.4;
+}
+
+.hp-ref-table-wrap {
+    margin-top: 0;
+}
+
+.hp-ref-table {
+    min-width: 720px;
+    font-size: 0.875rem;
+}
+
+.hp-ref-table th,
+.hp-ref-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hp-ref-table th:first-child,
+.hp-ref-table td:first-child,
+.hp-ref-table th:nth-child(2),
+.hp-ref-table td:nth-child(2) {
+    text-align: left;
+}
+
+.hp-ref-table th.hp-ref-col-tcr,
+.hp-ref-table td.hp-ref-col-tcr {
+    text-align: center;
+}
+
+.hp-ref-type-cell {
+    font-weight: 700;
+    background: rgba(15, 23, 42, 0.04);
+    white-space: nowrap;
+}
+
+.hp-ref-refrigerant-cell {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.hp-ref-sup {
+    font-size: 0.7em;
+    line-height: 0;
+    margin-left: 0.05em;
+    font-weight: 600;
+}
+
+.hp-ref-table th sub,
+.hp-ref-table th sup {
+    font-size: 0.72em;
+    line-height: 0;
+    font-weight: 600;
+}
+
+.hp-ref-footnote {
+    font-style: italic;
+}
+
 /* Selection Color */
 ::selection {
     background: var(--emerald-700);

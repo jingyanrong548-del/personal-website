@@ -35,6 +35,7 @@ export default defineConfig({
         articles: resolve(__dirname, 'articles.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),
+        heatPumpRefrigerants: resolve(__dirname, 'heat-pump-refrigerants.html'),
         usefulLinks: resolve(__dirname, 'useful-links.html'),
         heatPumpPolicies: resolve(__dirname, 'heat-pump-policies.html'),
         ...collectHtmlInputs(__dirname, 'briefings'),

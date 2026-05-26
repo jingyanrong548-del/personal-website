@@ -105,6 +105,7 @@ function siteNav(depth = 0) {
                                 <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                                 <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
                                 <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                                <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
                                 <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
                                 <li><a href="${p}useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
                             </ul>
@@ -127,6 +128,7 @@ function siteNav(depth = 0) {
                             <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                             <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
                             <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                            <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
                             <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
                             <li><a href="${p}useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
                         </ul>
@@ -391,6 +393,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/knowledge.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/useful-links.html`, priority: '0.65', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-standards.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/heat-pump-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-policies.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/annex68-iea-hpt.html`, priority: '0.6', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/conferences.html`, priority: '0.6', changefreq: 'monthly' },

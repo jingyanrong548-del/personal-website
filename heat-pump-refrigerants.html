@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTHP working fluids — Property table</title>
+    <meta id="meta-page-title" name="title" content="HTHP working fluids — Property table">
+    <meta id="meta-page-description" name="description" content="Properties of working fluids applicable in high-temperature heat pumps (HTHPs): critical temperature and pressure, NBP, ODP, GWP, and ASHRAE safety class. Table from IIR Technical Brief 2026.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/heat-pump-refrigerants.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/heat-pump-refrigerants.html">
+    <meta id="meta-og-title" property="og:title" content="HTHP working fluids — Property table">
+    <meta id="meta-og-description" property="og:description" content="IIR Table 2: HFC, HFO, HCFO, HC and natural fluids for industrial high-temperature heat pumps.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary">
+    <meta id="meta-twitter-title" name="twitter:title" content="HTHP working fluids — Property table">
+    <meta id="meta-twitter-description" name="twitter:description" content="Working-fluid property table for high-temperature heat pumps (IIR Technical Brief 2026).">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/heatPumpRefrigerants.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li class="nav-menu__group nav-menu__group--chips">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
+                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
+                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
+                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__group nav-menu__group--anchors">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                            <li><a href="./#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
+                            <li><a href="./#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
+                            <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hp-std-page hp-ref-page">
+        <header class="hp-std-hero">
+            <div class="container">
+                <div class="hp-std-hero-card">
+                    <p class="hp-std-kicker" data-i18n="hpRef.kicker">Industrial heat pumps · Working fluids</p>
+                    <h1 class="hp-std-title" data-i18n="hpRef.pageTitle">HTHP applicable working fluids</h1>
+                    <p class="hp-std-lede" data-i18n="hpRef.lede" data-i18n-html="true">Reproduces <strong>Table 2</strong> from the IIR Technical Brief <em>A Key Technology for Industrial Decarbonisation</em> (61st IIR Technical Brief, 2026). For fluid screening and safety class orientation only—confirm against manufacturer data and site regulations.</p>
+
+                    <div class="hp-std-controls" role="search">
+                        <select id="hpRefTypeFilter" class="hp-std-select" aria-label="Fluid type">
+                            <option value="all" data-i18n="hpRef.filter.allTypes">All types</option>
+                        </select>
+                    </div>
+
+                    <p class="hp-ref-source">
+                        <span data-i18n="hpRef.source.label">Source publication:</span>
+                        <a href="https://iifiir.org/en/fridoc/high-temperature-heat-pumps-for-industrial-decarbonisation-61-lt-sup-gt-st-151491" target="_blank" rel="noopener noreferrer" data-i18n="hpRef.source.link">IIR — High-Temperature Heat Pumps for Industrial Decarbonisation (FRIDOC)</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section class="hp-std-section" aria-labelledby="hp-ref-table-heading">
+            <div class="container">
+                <h2 id="hp-ref-table-heading" class="hp-ref-table-caption" data-i18n="hpRef.table.caption">TABLE 2: PROPERTIES OF A FEW APPLICABLE WORKING FLUIDS IN HTHPS</h2>
+                <div class="hp-std-table-wrap hp-ref-table-wrap">
+                    <table class="hp-std-table hp-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="hpRef.table.type">TYPE</th>
+                                <th scope="col" data-i18n="hpRef.table.refrigerant">REFRIGERANT</th>
+                                <th scope="col" class="hp-ref-col-tcr" data-i18n="hpRef.table.tCr" data-i18n-html="true">t<sub>cr</sub> (°C)</th>
+                                <th scope="col" data-i18n="hpRef.table.pCr" data-i18n-html="true">p<sub>cr</sub> (MPa)</th>
+                                <th scope="col" data-i18n="hpRef.table.nbp">NBP</th>
+                                <th scope="col" data-i18n="hpRef.table.odp">ODP</th>
+                                <th scope="col" data-i18n="hpRef.table.gwp">GWP</th>
+                                <th scope="col" data-i18n="hpRef.table.safety">SAFETY</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hpRefTableBody"></tbody>
+                    </table>
+                </div>
+                <p class="hp-std-table-note hp-ref-footnote" data-i18n="hpRef.table.footnote" data-i18n-html="true">The data was gathered from [31] and [32], unless otherwise specified. <sup>a</sup>: [33], <sup>b</sup>: [34], <sup>c</sup>: [35], <sup>d</sup>: [36], <sup>e</sup>: [37].</p>
+                <footer class="hp-std-footnote">
+                    <p data-i18n="hpRef.footer.line">Data: IIR Technical Brief Table 2 · Compiled for quick reference: Jing Yanrong</p>
+                </footer>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
