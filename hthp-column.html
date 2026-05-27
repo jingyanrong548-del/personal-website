@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTHP column — R&amp;D roadmap &amp; adoption barriers</title>
+    <meta id="meta-page-title" name="title" content="HTHP column — R&amp;D roadmap &amp; adoption barriers">
+    <meta id="meta-page-description" name="description" content="Future R&amp;D directions from IIR Technical Brief No. 61 and adoption barriers from the 2026 Taiyuan conference—for plant owners, integrators, and investors.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/hthp-column.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/hthp-column.html">
+    <meta id="meta-og-title" property="og:title" content="HTHP column — R&amp;D roadmap &amp; adoption barriers">
+    <meta id="meta-og-description" property="og:description" content="IIR §7.2 R&amp;D themes and five adoption barriers from the 2026 Taiyuan high-temperature &amp; industrial heat pump conference.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="HTHP column — R&amp;D roadmap &amp; adoption barriers">
+    <meta id="meta-twitter-description" name="twitter:description" content="IIR §7.2 R&amp;D themes and five adoption barriers from the 2026 Taiyuan conference.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/hthpColumn.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li class="nav-menu__group nav-menu__group--chips">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
+                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                            <li><a href="./hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
+                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
+                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
+                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__group nav-menu__group--anchors">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                            <li><a href="./#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
+                            <li><a href="./#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
+                            <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="knowledge-page hthp-column-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="hthpCol.kicker">HTHP column · Strategy &amp; deployment</p>
+                    <h1 class="knowledge-title" data-i18n="hthpCol.title">High-temperature &amp; industrial heat pumps: R&amp;D roadmap &amp; adoption barriers</h1>
+                    <p class="knowledge-lede" data-i18n="hthpCol.lede">Condensed from IIR Technical Brief No. 61 and the 2026 Taiyuan conference.</p>
+
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="hthpCol.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item">
+                                <a class="knowledge-toc-link" href="#hthp-rd">
+                                    <span class="knowledge-toc-link-title" data-i18n="hthpCol.toc.rd">Future R&amp;D directions (IIR §7.2)</span>
+                                </a>
+                            </li>
+                            <li class="knowledge-toc-item">
+                                <a class="knowledge-toc-link" href="#hthp-pain">
+                                    <span class="knowledge-toc-link-title" data-i18n="hthpCol.toc.pain">Adoption barriers at scale</span>
+                                </a>
+                            </li>
+                            <li class="knowledge-toc-item">
+                                <a class="knowledge-toc-link" href="#hthp-related">
+                                    <span class="knowledge-toc-link-title" data-i18n="hthpCol.toc.related">Related resources on this site</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./#apps" data-i18n="hthpCol.cta.tools">Go to Toolbox</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./" data-i18n="hthpCol.cta.home">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="hthp-rd" class="knowledge-section hthp-column-section" aria-labelledby="hthp-rd-title">
+            <div class="container container--narrow">
+                <h2 class="knowledge-section-title" id="hthp-rd-title" data-i18n="hthpCol.rd.title">Future R&amp;D directions</h2>
+                <p class="knowledge-reason-text" data-i18n="hthpCol.rd.intro">IIR §7.2 introduction.</p>
+
+                <article id="rd-steam" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.steam.title">Steam supply and cycle / system innovation</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.steam.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.steam.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article id="rd-natural" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.natural.title">Natural working fluids</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.natural.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.natural.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article id="rd-compressor" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.compressor.title">Advanced compressor technology</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.compressor.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.compressor.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article id="rd-cop" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.cop.title">Maximising COP and system integration</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.cop.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.cop.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article id="rd-parks" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.parks.title">Sustainable industrial parks</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.parks.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.parks.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article id="rd-policy" class="hthp-topic-card">
+                    <h3 class="knowledge-section-subtitle" data-i18n="hthpCol.rd.policy.title">Policy and professional development</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.rd.policy.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.rd.policy.implication" data-i18n-html="true"></p>
+                </article>
+
+                <aside class="hthp-source-block">
+                    <p data-i18n="hthpCol.rd.source">Source note.</p>
+                    <p><a href="https://iifiir.org/en/fridoc/high-temperature-heat-pumps-industrial-decarbonisation-161128" target="_blank" rel="noopener noreferrer" data-i18n="hthpCol.rd.sourceLink">IIR publication</a></p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="hthp-pain" class="knowledge-section hthp-column-section knowledge-section--alt" aria-labelledby="hthp-pain-title">
+            <div class="container container--narrow">
+                <h2 class="knowledge-section-title" id="hthp-pain-title" data-i18n="hthpCol.pain.title">Adoption barriers at scale</h2>
+                <p class="knowledge-reason-text" data-i18n="hthpCol.pain.intro" data-i18n-html="true">Pain intro.</p>
+
+                <article class="hthp-pain-card">
+                    <h3 class="hthp-pain-card-title" data-i18n="hthpCol.pain.1.title">1. Integration barrier</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.pain.1.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.pain.1.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article class="hthp-pain-card">
+                    <h3 class="hthp-pain-card-title" data-i18n="hthpCol.pain.2.title">2. Technology vs scale</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.pain.2.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.pain.2.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article class="hthp-pain-card">
+                    <h3 class="hthp-pain-card-title" data-i18n="hthpCol.pain.3.title">3. Standardisation</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.pain.3.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.pain.3.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article class="hthp-pain-card">
+                    <h3 class="hthp-pain-card-title" data-i18n="hthpCol.pain.4.title">4. Economics</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.pain.4.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.pain.4.implication" data-i18n-html="true"></p>
+                </article>
+
+                <article class="hthp-pain-card">
+                    <h3 class="hthp-pain-card-title" data-i18n="hthpCol.pain.5.title">5. Ecosystem coordination</h3>
+                    <div class="hthp-topic-body" data-i18n="hthpCol.pain.5.bullets" data-i18n-html="true"></div>
+                    <p class="hthp-implication" data-i18n="hthpCol.pain.5.implication" data-i18n-html="true"></p>
+                </article>
+
+                <aside class="hthp-source-block">
+                    <p data-i18n="hthpCol.pain.source">Taiyuan source note.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="hthp-related" class="knowledge-section hthp-column-section" aria-labelledby="hthp-related-title">
+            <div class="container container--narrow">
+                <h2 class="knowledge-section-title" id="hthp-related-title" data-i18n="hthpCol.related.title">Related resources</h2>
+                <ul class="hthp-related-list">
+                    <li><a href="./heat-pump-refrigerants.html" data-i18n="hthpCol.related.refrigerants">HTHP working fluids</a></li>
+                    <li><a href="./heat-pump-standards.html" data-i18n="hthpCol.related.standards">Industrial heat pump standards</a></li>
+                    <li><a href="./heat-pump-policies.html" data-i18n="hthpCol.related.policies">Industrial heat pump policies</a></li>
+                    <li><a href="./briefings/conferences.html#exhibition-trends-taiyuan-hthp2026" data-i18n="hthpCol.related.conferences">Conferences &amp; forums</a></li>
+                </ul>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -104,6 +104,7 @@ function siteNav(depth = 0) {
                             <ul class="nav-menu__sublist">
                                 <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                                 <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                                <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
                                 <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
                                 <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
                                 <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
@@ -127,6 +128,7 @@ function siteNav(depth = 0) {
                         <ul class="nav-menu__sublist">
                             <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                             <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                            <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
                             <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
                             <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
                             <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
@@ -391,6 +393,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/`, priority: '1.0', changefreq: 'weekly' },
     { loc: `${SITE}/articles.html`, priority: '0.9', changefreq: 'weekly' },
     { loc: `${SITE}/knowledge.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/hthp-column.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/useful-links.html`, priority: '0.65', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-standards.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },

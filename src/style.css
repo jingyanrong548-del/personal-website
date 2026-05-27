@@ -546,7 +546,6 @@ body {
     justify-content: flex-start;
     padding-right: 2rem;
     padding-top: 1rem;
-    min-height: auto;
 }
 
 .hero-badge {
@@ -1287,6 +1286,19 @@ body {
 
 .exhibition-trends-body .briefing-section:first-of-type {
     margin-top: 1.25rem;
+}
+
+.exhibition-trends-crosslink {
+    margin: 1.25rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--glass-border);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.exhibition-trends-crosslink a {
+    font-weight: 600;
 }
 
 .exhibition-trends-intro {
@@ -5759,6 +5771,111 @@ html {
 
 .knowledge-block--examples .knowledge-section-subtitle {
     margin-top: 0;
+}
+
+/* HTHP column (hthp-column.html) */
+.hthp-column-section .knowledge-section-title {
+    max-width: none;
+    margin-bottom: 1rem;
+}
+
+.hthp-column-section .knowledge-reason-text {
+    margin-bottom: 1.5rem;
+}
+
+.hthp-column-section .knowledge-section-subtitle {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.knowledge-section--alt {
+    background: rgba(15, 23, 42, 0.03);
+}
+
+.hthp-topic-card,
+.hthp-pain-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    padding: 1.25rem 1.35rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--glass-shadow);
+}
+
+.hthp-pain-card {
+    border-left: 4px solid var(--heat-500);
+}
+
+.hthp-pain-card-title {
+    margin: 0 0 0.65rem;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink-900);
+    line-height: 1.35;
+}
+
+.hthp-topic-body ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.65;
+    color: var(--text-light);
+}
+
+.hthp-topic-body li + li {
+    margin-top: 0.35rem;
+}
+
+.hthp-implication {
+    margin: 0.85rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--glass-border);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--text-light);
+}
+
+.hthp-source-block {
+    margin-top: 1.5rem;
+    padding: 1rem 1.15rem;
+    background: rgba(8, 145, 178, 0.06);
+    border: 1px solid rgba(8, 145, 178, 0.18);
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.hthp-source-block p {
+    margin: 0 0 0.5rem;
+}
+
+.hthp-source-block p:last-child {
+    margin-bottom: 0;
+}
+
+.hthp-related-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+}
+
+.hthp-related-list a {
+    display: block;
+    padding: 0.85rem 1rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 0.65rem;
+    font-weight: 600;
+    color: var(--emerald-700);
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hthp-related-list a:hover {
+    border-color: rgba(46, 125, 50, 0.35);
+    box-shadow: var(--glass-shadow);
 }
 
 /* CO₂ severe-cold article (knowledge.html) */

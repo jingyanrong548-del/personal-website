@@ -34,6 +34,7 @@ export default defineConfig({
         index: resolve(__dirname, 'index.html'),
         articles: resolve(__dirname, 'articles.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
+        hthpColumn: resolve(__dirname, 'hthp-column.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),
         heatPumpRefrigerants: resolve(__dirname, 'heat-pump-refrigerants.html'),
         usefulLinks: resolve(__dirname, 'useful-links.html'),
