@@ -1,10 +1,10 @@
 /**
- * Working-fluid properties for high-temperature heat pumps (HTHPs).
+ * Working-fluid properties for heat pumps (HTHP / common HVAC fluids).
  * IIR rows: Technical Brief Table 2 — "A Key Technology for Industrial Decarbonisation"
  * (61st IIR Technical Brief on Refrigeration Technologies, 2026).
  * ASHRAE rows (footnote f): ANSI/ASHRAE Standard 34 Tables D-1/D-2; 2021 ASHRAE Handbook—Fundamentals,
- * Ch. 29 Tables 3–5 (GWP100); UNEP/ASHRAE Refrigerant Factsheet (May 2025) for R-515B NBP.
- * Chemical names & formulas: ANSI/ASHRAE Standard 34-2022, Refrigerant Designations
+ * Ch. 29 Tables 3–5 (GWP100); UNEP/ASHRAE Refrigerant Factsheet (May 2025) for blend NBP where noted.
+ * Chemical names & compositions: ANSI/ASHRAE Standard 34-2022, Refrigerant Designations
  * (https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
  */
 export const hthpRefrigerantsData = [
@@ -35,6 +35,34 @@ export const hthpRefrigerantsData = [
         gwp: '124',
         gwpRef: 'b',
         safety: 'A2',
+    },
+    {
+        type: 'HFC',
+        refrigerant: 'R32',
+        chemNameEn: 'difluoromethane',
+        chemNameZh: '二氟甲烷',
+        formula: 'CH2F2',
+        tCr: '78.1',
+        pCr: '5.78',
+        nbp: '-51.7',
+        odp: '0',
+        gwp: '675',
+        safety: 'A2L',
+        dataRef: 'f',
+    },
+    {
+        type: 'Blend',
+        refrigerant: 'R410A',
+        chemNameEn: 'R-32/125 (50.0/50.0)',
+        chemNameZh: 'R-32/125（50.0/50.0 质量%）',
+        formula: '—',
+        tCr: '72.1',
+        pCr: '4.93',
+        nbp: '-51.5',
+        odp: '0',
+        gwp: '2088',
+        safety: 'A1',
+        dataRef: 'f',
     },
     {
         type: 'HFC',
@@ -296,6 +324,34 @@ export const hthpRefrigerantsData = [
         odp: '0',
         gwp: '5',
         safety: 'A3',
+    },
+    {
+        type: 'Blend',
+        refrigerant: 'R454B',
+        chemNameEn: 'R-32/1234yf (68.9/31.1)',
+        chemNameZh: 'R-32/1234yf（68.9/31.1 质量%）',
+        formula: '—',
+        tCr: '78.1',
+        pCr: '5.27',
+        nbp: '-50.9',
+        odp: '0',
+        gwp: '467',
+        safety: 'A2L',
+        dataRef: 'f',
+    },
+    {
+        type: 'Blend',
+        refrigerant: 'R454C',
+        chemNameEn: 'R-32/1234yf (21.5/78.5)',
+        chemNameZh: 'R-32/1234yf（21.5/78.5 质量%）',
+        formula: '—',
+        tCr: '85.7',
+        pCr: '4.32',
+        nbp: '-45.6',
+        odp: '0',
+        gwp: '148',
+        safety: 'A2L',
+        dataRef: 'f',
     },
     {
         type: 'Blend',
