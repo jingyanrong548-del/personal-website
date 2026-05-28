@@ -6352,7 +6352,6 @@ html {
 .hp-std-table-wrap {
     max-height: min(70vh, calc(100dvh - 10rem));
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
     background: var(--glass-bg-strong);
     border: 1px solid var(--glass-border);
     border-radius: var(--glass-radius);

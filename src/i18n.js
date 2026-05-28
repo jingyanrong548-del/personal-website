@@ -178,7 +178,7 @@ export const translations = {
         'hpPolicy.footer.text': 'Pair this policy map with the standards quick reference and heat-pump basics series for technical context.',
 
         'usefulLinks.seo.title': 'Useful engineering links — OEM selection & data',
-        'usefulLinks.seo.desc': 'Curated external links to IIR, IEA HPT TCP (Annex 58 & Project 68 HTHP reports), Dorin Selection, Bitzer WEBsoftware, and Bock VAP. Third-party sites; verify against catalogs and tests.',
+        'usefulLinks.seo.desc': 'Curated external links to IIR, IEA HPT TCP (Annex 58 & Project 68 HTHP reports), Cooling Post, Dorin Selection, Bitzer WEBsoftware, and Bock VAP. Third-party sites; verify against catalogs and tests.',
         'usefulLinks.kicker': 'Bookmarks · Compressors & refrigerants',
         'usefulLinks.pageTitle': 'Useful web links',
         'usefulLinks.listHeading': 'Linked resources',
@@ -401,7 +401,9 @@ export const translations = {
         'apps.oemLinks.bitzer.desc': 'Bitzer’s official WEBsoftware portal with China region/language parameters—software downloads, selection tools, and documentation hub.',
         'apps.oemLinks.bock.label': 'Bock VAP — transcritical CO₂ semi-hermetics',
         'apps.oemLinks.bock.desc': 'Bock’s online stationary-application performance database (VAP); this deep link opens the transcritical CO₂ semi-hermetic compressor family (e.g. HG CO₂ T)—navigate from there for other refrigerants and ranges.',
-        
+        'apps.oemLinks.coolingpost.label': 'Cooling Post — global refrigeration news',
+        'apps.oemLinks.coolingpost.desc': 'UK-based trade news on global refrigeration, air conditioning, and heat pumps: headlines, products, features, and industry events.',
+
         // Contact
         'contact.title': 'Contact',
         'contact.email': 'Email',
@@ -1004,7 +1006,7 @@ export const translations = {
         'hpPolicy.footer.text': '可结合工业热泵标准速查与热泵小知识系列，从技术与合规两侧对照阅读。',
 
         'usefulLinks.seo.title': '常用工程网页链接｜厂商选型与数据',
-        'usefulLinks.seo.desc': '本站整理 IIR、IEA HPT TCP（Annex 58 / Project 68 工业高温热泵报告）、Dorin、Bitzer、Bock 等官方外链；请以样本册、型式试验与现场数据交叉验证。',
+        'usefulLinks.seo.desc': '本站整理 IIR、IEA HPT TCP（Annex 58 / Project 68 工业高温热泵报告）、Cooling Post、Dorin、Bitzer、Bock 等官方外链；请以样本册、型式试验与现场数据交叉验证。',
         'usefulLinks.kicker': '书签 · 压缩机与工质',
         'usefulLinks.pageTitle': '常用网页链接',
         'usefulLinks.listHeading': '资源列表',
@@ -1219,6 +1221,8 @@ export const translations = {
         'apps.oemLinks.bitzer.desc': '德国 Bitzer 官网 WEBsoftware 入口（链接含中文区域参数）：选型软件、下载与文档等资源汇总。',
         'apps.oemLinks.bock.label': 'Bock VAP — CO₂ 跨临界半封活塞',
         'apps.oemLinks.bock.desc': 'Bock 固定式应用在线性能数据（VAP）；当前链接直达 CO₂ 跨临界半封活塞压缩机产品族（如 HG CO₂ T 系列），可在站内导航切换其他工质与排量档。',
+        'apps.oemLinks.coolingpost.label': 'Cooling Post — 全球制冷与空调产业新闻',
+        'apps.oemLinks.coolingpost.desc': '英国制冷行业媒体，报道全球制冷、空调与热泵产业动态、新品与技术专题。',
         'contact.title': '联系方式',
         'contact.email': '邮箱',
         'contact.wechat': '联系方式',
