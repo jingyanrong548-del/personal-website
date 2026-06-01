@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-05-28",
+  "generatedAt": "2026-06-01",
   "latestBriefing": {
-    "id": "briefing-2026-w21",
-    "slug": "2026-w21",
+    "id": "briefing-2026-w22",
+    "slug": "2026-w22",
     "year": 2026,
-    "week": 21,
-    "published": "2026-05-24",
+    "week": 22,
+    "published": "2026-05-31",
     "title": {
-      "en": "Week 21 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第21周制冷与热泵行业简报"
+      "en": "Week 22 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第22周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "EU IF25 Heat Auction ~€400M awards; EHPA Q1 2026 Europe heat-pump rebound; China energy-label catalog 2026 from 1 Jun; Vienna IEA HPC opens 26 May; site standards quick reference updated 22 May",
-      "zh": "欧盟 IF25 工业用热拍卖公布约 4 亿欧元中标、EHPA 通报欧洲 Q1 热泵销量回暖；国内能效标识 2026 版目录 6 月起实施；维也纳 IEA 热泵大会即将开幕；本站工业热泵标准速查 5/22 更新"
+      "en": "15th IEA HPC Vienna closes with 800+ delegates; EHPA re-elects Crombez & Rittinger Award; China FAS 2026/550 in force 1 Jun; US EPA relaxes AIM Act HFC transitions (26 May); Singapore NEA GWP≤150 from Jul 2027",
+      "zh": "第15届 IEA 热泵大会维也纳闭幕（800+ 代表）；EHPA 连任 Crombez 并颁发 Rittinger 奖；国内 550 号文冰箱与道路 LED 标识 6/1 施行；美国 EPA 5/26 放宽 AIM 技术转换限值；新加坡 NEA 2027 年起商超 GWP≤150"
     },
     "highlights": {
       "en": [
-        "EU IF25 Heat Auction: 22 May — 65 projects, ~€396M, 10 Member States",
-        "Commission confirms second industrial heat auction later in 2026 (19 May)",
-        "EHPA: ~575k residential units in 11 EU countries in Q1 2026, ~+17% YoY",
-        "NDRC/FAS 2026/550: revised energy-label catalog; key rules from 1 Jun 2026",
-        "15th IEA Heat Pump Conference, Vienna, 26–29 May (~380 submissions)"
+        "15th IEA HPC Vienna 26–29 May: 800+ attendees, 367 scientific contributions",
+        "EHPA GA 27 May: Patrick Crombez re-elected president; five Rittinger Award recipients",
+        "FAS 2026/550: household refrigerator & road/tunnel LED label rules effective 1 Jun 2026",
+        "US EPA AIM Act TTR revision (26 May): relaxed supermarket/IPR GWP limits; legacy AC/HP install allowed",
+        "Singapore NEA (28 May): supermarket GWP ≤150 from Jul 2027; end-of-life refrigerant handling rules"
       ],
       "zh": [
-        "欧盟 IF25 工业用热拍卖：5/22 公布 65 个项目、约 3.96 亿欧元、10 国中标",
-        "欧委会 5/19 确认年内将举办第二轮工业用热拍卖",
-        "EHPA：欧洲 11 国 2026 Q1 热泵销量约 57.5 万台、同比约 +17%",
-        "发改环资规〔2026〕550 号：能效标识目录（2026 版）多项 6/1 起施行",
-        "第 15 届 IEA 热泵大会 5/26–29 维也纳开幕（约 380 篇投稿）"
+        "第15届 IEA 热泵大会 5/26–29 维也纳：800+ 代表、367 篇科学投稿",
+        "EHPA 5/27 大会：Patrick Crombez 连任主席；五人获 Peter Ritter von Rittinger 奖",
+        "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行",
+        "美国 EPA 5/26 修订 AIM 技术转换规则：商超/IPR 限值放宽、住宅热泵遗留库存可继续安装",
+        "新加坡 NEA 5/28：2027/7 起商超制冷 GWP≤150；报废制冷设备制冷剂处置须登记"
       ]
     },
-    "url": "/briefings/2026-w21.html"
+    "url": "/briefings/2026-w22.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w22",
+      "type": "briefing",
+      "slug": "2026-w22",
+      "series": "weekly-briefing",
+      "published": "2026-05-31",
+      "title": {
+        "en": "Week 22 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第22周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "15th IEA HPC Vienna closes with 800+ delegates; EHPA re-elects Crombez & Rittinger Award; China FAS 2026/550 in force 1 Jun; US EPA relaxes AIM Act HFC transitions (26 May); Singapore NEA GWP≤150 from Jul 2027",
+        "zh": "第15届 IEA 热泵大会维也纳闭幕（800+ 代表）；EHPA 连任 Crombez 并颁发 Rittinger 奖；国内 550 号文冰箱与道路 LED 标识 6/1 施行；美国 EPA 5/26 放宽 AIM 技术转换限值；新加坡 NEA 2027 年起商超 GWP≤150"
+      },
+      "highlights": {
+        "en": [
+          "15th IEA HPC Vienna 26–29 May: 800+ attendees, 367 scientific contributions",
+          "EHPA GA 27 May: Patrick Crombez re-elected president; five Rittinger Award recipients",
+          "FAS 2026/550: household refrigerator & road/tunnel LED label rules effective 1 Jun 2026",
+          "US EPA AIM Act TTR revision (26 May): relaxed supermarket/IPR GWP limits; legacy AC/HP install allowed",
+          "Singapore NEA (28 May): supermarket GWP ≤150 from Jul 2027; end-of-life refrigerant handling rules"
+        ],
+        "zh": [
+          "第15届 IEA 热泵大会 5/26–29 维也纳：800+ 代表、367 篇科学投稿",
+          "EHPA 5/27 大会：Patrick Crombez 连任主席；五人获 Peter Ritter von Rittinger 奖",
+          "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行",
+          "美国 EPA 5/26 修订 AIM 技术转换规则：商超/IPR 限值放宽、住宅热泵遗留库存可继续安装",
+          "新加坡 NEA 5/28：2027/7 起商超制冷 GWP≤150；报废制冷设备制冷剂处置须登记"
+        ]
+      },
+      "url": "/briefings/2026-w22.html",
+      "year": 2026,
+      "week": 22
+    },
     {
       "id": "briefing-2026-w21",
       "type": "briefing",
@@ -141,6 +175,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w22",
+      "published": "2026-05-31",
+      "title": {
+        "en": "Week 22 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第22周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w22.html"
+    },
     {
       "slug": "2026-w21",
       "published": "2026-05-24",
