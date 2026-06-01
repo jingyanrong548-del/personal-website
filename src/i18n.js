@@ -181,7 +181,7 @@ export const translations = {
         'hpPolicy.footer.text': 'Pair this policy map with the standards quick reference and heat-pump basics series for technical context.',
 
         'usefulLinks.seo.title': 'Useful engineering links — OEM selection & data',
-        'usefulLinks.seo.desc': 'Curated external links to IIR, IEA HPT TCP (Annex 58 & Project 68 HTHP reports), EHPA, Cooling Post, Dorin Selection, Bitzer WEBsoftware, and Bock VAP. Third-party sites; verify against catalogs and tests.',
+        'usefulLinks.seo.desc': 'Curated external links to IIR, IEA HPT TCP (Annex 58 & Project 68 HTHP reports), EHPA, Cooling Post, ASHRAE, BSRIA, naturalrefrigerants.com, Dorin Selection, Bitzer WEBsoftware, and Bock VAP. Third-party sites; verify against catalogs and tests.',
         'usefulLinks.kicker': 'Bookmarks · Compressors & refrigerants',
         'usefulLinks.pageTitle': 'Useful web links',
         'usefulLinks.listHeading': 'Linked resources',
@@ -408,6 +408,12 @@ export const translations = {
         'apps.oemLinks.bock.desc': 'Bock’s online stationary-application performance database (VAP); this deep link opens the transcritical CO₂ semi-hermetic compressor family (e.g. HG CO₂ T)—navigate from there for other refrigerants and ranges.',
         'apps.oemLinks.coolingpost.label': 'Cooling Post — global refrigeration news',
         'apps.oemLinks.coolingpost.desc': 'UK-based trade news on global refrigeration, air conditioning, and heat pumps: headlines, products, features, and industry events.',
+        'apps.oemLinks.ashrae.label': 'ASHRAE — American Society of Heating, Refrigerating and Air-Conditioning Engineers',
+        'apps.oemLinks.ashrae.desc': 'ASHRAE official site: HVAC&R standards (e.g. Std 15, 34), handbooks, research, conferences, and technical resources for building systems and refrigeration.',
+        'apps.oemLinks.bsria.label': 'BSRIA — Building Services Research and Information Association',
+        'apps.oemLinks.bsria.desc': 'UK independent research and consultancy on building services: testing, publications, market intelligence, and guidance on HVAC, heat pumps, and building performance.',
+        'apps.oemLinks.naturalrefrigerants.label': 'naturalrefrigerants.com',
+        'apps.oemLinks.naturalrefrigerants.desc': 'Industry portal on natural refrigerants (CO₂, ammonia, hydrocarbons): news, case studies, regulations, and technology updates for commercial refrigeration and HVAC.',
 
         // Contact
         'contact.title': 'Contact',
@@ -1019,7 +1025,7 @@ export const translations = {
         'hpPolicy.footer.text': '可结合工业热泵标准速查与热泵小知识系列，从技术与合规两侧对照阅读。',
 
         'usefulLinks.seo.title': '常用工程网页链接｜厂商选型与数据',
-        'usefulLinks.seo.desc': '本站整理 IIR、IEA HPT TCP（Annex 58 / Project 68 工业高温热泵报告）、EHPA、Cooling Post、Dorin、Bitzer、Bock 等官方外链；请以样本册、型式试验与现场数据交叉验证。',
+        'usefulLinks.seo.desc': '本站整理 IIR、IEA HPT TCP（Annex 58 / Project 68 工业高温热泵报告）、EHPA、Cooling Post、ASHRAE、BSRIA、naturalrefrigerants.com、Dorin、Bitzer、Bock 等官方外链；请以样本册、型式试验与现场数据交叉验证。',
         'usefulLinks.kicker': '书签 · 压缩机与工质',
         'usefulLinks.pageTitle': '常用网页链接',
         'usefulLinks.listHeading': '资源列表',
@@ -1238,6 +1244,12 @@ export const translations = {
         'apps.oemLinks.bock.desc': 'Bock 固定式应用在线性能数据（VAP）；当前链接直达 CO₂ 跨临界半封活塞压缩机产品族（如 HG CO₂ T 系列），可在站内导航切换其他工质与排量档。',
         'apps.oemLinks.coolingpost.label': 'Cooling Post — 全球制冷与空调产业新闻',
         'apps.oemLinks.coolingpost.desc': '英国制冷行业媒体，报道全球制冷、空调与热泵产业动态、新品与技术专题。',
+        'apps.oemLinks.ashrae.label': 'ASHRAE 美国暖通空调制冷学会官网',
+        'apps.oemLinks.ashrae.desc': 'ASHRAE 官方网站：暖通空调与制冷标准（如 Std 15、34）、手册、研究与会议资料，以及建筑系统与制冷工程相关技术资源。',
+        'apps.oemLinks.bsria.label': 'BSRIA 英国建筑服务研究与信息协会官网',
+        'apps.oemLinks.bsria.desc': '英国独立建筑服务研究与咨询机构：试验、出版物、市场情报，以及暖通空调、热泵与建筑性能相关指南与项目信息。',
+        'apps.oemLinks.naturalrefrigerants.label': 'naturalrefrigerants.com 官网',
+        'apps.oemLinks.naturalrefrigerants.desc': '天然工质（CO₂、氨、碳氢等）行业门户：商用制冷与暖通领域新闻、案例、法规与技术动态。',
         'contact.title': '联系方式',
         'contact.email': '邮箱',
         'contact.wechat': '联系方式',
