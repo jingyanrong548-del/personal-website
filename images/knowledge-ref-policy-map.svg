@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 400" role="img" aria-hidden="true">
+  <rect width="1024" height="400" fill="#f8fafc" rx="12"/>
+  <text x="512" y="32" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#1e293b">International policy framework</text>
+  <!-- Direct refrigerant -->
+  <rect x="80" y="70" width="380" height="130" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="270" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#4338ca">Direct refrigerant regulation</text>
+  <rect x="110" y="120" width="150" height="60" rx="8" fill="#fff" stroke="#818cf8"/>
+  <text x="185" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#312e81">Montreal 1987</text>
+  <text x="185" y="165" text-anchor="middle" font-size="10" fill="#4338ca">ODS phase-out</text>
+  <rect x="280" y="120" width="150" height="60" rx="8" fill="#fff" stroke="#818cf8"/>
+  <text x="355" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#312e81">Kigali 2016</text>
+  <text x="355" y="165" text-anchor="middle" font-size="10" fill="#4338ca">HFC phasedown</text>
+  <!-- Indirect climate -->
+  <rect x="564" y="70" width="380" height="130" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="754" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#047857">Indirect climate drivers</text>
+  <rect x="594" y="120" width="150" height="60" rx="8" fill="#fff" stroke="#34d399"/>
+  <text x="669" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#065f46">Kyoto 1997</text>
+  <text x="669" y="165" text-anchor="middle" font-size="10" fill="#047857">GHG targets</text>
+  <rect x="764" y="120" width="150" height="60" rx="8" fill="#fff" stroke="#34d399"/>
+  <text x="839" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#065f46">Paris 2015</text>
+  <text x="839" y="165" text-anchor="middle" font-size="10" fill="#047857">NDCs / net-zero</text>
+  <!-- Heat pump box -->
+  <rect x="280" y="250" width="464" height="100" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="512" y="285" text-anchor="middle" font-size="14" font-weight="600" fill="#c2410c">Heat pump industry</text>
+  <text x="512" y="310" text-anchor="middle" font-size="11" fill="#9a3412">Fluid choice ê Montreal/Kigali + national F-gas law</text>
+  <text x="512" y="330" text-anchor="middle" font-size="11" fill="#9a3412">Deployment scale ê Paris electrification &amp; grid decarbonisation</text>
+  <!-- arrows down -->
+  <path d="M 270 200 L 400 250" stroke="#6366f1" stroke-width="2" fill="none"/>
+  <path d="M 754 200 L 620 250" stroke="#10b981" stroke-width="2" fill="none"/>
+</svg>

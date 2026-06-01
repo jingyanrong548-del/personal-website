@@ -104,6 +104,7 @@ function siteNav(depth = 0) {
                             <ul class="nav-menu__sublist">
                                 <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                                 <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                                <li><a href="${p}knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
                                 <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
                                 <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
                                 <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
@@ -128,6 +129,7 @@ function siteNav(depth = 0) {
                         <ul class="nav-menu__sublist">
                             <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
                             <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                            <li><a href="${p}knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
                             <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
                             <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
                             <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
@@ -398,6 +400,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/heat-pump-standards.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-policies.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/knowledge-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/annex68-iea-hpt.html`, priority: '0.6', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/conferences.html`, priority: '0.6', changefreq: 'monthly' },
   ];

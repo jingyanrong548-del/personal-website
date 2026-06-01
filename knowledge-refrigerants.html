@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refrigerant knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Refrigerant knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Refrigerant generations, global policy (Montreal, Kigali, Kyoto, Paris), and China/EU/US regulatory comparison for heat pumps. Orientation only—not legal advice.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-refrigerants.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-refrigerants.html">
+    <meta id="meta-og-title" property="og:title" content="Refrigerant knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated refrigerant timeline, policy map, and China/EU/US comparison for heat pump practitioners.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Refrigerant knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Refrigerant generations, policy frameworks, and regional rules for heat pumps.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeRefrigerants.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li class="nav-menu__group nav-menu__group--chips">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
+                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
+                            <li><a href="./knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
+                            <li><a href="./hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
+                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
+                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
+                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
+                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__group nav-menu__group--anchors">
+                        <ul class="nav-menu__sublist">
+                            <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                            <li><a href="./#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
+                            <li><a href="./#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
+                            <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeRef.kicker">Heat pump basics · Refrigerants</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeRef.pageTitle">Refrigerant knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeRef.lede" data-i18n-html="true">Illustrated map of refrigerant generations, global policy, and regional rules.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeRef.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-timeline"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item1.linkTitle">Generations &amp; timeline</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-today"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item2.linkTitle">Today &amp; future</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-policy-global"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item3.linkTitle">Global policy framework</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-compare"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item4.linkTitle">China · EU · US</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-practice"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item5.linkTitle">Selection &amp; compliance</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kr-references"><span class="knowledge-toc-kicker" data-i18n="knowledgeRef.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeRef.toc.item6.linkTitle">References</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./heat-pump-refrigerants.html" data-i18n="nav.hpRefrigerants">Working-fluid table</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="nav.knowledge">Heat pump basics</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kr-timeline" class="knowledge-article knowledge-section" aria-labelledby="kr-timeline-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-timeline-title" data-i18n="knowledgeRef.timeline.title">1 · Refrigerant generations &amp; timeline</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeRef.timeline.lede" data-i18n-html="true">From ammonia and CO₂ in the 19th century to CFCs, HCFCs, HFCs, and today&apos;s low-GWP blends and natural-fluid revival.</p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeRef.timeline.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-ref-timeline.svg" width="1024" height="320" loading="lazy" decoding="async" data-i18n-alt="knowledgeRef.timeline.figure.alt" alt="Refrigerant generations timeline" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeRef.timeline.figure.caption">Generations run in parallel—natural fluids never fully disappeared in industrial duty.</figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.timeline.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.gen">Generation</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.era">Era</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.examples">Examples</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.odp">ODP</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.gwp">GWP (100-yr)</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.hp">Heat pump use</th>
+                                <th scope="col" data-i18n="knowledgeRef.timeline.th.driver">Driver</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r0.gen"></th><td data-i18n="knowledgeRef.timeline.r0.era"></td><td data-i18n="knowledgeRef.timeline.r0.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r0.odp"></td><td data-i18n="knowledgeRef.timeline.r0.gwp"></td><td data-i18n="knowledgeRef.timeline.r0.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r0.driver"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r1.gen"></th><td data-i18n="knowledgeRef.timeline.r1.era"></td><td data-i18n="knowledgeRef.timeline.r1.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r1.odp"></td><td data-i18n="knowledgeRef.timeline.r1.gwp"></td><td data-i18n="knowledgeRef.timeline.r1.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r1.driver"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r2.gen"></th><td data-i18n="knowledgeRef.timeline.r2.era"></td><td data-i18n="knowledgeRef.timeline.r2.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r2.odp"></td><td data-i18n="knowledgeRef.timeline.r2.gwp"></td><td data-i18n="knowledgeRef.timeline.r2.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r2.driver"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r3.gen"></th><td data-i18n="knowledgeRef.timeline.r3.era"></td><td data-i18n="knowledgeRef.timeline.r3.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r3.odp"></td><td data-i18n="knowledgeRef.timeline.r3.gwp"></td><td data-i18n="knowledgeRef.timeline.r3.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r3.driver"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r4.gen"></th><td data-i18n="knowledgeRef.timeline.r4.era"></td><td data-i18n="knowledgeRef.timeline.r4.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r4.odp"></td><td data-i18n="knowledgeRef.timeline.r4.gwp"></td><td data-i18n="knowledgeRef.timeline.r4.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r4.driver"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.timeline.r5.gen"></th><td data-i18n="knowledgeRef.timeline.r5.era"></td><td data-i18n="knowledgeRef.timeline.r5.examples" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r5.odp"></td><td data-i18n="knowledgeRef.timeline.r5.gwp"></td><td data-i18n="knowledgeRef.timeline.r5.hp" data-i18n-html="true"></td><td data-i18n="knowledgeRef.timeline.r5.driver"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeRef.timeline.footnote" data-i18n-html="true">ODP/GWP values: ASHRAE Std 34 / Handbook—Fundamentals [3][4].</p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kr-today" class="knowledge-article knowledge-section" aria-labelledby="kr-today-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-today-title" data-i18n="knowledgeRef.today.title">2 · Current landscape &amp; future directions</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeRef.today.lede" data-i18n-html="true">Heat pump scale-up and refrigerant transition now run in parallel.</p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeRef.today.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-ref-gwp-landscape.svg" width="1024" height="480" loading="lazy" decoding="async" data-i18n-alt="knowledgeRef.today.figure.alt" alt="GWP landscape for heat pump fluids" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeRef.today.figure.caption">Schematic only—confirm properties in the working-fluid table.</figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeRef.today.building.title">Building &amp; commercial HVAC</h3><p class="knowledge-reason-text" data-i18n="knowledgeRef.today.building.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeRef.today.industrial.title">Industrial &amp; high-temperature heat pumps</h3><p class="knowledge-reason-text" data-i18n="knowledgeRef.today.industrial.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeRef.today.pfas.title">PFAS &amp; chemistry uncertainty</h3><p class="knowledge-reason-text" data-i18n="knowledgeRef.today.pfas.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeRef.today.iea.title">IEA &amp; industry outlook</h3><p class="knowledge-reason-text" data-i18n="knowledgeRef.today.iea.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kr-policy-global" class="knowledge-article knowledge-section" aria-labelledby="kr-policy-global-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-policy-global-title" data-i18n="knowledgeRef.policy.title">3 · International policy framework</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeRef.policy.lede" data-i18n-html="true">Not every climate treaty regulates refrigerants directly.</p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeRef.policy.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-ref-policy-map.svg" width="1024" height="400" loading="lazy" decoding="async" data-i18n-alt="knowledgeRef.policy.figure.alt" alt="Policy framework map" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeRef.policy.figure.caption">Montreal + Kigali set refrigerant law; Kyoto and Paris shape the electrification context.</figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.policy.protocols.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeRef.policy.th.protocol">Instrument</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.th.year">Year</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.th.refDirect">Direct refrigerant link</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.th.hpImpact">Heat pump impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.p1.name"></th><td data-i18n="knowledgeRef.policy.p1.year"></td><td data-i18n="knowledgeRef.policy.p1.direct" data-i18n-html="true"></td><td data-i18n="knowledgeRef.policy.p1.impact" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.p2.name"></th><td data-i18n="knowledgeRef.policy.p2.year"></td><td data-i18n="knowledgeRef.policy.p2.direct" data-i18n-html="true"></td><td data-i18n="knowledgeRef.policy.p2.impact" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.p3.name"></th><td data-i18n="knowledgeRef.policy.p3.year"></td><td data-i18n="knowledgeRef.policy.p3.direct" data-i18n-html="true"></td><td data-i18n="knowledgeRef.policy.p3.impact" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.p4.name"></th><td data-i18n="knowledgeRef.policy.p4.year"></td><td data-i18n="knowledgeRef.policy.p4.direct" data-i18n-html="true"></td><td data-i18n="knowledgeRef.policy.p4.impact" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.policy.kigali.title">Kigali HFC phasedown schedules [1]</h3>
+                <p class="knowledge-reason-text" data-i18n="knowledgeRef.policy.kigali.lede" data-i18n-html="true"></p>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.policy.kigali.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.group">Party group</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.baseline">Baseline</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.2019">2019–2023</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.2024">2024–2028</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.2029">2029–2033</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.2034">2034–2036</th>
+                                <th scope="col" data-i18n="knowledgeRef.policy.kigali.th.final">Final step</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.kigali.a1.group"></th><td data-i18n="knowledgeRef.policy.kigali.a1.baseline"></td><td data-i18n="knowledgeRef.policy.kigali.a1.2019"></td><td data-i18n="knowledgeRef.policy.kigali.a1.2024"></td><td data-i18n="knowledgeRef.policy.kigali.a1.2029"></td><td data-i18n="knowledgeRef.policy.kigali.a1.2034"></td><td data-i18n="knowledgeRef.policy.kigali.a1.final"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.policy.kigali.a5.group"></th><td data-i18n="knowledgeRef.policy.kigali.a5.baseline"></td><td data-i18n="knowledgeRef.policy.kigali.a5.2019"></td><td data-i18n="knowledgeRef.policy.kigali.a5.2024"></td><td data-i18n="knowledgeRef.policy.kigali.a5.2029"></td><td data-i18n="knowledgeRef.policy.kigali.a5.2034"></td><td data-i18n="knowledgeRef.policy.kigali.a5.final"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kr-compare" class="knowledge-article knowledge-section" aria-labelledby="kr-compare-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-compare-title" data-i18n="knowledgeRef.compare.title">4 · China · EU · United States — past, present, future</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeRef.compare.lede" data-i18n-html="true">Kigali sets outer bounds; national law decides what you must comply with on each shipment.</p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeRef.compare.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-ref-regions-matrix.svg" width="1024" height="420" loading="lazy" decoding="async" data-i18n-alt="knowledgeRef.compare.figure.alt" alt="Regional regulatory matrix" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeRef.compare.figure.caption">Three jurisdictions, three clocks—never assume one global ban date.</figcaption>
+                </figure>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.compare.era.past">Past (1987–2014)</h3>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.compare.past.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table knowledge-ref-table--regions">
+                        <thead><tr><th scope="col" data-i18n="knowledgeRef.compare.th.dim">Dimension</th><th scope="col" data-i18n="knowledgeRef.compare.th.china">China</th><th scope="col" data-i18n="knowledgeRef.compare.th.eu">EU</th><th scope="col" data-i18n="knowledgeRef.compare.th.us">United States</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.past.r1.dim"></th><td data-i18n="knowledgeRef.compare.past.r1.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.past.r1.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.past.r1.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.past.r2.dim"></th><td data-i18n="knowledgeRef.compare.past.r2.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.past.r2.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.past.r2.us" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.compare.era.present">Present (2015–2025)</h3>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.compare.present.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table knowledge-ref-table--regions">
+                        <thead><tr><th scope="col" data-i18n="knowledgeRef.compare.th.dim">Dimension</th><th scope="col" data-i18n="knowledgeRef.compare.th.china">China</th><th scope="col" data-i18n="knowledgeRef.compare.th.eu">EU</th><th scope="col" data-i18n="knowledgeRef.compare.th.us">United States</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.present.r1.dim"></th><td data-i18n="knowledgeRef.compare.present.r1.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r1.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r1.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.present.r2.dim"></th><td data-i18n="knowledgeRef.compare.present.r2.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r2.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r2.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.present.r3.dim"></th><td data-i18n="knowledgeRef.compare.present.r3.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r3.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.present.r3.us" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.compare.era.future">Future (2026–2036+)</h3>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.compare.future.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table knowledge-ref-table--regions">
+                        <thead><tr><th scope="col" data-i18n="knowledgeRef.compare.th.dim">Dimension</th><th scope="col" data-i18n="knowledgeRef.compare.th.china">China</th><th scope="col" data-i18n="knowledgeRef.compare.th.eu">EU</th><th scope="col" data-i18n="knowledgeRef.compare.th.us">United States</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.future.r1.dim"></th><td data-i18n="knowledgeRef.compare.future.r1.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.future.r1.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.future.r1.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.future.r2.dim"></th><td data-i18n="knowledgeRef.compare.future.r2.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.future.r2.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.future.r2.us" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.compare.milestones.title">Application milestones (examples—verify locally)</h3>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeRef.compare.milestones.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead><tr><th scope="col" data-i18n="knowledgeRef.compare.milestones.th.app">Application</th><th scope="col" data-i18n="knowledgeRef.compare.th.china">China</th><th scope="col" data-i18n="knowledgeRef.compare.th.eu">EU</th><th scope="col" data-i18n="knowledgeRef.compare.th.us">United States</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.milestones.r1.app"></th><td data-i18n="knowledgeRef.compare.milestones.r1.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r1.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r1.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.milestones.r2.app"></th><td data-i18n="knowledgeRef.compare.milestones.r2.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r2.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r2.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.milestones.r3.app"></th><td data-i18n="knowledgeRef.compare.milestones.r3.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r3.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r3.us" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeRef.compare.milestones.r4.app"></th><td data-i18n="knowledgeRef.compare.milestones.r4.china" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r4.eu" data-i18n-html="true"></td><td data-i18n="knowledgeRef.compare.milestones.r4.us" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kr-practice" class="knowledge-article knowledge-section" aria-labelledby="kr-practice-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-practice-title" data-i18n="knowledgeRef.practice.title">5 · Heat pump selection &amp; compliance practice</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeRef.practice.lede" data-i18n-html="true">A practical sequence before you freeze a fluid for a 15-year plant.</p>
+                <ol class="knowledge-co2-arch-ol knowledge-ref-steps">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeRef.practice.step1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeRef.practice.step2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeRef.practice.step3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeRef.practice.step4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeRef.practice.step5" data-i18n-html="true"></span></li>
+                </ol>
+                <div class="knowledge-memory knowledge-memory--article2">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledgeRef.practice.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledgeRef.practice.memory.text" data-i18n-html="true"></p>
+                </div>
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledgeRef.practice.faq.title">Quick FAQs</h3>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="knowledgeRef.practice.faq.q1.q"></summary><p class="knowledge-faq-a" data-i18n="knowledgeRef.practice.faq.q1.a" data-i18n-html="true"></p></details>
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="knowledgeRef.practice.faq.q2.q"></summary><p class="knowledge-faq-a" data-i18n="knowledgeRef.practice.faq.q2.a" data-i18n-html="true"></p></details>
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="knowledgeRef.practice.faq.q3.q"></summary><p class="knowledge-faq-a" data-i18n="knowledgeRef.practice.faq.q3.a" data-i18n-html="true"></p></details>
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="knowledgeRef.practice.faq.q4.q"></summary><p class="knowledge-faq-a" data-i18n="knowledgeRef.practice.faq.q4.a" data-i18n-html="true"></p></details>
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="knowledgeRef.practice.faq.q5.q"></summary><p class="knowledge-faq-a" data-i18n="knowledgeRef.practice.faq.q5.a" data-i18n-html="true"></p></details>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kr-references" class="knowledge-article knowledge-section" aria-labelledby="kr-references-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kr-references-title" data-i18n="knowledgeRef.refs.title">6 · Key references</h2>
+                <p class="knowledge-reason-text" data-i18n="knowledgeRef.refs.lede" data-i18n-html="true">Numbered sources cited in this guide. Verify dates against current consolidated texts.</p>
+                <ol class="knowledge-ref-bibliography">
+                    <li data-i18n="knowledgeRef.refs.r1" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r2" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r3" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r4" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r5" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r6" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r7" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r8" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r9" data-i18n-html="true"></li>
+                    <li data-i18n="knowledgeRef.refs.r10" data-i18n-html="true"></li>
+                </ol>
+                <p class="knowledge-reason-text knowledge-ref-disclaimer" data-i18n="knowledgeRef.disclaimer" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeRef.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeRef.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./heat-pump-refrigerants.html" data-i18n="nav.hpRefrigerants">Working-fluid table</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./heat-pump-policies.html" data-i18n="nav.hpPolicies">Industrial heat pump policies</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html#kp-article-co2" data-i18n="knowledgeRef.footer.co2">CO₂ cascade in extreme cold</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
