@@ -4,6 +4,7 @@ import { translations, initLanguageSwitcher, getCurrentLanguage } from './i18n.j
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal, updateVCardForLanguage } from './contactModal.js';
+import { initHthpDiagramLightbox } from './hthpDiagramLightbox.js';
 import { displayPortalBriefing, loadLatestBriefing } from './portalBriefing.js';
 
 // Initialize Vercel Analytics
@@ -350,6 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('hero-cta-diagnostic'),
         document.getElementById('methodology-cta-btn'),
     ].filter(Boolean));
+
+    initHthpDiagramLightbox();
 
     document.querySelectorAll('.app-launch-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
