@@ -6393,6 +6393,13 @@ html {
 }
 
 /* Refrigerant knowledge guide page */
+.knowledge-ref-page .knowledge-section > .container > .knowledge-reason-text {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
 .knowledge-ref-page .knowledge-ref-table {
     font-size: 0.92rem;
 }
@@ -6403,10 +6410,8 @@ html {
 
 .knowledge-ref-page .knowledge-ref-footnote,
 .knowledge-ref-page .knowledge-ref-disclaimer {
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 1rem;
+    margin-bottom: 0;
     font-size: 0.9rem;
     color: var(--ink-600);
 }
