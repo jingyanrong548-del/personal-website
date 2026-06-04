@@ -7,7 +7,7 @@
     <!-- Primary Meta Tags (default EN; setLanguage updates for zh) -->
     <title>Heat pump basics — For experts and newcomers alike</title>
     <meta id="meta-page-title" name="title" content="Heat pump basics — For experts and newcomers alike">
-    <meta id="meta-page-description" name="description" content="Series: heat pump complexity, pricing per kW, AI vs human judgment in R&amp;D, and how China, the EU, and the US steer industrial heat-pump refrigerant policy across decades (not legal advice). More chapters over time.">
+    <meta id="meta-page-description" name="description" content="Series: heat pump complexity, pricing per kW, AI vs human judgment in R&amp;D, refrigerant policy map, carbon vs gas boiler, gas–electric price ratio &amp; breakeven COP for heat-pump + gas-boiler coupling (not legal advice). More chapters over time.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.jingyanrong.com/knowledge.html">
 
@@ -120,6 +120,12 @@
                                 <a class="knowledge-toc-link" href="#kp-article-6">
                                     <span class="knowledge-toc-kicker" data-i18n="knowledge.toc.item7.kicker">Part 7 · Refrigeration & heat pump expert</span>
                                     <span class="knowledge-toc-link-title" data-i18n="knowledge.toc.item7.linkTitle">Compressor “匹” (HP): rating conditions, standards, and the same-60P price trap</span>
+                                </a>
+                            </li>
+                            <li class="knowledge-toc-item">
+                                <a class="knowledge-toc-link" href="#kp-article-7">
+                                    <span class="knowledge-toc-kicker" data-i18n="knowledge.toc.item8.kicker">Part 8 · Coupling & operating economics</span>
+                                    <span class="knowledge-toc-link-title" data-i18n="knowledge.toc.item8.linkTitle">Gas–electric price ratio & breakeven COP: coupling heat pumps with gas boilers</span>
                                 </a>
                             </li>
                         </ol>
@@ -672,6 +678,134 @@
                 </div>
 
                 <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledge.article6.disclaimer">OEM maps, standard editions, and project warranties vary; this chapter is engineering orientation for buyers and integrators, not a substitute for type-test reports or signed specifications.</p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kp-article-7" class="knowledge-article knowledge-article--7 knowledge-section knowledge-section--article2" aria-labelledby="knowledge-article7-title">
+            <div class="container">
+                <p class="knowledge-chapter-kicker" data-i18n="knowledge.toc.item8.kicker">Part 8 · Coupling & operating economics</p>
+                <h2 class="knowledge-section-title" id="knowledge-article7-title" data-i18n="knowledge.article7.title">Gas–electric price ratio & breakeven COP: coupling heat pumps with gas boilers</h2>
+                <p class="knowledge-co2-callout" data-i18n="knowledge.article7.expert.callout">Coupling & operating economics · Q&amp;A</p>
+                <p class="knowledge-article2-lede" data-i18n="knowledge.article7.lede" data-i18n-html="true">When gas is cheap relative to electricity, a heat pump must deliver a higher COP to win on the bill—and in cold or defrost hours it often cannot, so coupled systems exist for a reason.</p>
+
+                <div class="knowledge-block knowledge-block--examples">
+                    <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article7.formula.title">Define the ratio and breakeven COP*</h3>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article7.formula.intro" data-i18n-html="true">Use consistent units. Natural gas LHV ≈ 9.87 kWh/m³—confirm with your gas contract.</p>
+                    <ul class="knowledge-list">
+                        <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.formula.li1" data-i18n-html="true"></span></li>
+                        <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.formula.li2" data-i18n-html="true"></span></li>
+                        <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.formula.li3" data-i18n-html="true"></span></li>
+                        <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.formula.li4" data-i18n-html="true"></span></li>
+                    </ul>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article7.formula.note" data-i18n-html="true">Higher r → lower COP* → heat pump wins more hours.</p>
+                </div>
+
+                <div class="knowledge-reason">
+                    <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.carbon.title">Do not confuse COP* with Part 6’s carbon breakeven</h3>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article7.carbon.text" data-i18n-html="true">Part 6 uses emission factors; this chapter uses tariffs—similar numbers, different ledgers.</p>
+                </div>
+
+                <div class="knowledge-block knowledge-block--examples">
+                    <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article7.examples.title">Three illustrative cases (building / district heating)</h3>
+                    <p class="knowledge-reason-text" data-i18n="knowledge.article7.examples.intro" data-i18n-html="true">Illustrative only—replace with contract prices and field COP curves.</p>
+                    <div class="knowledge-reasons knowledge-reasons--article2 knowledge-reasons--stacked">
+                        <div class="knowledge-reason">
+                            <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.examples.a.title">Case A — heat pump wins on cost</h3>
+                            <p class="knowledge-reason-text" data-i18n="knowledge.article7.examples.a.text" data-i18n-html="true"></p>
+                        </div>
+                        <div class="knowledge-reason">
+                            <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.examples.b.title">Case B — gas boiler wins this window</h3>
+                            <p class="knowledge-reason-text" data-i18n="knowledge.article7.examples.b.text" data-i18n-html="true"></p>
+                        </div>
+                        <div class="knowledge-reason">
+                            <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.examples.c.title">Case C — why hybrid beats all-heat-pump or all-gas</h3>
+                            <p class="knowledge-reason-text" data-i18n="knowledge.article7.examples.c.text" data-i18n-html="true"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article7.modes.title">Three common coupling patterns</h3>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.modes.m1.title">1) Parallel on one supply loop</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.modes.m1.text" data-i18n-html="true"></p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.modes.m2.title">2) Heat pump primary + gas peaking</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.modes.m2.text" data-i18n-html="true"></p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.modes.m3.title">3) Time-of-use dispatch</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.modes.m3.text" data-i18n-html="true"></p>
+                    </div>
+                </div>
+                <p class="knowledge-reason-text" data-i18n="knowledge.article7.modes.note" data-i18n-html="true">Industrial high-temperature duty pushes COP* up—this chapter focuses on building hot-water heating.</p>
+
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r1.title">1) The gas–electric ratio is not a constant</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r1.text">Tiered gas and time-of-use electricity move r through the year.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r2.title">2) COP<sub>system</sub> ≠ catalog COP</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r2.text" data-i18n-html="true">Dispatch on measured hourly COP, not a brochure line.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r3.title">3) Capacity and comfort constrain the choice</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r3.text">COP* is fuel cost; capacity is deliverable kW.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r4.title">4) Reliability is not the same as economy</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r4.text">Backup boiler hours may be poor economics yet good engineering.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r5.title">5) Align system boundaries</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r5.text">Include auxiliaries in both η and COP<sub>system</sub>.</p>
+                    </div>
+                    <div class="knowledge-reason">
+                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article7.r6.title">6) Integrator / owner checklist</h3>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article7.r6.intro">Before writing dispatch logic:</p>
+                        <ul class="knowledge-list">
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li1" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li2" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li3" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li4" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li5" data-i18n-html="true"></span></li>
+                            <li><span class="knowledge-list-item-content" data-i18n="knowledge.article7.checklist.li6" data-i18n-html="true"></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="knowledge-memory knowledge-memory--article2">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledge.article7.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledge.article7.memory.text" data-i18n-html="true">Coupling is hourly marginal cost: COP* from r and η; run heat pump when COP<sub>system</sub> beats COP*.</p>
+                </div>
+
+                <p class="knowledge-reason-text" data-i18n="knowledge.article7.cta" data-i18n-html="true">Use the <a href="./#apps">Heat Pump Benefit Analyzer</a> with aligned tariffs and COP curves.</p>
+
+                <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article7.faq.title">Gas–electric ratio & coupling: quick FAQs</h3>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article7.faq.q1.q">“Is there one national breakeven COP we can paste into every project?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article7.faq.q1.a">No. Recompute COP* per site and season.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article7.faq.q2.q">“COP 2—must be more expensive than gas, right?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article7.faq.q2.a" data-i18n-html="true">Not always—it depends on r; money and carbon use different ledgers.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article7.faq.q3.q">“Can AI pick heat pump vs boiler automatically?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article7.faq.q3.a" data-i18n-html="true">AI can organize tables; contract prices and COP data still need human review.</p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledge.article7.faq.q4.q">“Why not run gas all winter—it’s simpler?”</summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledge.article7.faq.q4.a">Most hours may still favor the heat pump once COP* is computed.</p>
+                    </details>
+                </div>
+
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledge.article7.disclaimer">Gas and electricity prices vary by contract; illustrative values are not audit substitutes.</p>
             </div>
         </section>
 
