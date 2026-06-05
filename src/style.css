@@ -2763,7 +2763,25 @@ body {
 
 .apps-zone-panel .apps-zone-lede {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.apps-zone-source {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-light);
+    max-width: 52rem;
+}
+
+.apps-zone-source a {
+    color: var(--emerald-700);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.apps-zone-source a:hover {
+    color: var(--emerald-800);
 }
 
 .apps-grid-hthp {
