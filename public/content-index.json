@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-06-04",
+  "generatedAt": "2026-06-07",
   "latestBriefing": {
-    "id": "briefing-2026-w22",
-    "slug": "2026-w22",
+    "id": "briefing-2026-w23",
+    "slug": "2026-w23",
     "year": 2026,
-    "week": 22,
-    "published": "2026-05-31",
+    "week": 23,
+    "published": "2026-06-07",
     "title": {
-      "en": "Week 22 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第22周制冷与热泵行业简报"
+      "en": "Week 23 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第23周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "15th IEA HPC Vienna closes with 800+ delegates; EHPA re-elects Crombez & Rittinger Award; China FAS 2026/550 in force 1 Jun; US EPA relaxes AIM Act HFC transitions (26 May); Singapore NEA GWP≤150 from Jul 2027",
-      "zh": "第15届 IEA 热泵大会维也纳闭幕（800+ 代表）；EHPA 连任 Crombez 并颁发 Rittinger 奖；国内 550 号文冰箱与道路 LED 标识 6/1 施行；美国 EPA 5/26 放宽 AIM 技术转换限值；新加坡 NEA 2027 年起商超 GWP≤150"
+      "en": "China FAS 2026/550 label rules enter first enforcement week (1 Jun); US DOE ends HEEHR/HOMES fuel-switching rebates (29 May); Danfoss €10M Reyrieux expansion at Choose France (1 Jun); HFC quota tight balance (4 Jun); AHRI CEO Yurek to retire 2027 (4 Jun)",
+      "zh": "国内 550 号文能效标识 6/1 首周施行；美国 DOE 5/29 叫停联邦返利燃气改电；Danfoss 6/1 于 Choose France 再投 1000 万欧元扩 Reyrieux 热泵部件产能；三代制冷剂配额紧平衡（6/4 机构观点）；AHRI 总裁 Yurek 6/4 宣布 2027 年退休"
     },
     "highlights": {
       "en": [
-        "15th IEA HPC Vienna 26–29 May: 800+ attendees, 367 scientific contributions",
-        "EHPA GA 27 May: Patrick Crombez re-elected president; five Rittinger Award recipients",
-        "FAS 2026/550: household refrigerator & road/tunnel LED label rules effective 1 Jun 2026",
-        "US EPA AIM Act TTR revision (26 May): relaxed supermarket/IPR GWP limits; legacy AC/HP install allowed",
-        "Singapore NEA (28 May): supermarket GWP ≤150 from Jul 2027; end-of-life refrigerant handling rules"
+        "FAS 2026/550: refrigerator & road/tunnel LED label rules effective 1 Jun 2026—first compliance week",
+        "US DOE Program Notice 26-2 (29 May): ~$8.8B HOMES/HEEHR rebates no longer cover gas-to-electric fuel switching",
+        "Danfoss €10M Reyrieux investment (1 Jun): heat-pump compressors, ATEX lab, on-site solar",
+        "Securities research (4 Jun): 2026 HFC quotas unchanged; R32/R134a/R125 tight balance persists",
+        "AHRI president & CEO Stephen Yurek to retire in 2027; board search under way (4 Jun)"
       ],
       "zh": [
-        "第15届 IEA 热泵大会 5/26–29 维也纳：800+ 代表、367 篇科学投稿",
-        "EHPA 5/27 大会：Patrick Crombez 连任主席；五人获 Peter Ritter von Rittinger 奖",
-        "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行",
-        "美国 EPA 5/26 修订 AIM 技术转换规则：商超/IPR 限值放宽、住宅热泵遗留库存可继续安装",
-        "新加坡 NEA 5/28：2027/7 起商超制冷 GWP≤150；报废制冷设备制冷剂处置须登记"
+        "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行，首周合规窗口开启",
+        "美国 DOE 5/29 发布 Program Notice 26-2：约 88 亿美元 HOMES/HEEHR 返利不再支持燃气改电",
+        "Danfoss 6/1 于 Choose France 峰会宣布向法国 Reyrieux 热泵部件基地追加 1000 万欧元",
+        "证券时报等 6/4：2026 年 HFC 配额总量与 2025 持平，R32/R134a/R125 紧平衡景气延续",
+        "AHRI 6/4：总裁兼 CEO Stephen Yurek 将于 2027 年退休，董事会已启动继任搜寻"
       ]
     },
-    "url": "/briefings/2026-w22.html"
+    "url": "/briefings/2026-w23.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w23",
+      "type": "briefing",
+      "slug": "2026-w23",
+      "series": "weekly-briefing",
+      "published": "2026-06-07",
+      "title": {
+        "en": "Week 23 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第23周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "China FAS 2026/550 label rules enter first enforcement week (1 Jun); US DOE ends HEEHR/HOMES fuel-switching rebates (29 May); Danfoss €10M Reyrieux expansion at Choose France (1 Jun); HFC quota tight balance (4 Jun); AHRI CEO Yurek to retire 2027 (4 Jun)",
+        "zh": "国内 550 号文能效标识 6/1 首周施行；美国 DOE 5/29 叫停联邦返利燃气改电；Danfoss 6/1 于 Choose France 再投 1000 万欧元扩 Reyrieux 热泵部件产能；三代制冷剂配额紧平衡（6/4 机构观点）；AHRI 总裁 Yurek 6/4 宣布 2027 年退休"
+      },
+      "highlights": {
+        "en": [
+          "FAS 2026/550: refrigerator & road/tunnel LED label rules effective 1 Jun 2026—first compliance week",
+          "US DOE Program Notice 26-2 (29 May): ~$8.8B HOMES/HEEHR rebates no longer cover gas-to-electric fuel switching",
+          "Danfoss €10M Reyrieux investment (1 Jun): heat-pump compressors, ATEX lab, on-site solar",
+          "Securities research (4 Jun): 2026 HFC quotas unchanged; R32/R134a/R125 tight balance persists",
+          "AHRI president & CEO Stephen Yurek to retire in 2027; board search under way (4 Jun)"
+        ],
+        "zh": [
+          "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行，首周合规窗口开启",
+          "美国 DOE 5/29 发布 Program Notice 26-2：约 88 亿美元 HOMES/HEEHR 返利不再支持燃气改电",
+          "Danfoss 6/1 于 Choose France 峰会宣布向法国 Reyrieux 热泵部件基地追加 1000 万欧元",
+          "证券时报等 6/4：2026 年 HFC 配额总量与 2025 持平，R32/R134a/R125 紧平衡景气延续",
+          "AHRI 6/4：总裁兼 CEO Stephen Yurek 将于 2027 年退休，董事会已启动继任搜寻"
+        ]
+      },
+      "url": "/briefings/2026-w23.html",
+      "year": 2026,
+      "week": 23
+    },
     {
       "id": "briefing-2026-w22",
       "type": "briefing",
@@ -175,6 +209,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w23",
+      "published": "2026-06-07",
+      "title": {
+        "en": "Week 23 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第23周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w23.html"
+    },
     {
       "slug": "2026-w22",
       "published": "2026-05-31",
