@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-06-07",
+  "generatedAt": "2026-06-14",
   "latestBriefing": {
-    "id": "briefing-2026-w23",
-    "slug": "2026-w23",
+    "id": "briefing-2026-w24",
+    "slug": "2026-w24",
     "year": 2026,
-    "week": 23,
-    "published": "2026-06-07",
+    "week": 24,
+    "published": "2026-06-14",
     "title": {
-      "en": "Week 23 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第23周制冷与热泵行业简报"
+      "en": "Week 24 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第24周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "China FAS 2026/550 label rules enter first enforcement week (1 Jun); US DOE ends HEEHR/HOMES fuel-switching rebates (29 May); Danfoss €10M Reyrieux expansion at Choose France (1 Jun); HFC quota tight balance (4 Jun); AHRI CEO Yurek to retire 2027 (4 Jun)",
-      "zh": "国内 550 号文能效标识 6/1 首周施行；美国 DOE 5/29 叫停联邦返利燃气改电；Danfoss 6/1 于 Choose France 再投 1000 万欧元扩 Reyrieux 热泵部件产能；三代制冷剂配额紧平衡（6/4 机构观点）；AHRI 总裁 Yurek 6/4 宣布 2027 年退休"
+      "en": "IRN 2026 closes with ammonia vs CO₂ TCO debate (10–11 Jun); MEE 2027 ODS/HFC quota draft zero growth (10 Jun); IEA: heat pumps competitive in 16 EU countries (12 Jun); GoodWe PV-driven heat pumps at SNEC (11 Jun); Differ Power 9-in-1 R290 hub preview (12 Jun)",
+      "zh": "IRN 2026 闭幕聚焦氨 vs CO₂ 全生命周期（6/10–11）；生态环境部 6/10 发布 2027 配额征求意见稿总量零增长；IEA 6/12：16 国住宅热泵持有成本优于燃气锅炉；GoodWe 6/11 SNEC 发布光伏直驱热泵；Differ Power 6/12 预览 9 合 1 R290 能源枢纽"
     },
     "highlights": {
       "en": [
-        "FAS 2026/550: refrigerator & road/tunnel LED label rules effective 1 Jun 2026—first compliance week",
-        "US DOE Program Notice 26-2 (29 May): ~$8.8B HOMES/HEEHR rebates no longer cover gas-to-electric fuel switching",
-        "Danfoss €10M Reyrieux investment (1 Jun): heat-pump compressors, ATEX lab, on-site solar",
-        "Securities research (4 Jun): 2026 HFC quotas unchanged; R32/R134a/R125 tight balance persists",
-        "AHRI president & CEO Stephen Yurek to retire in 2027; board search under way (4 Jun)"
+        "IRN 2026 (10–11 Jun): IIAR keynotes; Star Refrigeration ammonia vs CO₂ lifecycle cost session",
+        "MEE draft 2027 ODS/HFC quota plan (10 Jun): zero growth; HFC-245fa cross-category cap raised to 50%",
+        "IEA analysis (12 Jun): residential heat pumps cost-competitive vs gas boilers in 16 EU countries",
+        "GoodWe GoodHeat (11 Jun): DC-coupled air-to-water heat pumps 6–34.15 kW at SNEC Shanghai",
+        "Differ Power D1 Series preview (12 Jun): 9-in-1 R290 solar-storage heat pump ahead of Intersolar Europe"
       ],
       "zh": [
-        "发改环资规〔2026〕550 号：家用冰箱与道路隧道 LED 能效标识 6/1 起施行，首周合规窗口开启",
-        "美国 DOE 5/29 发布 Program Notice 26-2：约 88 亿美元 HOMES/HEEHR 返利不再支持燃气改电",
-        "Danfoss 6/1 于 Choose France 峰会宣布向法国 Reyrieux 热泵部件基地追加 1000 万欧元",
-        "证券时报等 6/4：2026 年 HFC 配额总量与 2025 持平，R32/R134a/R125 紧平衡景气延续",
-        "AHRI 6/4：总裁兼 CEO Stephen Yurek 将于 2027 年退休，董事会已启动继任搜寻"
+        "IRN 2026（6/10–11）：IIAR 主旨演讲；Star Refrigeration 氨 vs CO₂ 全生命周期成本专题",
+        "生态环境部 6/10 发布 2027 年度 ODS/HFC 配额征求意见稿：总量零增长；HFC-245fa 跨品类调增上限提至 50%",
+        "IEA 6/12 分析：16 个欧盟国家住宅热泵全生命周期持有成本优于燃气锅炉",
+        "GoodWe GoodHeat 6/11 于 SNEC 上海发布 6–34.15 kW 光伏直驱空气源热泵",
+        "Differ Power 6/12 预览 D1 系列 9 合 1 R290 光储热泵，面向 Intersolar Europe 展前发布"
       ]
     },
-    "url": "/briefings/2026-w23.html"
+    "url": "/briefings/2026-w24.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w24",
+      "type": "briefing",
+      "slug": "2026-w24",
+      "series": "weekly-briefing",
+      "published": "2026-06-14",
+      "title": {
+        "en": "Week 24 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第24周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "IRN 2026 closes with ammonia vs CO₂ TCO debate (10–11 Jun); MEE 2027 ODS/HFC quota draft zero growth (10 Jun); IEA: heat pumps competitive in 16 EU countries (12 Jun); GoodWe PV-driven heat pumps at SNEC (11 Jun); Differ Power 9-in-1 R290 hub preview (12 Jun)",
+        "zh": "IRN 2026 闭幕聚焦氨 vs CO₂ 全生命周期（6/10–11）；生态环境部 6/10 发布 2027 配额征求意见稿总量零增长；IEA 6/12：16 国住宅热泵持有成本优于燃气锅炉；GoodWe 6/11 SNEC 发布光伏直驱热泵；Differ Power 6/12 预览 9 合 1 R290 能源枢纽"
+      },
+      "highlights": {
+        "en": [
+          "IRN 2026 (10–11 Jun): IIAR keynotes; Star Refrigeration ammonia vs CO₂ lifecycle cost session",
+          "MEE draft 2027 ODS/HFC quota plan (10 Jun): zero growth; HFC-245fa cross-category cap raised to 50%",
+          "IEA analysis (12 Jun): residential heat pumps cost-competitive vs gas boilers in 16 EU countries",
+          "GoodWe GoodHeat (11 Jun): DC-coupled air-to-water heat pumps 6–34.15 kW at SNEC Shanghai",
+          "Differ Power D1 Series preview (12 Jun): 9-in-1 R290 solar-storage heat pump ahead of Intersolar Europe"
+        ],
+        "zh": [
+          "IRN 2026（6/10–11）：IIAR 主旨演讲；Star Refrigeration 氨 vs CO₂ 全生命周期成本专题",
+          "生态环境部 6/10 发布 2027 年度 ODS/HFC 配额征求意见稿：总量零增长；HFC-245fa 跨品类调增上限提至 50%",
+          "IEA 6/12 分析：16 个欧盟国家住宅热泵全生命周期持有成本优于燃气锅炉",
+          "GoodWe GoodHeat 6/11 于 SNEC 上海发布 6–34.15 kW 光伏直驱空气源热泵",
+          "Differ Power 6/12 预览 D1 系列 9 合 1 R290 光储热泵，面向 Intersolar Europe 展前发布"
+        ]
+      },
+      "url": "/briefings/2026-w24.html",
+      "year": 2026,
+      "week": 24
+    },
     {
       "id": "briefing-2026-w23",
       "type": "briefing",
@@ -209,6 +243,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w24",
+      "published": "2026-06-14",
+      "title": {
+        "en": "Week 24 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第24周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w24.html"
+    },
     {
       "slug": "2026-w23",
       "published": "2026-06-07",
