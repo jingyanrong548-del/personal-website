@@ -14,6 +14,11 @@ function escapeHtml(s) {
         .replace(/"/g, '&quot;');
 }
 
+/** Escape HTML, then render inline **bold** markers used in briefing JSON. */
+function formatBriefingText(s) {
+    return escapeHtml(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+
 function renderShare(container) {
     const lang = getCurrentLanguage();
     const t = translations[lang] || translations.en;
@@ -95,7 +100,7 @@ function renderBriefing(data, lang) {
             <h2 class="briefing-section-title">${escapeHtml(label)}</h2>
             <ul class="briefing-list">`;
         items.forEach((item) => {
-            html += `<li class="briefing-item">${escapeHtml(item)}</li>`;
+            html += `<li class="briefing-item">${formatBriefingText(item)}</li>`;
         });
         html += '</ul></section>';
     });
