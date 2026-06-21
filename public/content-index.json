@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-06-14",
+  "generatedAt": "2026-06-21",
   "latestBriefing": {
-    "id": "briefing-2026-w24",
-    "slug": "2026-w24",
+    "id": "briefing-2026-w25",
+    "slug": "2026-w25",
     "year": 2026,
-    "week": 24,
-    "published": "2026-06-14",
+    "week": 25,
+    "published": "2026-06-21",
     "title": {
-      "en": "Week 24 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第24周制冷与热泵行业简报"
+      "en": "Week 25 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第25周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "IRN 2026 closes with ammonia vs CO₂ TCO debate (10–11 Jun); MEE 2027 ODS/HFC quota draft zero growth (10 Jun); IEA: heat pumps competitive in 16 EU countries (12 Jun); GoodWe PV-driven heat pumps at SNEC (11 Jun); Differ Power 9-in-1 R290 hub preview (12 Jun)",
-      "zh": "IRN 2026 闭幕聚焦氨 vs CO₂ 全生命周期（6/10–11）；生态环境部 6/10 发布 2027 配额征求意见稿总量零增长；IEA 6/12：16 国住宅热泵持有成本优于燃气锅炉；GoodWe 6/11 SNEC 发布光伏直驱热泵；Differ Power 6/12 预览 9 合 1 R290 能源枢纽"
+      "en": "AIM Act CEO sentencing in R-410A import case (17 Jun); HCFC-141b spray ban ten-day countdown (1 Jul); Intersolar Europe opens 23 Jun with GoodWe & Differ Power; EPA Technology Transitions reconsideration commentary (mid-Jun); ASHRAE announces WRD 2026 Cool Intelligence theme (18 Jun)",
+      "zh": "AIM 法案首例企业 CEO 非法进口 R-410A 案 6/17 量刑；HCFC-141b 现场喷涂禁令距 7/1 倒计时约十天；Intersolar Europe 6/23 开幕 GoodWe 与 Differ Power 参展；EPA 技术转换终稿 6 月中旬行业解读；ASHRAE 6/18 宣布 WRD 2026「Cool Intelligence」主题"
     },
     "highlights": {
       "en": [
-        "IRN 2026 (10–11 Jun): IIAR keynotes; Star Refrigeration ammonia vs CO₂ lifecycle cost session",
-        "MEE draft 2027 ODS/HFC quota plan (10 Jun): zero growth; HFC-245fa cross-category cap raised to 50%",
-        "IEA analysis (12 Jun): residential heat pumps cost-competitive vs gas boilers in 16 EU countries",
-        "GoodWe GoodHeat (11 Jun): DC-coupled air-to-water heat pumps 6–34.15 kW at SNEC Shanghai",
-        "Differ Power D1 Series preview (12 Jun): 9-in-1 R290 solar-storage heat pump ahead of Intersolar Europe"
+        "Extreme Residential CEO sentencing (17 Jun): first AIM Act corporate-executive prosecution over 500-cylinder R-410A import",
+        "HCFC-141b on-site polyurethane spray ban effective 1 Jul—cold-room and logistics insulation contractors in final compliance push",
+        "Intersolar Europe / The smarter E Europe (23–25 Jun): GoodWe B4-210 connected energy; Differ Power C2-655 D1 Series; Power-to-Heat forum 23 Jun",
+        "EPA Technology Transitions reconsideration (May final rule): extended supermarket/cold-storage deadlines; pre-2025 AC inventory install flexibility",
+        "ASHRAE (18 Jun): World Refrigeration Day 2026 theme Cool Intelligence—26 Jun global campaign"
       ],
       "zh": [
-        "IRN 2026（6/10–11）：IIAR 主旨演讲；Star Refrigeration 氨 vs CO₂ 全生命周期成本专题",
-        "生态环境部 6/10 发布 2027 年度 ODS/HFC 配额征求意见稿：总量零增长；HFC-245fa 跨品类调增上限提至 50%",
-        "IEA 6/12 分析：16 个欧盟国家住宅热泵全生命周期持有成本优于燃气锅炉",
-        "GoodWe GoodHeat 6/11 于 SNEC 上海发布 6–34.15 kW 光伏直驱空气源热泵",
-        "Differ Power 6/12 预览 D1 系列 9 合 1 R290 光储热泵，面向 Intersolar Europe 展前发布"
+        "Extreme Residential 前 CEO 6/17 量刑：AIM 法案首例企业高管非法进口 500 瓶 R-410A 刑事案",
+        "HCFC-141b 现场聚氨酯喷涂禁令 7/1 生效——冷库与物流保温施工进入末段合规冲刺",
+        "Intersolar Europe / The smarter E Europe（6/23–25）：GoodWe B4-210 互联能源、Differ Power C2-655 D1 系列；6/23 Power-to-Heat 论坛",
+        "EPA 技术转换 reconsideration 终稿（5 月）：商超/冷库合规期限放宽、2025 年前库存空调安装灵活性",
+        "ASHRAE 6/18 宣布 2026 世界制冷日主题「Cool Intelligence」——6/26 全球活动预热"
       ]
     },
-    "url": "/briefings/2026-w24.html"
+    "url": "/briefings/2026-w25.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w25",
+      "type": "briefing",
+      "slug": "2026-w25",
+      "series": "weekly-briefing",
+      "published": "2026-06-21",
+      "title": {
+        "en": "Week 25 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第25周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "AIM Act CEO sentencing in R-410A import case (17 Jun); HCFC-141b spray ban ten-day countdown (1 Jul); Intersolar Europe opens 23 Jun with GoodWe & Differ Power; EPA Technology Transitions reconsideration commentary (mid-Jun); ASHRAE announces WRD 2026 Cool Intelligence theme (18 Jun)",
+        "zh": "AIM 法案首例企业 CEO 非法进口 R-410A 案 6/17 量刑；HCFC-141b 现场喷涂禁令距 7/1 倒计时约十天；Intersolar Europe 6/23 开幕 GoodWe 与 Differ Power 参展；EPA 技术转换终稿 6 月中旬行业解读；ASHRAE 6/18 宣布 WRD 2026「Cool Intelligence」主题"
+      },
+      "highlights": {
+        "en": [
+          "Extreme Residential CEO sentencing (17 Jun): first AIM Act corporate-executive prosecution over 500-cylinder R-410A import",
+          "HCFC-141b on-site polyurethane spray ban effective 1 Jul—cold-room and logistics insulation contractors in final compliance push",
+          "Intersolar Europe / The smarter E Europe (23–25 Jun): GoodWe B4-210 connected energy; Differ Power C2-655 D1 Series; Power-to-Heat forum 23 Jun",
+          "EPA Technology Transitions reconsideration (May final rule): extended supermarket/cold-storage deadlines; pre-2025 AC inventory install flexibility",
+          "ASHRAE (18 Jun): World Refrigeration Day 2026 theme Cool Intelligence—26 Jun global campaign"
+        ],
+        "zh": [
+          "Extreme Residential 前 CEO 6/17 量刑：AIM 法案首例企业高管非法进口 500 瓶 R-410A 刑事案",
+          "HCFC-141b 现场聚氨酯喷涂禁令 7/1 生效——冷库与物流保温施工进入末段合规冲刺",
+          "Intersolar Europe / The smarter E Europe（6/23–25）：GoodWe B4-210 互联能源、Differ Power C2-655 D1 系列；6/23 Power-to-Heat 论坛",
+          "EPA 技术转换 reconsideration 终稿（5 月）：商超/冷库合规期限放宽、2025 年前库存空调安装灵活性",
+          "ASHRAE 6/18 宣布 2026 世界制冷日主题「Cool Intelligence」——6/26 全球活动预热"
+        ]
+      },
+      "url": "/briefings/2026-w25.html",
+      "year": 2026,
+      "week": 25
+    },
     {
       "id": "briefing-2026-w24",
       "type": "briefing",
@@ -243,6 +277,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w25",
+      "published": "2026-06-21",
+      "title": {
+        "en": "Week 25 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第25周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w25.html"
+    },
     {
       "slug": "2026-w24",
       "published": "2026-06-14",
