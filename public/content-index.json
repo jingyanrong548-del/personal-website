@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-06-26",
+  "generatedAt": "2026-06-28",
   "latestBriefing": {
-    "id": "briefing-2026-w25",
-    "slug": "2026-w25",
+    "id": "briefing-2026-w26",
+    "slug": "2026-w26",
     "year": 2026,
-    "week": 25,
-    "published": "2026-06-21",
+    "week": 26,
+    "published": "2026-06-28",
     "title": {
-      "en": "Week 25 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第25周制冷与热泵行业简报"
+      "en": "Week 26 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第26周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "AIM Act CEO sentencing in R-410A import case (17 Jun); HCFC-141b spray ban ten-day countdown (1 Jul); Intersolar Europe opens 23 Jun with GoodWe & Differ Power; EPA Technology Transitions reconsideration commentary (mid-Jun); ASHRAE announces WRD 2026 Cool Intelligence theme (18 Jun)",
-      "zh": "AIM 法案首例企业 CEO 非法进口 R-410A 案 6/17 量刑；HCFC-141b 现场喷涂禁令距 7/1 倒计时约十天；Intersolar Europe 6/23 开幕 GoodWe 与 Differ Power 参展；EPA 技术转换终稿 6 月中旬行业解读；ASHRAE 6/18 宣布 WRD 2026「Cool Intelligence」主题"
+      "en": "Intersolar Europe closes with hybrid PV–storage–heat focus (23–25 Jun); EcoFlow Munich launch: OASIS 3.0 & PowerHeat R290 (22 Jun); World Refrigeration Day Cool Intelligence (26 Jun); China 1 Jul regulatory cluster three-day countdown; MEE 2027 ODS/HFC quota draft still in comment",
+      "zh": "Intersolar Europe 6/23–25 闭幕聚焦光储热一体化；EcoFlow 6/22 慕尼黑发布 OASIS 3.0 与 PowerHeat R290；世界制冷日 6/26「Cool Intelligence」；国内 7/1 监管节点集群倒计时约三天；MEE 2027 ODS/HFC 配额征求意见稿仍在意见征集期"
     },
     "highlights": {
       "en": [
-        "Extreme Residential CEO sentencing (17 Jun): first AIM Act corporate-executive prosecution over 500-cylinder R-410A import",
-        "HCFC-141b on-site polyurethane spray ban effective 1 Jul—cold-room and logistics insulation contractors in final compliance push",
-        "Intersolar Europe / The smarter E Europe (23–25 Jun): GoodWe B4-210 connected energy; Differ Power C2-655 D1 Series; Power-to-Heat forum 23 Jun",
-        "EPA Technology Transitions reconsideration (May final rule): extended supermarket/cold-storage deadlines; pre-2025 AC inventory install flexibility",
-        "ASHRAE (18 Jun): World Refrigeration Day 2026 theme Cool Intelligence—26 Jun global campaign"
+        "Intersolar Europe / The smarter E Europe closes (23–25 Jun): ~2,800 exhibitors; GoodWe B4-210, EcoFlow B1-170, Differ Power C2-655, Sigenergy SigenFlux, SKYWORTH R290",
+        "EcoFlow European launch (22 Jun): OASIS 3.0 EMS, EcoBot AI, OCEAN 2 storage, PowerHeat R290 heat pump (9/20 kW, ErP A+++, GWP<20)",
+        "World Refrigeration Day 2026 (26 Jun): Cool Intelligence theme—ASHRAE and WRD Secretariat highlight AI, digitalisation and field engineering expertise",
+        "China 1 Jul cluster (~3 days): HCFC-141b on-site spray ban; XPS foam HCFC ban; HCFC solvents; FAS 2026/550 projector energy labels",
+        "MEE 2027 ODS/HFC quota draft (week 24) in public comment—firms should prepare 2027 quota filings due 31 Oct 2026"
       ],
       "zh": [
-        "Extreme Residential 前 CEO 6/17 量刑：AIM 法案首例企业高管非法进口 500 瓶 R-410A 刑事案",
-        "HCFC-141b 现场聚氨酯喷涂禁令 7/1 生效——冷库与物流保温施工进入末段合规冲刺",
-        "Intersolar Europe / The smarter E Europe（6/23–25）：GoodWe B4-210 互联能源、Differ Power C2-655 D1 系列；6/23 Power-to-Heat 论坛",
-        "EPA 技术转换 reconsideration 终稿（5 月）：商超/冷库合规期限放宽、2025 年前库存空调安装灵活性",
-        "ASHRAE 6/18 宣布 2026 世界制冷日主题「Cool Intelligence」——6/26 全球活动预热"
+        "Intersolar Europe / The smarter E Europe（6/23–25）闭幕：约2800家展商；GoodWe B4-210、EcoFlow B1-170、Differ Power C2-655、Sigenergy SigenFlux、SKYWORTH R290",
+        "EcoFlow 6/22 慕尼黑欧洲发布会：OASIS 3.0 能源管理、EcoBot AI、OCEAN 2 户储、PowerHeat R290 热泵（9/20 kW，ErP A+++，GWP<20）",
+        "2026世界制冷日（6/26）：主题 Cool Intelligence——ASHRAE 与 WRD 秘书处强调 AI、数字化与现场工程智慧",
+        "国内 7/1 监管节点集群（约三天）：HCFC-141b 现场喷涂禁令；挤出聚苯乙烯泡沫 HCFC 禁限；HCFC 溶剂/清洗；550号文投影机能效标识",
+        "MEE 2027 ODS/HFC 配额征求意见稿（第24周发布）仍在公众意见期——企业宜筹备2026年10月31日前须提交的2027年度配额申请"
       ]
     },
-    "url": "/briefings/2026-w25.html"
+    "url": "/briefings/2026-w26.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w26",
+      "type": "briefing",
+      "slug": "2026-w26",
+      "series": "weekly-briefing",
+      "published": "2026-06-28",
+      "title": {
+        "en": "Week 26 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第26周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "Intersolar Europe closes with hybrid PV–storage–heat focus (23–25 Jun); EcoFlow Munich launch: OASIS 3.0 & PowerHeat R290 (22 Jun); World Refrigeration Day Cool Intelligence (26 Jun); China 1 Jul regulatory cluster three-day countdown; MEE 2027 ODS/HFC quota draft still in comment",
+        "zh": "Intersolar Europe 6/23–25 闭幕聚焦光储热一体化；EcoFlow 6/22 慕尼黑发布 OASIS 3.0 与 PowerHeat R290；世界制冷日 6/26「Cool Intelligence」；国内 7/1 监管节点集群倒计时约三天；MEE 2027 ODS/HFC 配额征求意见稿仍在意见征集期"
+      },
+      "highlights": {
+        "en": [
+          "Intersolar Europe / The smarter E Europe closes (23–25 Jun): ~2,800 exhibitors; GoodWe B4-210, EcoFlow B1-170, Differ Power C2-655, Sigenergy SigenFlux, SKYWORTH R290",
+          "EcoFlow European launch (22 Jun): OASIS 3.0 EMS, EcoBot AI, OCEAN 2 storage, PowerHeat R290 heat pump (9/20 kW, ErP A+++, GWP<20)",
+          "World Refrigeration Day 2026 (26 Jun): Cool Intelligence theme—ASHRAE and WRD Secretariat highlight AI, digitalisation and field engineering expertise",
+          "China 1 Jul cluster (~3 days): HCFC-141b on-site spray ban; XPS foam HCFC ban; HCFC solvents; FAS 2026/550 projector energy labels",
+          "MEE 2027 ODS/HFC quota draft (week 24) in public comment—firms should prepare 2027 quota filings due 31 Oct 2026"
+        ],
+        "zh": [
+          "Intersolar Europe / The smarter E Europe（6/23–25）闭幕：约2800家展商；GoodWe B4-210、EcoFlow B1-170、Differ Power C2-655、Sigenergy SigenFlux、SKYWORTH R290",
+          "EcoFlow 6/22 慕尼黑欧洲发布会：OASIS 3.0 能源管理、EcoBot AI、OCEAN 2 户储、PowerHeat R290 热泵（9/20 kW，ErP A+++，GWP<20）",
+          "2026世界制冷日（6/26）：主题 Cool Intelligence——ASHRAE 与 WRD 秘书处强调 AI、数字化与现场工程智慧",
+          "国内 7/1 监管节点集群（约三天）：HCFC-141b 现场喷涂禁令；挤出聚苯乙烯泡沫 HCFC 禁限；HCFC 溶剂/清洗；550号文投影机能效标识",
+          "MEE 2027 ODS/HFC 配额征求意见稿（第24周发布）仍在公众意见期——企业宜筹备2026年10月31日前须提交的2027年度配额申请"
+        ]
+      },
+      "url": "/briefings/2026-w26.html",
+      "year": 2026,
+      "week": 26
+    },
     {
       "id": "briefing-2026-w25",
       "type": "briefing",
@@ -277,6 +311,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w26",
+      "published": "2026-06-28",
+      "title": {
+        "en": "Week 26 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第26周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w26.html"
+    },
     {
       "slug": "2026-w25",
       "published": "2026-06-21",
