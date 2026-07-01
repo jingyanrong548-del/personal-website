@@ -2,6 +2,7 @@ import { hthpRefrigerantsData } from './data/hthpRefrigerants.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
 import { initNavChipHighlight } from './navHighlight.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 function escapeHtml(s) {
     if (s == null) return '';
@@ -141,12 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(typeFilter.value, getCurrentLanguage());
     });
 
-    initLanguageSwitcher((lang) => {
-        updateHpRefMeta(lang);
-        renderTable(typeFilter.value, lang);
+    initLanguageSwitcher({
+        afterSet: (lang) => {
+            updateHpRefMeta(lang);
+            renderTable(typeFilter.value, lang);
+            refreshWhatsNewLanguage(lang);
+        },
     });
     updateHpRefMeta(getCurrentLanguage());
     initNavChipHighlight();
     initSiteLegalDisclaimer();
     renderTable('all', getCurrentLanguage());
+    initWhatsNew();
 });

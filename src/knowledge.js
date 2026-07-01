@@ -1,6 +1,7 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     function updateKnowledgeMeta(lang) {
@@ -19,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    initLanguageSwitcher({ afterSet: updateKnowledgeMeta });
+    initLanguageSwitcher({ afterSet: (lang) => { updateKnowledgeMeta(lang); refreshWhatsNewLanguage(lang); } });
     initSiteLegalDisclaimer();
     initNavChipHighlight();
+    initWhatsNew();
 });
-

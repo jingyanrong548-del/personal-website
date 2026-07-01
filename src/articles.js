@@ -2,6 +2,7 @@ import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.j
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal } from './contactModal.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 function escapeHtml(s) {
     if (!s) return '';
@@ -79,9 +80,10 @@ async function loadArchive() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLanguageSwitcher({ afterSet: () => loadArchive().then(() => {}) });
+    initLanguageSwitcher({ afterSet: (lang) => { refreshWhatsNewLanguage(lang); loadArchive().then(() => {}); } });
     initSiteLegalDisclaimer();
     initNavChipHighlight();
     initContactModal();
+    initWhatsNew();
     loadArchive();
 });

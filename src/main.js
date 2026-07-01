@@ -6,6 +6,7 @@ import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal, updateVCardForLanguage } from './contactModal.js';
 import { initHthpDiagramLightbox } from './hthpDiagramLightbox.js';
 import { displayPortalBriefing, loadLatestBriefing } from './portalBriefing.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 // Initialize Vercel Analytics
 inject();
@@ -77,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         afterSet: (lang) => {
             if (latestBriefingCache) displayPortalBriefing(latestBriefingCache);
             updateVCardForLanguage(lang);
+            refreshWhatsNewLanguage(lang);
             refreshAppsFilterFromUI();
         }
     });
@@ -510,6 +512,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.key === 'Enter') unlockBtn.click();
         });
     }
+
+    initWhatsNew();
 
     initializeBriefings();
 

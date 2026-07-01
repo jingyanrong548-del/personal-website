@@ -433,6 +433,81 @@ ${body}
   writeFileSync(join(ROOT, 'public', 'sitemap.xml'), xml);
 }
 
+function loadManualSiteUpdates() {
+  const path = join(CONTENT_DIR, 'site-updates.json');
+  if (!existsSync(path)) return [];
+  try {
+    const raw = readFileSync(path, 'utf-8');
+    const data = JSON.parse(raw);
+    return Array.isArray(data.manual) ? data.manual : [];
+  } catch {
+    return [];
+  }
+}
+
+function briefingToUpdate(b) {
+  return {
+    id: b.id,
+    date: b.published,
+    category: 'briefing',
+    title: b.title,
+    summary: {
+      en: b.subtitle?.en || b.highlights?.en?.[0] || '',
+      zh: b.subtitle?.zh || b.highlights?.zh?.[0] || '',
+    },
+    url: `/briefings/${b.slug}.html`,
+  };
+}
+
+function insightToUpdate(i) {
+  const plain = (html) =>
+    String(html || '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 160);
+  return {
+    id: i.id,
+    date: i.published,
+    category: 'insight',
+    title: i.title,
+    summary: {
+      en: plain(i.excerpt?.en),
+      zh: plain(i.excerpt?.zh),
+    },
+    url: `/insights/${i.slug}.html`,
+  };
+}
+
+function buildSiteUpdates(briefings, insights) {
+  const manual = loadManualSiteUpdates();
+  const auto = [];
+
+  const latestBriefing = [...briefings].sort((a, b) => (a.published < b.published ? 1 : -1))[0];
+  if (latestBriefing) auto.push(briefingToUpdate(latestBriefing));
+
+  const latestInsight = [...insights].sort((a, b) => (a.published < b.published ? 1 : -1))[0];
+  if (latestInsight) auto.push(insightToUpdate(latestInsight));
+
+  const byId = new Map();
+  [...manual, ...auto].forEach((item) => {
+    if (item?.id) byId.set(item.id, item);
+  });
+
+  const items = [...byId.values()]
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, 8);
+
+  const payload = {
+    version: items[0]?.id || 'none',
+    generatedAt: new Date().toISOString().slice(0, 10),
+    items,
+  };
+
+  writeFileSync(join(ROOT, 'public', 'site-updates.json'), JSON.stringify(payload, null, 2));
+  return payload;
+}
+
 function main() {
   const briefings = loadJsonFiles('briefings');
   const insights = loadJsonFiles('insights');
@@ -442,6 +517,7 @@ function main() {
   insights.forEach((i) => articleUrls.push(buildInsightPage(i)));
 
   const index = buildContentIndex(briefings, insights);
+  buildSiteUpdates(briefings, insights);
   buildFeed(index.items);
   buildSitemap(articleUrls);
 

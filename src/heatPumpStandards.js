@@ -4,6 +4,7 @@ import { getHpStdCategoryLabel, hpStdCategorySearchText } from './heatPumpStanda
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
 import { initNavChipHighlight } from './navHighlight.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 function escapeHtml(s) {
     if (s == null) return '';
@@ -155,6 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
             updateHpStdMeta(lang);
             repopulateCategoryOptions(lang);
             filterAndRender();
+            refreshWhatsNewLanguage(lang);
         },
     });
+    initWhatsNew();
 });

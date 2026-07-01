@@ -2,6 +2,7 @@ import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.j
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal, updateVCardForLanguage } from './contactModal.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 const SECTION_IDS = ['policy', 'market', 'standards', 'technology', 'calendar'];
 
@@ -166,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         afterSet: (lang) => {
             renderArticle();
             updateVCardForLanguage(lang);
+            refreshWhatsNewLanguage(lang);
             if (metaTitle) {
                 document.title = lang === 'zh' ? metaTitle.zh : metaTitle.en;
             }
@@ -177,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactModal([
         document.getElementById('article-contact-cta'),
     ].filter(Boolean));
+    initWhatsNew();
 
     renderArticle();
 });

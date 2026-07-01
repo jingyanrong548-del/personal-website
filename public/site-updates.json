@@ -1,0 +1,76 @@
+{
+  "version": "whats-new-feature-2026-07",
+  "generatedAt": "2026-07-01",
+  "items": [
+    {
+      "id": "whats-new-feature-2026-07",
+      "date": "2026-07-01",
+      "category": "site",
+      "title": {
+        "en": "What's New — stay current at a glance",
+        "zh": "最近更新提醒上线"
+      },
+      "summary": {
+        "en": "A bell icon in the nav shows recent briefings, insights, and page updates when you return.",
+        "zh": "导航栏铃铛入口可查看最新周报、洞察与页面更新，回访即可掌握动态。"
+      },
+      "url": "/articles.html"
+    },
+    {
+      "id": "briefing-2026-w26",
+      "date": "2026-06-28",
+      "category": "briefing",
+      "title": {
+        "en": "Week 26 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第26周制冷与热泵行业简报"
+      },
+      "summary": {
+        "en": "Intersolar Europe closes with hybrid PV–storage–heat focus (23–25 Jun); EcoFlow Munich launch: OASIS 3.0 & PowerHeat R290 (22 Jun); World Refrigeration Day Cool Intelligence (26 Jun); China 1 Jul regulatory cluster three-day countdown; MEE 2027 ODS/HFC quota draft still in comment",
+        "zh": "Intersolar Europe 6/23–25 闭幕聚焦光储热一体化；EcoFlow 6/22 慕尼黑发布 OASIS 3.0 与 PowerHeat R290；世界制冷日 6/26「Cool Intelligence」；国内 7/1 监管节点集群倒计时约三天；MEE 2027 ODS/HFC 配额征求意见稿仍在意见征集期"
+      },
+      "url": "/briefings/2026-w26.html"
+    },
+    {
+      "id": "hp-policies-2026-06",
+      "date": "2026-06-15",
+      "category": "page",
+      "title": {
+        "en": "Industrial heat pump policies page expanded",
+        "zh": "工业热泵政策页深度解读更新"
+      },
+      "summary": {
+        "en": "Added NDRC 698 nine-sector retrofit plan analysis and green-power consumption rules (Order 42) synergy notes.",
+        "zh": "增补发改环资〔2026〕698 号九大行业改造清单解读，以及绿电消费与设备更新协同合规路径。"
+      },
+      "url": "/heat-pump-policies.html"
+    },
+    {
+      "id": "hp-standards-2026-05-22",
+      "date": "2026-05-22",
+      "category": "page",
+      "title": {
+        "en": "Industrial heat pump standards lookup updated",
+        "zh": "工业热泵标准速查页更新"
+      },
+      "summary": {
+        "en": "Dataset refreshed against public sources; SAC/TC238 heat pump standard system excerpts added.",
+        "zh": "按公开信息核对更新数据集，并增补全国冷冻空调标委会（SAC/TC238）热泵标准化体系摘录条目。"
+      },
+      "url": "/heat-pump-standards.html"
+    },
+    {
+      "id": "insight-extreme-testing-moat",
+      "date": "2025-09-01",
+      "category": "insight",
+      "title": {
+        "en": "Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +300°C)",
+        "zh": "超越炒作：真正的护城河是极端测试 (-40°C 至 +300°C)"
+      },
+      "summary": {
+        "en": "Claim: Everyone claims 160°C capability, but few can prove it. Reality: The future belongs to those who build CNAS-level infrastructure to verify R744/Steam sys",
+        "zh": "行业宣称： 行业都在宣称 160°C 能力，但鲜有能证明者。 现实情况： 未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。 核心原则： 验证 > 规格。"
+      },
+      "url": "/insights/extreme-testing-moat.html"
+    }
+  ]
+}

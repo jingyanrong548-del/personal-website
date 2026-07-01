@@ -1,6 +1,7 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 function updateHpPolicyMeta(lang) {
     const title = translations[lang]?.['hpPolicy.seo.title'];
@@ -19,7 +20,8 @@ function updateHpPolicyMeta(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLanguageSwitcher({ afterSet: updateHpPolicyMeta });
+    initLanguageSwitcher({ afterSet: (lang) => { updateHpPolicyMeta(lang); refreshWhatsNewLanguage(lang); } });
     initSiteLegalDisclaimer();
     initNavChipHighlight();
+    initWhatsNew();
 });

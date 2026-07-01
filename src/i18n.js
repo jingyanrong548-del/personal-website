@@ -24,6 +24,16 @@ export const translations = {
         'nav.hpPolicies': 'Industrial heat pump policies',
         'nav.hthpColumn': 'HTHP column',
 
+        'whatsNew.title': "What's New",
+        'whatsNew.gotIt': 'Got it',
+        'whatsNew.viewAll': 'All articles',
+        'whatsNew.empty': 'No recent updates yet.',
+        'whatsNew.category.briefing': 'Briefing',
+        'whatsNew.category.insight': 'Insight',
+        'whatsNew.category.page': 'Page',
+        'whatsNew.category.tool': 'Tool',
+        'whatsNew.category.site': 'Site',
+
         'hthpCol.seo.title': 'HTHP column — R&D roadmap & adoption barriers',
         'hthpCol.seo.desc': 'Future R&D directions from IIR Technical Brief No. 61 (2026, 2nd ed.) and five adoption barriers from the 2026 Taiyuan high-temperature & industrial heat pump conference—for plant owners, integrators, and investors.',
         'hthpCol.kicker': 'HTHP column · Strategy & deployment',
@@ -1049,6 +1059,16 @@ export const translations = {
         'nav.usefulLinks': '常用链接',
         'nav.hpPolicies': '工业热泵政策',
         'nav.hthpColumn': '高温热泵专栏',
+
+        'whatsNew.title': '最近更新',
+        'whatsNew.gotIt': '知道了',
+        'whatsNew.viewAll': '查看全部文章',
+        'whatsNew.empty': '暂无最近更新。',
+        'whatsNew.category.briefing': '行业简报',
+        'whatsNew.category.insight': '工程洞察',
+        'whatsNew.category.page': '页面',
+        'whatsNew.category.tool': '工具',
+        'whatsNew.category.site': '站点',
 
         'hthpCol.seo.title': '高温热泵专栏｜研发方向与推广痛点',
         'hthpCol.seo.desc': '摘自 IIR 第 61 号技术简报（2026 第 2 版）§7.2 未来研发方向，以及 2026 太原高温及工业热泵大会总结的五大规模化推广痛点——面向业主、系统集成商与投资方。',

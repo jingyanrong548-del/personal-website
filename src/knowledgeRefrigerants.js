@@ -1,6 +1,7 @@
 import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
+import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 
 function updateKnowledgeRefMeta(lang) {
     const title = translations[lang]?.['knowledgeRef.seo.title'];
@@ -19,7 +20,8 @@ function updateKnowledgeRefMeta(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLanguageSwitcher({ afterSet: updateKnowledgeRefMeta });
+    initLanguageSwitcher({ afterSet: (lang) => { updateKnowledgeRefMeta(lang); refreshWhatsNewLanguage(lang); } });
     initSiteLegalDisclaimer();
     initNavChipHighlight();
+    initWhatsNew();
 });
