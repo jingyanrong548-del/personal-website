@@ -1,0 +1,102 @@
+{
+  "id": "briefing-2026-w27",
+  "type": "briefing",
+  "slug": "2026-w27",
+  "series": "weekly-briefing",
+  "year": 2026,
+  "week": 27,
+  "published": "2026-07-05",
+  "title": {
+    "en": "Week 27 2026 Refrigeration & Heat Pump Industry Briefing",
+    "zh": "2026年第27周制冷与热泵行业简报"
+  },
+  "subtitle": {
+    "en": "China 1 Jul ODS cluster enters first enforcement week; Supreme Court upholds AIM Act cap-and-trade (22 Jun); HARDI/ACCA/PHCC sue EPA over commercial refrigeration GWP extensions (25 Jun); Systemair Geniox HP DFN R290 AHU (1 Jul); LG Therma V R290 monobloc in Europe",
+    "zh": "国内 7/1 ODS 监管集群进入首周施行；最高法院 6/22 维持 AIM 法案配额交易；HARDI/ACCA/PHCC 6/25 起诉 EPA 商用制冷 GWP 延期；Systemair 7/1 发布 Geniox HP DFN R290 空调箱；LG Therma V R290 单体式登陆欧洲"
+  },
+  "highlights": {
+    "en": [
+      "China 1 Jul cluster in first enforcement week: HCFC-141b on-site spray ban (cold-room/logistics insulation, incl. T/CECS 498); XPS foam HCFC ban; HCFC solvent/cleaning ban; FAS 2026/550 projector energy labels",
+      "Supreme Court denies cert (22 Jun): RMS of Georgia v. EPA upholds DC Circuit—AIM Act HFC cap-and-trade allocation remains constitutional",
+      "EPA Technology Transitions suits (25–26 Jun): HARDI, ACCA, PHCC challenge commercial refrigeration GWP rise to 1,400 (2027–2032); AHRI and Alliance file separately; residential R-410A install deadline removal welcomed",
+      "Systemair Geniox HP DFN (1 Jul): packaged R290 heat-pump AHU, heating COP up to 16, 90% heat recovery, TEWI −30% vs R410A; LG Therma V R290 monobloc (7–14 kW, −28°C/75°C) strengthens European residential line-up",
+      "ATMOsphere Network South Korea (25 Jun): 130+ attendees on CO₂ commercial refrigeration; Emart transcritical CO₂ case cuts electricity 38.4% vs R404A neighbour; MEE 2027 ODS/HFC quota draft still in comment"
+    ],
+    "zh": [
+      "国内 7/1 监管集群首周施行：HCFC-141b 现场喷涂聚氨酯禁产（冷库/物流保温，含 T/CECS 498 适用范围）；挤出聚苯乙烯（XPS）泡沫 HCFC 发泡剂禁产；电子/仪器/机械 HCFC 溶剂清洗禁限；550 号文投影机能效标识同日实施",
+      "最高法院 6/22 拒绝 cert：RMS of Georgia v. EPA 维持 DC 巡回法院判决，AIM 法案 HFC 配额 cap-and-trade 合宪性获确认",
+      "EPA 技术转换诉讼 6/25–26：HARDI、ACCA、PHCC 联合起诉 TT 终稿商用制冷 GWP 放宽至 1400（2027–2032）；AHRI 与 Alliance 另案起诉；住宅 R-410A 安装期限取消获行业欢迎",
+      "Systemair Geniox HP DFN（7/1）：集成 R290 热泵的 packaged AHU，制热 COP 最高 16、热回收效率 90%，TEWI 较 R410A 版降 30%；LG Therma V R290 单体式（7–14 kW，−28°C/75°C）强化欧洲住宅布局",
+      "ATMOsphere Network South Korea（6/25）：130+ 业者聚焦 CO₂ 商用制冷；Emart 首套 transcritical CO₂ 案例较 R404A 邻店电费降 38.4%；MEE 2027 配额征求意见稿仍在意见期"
+    ]
+  },
+  "sections": [
+    {
+      "id": "policy",
+      "items": {
+        "en": [
+          "China’s 1 Jul ODS regulatory cluster entered its first enforcement week on schedule. Under MEE Announcement 2025 No. 28, production of on-site polyurethane spray foam using HCFC-141b is now prohibited—directly affecting cold-room construction, logistics hubs and industrial insulation projects covered by standards including T/CECS 498-2024. On the same date, MEE Announcement 2025 No. 31 bans HCFC blowing agents in extruded polystyrene (XPS) foam, and a companion notice prohibits HCFC or HCFC-containing solvent blends in electronics, instruments, machinery and medical-device cleaning under GB 38508-2020. Local ecology departments are stepping up inspections; violations under the ODS Regulation can trigger fines of ¥200,000–¥500,000 or higher. The HFC-245fa cross-category transfer cap raised to 50% in the week-24 MEE 2027 quota draft remains explicitly linked to this foam transition as contractors shift to HFO and hydrocarbon alternatives.",
+          "On 22 Jun the US Supreme Court denied certiorari in RMS of Georgia v. EPA, leaving intact the DC Circuit ruling that upholds EPA’s authority to allocate HFC production and consumption allowances under the AIM Act cap-and-trade programme. HARDI and PHCC had filed amicus briefs supporting EPA; the denial removes a high-profile nondelegation challenge to the statutory phasedown schedule. Days later, on 25–26 Jun, HARDI, ACCA and PHCC filed a separate petition for judicial review of the Technology Transitions Reconsideration Final Rule in the DC Circuit—joined on 26 Jun by AHRI and the Alliance for Responsible Atmospheric Policy—targeting the rule’s temporary GWP relaxation for supermarket, retail food and cold-storage commercial refrigeration to 1,400 from 2027 through 2032 while supporting the residential R-410A installation deadline removal.",
+          "The EPA Technology Transitions reconsideration final rule takes effect 27 Jul 2026—22 days from this briefing. Contractors may continue installing pre-2025 R-410A residential and light-commercial inventory until depleted, but HARDI estimates the commercial refrigeration GWP extensions could add roughly $13 billion in refrigerant costs industry-wide by increasing demand for HFCs whose AIM Act supply is still shrinking. The juxtaposition—AIM quota law affirmed by the Supreme Court vs end-use deadline rollbacks challenged in court—creates a split compliance landscape for multinational OEMs already navigating the EU F-Gas 2027 GWP<150 placement ban highlighted at Intersolar Europe (week 26)."
+        ],
+        "zh": [
+          "国内 7/1 ODS 监管集群按节点进入首周施行。依据生态环境部2025年第28号公告，以 HCFC-141b 为发泡剂的现场喷涂聚氨酯泡沫产品全面禁产——直接影响冷库、物流枢纽及工业保温施工，适用范围含 T/CECS 498-2024 等标准所列喷涂硬泡聚氨酯工程。同日，2025年第31号公告禁止以 HCFCs 为发泡剂生产挤出聚苯乙烯（XPS）泡沫；配套公告禁止在电子、仪器、机械、医疗器械等领域以 HCFCs 或含 HCFCs 混合溶剂作清洗剂（GB 38508-2020）。各级生态环境部门加强现场检查；违反《消耗臭氧层物质管理条例》可处20万–50万元或更高罚款。第24周 MEE 2027 配额征求意见稿将 HFC-245fa 跨品类调增上限提至50%，与上述泡沫替代路径直接关联。",
+          "6月22日，美国最高法院拒绝受理 RMS of Georgia v. EPA，维持哥伦比亚特区巡回法院判决——EPA 依据 AIM 法案实施 HFC 生产与消费配额 cap-and-trade 分配合法。HARDI 与 PHCC 曾提交 amicus 支持 EPA；此举消除对法定削减时间表的高调「非授权」宪法挑战。6月25–26日，HARDI、ACCA、PHCC 在特区巡回法院另案起诉 EPA 技术转换终稿——26日 AHRI 与 Alliance for Responsible Atmospheric Policy 加入——矛头指向商超、零售食品及冷库商用制冷 GWP 临时放宽至1400（2027–2032），同时支持住宅 R-410A 安装期限取消。",
+          "EPA 技术转换终稿将于**2026年7月27日**生效——距本简报约22天。承包商可持续安装2025年前出厂的 R-410A 住宅/轻商用库存直至耗尽，但 HARDI 估算商用制冷 GWP 延期或使全行业额外承担约130亿美元制冷剂成本——在 AIM 法案供应仍逐年缩减背景下推高 HFC 需求。最高法院维持配额法 vs 终稿放宽投放期限遭诉讼——形成分裂合规格局，跨国 OEM 须与第26周 Intersolar 强调的欧盟 **2027年1月1日** GWP<150 投放禁限并行应对。"
+        ]
+      }
+    },
+    {
+      "id": "market",
+      "items": {
+        "en": [
+          "ATMOsphere Network South Korea 2026 convened 25 Jun in Seoul with Arneg Korea as exclusive sponsor, drawing 130+ stakeholders under the theme of natural-refrigerant transition in the carbon-neutral era. CEO SungKyu Lee reported approximately 50 transcritical CO₂ (R744) refrigeration installations operating in Korea and overseas, with another 200 sites scheduled from August 2026. A headline case study presented Emart’s first supermarket CO₂ rack: compared with a neighbouring Hanaro Mart on fixed-speed R404A (120 pyeong), cumulative electricity bills fell 38.4% over 2024–2025—exceeding the 35% design target and reaching 48.5% during the August 2025 heatwave. National Assembly Member Lee Hak-Young delivered a video message on Korea’s HFC phase-down roadmap, positioning CO₂ as a practical response to tightening refrigerant rules and rising power tariffs.",
+          "European R290 momentum continues after Intersolar Europe (week 26). LG Electronics is expanding its Therma V R290 Monobloc air-to-water heat pump across residential markets—7–14 kW capacity, −28°C ambient heating, 75°C DHW, outdoor-only installation without indoor units. Systemair launched the Geniox HP DFN packaged air-handling unit with integrated R290 heat pump on 1 Jul, initially in Denmark and the UK with broader European rollout planned for later summer. Together with EcoFlow PowerHeat, GoodWe GoodHeat and Differ Power D1 showcased in Munich, the segment is converging on low-GWP monobloc and integrated platforms ahead of the EU’s 1 Jan 2027 GWP<150 placement ban for systems ≤12 kW."
+        ],
+        "zh": [
+          "ATMOsphere Network South Korea 2026 于6月25日在首尔举行，Arneg Korea 独家赞助，130+ 业者参与「碳中和时代自然工质转型」主题交流。CEO 李성규介绍目前在韩国及海外约50套 transcritical CO₂（R744）制冷系统在运，**2026年8月**起另有约200个站点计划投运。重点案例为 Emart 首套商超 CO₂ 机组：与邻近采用定频 R404A 的 Hanaro Mart（120坪）对比，2024–2025年累计电费降38.4%——超出35%设计值，2025年8月酷暑期降幅达48.5%。国会议员李学永视频致辞强调韩国 HFC 削减路线图，CO₂ 被视为应对制冷剂收紧与电价上涨的现实路径。",
+          "欧洲 R290 动能在第26周 Intersolar Europe 之后延续。LG Electronics 扩大 Therma V R290 Monobloc 空气源热泵在住宅市场的布局——7–14 kW、−28°C 环境供暖、75°C 生活热水、纯室外机无需室内安装。Systemair 于7/1 发布集成 R290 热泵的 Geniox HP DFN packaged 空调箱，先在丹麦与英国上市，夏末扩至更多欧洲市场。与慕尼黑展出的 EcoFlow PowerHeat、GoodWe GoodHeat、Differ Power D1 共同构成低 GWP 单体式/集成平台竞争格局，为欧盟 **2027年1月1日** ≤12 kW 系统 GWP<150 投放禁限预热。"
+        ]
+      }
+    },
+    {
+      "id": "standards",
+      "items": {
+        "en": [
+          "FAS 2026/550 projector energy labels entered their first enforcement week on 1 Jul 2026, aligned with mandatory national standard GB 32028-2025 (replacing GB 32028-2015). Products manufactured or imported before 1 Jul may continue using legacy labels until 1 Jul 2028 under the two-year stock transition. Firms must maintain dual catalogues—FAS 2025/45 for heat-pump and chiller units vs 2026/550 for appliances, lighting and now projectors—with SKU-level traceability in e-commerce and tender documentation. The next FAS 2026/550 milestone is 1 Aug 2026 for household solar water heating systems; see this site’s heat-pump standards quick reference for the full domestic label schedule.",
+          "EU F-Gas Regulation (EU) 2024/573 placement deadlines are now roughly six months away: from 1 Jan 2027, monoblock heat pumps and air-conditioning units ≤12 kW placed on the EU market must use refrigerants with GWP below 150. Member states must adapt F-gas handler certification to EU-standardised training by 11 Mar 2027. Systemair’s Geniox HP DFN and LG’s Therma V R290 carry ErP-aligned efficiency claims and PFAS-free REACH compliance—illustrating how manufacturers are bundling low-GWP refrigerant choice with energy-performance documentation required for both EU and export markets."
+        ],
+        "zh": [
+          "550号文投影机能效标识于**2026年7月1日**进入首周施行，与强制性国标 GB 32028-2025（替代 GB 32028-2015）同步。7/1 前出厂或进口产品可按两年过渡期延用旧版标识至**2028年7月1日**。企业须继续并行管理 FAS 2025/45（热泵冷水等）与 2026/550（家电/照明/投影机）两套目录，在电商与招投标中按 SKU 对应实施规则与检测报告。550号文下一节点为**2026年8月1日**家用太阳能热水系统标识——国内完整时间表详见本站热泵标准速查页。",
+          "欧盟 F-Gas 法规 (EU) 2024/573 投放禁限距今约六个月：**2027年1月1日**起，≤12 kW 单体式热泵与空调投放欧盟市场须使用 GWP<150 工质；成员国须于**2027年3月11日**前将 F 气体从业人员认证适配欧盟统一培训标准。Systemair Geniox HP DFN 与 LG Therma V R290 均强调 ErP 能效与 PFAS-free REACH 合规——体现制造商将低 GWP 工质选择与欧盟及出口市场所需的能效文档一并打包的趋势。"
+        ]
+      }
+    },
+    {
+      "id": "technology",
+      "items": {
+        "en": [
+          "Systemair’s Geniox HP DFN—launched 1 Jul 2026—is a packaged air-handling unit with an integrated reversible R290 heat pump, operating from −22 to 36°C ambient. The largest unit carries a 6.5 kg propane charge; heating mode delivers COPs up to 16 and cooling EERs up to 9, with up to 90% heat recovery efficiency via the heat pump and rotary heat exchanger. Systemair states TEWI—including direct and indirect CO₂e—falls 30% versus an equivalent R410A-integrated AHU, and the design is PFAS-free under REACH. Already available in Denmark and the U.K., the range expands across Europe later this summer—extending R290 from residential monoblocs (week 26) into commercial HVAC packaged solutions.",
+          "LG Therma V R290 Monobloc offers 7–14 kW heating capacity in a single outdoor unit for space heating and DHW, with 75°C supply and −28°C ambient operation. The monobloc architecture eliminates indoor refrigerant piping—simplifying installation for retrofits and multi-unit residential projects. Positioned alongside EcoFlow PowerHeat (9/20 kW, ErP A+++) and GoodWe GoodHeat from Intersolar, Therma V targets the same European prosumer segment where bundled electrification—not standalone COP—drives purchasing decisions ahead of the 2027 EU placement ban."
+        ],
+        "zh": [
+          "Systemair Geniox HP DFN 于2026年7月1日发布——集成可逆 R290 热泵的 packaged 空调箱，环境运行范围−22~36°C。最大机型 R290 充注6.5 kg；制热模式 COP 最高16、制冷 EER 最高9，经热泵与转轮换热器组合热回收效率最高90%。Systemair 称 TEWI（含直接/间接 CO₂e）较同等 R410A 集成 AHU 降30%，设计 PFAS-free 且符合 REACH。已在丹麦与英国上市，夏末扩至更多欧洲市场——将 R290 从第26周住宅单体式延伸至商用 HVAC 集成方案。",
+          "LG Therma V R290 Monobloc 以单一室外机提供7–14 kW 供暖与生活热水能力，最高出水75°C、−28°C 环境运行。单体式架构无需室内制冷剂管路——便于改造与多户住宅项目安装。与 Intersolar 展出的 EcoFlow PowerHeat（9/20 kW，ErP A+++）及 GoodWe GoodHeat 同台竞争欧洲户用能源市场——在2027年欧盟投放禁限前，采购决策更由电气化打包方案而非单机 COP 驱动。"
+        ]
+      }
+    },
+    {
+      "id": "calendar",
+      "items": {
+        "en": [
+          "Completed this week: China 1 Jul ODS cluster (HCFC-141b spray, XPS foam, HCFC solvents, FAS 550 projectors); Supreme Court cert denial in RMS of Georgia v. EPA (22 Jun); ATMOsphere Network South Korea (25 Jun); HARDI/ACCA/PHCC and AHRI Technology Transitions suits filed (25–26 Jun); Systemair Geniox HP DFN launch (1 Jul).",
+          "Ahead: EPA Technology Transitions final rule effective 27 Jul 2026; FAS 2026/550 household solar water heating labels from 1 Aug 2026; MEE 2027 ODS/HFC quota draft (week 24) in public comment—2027 quota and initial transfer filings due 31 Oct 2026; EU F-Gas GWP<150 placement ban 1 Jan 2027; F-gas handler certification harmonisation 11 Mar 2027; Chillventa 2026 Nuremberg 13–15 Oct 2026."
+        ],
+        "zh": [
+          "本周已完成：国内 7/1 ODS 监管集群（HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂、550 号文投影机）；最高法院 6/22 拒绝 RMS of Georgia v. EPA cert；6/25 ATMOsphere Network South Korea；6/25–26 EPA 技术转换诉讼；7/1 Systemair Geniox HP DFN 发布。",
+          "前瞻：EPA 技术转换终稿 **2026年7月27日** 生效；550 号文 **2026年8月1日** 家用太阳能热水系统标识；MEE 2027 ODS/HFC 配额征求意见稿（第24周发布）仍在意见期——**2026年10月31日** 前须提交2027年度配额及初次流转申请；欧盟 GWP<150 投放禁限 **2027年1月1日**；F 气体从业人员认证统一 **2027年3月11日**；Chillventa 2026 纽伦堡 **2026年10月13–15日**。"
+        ]
+      }
+    }
+  ]
+}

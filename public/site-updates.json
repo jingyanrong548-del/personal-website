@@ -1,7 +1,21 @@
 {
-  "version": "whats-new-feature-2026-07",
-  "generatedAt": "2026-07-01",
+  "version": "briefing-2026-w27",
+  "generatedAt": "2026-07-05",
   "items": [
+    {
+      "id": "briefing-2026-w27",
+      "date": "2026-07-05",
+      "category": "briefing",
+      "title": {
+        "en": "Week 27 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第27周制冷与热泵行业简报"
+      },
+      "summary": {
+        "en": "China 1 Jul ODS cluster enters first enforcement week; Supreme Court upholds AIM Act cap-and-trade (22 Jun); HARDI/ACCA/PHCC sue EPA over commercial refrigeration GWP extensions (25 Jun); Systemair Geniox HP DFN R290 AHU (1 Jul); LG Therma V R290 monobloc in Europe",
+        "zh": "国内 7/1 ODS 监管集群进入首周施行；最高法院 6/22 维持 AIM 法案配额交易；HARDI/ACCA/PHCC 6/25 起诉 EPA 商用制冷 GWP 延期；Systemair 7/1 发布 Geniox HP DFN R290 空调箱；LG Therma V R290 单体式登陆欧洲"
+      },
+      "url": "/briefings/2026-w27.html"
+    },
     {
       "id": "whats-new-feature-2026-07",
       "date": "2026-07-01",
@@ -15,20 +29,6 @@
         "zh": "导航栏铃铛入口可查看最新周报、洞察与页面更新，回访即可掌握动态。"
       },
       "url": "/articles.html"
-    },
-    {
-      "id": "briefing-2026-w26",
-      "date": "2026-06-28",
-      "category": "briefing",
-      "title": {
-        "en": "Week 26 2026 Refrigeration & Heat Pump Industry Briefing",
-        "zh": "2026年第26周制冷与热泵行业简报"
-      },
-      "summary": {
-        "en": "Intersolar Europe closes with hybrid PV–storage–heat focus (23–25 Jun); EcoFlow Munich launch: OASIS 3.0 & PowerHeat R290 (22 Jun); World Refrigeration Day Cool Intelligence (26 Jun); China 1 Jul regulatory cluster three-day countdown; MEE 2027 ODS/HFC quota draft still in comment",
-        "zh": "Intersolar Europe 6/23–25 闭幕聚焦光储热一体化；EcoFlow 6/22 慕尼黑发布 OASIS 3.0 与 PowerHeat R290；世界制冷日 6/26「Cool Intelligence」；国内 7/1 监管节点集群倒计时约三天；MEE 2027 ODS/HFC 配额征求意见稿仍在意见征集期"
-      },
-      "url": "/briefings/2026-w26.html"
     },
     {
       "id": "hp-policies-2026-06",
