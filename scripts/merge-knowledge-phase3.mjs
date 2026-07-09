@@ -8,14 +8,27 @@ import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-function extractCard(html, id) {
-  const re = new RegExp(
-    `<div class="featured-insight-card[^"]*" id="${id}"[\\s\\S]*?</div>\\s*(?=\\n\\s*<div class="featured-insight-card|$)`,
-    'm'
-  );
-  const m = html.match(re);
-  if (!m) throw new Error(`card not found: ${id}`);
-  return m[0].trimEnd();
+function extractCardById(html, id) {
+  const marker = `id="${id}"`;
+  const idPos = html.indexOf(marker);
+  if (idPos === -1) throw new Error(`card not found: ${id}`);
+  const openStart = html.lastIndexOf('<div', idPos);
+  let depth = 1;
+  let pos = openStart + 4;
+  while (pos < html.length) {
+    const openDiv = html.indexOf('<div', pos);
+    const closeDiv = html.indexOf('</div>', pos);
+    if (closeDiv === -1) throw new Error(`unclosed card: ${id}`);
+    if (openDiv !== -1 && openDiv < closeDiv) {
+      depth++;
+      pos = openDiv + 4;
+    } else {
+      depth--;
+      pos = closeDiv + 6;
+      if (depth === 0) return html.slice(openStart, pos);
+    }
+  }
+  throw new Error(`card end not found: ${id}`);
 }
 
 function extractBetween(html, startMarker, endMarker) {
@@ -58,8 +71,8 @@ const conf = readFileSync(join(ROOT, 'briefings/conferences.html'), 'utf-8');
 let hthp = readFileSync(join(ROOT, 'hthp-column.html'), 'utf-8');
 
 if (!hthp.includes('id="hthp-exhibition-trends"')) {
-  const taiyuanCard = extractCard(conf, 'exhibition-trends-taiyuan-hthp2026');
-  const copenhagenCard = extractCard(conf, 'exhibition-trends-copenhagen-hthp');
+  const taiyuanCard = extractCardById(conf, 'exhibition-trends-taiyuan-hthp2026');
+  const copenhagenCard = extractCardById(conf, 'exhibition-trends-copenhagen-hthp');
 
   const trendsBlock = `<section id="hthp-exhibition-trends" class="knowledge-section hthp-column-section" aria-labelledby="hthp-exhibition-trends-title">
             <div class="container container--narrow">
@@ -86,8 +99,8 @@ writeFileSync(join(ROOT, 'hthp-column.html'), hthp);
 
 // 3. Slim conferences — keep CRH + heating forum only
 if (conf.includes('exhibition-trends-taiyuan-hthp2026')) {
-  const crhCard = extractCard(conf, 'exhibition-trends-crh2026');
-  const heatingCard = extractCard(conf, 'exhibition-trends');
+  const crhCard = extractCardById(conf, 'exhibition-trends-crh2026');
+  const heatingCard = extractCardById(conf, 'exhibition-trends');
 
   const slimConfBody = `<div class="exhibition-trends-group" aria-labelledby="exhibition-trends-section-heading">
                 <h3 class="exhibition-trends-section-heading" id="exhibition-trends-section-heading" data-i18n="briefings.exhibitionTrends.sectionTitle">Recent major trade show trend notes</h3>
