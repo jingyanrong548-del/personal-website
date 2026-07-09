@@ -457,7 +457,7 @@ function main() {
     inputsPath,
     JSON.stringify(
       {
-        articlePages: articleUrls.map((a) => `briefings/${a.slug}.html`.replace(/^briefings\//, a.type === 'briefing' ? `briefings/${a.slug}.html` : `insights/${a.slug}.html`)),
+        articlePages: articleUrls.map((a) => `${a.type === 'briefing' ? 'briefings' : 'insights'}/${a.slug}.html`),
       },
       null,
       2
