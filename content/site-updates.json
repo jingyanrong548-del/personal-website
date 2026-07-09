@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "ia-reorg-2026-07",
+      "date": "2026-07-09",
+      "category": "site",
+      "title": {
+        "en": "Site navigation simplified — Content, Knowledge, Tools & Standards",
+        "zh": "内容板块归并：内容中心 / 知识库 / 工具与标准"
+      },
+      "summary": {
+        "en": "Nav reduced to three hubs: Content (briefings, insights, industry notes), Knowledge (fundamentals, refrigerants guide + property table, industrial HTHP), and Tools & Standards (standards, policies, links). Old URLs redirect.",
+        "zh": "导航收敛为三大入口：内容中心（简报、洞察、行业观察）、知识库（基础、制冷剂百科含工质表、工业高温热泵）、工具与标准（标准、政策、外链合一）。旧 URL 已设重定向。"
+      },
+      "url": "/articles.html"
+    },
+    {
       "id": "annex68-iea-hpt-2026-07",
       "date": "2026-07-09",
       "category": "page",
@@ -40,7 +54,7 @@
         "en": "Added NDRC 698 nine-sector retrofit plan analysis and green-power consumption rules (Order 42) synergy notes.",
         "zh": "增补发改环资〔2026〕698 号九大行业改造清单解读，以及绿电消费与设备更新协同合规路径。"
       },
-      "url": "/heat-pump-policies.html"
+      "url": "/heat-pump-standards.html#policies"
     },
     {
       "id": "whats-new-feature-2026-07",

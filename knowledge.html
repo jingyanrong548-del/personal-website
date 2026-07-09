@@ -29,46 +29,82 @@
     <script type="module" src="/src/knowledge.js"></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
     <nav class="navbar">
         <div class="container">
-            <a class="nav-brand knowledge-nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
-            <div class="nav-right">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
                 <ul class="nav-menu">
-                    <li class="nav-menu__group nav-menu__group--chips">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
-                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
-                            <li><a href="./knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
-                            <li><a href="./hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
-                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
-                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
-                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
-                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu__group nav-menu__group--anchors">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                            <li><a href="./#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
-                            <li><a href="./#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
-                            <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
             </div>
             <div class="language-switcher">
-                <button class="lang-btn" data-lang="zh">中文</button>
-                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
             </div>
         </div>
     </nav>
 
     <main class="knowledge-page">
+        <section class="knowledge-hub-index section section-gray" aria-labelledby="knowledge-hub-title">
+            <div class="container">
+                <h1 class="knowledge-hub-page-title" id="knowledge-hub-title" data-i18n="knowledge.hub.title">Knowledge base</h1>
+                <p class="knowledge-hub-lede" data-i18n="knowledge.hub.lede">Evergreen learning paths—fundamentals, refrigerants, and industrial high-temperature heat pumps.</p>
+                <div class="articles-series-grid knowledge-hub-grid">
+                    <a href="#kp-article-co2" class="articles-series-card knowledge-hub-card knowledge-hub-card--active">
+                        <h2 class="knowledge-hub-card-title" data-i18n="knowledge.hub.basics.title">Heat pump fundamentals</h2>
+                        <p data-i18n="knowledge.hub.basics.desc">Seven independent chapters for experts and decision-makers.</p>
+                    </a>
+                    <a href="./knowledge-refrigerants.html" class="articles-series-card knowledge-hub-card">
+                        <h2 class="knowledge-hub-card-title" data-i18n="knowledge.hub.refrigerants.title">Refrigerants</h2>
+                        <p data-i18n="knowledge.hub.refrigerants.desc">Illustrated guide plus IIR Table 2 and ASHRAE 34 property data.</p>
+                    </a>
+                    <a href="./hthp-column.html" class="articles-series-card knowledge-hub-card">
+                        <h2 class="knowledge-hub-card-title" data-i18n="knowledge.hub.hthp.title">Industrial HTHP</h2>
+                        <p data-i18n="knowledge.hub.hthp.desc">IIR §7.2 R&amp;D themes, adoption barriers, and trade-show trend notes.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
         <header class="knowledge-hero">
             <div class="container">
                 <div class="knowledge-hero-card">
-                    <p class="knowledge-kicker" data-i18n="knowledge.kicker">Heat pump basics · For experts and newcomers alike</p>
-                    <h1 class="knowledge-title" data-i18n="knowledge.seriesTitle">Heat pump basics</h1>
+                    <p class="knowledge-kicker" data-i18n="knowledge.hub.basics.title">Heat pump fundamentals</p>
+                    <h2 class="knowledge-title" data-i18n="knowledge.seriesTitle">Heat pump basics</h2>
                     <p class="knowledge-lede" data-i18n="knowledge.seriesLede">Short, independent chapters for experts and newcomers alike—from physics intuition to quoting pitfalls, AI roles in R&amp;D, and a dated policy map of industrial heat-pump refrigerants in major markets. Useful when specialists need clear language for clients and decision-makers. Jump in via the list below or read in order.</p>
 
                     <nav class="knowledge-toc" aria-label="Table of contents">
@@ -133,7 +169,7 @@
 
                     <div class="knowledge-actions">
                         <a class="knowledge-btn knowledge-btn-primary" href="./#apps" data-i18n="knowledge.cta.tools">Go to Toolbox</a>
-                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledge.hub.refrigerants.title">Refrigerants</a>
                         <a class="knowledge-btn knowledge-btn-secondary" href="./" data-i18n="knowledge.cta.home">Back to Home</a>
                     </div>
                 </div>
@@ -447,42 +483,13 @@
 
                 <div class="knowledge-reasons knowledge-reasons--article2">
                     <div class="knowledge-reason">
-                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article4.intl.title">Global frame: Montreal Protocol and Kigali (1980s–today)</h3>
-                        <p class="knowledge-reason-text" data-i18n="knowledge.article4.intl.text" data-i18n-html="true">The 1987 Montreal Protocol phased out ozone-depleting refrigerants on agreed Annex timelines.</p>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article4.summary" data-i18n-html="true">This chapter is a brief orientation only. See the Refrigerants guide for full policy maps and the property table.</p>
                     </div>
-                    <div class="knowledge-reason">
-                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article4.china.title">China: Protocol legacy → HFC focus → Kigali alignment (1990s–2020s)</h3>
-                        <p class="knowledge-reason-text" data-i18n="knowledge.article4.china.text" data-i18n-html="true">From the 1990s–2000s, China implemented Montreal Protocol schedules for HCFC phase-out.</p>
-                    </div>
-                    <div class="knowledge-reason">
-                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article4.eu.title">European Union: F-Gas quotas/bans + parallel chemistry tracks (2010s–today)</h3>
-                        <p class="knowledge-reason-text" data-i18n="knowledge.article4.eu.text" data-i18n-html="true">Since 2015, Regulation (EU) No 517/2014 has used quotas and bans to drive high-GWP fluids out of many new stationary applications.</p>
-                    </div>
-                    <div class="knowledge-reason">
-                        <h3 class="knowledge-reason-title" data-i18n="knowledge.article4.us.title">United States: AIM Act phasedown + SNAP + state overlays (2020s)</h3>
-                        <p class="knowledge-reason-text" data-i18n="knowledge.article4.us.text" data-i18n-html="true">The AIM Act of 2020 directs EPA to phasedown HFC production and consumption on schedules aligned with U.S. Kigali obligations.</p>
-                    </div>
-                </div>
-
-                <div class="knowledge-memory knowledge-memory--article2">
-                    <h3 class="knowledge-memory-title" data-i18n="knowledge.article4.memory.title">One-sentence memory</h3>
-                    <p class="knowledge-memory-text" data-i18n="knowledge.article4.memory.text" data-i18n-html="true">Physics picks what can work; the market you ship to picks what may be sold and serviced.</p>
-                </div>
-
-                <h3 class="knowledge-section-subtitle" data-i18n="knowledge.article4.faq.title">Refrigerant policy: quick FAQs</h3>
-                <div class="knowledge-faq">
-                    <details class="knowledge-faq-item">
-                        <summary class="knowledge-faq-q" data-i18n="knowledge.article4.faq.q1.q">“Is R-410A banned on the same calendar worldwide?”</summary>
-                        <p class="knowledge-faq-a" data-i18n="knowledge.article4.faq.q1.a" data-i18n-html="true">No.</p>
-                    </details>
-                    <details class="knowledge-faq-item">
-                        <summary class="knowledge-faq-q" data-i18n="knowledge.article4.faq.q2.q">“If we pick ammonia or CO₂, are we automatically free of F-gas style rules?”</summary>
-                        <p class="knowledge-faq-a" data-i18n="knowledge.article4.faq.q2.a" data-i18n-html="true">Those fluids avoid many HFC-specific quotas.</p>
-                    </details>
                 </div>
 
                 <div class="knowledge-actions">
                     <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-refrigerants.html" data-i18n="knowledge.article4.cta.full">Read the full refrigerant knowledge guide</a>
+                    <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html#refrigerant-data-table" data-i18n="knowledge.article4.cta.table">Open the working-fluid property table</a>
                 </div>
             </div>
         </section>
@@ -539,7 +546,7 @@
                     </div>
                     <div class="knowledge-reason">
                         <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r5.title">5) Operating strategy and power mix</h3>
-                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r5.text" data-i18n-html="true">Grey grid without green power or PPA caps how “clean” electrified heat can be. Long hours on electric backup or gas peaking in cold windows load high-carbon energy into the heat-pump scheme total. A condensing gas boiler at high load factor vs a heat pump idling at low load compares “best boiler hour” to “worst heat-pump window”. For assessment context, see <a href="./heat-pump-policies.html">industrial heat pump policies</a> (encouragement → mandatory carbon metrics).</p>
+                        <p class="knowledge-reason-text" data-i18n="knowledge.article5.r5.text" data-i18n-html="true">Grey grid without green power or PPA caps how “clean” electrified heat can be. Long hours on electric backup or gas peaking in cold windows load high-carbon energy into the heat-pump scheme total. A condensing gas boiler at high load factor vs a heat pump idling at low load compares “best boiler hour” to “worst heat-pump window”. For assessment context, see <a href="./heat-pump-standards.html#policies">industrial heat pump policies</a> (encouragement → mandatory carbon metrics).</p>
                     </div>
                     <div class="knowledge-reason">
                         <h3 class="knowledge-reason-title" data-i18n="knowledge.article5.r6.title">6) Fair comparison checklist</h3>

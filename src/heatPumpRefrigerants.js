@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    const embedded = Boolean(document.getElementById('refrigerant-data-table'));
     const types = [...new Set(hthpRefrigerantsData.map((r) => r.type))];
     types.forEach((type) => {
         const option = document.createElement('option');
@@ -142,16 +143,19 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(typeFilter.value, getCurrentLanguage());
     });
 
-    initLanguageSwitcher({
-        afterSet: (lang) => {
-            updateHpRefMeta(lang);
-            renderTable(typeFilter.value, lang);
-            refreshWhatsNewLanguage(lang);
-        },
-    });
-    updateHpRefMeta(getCurrentLanguage());
-    initNavChipHighlight();
-    initSiteLegalDisclaimer();
+    if (!embedded) {
+        initLanguageSwitcher({
+            afterSet: (lang) => {
+                updateHpRefMeta(lang);
+                renderTable(typeFilter.value, lang);
+                refreshWhatsNewLanguage(lang);
+            },
+        });
+        updateHpRefMeta(getCurrentLanguage());
+        initNavChipHighlight();
+        initSiteLegalDisclaimer();
+        initWhatsNew();
+    }
+
     renderTable('all', getCurrentLanguage());
-    initWhatsNew();
 });

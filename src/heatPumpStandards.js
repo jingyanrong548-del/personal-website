@@ -16,8 +16,8 @@ function escapeHtml(s) {
 }
 
 function updateHpStdMeta(lang) {
-    const title = translations[lang]?.['hpStd.seo.title'];
-    const desc = translations[lang]?.['hpStd.seo.desc'];
+    const title = translations[lang]?.['toolsStd.seo.title'] || translations[lang]?.['hpStd.seo.title'];
+    const desc = translations[lang]?.['toolsStd.seo.desc'] || translations[lang]?.['hpStd.seo.desc'];
     if (title) {
         document.title = title;
         document.getElementById('meta-page-title')?.setAttribute('content', title);

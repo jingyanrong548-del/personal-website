@@ -32,6 +32,8 @@ function renderArchive(index) {
     if (featuredEl && latest) {
         const title = lang === 'zh' ? latest.title.zh : latest.title.en;
         const highlights = (lang === 'zh' ? latest.highlights?.zh : latest.highlights?.en) || [];
+        const briefingEntry = document.getElementById('articles-briefing-entry');
+        if (briefingEntry) briefingEntry.href = latest.url;
         featuredEl.innerHTML = `
             <article class="articles-featured-card">
                 <p class="articles-featured-kicker">${escapeHtml(t['articles.featured.kicker'] || 'Latest briefing')}</p>

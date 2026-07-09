@@ -153,60 +153,47 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand" data-i18n="nav.brand">Jing Yanrong</div>
             <details class="nav-mobile-menu">
-                <summary class="nav-mobile-menu-toggle"><span data-i18n="nav.menu">Menu</span></summary>
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
                 <div class="nav-right">
-                <ul class="nav-menu">
-                    <li class="nav-menu__group nav-menu__group--chips">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
-                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
-                            <li><a href="./knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
-                            <li><a href="./hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
-                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
-                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
-                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
-                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu__group nav-menu__group--anchors">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                            <li><a href="#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
-                            <li><a href="#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
-                            <li><a href="#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </details>
             <div class="nav-right nav-right--desktop">
                 <ul class="nav-menu">
-                    <li class="nav-menu__group nav-menu__group--chips">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
-                            <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
-                            <li><a href="./knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
-                            <li><a href="./hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
-                            <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
-                            <li><a href="./heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
-                            <li><a href="./heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
-                            <li><a href="./useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu__group nav-menu__group--anchors">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                            <li><a href="#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
-                            <li><a href="#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
-                            <li><a href="#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
             </div>
             <div class="language-switcher">
                 <button class="lang-btn" data-lang="zh" type="button">中文</button>

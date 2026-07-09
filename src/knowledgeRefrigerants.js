@@ -2,6 +2,7 @@ import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import './heatPumpRefrigerants.js';
 
 function updateKnowledgeRefMeta(lang) {
     const title = translations[lang]?.['knowledgeRef.seo.title'];
@@ -20,7 +21,13 @@ function updateKnowledgeRefMeta(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLanguageSwitcher({ afterSet: (lang) => { updateKnowledgeRefMeta(lang); refreshWhatsNewLanguage(lang); } });
+    initLanguageSwitcher({
+        afterSet: (lang) => {
+            updateKnowledgeRefMeta(lang);
+            refreshWhatsNewLanguage(lang);
+            document.getElementById('hpRefTypeFilter')?.dispatchEvent(new Event('change'));
+        },
+    });
     initSiteLegalDisclaimer();
     initNavChipHighlight();
     initWhatsNew();

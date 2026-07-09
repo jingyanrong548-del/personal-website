@@ -102,3 +102,31 @@ scp -r dist/* root@8.138.191.154:/www/wwwroot/www.jingyanrong.com/
 - 首页底部已按工信部要求放置备案号 **闽ICP备2026003850号**，并链接至 https://beian.miit.gov.cn/
 - 首页底部已放置 **公安备案号** **闽公网安备35010402351823号**，并链接至 https://beian.mps.gov.cn/
 - 新增网站需在开通后 30 日内完成公安备案，详见阿里云备案邮件或控制台说明。
+
+---
+
+## URL 重定向（信息架构归并，2026-07）
+
+旧独立页已合并为 Hub 子章节；构建产物仍保留 stub HTML（meta refresh + JS），建议在宝塔/nginx 为以下路径配置 **301** 以兼顾 SEO：
+
+| 旧路径 | 新目标 |
+|--------|--------|
+| `/heat-pump-refrigerants.html` | `/knowledge-refrigerants.html#refrigerant-data-table` |
+| `/heat-pump-policies.html` | `/heat-pump-standards.html#policies` |
+| `/useful-links.html` | `/heat-pump-standards.html#links` |
+
+宝塔示例（站点 `www.jingyanrong.com` → 设置 → 配置文件，在 `server { }` 内追加）：
+
+```nginx
+location = /heat-pump-refrigerants.html {
+    return 301 /knowledge-refrigerants.html#refrigerant-data-table;
+}
+location = /heat-pump-policies.html {
+    return 301 /heat-pump-standards.html#policies;
+}
+location = /useful-links.html {
+    return 301 /heat-pump-standards.html#links;
+}
+```
+
+修改后重载 nginx。GitHub Pages 依赖各 stub 页内重定向，无需额外配置。

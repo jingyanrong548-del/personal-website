@@ -16,7 +16,13 @@
     <loc>https://www.jingyanrong.com/knowledge.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jingyanrong.com/knowledge-refrigerants.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.jingyanrong.com/hthp-column.html</loc>
@@ -25,34 +31,10 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.jingyanrong.com/useful-links.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://www.jingyanrong.com/heat-pump-standards.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.jingyanrong.com/heat-pump-refrigerants.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.jingyanrong.com/heat-pump-policies.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.jingyanrong.com/knowledge-refrigerants.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.jingyanrong.com/briefings/annex68-iea-hpt.html</loc>

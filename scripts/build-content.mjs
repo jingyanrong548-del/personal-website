@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { siteNav } from './site-nav.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -87,74 +88,6 @@ function articleHead({ title, description, canonical, type = 'article', publishe
 </head>`;
 }
 
-function siteNav(depth = 0) {
-  const p = depth === 0 ? './' : '../';
-  return `
-    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
-    <nav class="navbar">
-        <div class="container">
-            <a class="nav-brand" href="${p}" data-i18n="nav.brand">Jing Yanrong</a>
-            <details class="nav-mobile-menu">
-                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
-                    <span data-i18n="nav.menu">Menu</span>
-                </summary>
-                <div class="nav-right">
-                    <ul class="nav-menu">
-                        <li class="nav-menu__group nav-menu__group--chips">
-                            <ul class="nav-menu__sublist">
-                                <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
-                                <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
-                                <li><a href="${p}knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
-                                <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
-                                <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
-                                <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
-                                <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
-                                <li><a href="${p}useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-menu__group nav-menu__group--anchors">
-                            <ul class="nav-menu__sublist">
-                                <li><a href="${p}#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                                <li><a href="${p}#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
-                                <li><a href="${p}#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
-                                <li><a href="${p}#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </details>
-            <div class="nav-right nav-right--desktop">
-                <ul class="nav-menu">
-                    <li class="nav-menu__group nav-menu__group--chips">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.articles">Articles</a></li>
-                            <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledge">Heat pump basics</a></li>
-                            <li><a href="${p}knowledge-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeRef">Refrigerant knowledge</a></li>
-                            <li><a href="${p}hthp-column.html" class="nav-link nav-link--chip" data-i18n="nav.hthpColumn">HTHP column</a></li>
-                            <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.hpStandards">Heat pump standards</a></li>
-                            <li><a href="${p}heat-pump-refrigerants.html" class="nav-link nav-link--chip" data-i18n="nav.hpRefrigerants">HTHP working fluids</a></li>
-                            <li><a href="${p}heat-pump-policies.html" class="nav-link nav-link--chip" data-i18n="nav.hpPolicies">Industrial heat pump policies</a></li>
-                            <li><a href="${p}useful-links.html" class="nav-link nav-link--chip" data-i18n="nav.usefulLinks">Useful links</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu__group nav-menu__group--anchors">
-                        <ul class="nav-menu__sublist">
-                            <li><a href="${p}#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                            <li><a href="${p}#briefings" class="nav-link nav-link--anchor" data-i18n="nav.briefings">Industry Briefings</a></li>
-                            <li><a href="${p}#insights" class="nav-link nav-link--anchor" data-i18n="nav.insights">Engineering Insights</a></li>
-                            <li><a href="${p}#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="language-switcher">
-                <button class="lang-btn" data-lang="zh" type="button">中文</button>
-                <button class="lang-btn active" data-lang="en" type="button">EN</button>
-            </div>
-        </div>
-    </nav>`;
-}
-
 function articleFooter(depth = 0) {
   const p = depth === 0 ? './' : '../';
   return `
@@ -207,7 +140,7 @@ function buildBriefingPage(item) {
     published: item.published,
   })}
 <body data-article-type="briefing">
-${siteNav(depth)}
+${siteNav({ depth, brand: 'link' })}
 <script type="application/json" id="article-data">${JSON.stringify(item)}</script>
 <main id="main-content" class="article-page">
     <div class="container container--narrow">
@@ -260,7 +193,7 @@ function buildInsightPage(item) {
     published: item.published,
   })}
 <body data-article-type="insight">
-${siteNav(depth)}
+${siteNav({ depth, brand: 'link' })}
 <script type="application/json" id="article-data">${JSON.stringify(item)}</script>
 <main id="main-content" class="article-page">
     <div class="container container--narrow">
@@ -394,13 +327,10 @@ function buildSitemap(articleUrls) {
   const staticPages = [
     { loc: `${SITE}/`, priority: '1.0', changefreq: 'weekly' },
     { loc: `${SITE}/articles.html`, priority: '0.9', changefreq: 'weekly' },
-    { loc: `${SITE}/knowledge.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/knowledge.html`, priority: '0.8', changefreq: 'monthly' },
+    { loc: `${SITE}/knowledge-refrigerants.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/hthp-column.html`, priority: '0.75', changefreq: 'monthly' },
-    { loc: `${SITE}/useful-links.html`, priority: '0.65', changefreq: 'monthly' },
-    { loc: `${SITE}/heat-pump-standards.html`, priority: '0.7', changefreq: 'monthly' },
-    { loc: `${SITE}/heat-pump-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },
-    { loc: `${SITE}/heat-pump-policies.html`, priority: '0.7', changefreq: 'monthly' },
-    { loc: `${SITE}/knowledge-refrigerants.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/heat-pump-standards.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/annex68-iea-hpt.html`, priority: '0.6', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/conferences.html`, priority: '0.6', changefreq: 'monthly' },
   ];
