@@ -1,7 +1,21 @@
 {
-  "version": "briefing-2026-w27",
+  "version": "annex68-iea-hpt-2026-07",
   "generatedAt": "2026-07-09",
   "items": [
+    {
+      "id": "annex68-iea-hpt-2026-07",
+      "date": "2026-07-09",
+      "category": "page",
+      "title": {
+        "en": "HPT Annex 68 progress snapshot (July 2026)",
+        "zh": "Annex 68 与 IEA HPT 最新进展简报"
+      },
+      "summary": {
+        "en": "Restored Project 68 note page: Vienna HPC workshop (80+ participants), Task 1 database at 55+ suppliers and 40+ demo cases, sector integration templates, and Skills4HP updates.",
+        "zh": "修复 Project 68 独立页并更新至 7 月版：维也纳热泵大会工作坊（80+ 参与者）、Task 1 数据库 55+ 供方与 40+ 示范案例、行业集成模版与 Skills4HP 进展。"
+      },
+      "url": "/briefings/annex68-iea-hpt.html"
+    },
     {
       "id": "briefing-2026-w27",
       "date": "2026-07-05",

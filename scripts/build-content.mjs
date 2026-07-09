@@ -434,6 +434,7 @@ ${body}
 }
 
 function loadManualSiteUpdates() {
+  // Hand-maintained entries in content/site-updates.json (see .cursor/rules/site-updates.mdc).
   const path = join(CONTENT_DIR, 'site-updates.json');
   if (!existsSync(path)) return [];
   try {

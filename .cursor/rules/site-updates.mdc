@@ -1,0 +1,39 @@
+---
+description: 发布内容时同步更新「最近更新」板块
+alwaysApply: true
+---
+
+# 最近更新（What's New）维护约定
+
+导航栏铃铛「最近更新」读取 [`public/site-updates.json`](../public/site-updates.json)，由 `npm run build` / `build-content.mjs` 从 [`content/site-updates.json`](../content/site-updates.json) 生成。
+
+## 何时必须更新
+
+本站有任何**对用户可见的新内容或重要修订**时，须在发布前同步登记，包括但不限于：
+
+- 新一期**行业周报**（通常由最新 briefing JSON 自动入选，无需重复手写）
+- 新**工程洞察**文章（通常由最新 insight JSON 自动入选）
+- **静态页面**新建或实质性改版（如 Annex 68、展会笔记、政策页、标准速查、工具页等）
+- **站点功能**上线（如新模块、导航结构调整等）
+
+## 如何更新
+
+1. 在 [`content/site-updates.json`](../content/site-updates.json) 的 `manual` 数组**最前面**追加一条（`date` 用发布日 `YYYY-MM-DD`）：
+   - `id`：唯一标识，建议 `{slug}-{YYYY-MM}`
+   - `category`：`briefing` | `insight` | `page` | `tool` | `site`（与 `src/i18n.js` 中 `whatsNew.category.*` 对应）
+   - `title` / `summary`：中英双语
+   - `url`：站内绝对路径，如 `/briefings/annex68-iea-hpt.html`
+2. 运行 `node scripts/build-content.mjs` 或 `npm run build`，确认 `public/site-updates.json` 已更新。
+3. 与内容变更一并提交、部署。
+
+## 自动与手动的关系
+
+- **自动**：构建时取**最新一期** briefing 与 insight 各 1 条并入列表。
+- **手动**：`manual` 中其余条目（页面更新、站点公告等）由编辑维护。
+- 合并后按 `date` 降序取前 **8** 条；`version` 字段为列表首条 `id`（用于未读提醒）。
+
+## 检查清单（发布前）
+
+- [ ] 新内容是否已在 `content/site-updates.json` 登记（若属自动 briefing/insight 且确为最新一期，可省略手写）
+- [ ] `public/site-updates.json` 已重新生成
+- [ ] 本地打开铃铛弹窗，中英文标题与摘要正确、链接可点
