@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-07-09",
+  "generatedAt": "2026-07-12",
   "latestBriefing": {
-    "id": "briefing-2026-w27",
-    "slug": "2026-w27",
+    "id": "briefing-2026-w28",
+    "slug": "2026-w28",
     "year": 2026,
-    "week": 27,
-    "published": "2026-07-05",
+    "week": 28,
+    "published": "2026-07-12",
     "title": {
-      "en": "Week 27 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第27周制冷与热泵行业简报"
+      "en": "Week 28 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第28周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "China 1 Jul ODS cluster enters first enforcement week; Supreme Court upholds AIM Act cap-and-trade (22 Jun); HARDI/ACCA/PHCC sue EPA over commercial refrigeration GWP extensions (25 Jun); Systemair Geniox HP DFN R290 AHU (1 Jul); LG Therma V R290 monobloc in Europe",
-      "zh": "国内 7/1 ODS 监管集群进入首周施行；最高法院 6/22 维持 AIM 法案配额交易；HARDI/ACCA/PHCC 6/25 起诉 EPA 商用制冷 GWP 延期；Systemair 7/1 发布 Geniox HP DFN R290 空调箱；LG Therma V R290 单体式登陆欧洲"
+      "en": "LG 7/8 108°C industrial heat pump at Ajin P&P; Haier/Swegon/Daikin R290 launches 7/8–10; Mitsubishi UK high-temp policy white paper 7/10; China 1 Jul cluster week two; EPA TT final rule ~15 days to 27 Jul",
+      "zh": "LG 7/8 108°C 工业热泵首套商用（大邱 Ajin P&P）；Haier/Swegon/Daikin 7/8–10 R290 商用/轻商新品；三菱 7/10 英国高温热泵监管白皮书；国内 7/1 集群第二周；EPA 技术转换终稿 7/27 倒计时约15天"
     },
     "highlights": {
       "en": [
-        "China 1 Jul cluster in first enforcement week: HCFC-141b on-site spray ban (cold-room/logistics insulation, incl. T/CECS 498); XPS foam HCFC ban; HCFC solvent/cleaning ban; FAS 2026/550 projector energy labels",
-        "Supreme Court denies cert (22 Jun): RMS of Georgia v. EPA upholds DC Circuit—AIM Act HFC cap-and-trade allocation remains constitutional",
-        "EPA Technology Transitions suits (25–26 Jun): HARDI, ACCA, PHCC challenge commercial refrigeration GWP rise to 1,400 (2027–2032); AHRI and Alliance file separately; residential R-410A install deadline removal welcomed",
-        "Systemair Geniox HP DFN (1 Jul): packaged R290 heat-pump AHU, heating COP up to 16, 90% heat recovery, TEWI −30% vs R410A; LG Therma V R290 monobloc (7–14 kW, −28°C/75°C) strengthens European residential line-up",
-        "ATMOsphere Network South Korea (25 Jun): 130+ attendees on CO₂ commercial refrigeration; Emart transcritical CO₂ case cuts electricity 38.4% vs R404A neighbour; MEE 2027 ODS/HFC quota draft still in comment"
+        "China 1 Jul ODS cluster in week two: HCFC-141b spray, XPS foam and HCFC solvent bans under active inspection; FAS 2026/550 projector labels in second week; next milestone 1 Aug household solar water heating labels; MEE 2027 ODS/HFC quota draft still in comment",
+        "LG 7/8 industrial HTHP at Ajin P&P: ~1,000 RT system, 108°C outlet (max 118°C), R-1233zd (GWP=1), oil-free magnetic bearing; MOTIE carbon-neutrality R&D consortium since 2023",
+        "European R290 product week 7/8–10: Haier commercial monobloc 26–40 kW (cascade to 320 kW, 80°C DHW); Swegon Epsilon Zero 14–45 kW (9 Jul); Daikin Altherma 4 adds 4/6/7 kW (10 Jul)",
+        "Mitsubishi Electric UK white paper 7/10: Unlocking High Temperature Heat Pump Adoption—calls for regulatory reform and spark-gap action; Ecodan R290 up to 75°C flow retains existing radiators",
+        "EPA Technology Transitions final rule effective 27 Jul—~15 days from this briefing; week-27 HARDI/ACCA/PHCC suits and Supreme Court AIM Act affirmation provide backdrop"
       ],
       "zh": [
-        "国内 7/1 监管集群首周施行：HCFC-141b 现场喷涂聚氨酯禁产（冷库/物流保温，含 T/CECS 498 适用范围）；挤出聚苯乙烯（XPS）泡沫 HCFC 发泡剂禁产；电子/仪器/机械 HCFC 溶剂清洗禁限；550 号文投影机能效标识同日实施",
-        "最高法院 6/22 拒绝 cert：RMS of Georgia v. EPA 维持 DC 巡回法院判决，AIM 法案 HFC 配额 cap-and-trade 合宪性获确认",
-        "EPA 技术转换诉讼 6/25–26：HARDI、ACCA、PHCC 联合起诉 TT 终稿商用制冷 GWP 放宽至 1400（2027–2032）；AHRI 与 Alliance 另案起诉；住宅 R-410A 安装期限取消获行业欢迎",
-        "Systemair Geniox HP DFN（7/1）：集成 R290 热泵的 packaged AHU，制热 COP 最高 16、热回收效率 90%，TEWI 较 R410A 版降 30%；LG Therma V R290 单体式（7–14 kW，−28°C/75°C）强化欧洲住宅布局",
-        "ATMOsphere Network South Korea（6/25）：130+ 业者聚焦 CO₂ 商用制冷；Emart 首套 transcritical CO₂ 案例较 R404A 邻店电费降 38.4%；MEE 2027 配额征求意见稿仍在意见期"
+        "国内 7/1 ODS 监管集群第二周：HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂禁令执法推进；550 号文投影机标识第二周；下一节点 **8/1** 家用太阳能热水系统标识；MEE 2027 配额征求意见稿仍在意见期",
+        "LG 7/8 工业高温热泵商用落地：向大邱 Ajin P&P 纸厂交付约 1000 RT 系统，出水 108°C（最高 118°C），R-1233zd（GWP=1），无油磁悬浮轴承；MOTIE 2023 年起碳中和 R&D 联合体项目",
+        "欧洲 R290 产品周 7/8–10：Haier 商用 R290 单体式 26–40 kW（级联至 320 kW，80°C 生活热水）；Swegon Epsilon Zero 14–45 kW（7/9）；Daikin Altherma 4 新增 4/6/7 kW（7/10）",
+        "三菱电机 7/10 英国白皮书：Unlocking High Temperature Heat Pump Adoption——呼吁修订高温热泵部署规则并缩小电/气价差；Ecodan R290 最高 75°C 流温可保留既有散热器",
+        "EPA 技术转换终稿 **7/27** 生效——距本简报约15天；第27周 HARDI/ACCA/PHCC 诉讼与最高法院维持 AIM 配额法背景延续"
       ]
     },
-    "url": "/briefings/2026-w27.html"
+    "url": "/briefings/2026-w28.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w28",
+      "type": "briefing",
+      "slug": "2026-w28",
+      "series": "weekly-briefing",
+      "published": "2026-07-12",
+      "title": {
+        "en": "Week 28 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第28周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "LG 7/8 108°C industrial heat pump at Ajin P&P; Haier/Swegon/Daikin R290 launches 7/8–10; Mitsubishi UK high-temp policy white paper 7/10; China 1 Jul cluster week two; EPA TT final rule ~15 days to 27 Jul",
+        "zh": "LG 7/8 108°C 工业热泵首套商用（大邱 Ajin P&P）；Haier/Swegon/Daikin 7/8–10 R290 商用/轻商新品；三菱 7/10 英国高温热泵监管白皮书；国内 7/1 集群第二周；EPA 技术转换终稿 7/27 倒计时约15天"
+      },
+      "highlights": {
+        "en": [
+          "China 1 Jul ODS cluster in week two: HCFC-141b spray, XPS foam and HCFC solvent bans under active inspection; FAS 2026/550 projector labels in second week; next milestone 1 Aug household solar water heating labels; MEE 2027 ODS/HFC quota draft still in comment",
+          "LG 7/8 industrial HTHP at Ajin P&P: ~1,000 RT system, 108°C outlet (max 118°C), R-1233zd (GWP=1), oil-free magnetic bearing; MOTIE carbon-neutrality R&D consortium since 2023",
+          "European R290 product week 7/8–10: Haier commercial monobloc 26–40 kW (cascade to 320 kW, 80°C DHW); Swegon Epsilon Zero 14–45 kW (9 Jul); Daikin Altherma 4 adds 4/6/7 kW (10 Jul)",
+          "Mitsubishi Electric UK white paper 7/10: Unlocking High Temperature Heat Pump Adoption—calls for regulatory reform and spark-gap action; Ecodan R290 up to 75°C flow retains existing radiators",
+          "EPA Technology Transitions final rule effective 27 Jul—~15 days from this briefing; week-27 HARDI/ACCA/PHCC suits and Supreme Court AIM Act affirmation provide backdrop"
+        ],
+        "zh": [
+          "国内 7/1 ODS 监管集群第二周：HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂禁令执法推进；550 号文投影机标识第二周；下一节点 **8/1** 家用太阳能热水系统标识；MEE 2027 配额征求意见稿仍在意见期",
+          "LG 7/8 工业高温热泵商用落地：向大邱 Ajin P&P 纸厂交付约 1000 RT 系统，出水 108°C（最高 118°C），R-1233zd（GWP=1），无油磁悬浮轴承；MOTIE 2023 年起碳中和 R&D 联合体项目",
+          "欧洲 R290 产品周 7/8–10：Haier 商用 R290 单体式 26–40 kW（级联至 320 kW，80°C 生活热水）；Swegon Epsilon Zero 14–45 kW（7/9）；Daikin Altherma 4 新增 4/6/7 kW（7/10）",
+          "三菱电机 7/10 英国白皮书：Unlocking High Temperature Heat Pump Adoption——呼吁修订高温热泵部署规则并缩小电/气价差；Ecodan R290 最高 75°C 流温可保留既有散热器",
+          "EPA 技术转换终稿 **7/27** 生效——距本简报约15天；第27周 HARDI/ACCA/PHCC 诉讼与最高法院维持 AIM 配额法背景延续"
+        ]
+      },
+      "url": "/briefings/2026-w28.html",
+      "year": 2026,
+      "week": 28
+    },
     {
       "id": "briefing-2026-w27",
       "type": "briefing",
@@ -345,6 +379,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w28",
+      "published": "2026-07-12",
+      "title": {
+        "en": "Week 28 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第28周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w28.html"
+    },
     {
       "slug": "2026-w27",
       "published": "2026-07-05",
