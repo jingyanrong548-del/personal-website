@@ -52,7 +52,18 @@ const newHero = `    <main id="main-content" class="hp-std-page tools-std-page">
             </div>
         </header>
 
-        <section id="standards" class="hp-std-section tools-std-section-block" aria-labelledby="hp-std-table-heading">`;
+        <section id="standards" class="hp-std-section tools-std-section-block" aria-labelledby="hp-std-table-heading">
+            <div class="container">
+                <div class="hp-std-controls" role="search" aria-label="Standards filter">
+                    <input type="search" id="hpStdSearchInput" class="hp-std-search" data-i18n-placeholder="hpStd.searchPlaceholder" placeholder="Search by number, title, or keywords…" autocomplete="off">
+                    <select id="hpStdCategoryFilter" class="hp-std-select" aria-label="Category">
+                        <option value="all" data-i18n="hpStd.filter.allCategories">All categories</option>
+                    </select>
+                    <label class="hp-std-toggle">
+                        <input type="checkbox" id="hpStdLatestOnlyToggle">
+                        <span data-i18n="hpStd.filter.latestOnly">Latest / upcoming only</span>
+                    </label>
+                </div>`;
 
 standards = standards.replace(
   /<main class="hp-std-page">[\s\S]*?<section class="hp-std-section"/,

@@ -48,12 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryFilter = document.getElementById('hpStdCategoryFilter');
     const latestOnlyToggle = document.getElementById('hpStdLatestOnlyToggle');
     const tableBody = document.getElementById('hpStdTableBody');
+    const hasTable = Boolean(tableBody);
 
-    if (!searchInput || !categoryFilter || !latestOnlyToggle || !tableBody) {
+    initSiteLegalDisclaimer();
+    initNavChipHighlight();
+
+    initLanguageSwitcher({
+        afterSet: (lang) => {
+            updateHpStdMeta(lang);
+            if (hasTable) {
+                repopulateCategoryOptions(lang);
+                filterAndRender();
+            }
+            refreshWhatsNewLanguage(lang);
+        },
+    });
+    initWhatsNew();
+
+    if (!hasTable) {
         return;
     }
 
     function repopulateCategoryOptions(lang) {
+        if (!categoryFilter) return;
         while (categoryFilter.options.length > 1) {
             categoryFilter.remove(1);
         }
@@ -112,9 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function filterAndRender() {
-        const searchText = searchInput.value.toLowerCase().trim();
-        const category = categoryFilter.value;
-        const latestOnly = latestOnlyToggle.checked;
+        const searchText = (searchInput?.value || '').toLowerCase().trim();
+        const category = categoryFilter?.value || 'all';
+        const latestOnly = latestOnlyToggle?.checked || false;
         const lang = getCurrentLanguage();
 
         let filtered = heatPumpStandardsData;
@@ -144,20 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(filtered);
     }
 
-    searchInput.addEventListener('input', filterAndRender);
-    categoryFilter.addEventListener('change', filterAndRender);
-    latestOnlyToggle.addEventListener('change', filterAndRender);
+    searchInput?.addEventListener('input', filterAndRender);
+    categoryFilter?.addEventListener('change', filterAndRender);
+    latestOnlyToggle?.addEventListener('change', filterAndRender);
 
-    initSiteLegalDisclaimer();
-    initNavChipHighlight();
-
-    initLanguageSwitcher({
-        afterSet: (lang) => {
-            updateHpStdMeta(lang);
-            repopulateCategoryOptions(lang);
-            filterAndRender();
-            refreshWhatsNewLanguage(lang);
-        },
-    });
-    initWhatsNew();
+    repopulateCategoryOptions(getCurrentLanguage());
+    filterAndRender();
 });

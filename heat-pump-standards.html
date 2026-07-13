@@ -95,6 +95,16 @@
 
         <section id="standards" class="hp-std-section tools-std-section-block" aria-labelledby="hp-std-table-heading">
             <div class="container">
+                <div class="hp-std-controls" role="search" aria-label="Standards filter">
+                    <input type="search" id="hpStdSearchInput" class="hp-std-search" data-i18n-placeholder="hpStd.searchPlaceholder" placeholder="Search by number, title, or keywords…" autocomplete="off">
+                    <select id="hpStdCategoryFilter" class="hp-std-select" aria-label="Category">
+                        <option value="all" data-i18n="hpStd.filter.allCategories">All categories</option>
+                    </select>
+                    <label class="hp-std-toggle">
+                        <input type="checkbox" id="hpStdLatestOnlyToggle">
+                        <span data-i18n="hpStd.filter.latestOnly">Latest / upcoming only</span>
+                    </label>
+                </div>
                 <h2 id="hp-std-table-heading" class="u-visually-hidden" data-i18n="hpStd.table.caption">Standards table</h2>
                 <div class="hp-std-table-wrap" role="region" data-i18n-aria-label="hpStd.table.caption">
                     <table class="hp-std-table">
