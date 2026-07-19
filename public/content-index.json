@@ -1,38 +1,72 @@
 {
-  "generatedAt": "2026-07-12",
+  "generatedAt": "2026-07-19",
   "latestBriefing": {
-    "id": "briefing-2026-w28",
-    "slug": "2026-w28",
+    "id": "briefing-2026-w29",
+    "slug": "2026-w29",
     "year": 2026,
-    "week": 28,
-    "published": "2026-07-12",
+    "week": 29,
+    "published": "2026-07-19",
     "title": {
-      "en": "Week 28 2026 Refrigeration & Heat Pump Industry Briefing",
-      "zh": "2026年第28周制冷与热泵行业简报"
+      "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
+      "zh": "2026年第29周制冷与热泵行业简报"
     },
     "subtitle": {
-      "en": "LG 7/8 108°C industrial heat pump at Ajin P&P; Haier/Swegon/Daikin R290 launches 7/8–10; Mitsubishi UK high-temp policy white paper 7/10; China 1 Jul cluster week two; EPA TT final rule ~15 days to 27 Jul",
-      "zh": "LG 7/8 108°C 工业热泵首套商用（大邱 Ajin P&P）；Haier/Swegon/Daikin 7/8–10 R290 商用/轻商新品；三菱 7/10 英国高温热泵监管白皮书；国内 7/1 集群第二周；EPA 技术转换终稿 7/27 倒计时约15天"
+      "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
+      "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
     },
     "highlights": {
       "en": [
-        "China 1 Jul ODS cluster in week two: HCFC-141b spray, XPS foam and HCFC solvent bans under active inspection; FAS 2026/550 projector labels in second week; next milestone 1 Aug household solar water heating labels; MEE 2027 ODS/HFC quota draft still in comment",
-        "LG 7/8 industrial HTHP at Ajin P&P: ~1,000 RT system, 108°C outlet (max 118°C), R-1233zd (GWP=1), oil-free magnetic bearing; MOTIE carbon-neutrality R&D consortium since 2023",
-        "European R290 product week 7/8–10: Haier commercial monobloc 26–40 kW (cascade to 320 kW, 80°C DHW); Swegon Epsilon Zero 14–45 kW (9 Jul); Daikin Altherma 4 adds 4/6/7 kW (10 Jul)",
-        "Mitsubishi Electric UK white paper 7/10: Unlocking High Temperature Heat Pump Adoption—calls for regulatory reform and spark-gap action; Ecodan R290 up to 75°C flow retains existing radiators",
-        "EPA Technology Transitions final rule effective 27 Jul—~15 days from this briefing; week-27 HARDI/ACCA/PHCC suits and Supreme Court AIM Act affirmation provide backdrop"
+        "China 1 Jul ODS cluster in week three: HCFC-141b spray, XPS foam and HCFC solvent bans under continued inspection; FAS 2026/550 next milestone **1 Aug** household solar water heating labels (~13 days); MEE 2027 ODS/HFC quota draft still in comment—filings due **31 Oct 2026**",
+        "Daikin Comfort Technologies North America launches NEXIO Max inverter rooftop heat pump on R-32: 7.5–10 ton, IEER 21–22, cold-climate heating to -25°C ambient; matches common curb footprints for retrofit",
+        "AHRI May 2026 shipments (reported 14 Jul): central AC + air-source heat pumps 919,685 units, +6.7% YoY; heat pumps +2.3%; YTD combined shipments still -1.2%",
+        "France Rappel Conso recall of Qlima WDH R290 all-in-one monoblocs (PVG): install height below 1.8 m risks flammable atmosphere on leak (~290 g charge)—installation compliance counterpoint to week-28 European R290 launch wave",
+        "EPA Technology Transitions final rule effective **27 Jul**—~8 days from this briefing; week-27/28 backdrop of inventory installs and DC Circuit challenges continues"
       ],
       "zh": [
-        "国内 7/1 ODS 监管集群第二周：HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂禁令执法推进；550 号文投影机标识第二周；下一节点 **8/1** 家用太阳能热水系统标识；MEE 2027 配额征求意见稿仍在意见期",
-        "LG 7/8 工业高温热泵商用落地：向大邱 Ajin P&P 纸厂交付约 1000 RT 系统，出水 108°C（最高 118°C），R-1233zd（GWP=1），无油磁悬浮轴承；MOTIE 2023 年起碳中和 R&D 联合体项目",
-        "欧洲 R290 产品周 7/8–10：Haier 商用 R290 单体式 26–40 kW（级联至 320 kW，80°C 生活热水）；Swegon Epsilon Zero 14–45 kW（7/9）；Daikin Altherma 4 新增 4/6/7 kW（7/10）",
-        "三菱电机 7/10 英国白皮书：Unlocking High Temperature Heat Pump Adoption——呼吁修订高温热泵部署规则并缩小电/气价差；Ecodan R290 最高 75°C 流温可保留既有散热器",
-        "EPA 技术转换终稿 **7/27** 生效——距本简报约15天；第27周 HARDI/ACCA/PHCC 诉讼与最高法院维持 AIM 配额法背景延续"
+        "国内 7/1 ODS 监管集群第三周：HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂禁令持续执法；550 号文下一节点 **8/1** 家用太阳能热水系统标识（约13天）；MEE 2027 配额征求意见稿仍在意见期——**2026年10月31日** 前须提交申请",
+        "Daikin Comfort Technologies North America 发布 NEXIO Max 变频屋顶热泵（R-32）：7.5–10 ton，IEER 21–22，可在环境温度低至 -25°C 运行；匹配常见 curb 足迹便于改造",
+        "AHRI 2026年5月出货（7/14 披露）：中央空调+空气源热泵合计 91.97 万台，同比 +6.7%；热泵同比 +2.3%；年初至今合计仍同比 -1.2%",
+        "法国 Rappel Conso 召回 Qlima WDH 系列 R290 一体式单体机（PVG）：安装高度低于 1.8 m 时泄漏可形成可燃气氛（充注约 290 g）——与第28周欧洲 R290 产品潮形成「发布 vs 安装合规」对照",
+        "EPA 技术转换终稿 **7/27** 生效——距本简报约8天；第27–28周库存安装与特区巡回法院诉讼背景延续"
       ]
     },
-    "url": "/briefings/2026-w28.html"
+    "url": "/briefings/2026-w29.html"
   },
   "items": [
+    {
+      "id": "briefing-2026-w29",
+      "type": "briefing",
+      "slug": "2026-w29",
+      "series": "weekly-briefing",
+      "published": "2026-07-19",
+      "title": {
+        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第29周制冷与热泵行业简报"
+      },
+      "subtitle": {
+        "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
+        "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
+      },
+      "highlights": {
+        "en": [
+          "China 1 Jul ODS cluster in week three: HCFC-141b spray, XPS foam and HCFC solvent bans under continued inspection; FAS 2026/550 next milestone **1 Aug** household solar water heating labels (~13 days); MEE 2027 ODS/HFC quota draft still in comment—filings due **31 Oct 2026**",
+          "Daikin Comfort Technologies North America launches NEXIO Max inverter rooftop heat pump on R-32: 7.5–10 ton, IEER 21–22, cold-climate heating to -25°C ambient; matches common curb footprints for retrofit",
+          "AHRI May 2026 shipments (reported 14 Jul): central AC + air-source heat pumps 919,685 units, +6.7% YoY; heat pumps +2.3%; YTD combined shipments still -1.2%",
+          "France Rappel Conso recall of Qlima WDH R290 all-in-one monoblocs (PVG): install height below 1.8 m risks flammable atmosphere on leak (~290 g charge)—installation compliance counterpoint to week-28 European R290 launch wave",
+          "EPA Technology Transitions final rule effective **27 Jul**—~8 days from this briefing; week-27/28 backdrop of inventory installs and DC Circuit challenges continues"
+        ],
+        "zh": [
+          "国内 7/1 ODS 监管集群第三周：HCFC-141b 喷涂、XPS 泡沫、HCFC 溶剂禁令持续执法；550 号文下一节点 **8/1** 家用太阳能热水系统标识（约13天）；MEE 2027 配额征求意见稿仍在意见期——**2026年10月31日** 前须提交申请",
+          "Daikin Comfort Technologies North America 发布 NEXIO Max 变频屋顶热泵（R-32）：7.5–10 ton，IEER 21–22，可在环境温度低至 -25°C 运行；匹配常见 curb 足迹便于改造",
+          "AHRI 2026年5月出货（7/14 披露）：中央空调+空气源热泵合计 91.97 万台，同比 +6.7%；热泵同比 +2.3%；年初至今合计仍同比 -1.2%",
+          "法国 Rappel Conso 召回 Qlima WDH 系列 R290 一体式单体机（PVG）：安装高度低于 1.8 m 时泄漏可形成可燃气氛（充注约 290 g）——与第28周欧洲 R290 产品潮形成「发布 vs 安装合规」对照",
+          "EPA 技术转换终稿 **7/27** 生效——距本简报约8天；第27–28周库存安装与特区巡回法院诉讼背景延续"
+        ]
+      },
+      "url": "/briefings/2026-w29.html",
+      "year": 2026,
+      "week": 29
+    },
     {
       "id": "briefing-2026-w28",
       "type": "briefing",
@@ -379,6 +413,15 @@
     }
   ],
   "briefings": [
+    {
+      "slug": "2026-w29",
+      "published": "2026-07-19",
+      "title": {
+        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第29周制冷与热泵行业简报"
+      },
+      "url": "/briefings/2026-w29.html"
+    },
     {
       "slug": "2026-w28",
       "published": "2026-07-12",

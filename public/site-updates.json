@@ -1,20 +1,20 @@
 {
-  "version": "briefing-2026-w28",
-  "generatedAt": "2026-07-12",
+  "version": "briefing-2026-w29",
+  "generatedAt": "2026-07-19",
   "items": [
     {
-      "id": "briefing-2026-w28",
-      "date": "2026-07-12",
+      "id": "briefing-2026-w29",
+      "date": "2026-07-19",
       "category": "briefing",
       "title": {
-        "en": "Week 28 2026 Refrigeration & Heat Pump Industry Briefing",
-        "zh": "2026年第28周制冷与热泵行业简报"
+        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第29周制冷与热泵行业简报"
       },
       "summary": {
-        "en": "LG 7/8 108°C industrial heat pump at Ajin P&P; Haier/Swegon/Daikin R290 launches 7/8–10; Mitsubishi UK high-temp policy white paper 7/10; China 1 Jul cluster week two; EPA TT final rule ~15 days to 27 Jul",
-        "zh": "LG 7/8 108°C 工业热泵首套商用（大邱 Ajin P&P）；Haier/Swegon/Daikin 7/8–10 R290 商用/轻商新品；三菱 7/10 英国高温热泵监管白皮书；国内 7/1 集群第二周；EPA 技术转换终稿 7/27 倒计时约15天"
+        "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
+        "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
       },
-      "url": "/briefings/2026-w28.html"
+      "url": "/briefings/2026-w29.html"
     },
     {
       "id": "annex68-iea-hpt-2026-07",
