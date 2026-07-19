@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compressor knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Compressor knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to refrigeration and heat-pump compressors: cycle role, machine families, construction, performance maps, oil return, high-lift duty, and selection. Engineering orientation—not a substitute for OEM maps or type tests.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-compressor.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-compressor.html">
+    <meta id="meta-og-title" property="og:title" content="Compressor knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated compressor guide for heat pump practitioners: types, maps, oil, and selection.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Compressor knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Compressor types, performance maps, oil return, and heat-pump selection for practitioners.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeCompressor.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeComp.kicker">Heat pump basics · Compressors</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeComp.pageTitle">Compressor knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeComp.lede" data-i18n-html="true">Illustrated guide to compressors in heat pumps and refrigeration.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeComp.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item1.linkTitle">Role in the cycle</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-types"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item2.linkTitle">Machine families</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-construction"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item3.linkTitle">Hermetic · semi · open</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-maps"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item4.linkTitle">Performance maps</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-oil"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item5.linkTitle">Oil &amp; reliability</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-hp"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item6.linkTitle">Heat pump &amp; high lift</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item7.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kc-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeComp.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeComp.toc.item8.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kc-select" data-i18n="knowledgeComp.toc.item7.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="knowledge.hub.basics.title">Heat pump fundamentals</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledge.hub.refrigerants.title">Refrigerants</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kc-role" class="knowledge-article knowledge-section" aria-labelledby="kc-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-role-title" data-i18n="knowledgeComp.role.title">1 · Role in the vapor-compression cycle</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-cycle.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.role.figure.alt" alt="Vapor-compression cycle with compressor highlighted" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-types" class="knowledge-article knowledge-section" aria-labelledby="kc-types-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-types-title" data-i18n="knowledgeComp.types.title">2 · Machine families</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.types.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.types.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-types.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.types.figure.alt" alt="Compressor family comparison" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.types.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeComp.types.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.type">Family</th>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.capacity">Typical capacity band</th>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.lift">Lift / pressure ratio</th>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.oil">Oil notes</th>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.control">Capacity control</th>
+                                <th scope="col" data-i18n="knowledgeComp.types.th.hp">Heat-pump intuition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeComp.types.r0.type"></th><td data-i18n="knowledgeComp.types.r0.capacity"></td><td data-i18n="knowledgeComp.types.r0.lift" data-i18n-html="true"></td><td data-i18n="knowledgeComp.types.r0.oil"></td><td data-i18n="knowledgeComp.types.r0.control"></td><td data-i18n="knowledgeComp.types.r0.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeComp.types.r1.type"></th><td data-i18n="knowledgeComp.types.r1.capacity"></td><td data-i18n="knowledgeComp.types.r1.lift"></td><td data-i18n="knowledgeComp.types.r1.oil"></td><td data-i18n="knowledgeComp.types.r1.control" data-i18n-html="true"></td><td data-i18n="knowledgeComp.types.r1.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeComp.types.r2.type"></th><td data-i18n="knowledgeComp.types.r2.capacity"></td><td data-i18n="knowledgeComp.types.r2.lift" data-i18n-html="true"></td><td data-i18n="knowledgeComp.types.r2.oil" data-i18n-html="true"></td><td data-i18n="knowledgeComp.types.r2.control"></td><td data-i18n="knowledgeComp.types.r2.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeComp.types.r3.type"></th><td data-i18n="knowledgeComp.types.r3.capacity"></td><td data-i18n="knowledgeComp.types.r3.lift"></td><td data-i18n="knowledgeComp.types.r3.oil"></td><td data-i18n="knowledgeComp.types.r3.control"></td><td data-i18n="knowledgeComp.types.r3.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeComp.types.r4.type"></th><td data-i18n="knowledgeComp.types.r4.capacity"></td><td data-i18n="knowledgeComp.types.r4.lift" data-i18n-html="true"></td><td data-i18n="knowledgeComp.types.r4.oil"></td><td data-i18n="knowledgeComp.types.r4.control"></td><td data-i18n="knowledgeComp.types.r4.hp" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeComp.types.footnote"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-construction" class="knowledge-article knowledge-section" aria-labelledby="kc-construction-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-construction-title" data-i18n="knowledgeComp.construction.title">3 · Hermetic, semi-hermetic, and open-drive</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.construction.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.construction.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-hermetic.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.construction.figure.alt" alt="Hermetic, semi-hermetic, and open-drive" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.construction.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.construction.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.construction.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.construction.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.construction.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.construction.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.construction.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.construction.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.construction.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-maps" class="knowledge-article knowledge-section" aria-labelledby="kc-maps-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-maps-title" data-i18n="knowledgeComp.maps.title">4 · Performance maps and key parameters</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.maps.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.maps.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-map.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.maps.figure.alt" alt="Performance map schematic" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.maps.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.maps.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.maps.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.maps.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.maps.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.maps.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.maps.r3.text" data-i18n-html="true"></p></div>
+                </div>
+                <div class="knowledge-memory knowledge-memory--article2">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledgeComp.maps.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledgeComp.maps.memory.text" data-i18n-html="true"></p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-oil" class="knowledge-article knowledge-section" aria-labelledby="kc-oil-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-oil-title" data-i18n="knowledgeComp.oil.title">5 · Lubrication, oil return, and reliability</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.oil.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.oil.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-oil.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.oil.figure.alt" alt="Oil separator and oil return path" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.oil.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.oil.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.oil.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.oil.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.oil.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.oil.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.oil.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-hp" class="knowledge-article knowledge-section" aria-labelledby="kc-hp-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-hp-title" data-i18n="knowledgeComp.hp.title">6 · Heat-pump and high-lift specifics</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.hp.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeComp.hp.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-comp-hthp.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeComp.hp.figure.alt" alt="Heat pump high-lift duty" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeComp.hp.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.hp.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.hp.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.hp.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.hp.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.hp.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.hp.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeComp.hp.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeComp.hp.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-select" class="knowledge-article knowledge-section" aria-labelledby="kc-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-select-title" data-i18n="knowledgeComp.select.title">7 · Selection checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeComp.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeComp.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeComp.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kc-faq" class="knowledge-article knowledge-section" aria-labelledby="kc-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kc-faq-title" data-i18n="knowledgeComp.faq.title">8 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeComp.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeComp.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeComp.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeComp.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeComp.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeComp.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeComp.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeComp.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeComp.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeComp.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeComp.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge.html#kp-article-6" data-i18n="knowledgeComp.footer.hp">Compressor “匹” chapter</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledgeComp.footer.ref">Refrigerant guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./hthp-column.html#rd-compressor" data-i18n="knowledgeComp.footer.hthp">Industrial HTHP</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./heat-pump-standards.html#links" data-i18n="knowledgeComp.footer.tools">OEM selection tools</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

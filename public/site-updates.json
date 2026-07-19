@@ -17,6 +17,20 @@
       "url": "/briefings/2026-w29.html"
     },
     {
+      "id": "knowledge-compressor-2026-07",
+      "date": "2026-07-19",
+      "category": "page",
+      "title": {
+        "en": "Compressor knowledge guide added to Knowledge",
+        "zh": "知识库新增压缩机图文导读"
+      },
+      "summary": {
+        "en": "New illustrated page: cycle role, machine families, hermetic construction, performance maps, oil return, high-lift heat-pump duty, and a selection checklist—with links to the 匹 chapter, refrigerants, HTHP, and OEM tools.",
+        "zh": "新增图文专页：循环角色、机型家族、全封/半封结构、性能图读法、回油与可靠性、大温升热泵要点与选型清单；并链至「匹」专章、制冷剂百科、工业高温热泵与 OEM 工具。"
+      },
+      "url": "/knowledge-compressor.html"
+    },
+    {
       "id": "annex68-iea-hpt-2026-07",
       "date": "2026-07-09",
       "category": "page",

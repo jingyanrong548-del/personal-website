@@ -329,6 +329,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/articles.html`, priority: '0.9', changefreq: 'weekly' },
     { loc: `${SITE}/knowledge.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/knowledge-refrigerants.html`, priority: '0.8', changefreq: 'monthly' },
+    { loc: `${SITE}/knowledge-compressor.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/hthp-column.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-standards.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/annex68-iea-hpt.html`, priority: '0.6', changefreq: 'monthly' },

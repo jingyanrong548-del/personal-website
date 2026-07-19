@@ -40,6 +40,7 @@ export default defineConfig({
         usefulLinks: resolve(__dirname, 'useful-links.html'),
         heatPumpPolicies: resolve(__dirname, 'heat-pump-policies.html'),
         knowledgeRefrigerants: resolve(__dirname, 'knowledge-refrigerants.html'),
+        knowledgeCompressor: resolve(__dirname, 'knowledge-compressor.html'),
         ...collectHtmlInputs(__dirname, 'briefings'),
         ...collectHtmlInputs(__dirname, 'insights'),
       },

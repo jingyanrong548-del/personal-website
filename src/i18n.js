@@ -1,4 +1,5 @@
 import { knowledgeRefTranslations } from './i18nKnowledgeRef.js';
+import { knowledgeCompTranslations } from './i18nKnowledgeCompressor.js';
 
 export const translations = {
     en: {
@@ -573,11 +574,13 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 future R&D themes and five adoption barriers from the 2026 Taiyuan conference—for owners and integrators.',
         'articles.moreNotes': 'More industry notes',
         'knowledge.hub.title': 'Knowledge base',
-        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigerants, and industrial high-temperature heat pumps.',
+        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigerants, compressors, and industrial high-temperature heat pumps.',
         'knowledge.hub.basics.title': 'Heat pump fundamentals',
         'knowledge.hub.basics.desc': 'Seven independent chapters for experts and decision-makers.',
         'knowledge.hub.refrigerants.title': 'Refrigerants',
         'knowledge.hub.refrigerants.desc': 'Illustrated guide plus IIR Table 2 and ASHRAE 34 property data.',
+        'knowledge.hub.compressor.title': 'Compressors',
+        'knowledge.hub.compressor.desc': 'Types, performance maps, oil return, and heat-pump selection checklist.',
         'knowledge.hub.hthp.title': 'Industrial HTHP',
         'knowledge.hub.hthp.desc': 'IIR §7.2 R&D themes, adoption barriers, and trade-show trend notes.',
         'toolsStd.pageTitle': 'Tools & standards',
@@ -995,7 +998,7 @@ export const translations = {
         'knowledge.article6.checklist.li6': '<strong>Curve vs single point:</strong> part-load/seasonal performance, not one brochure line.',
         'knowledge.article6.memory.title': 'One-sentence memory',
         'knowledge.article6.memory.text': '<strong>“匹” is a spoken label; kW @ stated conditions is engineering language.</strong> Comparing 匹 without aligned rating points is ordering without units.',
-        'knowledge.article6.cta': 'For ¥/kW pitfalls and boundary issues, read <a href="#kp-article-2">Part 3 · Pricing &amp; standards</a>; for GB/T families and test points, use the <a href="./heat-pump-standards.html">industrial heat pump standards</a> quick reference.',
+        'knowledge.article6.cta': 'For ¥/kW pitfalls and boundary issues, read <a href="#kp-article-2">Part 3 · Pricing &amp; standards</a>; for GB/T families and test points, use the <a href="./heat-pump-standards.html">industrial heat pump standards</a> quick reference. For machine families, maps, and oil return, see the <a href="./knowledge-compressor.html">compressor knowledge guide</a>.',
         'knowledge.article6.faq.title': 'Compressor HP rating: quick FAQs',
         'knowledge.article6.faq.q1.q': '“How many kW is 1 匹?”',
         'knowledge.article6.faq.q1.a': 'Trade habit often uses ~2.5 kW cooling at a comfort rating point—but that is not a universal heating kW. For procurement, demand the vendor’s <strong>kW table at your source/sink temperatures</strong>, not a mental conversion factor.',
@@ -1066,6 +1069,7 @@ export const translations = {
         'knowledge.article7.faq.q4.a': 'In many regions the majority of hours still favor the heat pump once COP* is computed—hybrid captures those hours while keeping boiler capacity for peaks and cold snaps.',
         'knowledge.article7.disclaimer': 'Gas and electricity prices, tariff rules, and measured efficiencies vary by contract and site; illustrative LHV and η values here are not audit or feasibility-study substitutes.',
         ...knowledgeRefTranslations.en,
+        ...knowledgeCompTranslations.en,
     },
     zh: {
         'seo.pageTitle': '荆炎荣 — 工业冷冻与热泵架构 | −100℃～300℃ · 极寒 CO₂',
@@ -1622,11 +1626,13 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 研发主题与 2026 太原大会五大推广痛点——面向业主与集成商。',
         'articles.moreNotes': '更多行业笔记',
         'knowledge.hub.title': '知识库',
-        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷剂百科与工业高温热泵。',
+        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷剂百科、压缩机导读与工业高温热泵。',
         'knowledge.hub.basics.title': '热泵基础',
         'knowledge.hub.basics.desc': '七章独立专题，面向专家与决策者。',
         'knowledge.hub.refrigerants.title': '制冷剂百科',
         'knowledge.hub.refrigerants.desc': '图文并茂指南，附 IIR 表 2 与 ASHRAE 34 工质属性数据。',
+        'knowledge.hub.compressor.title': '压缩机',
+        'knowledge.hub.compressor.desc': '机型、性能图、回油与热泵选型清单，图文导读。',
         'knowledge.hub.hthp.title': '工业高温热泵',
         'knowledge.hub.hthp.desc': 'IIR §7.2 研发主题、推广痛点与相关展会趋势。',
         'toolsStd.pageTitle': '工具与标准',
@@ -2039,7 +2045,7 @@ export const translations = {
         'knowledge.article6.checklist.li6': '<strong>单点 vs 曲线：</strong>部分负荷/季节性能，而非宣传彩页一行数。',
         'knowledge.article6.memory.title': '一句话记忆',
         'knowledge.article6.memory.text': '<strong>「匹」是口语标签，kW @ 工况才是工程语言；不对齐工况的匹数比价，等于没问单位就下单。</strong>',
-        'knowledge.article6.cta': '「元/kW」与供货边界问题见 <a href="#kp-article-2">第 3 讲 · 商务与标准</a>；GB/T 族系与试验工况见 <a href="./heat-pump-standards.html">工业热泵标准速查</a>。',
+        'knowledge.article6.cta': '「元/kW」与供货边界问题见 <a href="#kp-article-2">第 3 讲 · 商务与标准</a>；GB/T 族系与试验工况见 <a href="./heat-pump-standards.html">工业热泵标准速查</a>。机型、性能图与回油见 <a href="./knowledge-compressor.html">压缩机知识导读</a>。',
         'knowledge.article6.faq.title': '压缩机匹数：快问快答',
         'knowledge.article6.faq.q1.q': '「1 匹等于多少 kW？」',
         'knowledge.article6.faq.q1.a': '市场习惯常按约 2.5 kW 制冷（@ 舒适标定）口算，但<strong>不能</strong>当作通用制热 kW。采购应索要厂商在<strong>你的热源/热汇温度</strong>下的 kW 工况表，不要只靠心算系数。',
@@ -2110,6 +2116,7 @@ export const translations = {
         'knowledge.article7.faq.q4.a': '算过 COP* 后，许多地区大部分小时仍偏向热泵；混合方案把这些小时吃满，同时保留锅炉应对峰值与寒潮。',
         'knowledge.article7.disclaimer': '气价、电价、计费规则与实测效率因合同与现场而异；文中示意 LHV 与 η 不能替代可研或审计依据。',
         ...knowledgeRefTranslations.zh,
+        ...knowledgeCompTranslations.zh,
     }
 };
 
