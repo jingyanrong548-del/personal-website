@@ -1,7 +1,35 @@
 {
-  "version": "briefing-2026-w29",
-  "generatedAt": "2026-07-19",
+  "version": "knowledge-exchanger-2026-07",
+  "generatedAt": "2026-07-20",
   "items": [
+    {
+      "id": "knowledge-exchanger-2026-07",
+      "date": "2026-07-20",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger knowledge guide added to Knowledge",
+        "zh": "知识库新增换热器图文导读"
+      },
+      "summary": {
+        "en": "New illustrated page: cycle roles, families, LMTD and approach, duty reading, frost/fouling/oil, high-temperature heat-pump duty, and a selection checklist.",
+        "zh": "新增图文专页：循环角色、结构家族、接近温度与流路、工况读法、结霜结垢与回油、高温热泵要点与选型清单。"
+      },
+      "url": "/knowledge-exchanger.html"
+    },
+    {
+      "id": "knowledge-valves-2026-07",
+      "date": "2026-07-20",
+      "category": "page",
+      "title": {
+        "en": "Valve knowledge guide added to Knowledge",
+        "zh": "知识库新增阀件图文导读"
+      },
+      "summary": {
+        "en": "New illustrated page: cycle roles, TXV/EEV, reversing and system valves, water-side boundary, common faults, and a selection checklist—with links to heat exchangers, compressors, and refrigerants.",
+        "zh": "新增图文专页：循环角色、TXV/EEV、换向与系统阀、水路边界、常见故障与选型清单；并链至换热器、压缩机与制冷剂百科。"
+      },
+      "url": "/knowledge-valves.html"
+    },
     {
       "id": "briefing-2026-w29",
       "date": "2026-07-19",
@@ -85,34 +113,6 @@
         "zh": "增补发改环资〔2026〕698 号九大行业改造清单解读，以及绿电消费与设备更新协同合规路径。"
       },
       "url": "/heat-pump-standards.html#policies"
-    },
-    {
-      "id": "hp-standards-2026-05-22",
-      "date": "2026-05-22",
-      "category": "page",
-      "title": {
-        "en": "Industrial heat pump standards lookup updated",
-        "zh": "工业热泵标准速查页更新"
-      },
-      "summary": {
-        "en": "Dataset refreshed against public sources; SAC/TC238 heat pump standard system excerpts added.",
-        "zh": "按公开信息核对更新数据集，并增补全国冷冻空调标委会（SAC/TC238）热泵标准化体系摘录条目。"
-      },
-      "url": "/heat-pump-standards.html"
-    },
-    {
-      "id": "insight-extreme-testing-moat",
-      "date": "2025-09-01",
-      "category": "insight",
-      "title": {
-        "en": "Beyond the Hype: The Real Moat is Extreme Testing (-40°C to +300°C)",
-        "zh": "超越炒作：真正的护城河是极端测试 (-40°C 至 +300°C)"
-      },
-      "summary": {
-        "en": "Claim: Everyone claims 160°C capability, but few can prove it. Reality: The future belongs to those who build CNAS-level infrastructure to verify R744/Steam sys",
-        "zh": "行业宣称： 行业都在宣称 160°C 能力，但鲜有能证明者。 现实情况： 未来属于那些构建 CNAS 级基础设施以验证 R744/蒸汽系统在极端负载边界下的性能的团队。 核心原则： 验证 > 规格。"
-      },
-      "url": "/insights/extreme-testing-moat.html"
     }
   ]
 }

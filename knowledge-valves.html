@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Valve knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Valve knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to refrigeration and heat-pump valves: cycle roles, TXV/EEV, reversing and system valves, water-side boundary, common faults, and selection. Engineering orientation—not a substitute for OEM manuals or code compliance.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-valves.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-valves.html">
+    <meta id="meta-og-title" property="og:title" content="Valve knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated valve guide for heat pump practitioners: expansion, reversing, water-side boundary, and selection.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Valve knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="TXV/EEV, reversing valves, system valves, and selection checklists for heat pumps.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeValves.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeValve.kicker">Heat pump basics · Valves</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeValve.pageTitle">Valve knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeValve.lede" data-i18n-html="true">Illustrated guide to valves in heat pumps and refrigeration.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeValve.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item1.linkTitle">Role in the cycle</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-families"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item2.linkTitle">Families</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-expansion"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item3.linkTitle">Expansion valves</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-system"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item4.linkTitle">System valves</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-water"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item5.linkTitle">Water-side valves</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-reliability"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item6.linkTitle">Faults &amp; reliability</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item7.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kv-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeValve.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeValve.toc.item8.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kv-select" data-i18n="knowledgeValve.toc.item7.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-exchanger.html" data-i18n="knowledge.hub.exchanger.title">Heat exchangers</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html" data-i18n="knowledge.hub.compressor.title">Compressors</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kv-role" class="knowledge-article knowledge-section" aria-labelledby="kv-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-role-title" data-i18n="knowledgeValve.role.title">1 · Role in the vapor-compression cycle</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-cycle.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.role.figure.alt" alt="Vapor-compression cycle with valves highlighted" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-families" class="knowledge-article knowledge-section" aria-labelledby="kv-families-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-families-title" data-i18n="knowledgeValve.families.title">2 · Refrigerant-side valve families</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.families.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.families.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-types.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.families.figure.alt" alt="Refrigerant valve family comparison" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.families.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeValve.families.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeValve.families.th.type">Family</th>
+                                <th scope="col" data-i18n="knowledgeValve.families.th.job">Primary job</th>
+                                <th scope="col" data-i18n="knowledgeValve.families.th.signal">Sensing / drive</th>
+                                <th scope="col" data-i18n="knowledgeValve.families.th.risk">Typical failure mode</th>
+                                <th scope="col" data-i18n="knowledgeValve.families.th.hp">Heat-pump intuition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeValve.families.r0.type"></th><td data-i18n="knowledgeValve.families.r0.job"></td><td data-i18n="knowledgeValve.families.r0.signal" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r0.risk"></td><td data-i18n="knowledgeValve.families.r0.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeValve.families.r1.type"></th><td data-i18n="knowledgeValve.families.r1.job" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r1.signal" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r1.risk" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r1.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeValve.families.r2.type"></th><td data-i18n="knowledgeValve.families.r2.job"></td><td data-i18n="knowledgeValve.families.r2.signal"></td><td data-i18n="knowledgeValve.families.r2.risk"></td><td data-i18n="knowledgeValve.families.r2.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeValve.families.r3.type"></th><td data-i18n="knowledgeValve.families.r3.job" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r3.signal" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r3.risk"></td><td data-i18n="knowledgeValve.families.r3.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeValve.families.r4.type"></th><td data-i18n="knowledgeValve.families.r4.job" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r4.signal" data-i18n-html="true"></td><td data-i18n="knowledgeValve.families.r4.risk"></td><td data-i18n="knowledgeValve.families.r4.hp" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeValve.families.footnote"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-expansion" class="knowledge-article knowledge-section" aria-labelledby="kv-expansion-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-expansion-title" data-i18n="knowledgeValve.expansion.title">3 · Expansion valves in depth</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.expansion.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.expansion.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-txv-eev.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.expansion.figure.alt" alt="TXV versus EEV" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.expansion.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.expansion.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.expansion.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.expansion.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.expansion.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.expansion.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.expansion.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.expansion.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.expansion.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-system" class="knowledge-article knowledge-section" aria-labelledby="kv-system-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-system-title" data-i18n="knowledgeValve.system.title">4 · System valves and piping roles</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.system.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.system.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-reversing.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.system.figure.alt" alt="Four-way reversing valve modes" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.system.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.system.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.system.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.system.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.system.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.system.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.system.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.system.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.system.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-water" class="knowledge-article knowledge-section" aria-labelledby="kv-water-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-water-title" data-i18n="knowledgeValve.water.title">5 · Water-side valves (one chapter)</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.water.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.water.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-water.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.water.figure.alt" alt="Water-side hydronic valves" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.water.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.water.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.water.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.water.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.water.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.water.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.water.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.water.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.water.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-reliability" class="knowledge-article knowledge-section" aria-labelledby="kv-reliability-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-reliability-title" data-i18n="knowledgeValve.reliability.title">6 · Common faults and reliability</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.reliability.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeValve.reliability.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-valve-faults.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeValve.reliability.figure.alt" alt="Valve fault chain" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeValve.reliability.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.reliability.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.reliability.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.reliability.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.reliability.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.reliability.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.reliability.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeValve.reliability.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeValve.reliability.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-select" class="knowledge-article knowledge-section" aria-labelledby="kv-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-select-title" data-i18n="knowledgeValve.select.title">7 · Selection checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeValve.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeValve.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeValve.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kv-faq" class="knowledge-article knowledge-section" aria-labelledby="kv-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kv-faq-title" data-i18n="knowledgeValve.faq.title">8 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeValve.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeValve.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeValve.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeValve.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeValve.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeValve.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeValve.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeValve.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeValve.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeValve.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeValve.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-exchanger.html" data-i18n="knowledgeValve.footer.hx">Heat exchanger guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html" data-i18n="knowledgeValve.footer.comp">Compressor guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledgeValve.footer.ref">Refrigerant guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="knowledgeValve.footer.basics">Heat pump fundamentals</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

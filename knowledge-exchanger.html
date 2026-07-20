@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heat exchanger knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Heat exchanger knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to refrigeration and heat-pump exchangers: cycle roles, families, LMTD and approach, duty points, fouling and frost, high-temperature duty, and selection. Engineering orientation—not a substitute for OEM software or type tests.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-exchanger.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-exchanger.html">
+    <meta id="meta-og-title" property="og:title" content="Heat exchanger knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated heat-exchanger guide for heat pump practitioners: families, approach, frost, and selection.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Heat exchanger knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Heat exchanger families, approach temperature, frost and fouling, and heat-pump selection.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeExchanger.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeHx.kicker">Heat pump basics · Heat exchangers</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeHx.pageTitle">Heat exchanger knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeHx.lede" data-i18n-html="true">Illustrated guide to heat exchangers in heat pumps and refrigeration.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeHx.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item1.linkTitle">Role in the cycle</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-types"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item2.linkTitle">Families</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-flow"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item3.linkTitle">Flow &amp; transfer</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-maps"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item4.linkTitle">Reading performance</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-reliability"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item5.linkTitle">Fouling, frost &amp; oil</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-hp"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item6.linkTitle">Heat pump &amp; high temp</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item7.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#khx-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeHx.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeHx.toc.item8.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#khx-select" data-i18n="knowledgeHx.toc.item7.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html" data-i18n="knowledge.hub.compressor.title">Compressors</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledge.hub.valves.title">Valves</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="khx-role" class="knowledge-article knowledge-section" aria-labelledby="khx-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-role-title" data-i18n="knowledgeHx.role.title">1 · Role in the vapor-compression cycle</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-cycle.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.role.figure.alt" alt="Vapor-compression cycle with heat exchangers highlighted" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-types" class="knowledge-article knowledge-section" aria-labelledby="khx-types-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-types-title" data-i18n="knowledgeHx.types.title">2 · Structural families</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.types.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.types.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-types.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.types.figure.alt" alt="Heat exchanger family comparison" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.types.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeHx.types.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeHx.types.th.type">Family</th>
+                                <th scope="col" data-i18n="knowledgeHx.types.th.capacity">Typical capacity band</th>
+                                <th scope="col" data-i18n="knowledgeHx.types.th.media">Typical media</th>
+                                <th scope="col" data-i18n="knowledgeHx.types.th.dp">ΔP / cleanability</th>
+                                <th scope="col" data-i18n="knowledgeHx.types.th.hp">Heat-pump intuition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeHx.types.r0.type"></th><td data-i18n="knowledgeHx.types.r0.capacity"></td><td data-i18n="knowledgeHx.types.r0.media"></td><td data-i18n="knowledgeHx.types.r0.dp"></td><td data-i18n="knowledgeHx.types.r0.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeHx.types.r1.type"></th><td data-i18n="knowledgeHx.types.r1.capacity"></td><td data-i18n="knowledgeHx.types.r1.media"></td><td data-i18n="knowledgeHx.types.r1.dp"></td><td data-i18n="knowledgeHx.types.r1.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeHx.types.r2.type"></th><td data-i18n="knowledgeHx.types.r2.capacity"></td><td data-i18n="knowledgeHx.types.r2.media"></td><td data-i18n="knowledgeHx.types.r2.dp" data-i18n-html="true"></td><td data-i18n="knowledgeHx.types.r2.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeHx.types.r3.type"></th><td data-i18n="knowledgeHx.types.r3.capacity"></td><td data-i18n="knowledgeHx.types.r3.media"></td><td data-i18n="knowledgeHx.types.r3.dp"></td><td data-i18n="knowledgeHx.types.r3.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeHx.types.r4.type"></th><td data-i18n="knowledgeHx.types.r4.capacity"></td><td data-i18n="knowledgeHx.types.r4.media"></td><td data-i18n="knowledgeHx.types.r4.dp"></td><td data-i18n="knowledgeHx.types.r4.hp" data-i18n-html="true"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeHx.types.footnote"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-flow" class="knowledge-article knowledge-section" aria-labelledby="khx-flow-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-flow-title" data-i18n="knowledgeHx.flow.title">3 · Flow arrangement and heat transfer</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.flow.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.flow.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-lmtd.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.flow.figure.alt" alt="LMTD and approach schematic" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.flow.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.flow.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.flow.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.flow.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.flow.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.flow.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.flow.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.flow.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.flow.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-maps" class="knowledge-article knowledge-section" aria-labelledby="khx-maps-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-maps-title" data-i18n="knowledgeHx.maps.title">4 · How to read performance / duty data</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.maps.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.maps.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-duty.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.maps.figure.alt" alt="Heat exchanger duty point schematic" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.maps.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.maps.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.maps.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.maps.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.maps.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.maps.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.maps.r3.text" data-i18n-html="true"></p></div>
+                </div>
+                <div class="knowledge-memory knowledge-memory--article2">
+                    <h3 class="knowledge-memory-title" data-i18n="knowledgeHx.maps.memory.title">One-sentence memory</h3>
+                    <p class="knowledge-memory-text" data-i18n="knowledgeHx.maps.memory.text" data-i18n-html="true"></p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-reliability" class="knowledge-article knowledge-section" aria-labelledby="khx-reliability-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-reliability-title" data-i18n="knowledgeHx.reliability.title">5 · Fouling, frost, oil, and freeze</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.reliability.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.reliability.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-reliability.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.reliability.figure.alt" alt="Heat exchanger reliability risks" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.reliability.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.reliability.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.reliability.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.reliability.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.reliability.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.reliability.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.reliability.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.reliability.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.reliability.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-hp" class="knowledge-article knowledge-section" aria-labelledby="khx-hp-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-hp-title" data-i18n="knowledgeHx.hp.title">6 · Heat-pump and high-temperature specifics</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.hp.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeHx.hp.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-hx-hthp.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeHx.hp.figure.alt" alt="Heat pump and HTHP exchanger duties" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeHx.hp.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.hp.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.hp.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.hp.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.hp.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.hp.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.hp.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeHx.hp.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeHx.hp.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-select" class="knowledge-article knowledge-section" aria-labelledby="khx-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-select-title" data-i18n="knowledgeHx.select.title">7 · Selection checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeHx.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeHx.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeHx.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="khx-faq" class="knowledge-article knowledge-section" aria-labelledby="khx-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="khx-faq-title" data-i18n="knowledgeHx.faq.title">8 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeHx.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeHx.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeHx.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeHx.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeHx.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeHx.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeHx.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeHx.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeHx.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeHx.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeHx.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-compressor.html" data-i18n="knowledgeHx.footer.comp">Compressor guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledgeHx.footer.valve">Valve guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledgeHx.footer.ref">Refrigerant guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./hthp-column.html" data-i18n="knowledgeHx.footer.hthp">Industrial HTHP</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -41,6 +41,8 @@ export default defineConfig({
         heatPumpPolicies: resolve(__dirname, 'heat-pump-policies.html'),
         knowledgeRefrigerants: resolve(__dirname, 'knowledge-refrigerants.html'),
         knowledgeCompressor: resolve(__dirname, 'knowledge-compressor.html'),
+        knowledgeExchanger: resolve(__dirname, 'knowledge-exchanger.html'),
+        knowledgeValves: resolve(__dirname, 'knowledge-valves.html'),
         ...collectHtmlInputs(__dirname, 'briefings'),
         ...collectHtmlInputs(__dirname, 'insights'),
       },

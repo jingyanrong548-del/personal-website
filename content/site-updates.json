@@ -1,6 +1,34 @@
 {
   "manual": [
     {
+      "id": "knowledge-valves-2026-07",
+      "date": "2026-07-20",
+      "category": "page",
+      "title": {
+        "en": "Valve knowledge guide added to Knowledge",
+        "zh": "知识库新增阀件图文导读"
+      },
+      "summary": {
+        "en": "New illustrated page: cycle roles, TXV/EEV, reversing and system valves, water-side boundary, common faults, and a selection checklist—with links to heat exchangers, compressors, and refrigerants.",
+        "zh": "新增图文专页：循环角色、TXV/EEV、换向与系统阀、水路边界、常见故障与选型清单；并链至换热器、压缩机与制冷剂百科。"
+      },
+      "url": "/knowledge-valves.html"
+    },
+    {
+      "id": "knowledge-exchanger-2026-07",
+      "date": "2026-07-20",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger knowledge guide added to Knowledge",
+        "zh": "知识库新增换热器图文导读"
+      },
+      "summary": {
+        "en": "New illustrated page: cycle roles, families, LMTD and approach, duty reading, frost/fouling/oil, high-temperature heat-pump duty, and a selection checklist.",
+        "zh": "新增图文专页：循环角色、结构家族、接近温度与流路、工况读法、结霜结垢与回油、高温热泵要点与选型清单。"
+      },
+      "url": "/knowledge-exchanger.html"
+    },
+    {
       "id": "knowledge-compressor-2026-07",
       "date": "2026-07-19",
       "category": "page",
