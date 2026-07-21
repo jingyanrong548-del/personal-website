@@ -1,7 +1,21 @@
 {
-  "version": "knowledge-exchanger-2026-07",
-  "generatedAt": "2026-07-20",
+  "version": "knowledge-hx-valve-cutaway-2026-07",
+  "generatedAt": "2026-07-21",
   "items": [
+    {
+      "id": "knowledge-hx-valve-cutaway-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger & valve guides: cutaway figures and clearer Chinese",
+        "zh": "换热器与阀件导读：剖视图升级与中文措辞优化"
+      },
+      "summary": {
+        "en": "Family/TXV–EEV/reversing panels now show internal cutaways (aligned with the compressor guide). Chinese copy rewritten for clearer engineering wording.",
+        "zh": "结构家族、TXV/EEV 与四通换向等配图改为内部剖视（对齐压缩机导读风格）；中文全文润色，减少直译与费解表述。"
+      },
+      "url": "/knowledge-exchanger.html"
+    },
     {
       "id": "knowledge-exchanger-2026-07",
       "date": "2026-07-20",
@@ -99,20 +113,6 @@
         "zh": "导航栏铃铛入口可查看最新周报、洞察与页面更新，回访即可掌握动态。"
       },
       "url": "/articles.html"
-    },
-    {
-      "id": "hp-policies-2026-06",
-      "date": "2026-06-15",
-      "category": "page",
-      "title": {
-        "en": "Industrial heat pump policies page expanded",
-        "zh": "工业热泵政策页深度解读更新"
-      },
-      "summary": {
-        "en": "Added NDRC 698 nine-sector retrofit plan analysis and green-power consumption rules (Order 42) synergy notes.",
-        "zh": "增补发改环资〔2026〕698 号九大行业改造清单解读，以及绿电消费与设备更新协同合规路径。"
-      },
-      "url": "/heat-pump-standards.html#policies"
     }
   ]
 }

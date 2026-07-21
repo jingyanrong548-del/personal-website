@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "knowledge-hx-valve-cutaway-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger & valve guides: cutaway figures and clearer Chinese",
+        "zh": "换热器与阀件导读：剖视图升级与中文措辞优化"
+      },
+      "summary": {
+        "en": "Family/TXV–EEV/reversing panels now show internal cutaways (aligned with the compressor guide). Chinese copy rewritten for clearer engineering wording.",
+        "zh": "结构家族、TXV/EEV 与四通换向等配图改为内部剖视（对齐压缩机导读风格）；中文全文润色，减少直译与费解表述。"
+      },
+      "url": "/knowledge-exchanger.html"
+    },
+    {
       "id": "knowledge-valves-2026-07",
       "date": "2026-07-20",
       "category": "page",
