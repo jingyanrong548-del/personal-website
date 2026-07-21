@@ -1,13 +1,5 @@
 import { translations, getCurrentLanguage } from './i18n.js';
-
-function escapeBriefHtml(s) {
-    if (!s) return '';
-    return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-}
+import { escapeHtml, formatInlineMarkup } from './formatInlineMarkup.js';
 
 export function displayPortalBriefing(briefingData) {
     const titleElement = document.getElementById('briefing-week-title');
@@ -49,14 +41,14 @@ export function displayPortalBriefing(briefingData) {
 
     let previewHtml = '';
     if (previewNote) {
-        previewHtml += `<p class="briefing-preview-note">${escapeBriefHtml(previewNote)}</p>`;
+        previewHtml += `<p class="briefing-preview-note">${escapeHtml(previewNote)}</p>`;
     }
     if (highlightsTitle) {
-        previewHtml += `<p class="briefing-preview-heading">${escapeBriefHtml(highlightsTitle)}</p>`;
+        previewHtml += `<p class="briefing-preview-heading">${escapeHtml(highlightsTitle)}</p>`;
     }
     previewHtml += '<ul class="briefing-preview-list briefing-preview-list--highlights">';
     highlights.slice(0, 5).forEach((text) => {
-        previewHtml += `<li class="briefing-preview-item briefing-preview-item--highlight">${escapeBriefHtml(text)}</li>`;
+        previewHtml += `<li class="briefing-preview-item briefing-preview-item--highlight">${formatInlineMarkup(text)}</li>`;
     });
     previewHtml += '</ul>';
     previewElement.innerHTML = previewHtml;

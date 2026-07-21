@@ -3,22 +3,9 @@ import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal, updateVCardForLanguage } from './contactModal.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import { escapeHtml, formatInlineMarkup } from './formatInlineMarkup.js';
 
 const SECTION_IDS = ['policy', 'market', 'standards', 'technology', 'calendar'];
-
-function escapeHtml(s) {
-    if (!s) return '';
-    return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-}
-
-/** Escape HTML, then render inline **bold** markers used in briefing JSON. */
-function formatBriefingText(s) {
-    return escapeHtml(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-}
 
 function renderShare(container) {
     const lang = getCurrentLanguage();
@@ -101,7 +88,7 @@ function renderBriefing(data, lang) {
             <h2 class="briefing-section-title">${escapeHtml(label)}</h2>
             <ul class="briefing-list">`;
         items.forEach((item) => {
-            html += `<li class="briefing-item">${formatBriefingText(item)}</li>`;
+            html += `<li class="briefing-item">${formatInlineMarkup(item)}</li>`;
         });
         html += '</ul></section>';
     });

@@ -296,7 +296,7 @@ function buildFeed(items) {
     .map((item) => {
       const link = `${SITE}${item.url}`;
       const title = `${item.title.en} / ${item.title.zh}`;
-      const desc = item.subtitle?.en || item.excerptPlain?.en || item.highlights?.en?.[0] || '';
+      const desc = plainText(item.subtitle?.en || item.excerptPlain?.en || item.highlights?.en?.[0] || '');
       return `  <item>
     <title>${escapeHtml(title)}</title>
     <link>${link}</link>
@@ -391,10 +391,7 @@ function briefingToUpdate(b) {
     date: b.published,
     category: 'briefing',
     title: b.title,
-    summary: {
-      en: b.subtitle?.en || b.highlights?.en?.[0] || '',
-      zh: b.subtitle?.zh || b.highlights?.zh?.[0] || '',
-    },
+    summary: briefingSummary(b),
     url: `/briefings/${b.slug}.html`,
   };
 }
@@ -422,11 +419,21 @@ function insightToUpdate(i) {
 function plainText(htmlOrText, maxLen = 0) {
   const text = String(htmlOrText || '')
     .replace(/<[^>]+>/g, ' ')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/\*(.+?)\*/g, '$1')
     .replace(/\*\*/g, '')
     .replace(/\s+/g, ' ')
     .trim();
   if (maxLen > 0) return text.slice(0, maxLen);
   return text;
+}
+
+/** Prefer subtitle; if falling back to a highlight line, strip inline markup markers. */
+function briefingSummary(b) {
+  return {
+    en: b.subtitle?.en || plainText(b.highlights?.en?.[0] || ''),
+    zh: b.subtitle?.zh || plainText(b.highlights?.zh?.[0] || ''),
+  };
 }
 
 function joinLangLists(value) {
@@ -482,10 +489,7 @@ function buildSearchIndex(briefings, insights) {
       category: 'briefing',
       url: `/briefings/${b.slug}.html`,
       title: b.title,
-      summary: {
-        en: b.subtitle?.en || b.highlights?.en?.[0] || '',
-        zh: b.subtitle?.zh || b.highlights?.zh?.[0] || '',
-      },
+      summary: briefingSummary(b),
       keywords: { en: [], zh: [] },
       body: briefingBodyText(b),
       date: b.published,

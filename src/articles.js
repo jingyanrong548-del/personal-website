@@ -3,15 +3,7 @@ import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal } from './contactModal.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
-
-function escapeHtml(s) {
-    if (!s) return '';
-    return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-}
+import { escapeHtml, formatInlineMarkup } from './formatInlineMarkup.js';
 
 function formatDate(iso, lang) {
     return new Date(iso).toLocaleDateString(lang === 'zh' ? 'zh-CN' : 'en-US', {
@@ -39,7 +31,7 @@ function renderArchive(index) {
                 <p class="articles-featured-kicker">${escapeHtml(t['articles.featured.kicker'] || 'Latest briefing')}</p>
                 <h2 class="articles-featured-title"><a href="${escapeHtml(latest.url)}">${escapeHtml(title)}</a></h2>
                 <ul class="articles-featured-highlights">
-                    ${highlights.slice(0, 3).map((h) => `<li>${escapeHtml(h)}</li>`).join('')}
+                    ${highlights.slice(0, 3).map((h) => `<li>${formatInlineMarkup(h)}</li>`).join('')}
                 </ul>
                 <a href="${escapeHtml(latest.url)}" class="articles-featured-cta">${escapeHtml(t['briefings.readMore'] || 'Read full report')}</a>
             </article>`;
@@ -64,7 +56,7 @@ function renderArchive(index) {
                     <time datetime="${item.published}">${formatDate(item.published, lang)}</time>
                 </div>
                 <h3 class="articles-archive-title"><a href="${escapeHtml(item.url)}">${escapeHtml(title)}</a></h3>
-                <p class="articles-archive-summary">${escapeHtml(summary)}</p>
+                <p class="articles-archive-summary">${formatInlineMarkup(summary)}</p>
             </li>`;
         })
         .join('');
