@@ -65,6 +65,9 @@ export const knowledgeElecTranslations = {
 
         'knowledgeElec.controller.title': '4 · Unit controllers / PLC',
         'knowledgeElec.controller.lede': 'The controller is the plant’s operating brain: it reads sensors, enforces safety, and switches modes. Firmware maps matter as much as the hardware BOM.',
+        'knowledgeElec.controller.figure.aria': 'Unit controller with sensor inputs, outputs, and safety interlock chain',
+        'knowledgeElec.controller.figure.alt': 'Open unit controller / PLC panel with pressure, temperature, and flow inputs on the left; compressor, reversing valve, EEV, and alarm outputs on the right; HP/LP and E-stop interlock chain labeled.',
+        'knowledgeElec.controller.figure.caption': 'Hard safety stays local. Soft setpoints and BMS writes must never silently bypass flow, frost, or pressure lockouts.',
         'knowledgeElec.controller.r1.title': 'Sensors &amp; signal integrity',
         'knowledgeElec.controller.r1.text': 'Pressure transducers, NTC/PT1000 probes, and flow switches must see the state you intend. Wrong placement or shared grounds create hunting that looks like a “bad EEV” or “weak compressor.”',
         'knowledgeElec.controller.r2.title': 'Safety interlocks',
@@ -76,6 +79,9 @@ export const knowledgeElecTranslations = {
 
         'knowledgeElec.components.title': '5 · Panel components',
         'knowledgeElec.components.lede': 'Contactors, breakers, thermal relays, and transformers are the physical layer under the software story. Cabinet layout and wiring practice decide whether the clever controller survives the first summer.',
+        'knowledgeElec.components.figure.aria': 'Electrical cabinet with breakers, contactors, thermal relays, and control transformer',
+        'knowledgeElec.components.figure.alt': 'Open panel showing MCCB, contactor cutaway, thermal overload relay, control transformer, and segregated power versus signal wiring.',
+        'knowledgeElec.components.figure.caption': 'Size and set protection to nameplate FLC. Raising a thermal relay “so it stops tripping” trades a nuisance trip for a burnt motor.',
         'knowledgeElec.components.r1.title': 'Contactors &amp; motor starters',
         'knowledgeElec.components.r1.text': 'Size for FLC and utilization category; check coil voltage and auxiliary contacts used by interlocks. Welded contacts after repeated stall starts are a wiring or logic problem upstream.',
         'knowledgeElec.components.r2.title': 'Breakers &amp; thermal relays',
@@ -193,6 +199,9 @@ export const knowledgeElecTranslations = {
 
         'knowledgeElec.controller.title': '4 · 机组控制器 / PLC',
         'knowledgeElec.controller.lede': '控制器是机组的运行大脑：读传感器、执行安全、切换模式。固件控制图谱与硬件物料清单同等重要。',
+        'knowledgeElec.controller.figure.aria': '机组控制器：传感器输入、输出与安全连锁',
+        'knowledgeElec.controller.figure.alt': '打开的机组控制器/PLC 盘：左侧压力、温度、流量输入；右侧压缩机、换向阀、EEV 与报警输出；标注高低压与急停等硬连锁。',
+        'knowledgeElec.controller.figure.caption': '硬安全留在本地。软设定与楼控写入绝不能静默旁路流量、防冻或压力保护。',
         'knowledgeElec.controller.r1.title': '传感器与信号完整性',
         'knowledgeElec.controller.r1.text': '压力变送器、NTC/PT1000 与流量开关必须「看到」你以为的状态。位置错误或共地不良会造成振荡，症状常被误判为「EEV 不行」或「压缩机偏弱」。',
         'knowledgeElec.controller.r2.title': '安全连锁',
@@ -204,6 +213,9 @@ export const knowledgeElecTranslations = {
 
         'knowledgeElec.components.title': '5 · 盘柜元件',
         'knowledgeElec.components.lede': '接触器、断路器、热继电器与变压器是软件故事之下的物理层。柜体布置与布线工艺，决定「聪明」的控制器能否熬过第一个夏天。',
+        'knowledgeElec.components.figure.aria': '电控柜：断路器、接触器、热继电器与控制变压器',
+        'knowledgeElec.components.figure.alt': '打开的盘柜：塑壳断路器、接触器剖视、热过载继电器、控制变压器，以及强弱电分区布线。',
+        'knowledgeElec.components.figure.caption': '保护按铭牌满载电流选型与整定。把热继「调高一点少跳闸」，是用烧毁电机换来的假安静。',
         'knowledgeElec.components.r1.title': '接触器与电机启动',
         'knowledgeElec.components.r1.text': '按满载电流与使用类别选型；核对线圈电压及连锁用辅助触点。反复堵转后触点熔焊，往往是上游接线或逻辑问题。',
         'knowledgeElec.components.r2.title': '断路器与热继电器',

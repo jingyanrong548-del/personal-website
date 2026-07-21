@@ -31,6 +31,20 @@
       "url": "/knowledge.html"
     },
     {
+      "id": "knowledge-vessel-elec-cutaway-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Vessels & electrical guides: cutaway figures upgraded",
+        "zh": "容器与电气导读：配图升级为剖视风格"
+      },
+      "summary": {
+        "en": "Vessel and electrical chapter figures now use 3D cutaways aligned with the compressor, heat-exchanger, and valve guides. Controller and panel chapters gain dedicated diagrams.",
+        "zh": "容器与电气各章配图改为与压缩机、换热器、阀件一致的 3D 剖视；控制器与盘柜章节补齐专图。"
+      },
+      "url": "/knowledge-vessels.html"
+    },
+    {
       "id": "knowledge-exchanger-2026-07",
       "date": "2026-07-20",
       "category": "page",
@@ -99,20 +113,6 @@
         "zh": "修复 Project 68 独立页并更新至 7 月版：维也纳热泵大会工作坊（80+ 参与者）、Task 1 数据库 55+ 供方与 40+ 示范案例、行业集成模版与 Skills4HP 进展。"
       },
       "url": "/briefings/annex68-iea-hpt.html"
-    },
-    {
-      "id": "ia-reorg-2026-07",
-      "date": "2026-07-09",
-      "category": "site",
-      "title": {
-        "en": "Site navigation simplified — Content, Knowledge, Tools & Standards",
-        "zh": "内容板块归并：内容中心 / 知识库 / 工具与标准"
-      },
-      "summary": {
-        "en": "Nav reduced to three hubs: Content (briefings, insights, industry notes), Knowledge (fundamentals, refrigerants guide + property table, industrial HTHP), and Tools & Standards (standards, policies, links). Old URLs redirect.",
-        "zh": "导航收敛为三大入口：内容中心（简报、洞察、行业观察）、知识库（基础、制冷剂百科含工质表、工业高温热泵）、工具与标准（标准、政策、外链合一）。旧 URL 已设重定向。"
-      },
-      "url": "/articles.html"
     }
   ]
 }

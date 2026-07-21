@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "knowledge-vessel-elec-cutaway-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Vessels & electrical guides: cutaway figures upgraded",
+        "zh": "容器与电气导读：配图升级为剖视风格"
+      },
+      "summary": {
+        "en": "Vessel and electrical chapter figures now use 3D cutaways aligned with the compressor, heat-exchanger, and valve guides. Controller and panel chapters gain dedicated diagrams.",
+        "zh": "容器与电气各章配图改为与压缩机、换热器、阀件一致的 3D 剖视；控制器与盘柜章节补齐专图。"
+      },
+      "url": "/knowledge-vessels.html"
+    },
+    {
       "id": "knowledge-vessels-electrical-2026-07",
       "date": "2026-07-21",
       "category": "page",
