@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vessel knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Vessel knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to refrigeration and heat-pump vessels: oil separators, suction accumulators, liquid receivers, flash tanks, and selection checklists. Engineering orientation—not a substitute for OEM manuals or pressure-vessel code compliance.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-vessels.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-vessels.html">
+    <meta id="meta-og-title" property="og:title" content="Vessel knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Oil separators, suction accumulators, liquid receivers, flash tanks, and selection for heat-pump practitioners.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Vessel knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Oil separators, accumulators, receivers, flash tanks, and selection checklists for heat pumps.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeVessels.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeVessel.kicker">Heat pump basics · Vessels</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeVessel.pageTitle">Vessel knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeVessel.lede" data-i18n-html="true">Illustrated guide to vessels in heat pumps and refrigeration.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeVessel.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item1.linkTitle">Role in the cycle</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-map"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item2.linkTitle">Family overview</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-oil"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item3.linkTitle">Oil separators</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-accum"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item4.linkTitle">Suction accumulators</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-receiver"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item5.linkTitle">Liquid receivers</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-flash"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item6.linkTitle">Flash tanks</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item7.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kvess-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeVessel.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeVessel.toc.item8.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kvess-select" data-i18n="knowledgeVessel.toc.item7.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-exchanger.html" data-i18n="knowledge.hub.exchanger.title">Heat exchangers</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledge.hub.valves.title">Valves</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kvess-role" class="knowledge-article knowledge-section" aria-labelledby="kvess-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-role-title" data-i18n="knowledgeVessel.role.title">1 · Role in the vapor-compression cycle</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-cycle.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.role.figure.alt" alt="Vapor-compression cycle with vessels highlighted" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-map" class="knowledge-article knowledge-section" aria-labelledby="kvess-map-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-map-title" data-i18n="knowledgeVessel.map.title">2 · Vessel family overview</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.map.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.map.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-types.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.map.figure.alt" alt="Refrigerant vessel family comparison" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.map.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeVessel.map.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeVessel.map.th.type">Family</th>
+                                <th scope="col" data-i18n="knowledgeVessel.map.th.job">Primary job</th>
+                                <th scope="col" data-i18n="knowledgeVessel.map.th.where">Typical location</th>
+                                <th scope="col" data-i18n="knowledgeVessel.map.th.risk">Typical failure mode</th>
+                                <th scope="col" data-i18n="knowledgeVessel.map.th.hp">Heat-pump intuition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeVessel.map.r0.type"></th><td data-i18n="knowledgeVessel.map.r0.job"></td><td data-i18n="knowledgeVessel.map.r0.where"></td><td data-i18n="knowledgeVessel.map.r0.risk"></td><td data-i18n="knowledgeVessel.map.r0.hp"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeVessel.map.r1.type"></th><td data-i18n="knowledgeVessel.map.r1.job"></td><td data-i18n="knowledgeVessel.map.r1.where"></td><td data-i18n="knowledgeVessel.map.r1.risk"></td><td data-i18n="knowledgeVessel.map.r1.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeVessel.map.r2.type"></th><td data-i18n="knowledgeVessel.map.r2.job"></td><td data-i18n="knowledgeVessel.map.r2.where"></td><td data-i18n="knowledgeVessel.map.r2.risk"></td><td data-i18n="knowledgeVessel.map.r2.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeVessel.map.r3.type"></th><td data-i18n="knowledgeVessel.map.r3.job"></td><td data-i18n="knowledgeVessel.map.r3.where"></td><td data-i18n="knowledgeVessel.map.r3.risk"></td><td data-i18n="knowledgeVessel.map.r3.hp" data-i18n-html="true"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeVessel.map.r4.type"></th><td data-i18n="knowledgeVessel.map.r4.job" data-i18n-html="true"></td><td data-i18n="knowledgeVessel.map.r4.where"></td><td data-i18n="knowledgeVessel.map.r4.risk" data-i18n-html="true"></td><td data-i18n="knowledgeVessel.map.r4.hp"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeVessel.map.footnote"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-oil" class="knowledge-article knowledge-section" aria-labelledby="kvess-oil-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-oil-title" data-i18n="knowledgeVessel.oil.title">3 · Oil separators in depth</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.oil.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.oil.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-oil.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.oil.figure.alt" alt="Oil separator discharge path" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.oil.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.oil.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.oil.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.oil.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.oil.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.oil.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.oil.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.oil.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.oil.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-accum" class="knowledge-article knowledge-section" aria-labelledby="kvess-accum-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-accum-title" data-i18n="knowledgeVessel.accum.title">4 · Suction accumulators</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.accum.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.accum.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-accum.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.accum.figure.alt" alt="Suction accumulator with U-bend oil return" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.accum.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.accum.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.accum.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.accum.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.accum.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.accum.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.accum.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.accum.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.accum.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-receiver" class="knowledge-article knowledge-section" aria-labelledby="kvess-receiver-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-receiver-title" data-i18n="knowledgeVessel.receiver.title">5 · Liquid receivers</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.receiver.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.receiver.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-receiver.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.receiver.figure.alt" alt="Liquid receiver after condenser" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.receiver.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.receiver.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.receiver.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.receiver.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.receiver.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.receiver.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.receiver.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.receiver.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.receiver.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-flash" class="knowledge-article knowledge-section" aria-labelledby="kvess-flash-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-flash-title" data-i18n="knowledgeVessel.flash.title">6 · Flash tanks / economizer vessels</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.flash.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeVessel.flash.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-vessel-flash.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeVessel.flash.figure.alt" alt="Flash tank economizer vessel" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeVessel.flash.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.flash.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.flash.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.flash.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.flash.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.flash.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.flash.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeVessel.flash.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeVessel.flash.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-select" class="knowledge-article knowledge-section" aria-labelledby="kvess-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-select-title" data-i18n="knowledgeVessel.select.title">7 · Selection &amp; layout checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeVessel.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeVessel.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeVessel.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kvess-faq" class="knowledge-article knowledge-section" aria-labelledby="kvess-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kvess-faq-title" data-i18n="knowledgeVessel.faq.title">8 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeVessel.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeVessel.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeVessel.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeVessel.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeVessel.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeVessel.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeVessel.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeVessel.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeVessel.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeVessel.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeVessel.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-exchanger.html" data-i18n="knowledgeVessel.footer.hx">Heat exchanger guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledgeVessel.footer.valves">Valve guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-electrical.html" data-i18n="knowledgeVessel.footer.elec">Electrical &amp; controls</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="knowledgeVessel.footer.basics">Heat pump fundamentals</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

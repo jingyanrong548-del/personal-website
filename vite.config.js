@@ -43,6 +43,8 @@ export default defineConfig({
         knowledgeCompressor: resolve(__dirname, 'knowledge-compressor.html'),
         knowledgeExchanger: resolve(__dirname, 'knowledge-exchanger.html'),
         knowledgeValves: resolve(__dirname, 'knowledge-valves.html'),
+        knowledgeVessels: resolve(__dirname, 'knowledge-vessels.html'),
+        knowledgeElectrical: resolve(__dirname, 'knowledge-electrical.html'),
         ...collectHtmlInputs(__dirname, 'briefings'),
         ...collectHtmlInputs(__dirname, 'insights'),
       },

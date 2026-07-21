@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "knowledge-vessels-electrical-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: vessels & electrical guides, reordered path",
+        "zh": "知识库新增容器与电气专章，并重排学习路径"
+      },
+      "summary": {
+        "en": "New illustrated pages on oil separators, accumulators, receivers, flash tanks, plus motors, VFDs, controllers, AI/IoT. Hub order: fundamentals → refrigerants → compressors → heat exchangers → vessels → valves → electrical → industrial HTHP.",
+        "zh": "新增油分/气分/贮液器/闪发罐，以及电机、变频、控制器、AI/物联图文导读。枢纽顺序：基础 → 制冷剂 → 压缩机 → 换热器 → 容器 → 阀件 → 电气 → 工业高温热泵。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
       "id": "knowledge-hx-valve-cutaway-2026-07",
       "date": "2026-07-21",
       "category": "page",

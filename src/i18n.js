@@ -2,6 +2,8 @@ import { knowledgeRefTranslations } from './i18nKnowledgeRef.js';
 import { knowledgeCompTranslations } from './i18nKnowledgeCompressor.js';
 import { knowledgeHxTranslations } from './i18nKnowledgeExchanger.js';
 import { knowledgeValveTranslations } from './i18nKnowledgeValves.js';
+import { knowledgeVesselTranslations } from './i18nKnowledgeVessels.js';
+import { knowledgeElecTranslations } from './i18nKnowledgeElectrical.js';
 
 export const translations = {
     en: {
@@ -576,7 +578,7 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 future R&D themes and five adoption barriers from the 2026 Taiyuan conference—for owners and integrators.',
         'articles.moreNotes': 'More industry notes',
         'knowledge.hub.title': 'Knowledge base',
-        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigerants, compressors, heat exchangers, valves, and industrial high-temperature heat pumps.',
+        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigerants, compressors, heat exchangers, vessels, valves, electrical &amp; controls, and industrial high-temperature heat pumps.',
         'knowledge.hub.basics.title': 'Heat pump fundamentals',
         'knowledge.hub.basics.desc': 'Seven independent chapters for experts and decision-makers.',
         'knowledge.hub.refrigerants.title': 'Refrigerants',
@@ -585,8 +587,12 @@ export const translations = {
         'knowledge.hub.compressor.desc': 'Types, performance maps, oil return, and heat-pump selection checklist.',
         'knowledge.hub.exchanger.title': 'Heat exchangers',
         'knowledge.hub.exchanger.desc': 'Families, approach temperature, frost and fouling, and heat-pump selection checklist.',
+        'knowledge.hub.vessels.title': 'Vessels',
+        'knowledge.hub.vessels.desc': 'Oil separators, suction accumulators, liquid receivers, flash tanks, and selection checklist.',
         'knowledge.hub.valves.title': 'Valves',
         'knowledge.hub.valves.desc': 'Expansion and reversing valves, system roles, water-side boundary, and selection checklist.',
+        'knowledge.hub.electrical.title': 'Electrical &amp; controls',
+        'knowledge.hub.electrical.desc': 'Motors, VFDs, controllers, panel components, AI assist, remote control and IoT.',
         'knowledge.hub.hthp.title': 'Industrial HTHP',
         'knowledge.hub.hthp.desc': 'IIR §7.2 R&D themes, adoption barriers, and trade-show trend notes.',
         'toolsStd.pageTitle': 'Tools & standards',
@@ -1078,6 +1084,8 @@ export const translations = {
         ...knowledgeCompTranslations.en,
         ...knowledgeHxTranslations.en,
         ...knowledgeValveTranslations.en,
+        ...knowledgeVesselTranslations.en,
+        ...knowledgeElecTranslations.en,
     },
     zh: {
         'seo.pageTitle': '荆炎荣 — 工业冷冻与热泵架构 | −100℃～300℃ · 极寒 CO₂',
@@ -1634,7 +1642,7 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 研发主题与 2026 太原大会五大推广痛点——面向业主与集成商。',
         'articles.moreNotes': '更多行业笔记',
         'knowledge.hub.title': '知识库',
-        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷剂百科、压缩机、换热器、阀件与工业高温热泵。',
+        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷剂百科、压缩机、换热器、容器、阀件、电气与工业高温热泵。',
         'knowledge.hub.basics.title': '热泵基础',
         'knowledge.hub.basics.desc': '七章独立专题，面向专家与决策者。',
         'knowledge.hub.refrigerants.title': '制冷剂百科',
@@ -1643,8 +1651,12 @@ export const translations = {
         'knowledge.hub.compressor.desc': '机型、性能图、回油与热泵选型清单，图文导读。',
         'knowledge.hub.exchanger.title': '换热器',
         'knowledge.hub.exchanger.desc': '结构家族、接近温度、结霜结垢与热泵选型清单。',
+        'knowledge.hub.vessels.title': '容器',
+        'knowledge.hub.vessels.desc': '油分、气分、贮液器、闪发罐与选型清单。',
         'knowledge.hub.valves.title': '阀件',
         'knowledge.hub.valves.desc': '膨胀阀与四通阀、系统阀角色、水路阀边界与选型清单。',
+        'knowledge.hub.electrical.title': '电气',
+        'knowledge.hub.electrical.desc': '电动机、变频、控制器、电气元件、AI 辅助、远程控制与物联网。',
         'knowledge.hub.hthp.title': '工业高温热泵',
         'knowledge.hub.hthp.desc': 'IIR §7.2 研发主题、推广痛点与相关展会趋势。',
         'toolsStd.pageTitle': '工具与标准',
@@ -2131,6 +2143,8 @@ export const translations = {
         ...knowledgeCompTranslations.zh,
         ...knowledgeHxTranslations.zh,
         ...knowledgeValveTranslations.zh,
+        ...knowledgeVesselTranslations.zh,
+        ...knowledgeElecTranslations.zh,
     }
 };
 

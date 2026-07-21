@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electrical &amp; controls knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Electrical &amp; controls knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to heat-pump electrical layers: motors, VFDs, controllers, panel components, AI assist, remote control and IoT, plus selection checklists. Engineering orientation—not a substitute for OEM manuals or electrical codes.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-electrical.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-electrical.html">
+    <meta id="meta-og-title" property="og:title" content="Electrical &amp; controls knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Motors, VFDs, controllers, panel components, AI assist, remote control and IoT for heat-pump practitioners.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Electrical &amp; controls knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Motors, VFDs, controllers, AI assist, and IoT for heat pumps.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeElectrical.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeElec.kicker">Heat pump basics · Electrical &amp; controls</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeElec.pageTitle">Electrical &amp; controls knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeElec.lede" data-i18n-html="true">Illustrated guide to electrical layers in heat pumps.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeElec.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item1.linkTitle">Roles of the electrical layer</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-motor"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item2.linkTitle">Motors</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-vfd"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item3.linkTitle">VFDs / inverters</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-controller"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item4.linkTitle">Unit controllers / PLC</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-components"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item5.linkTitle">Panel components</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-smart"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item6.linkTitle">AI assist &amp; IoT</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item7.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kele-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeElec.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeElec.toc.item8.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kele-select" data-i18n="knowledgeElec.toc.item7.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledge.hub.valves.title">Valves</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-vessels.html" data-i18n="knowledge.hub.vessels.title">Vessels</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kele-role" class="knowledge-article knowledge-section" aria-labelledby="kele-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-role-title" data-i18n="knowledgeElec.role.title">1 · Roles of the electrical layer</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeElec.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-elec-layers.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeElec.role.figure.alt" alt="Heat-pump electrical layers" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeElec.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-motor" class="knowledge-article knowledge-section" aria-labelledby="kele-motor-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-motor-title" data-i18n="knowledgeElec.motor.title">2 · Motors</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.motor.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeElec.motor.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-elec-motor.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeElec.motor.figure.alt" alt="Hermetic versus open motor" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeElec.motor.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.motor.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.motor.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.motor.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.motor.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.motor.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.motor.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.motor.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.motor.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-vfd" class="knowledge-article knowledge-section" aria-labelledby="kele-vfd-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-vfd-title" data-i18n="knowledgeElec.vfd.title">3 · VFDs / inverters</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.vfd.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeElec.vfd.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-elec-vfd.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeElec.vfd.figure.alt" alt="VFD capacity control" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeElec.vfd.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.vfd.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.vfd.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.vfd.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.vfd.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.vfd.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.vfd.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.vfd.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.vfd.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-controller" class="knowledge-article knowledge-section" aria-labelledby="kele-controller-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-controller-title" data-i18n="knowledgeElec.controller.title">4 · Unit controllers / PLC</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.controller.lede" data-i18n-html="true"></p>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.controller.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.controller.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.controller.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.controller.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.controller.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.controller.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.controller.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.controller.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-components" class="knowledge-article knowledge-section" aria-labelledby="kele-components-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-components-title" data-i18n="knowledgeElec.components.title">5 · Panel components</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.components.lede" data-i18n-html="true"></p>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.components.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.components.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.components.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.components.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.components.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.components.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.components.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.components.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-smart" class="knowledge-article knowledge-section" aria-labelledby="kele-smart-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-smart-title" data-i18n="knowledgeElec.smart.title">6 · AI assist, remote control &amp; IoT</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.smart.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeElec.smart.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-elec-iot.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeElec.smart.figure.alt" alt="Remote control and IoT loop" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeElec.smart.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.smart.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.smart.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.smart.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.smart.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.smart.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.smart.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeElec.smart.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeElec.smart.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-select" class="knowledge-article knowledge-section" aria-labelledby="kele-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-select-title" data-i18n="knowledgeElec.select.title">7 · Selection &amp; integration checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeElec.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeElec.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeElec.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kele-faq" class="knowledge-article knowledge-section" aria-labelledby="kele-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kele-faq-title" data-i18n="knowledgeElec.faq.title">8 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeElec.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeElec.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeElec.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeElec.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeElec.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeElec.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeElec.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeElec.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeElec.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeElec.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeElec.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-vessels.html" data-i18n="knowledgeElec.footer.vessel">Vessel guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-valves.html" data-i18n="knowledgeElec.footer.valve">Valve guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html" data-i18n="knowledgeElec.footer.comp">Compressor guide</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="knowledgeElec.footer.basics">Heat pump fundamentals</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

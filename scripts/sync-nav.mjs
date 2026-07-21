@@ -43,6 +43,8 @@ const rootPages = [
   'knowledge-compressor.html',
   'knowledge-exchanger.html',
   'knowledge-valves.html',
+  'knowledge-vessels.html',
+  'knowledge-electrical.html',
   'hthp-column.html',
   'heat-pump-standards.html',
   'heat-pump-refrigerants.html',

@@ -17,6 +17,20 @@
       "url": "/knowledge-exchanger.html"
     },
     {
+      "id": "knowledge-vessels-electrical-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: vessels & electrical guides, reordered path",
+        "zh": "知识库新增容器与电气专章，并重排学习路径"
+      },
+      "summary": {
+        "en": "New illustrated pages on oil separators, accumulators, receivers, flash tanks, plus motors, VFDs, controllers, AI/IoT. Hub order: fundamentals → refrigerants → compressors → heat exchangers → vessels → valves → electrical → industrial HTHP.",
+        "zh": "新增油分/气分/贮液器/闪发罐，以及电机、变频、控制器、AI/物联图文导读。枢纽顺序：基础 → 制冷剂 → 压缩机 → 换热器 → 容器 → 阀件 → 电气 → 工业高温热泵。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
       "id": "knowledge-exchanger-2026-07",
       "date": "2026-07-20",
       "category": "page",
@@ -97,20 +111,6 @@
       "summary": {
         "en": "Nav reduced to three hubs: Content (briefings, insights, industry notes), Knowledge (fundamentals, refrigerants guide + property table, industrial HTHP), and Tools & Standards (standards, policies, links). Old URLs redirect.",
         "zh": "导航收敛为三大入口：内容中心（简报、洞察、行业观察）、知识库（基础、制冷剂百科含工质表、工业高温热泵）、工具与标准（标准、政策、外链合一）。旧 URL 已设重定向。"
-      },
-      "url": "/articles.html"
-    },
-    {
-      "id": "whats-new-feature-2026-07",
-      "date": "2026-07-01",
-      "category": "site",
-      "title": {
-        "en": "What's New — stay current at a glance",
-        "zh": "最近更新提醒上线"
-      },
-      "summary": {
-        "en": "A bell icon in the nav shows recent briefings, insights, and page updates when you return.",
-        "zh": "导航栏铃铛入口可查看最新周报、洞察与页面更新，回访即可掌握动态。"
       },
       "url": "/articles.html"
     }
