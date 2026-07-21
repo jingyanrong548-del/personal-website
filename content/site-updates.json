@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "site-search-2026-07",
+      "date": "2026-07-21",
+      "category": "site",
+      "title": {
+        "en": "Site-wide keyword search in the navbar",
+        "zh": "导航栏新增站内关键词搜索"
+      },
+      "summary": {
+        "en": "Use the magnifier (or ⌘K / Ctrl+K) to search pages, briefings, insights, and toolbox apps by keyword.",
+        "zh": "点击导航栏放大镜（或 ⌘K / Ctrl+K），可按关键词检索页面、行业简报、工程洞察与工具。"
+      },
+      "url": "/"
+    },
+    {
       "id": "knowledge-vessel-elec-cutaway-2026-07",
       "date": "2026-07-21",
       "category": "page",

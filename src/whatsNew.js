@@ -1,4 +1,5 @@
 import { translations, getCurrentLanguage } from './i18n.js';
+import { initSiteSearch, refreshSiteSearchLanguage } from './siteSearch.js';
 
 const STORAGE_KEY = 'jingyanrong.whatsNew.seen';
 
@@ -174,6 +175,10 @@ function renderWhatsNewList(lang = getCurrentLanguage()) {
 function openWhatsNew() {
     const modal = document.getElementById('whats-new-modal');
     if (!modal) return;
+    const searchModal = document.getElementById('site-search-modal');
+    if (searchModal?.classList.contains('active')) {
+        searchModal.classList.remove('active');
+    }
     renderWhatsNewList();
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -194,10 +199,13 @@ function closeWhatsNew() {
 export function refreshWhatsNewLanguage(lang) {
     if (!uiInjected) return;
     renderWhatsNewList(lang);
+    refreshSiteSearchLanguage(lang);
 }
 
 export async function initWhatsNew() {
     injectWhatsNewUI();
+    // Site search shares the nav-actions slot (magnifier left of the bell).
+    await initSiteSearch();
 
     try {
         const res = await fetch('/site-updates.json');

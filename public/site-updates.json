@@ -1,34 +1,20 @@
 {
-  "version": "knowledge-hx-valve-cutaway-2026-07",
+  "version": "site-search-2026-07",
   "generatedAt": "2026-07-21",
   "items": [
     {
-      "id": "knowledge-hx-valve-cutaway-2026-07",
+      "id": "site-search-2026-07",
       "date": "2026-07-21",
-      "category": "page",
+      "category": "site",
       "title": {
-        "en": "Heat exchanger & valve guides: cutaway figures and clearer Chinese",
-        "zh": "换热器与阀件导读：剖视图升级与中文措辞优化"
+        "en": "Site-wide keyword search in the navbar",
+        "zh": "导航栏新增站内关键词搜索"
       },
       "summary": {
-        "en": "Family/TXV–EEV/reversing panels now show internal cutaways (aligned with the compressor guide). Chinese copy rewritten for clearer engineering wording.",
-        "zh": "结构家族、TXV/EEV 与四通换向等配图改为内部剖视（对齐压缩机导读风格）；中文全文润色，减少直译与费解表述。"
+        "en": "Use the magnifier (or ⌘K / Ctrl+K) to search pages, briefings, insights, and toolbox apps by keyword.",
+        "zh": "点击导航栏放大镜（或 ⌘K / Ctrl+K），可按关键词检索页面、行业简报、工程洞察与工具。"
       },
-      "url": "/knowledge-exchanger.html"
-    },
-    {
-      "id": "knowledge-vessels-electrical-2026-07",
-      "date": "2026-07-21",
-      "category": "page",
-      "title": {
-        "en": "Knowledge hub: vessels & electrical guides, reordered path",
-        "zh": "知识库新增容器与电气专章，并重排学习路径"
-      },
-      "summary": {
-        "en": "New illustrated pages on oil separators, accumulators, receivers, flash tanks, plus motors, VFDs, controllers, AI/IoT. Hub order: fundamentals → refrigerants → compressors → heat exchangers → vessels → valves → electrical → industrial HTHP.",
-        "zh": "新增油分/气分/贮液器/闪发罐，以及电机、变频、控制器、AI/物联图文导读。枢纽顺序：基础 → 制冷剂 → 压缩机 → 换热器 → 容器 → 阀件 → 电气 → 工业高温热泵。"
-      },
-      "url": "/knowledge.html"
+      "url": "/"
     },
     {
       "id": "knowledge-vessel-elec-cutaway-2026-07",
@@ -45,16 +31,30 @@
       "url": "/knowledge-vessels.html"
     },
     {
-      "id": "knowledge-exchanger-2026-07",
-      "date": "2026-07-20",
+      "id": "knowledge-vessels-electrical-2026-07",
+      "date": "2026-07-21",
       "category": "page",
       "title": {
-        "en": "Heat exchanger knowledge guide added to Knowledge",
-        "zh": "知识库新增换热器图文导读"
+        "en": "Knowledge hub: vessels & electrical guides, reordered path",
+        "zh": "知识库新增容器与电气专章，并重排学习路径"
       },
       "summary": {
-        "en": "New illustrated page: cycle roles, families, LMTD and approach, duty reading, frost/fouling/oil, high-temperature heat-pump duty, and a selection checklist.",
-        "zh": "新增图文专页：循环角色、结构家族、接近温度与流路、工况读法、结霜结垢与回油、高温热泵要点与选型清单。"
+        "en": "New illustrated pages on oil separators, accumulators, receivers, flash tanks, plus motors, VFDs, controllers, AI/IoT. Hub order: fundamentals → refrigerants → compressors → heat exchangers → vessels → valves → electrical → industrial HTHP.",
+        "zh": "新增油分/气分/贮液器/闪发罐，以及电机、变频、控制器、AI/物联图文导读。枢纽顺序：基础 → 制冷剂 → 压缩机 → 换热器 → 容器 → 阀件 → 电气 → 工业高温热泵。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
+      "id": "knowledge-hx-valve-cutaway-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger & valve guides: cutaway figures and clearer Chinese",
+        "zh": "换热器与阀件导读：剖视图升级与中文措辞优化"
+      },
+      "summary": {
+        "en": "Family/TXV–EEV/reversing panels now show internal cutaways (aligned with the compressor guide). Chinese copy rewritten for clearer engineering wording.",
+        "zh": "结构家族、TXV/EEV 与四通换向等配图改为内部剖视（对齐压缩机导读风格）；中文全文润色，减少直译与费解表述。"
       },
       "url": "/knowledge-exchanger.html"
     },
@@ -73,18 +73,18 @@
       "url": "/knowledge-valves.html"
     },
     {
-      "id": "briefing-2026-w29",
-      "date": "2026-07-19",
-      "category": "briefing",
+      "id": "knowledge-exchanger-2026-07",
+      "date": "2026-07-20",
+      "category": "page",
       "title": {
-        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
-        "zh": "2026年第29周制冷与热泵行业简报"
+        "en": "Heat exchanger knowledge guide added to Knowledge",
+        "zh": "知识库新增换热器图文导读"
       },
       "summary": {
-        "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
-        "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
+        "en": "New illustrated page: cycle roles, families, LMTD and approach, duty reading, frost/fouling/oil, high-temperature heat-pump duty, and a selection checklist.",
+        "zh": "新增图文专页：循环角色、结构家族、接近温度与流路、工况读法、结霜结垢与回油、高温热泵要点与选型清单。"
       },
-      "url": "/briefings/2026-w29.html"
+      "url": "/knowledge-exchanger.html"
     },
     {
       "id": "knowledge-compressor-2026-07",
@@ -101,18 +101,18 @@
       "url": "/knowledge-compressor.html"
     },
     {
-      "id": "annex68-iea-hpt-2026-07",
-      "date": "2026-07-09",
-      "category": "page",
+      "id": "briefing-2026-w29",
+      "date": "2026-07-19",
+      "category": "briefing",
       "title": {
-        "en": "HPT Annex 68 progress snapshot (July 2026)",
-        "zh": "Annex 68 与 IEA HPT 最新进展简报"
+        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
+        "zh": "2026年第29周制冷与热泵行业简报"
       },
       "summary": {
-        "en": "Restored Project 68 note page: Vienna HPC workshop (80+ participants), Task 1 database at 55+ suppliers and 40+ demo cases, sector integration templates, and Skills4HP updates.",
-        "zh": "修复 Project 68 独立页并更新至 7 月版：维也纳热泵大会工作坊（80+ 参与者）、Task 1 数据库 55+ 供方与 40+ 示范案例、行业集成模版与 Skills4HP 进展。"
+        "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
+        "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
       },
-      "url": "/briefings/annex68-iea-hpt.html"
+      "url": "/briefings/2026-w29.html"
     }
   ]
 }

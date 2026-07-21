@@ -1,0 +1,463 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "category": "site",
+      "url": "/",
+      "title": {
+        "en": "Home — Jing Yanrong",
+        "zh": "首页 — 荆炎荣"
+      },
+      "summary": {
+        "en": "Industrial refrigeration and wide-temperature heat pumps; engineering toolbox and articles.",
+        "zh": "工业制冷与宽温区热泵；工程工具箱与文章内容入口。"
+      },
+      "keywords": {
+        "en": ["home", "toolbox", "about", "heat pump", "refrigeration"],
+        "zh": ["首页", "工具箱", "关于", "热泵", "制冷"]
+      }
+    },
+    {
+      "id": "articles",
+      "category": "page",
+      "url": "/articles.html",
+      "title": {
+        "en": "Articles — Industry briefings & engineering insights",
+        "zh": "文章中心 — 行业简报与工程洞察"
+      },
+      "summary": {
+        "en": "Archive of weekly industry briefings and engineering insight essays.",
+        "zh": "行业周报与工程洞察文章归档。"
+      },
+      "keywords": {
+        "en": ["articles", "archive", "briefings", "insights"],
+        "zh": ["文章", "归档", "简报", "洞察", "周报"]
+      }
+    },
+    {
+      "id": "knowledge",
+      "category": "page",
+      "url": "/knowledge.html",
+      "title": {
+        "en": "Knowledge hub — Heat pump learning path",
+        "zh": "知识库 — 热泵学习路径"
+      },
+      "summary": {
+        "en": "Illustrated guides: fundamentals, refrigerants, compressors, heat exchangers, vessels, valves, electrical, HTHP.",
+        "zh": "图文导读：基础、制冷剂、压缩机、换热器、容器、阀件、电气、工业高温热泵。"
+      },
+      "keywords": {
+        "en": ["knowledge", "basics", "learning path"],
+        "zh": ["知识库", "基础", "学习路径"]
+      }
+    },
+    {
+      "id": "knowledge-refrigerants",
+      "category": "page",
+      "url": "/knowledge-refrigerants.html",
+      "title": {
+        "en": "Refrigerant knowledge guide",
+        "zh": "制冷剂知识导读"
+      },
+      "summary": {
+        "en": "Common heat-pump refrigerants, GWP, safety groups, and selection notes.",
+        "zh": "常用热泵工质、GWP、安全分类与选型要点。"
+      },
+      "keywords": {
+        "en": ["refrigerant", "R290", "R32", "CO2", "ammonia", "HFO", "GWP"],
+        "zh": ["制冷剂", "工质", "丙烷", "二氧化碳", "氨", "GWP"]
+      }
+    },
+    {
+      "id": "knowledge-compressor",
+      "category": "page",
+      "url": "/knowledge-compressor.html",
+      "title": {
+        "en": "Compressor knowledge guide",
+        "zh": "压缩机知识导读"
+      },
+      "summary": {
+        "en": "Scroll, screw, reciprocating and oil-free compressors for heat pumps and refrigeration.",
+        "zh": "涡旋、螺杆、活塞与无油压缩机在热泵与制冷中的要点。"
+      },
+      "keywords": {
+        "en": ["compressor", "screw", "scroll", "oil-free", "maglev"],
+        "zh": ["压缩机", "螺杆", "涡旋", "无油", "磁悬浮"]
+      }
+    },
+    {
+      "id": "knowledge-exchanger",
+      "category": "page",
+      "url": "/knowledge-exchanger.html",
+      "title": {
+        "en": "Heat exchanger knowledge guide",
+        "zh": "换热器知识导读"
+      },
+      "summary": {
+        "en": "Cycle roles, families, LMTD/approach, frost, fouling, and HTHP duty.",
+        "zh": "循环角色、结构家族、接近温度、结霜结垢与高温热泵工况。"
+      },
+      "keywords": {
+        "en": ["heat exchanger", "LMTD", "PHE", "shell and tube", "approach"],
+        "zh": ["换热器", "板换", "壳管", "接近温度", "结霜"]
+      }
+    },
+    {
+      "id": "knowledge-vessels",
+      "category": "page",
+      "url": "/knowledge-vessels.html",
+      "title": {
+        "en": "Vessels knowledge guide",
+        "zh": "容器知识导读"
+      },
+      "summary": {
+        "en": "Oil separators, accumulators, receivers, flash tanks and system vessels.",
+        "zh": "油分、气分、贮液器、闪发罐等系统容器。"
+      },
+      "keywords": {
+        "en": ["vessel", "oil separator", "accumulator", "receiver", "flash tank"],
+        "zh": ["容器", "油分离器", "气液分离器", "贮液器", "闪发罐"]
+      }
+    },
+    {
+      "id": "knowledge-valves",
+      "category": "page",
+      "url": "/knowledge-valves.html",
+      "title": {
+        "en": "Valve knowledge guide",
+        "zh": "阀件知识导读"
+      },
+      "summary": {
+        "en": "TXV/EEV, reversing valves, system valves and selection checklist.",
+        "zh": "热力/电子膨胀阀、换向阀、系统阀与选型清单。"
+      },
+      "keywords": {
+        "en": ["valve", "TXV", "EEV", "expansion", "reversing"],
+        "zh": ["阀件", "膨胀阀", "电子膨胀阀", "四通阀", "换向"]
+      }
+    },
+    {
+      "id": "knowledge-electrical",
+      "category": "page",
+      "url": "/knowledge-electrical.html",
+      "title": {
+        "en": "Electrical & controls knowledge guide",
+        "zh": "电气与控制知识导读"
+      },
+      "summary": {
+        "en": "Motors, VFDs, controllers, panels, AI/IoT for heat-pump systems.",
+        "zh": "电机、变频、控制器、盘柜与 AI/物联。"
+      },
+      "keywords": {
+        "en": ["electrical", "VFD", "motor", "controller", "IoT"],
+        "zh": ["电气", "变频", "电机", "控制器", "物联"]
+      }
+    },
+    {
+      "id": "hthp-column",
+      "category": "page",
+      "url": "/hthp-column.html",
+      "title": {
+        "en": "HTHP column — R&D roadmap & adoption barriers",
+        "zh": "高温热泵专栏 — 研发路线与推广障碍"
+      },
+      "summary": {
+        "en": "IIR Technical Brief No. 61 themes and Taiyuan conference adoption barriers.",
+        "zh": "IIR 技术简报第61号主题与太原会议推广障碍梳理。"
+      },
+      "keywords": {
+        "en": ["HTHP", "high temperature", "industrial heat pump", "IIR", "steam"],
+        "zh": ["高温热泵", "工业热泵", "蒸汽", "推广", "研发"]
+      }
+    },
+    {
+      "id": "heat-pump-standards",
+      "category": "tool",
+      "url": "/heat-pump-standards.html",
+      "title": {
+        "en": "Heat pump standards quick reference",
+        "zh": "热泵标准速查"
+      },
+      "summary": {
+        "en": "Searchable catalogue of domestic and international heat-pump standards and labels.",
+        "zh": "可检索的国内外热泵标准与能效标识速查。"
+      },
+      "keywords": {
+        "en": ["standards", "GB", "ISO", "AHRI", "label", "FAS"],
+        "zh": ["标准", "国标", "能效", "标识", "AHRI"]
+      }
+    },
+    {
+      "id": "heat-pump-refrigerants",
+      "category": "tool",
+      "url": "/heat-pump-refrigerants.html",
+      "title": {
+        "en": "Common heat pump refrigerants table",
+        "zh": "常用热泵制冷剂表"
+      },
+      "summary": {
+        "en": "Quick lookup of common refrigerants used in heat pumps.",
+        "zh": "热泵常用制冷剂物性与安全分类速查。"
+      },
+      "keywords": {
+        "en": ["refrigerants table", "properties", "safety"],
+        "zh": ["制冷剂表", "物性", "安全分类"]
+      }
+    },
+    {
+      "id": "heat-pump-policies",
+      "category": "tool",
+      "url": "/heat-pump-policies.html",
+      "title": {
+        "en": "Industrial heat pump policies map",
+        "zh": "工业热泵政策查阅"
+      },
+      "summary": {
+        "en": "Policy orientation for industrial heat-pump electrification and incentives.",
+        "zh": "工业热泵电气化与激励相关政策查阅。"
+      },
+      "keywords": {
+        "en": ["policy", "subsidy", "electrification", "carbon"],
+        "zh": ["政策", "补贴", "电气化", "双碳"]
+      }
+    },
+    {
+      "id": "useful-links",
+      "category": "tool",
+      "url": "/useful-links.html",
+      "title": {
+        "en": "Useful engineering links",
+        "zh": "工程常用外链"
+      },
+      "summary": {
+        "en": "Curated links to IIR, IEA HPT, EHPA, ASHRAE, OEM selection tools.",
+        "zh": "IIR、IEA HPT、EHPA、ASHRAE 与 OEM 选型工具外链。"
+      },
+      "keywords": {
+        "en": ["links", "IIR", "IEA", "ASHRAE", "Bitzer", "Dorin"],
+        "zh": ["外链", "选型", "IIR", "IEA", "ASHRAE"]
+      }
+    },
+    {
+      "id": "annex68",
+      "category": "page",
+      "url": "/briefings/annex68-iea-hpt.html",
+      "title": {
+        "en": "IEA HPT Annex / Project 68 notes",
+        "zh": "IEA HPT Annex / Project 68 笔记"
+      },
+      "summary": {
+        "en": "Notes on IEA Heat Pumping Technologies high-temperature heat pump work.",
+        "zh": "IEA 热泵技术高温热泵相关工作笔记。"
+      },
+      "keywords": {
+        "en": ["Annex 68", "IEA HPT", "Project 68", "HTHP"],
+        "zh": ["Annex 68", "IEA", "高温热泵", "笔记"]
+      }
+    },
+    {
+      "id": "conferences",
+      "category": "page",
+      "url": "/briefings/conferences.html",
+      "title": {
+        "en": "Conference & exhibition notes",
+        "zh": "展会与会议笔记"
+      },
+      "summary": {
+        "en": "Notes from industry conferences including Taiyuan HTHP trends.",
+        "zh": "行业会议与展会笔记，含太原高温热泵趋势。"
+      },
+      "keywords": {
+        "en": ["conference", "exhibition", "Taiyuan", "trends"],
+        "zh": ["展会", "会议", "太原", "趋势"]
+      }
+    },
+    {
+      "id": "tool-euc",
+      "category": "tool",
+      "url": "https://euc.jingyanrong.com",
+      "title": {
+        "en": "Engineering Toolbox (unit conversion)",
+        "zh": "工程工具箱（单位换算）"
+      },
+      "summary": {
+        "en": "Unit conversion and engineering calculations.",
+        "zh": "单位换算与常用工程计算。"
+      },
+      "keywords": {
+        "en": ["unit", "conversion", "calculator"],
+        "zh": ["单位", "换算", "计算"]
+      }
+    },
+    {
+      "id": "tool-mc",
+      "category": "tool",
+      "url": "https://mc.jingyanrong.com",
+      "title": {
+        "en": "Industrial Heat Pump Matching Calculator",
+        "zh": "工业热泵匹配计算"
+      },
+      "summary": {
+        "en": "Matching calculation for industrial heat pump systems with MVR support.",
+        "zh": "工业热泵系统匹配计算，含 MVR 支持。"
+      },
+      "keywords": {
+        "en": ["matching", "MVR", "sizing"],
+        "zh": ["匹配", "选型", "MVR"]
+      }
+    },
+    {
+      "id": "tool-ba",
+      "category": "tool",
+      "url": "https://ba.jingyanrong.com",
+      "title": {
+        "en": "Heat Pump Benefit Analyzer",
+        "zh": "热泵效益分析"
+      },
+      "summary": {
+        "en": "Economic and environmental benefit analysis for industrial heat pumps.",
+        "zh": "工业热泵经济与环境效益分析。"
+      },
+      "keywords": {
+        "en": ["benefit", "ROI", "carbon", "economy"],
+        "zh": ["效益", "经济性", "碳减排", "回本"]
+      }
+    },
+    {
+      "id": "tool-tpc",
+      "category": "tool",
+      "url": "https://tpc.jingyanrong.com",
+      "title": {
+        "en": "Thermophysical Property — CoolProp",
+        "zh": "热物性查询 — CoolProp"
+      },
+      "summary": {
+        "en": "CoolProp fluid thermophysical property query.",
+        "zh": "基于 CoolProp 的工质热物性查询。"
+      },
+      "keywords": {
+        "en": ["CoolProp", "properties", "fluid"],
+        "zh": ["物性", "CoolProp", "工质"]
+      }
+    },
+    {
+      "id": "tool-ft",
+      "category": "tool",
+      "url": "https://ft.jingyanrong.com",
+      "title": {
+        "en": "Flash Tank Expert",
+        "zh": "闪发罐专家"
+      },
+      "summary": {
+        "en": "Flash tank calculator for refrigeration and heat pump systems.",
+        "zh": "制冷与热泵闪发罐计算。"
+      },
+      "keywords": {
+        "en": ["flash tank", "separator"],
+        "zh": ["闪发罐", "闪蒸"]
+      }
+    },
+    {
+      "id": "tool-ofc",
+      "category": "tool",
+      "url": "https://ofc.jingyanrong.com",
+      "title": {
+        "en": "Oil-Free Compressor Performance Calculator",
+        "zh": "无油压缩机性能计算"
+      },
+      "summary": {
+        "en": "Performance calculation for oil-free compressors including MVR.",
+        "zh": "无油压缩机性能计算，含制冷、热泵、气体压缩与 MVR。"
+      },
+      "keywords": {
+        "en": ["oil-free", "compressor", "performance"],
+        "zh": ["无油", "压缩机", "性能"]
+      }
+    },
+    {
+      "id": "tool-oc",
+      "category": "tool",
+      "url": "https://oc.jingyanrong.com",
+      "title": {
+        "en": "Oil-injected Compressor Calculator",
+        "zh": "喷油压缩机计算"
+      },
+      "summary": {
+        "en": "Oil-injected compressor performance for refrigeration and heat pumps.",
+        "zh": "喷油压缩机性能计算（制冷、热泵、氨热泵等）。"
+      },
+      "keywords": {
+        "en": ["oil-injected", "screw"],
+        "zh": ["喷油", "螺杆"]
+      }
+    },
+    {
+      "id": "tool-exp",
+      "category": "tool",
+      "url": "https://exp.jingyanrong.com",
+      "title": {
+        "en": "Expander Performance Calculator",
+        "zh": "膨胀机性能计算"
+      },
+      "summary": {
+        "en": "Expander performance for ORC, steam and gas expansion.",
+        "zh": "膨胀机性能计算（ORC、蒸汽、气体膨胀）。"
+      },
+      "keywords": {
+        "en": ["expander", "ORC"],
+        "zh": ["膨胀机", "ORC"]
+      }
+    },
+    {
+      "id": "tool-aswt",
+      "category": "tool",
+      "url": "https://aswt.jingyanrong.com/",
+      "title": {
+        "en": "Stratified Water Thermal Storage Calculator",
+        "zh": "分层蓄热水箱计算"
+      },
+      "summary": {
+        "en": "Industrial stratified water storage: capacity and Richardson number.",
+        "zh": "工业分层蓄热水箱：蓄热量与 Richardson 数。"
+      },
+      "keywords": {
+        "en": ["thermal storage", "TES", "stratified"],
+        "zh": ["蓄热", "水箱", "分层"]
+      }
+    },
+    {
+      "id": "tool-rcc",
+      "category": "tool",
+      "url": "https://rcc.jingyanrong.com/",
+      "title": {
+        "en": "Reciprocating Compressor Calculator (RCC Pro)",
+        "zh": "活塞压缩机计算（RCC Pro）"
+      },
+      "summary": {
+        "en": "Single-stage, cascade, two-stage and ammonia heat pump calculation.",
+        "zh": "单级、复叠、双级与氨热泵等活塞机计算。"
+      },
+      "keywords": {
+        "en": ["reciprocating", "piston", "cascade"],
+        "zh": ["活塞", "往复", "复叠"]
+      }
+    },
+    {
+      "id": "tool-separator",
+      "category": "tool",
+      "url": "https://separator.jingyanrong.com",
+      "title": {
+        "en": "Gas-Liquid Separator Sizing Calculator",
+        "zh": "气液分离器选型计算"
+      },
+      "summary": {
+        "en": "Vertical/horizontal separators, surge drum and steam separators.",
+        "zh": "立式/卧式气液分离、Surge Drum 与蒸汽分离器选型。"
+      },
+      "keywords": {
+        "en": ["separator", "surge drum"],
+        "zh": ["气液分离器", "分离器"]
+      }
+    }
+  ]
+}

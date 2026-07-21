@@ -1,6 +1,6 @@
 /**
- * Generates article HTML pages, content-index.json, feed.xml, and sitemap.xml
- * from content JSON files before Vite build.
+ * Generates article HTML pages, content-index.json, search-index.json,
+ * feed.xml, and sitemap.xml from content JSON files before Vite build.
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
@@ -415,6 +415,122 @@ function insightToUpdate(i) {
   };
 }
 
+function plainText(htmlOrText, maxLen = 0) {
+  const text = String(htmlOrText || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\*\*/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (maxLen > 0) return text.slice(0, maxLen);
+  return text;
+}
+
+function joinLangLists(value) {
+  if (!value) return { en: '', zh: '' };
+  if (typeof value === 'string') return { en: value, zh: value };
+  const join = (arr) => (Array.isArray(arr) ? arr.map((x) => plainText(x)).filter(Boolean).join(' ') : plainText(arr));
+  return {
+    en: join(value.en),
+    zh: join(value.zh),
+  };
+}
+
+function briefingBodyText(b) {
+  const highlights = joinLangLists(b.highlights);
+  const fromSections = { en: [], zh: [] };
+  (b.sections || []).forEach((sec) => {
+    const items = sec?.items || {};
+    (items.en || []).forEach((line) => fromSections.en.push(plainText(line)));
+    (items.zh || []).forEach((line) => fromSections.zh.push(plainText(line)));
+  });
+  return {
+    en: [highlights.en, fromSections.en.join(' ')].filter(Boolean).join(' ').slice(0, 2400),
+    zh: [highlights.zh, fromSections.zh.join(' ')].filter(Boolean).join(' ').slice(0, 2400),
+  };
+}
+
+function loadSearchPages() {
+  const path = join(CONTENT_DIR, 'search-pages.json');
+  if (!existsSync(path)) return [];
+  try {
+    const data = JSON.parse(readFileSync(path, 'utf-8'));
+    return Array.isArray(data.pages) ? data.pages : [];
+  } catch {
+    return [];
+  }
+}
+
+function buildSearchIndex(briefings, insights) {
+  const pages = loadSearchPages().map((p) => ({
+    id: p.id,
+    category: p.category || 'page',
+    url: p.url,
+    title: p.title,
+    summary: p.summary || { en: '', zh: '' },
+    keywords: p.keywords || { en: [], zh: [] },
+    body: p.body || { en: '', zh: '' },
+    date: p.date || null,
+  }));
+
+  const articles = [
+    ...briefings.map((b) => ({
+      id: b.id,
+      category: 'briefing',
+      url: `/briefings/${b.slug}.html`,
+      title: b.title,
+      summary: {
+        en: b.subtitle?.en || b.highlights?.en?.[0] || '',
+        zh: b.subtitle?.zh || b.highlights?.zh?.[0] || '',
+      },
+      keywords: { en: [], zh: [] },
+      body: briefingBodyText(b),
+      date: b.published,
+    })),
+    ...insights.map((i) => ({
+      id: i.id,
+      category: 'insight',
+      url: `/insights/${i.slug}.html`,
+      title: i.title,
+      summary: {
+        en: plainText(i.excerpt?.en, 220),
+        zh: plainText(i.excerpt?.zh, 220),
+      },
+      keywords: {
+        en: i.tag?.en ? [i.tag.en] : [],
+        zh: i.tag?.zh ? [i.tag.zh] : [],
+      },
+      body: {
+        en: plainText(i.excerpt?.en, 800),
+        zh: plainText(i.excerpt?.zh, 800),
+      },
+      date: i.published,
+    })),
+  ];
+
+  const byId = new Map();
+  [...pages, ...articles].forEach((item) => {
+    if (item?.id) byId.set(item.id, item);
+  });
+
+  const items = [...byId.values()].sort((a, b) => {
+    const da = a.date || '';
+    const db = b.date || '';
+    if (da && db && da !== db) return da < db ? 1 : -1;
+    if (da && !db) return -1;
+    if (!da && db) return 1;
+    return String(a.title?.en || '').localeCompare(String(b.title?.en || ''));
+  });
+
+  const payload = {
+    generatedAt: new Date().toISOString().slice(0, 10),
+    count: items.length,
+    items,
+  };
+
+  writeFileSync(join(ROOT, 'public', 'search-index.json'), JSON.stringify(payload, null, 2));
+  return payload;
+}
+
 function buildSiteUpdates(briefings, insights) {
   const manual = loadManualSiteUpdates();
   const auto = [];
@@ -431,7 +547,10 @@ function buildSiteUpdates(briefings, insights) {
   });
 
   const items = [...byId.values()]
-    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .sort((a, b) => {
+      if (a.date === b.date) return 0;
+      return a.date < b.date ? 1 : -1;
+    })
     .slice(0, 8);
 
   const payload = {
@@ -453,6 +572,7 @@ function main() {
   insights.forEach((i) => articleUrls.push(buildInsightPage(i)));
 
   const index = buildContentIndex(briefings, insights);
+  const searchIndex = buildSearchIndex(briefings, insights);
   buildSiteUpdates(briefings, insights);
   buildFeed(index.items);
   buildSitemap(articleUrls);
@@ -469,7 +589,9 @@ function main() {
     )
   );
 
-  console.log(`[build-content] ${briefings.length} briefing(s), ${insights.length} insight(s), feed + sitemap updated.`);
+  console.log(
+    `[build-content] ${briefings.length} briefing(s), ${insights.length} insight(s), search index ${searchIndex.count} item(s), feed + sitemap updated.`
+  );
 }
 
 main();

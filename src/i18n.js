@@ -42,6 +42,15 @@ export const translations = {
         'whatsNew.category.tool': 'Tool',
         'whatsNew.category.site': 'Site',
 
+        'search.title': 'Search',
+        'search.placeholder': 'Search pages, articles, tools…',
+        'search.idle': 'Type a keyword to search this site.',
+        'search.noResults': 'No matches. Try another keyword.',
+        'search.unavailable': 'Search index is unavailable right now.',
+        'search.external': 'External',
+        'search.hintMac': '⌘K to open · ↑↓ to move · Enter to open',
+        'search.hintWin': 'Ctrl+K to open · ↑↓ to move · Enter to open',
+
         'hthpCol.seo.title': 'HTHP column — R&D roadmap & adoption barriers',
         'hthpCol.seo.desc': 'Future R&D directions from IIR Technical Brief No. 61 (2026, 2nd ed.) and five adoption barriers from the 2026 Taiyuan high-temperature & industrial heat pump conference—for plant owners, integrators, and investors.',
         'hthpCol.kicker': 'HTHP column · Strategy & deployment',
@@ -1121,6 +1130,15 @@ export const translations = {
         'whatsNew.category.page': '页面',
         'whatsNew.category.tool': '工具',
         'whatsNew.category.site': '站点',
+
+        'search.title': '站内搜索',
+        'search.placeholder': '搜索页面、文章、工具…',
+        'search.idle': '输入关键词搜索本站内容。',
+        'search.noResults': '没有匹配结果，换个关键词试试。',
+        'search.unavailable': '搜索索引暂时不可用。',
+        'search.external': '外链',
+        'search.hintMac': '⌘K 打开 · ↑↓ 选择 · Enter 打开',
+        'search.hintWin': 'Ctrl+K 打开 · ↑↓ 选择 · Enter 打开',
 
         'hthpCol.seo.title': '高温热泵专栏｜研发方向与推广痛点',
         'hthpCol.seo.desc': '摘自 IIR 第 61 号技术简报（2026 第 2 版）§7.2 未来研发方向，以及 2026 太原高温及工业热泵大会总结的五大规模化推广痛点——面向业主、系统集成商与投资方。',
