@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refrigeration &amp; heat-pump cycles — Knowledge guide</title>
+    <meta id="meta-page-title" name="title" content="Refrigeration &amp; heat-pump cycles — Knowledge guide">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to reverse Carnot, reverse Brayton, subcritical vapor compression, economizer/two-stage/cascade, transcritical CO₂, absorption, and open steam/MVR—engineering orientation for practitioners.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-cycles.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-cycles.html">
+    <meta id="meta-og-title" property="og:title" content="Refrigeration &amp; heat-pump cycles — Knowledge guide">
+    <meta id="meta-og-description" property="og:description" content="Cycle families for heat pumps and refrigeration: Carnot, Brayton, VCC, transcritical CO₂, absorption, steam/MVR.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Refrigeration &amp; heat-pump cycles — Knowledge guide">
+    <meta id="meta-twitter-description" name="twitter:description" content="Illustrated cycle guide: reverse Carnot, Brayton, VCC upgrades, transcritical CO₂, absorption, steam/MVR.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeCycles.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeCycles.kicker">Heat pump basics · Cycles</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeCycles.pageTitle">Refrigeration &amp; heat-pump cycle guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeCycles.lede" data-i18n-html="true">Illustrated guide to refrigeration and heat-pump cycle families.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeCycles.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-map"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item0.kicker">Chapter 0</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item0.linkTitle">Family map</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-carnot"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item1.linkTitle">Reverse Carnot</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-brayton"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item2.linkTitle">Reverse Brayton</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-vcc"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item3.linkTitle">Subcritical VCC</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-enhance"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item4.linkTitle">Upgrades</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-trans"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item5.linkTitle">Transcritical CO₂</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-abs"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item6.linkTitle">Absorption</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-steam"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item7.kicker">Chapter 7</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item7.linkTitle">Open steam / MVR</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-choose"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item8.kicker">Chapter 8</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item8.linkTitle">Selection map</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kcy-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeCycles.toc.item9.kicker">FAQ</span><span class="knowledge-toc-link-title" data-i18n="knowledgeCycles.toc.item9.linkTitle">Quick FAQs</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kcy-choose" data-i18n="knowledgeCycles.toc.item8.linkTitle">Selection map</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html#kp-article-1" data-i18n="knowledgeCycles.footer.basics">Fundamentals Part 2</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledge.hub.refrigerants.title">Refrigerants</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kcy-map" class="knowledge-article knowledge-section" aria-labelledby="kcy-map-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-map-title" data-i18n="knowledgeCycles.map.title">0 · Cycle families</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.map.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.map.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-map.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.map.figure.alt" alt="Cycle family map" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.map.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.map.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.map.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.map.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.map.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.map.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.map.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.map.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.map.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-carnot" class="knowledge-article knowledge-section" aria-labelledby="kcy-carnot-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-carnot-title" data-i18n="knowledgeCycles.carnot.title">1 · Reverse Carnot</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.carnot.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.carnot.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-carnot-ts.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.carnot.figure.alt" alt="Reverse Carnot on T–s" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.carnot.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.carnot.figure2.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-carnot-vs-real.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.carnot.figure2.alt" alt="Carnot versus real cycle" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.carnot.figure2.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.carnot.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.carnot.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.carnot.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.carnot.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.carnot.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.carnot.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-brayton" class="knowledge-article knowledge-section" aria-labelledby="kcy-brayton-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-brayton-title" data-i18n="knowledgeCycles.brayton.title">2 · Reverse Brayton</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.brayton.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.brayton.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-brayton.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.brayton.figure.alt" alt="Reverse Brayton schematic" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.brayton.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.brayton.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.brayton.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.brayton.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.brayton.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.brayton.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.brayton.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-vcc" class="knowledge-article knowledge-section" aria-labelledby="kcy-vcc-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-vcc-title" data-i18n="knowledgeCycles.vcc.title">3 · Subcritical vapor compression</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.vcc.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.vcc.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-vcc-flow.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.vcc.figure.alt" alt="Basic VCC flow" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.vcc.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.vcc.figure2.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-vcc-ph.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.vcc.figure2.alt" alt="Subcritical VCC on P–h" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.vcc.figure2.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.vcc.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.vcc.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.vcc.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.vcc.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.vcc.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.vcc.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.vcc.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.vcc.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-enhance" class="knowledge-article knowledge-section" aria-labelledby="kcy-enhance-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-enhance-title" data-i18n="knowledgeCycles.enhance.title">4 · Upgrades</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.enhance.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.enhance.eco.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-economizer.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.enhance.eco.figure.alt" alt="Economizer cycle" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.enhance.eco.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.enhance.ts.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-two-stage.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.enhance.ts.figure.alt" alt="Two-stage compression" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.enhance.ts.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.enhance.cas.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-cascade.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.enhance.cas.figure.alt" alt="Cascade cycle" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.enhance.cas.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.enhance.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.enhance.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.enhance.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.enhance.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.enhance.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.enhance.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-trans" class="knowledge-article knowledge-section" aria-labelledby="kcy-trans-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-trans-title" data-i18n="knowledgeCycles.trans.title">5 · Transcritical CO₂</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.trans.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.trans.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-transcritical-ph.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.trans.figure.alt" alt="Transcritical CO₂ P–h" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.trans.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeCycles.trans.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeCycles.trans.th.mode">Mode</th>
+                                <th scope="col" data-i18n="knowledgeCycles.trans.th.highside">High-side behavior</th>
+                                <th scope="col" data-i18n="knowledgeCycles.trans.th.pressure">Pressure class</th>
+                                <th scope="col" data-i18n="knowledgeCycles.trans.th.use">Typical use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.trans.r0.mode"></th><td data-i18n="knowledgeCycles.trans.r0.highside"></td><td data-i18n="knowledgeCycles.trans.r0.pressure"></td><td data-i18n="knowledgeCycles.trans.r0.use"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.trans.r1.mode"></th><td data-i18n="knowledgeCycles.trans.r1.highside"></td><td data-i18n="knowledgeCycles.trans.r1.pressure"></td><td data-i18n="knowledgeCycles.trans.r1.use"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.trans.r2.mode"></th><td data-i18n="knowledgeCycles.trans.r2.highside"></td><td data-i18n="knowledgeCycles.trans.r2.pressure"></td><td data-i18n="knowledgeCycles.trans.r2.use"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.trans.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.trans.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.trans.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.trans.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.trans.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.trans.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-abs" class="knowledge-article knowledge-section" aria-labelledby="kcy-abs-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-abs-title" data-i18n="knowledgeCycles.abs.title">6 · Absorption</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.abs.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.abs.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-absorption.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.abs.figure.alt" alt="Absorption cycle" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.abs.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.abs.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.abs.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.abs.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.abs.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.abs.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.abs.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-steam" class="knowledge-article knowledge-section" aria-labelledby="kcy-steam-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-steam-title" data-i18n="knowledgeCycles.steam.title">7 · Open steam / MVR</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.steam.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeCycles.steam.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-cycles-steam.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeCycles.steam.figure.alt" alt="Open steam compression" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeCycles.steam.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.steam.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.steam.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.steam.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.steam.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeCycles.steam.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeCycles.steam.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-choose" class="knowledge-article knowledge-section" aria-labelledby="kcy-choose-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-choose-title" data-i18n="knowledgeCycles.choose.title">8 · Selection map</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeCycles.choose.lede" data-i18n-html="true"></p>
+                <div class="knowledge-co2-table-wrap" role="region" data-i18n-aria-label="knowledgeCycles.choose.table.aria">
+                    <table class="knowledge-co2-table knowledge-ref-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="knowledgeCycles.choose.th.lift">Lift / situation</th>
+                                <th scope="col" data-i18n="knowledgeCycles.choose.th.cycle">Typical cycle</th>
+                                <th scope="col" data-i18n="knowledgeCycles.choose.th.fluid">Fluid hints</th>
+                                <th scope="col" data-i18n="knowledgeCycles.choose.th.link">On this site</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r0.lift"></th><td data-i18n="knowledgeCycles.choose.r0.cycle"></td><td data-i18n="knowledgeCycles.choose.r0.fluid"></td><td data-i18n="knowledgeCycles.choose.r0.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r1.lift"></th><td data-i18n="knowledgeCycles.choose.r1.cycle"></td><td data-i18n="knowledgeCycles.choose.r1.fluid"></td><td data-i18n="knowledgeCycles.choose.r1.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r2.lift"></th><td data-i18n="knowledgeCycles.choose.r2.cycle"></td><td data-i18n="knowledgeCycles.choose.r2.fluid"></td><td data-i18n="knowledgeCycles.choose.r2.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r3.lift"></th><td data-i18n="knowledgeCycles.choose.r3.cycle"></td><td data-i18n="knowledgeCycles.choose.r3.fluid"></td><td data-i18n="knowledgeCycles.choose.r3.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r4.lift"></th><td data-i18n="knowledgeCycles.choose.r4.cycle"></td><td data-i18n="knowledgeCycles.choose.r4.fluid"></td><td data-i18n="knowledgeCycles.choose.r4.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r5.lift"></th><td data-i18n="knowledgeCycles.choose.r5.cycle"></td><td data-i18n="knowledgeCycles.choose.r5.fluid"></td><td data-i18n="knowledgeCycles.choose.r5.link"></td></tr>
+                            <tr><th scope="row" data-i18n="knowledgeCycles.choose.r6.lift"></th><td data-i18n="knowledgeCycles.choose.r6.cycle"></td><td data-i18n="knowledgeCycles.choose.r6.fluid"></td><td data-i18n="knowledgeCycles.choose.r6.link"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="knowledge-reason-text knowledge-ref-footnote" data-i18n="knowledgeCycles.choose.footnote"></p>
+                <p class="knowledge-reason-text" data-i18n="knowledgeCycles.choose.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kcy-faq" class="knowledge-article knowledge-section" aria-labelledby="kcy-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kcy-faq-title" data-i18n="knowledgeCycles.faq.title">Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeCycles.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeCycles.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeCycles.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeCycles.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeCycles.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeCycles.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeCycles.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeCycles.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeCycles.faq.q5.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeCycles.faq.q5.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeCycles.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeCycles.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeCycles.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge.html#kp-article-1" data-i18n="knowledgeCycles.footer.basics">Fundamentals Part 2</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html#kp-article-co2" data-i18n="knowledgeCycles.footer.co2">Extreme-cold CO₂</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-refrigerants.html" data-i18n="knowledge.hub.refrigerants.title">Refrigerants</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html" data-i18n="knowledge.hub.compressor.title">Compressors</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./hthp-column.html" data-i18n="knowledge.hub.hthp.title">Industrial HTHP</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./heat-pump-standards.html" data-i18n="knowledgeCycles.footer.tools">Tools &amp; Standards</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

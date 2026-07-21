@@ -1,4 +1,5 @@
 import { knowledgeRefTranslations } from './i18nKnowledgeRef.js';
+import { knowledgeCyclesTranslations } from './i18nKnowledgeCycles.js';
 import { knowledgeCompTranslations } from './i18nKnowledgeCompressor.js';
 import { knowledgeHxTranslations } from './i18nKnowledgeExchanger.js';
 import { knowledgeValveTranslations } from './i18nKnowledgeValves.js';
@@ -591,9 +592,11 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 future R&D themes and five adoption barriers from the 2026 Taiyuan conference—for owners and integrators.',
         'articles.moreNotes': 'More industry notes',
         'knowledge.hub.title': 'Knowledge base',
-        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigerants, compressors, heat exchangers, vessels, valves, electrical &amp; controls, lubricants, piping, enclosures, shop &amp; test, and industrial high-temperature heat pumps.',
+        'knowledge.hub.lede': 'Evergreen learning paths—fundamentals, refrigeration &amp; heat-pump cycles, refrigerants, compressors, heat exchangers, vessels, valves, electrical &amp; controls, lubricants, piping, enclosures, shop &amp; test, and industrial high-temperature heat pumps.',
         'knowledge.hub.basics.title': 'Heat pump fundamentals',
         'knowledge.hub.basics.desc': 'Seven independent chapters for experts and decision-makers.',
+        'knowledge.hub.cycles.title': 'Cycles',
+        'knowledge.hub.cycles.desc': 'Reverse Carnot, Brayton, vapor compression, transcritical CO₂, absorption, and steam/MVR—illustrated.',
         'knowledge.hub.refrigerants.title': 'Refrigerants',
         'knowledge.hub.refrigerants.desc': 'Illustrated guide plus IIR Table 2 and ASHRAE 34 property data.',
         'knowledge.hub.compressor.title': 'Compressors',
@@ -892,6 +895,7 @@ export const translations = {
         'knowledge.article1.six.r6.text': 'Plants cannot stop. Redundancy, defrosting, part-load control, bypass, thermal storage, and commissioning measurement turn a heat pump into a system engineering problem—not just a box.',
         'knowledge.article1.memory.title': 'One-sentence memory',
         'knowledge.article1.memory.text': 'Boilers are “energy → heat”. Heat pumps are “heat → higher heat”, so they must obey more boundaries—and boundaries create variants.',
+        'knowledge.article1.cyclesCta': 'Want the cycle families drawn out (reverse Carnot, Brayton, VCC upgrades, transcritical CO₂, absorption, steam/MVR)? Continue in the <a href="./knowledge-cycles.html">cycle guide</a>.',
         'knowledge.article1.faq.title': 'Common misconceptions',
         'knowledge.article1.faq.q1.q': '“Isn’t a heat pump just an air-conditioner in reverse?”',
         'knowledge.article1.faq.q1.a': 'The core idea is related, but industrial heat pumps face much larger ΔT, harsher sources, stricter reliability, and often steam/hot-water targets—so the required cycles and equipment scale are different.',
@@ -1102,6 +1106,7 @@ export const translations = {
         'knowledge.article7.faq.q4.a': 'In many regions the majority of hours still favor the heat pump once COP* is computed—hybrid captures those hours while keeping boiler capacity for peaks and cold snaps.',
         'knowledge.article7.disclaimer': 'Gas and electricity prices, tariff rules, and measured efficiencies vary by contract and site; illustrative LHV and η values here are not audit or feasibility-study substitutes.',
         ...knowledgeRefTranslations.en,
+        ...knowledgeCyclesTranslations.en,
         ...knowledgeCompTranslations.en,
         ...knowledgeHxTranslations.en,
         ...knowledgeValveTranslations.en,
@@ -1676,9 +1681,11 @@ export const translations = {
         'articles.series.hthpDesc': 'IIR §7.2 研发主题与 2026 太原大会五大推广痛点——面向业主与集成商。',
         'articles.moreNotes': '更多行业笔记',
         'knowledge.hub.title': '知识库',
-        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷剂百科、压缩机、换热器、容器、阀件、电气、润滑油、管路系统、机柜结构、产线与测试，以及工业高温热泵。',
+        'knowledge.hub.lede': '长期有效的学习路径——基础入门、制冷/热泵循环、制冷剂百科、压缩机、换热器、容器、阀件、电气、润滑油、管路系统、机柜结构、产线与测试，以及工业高温热泵。',
         'knowledge.hub.basics.title': '热泵基础',
         'knowledge.hub.basics.desc': '七章独立专题，面向专家与决策者。',
+        'knowledge.hub.cycles.title': '循环导读',
+        'knowledge.hub.cycles.desc': '逆卡诺、布雷顿、蒸汽压缩、跨临界 CO₂、吸收式与蒸汽/MVR，图文导读。',
         'knowledge.hub.refrigerants.title': '制冷剂百科',
         'knowledge.hub.refrigerants.desc': '图文并茂指南，附 IIR 表 2 与 ASHRAE 34 工质属性数据。',
         'knowledge.hub.compressor.title': '压缩机',
@@ -1972,6 +1979,7 @@ export const translations = {
         'knowledge.article1.six.r6.text': '工厂不能停机。冗余、除霜、部分负荷控制、旁通、蓄热（冷）、调试计量与验收逻辑，会把热泵变成“系统工程问题”，而非单一设备问题。',
         'knowledge.article1.memory.title': '一句话记忆卡片',
         'knowledge.article1.memory.text': '锅炉是“能量 → 热”；热泵是“热 → 更高温的热”。边界越多，变体越多。',
+        'knowledge.article1.cyclesCta': '需要把循环族系画清楚（逆卡诺、布雷顿、蒸汽压缩强化、跨临界 CO₂、吸收式、蒸汽/MVR）？继续看 <a href="./knowledge-cycles.html">循环导读</a>。',
         'knowledge.article1.faq.title': '常见误解澄清',
         'knowledge.article1.faq.q1.q': '“热泵不就是空调反过来用吗？”',
         'knowledge.article1.faq.q1.a': '核心思路相关，但工业热泵往往面临更大的温升、更复杂的热源、更严苛的可靠性，以及蒸汽/高温热水等目标，因此循环与设备尺度都会不同。',
@@ -2182,6 +2190,7 @@ export const translations = {
         'knowledge.article7.faq.q4.a': '算过 COP* 后，许多地区大部分小时仍偏向热泵；混合方案把这些小时吃满，同时保留锅炉应对峰值与寒潮。',
         'knowledge.article7.disclaimer': '气价、电价、计费规则与实测效率因合同与现场而异；文中示意 LHV 与 η 不能替代可研或审计依据。',
         ...knowledgeRefTranslations.zh,
+        ...knowledgeCyclesTranslations.zh,
         ...knowledgeCompTranslations.zh,
         ...knowledgeHxTranslations.zh,
         ...knowledgeValveTranslations.zh,

@@ -1,7 +1,21 @@
 {
-  "version": "knowledge-balance-of-plant-2026-07",
+  "version": "knowledge-cycles-2026-07",
   "generatedAt": "2026-07-21",
   "items": [
+    {
+      "id": "knowledge-cycles-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: refrigeration & heat-pump cycle guide",
+        "zh": "知识库新增制冷/热泵循环导读"
+      },
+      "summary": {
+        "en": "Illustrated map of reverse Carnot, Brayton, vapor-compression upgrades, transcritical CO₂, absorption, and open steam/MVR—inserted between fundamentals and refrigerants.",
+        "zh": "图文介绍逆卡诺、布雷顿、蒸汽压缩强化、跨临界 CO₂、吸收式与开式蒸汽/MVR；学习路径插在基础与制冷剂之间。"
+      },
+      "url": "/knowledge-cycles.html"
+    },
     {
       "id": "knowledge-balance-of-plant-2026-07",
       "date": "2026-07-21",
@@ -99,20 +113,6 @@
         "zh": "新增图文专页：循环角色、结构家族、接近温度与流路、工况读法、结霜结垢与回油、高温热泵要点与选型清单。"
       },
       "url": "/knowledge-exchanger.html"
-    },
-    {
-      "id": "knowledge-compressor-2026-07",
-      "date": "2026-07-19",
-      "category": "page",
-      "title": {
-        "en": "Compressor knowledge guide added to Knowledge",
-        "zh": "知识库新增压缩机图文导读"
-      },
-      "summary": {
-        "en": "New illustrated page: cycle role, machine families, hermetic construction, performance maps, oil return, high-lift heat-pump duty, and a selection checklist—with links to the 匹 chapter, refrigerants, HTHP, and OEM tools.",
-        "zh": "新增图文专页：循环角色、机型家族、全封/半封结构、性能图读法、回油与可靠性、大温升热泵要点与选型清单；并链至「匹」专章、制冷剂百科、工业高温热泵与 OEM 工具。"
-      },
-      "url": "/knowledge-compressor.html"
     }
   ]
 }

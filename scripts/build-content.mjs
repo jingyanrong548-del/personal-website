@@ -328,6 +328,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/`, priority: '1.0', changefreq: 'weekly' },
     { loc: `${SITE}/articles.html`, priority: '0.9', changefreq: 'weekly' },
     { loc: `${SITE}/knowledge.html`, priority: '0.8', changefreq: 'monthly' },
+    { loc: `${SITE}/knowledge-cycles.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/knowledge-refrigerants.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/knowledge-compressor.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/knowledge-exchanger.html`, priority: '0.8', changefreq: 'monthly' },

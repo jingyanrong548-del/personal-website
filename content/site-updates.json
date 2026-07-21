@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "knowledge-cycles-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: refrigeration & heat-pump cycle guide",
+        "zh": "知识库新增制冷/热泵循环导读"
+      },
+      "summary": {
+        "en": "Illustrated map of reverse Carnot, Brayton, vapor-compression upgrades, transcritical CO₂, absorption, and open steam/MVR—inserted between fundamentals and refrigerants.",
+        "zh": "图文介绍逆卡诺、布雷顿、蒸汽压缩强化、跨临界 CO₂、吸收式与开式蒸汽/MVR；学习路径插在基础与制冷剂之间。"
+      },
+      "url": "/knowledge-cycles.html"
+    },
+    {
       "id": "knowledge-balance-of-plant-2026-07",
       "date": "2026-07-21",
       "category": "page",

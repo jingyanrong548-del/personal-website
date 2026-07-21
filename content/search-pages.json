@@ -43,12 +43,29 @@
         "zh": "知识库 — 热泵学习路径"
       },
       "summary": {
-        "en": "Illustrated guides: fundamentals, refrigerants, compressors, heat exchangers, vessels, valves, electrical, HTHP.",
-        "zh": "图文导读：基础、制冷剂、压缩机、换热器、容器、阀件、电气、工业高温热泵。"
+        "en": "Illustrated guides: fundamentals, cycles, refrigerants, compressors, heat exchangers, vessels, valves, electrical, HTHP.",
+        "zh": "图文导读：基础、循环、制冷剂、压缩机、换热器、容器、阀件、电气、工业高温热泵。"
       },
       "keywords": {
         "en": ["knowledge", "basics", "learning path"],
         "zh": ["知识库", "基础", "学习路径"]
+      }
+    },
+    {
+      "id": "knowledge-cycles",
+      "category": "page",
+      "url": "/knowledge-cycles.html",
+      "title": {
+        "en": "Refrigeration & heat-pump cycle guide",
+        "zh": "制冷与热泵循环导读"
+      },
+      "summary": {
+        "en": "Reverse Carnot, Brayton, vapor compression, transcritical CO₂, absorption, and open steam/MVR—illustrated for practitioners.",
+        "zh": "逆卡诺、布雷顿、蒸汽压缩、跨临界 CO₂、吸收式与开式蒸汽/MVR，面向工程实务的图文导读。"
+      },
+      "keywords": {
+        "en": ["cycle", "Carnot", "Brayton", "vapor compression", "transcritical", "CO2", "absorption", "MVR", "heat pump"],
+        "zh": ["循环", "卡诺", "布雷顿", "蒸汽压缩", "跨临界", "二氧化碳", "吸收式", "MVR", "热泵"]
       }
     },
     {

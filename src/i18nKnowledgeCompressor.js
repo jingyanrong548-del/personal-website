@@ -24,7 +24,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.toc.item8.linkTitle': 'FAQ',
 
         'knowledgeComp.role.title': '1 · Role in the vapor-compression cycle',
-        'knowledgeComp.role.lede': 'A boiler <em>makes</em> heat. A heat pump <em>moves</em> heat—and the compressor is what creates the pressure difference that makes that move possible.',
+        'knowledgeComp.role.lede': 'A boiler <em>makes</em> heat. A heat pump <em>moves</em> heat—and the compressor is what creates the pressure difference that makes that move possible. For the full cycle family map (Carnot → VCC upgrades → transcritical / absorption / steam), see the <a href="./knowledge-cycles.html">cycle guide</a>.',
         'knowledgeComp.role.figure.aria': 'Vapor-compression cycle with compressor highlighted',
         'knowledgeComp.role.figure.alt': 'Four-block cycle: evaporator, compressor (highlighted), condenser, expansion valve, with suction and discharge labels.',
         'knowledgeComp.role.figure.caption': 'Schematic only—real plants add oil separators, economizers, and controls. The compressor raises pressure and drives mass flow.',
@@ -186,7 +186,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.toc.item8.linkTitle': '常见问答',
 
         'knowledgeComp.role.title': '1 · 在蒸汽压缩循环中的角色',
-        'knowledgeComp.role.lede': '锅炉是「造热」，热泵是「移热」——而压缩机正是制造压差、让热量能够迁移的核心部件。',
+        'knowledgeComp.role.lede': '锅炉是「造热」，热泵是「移热」——而压缩机正是制造压差、让热量能够迁移的核心部件。完整循环族系（卡诺 → 蒸汽压缩强化 → 跨临界/吸收/蒸汽）见 <a href="./knowledge-cycles.html">循环导读</a>。',
         'knowledgeComp.role.figure.aria': '突出压缩机的蒸汽压缩循环示意图',
         'knowledgeComp.role.figure.alt': '四块循环示意：蒸发器、压缩机（高亮）、冷凝器、膨胀阀，并标注吸气与排气。',
         'knowledgeComp.role.figure.caption': '示意简图——真实机组还有油分、经济器与控制。压缩机负责升压并驱动质量流量。',
