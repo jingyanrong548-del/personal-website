@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "knowledge-balance-of-plant-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: lubricants, piping, enclosure, shop & test",
+        "zh": "知识库新增润滑油、管路、机柜与产线测试专章"
+      },
+      "summary": {
+        "en": "Four new illustrated guides covering oil chemistry, piping supports and insulation, frames/cables, and factory tools plus test benches—inserted after electrical in the learning path.",
+        "zh": "四篇图文专章：油品化学、管路支架与防腐保温、机架电缆、产线工具与测试台；学习路径接在电气之后。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
       "id": "site-search-2026-07",
       "date": "2026-07-21",
       "category": "site",

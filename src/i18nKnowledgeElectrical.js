@@ -123,7 +123,7 @@ export const knowledgeElecTranslations = {
         'knowledgeElec.faq.q3.q': '“Is cloud AI a substitute for on-site sensors and interlocks?”',
         'knowledgeElec.faq.q3.a': 'No. Remote analytics need truthful local measurements and must respect hard safety. AI suggests; locked-out protection and licensed electrical practice decide.',
         'knowledgeElec.faq.q4.q': '“Where next on this site?”',
-        'knowledgeElec.faq.q4.a': '<a href="./knowledge-vessels.html">Vessels</a> · <a href="./knowledge-valves.html">Valves</a> · <a href="./knowledge-compressor.html">Compressors</a> · <a href="./knowledge.html">Fundamentals</a>.',
+        'knowledgeElec.faq.q4.a': '<a href="./knowledge-enclosure.html">Enclosure &amp; cables</a> · <a href="./knowledge-vessels.html">Vessels</a> · <a href="./knowledge-valves.html">Valves</a> · <a href="./knowledge-compressor.html">Compressors</a> · <a href="./knowledge.html">Fundamentals</a>.',
         'knowledgeElec.disclaimer': 'OEM application limits, panel schematics, and electrical-code editions vary by product and jurisdiction. This page is engineering orientation—not a substitute for manufacturer manuals, wiring diagrams, or licensed electrical design and inspection.',
 
         'knowledgeElec.footer.title': 'Related on this site',
@@ -257,7 +257,7 @@ export const knowledgeElecTranslations = {
         'knowledgeElec.faq.q3.q': '「云端 AI 能替代现场传感器与连锁吗？」',
         'knowledgeElec.faq.q3.a': '不能。远程分析依赖真实的本地测量，且必须尊重硬安全。AI 给建议；连锁保护与持证电气实践做决定。',
         'knowledgeElec.faq.q4.q': '「站内接下来读什么？」',
-        'knowledgeElec.faq.q4.a': '<a href="./knowledge-vessels.html">容器</a> · <a href="./knowledge-valves.html">阀件</a> · <a href="./knowledge-compressor.html">压缩机</a> · <a href="./knowledge.html">热泵基础</a>。',
+        'knowledgeElec.faq.q4.a': '<a href="./knowledge-enclosure.html">机柜与电缆</a> · <a href="./knowledge-vessels.html">容器</a> · <a href="./knowledge-valves.html">阀件</a> · <a href="./knowledge-compressor.html">压缩机</a> · <a href="./knowledge.html">热泵基础</a>。',
         'knowledgeElec.disclaimer': '各厂应用限值、盘柜原理图与电气规范版本因产品与辖区而异。本页为工程导读，不能替代厂家手册、接线图，或持证电气设计与验收。',
 
         'knowledgeElec.footer.title': '站内相关',

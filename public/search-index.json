@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-21",
-  "count": 39,
+  "count": 43,
   "items": [
     {
       "id": "briefing-2026-w29",
@@ -442,6 +442,40 @@
       "date": null
     },
     {
+      "id": "knowledge-enclosure",
+      "category": "page",
+      "url": "/knowledge-enclosure.html",
+      "title": {
+        "en": "Enclosure & structure knowledge guide",
+        "zh": "机柜结构知识导读"
+      },
+      "summary": {
+        "en": "Frames, sheet metal, power/signal cables, trays, and EMC routing.",
+        "zh": "机架钣金、强弱电电缆与支架、EMC 布线。"
+      },
+      "keywords": {
+        "en": [
+          "enclosure",
+          "frame",
+          "sheet metal",
+          "cable tray",
+          "EMC"
+        ],
+        "zh": [
+          "机柜",
+          "机架",
+          "钣金",
+          "电缆",
+          "信号线"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "tool-euc",
       "category": "tool",
       "url": "https://euc.jingyanrong.com",
@@ -849,6 +883,40 @@
       "date": null
     },
     {
+      "id": "knowledge-lubricants",
+      "category": "page",
+      "url": "/knowledge-lubricants.html",
+      "title": {
+        "en": "Lubricant knowledge guide",
+        "zh": "润滑油知识导读"
+      },
+      "summary": {
+        "en": "Oil families, viscosity and miscibility, charge and contamination control.",
+        "zh": "油品家族、粘度与互溶性、充注与污染控制。"
+      },
+      "keywords": {
+        "en": [
+          "lubricant",
+          "oil",
+          "POE",
+          "viscosity",
+          "miscibility"
+        ],
+        "zh": [
+          "润滑油",
+          "POE",
+          "粘度",
+          "互溶性",
+          "回油"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "tool-ofc",
       "category": "tool",
       "url": "https://ofc.jingyanrong.com",
@@ -898,6 +966,40 @@
         "zh": [
           "喷油",
           "螺杆"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "knowledge-piping",
+      "category": "page",
+      "url": "/knowledge-piping.html",
+      "title": {
+        "en": "Piping systems knowledge guide",
+        "zh": "管路系统知识导读"
+      },
+      "summary": {
+        "en": "Pipe sizing, supports, vibration isolation, corrosion protection, and insulation.",
+        "zh": "管径与支架、减振、防腐与保温。"
+      },
+      "keywords": {
+        "en": [
+          "piping",
+          "supports",
+          "insulation",
+          "corrosion",
+          "vibration"
+        ],
+        "zh": [
+          "管路",
+          "支架",
+          "保温",
+          "防腐",
+          "减振"
         ]
       },
       "body": {
@@ -965,6 +1067,40 @@
           "二氧化碳",
           "氨",
           "GWP"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "knowledge-shop-test",
+      "category": "page",
+      "url": "/knowledge-shop-test.html",
+      "title": {
+        "en": "Shop tools & test benches knowledge guide",
+        "zh": "产线与测试知识导读"
+      },
+      "summary": {
+        "en": "Vacuum pumps, charging machines, inline test and performance test benches.",
+        "zh": "真空泵、充注机、在线测试台与性能测试台。"
+      },
+      "keywords": {
+        "en": [
+          "vacuum pump",
+          "charging",
+          "test bench",
+          "COP",
+          "leak test"
+        ],
+        "zh": [
+          "真空泵",
+          "充注",
+          "测试台",
+          "性能",
+          "检漏"
         ]
       },
       "body": {

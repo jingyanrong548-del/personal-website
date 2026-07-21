@@ -108,7 +108,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.maps.memory.text': '<strong>Same frame, different Te/Tc → different kW.</strong> If the quote omits source/sink temperatures, you are not yet comparing machines.',
 
         'knowledgeComp.oil.title': '5 · Lubrication, oil return, and reliability',
-        'knowledgeComp.oil.lede': 'Oil must lubricate bearings and rotors, then come home. Most “compressor failures” that survive root-cause analysis are system oil or liquid-management problems.',
+        'knowledgeComp.oil.lede': 'Oil must lubricate bearings and rotors, then come home. Most “compressor failures” that survive root-cause analysis are system oil or liquid-management problems. For oil chemistry and family selection, see the <a href="./knowledge-lubricants.html">lubricant guide</a>.',
         'knowledgeComp.oil.figure.aria': 'Oil separator and oil return path schematic',
         'knowledgeComp.oil.figure.alt': 'Compressor with oil separator on discharge, oil return line, and warning callout for liquid slug on suction and oil hold-up in the evaporator.',
         'knowledgeComp.oil.figure.caption': 'Separators, capillary return, and trap geometry are part of selection—not afterthoughts after a seizure.',
@@ -151,7 +151,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.faq.q3.q': '“Is inverter always better for heat pumps?”',
         'knowledgeComp.faq.q3.a': 'Often yes for part-load comfort and soft start—but only if oil return and minimum speed are proven for your piping. A poorly applied inverter can starve oil at low mass flow.',
         'knowledgeComp.faq.q4.q': '“Where do I go next on this site?”',
-        'knowledgeComp.faq.q4.a': '<a href="./knowledge.html#kp-article-6">匹 / rating traps</a> · <a href="./knowledge-refrigerants.html">Refrigerants</a> · <a href="./hthp-column.html#rd-compressor">HTHP compressors</a> · <a href="./heat-pump-standards.html#links">OEM selection links</a>.',
+        'knowledgeComp.faq.q4.a': '<a href="./knowledge.html#kp-article-6">匹 / rating traps</a> · <a href="./knowledge-lubricants.html">Lubricants</a> · <a href="./knowledge-refrigerants.html">Refrigerants</a> · <a href="./hthp-column.html#rd-compressor">HTHP compressors</a> · <a href="./heat-pump-standards.html#links">OEM selection links</a>.',
         'knowledgeComp.disclaimer': 'OEM envelopes, oil specs, and standard editions vary by product and year. This page is engineering orientation for buyers and integrators—not a substitute for type-test reports, signed data sheets, or safety-code compliance.',
 
         'knowledgeComp.footer.title': 'Related on this site',
@@ -270,7 +270,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.maps.memory.text': '<strong>同一机架，不同 Te/Tc → 不同 kW。</strong>报价若省略源/汇温度，你还没有在比较同一台机器。',
 
         'knowledgeComp.oil.title': '5 · 润滑、回油与可靠性',
-        'knowledgeComp.oil.lede': '油既要润滑轴承与转子，又必须回到压缩机。多数经得起根因分析的「压缩机故障」，其实是系统油路或液体管理问题。',
+        'knowledgeComp.oil.lede': '油既要润滑轴承与转子，又必须回到压缩机。多数经得起根因分析的「压缩机故障」，其实是系统油路或液体管理问题。油品化学与家族选型见<a href="./knowledge-lubricants.html">润滑油导读</a>。',
         'knowledgeComp.oil.figure.aria': '油分与回油路径示意',
         'knowledgeComp.oil.figure.alt': '压缩机、排气侧油分、回油管，以及吸气液击与蒸发器存油风险提示。',
         'knowledgeComp.oil.figure.caption': '油分、毛细回油与存油弯几何属于选型范围——不是抱死之后再补的配件。',
@@ -313,7 +313,7 @@ export const knowledgeCompTranslations = {
         'knowledgeComp.faq.q3.q': '「热泵一定上变频更好吗？」',
         'knowledgeComp.faq.q3.a': '部分负荷与软启往往更有利——但前提是配管下最低转速回油已验证。变频用不好会在低流量时缺油。',
         'knowledgeComp.faq.q4.q': '「站内接下来读什么？」',
-        'knowledgeComp.faq.q4.a': '<a href="./knowledge.html#kp-article-6">匹/工况陷阱</a> · <a href="./knowledge-refrigerants.html">制冷剂百科</a> · <a href="./hthp-column.html#rd-compressor">HTHP 压缩机</a> · <a href="./heat-pump-standards.html#links">OEM 选型外链</a>。',
+        'knowledgeComp.faq.q4.a': '<a href="./knowledge.html#kp-article-6">匹/工况陷阱</a> · <a href="./knowledge-lubricants.html">润滑油</a> · <a href="./knowledge-refrigerants.html">制冷剂百科</a> · <a href="./hthp-column.html#rd-compressor">HTHP 压缩机</a> · <a href="./heat-pump-standards.html#links">OEM 选型外链</a>。',
         'knowledgeComp.disclaimer': '各厂运行包络、油规格与标准版本因产品与年份而异。本页为面向采购与集成商的工程导读，不能替代型式试验报告、签署的数据表或安全规范合规。',
 
         'knowledgeComp.footer.title': '站内相关',

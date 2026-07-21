@@ -1,7 +1,21 @@
 {
-  "version": "site-search-2026-07",
+  "version": "knowledge-balance-of-plant-2026-07",
   "generatedAt": "2026-07-21",
   "items": [
+    {
+      "id": "knowledge-balance-of-plant-2026-07",
+      "date": "2026-07-21",
+      "category": "page",
+      "title": {
+        "en": "Knowledge hub: lubricants, piping, enclosure, shop & test",
+        "zh": "知识库新增润滑油、管路、机柜与产线测试专章"
+      },
+      "summary": {
+        "en": "Four new illustrated guides covering oil chemistry, piping supports and insulation, frames/cables, and factory tools plus test benches—inserted after electrical in the learning path.",
+        "zh": "四篇图文专章：油品化学、管路支架与防腐保温、机架电缆、产线工具与测试台；学习路径接在电气之后。"
+      },
+      "url": "/knowledge.html"
+    },
     {
       "id": "site-search-2026-07",
       "date": "2026-07-21",
@@ -99,20 +113,6 @@
         "zh": "新增图文专页：循环角色、机型家族、全封/半封结构、性能图读法、回油与可靠性、大温升热泵要点与选型清单；并链至「匹」专章、制冷剂百科、工业高温热泵与 OEM 工具。"
       },
       "url": "/knowledge-compressor.html"
-    },
-    {
-      "id": "briefing-2026-w29",
-      "date": "2026-07-19",
-      "category": "briefing",
-      "title": {
-        "en": "Week 29 2026 Refrigeration & Heat Pump Industry Briefing",
-        "zh": "2026年第29周制冷与热泵行业简报"
-      },
-      "summary": {
-        "en": "Daikin NEXIO Max R32 rooftop HP (NA); AHRI May shipments +6.7%; France Qlima R290 monobloc recall (install height); MHI 10 MW data-centre chiller; China 1 Jul cluster week three; EPA TT final rule ~8 days to 27 Jul",
-        "zh": "Daikin 北美 NEXIO Max R32 屋顶机；AHRI 5月出货 +6.7%；法国 Qlima R290 单体式召回（安装高度）；MHI 10 MW 数据中心冷水机；国内 7/1 集群第三周；EPA 技术转换终稿 7/27 倒计时约8天"
-      },
-      "url": "/briefings/2026-w29.html"
     }
   ]
 }

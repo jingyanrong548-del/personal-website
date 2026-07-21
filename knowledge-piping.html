@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Piping systems knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Piping systems knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to heat-pump and refrigeration piping: pressure drop, oil return, vibration, diameter and slope, supports and expansion, corrosion protection and insulation, plus selection checklists.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-piping.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-piping.html">
+    <meta id="meta-og-title" property="og:title" content="Piping systems knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated piping guide: pressure drop, oil return, supports, corrosion, and insulation for heat pumps.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Piping systems knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Pressure drop, oil return, supports, corrosion, and insulation for heat-pump practitioners.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgePiping.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgePipe.kicker">Heat pump basics · Piping systems</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgePipe.pageTitle">Piping systems knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgePipe.lede" data-i18n-html="true">Illustrated guide to refrigerant piping in heat pumps.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgePipe.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-role"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item1.linkTitle">Role in the system</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-sizing"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item2.linkTitle">Sizing &amp; geometry</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-supports"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item3.linkTitle">Supports &amp; expansion</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-protect"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item4.linkTitle">Corrosion &amp; insulation</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-select"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item5.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kpipe-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgePipe.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgePipe.toc.item6.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kpipe-select" data-i18n="knowledgePipe.toc.item5.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-lubricants.html" data-i18n="knowledge.hub.lubricants.title">Lubricants</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html#kc-oil" data-i18n="knowledgePipe.footer.compOil">Compressor · Oil chapter</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kpipe-role" class="knowledge-article knowledge-section" aria-labelledby="kpipe-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-role-title" data-i18n="knowledgePipe.role.title">1 · Role in the heat-pump system</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgePipe.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgePipe.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-pipe-cycle.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgePipe.role.figure.alt" alt="Refrigerant piping roles in the cycle" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgePipe.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kpipe-sizing" class="knowledge-article knowledge-section" aria-labelledby="kpipe-sizing-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-sizing-title" data-i18n="knowledgePipe.sizing.title">2 · Diameter, slope, risers, and support spacing</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgePipe.sizing.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgePipe.sizing.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-pipe-sizing.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgePipe.sizing.figure.alt" alt="Pipe sizing geometry" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgePipe.sizing.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.sizing.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.sizing.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.sizing.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.sizing.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.sizing.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.sizing.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.sizing.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.sizing.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kpipe-supports" class="knowledge-article knowledge-section" aria-labelledby="kpipe-supports-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-supports-title" data-i18n="knowledgePipe.supports.title">3 · Support types, vibration isolation, and thermal expansion</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgePipe.supports.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgePipe.supports.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-pipe-supports.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgePipe.supports.figure.alt" alt="Pipe supports and expansion" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgePipe.supports.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.supports.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.supports.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.supports.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.supports.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.supports.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.supports.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kpipe-protect" class="knowledge-article knowledge-section" aria-labelledby="kpipe-protect-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-protect-title" data-i18n="knowledgePipe.protect.title">4 · Corrosion protection and insulation</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgePipe.protect.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgePipe.protect.figureCorrosion.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-pipe-corrosion.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgePipe.protect.figureCorrosion.alt" alt="Piping corrosion risks" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgePipe.protect.figureCorrosion.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgePipe.protect.figureInsulation.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-pipe-insulation.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgePipe.protect.figureInsulation.alt" alt="Pipe insulation and vapor barrier" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgePipe.protect.figureInsulation.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.protect.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.protect.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.protect.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.protect.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.protect.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.protect.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgePipe.protect.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgePipe.protect.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kpipe-select" class="knowledge-article knowledge-section" aria-labelledby="kpipe-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-select-title" data-i18n="knowledgePipe.select.title">5 · Selection &amp; layout checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgePipe.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgePipe.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgePipe.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kpipe-faq" class="knowledge-article knowledge-section" aria-labelledby="kpipe-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kpipe-faq-title" data-i18n="knowledgePipe.faq.title">6 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgePipe.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgePipe.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgePipe.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgePipe.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgePipe.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgePipe.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgePipe.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgePipe.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgePipe.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgePipe.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgePipe.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-lubricants.html" data-i18n="knowledge.hub.lubricants.title">Lubricants</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-compressor.html#kc-oil" data-i18n="knowledgePipe.footer.compOil">Compressor · Oil chapter</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-vessels.html" data-i18n="knowledge.hub.vessels.title">Vessels</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-enclosure.html" data-i18n="knowledge.hub.enclosure.title">Enclosure</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

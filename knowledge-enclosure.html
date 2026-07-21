@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enclosure &amp; sheet-metal knowledge guide — Heat pump basics</title>
+    <meta id="meta-page-title" name="title" content="Enclosure &amp; sheet-metal knowledge guide — Heat pump basics">
+    <meta id="meta-page-description" name="description" content="Illustrated guide to heat-pump package enclosures: frame and sheet-metal roles, doors and IP intuition, power vs signal segregation and EMC, cable trays and bend radius, plus selection checklists.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/knowledge-enclosure.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/knowledge-enclosure.html">
+    <meta id="meta-og-title" property="og:title" content="Enclosure &amp; sheet-metal knowledge guide — Heat pump basics">
+    <meta id="meta-og-description" property="og:description" content="Illustrated enclosure guide: frame, IP, EMC segregation, and cable routing for heat pumps.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Enclosure &amp; sheet-metal knowledge guide — Heat pump basics">
+    <meta id="meta-twitter-description" name="twitter:description" content="Frame, IP, EMC segregation, and cable routing for heat-pump practitioners.">
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/knowledgeEnclosure.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="knowledge-page knowledge-ref-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="knowledgeEncl.kicker">Heat pump basics · Enclosure &amp; sheet metal</p>
+                    <h1 class="knowledge-title" data-i18n="knowledgeEncl.pageTitle">Enclosure &amp; sheet-metal knowledge guide</h1>
+                    <p class="knowledge-lede" data-i18n="knowledgeEncl.lede" data-i18n-html="true">Illustrated guide to package enclosures in heat pumps.</p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="knowledgeEncl.toc.title">On this page</h2>
+                        <ol class="knowledge-toc-list">
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-role"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item1.kicker">Chapter 1</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item1.linkTitle">Role of the enclosure</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-frame"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item2.kicker">Chapter 2</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item2.linkTitle">Frame &amp; sheet metal</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-cables"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item3.kicker">Chapter 3</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item3.linkTitle">Segregation &amp; EMC</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-routing"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item4.kicker">Chapter 4</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item4.linkTitle">Cable routing</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-select"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item5.kicker">Chapter 5</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item5.linkTitle">Selection checklist</span></a></li>
+                            <li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#kencl-faq"><span class="knowledge-toc-kicker" data-i18n="knowledgeEncl.toc.item6.kicker">Chapter 6</span><span class="knowledge-toc-link-title" data-i18n="knowledgeEncl.toc.item6.linkTitle">FAQ</span></a></li>
+                        </ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="#kencl-select" data-i18n="knowledgeEncl.toc.item5.linkTitle">Selection checklist</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-electrical.html" data-i18n="knowledge.hub.electrical.title">Electrical &amp; controls</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-piping.html" data-i18n="knowledge.hub.piping.title">Piping systems</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="kencl-role" class="knowledge-article knowledge-section" aria-labelledby="kencl-role-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-role-title" data-i18n="knowledgeEncl.role.title">1 · Role of the frame and sheet-metal shell</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeEncl.role.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeEncl.role.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-encl-role.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeEncl.role.figure.alt" alt="Enclosure roles in a heat-pump package" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeEncl.role.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.role.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.role.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.role.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.role.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.role.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.role.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kencl-frame" class="knowledge-article knowledge-section" aria-labelledby="kencl-frame-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-frame-title" data-i18n="knowledgeEncl.frame.title">2 · Frame, sheet metal, doors, and IP intuition</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeEncl.frame.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeEncl.frame.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-encl-frame.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeEncl.frame.figure.alt" alt="Frame, panels, doors, and IP" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeEncl.frame.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.frame.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.frame.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.frame.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.frame.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.frame.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.frame.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.frame.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.frame.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kencl-cables" class="knowledge-article knowledge-section" aria-labelledby="kencl-cables-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-cables-title" data-i18n="knowledgeEncl.cables.title">3 · Power vs signal segregation, shielding, and EMC</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeEncl.cables.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeEncl.cables.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-encl-segregation.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeEncl.cables.figure.alt" alt="Power and signal segregation" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeEncl.cables.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.cables.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.cables.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.cables.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.cables.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.cables.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.cables.r3.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.cables.r4.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.cables.r4.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kencl-routing" class="knowledge-article knowledge-section" aria-labelledby="kencl-routing-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-routing-title" data-i18n="knowledgeEncl.routing.title">4 · Cable trays, ties, and bend radius</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeEncl.routing.lede" data-i18n-html="true"></p>
+                <figure class="knowledge-co2-figure" data-i18n-aria-label="knowledgeEncl.routing.figure.aria">
+                    <img class="knowledge-co2-chart-img" src="./images/knowledge-encl-routing.png" width="1024" height="576" loading="lazy" decoding="async" data-i18n-alt="knowledgeEncl.routing.figure.alt" alt="Cable trays and bend radius" />
+                    <figcaption class="knowledge-co2-figure-caption" data-i18n="knowledgeEncl.routing.figure.caption" data-i18n-html="true"></figcaption>
+                </figure>
+                <div class="knowledge-reasons knowledge-reasons--article2">
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.routing.r1.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.routing.r1.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.routing.r2.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.routing.r2.text" data-i18n-html="true"></p></div>
+                    <div class="knowledge-reason"><h3 class="knowledge-reason-title" data-i18n="knowledgeEncl.routing.r3.title"></h3><p class="knowledge-reason-text" data-i18n="knowledgeEncl.routing.r3.text" data-i18n-html="true"></p></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kencl-select" class="knowledge-article knowledge-section" aria-labelledby="kencl-select-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-select-title" data-i18n="knowledgeEncl.select.title">5 · Selection &amp; build checklist</h2>
+                <p class="knowledge-article2-lede" data-i18n="knowledgeEncl.select.lede" data-i18n-html="true"></p>
+                <ul class="knowledge-list knowledge-list--checks">
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li1" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li2" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li3" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li4" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li5" data-i18n-html="true"></span></li>
+                    <li><span class="knowledge-list-item-content" data-i18n="knowledgeEncl.select.li6" data-i18n-html="true"></span></li>
+                </ul>
+                <p class="knowledge-reason-text" data-i18n="knowledgeEncl.select.cta" data-i18n-html="true"></p>
+            </div>
+        </section>
+
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+
+        <section id="kencl-faq" class="knowledge-article knowledge-section" aria-labelledby="kencl-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="kencl-faq-title" data-i18n="knowledgeEncl.faq.title">6 · Quick FAQs</h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeEncl.faq.q1.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeEncl.faq.q1.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeEncl.faq.q2.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeEncl.faq.q2.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeEncl.faq.q3.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeEncl.faq.q3.a" data-i18n-html="true"></p>
+                    </details>
+                    <details class="knowledge-faq-item">
+                        <summary class="knowledge-faq-q" data-i18n="knowledgeEncl.faq.q4.q"></summary>
+                        <p class="knowledge-faq-a" data-i18n="knowledgeEncl.faq.q4.a" data-i18n-html="true"></p>
+                    </details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="knowledgeEncl.disclaimer"></p>
+            </div>
+        </section>
+
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="knowledgeEncl.footer.title">Related on this site</p>
+                    <p class="knowledge-footer-text" data-i18n="knowledgeEncl.footer.text" data-i18n-html="true"></p>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./knowledge-electrical.html" data-i18n="knowledge.hub.electrical.title">Electrical &amp; controls</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-piping.html" data-i18n="knowledge.hub.piping.title">Piping systems</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge-shop-test.html" data-i18n="knowledge.hub.shopTest.title">Shop &amp; test</a>
+                        <a class="knowledge-btn knowledge-btn-secondary" href="./knowledge.html" data-i18n="knowledgeEncl.footer.basics">Heat pump fundamentals</a>
+                    </div>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
