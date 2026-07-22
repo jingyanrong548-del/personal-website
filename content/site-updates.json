@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "hx-lmtd-profile-fix-2026-07",
+      "date": "2026-07-22",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger guide: fixed counterflow temperature profiles",
+        "zh": "换热器导读：修正逆流温谱配图"
+      },
+      "summary": {
+        "en": "Chapter 3 LMTD schematic no longer shows an impossible hot/cold temperature cross; hot stays above cold with a clear approach at the hot-in / cold-out end.",
+        "zh": "第 3 章 LMTD 示意不再出现不可能的冷热流体温度交叉；全程热侧高于冷侧，并在热侧进/冷侧出端标出接近温度。"
+      },
+      "url": "/knowledge-exchanger.html#khx-flow"
+    },
+    {
       "id": "diagrams-3d-restore-2026-07",
       "date": "2026-07-22",
       "category": "page",

@@ -239,10 +239,11 @@ def draw_hx_lmtd(fonts: Fonts):
     text_center(d, (ox - 28, (oy + ay) / 2), "T", fonts.b, INK)
     bilingual_center(d, (ox + ax / 2, oy + 22), "Length / path", "流程长度", fonts.xs, fonts.zxs, MUTED, MUTED, gap=1)
 
-    # Hot stream (descending left→right in counterflow: hot enters right)
-    # Counterflow: hot from right (high) to left (lower), cold from left (low) to right (higher)
-    hot = [(ox + 40, 160), (ox + ax - 40, 280)]
-    cold = [(ox + 40, 360), (ox + ax - 40, 220)]
+    # Counterflow vs length (cold flows left→right): left = Hot out / Cold in; right = Hot in / Cold out.
+    # Hot must stay above cold everywhere — no temperature cross (Cold out < Hot in).
+    # y decreases upward (higher T). Hot in (right) > Hot out (left); Cold out (right) > Cold in (left).
+    hot = [(ox + 40, 210), (ox + ax - 40, 130)]
+    cold = [(ox + 40, 370), (ox + ax - 40, 200)]
     d.line([hot[0], hot[1]], fill=RED, width=4)
     d.line([cold[0], cold[1]], fill=BLUE, width=4)
     d.ellipse([hot[0][0] - 5, hot[0][1] - 5, hot[0][0] + 5, hot[0][1] + 5], fill=RED)
@@ -250,22 +251,23 @@ def draw_hx_lmtd(fonts: Fonts):
     d.ellipse([cold[0][0] - 5, cold[0][1] - 5, cold[0][0] + 5, cold[0][1] + 5], fill=BLUE)
     d.ellipse([cold[1][0] - 5, cold[1][1] - 5, cold[1][0] + 5, cold[1][1] + 5], fill=BLUE)
 
-    bilingual_center(d, (ox + 90, 140), "Hot out", "热侧出", fonts.xs, fonts.zxs, RED, RED, gap=1)
-    bilingual_center(d, (ox + ax - 70, 260), "Hot in", "热侧进", fonts.xs, fonts.zxs, RED, RED, gap=1)
-    bilingual_center(d, (ox + 90, 380), "Cold in", "冷侧进", fonts.xs, fonts.zxs, BLUE, BLUE, gap=1)
-    bilingual_center(d, (ox + ax - 70, 200), "Cold out", "冷侧出", fonts.xs, fonts.zxs, BLUE, BLUE, gap=1)
+    bilingual_center(d, (ox + 90, 188), "Hot out", "热侧出", fonts.xs, fonts.zxs, RED, RED, gap=1)
+    bilingual_center(d, (ox + ax - 70, 108), "Hot in", "热侧进", fonts.xs, fonts.zxs, RED, RED, gap=1)
+    bilingual_center(d, (ox + 90, 392), "Cold in", "冷侧进", fonts.xs, fonts.zxs, BLUE, BLUE, gap=1)
+    bilingual_center(d, (ox + ax - 70, 222), "Cold out", "冷侧出", fonts.xs, fonts.zxs, BLUE, BLUE, gap=1)
 
     # Approach bracket at cold-out / hot-in end (right)
     rx = ox + ax - 40
-    d.line([(rx + 18, 220), (rx + 18, 280)], fill=GOLD, width=2)
-    d.line([(rx + 12, 220), (rx + 24, 220)], fill=GOLD, width=2)
-    d.line([(rx + 12, 280), (rx + 24, 280)], fill=GOLD, width=2)
-    bilingual_center(d, (rx + 55, 250), "approach", "接近温度", fonts.xs, fonts.zxs, GOLD, GOLD, gap=1)
+    d.line([(rx + 18, 130), (rx + 18, 200)], fill=GOLD, width=2)
+    d.line([(rx + 12, 130), (rx + 24, 130)], fill=GOLD, width=2)
+    d.line([(rx + 12, 200), (rx + 24, 200)], fill=GOLD, width=2)
+    bilingual_center(d, (rx + 55, 165), "approach", "接近温度", fonts.xs, fonts.zxs, GOLD, GOLD, gap=1)
 
-    # ΔT1 / ΔT2 labels
-    d.line([(ox + 40, 160), (ox + 40, 360)], fill=GRID, width=1)
-    bilingual_center(d, (ox + 75, 250), "ΔT₁", "ΔT₁", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
-    bilingual_center(d, (ox + ax - 95, 300), "ΔT₂", "ΔT₂", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
+    # ΔT1 / ΔT2 labels (end temperature differences)
+    d.line([(ox + 40, 210), (ox + 40, 370)], fill=GRID, width=1)
+    d.line([(ox + ax - 40, 130), (ox + ax - 40, 200)], fill=GRID, width=1)
+    bilingual_center(d, (ox + 78, 285), "ΔT₁", "ΔT₁", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
+    bilingual_center(d, (ox + ax - 72, 255), "ΔT₂", "ΔT₂", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
 
     # Side panels
     p1 = (640, 90, 990, 240)

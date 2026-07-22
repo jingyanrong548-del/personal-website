@@ -1,7 +1,21 @@
 {
-  "version": "diagrams-3d-restore-2026-07",
+  "version": "hx-lmtd-profile-fix-2026-07",
   "generatedAt": "2026-07-22",
   "items": [
+    {
+      "id": "hx-lmtd-profile-fix-2026-07",
+      "date": "2026-07-22",
+      "category": "page",
+      "title": {
+        "en": "Heat exchanger guide: fixed counterflow temperature profiles",
+        "zh": "换热器导读：修正逆流温谱配图"
+      },
+      "summary": {
+        "en": "Chapter 3 LMTD schematic no longer shows an impossible hot/cold temperature cross; hot stays above cold with a clear approach at the hot-in / cold-out end.",
+        "zh": "第 3 章 LMTD 示意不再出现不可能的冷热流体温度交叉；全程热侧高于冷侧，并在热侧进/冷侧出端标出接近温度。"
+      },
+      "url": "/knowledge-exchanger.html#khx-flow"
+    },
     {
       "id": "diagrams-3d-restore-2026-07",
       "date": "2026-07-22",
@@ -99,20 +113,6 @@
         "zh": "容器与电气各章配图改为与压缩机、换热器、阀件一致的 3D 剖视；控制器与盘柜章节补齐专图。"
       },
       "url": "/knowledge-vessels.html"
-    },
-    {
-      "id": "knowledge-vessels-electrical-2026-07",
-      "date": "2026-07-21",
-      "category": "page",
-      "title": {
-        "en": "Knowledge hub: vessels & electrical guides, reordered path",
-        "zh": "知识库新增容器与电气专章，并重排学习路径"
-      },
-      "summary": {
-        "en": "New illustrated pages on oil separators, accumulators, receivers, flash tanks, plus motors, VFDs, controllers, AI/IoT. Hub order: fundamentals → refrigerants → compressors → heat exchangers → vessels → valves → electrical → industrial HTHP.",
-        "zh": "新增油分/气分/贮液器/闪发罐，以及电机、变频、控制器、AI/物联图文导读。枢纽顺序：基础 → 制冷剂 → 压缩机 → 换热器 → 容器 → 阀件 → 电气 → 工业高温热泵。"
-      },
-      "url": "/knowledge.html"
     }
   ]
 }
