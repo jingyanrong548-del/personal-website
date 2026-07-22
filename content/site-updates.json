@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "diagrams-3d-restore-2026-07",
+      "date": "2026-07-22",
+      "category": "page",
+      "title": {
+        "en": "Restored 3D knowledge cutaways + bilingual legend strips",
+        "zh": "恢复知识库 3D 剖视原图，并加双语图例条"
+      },
+      "summary": {
+        "en": "Physical/3D figures overwritten by schematic redraws are restored; each keeps a bottom EN/ZH title strip without covering the artwork.",
+        "zh": "此前被框线示意覆盖的实物/3D 剖视图已恢复；底部增加英主中辅标题条，不遮挡主体。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
       "id": "diagrams-bilingual-full-2026-07",
       "date": "2026-07-22",
       "category": "page",

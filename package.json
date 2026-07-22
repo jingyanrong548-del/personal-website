@@ -7,7 +7,7 @@
     "dev": "node scripts/build-content.mjs && vite",
     "prebuild": "node scripts/build-content.mjs",
     "build": "vite build && node scripts/remove-crossorigin.js",
-    "generate:diagrams": "python3 scripts/generate-knowledge-cycles-diagrams.py && python3 scripts/generate-knowledge-extreme-cold-charts.py && python3 scripts/generate-knowledge-comp-diagrams.py && python3 scripts/generate-knowledge-valve-diagrams.py && python3 scripts/generate-knowledge-hx-diagrams.py && python3 scripts/generate-knowledge-vessel-diagrams.py && python3 scripts/generate-knowledge-lub-diagrams.py && python3 scripts/generate-knowledge-pipe-diagrams.py && python3 scripts/generate-knowledge-encl-diagrams.py && python3 scripts/generate-knowledge-elec-diagrams.py && python3 scripts/generate-knowledge-ref-diagrams.py && python3 scripts/generate-knowledge-shop-diagrams.py && python3 scripts/generate-hthp-config-overlays.py",
+    "generate:diagrams": "python3 scripts/generate-knowledge-cycles-diagrams.py && python3 scripts/generate-knowledge-extreme-cold-charts.py && python3 scripts/generate-hthp-config-overlays.py && python3 scripts/overlay-knowledge-3d-legends.py",
     "preview": "vite preview",
     "version:patch": "node scripts/bump-version.js patch",
     "version:minor": "node scripts/bump-version.js minor",

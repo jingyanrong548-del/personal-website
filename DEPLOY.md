@@ -135,22 +135,31 @@ location = /useful-links.html {
 
 ## 知识库示意/图表生成（双语图）
 
-知识库示意 PNG 与首页 HTHP 构型叠标由本地脚本生成（图内 **英文为主、中文对照**）。CI **不**运行这些脚本（避免 runner 缺中文字体导致缺字或漂版）；改文案后请在本机重新生成并提交资源。
+知识库示意与首页 HTHP 构型叠标由本地脚本维护。CI **不**运行这些脚本；改文案后请在本机生成并提交资源。
 
-**依赖：** Python 3 + [Pillow](https://pillow.readthedocs.io/)；需系统有中英均可渲染的字体（macOS 通常自带 Arial Unicode / 冬青黑体 / 黑体；Linux 可 `sudo apt install fonts-noto-cjk`）。
+**依赖：** Python 3 + [Pillow](https://pillow.readthedocs.io/)；需中英均可渲染的字体（macOS 通常自带；Linux 可 `sudo apt install fonts-noto-cjk`）。
 
 **命令：**
 
 ```bash
-# 重生成全部双语示意 + HTHP 叠标 → public/images/（含 hthp-configs/）
 npm run generate:diagrams
 ```
 
-**脚本入口：**
+当前会运行：
 
-- 共享：`scripts/diagram_style.py`（无 CJK 字体则退出并提示）
-- 循环 / 极寒：`generate-knowledge-cycles-diagrams.py`、`generate-knowledge-extreme-cold-charts.py`
-- 专章：`generate-knowledge-{comp,valve,hx,vessel,lub,pipe,encl,elec,ref,shop}-diagrams.py`
-- HTHP 叠标：`generate-hthp-config-overlays.py`（幂等；若要从原图重做，先 `git checkout -- public/images/hthp-configs/`）
+- `scripts/generate-knowledge-cycles-diagrams.py` — 循环导读示意（可脚本重绘）
+- `scripts/generate-knowledge-extreme-cold-charts.py` — 极寒两张图表
+- `scripts/generate-hthp-config-overlays.py` — HTHP 构型叠标（幂等；重做前 `git checkout -- public/images/hthp-configs/`）
+- `scripts/overlay-knowledge-3d-legends.py` — **3D/实物原图底部双语图例**（不重绘主体；清单见 `scripts/knowledge-3d-restore-manifest.json`）
 
-生成后照常 `npm run build` / 推送 `main`，GitHub Pages 与阿里云仍只部署 `dist/`，路径不变。
+**重要：** `generate-knowledge-{comp,valve,hx,vessel,lub,pipe,encl,elec,ref,shop}-diagrams.py` 仅作备查，**禁止**默认跑进 `generate:diagrams`，否则会再次用框线图覆盖 3D 原图。若需恢复原图：
+
+```bash
+# 从部署前 commit 检出原图，再叠图例
+git checkout 6238163 -- $(jq -r '.[].file | "public/images/\(.)"' scripts/knowledge-3d-restore-manifest.json)
+python3 scripts/overlay-knowledge-3d-legends.py
+```
+
+共享字体/双语绘制：`scripts/diagram_style.py`（无 CJK 字体会退出并提示）。
+
+生成后照常 `npm run build` / 推送 `main`，GitHub Pages 与阿里云仍只部署 `dist/`。

@@ -1,0 +1,303 @@
+[
+  {
+    "file": "knowledge-comp-cycle.png",
+    "en": "Vapor-compression cycle — compressor highlighted",
+    "zh": "蒸汽压缩循环 — 突出压缩机",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-comp-types.png",
+    "en": "Compressor families (3D cutaways)",
+    "zh": "压缩机类型一览（3D 剖视）",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-comp-hermetic.png",
+    "en": "Hermetic · semi-hermetic · open-drive",
+    "zh": "全封闭 · 半封闭 · 开启式",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-comp-map.png",
+    "en": "Performance map at the duty point",
+    "zh": "工况点上的性能曲线图读法",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-comp-oil.png",
+    "en": "Lubrication & oil return",
+    "zh": "润滑与回油",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-comp-hthp.png",
+    "en": "Heat pump & high-lift duty",
+    "zh": "热泵与高升程工况",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-valve-types.png",
+    "en": "Refrigerant-side valve families",
+    "zh": "制冷剂侧阀门族系",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-valve-txv-eev.png",
+    "en": "TXV vs EEV — superheat control",
+    "zh": "TXV 与 EEV — 过热度控制",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-valve-reversing.png",
+    "en": "4-way reversing valve — heating vs cooling",
+    "zh": "四通换向阀 — 制热/制冷路径",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-hx-types.png",
+    "en": "Heat exchanger families (3D)",
+    "zh": "换热器类型一览（3D）",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-cycle.png",
+    "en": "Vapor-compression cycle — vessels highlighted",
+    "zh": "蒸汽压缩循环 — 突出容器",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-types.png",
+    "en": "Refrigerant vessel families",
+    "zh": "制冷剂容器族系",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-receiver.png",
+    "en": "Liquid receiver — charge storage",
+    "zh": "储液器 — 充注贮存",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-accum.png",
+    "en": "Suction accumulator — liquid slug protection",
+    "zh": "回气集液器 — 防液击",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-flash.png",
+    "en": "Flash tank / economizer vessel",
+    "zh": "闪蒸罐 / 经济器容器",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-vessel-oil.png",
+    "en": "Oil separator — discharge path",
+    "zh": "油分离器 — 排气路径",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-lub-cycle.png",
+    "en": "Oil path in the refrigeration cycle",
+    "zh": "制冷循环中的油路",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-lub-families.png",
+    "en": "Lubricant families",
+    "zh": "润滑油族系",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-lub-viscosity.png",
+    "en": "Viscosity versus temperature",
+    "zh": "粘度–温度关系",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-lub-contamination.png",
+    "en": "Oil charge & contamination control",
+    "zh": "充注与污染控制",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-pipe-cycle.png",
+    "en": "Refrigerant piping roles in the cycle",
+    "zh": "循环中的制冷剂管路角色",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-pipe-sizing.png",
+    "en": "Pipe sizing geometry",
+    "zh": "管径选型几何",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-pipe-supports.png",
+    "en": "Pipe supports and expansion",
+    "zh": "支架与热膨胀",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-pipe-corrosion.png",
+    "en": "Piping corrosion risks",
+    "zh": "管路腐蚀风险",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-pipe-insulation.png",
+    "en": "Pipe insulation & vapor barrier",
+    "zh": "保温与隔汽层",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-encl-role.png",
+    "en": "Enclosure roles in a heat-pump package",
+    "zh": "热泵机组机柜角色",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-encl-frame.png",
+    "en": "Frame, panels, doors, and IP",
+    "zh": "机架、面板、门与防护等级",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-encl-segregation.png",
+    "en": "Power and signal segregation",
+    "zh": "强电与信号分隔",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-encl-routing.png",
+    "en": "Cable trays and bend radius",
+    "zh": "线槽与弯曲半径",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-layers.png",
+    "en": "Electrical layers in a heat-pump package",
+    "zh": "热泵电气分层",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-motor.png",
+    "en": "Compressor motor drive basics",
+    "zh": "压缩机电机驱动基础",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-vfd.png",
+    "en": "VFD / inverter drive",
+    "zh": "变频器 / 逆变驱动",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-panel.png",
+    "en": "Control panel layout",
+    "zh": "电控柜布置",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-controller.png",
+    "en": "Controller & I/O",
+    "zh": "控制器与 I/O",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-elec-iot.png",
+    "en": "IoT / remote monitoring",
+    "zh": "物联网 / 远程监测",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-ref-timeline.png",
+    "en": "Refrigerant generations timeline",
+    "zh": "制冷剂代际时间轴",
+    "width": 2816,
+    "height": 1536
+  },
+  {
+    "file": "knowledge-ref-gwp-landscape.png",
+    "en": "GWP landscape of common fluids",
+    "zh": "常用工质 GWP 景观",
+    "width": 2816,
+    "height": 1536
+  },
+  {
+    "file": "knowledge-ref-policy-map.png",
+    "en": "Policy & phase-down map",
+    "zh": "政策与削减路线图",
+    "width": 2816,
+    "height": 1536
+  },
+  {
+    "file": "knowledge-ref-regions-matrix.png",
+    "en": "Regional refrigerant matrix",
+    "zh": "区域制冷剂矩阵",
+    "width": 2816,
+    "height": 1536
+  },
+  {
+    "file": "knowledge-shop-tools.png",
+    "en": "Shop tools for assembly & service",
+    "zh": "装配与售后工具",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-shop-inline.png",
+    "en": "Inline production checkpoints",
+    "zh": "产线在线检查点",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-shop-loop.png",
+    "en": "Factory test loop",
+    "zh": "工厂测试回路",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "knowledge-shop-perf.png",
+    "en": "Performance test bench",
+    "zh": "性能测试台",
+    "width": 1536,
+    "height": 1024
+  }
+]
