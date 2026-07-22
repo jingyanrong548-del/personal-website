@@ -130,3 +130,27 @@ location = /useful-links.html {
 ```
 
 修改后重载 nginx。GitHub Pages 依赖各 stub 页内重定向，无需额外配置。
+
+---
+
+## 知识库示意/图表生成（双语图）
+
+知识库示意 PNG 与首页 HTHP 构型叠标由本地脚本生成（图内 **英文为主、中文对照**）。CI **不**运行这些脚本（避免 runner 缺中文字体导致缺字或漂版）；改文案后请在本机重新生成并提交资源。
+
+**依赖：** Python 3 + [Pillow](https://pillow.readthedocs.io/)；需系统有中英均可渲染的字体（macOS 通常自带 Arial Unicode / 冬青黑体 / 黑体；Linux 可 `sudo apt install fonts-noto-cjk`）。
+
+**命令：**
+
+```bash
+# 重生成全部双语示意 + HTHP 叠标 → public/images/（含 hthp-configs/）
+npm run generate:diagrams
+```
+
+**脚本入口：**
+
+- 共享：`scripts/diagram_style.py`（无 CJK 字体则退出并提示）
+- 循环 / 极寒：`generate-knowledge-cycles-diagrams.py`、`generate-knowledge-extreme-cold-charts.py`
+- 专章：`generate-knowledge-{comp,valve,hx,vessel,lub,pipe,encl,elec,ref,shop}-diagrams.py`
+- HTHP 叠标：`generate-hthp-config-overlays.py`（幂等；若要从原图重做，先 `git checkout -- public/images/hthp-configs/`）
+
+生成后照常 `npm run build` / 推送 `main`，GitHub Pages 与阿里云仍只部署 `dist/`，路径不变。

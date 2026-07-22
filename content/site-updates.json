@@ -1,6 +1,34 @@
 {
   "manual": [
     {
+      "id": "diagrams-bilingual-full-2026-07",
+      "date": "2026-07-22",
+      "category": "page",
+      "title": {
+        "en": "All knowledge diagrams + HTHP configs: bilingual labels",
+        "zh": "知识库示意图与 HTHP 构型图全面中英对照"
+      },
+      "summary": {
+        "en": "Every knowledge-hub figure now uses English-first labels with Chinese underneath; homepage HTHP config schematics get bilingual Heat sink/source overlays—same assets for both languages.",
+        "zh": "知识库各专章示意均为英文为主、中文对照；首页高温热泵构型图叠标热汇/热源等双语；中英切换不换图。"
+      },
+      "url": "/knowledge.html"
+    },
+    {
+      "id": "diagrams-bilingual-pilot-2026-07",
+      "date": "2026-07-22",
+      "category": "page",
+      "title": {
+        "en": "Pilot: bilingual diagram labels (EN primary / ZH)",
+        "zh": "试点：知识库示意图中英对照（英主中辅）"
+      },
+      "summary": {
+        "en": "Cycle-guide figures and the extreme-cold demand/lifecycle charts now carry English-first labels with Chinese underneath—same image for both site languages.",
+        "zh": "循环导读全部示意与基础知识中极寒负荷/生命周期成本图改为英文为主、中文对照；中英切换不换图。"
+      },
+      "url": "/knowledge-cycles.html"
+    },
+    {
       "id": "knowledge-cycles-2026-07",
       "date": "2026-07-21",
       "category": "page",
