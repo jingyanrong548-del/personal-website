@@ -106,7 +106,7 @@ def draw_map():
         ("Ideal reference", "理想参照", "Reverse Carnot", "逆卡诺", "T-s ceiling for COP", "T-s 上 COP 上限", GOLD, (40, 72, 240, 210)),
         ("Gas cycle", "气体循环", "Reverse Brayton", "逆布雷顿", "No phase change · air", "无相变 · 空气", TEAL, (280, 72, 480, 210)),
         ("Vapor compression", "蒸汽压缩", "Subcritical VCC", "亚临界 VCC", "Industry workhorse", "工业主力", GREEN, (520, 72, 720, 210)),
-        ("Transcritical", "跨临界", "CO2 / R744", "CO₂ / R744", "Gas cooler · P>Pc", "气体冷却器 · P>Pc", ORANGE, (760, 72, 984, 210)),
+        ("Transcritical", "跨临界", "CO2 / R744", "CO2 / R744", "Gas cooler · P>Pc", "气体冷却器 · P>Pc", ORANGE, (760, 72, 984, 210)),
         ("Thermal drive", "热驱动", "Absorption", "吸收式", "Heat-driven · pairs", "热驱动 · 工质对", PURPLE, (160, 260, 400, 400)),
         ("Open steam", "开式蒸汽", "MVR / steam VCC", "MVR / 蒸汽压缩", "Working fluid = steam", "工质=蒸汽", RED, (440, 260, 680, 400)),
         ("Other", "其他", "Stirling · ORC*", "斯特林 · ORC*", "Niche / power side*", "小众 / 动力侧*", MUTED, (720, 260, 960, 400)),
@@ -236,7 +236,7 @@ def draw_brayton():
         d,
         (W / 2, 450),
         "All gas - no two-phase condenser / evaporator. Work = compressor - expander.",
-        "全程气相——无两相冷凝/蒸发。净功=压缩机−膨胀机。",
+        "全程气相——无两相冷凝/蒸发。净功=压缩机-膨胀机。",
         F_N,
         FZ_S,
         INK,
@@ -501,7 +501,7 @@ def draw_cascade():
         d,
         (W / 2, 445),
         "Homepage config (f). Extreme-cold CO2 cascade: see Fundamentals Part 1.",
-        "首页构型 (f)。极寒 CO₂ 复叠见基础知识第 1 部分。",
+        "首页构型 (f)。极寒 CO2 复叠见基础知识第 1 部分。",
         F_S,
         FZ_XS,
         MUTED,
@@ -524,7 +524,7 @@ def draw_cascade():
 
 def draw_transcritical_ph():
     im, d = new_img()
-    bi_title(d, "Transcritical CO2 (R744) on P-h", "跨临界 CO₂ (R744) P-h 图", 26)
+    bi_title(d, "Transcritical CO2 (R744) on P-h", "跨临界 CO2 (R744) P-h 图", 26)
     ox, oy = 100, 490
     d.line([(ox, oy), (ox, 70)], fill=INK, width=2)
     d.line([(ox, oy), (920, oy)], fill=INK, width=2)
@@ -595,7 +595,7 @@ def draw_absorption():
         d,
         (W / 2, 415),
         "Pairs: H2O-LiBr, NH3-H2O, ...  ·  Electric compressor -> thermal compressor",
-        "工质对：H₂O-LiBr、NH₃-H₂O… · 电压缩机→热压缩机",
+        "工质对：H2O-LiBr、NH3-H2O… · 电压缩机→热压缩机",
         F_N,
         FZ_S,
         INK,

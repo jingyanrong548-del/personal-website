@@ -180,7 +180,7 @@ def draw_hx_duty(fonts: Fonts):
     for y, en, zh in [
         (210, "Tin / Tout", "进出口温度"),
         (260, "Mass flow ṁ", "质量流量 ṁ"),
-        (310, "Allowable ΔP", "允许压降 ΔP"),
+        (310, "Allowable dP", "允许压降 dP"),
         (360, "Oil presence", "含油情况"),
     ]:
         bilingual_center(d, (170, y), en, zh, fonts.s, fonts.zs, INK, MUTED, gap=1)
@@ -192,7 +192,7 @@ def draw_hx_duty(fonts: Fonts):
     for y, en, zh in [
         (210, "Tin / Tout", "进出口温度"),
         (260, "Flow · density", "流量 · 密度"),
-        (310, "Allowable ΔP", "允许压降 ΔP"),
+        (310, "Allowable dP", "允许压降 dP"),
         (360, "Fouling factor", "污垢系数"),
     ]:
         bilingual_center(d, (854, y), en, zh, fonts.s, fonts.zs, INK, MUTED, gap=1)
@@ -263,11 +263,11 @@ def draw_hx_lmtd(fonts: Fonts):
     d.line([(rx + 12, 200), (rx + 24, 200)], fill=GOLD, width=2)
     bilingual_center(d, (rx + 55, 165), "approach", "接近温度", fonts.xs, fonts.zxs, GOLD, GOLD, gap=1)
 
-    # ΔT1 / ΔT2 labels (end temperature differences)
+    # dT1 / dT2 labels (end temperature differences)
     d.line([(ox + 40, 210), (ox + 40, 370)], fill=GRID, width=1)
     d.line([(ox + ax - 40, 130), (ox + ax - 40, 200)], fill=GRID, width=1)
-    bilingual_center(d, (ox + 78, 285), "ΔT₁", "ΔT₁", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
-    bilingual_center(d, (ox + ax - 72, 255), "ΔT₂", "ΔT₂", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
+    bilingual_center(d, (ox + 78, 285), "dT1", "dT1", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
+    bilingual_center(d, (ox + ax - 72, 255), "dT2", "dT2", fonts.s, fonts.zs, MUTED, MUTED, gap=1)
 
     # Side panels
     p1 = (640, 90, 990, 240)
@@ -276,7 +276,7 @@ def draw_hx_lmtd(fonts: Fonts):
     bilingual_center(
         d,
         (815, 175),
-        "LMTD = (ΔT₁ − ΔT₂) / ln(ΔT₁/ΔT₂)",
+        "LMTD = (dT1 - dT2) / ln(dT1/dT2)",
         "两端温差的对数平均",
         fonts.s,
         fonts.zs,
@@ -295,7 +295,7 @@ def draw_hx_lmtd(fonts: Fonts):
     bi_foot(
         d,
         fonts,
-        "Closer approach helps COP only if UA cost & ΔP still win",
+        "Closer approach helps COP only if UA cost & dP still win",
         "更小接近温度只有在 UA 造价与压降仍划算时才提升 COP",
     )
     save_png(im, "knowledge-hx-lmtd.png")
@@ -362,7 +362,7 @@ def draw_hx_hthp(fonts: Fonts):
     for y, en, zh in [
         (300, "Frost & defrost dominate O&M", "结霜与除霜主导运维"),
         (350, "Mild-climate ratings ≠ cold hours", "温和样本 ≠ 严寒小时"),
-        (400, "Approach vs fan ΔP trade-off", "接近温度 vs 风机压降"),
+        (400, "Approach vs fan dP trade-off", "接近温度 vs 风机压降"),
         (440, "Brazed plates common on water", "水侧常见钎焊板换"),
     ]:
         bilingual_center(d, (265, y), en, zh, fonts.s, fonts.zs, INK, MUTED, gap=1)
@@ -373,7 +373,7 @@ def draw_hx_hthp(fonts: Fonts):
     card(d, sink, fill=CARD, outline=RED, r=10, width=2)
     bi_in_box(d, fonts, sink, "High-T sink HX", "高温热汇换热器")
     card(d, gc, fill=CARD, outline=PURPLE, r=10, width=2)
-    bi_in_box(d, fonts, gc, "CO₂ gas cooler", "CO₂ 气冷器")
+    bi_in_box(d, fonts, gc, "CO2 gas cooler", "CO2 气冷器")
     arrow(d, (744, 210), (774, 210), MUTED, 2)
 
     for y, en, zh in [

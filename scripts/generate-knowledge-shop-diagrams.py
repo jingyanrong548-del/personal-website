@@ -65,7 +65,7 @@ def draw_tools(F: Fonts):
     tools = [
         ("Vacuum pump", "真空泵", "& micron gauge", "与微米表", "Deep dry-down", "深度干燥", BLUE, LIGHT_BLUE),
         ("Charging", "充注机", "mass-based", "按质量", "Lot + target kg", "批次+目标质量", GREEN, LIGHT_GREEN),
-        ("Leak detect", "检漏", "He / halogen / ΔP", "氦/卤素/压降", "Match threshold", "匹配阈值", ORANGE, LIGHT_ORANGE),
+        ("Leak detect", "检漏", "He / halogen / dP", "氦/卤素/压降", "Match threshold", "匹配阈值", ORANGE, LIGHT_ORANGE),
         ("Torque", "扭矩工具", "calibrated", "已校准", "Flare · flange · elec.", "扩口·法兰·电气", PURPLE, LIGHT_PURPLE),
     ]
     n = len(tools)

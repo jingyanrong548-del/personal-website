@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "diagram-glyph-fix-2026-07",
+      "date": "2026-07-22",
+      "category": "site",
+      "title": {
+        "en": "Fixed missing glyphs (□) in knowledge diagrams",
+        "zh": "修复知识库示意图缺字方框（□）"
+      },
+      "summary": {
+        "en": "Latin labels now use Unicode-capable fonts; subscripts/Δ in schematics rewritten as ASCII (dT1, CO2, dP) so boxes no longer appear after T.",
+        "zh": "英文标注改用含全量符号的字体；示意图中的下标与 Δ 改为 ASCII（dT1、CO2、dP），消除 T 后出现方框的问题。"
+      },
+      "url": "/knowledge-exchanger.html#khx-flow"
+    },
+    {
       "id": "hx-lmtd-profile-fix-2026-07",
       "date": "2026-07-22",
       "category": "page",

@@ -134,7 +134,7 @@ def draw_families():
         ("MO", "矿物油", "Legacy HCFC / HC", "传统 HCFC / 碳氢", "Low hygroscopy", "吸湿性低", GOLD, (252, 244, 220)),
         ("AB", "烷基苯", "HCFC / retrofit", "HCFC / 改造", "Better solvency", "溶解性更好", ORANGE, LIGHT_ORANGE),
         ("POE", "多元醇酯", "HFC / HFO / HP", "HFC / HFO / 热泵", "Hygroscopic!", "强吸湿！", GREEN, LIGHT_GREEN),
-        ("PAG", "聚烷撑二醇", "Auto A/C · CO₂*", "汽车空调 · CO₂*", "Do not swap casually", "不可随意对换", BLUE, LIGHT_BLUE),
+        ("PAG", "聚烷撑二醇", "Auto A/C · CO2*", "汽车空调 · CO2*", "Do not swap casually", "不可随意对换", BLUE, LIGHT_BLUE),
         ("PVE", "聚乙烯醚", "Selected HFC/HFO", "部分 HFC/HFO", "Often less wet", "往往更不吸湿", PURPLE, LIGHT_PURPLE),
     ]
     gap = 14
@@ -239,7 +239,7 @@ def draw_contamination():
         ("1", "New oil drum", "新油桶", "Sealed · OEM type", "密封 · 厂家油型", GREEN, LIGHT_GREEN),
         ("2", "Dry vacuum", "干燥真空", "≤ moisture target", "达水分目标", BLUE, LIGHT_BLUE),
         ("3", "Operating circuit", "运行油路", "Level · return", "油位 · 回油", TEAL, (220, 242, 242)),
-        ("4", "Contaminants", "污染物", "H₂O · acid · debris", "水分 · 酸 · 碎屑", ORANGE, LIGHT_ORANGE),
+        ("4", "Contaminants", "污染物", "H2O · acid · debris", "水分 · 酸 · 碎屑", ORANGE, LIGHT_ORANGE),
         ("5", "Filter / change", "干燥过滤/换油", "Recover · recharge", "恢复 · 再充", PURPLE, LIGHT_PURPLE),
     ]
     gap = 14

@@ -1,7 +1,21 @@
 {
-  "version": "hx-lmtd-profile-fix-2026-07",
+  "version": "diagram-glyph-fix-2026-07",
   "generatedAt": "2026-07-22",
   "items": [
+    {
+      "id": "diagram-glyph-fix-2026-07",
+      "date": "2026-07-22",
+      "category": "site",
+      "title": {
+        "en": "Fixed missing glyphs (□) in knowledge diagrams",
+        "zh": "修复知识库示意图缺字方框（□）"
+      },
+      "summary": {
+        "en": "Latin labels now use Unicode-capable fonts; subscripts/Δ in schematics rewritten as ASCII (dT1, CO2, dP) so boxes no longer appear after T.",
+        "zh": "英文标注改用含全量符号的字体；示意图中的下标与 Δ 改为 ASCII（dT1、CO2、dP），消除 T 后出现方框的问题。"
+      },
+      "url": "/knowledge-exchanger.html#khx-flow"
+    },
     {
       "id": "hx-lmtd-profile-fix-2026-07",
       "date": "2026-07-22",
@@ -99,20 +113,6 @@
         "zh": "点击导航栏放大镜（或 ⌘K / Ctrl+K），可按关键词检索页面、行业简报、工程洞察与工具。"
       },
       "url": "/"
-    },
-    {
-      "id": "knowledge-vessel-elec-cutaway-2026-07",
-      "date": "2026-07-21",
-      "category": "page",
-      "title": {
-        "en": "Vessels & electrical guides: cutaway figures upgraded",
-        "zh": "容器与电气导读：配图升级为剖视风格"
-      },
-      "summary": {
-        "en": "Vessel and electrical chapter figures now use 3D cutaways aligned with the compressor, heat-exchanger, and valve guides. Controller and panel chapters gain dedicated diagrams.",
-        "zh": "容器与电气各章配图改为与压缩机、换热器、阀件一致的 3D 剖视；控制器与盘柜章节补齐专图。"
-      },
-      "url": "/knowledge-vessels.html"
     }
   ]
 }

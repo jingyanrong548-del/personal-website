@@ -146,7 +146,7 @@ def draw_types():
     bi_foot(
         d,
         F,
-        "Refrigerant valves ≠ hydronic valves — media, ΔP and materials differ",
+        "Refrigerant valves ≠ hydronic valves — media, dP and materials differ",
         "制冷剂阀 ≠ 水侧阀——介质、压差与材料均不同",
     )
     save_png(im, "knowledge-valve-types.png")

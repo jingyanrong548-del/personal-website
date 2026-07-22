@@ -83,7 +83,7 @@ def draw_cycle():
     # Line labels as colored paths
     arrow(d, (632, 112), (830, 112), RED)
     arrow(d, (830, 112), (830, 200), RED)
-    bilingual_center(d, (730, 92), "Discharge · ΔP / vibration", "排气管 · 压降/振动", F.xs, F.zxs, RED, RED, gap=1)
+    bilingual_center(d, (730, 92), "Discharge · dP / vibration", "排气管 · 压降/振动", F.xs, F.zxs, RED, RED, gap=1)
 
     arrow(d, (830, 310), (632, 425), GREEN)
     bilingual_center(d, (780, 360), "Liquid · flash risk", "液管 · 闪发风险", F.xs, F.zxs, GREEN, GREEN, gap=1)
@@ -149,7 +149,7 @@ def draw_sizing():
 
     # Right cards
     tips = [
-        ((660, 70, 984, 160), BLUE, LIGHT_BLUE, "Diameter & velocity", "管径与流速", "ΔP + oil at min mass flow", "压降 + 最小流量回油"),
+        ((660, 70, 984, 160), BLUE, LIGHT_BLUE, "Diameter & velocity", "管径与流速", "dP + oil at min mass flow", "压降 + 最小流量回油"),
         ((660, 175, 984, 265), TEAL, (220, 242, 242), "Slope & drainage", "坡度与疏排", "Avoid silent oil traps", "避免静默积油"),
         ((660, 280, 984, 370), ORANGE, LIGHT_ORANGE, "Risers & traps", "立管与油弯", "Lift > 6 m → trap base", "提升 > 6 m → 底部油弯"),
     ]

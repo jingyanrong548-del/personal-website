@@ -280,7 +280,7 @@ def draw_map():
     # Sidebar tips
     tips = [
         ("Stay inside envelope", "留在包络内", "Avoid trip / damage", "避免跳机/损伤"),
-        ("Lift = Tc − Te", "升程 = Tc − Te", "Drives pressure ratio", "决定压比"),
+        ("Lift = Tc - Te", "升程 = Tc - Te", "Drives pressure ratio", "决定压比"),
         ("Suction density", "吸气密度", "Sets mass flow", "决定质量流量"),
         ("Oil & discharge T", "油与排气温度", "Limit high-lift run", "限制高升程运行"),
     ]
@@ -366,7 +366,7 @@ def draw_hthp():
     # Source / sink bands
     round_rect(d, (60, 90, 300, 200), 12, LIGHT_BLUE, BLUE, 3)
     bilingual_center(d, (180, 125), "Heat source", "热源", F.h, F.zh, BLUE, BLUE, gap=2)
-    bilingual_center(d, (180, 175), "Te ≈ +5…−20 °C", "Te ≈ +5…−20 °C", F.n, F.zs, MUTED, MUTED, gap=1)
+    bilingual_center(d, (180, 175), "Te ≈ +5…-20 °C", "Te ≈ +5…-20 °C", F.n, F.zs, MUTED, MUTED, gap=1)
 
     round_rect(d, (724, 90, 964, 200), 12, LIGHT_RED, RED, 3)
     bilingual_center(d, (844, 125), "Heat sink", "热汇", F.h, F.zh, RED, RED, gap=2)
@@ -385,8 +385,8 @@ def draw_hthp():
     bilingual_center(
         d,
         (512, 260),
-        "Lift ΔT = Tc − Te   (often 60–100+ K for HTHP)",
-        "升程 ΔT = Tc − Te（高温热泵常 60–100+ K）",
+        "Lift dT = Tc - Te   (often 60–100+ K for HTHP)",
+        "升程 dT = Tc - Te（高温热泵常 60–100+ K）",
         F.b,
         F.zb,
         GOLD,

@@ -21,6 +21,19 @@ _CJK_CANDIDATES = [
     "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
 ]
 
+# Prefer Unicode-complete faces. Plain Arial / Arial Bold lack subscript digits
+# (₁ ₂ …) and render them as □ — seen on LMTD and CO₂ labels.
+_LATIN_UNICODE = [
+    "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    "/Library/Fonts/Arial Unicode.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf",
+]
+_LATIN_UNICODE_BOLD = [
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf",
+]
+# Last-resort Latin-only faces (incomplete Unicode — avoid when possible)
 _LATIN_BOLD = [
     "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
     "/Library/Fonts/Arial Bold.ttf",
@@ -65,13 +78,22 @@ def _load(path: str, size: int, index: int = 0) -> ImageFont.FreeTypeFont | Imag
 
 
 def font_latin(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    for p in _LATIN_BOLD if bold else _LATIN_REG:
+    """Latin labels with full symbol coverage (subscripts, Δ, arrows, …).
+
+    Do not prefer Arial/Arial Bold: missing glyphs become hollow □ boxes.
+    """
+    order = (
+        (_LATIN_UNICODE_BOLD + _LATIN_UNICODE + _LATIN_BOLD + _LATIN_REG)
+        if bold
+        else (_LATIN_UNICODE + _LATIN_REG)
+    )
+    for p in order:
         if os.path.exists(p):
             try:
                 return ImageFont.truetype(p, size)
             except OSError:
                 continue
-    # Fall back to CJK face (also covers Latin)
+    # Fall back to CJK face (also covers Latin + most symbols)
     return _load(require_cjk_font(), size)
 
 

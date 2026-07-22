@@ -118,7 +118,7 @@ def draw_heating_demand_chart():
 
     d.rectangle([L, T, R, B], outline=PANEL_EDGE, width=2)
 
-    # X axis: +10 … −40 (left to right)
+    # X axis: +10 … -40 (left to right)
     temps = [10, 0, -10, -20, -30, -40]
     for i, t in enumerate(temps):
         x = L + i * plot_w / 5
@@ -255,8 +255,8 @@ def draw_heating_demand_chart():
     bilingual_center(
         d,
         (780, 155),
-        "At −40 °C still ~70% of −20 °C capacity",
-        "在 −40 °C 环温下仍约有 −20 °C 制热量的 70%",
+        "At -40 °C still ~70% of -20 °C capacity",
+        "在 -40 °C 环温下仍约有 -20 °C 制热量的 70%",
         F_S,
         FZ_XS,
         INK,
@@ -396,7 +396,7 @@ def draw_lifecycle_cost_chart():
     # Legend
     round_rect(d, (80, 100, 380, 190), 8, PANEL, PANEL_EDGE, 1)
     d.line([(95, 118), (130, 118)], fill=GREEN, width=3)
-    bilingual_center(d, (250, 118), "CO₂ heat pump", "CO₂ 热泵", F_S, FZ_XS, INK, MUTED, gap=1)
+    bilingual_center(d, (250, 118), "CO2 heat pump", "CO2 热泵", F_S, FZ_XS, INK, MUTED, gap=1)
     d.line([(95, 145), (105, 145), (115, 145), (130, 145)], fill=RED, width=3)
     bilingual_center(d, (255, 145), "Electric boiler", "电锅炉", F_S, FZ_XS, INK, MUTED, gap=1)
     d.line([(95, 172), (130, 172)], fill=GREY, width=3)
@@ -440,8 +440,8 @@ def draw_lifecycle_cost_chart():
     bilingual_center(
         d,
         (sx - 20, sy + 36),
-        "0.55 M start · fails below −25 °C",
-        "55 万初投 · −25 °C 以下宕机",
+        "0.55 M start · fails below -25 °C",
+        "55 万初投 · -25 °C 以下宕机",
         F_XS,
         FZ_XS,
         GREY,
@@ -454,14 +454,14 @@ def draw_lifecycle_cost_chart():
     bilingual_center(d, (860, 120), "Expert takeaway", "专家核心解读", F_H, FZ_H, GREEN, GREEN, gap=2)
     # Wrapped body — draw as stacked bilingual short lines
     lines = [
-        ("CO₂ HP costs more upfront,", "CO₂ 热泵初投资较高，"),
+        ("CO2 HP costs more upfront,", "CO2 热泵初投资较高，"),
         ("but extreme-cold efficiency", "但在极寒工况能效高，"),
         ("closes the boiler gap in ~3 years,", "约 3 年抹平与电锅炉差价，"),
         ("then compounds savings for 12 more.", "其后 12 年持续产生节能收益。"),
         ("", ""),
         ("Conventional cascade (R410A/R32)", "常规复叠 (R410A/R32)"),
         ("fits cold regions better than", "更适于寒冷地区，"),
-        ("true extreme cold vs CO₂ cascade.", "极寒稳定性不及 CO₂ 复叠。"),
+        ("true extreme cold vs CO2 cascade.", "极寒稳定性不及 CO2 复叠。"),
     ]
     y = 155
     for en, zh in lines:

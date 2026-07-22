@@ -63,7 +63,7 @@ def draw_timeline(F: Fonts):
     bi_title(d, F, "Refrigerant generations — a parallel timeline", "制冷剂代际——并行时间线")
 
     eras = [
-        ("Natural", "天然工质", "1830s–today", "1830s–今", "NH₃ · CO₂ · H₂O", "NH₃ · CO₂ · H₂O", TEAL, LIGHT_BLUE),
+        ("Natural", "天然工质", "1830s–today", "1830s–今", "NH3 · CO2 · H2O", "NH3 · CO2 · H2O", TEAL, LIGHT_BLUE),
         ("1st CFC", "第1代 CFC", "1930s–1990s", "1930s–1990s", "R11 · R12", "R11 · R12", RED, LIGHT_RED),
         ("2nd HCFC", "第2代 HCFC", "1990s–2020s", "1990s–2020s", "R22 · R123", "R22 · R123", ORANGE, LIGHT_ORANGE),
         ("3rd HFC", "第3代 HFC", "1990s–today", "1990s–今", "R134a · R410A", "R134a · R410A", PURPLE, LIGHT_PURPLE),
@@ -140,7 +140,7 @@ def draw_gwp(F: Fonts):
     # Side callouts
     callouts = [
         (860, 120, RED, "Comfort HP", "舒适热泵", "R410A → R32/R454"),
-        (860, 250, PURPLE, "Industrial / HTHP", "工业 / 高温", "CO₂ · NH₃ · HFO"),
+        (860, 250, PURPLE, "Industrial / HTHP", "工业 / 高温", "CO2 · NH3 · HFO"),
         (860, 380, GOLD, "PFAS watch", "PFAS 关注", "HFO chemistry risk"),
     ]
     for cx, cy, col, en, zh, note in callouts:
@@ -215,7 +215,7 @@ def draw_regions(F: Fonts):
     bi_title(d, F, "China · EU · US — three regulatory clocks", "中国 · 欧盟 · 美国——三套监管时钟")
 
     cols = [
-        ("China", "中国", TEAL, LIGHT_BLUE, "Kigali A5", "基加利 A5", "MEE HFC quotas", "生态环境部配额", "Natural + CO₂ stds", "天然工质 + CO₂ 标准"),
+        ("China", "中国", TEAL, LIGHT_BLUE, "Kigali A5", "基加利 A5", "MEE HFC quotas", "生态环境部配额", "Natural + CO2 stds", "天然工质 + CO2 标准"),
         ("EU", "欧盟", BLUE, LIGHT_BLUE, "F-gas 2024/573", "F-gas 2024/573", "GWP ≤750 splits '25", "分体机 GWP≤750", "REACH PFAS watch", "REACH PFAS 关注"),
         ("United States", "美国", PURPLE, LIGHT_PURPLE, "AIM Act", "AIM 法案", "EPA Tech Transition", "EPA 技术过渡", "CARB / state stricter", "加州等更严"),
     ]
