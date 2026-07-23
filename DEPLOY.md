@@ -148,7 +148,7 @@ npm run generate:diagrams
 当前会运行：
 
 - `scripts/generate-knowledge-cycles-diagrams.py` — 循环导读示意（可脚本重绘）
-- `scripts/generate-knowledge-extreme-cold-charts.py` — 极寒两张图表
+- `scripts/generate-knowledge-extreme-cold-charts.py` — 极寒两张图表（各出英文 `*.png` 与中文 `*.zh.png`；页面用 `data-i18n-src-zh` 换图）
 - `scripts/generate-hthp-config-overlays.py` — HTHP 构型叠标（幂等；重做前 `git checkout -- public/images/hthp-configs/`）
 - `scripts/overlay-knowledge-3d-legends.py` — **3D/实物原图底部双语图例**（不重绘主体；清单见 `scripts/knowledge-3d-restore-manifest.json`）
 

@@ -1,7 +1,21 @@
 {
-  "version": "diagrams-3d-zh-swap-2026-07",
+  "version": "extreme-cold-charts-zh-swap-2026-07",
   "generatedAt": "2026-07-23",
   "items": [
+    {
+      "id": "extreme-cold-charts-zh-swap-2026-07",
+      "date": "2026-07-23",
+      "category": "page",
+      "title": {
+        "en": "Part 1 extreme-cold charts: language-switched images",
+        "zh": "第 1 讲极寒图表：中英切换换图"
+      },
+      "summary": {
+        "en": "Heating-load and 15-year lifecycle charts now swap between English-only and Chinese-only PNGs when you change language.",
+        "zh": "供热负荷与 15 年生命周期成本图随语言切换为纯英文或纯中文标注版。"
+      },
+      "url": "/knowledge.html#kp-article-co2"
+    },
     {
       "id": "diagrams-3d-zh-swap-2026-07",
       "date": "2026-07-23",
@@ -99,20 +113,6 @@
         "zh": "图文介绍逆卡诺、布雷顿、蒸汽压缩强化、跨临界 CO₂、吸收式与开式蒸汽/MVR；学习路径插在基础与制冷剂之间。"
       },
       "url": "/knowledge-cycles.html"
-    },
-    {
-      "id": "knowledge-balance-of-plant-2026-07",
-      "date": "2026-07-21",
-      "category": "page",
-      "title": {
-        "en": "Knowledge hub: lubricants, piping, enclosure, shop & test",
-        "zh": "知识库新增润滑油、管路、机柜与产线测试专章"
-      },
-      "summary": {
-        "en": "Four new illustrated guides covering oil chemistry, piping supports and insulation, frames/cables, and factory tools plus test benches—inserted after electrical in the learning path.",
-        "zh": "四篇图文专章：油品化学、管路支架与防腐保温、机架电缆、产线工具与测试台；学习路径接在电气之后。"
-      },
-      "url": "/knowledge.html"
     }
   ]
 }

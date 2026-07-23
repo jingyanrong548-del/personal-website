@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "extreme-cold-charts-zh-swap-2026-07",
+      "date": "2026-07-23",
+      "category": "page",
+      "title": {
+        "en": "Part 1 extreme-cold charts: language-switched images",
+        "zh": "第 1 讲极寒图表：中英切换换图"
+      },
+      "summary": {
+        "en": "Heating-load and 15-year lifecycle charts now swap between English-only and Chinese-only PNGs when you change language.",
+        "zh": "供热负荷与 15 年生命周期成本图随语言切换为纯英文或纯中文标注版。"
+      },
+      "url": "/knowledge.html#kp-article-co2"
+    },
+    {
       "id": "diagrams-3d-zh-swap-2026-07",
       "date": "2026-07-23",
       "category": "site",

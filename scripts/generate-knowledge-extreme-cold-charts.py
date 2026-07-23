@@ -1,23 +1,25 @@
 #!/usr/bin/env python3
-"""Generate extreme-cold knowledge charts with bilingual labels (English primary / Chinese secondary).
+"""Generate extreme-cold knowledge charts as monolingual EN and ZH variants.
 
-Outputs (same paths as before):
+Outputs:
   public/images/knowledge-co2-heating-demand-vs-output.png
+  public/images/knowledge-co2-heating-demand-vs-output.zh.png
   public/images/knowledge-extreme-cold-15yr-lifecycle-cost.png
+  public/images/knowledge-extreme-cold-15yr-lifecycle-cost.zh.png
 """
 
 from __future__ import annotations
 
 import sys
 from pathlib import Path
+from typing import Literal
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from diagram_style import (  # noqa: E402
     IMAGES_OUT,
-    bilingual_center,
     font_cjk,
     font_latin,
     require_cjk_font,
@@ -25,6 +27,7 @@ from diagram_style import (  # noqa: E402
 )
 
 OUT = IMAGES_OUT
+Lang = Literal["en", "zh"]
 
 # Dark tech theme
 BG = (8, 28, 58)
@@ -40,7 +43,9 @@ GOLD = (240, 190, 60)
 PANEL = (12, 36, 72)
 PANEL_EDGE = (40, 80, 130)
 
+# EN fonts
 F_TITLE = F_H = F_B = F_N = F_S = F_XS = None
+# ZH fonts (slightly larger than old bilingual secondary)
 FZ_TITLE = FZ_H = FZ_B = FZ_N = FZ_S = FZ_XS = None
 
 
@@ -54,12 +59,12 @@ def _init_fonts() -> None:
     F_N = font_latin(12)
     F_S = font_latin(11)
     F_XS = font_latin(10)
-    FZ_TITLE = font_cjk(14)
-    FZ_H = font_cjk(12)
-    FZ_B = font_cjk(11)
-    FZ_N = font_cjk(10)
-    FZ_S = font_cjk(9)
-    FZ_XS = font_cjk(8)
+    FZ_TITLE = font_cjk(18)
+    FZ_H = font_cjk(15)
+    FZ_B = font_cjk(13)
+    FZ_N = font_cjk(12)
+    FZ_S = font_cjk(11)
+    FZ_XS = font_cjk(10)
 
 
 def save(im: Image.Image, name: str) -> None:
@@ -82,26 +87,45 @@ def lerp(a, b, t):
     return a + (b - a) * t
 
 
+def label(
+    draw,
+    xy,
+    en: str,
+    zh: str,
+    lang: Lang,
+    f_en: ImageFont.ImageFont,
+    f_zh: ImageFont.ImageFont,
+    fill,
+) -> None:
+    if lang == "en":
+        text_center(draw, xy, en, f_en, fill)
+    else:
+        text_center(draw, xy, zh, f_zh, fill)
+
+
+def out_name(base: str, lang: Lang) -> str:
+    return f"{base}.zh.png" if lang == "zh" else f"{base}.png"
+
+
 # ---------------------------------------------------------------------------
 # Chart 1: Heating demand vs equipment output
 # ---------------------------------------------------------------------------
 
 
-def draw_heating_demand_chart():
+def draw_heating_demand_chart(lang: Lang) -> None:
     W, H = 1024, 739
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
 
-    bilingual_center(
+    label(
         d,
         (W / 2, 36),
         "Heating load vs heat-pump output (ambient)",
         "供热负荷与热泵出力（环境温度）",
+        lang,
         F_TITLE,
         FZ_TITLE,
         INK,
-        MUTED,
-        gap=2,
     )
 
     # Plot area
@@ -125,64 +149,52 @@ def draw_heating_demand_chart():
         d.line([(x, B), (x, B + 6)], fill=MUTED, width=1)
         text_center(d, (x, B + 18), f"{'+' if t > 0 else ''}{t}", F_S, MUTED)
 
-    bilingual_center(
+    label(
         d,
         ((L + R) / 2, B + 48),
         "Ambient temperature (°C)",
         "环境温度 (°C)",
+        lang,
         F_N,
-        FZ_S,
+        FZ_N,
         MUTED,
-        MUTED,
-        gap=1,
     )
 
-    # Y label (rotated via vertical text approximation: stacked)
-    bilingual_center(
+    label(
         d,
         (42, (T + B) / 2),
         "Load / output",
         "负荷 / 出力",
+        lang,
         F_N,
-        FZ_S,
+        FZ_N,
         MUTED,
-        MUTED,
-        gap=2,
     )
 
     def x_of(temp: float) -> float:
-        # temp from +10 to -40
         return L + (10 - temp) / 50 * plot_w
 
     def y_of(frac: float) -> float:
-        # frac 0..1 bottom to top of "relative" scale
         return B - frac * plot_h * 0.88
 
-    # Curves (schematic, matching prior narrative)
-    # Orange: building/industrial load rises as colder
     load_pts = []
     for t in range(10, -41, -1):
-        # ~0.35 at +10 -> ~0.95 at -40
         f = 0.32 + (10 - t) / 50 * 0.62
         load_pts.append((x_of(t), y_of(f)))
 
-    # Blue: 150 kW extreme-cold unit - gentle decline
     blue_pts = []
     for t in range(10, -41, -1):
-        f = 0.78 - (10 - t) / 50 * 0.18  # still high at -40
+        f = 0.78 - (10 - t) / 50 * 0.18
         blue_pts.append((x_of(t), y_of(f)))
 
-    # Grey: conventional cliff after -20
     grey_pts = []
     for t in range(10, -41, -1):
         if t >= -18:
             f = 0.72 - (10 - t) / 28 * 0.08
         else:
-            # steep drop
             f = max(0.05, 0.62 - (-18 - t) / 22 * 0.55)
         grey_pts.append((x_of(t), y_of(f)))
 
-    # Death zone hatch between load and grey for t <= -20
     death_poly = []
     for t in range(-20, -41, -1):
         f_load = 0.32 + (10 - t) / 50 * 0.62
@@ -194,11 +206,9 @@ def draw_heating_demand_chart():
             f = max(0.05, 0.62 - (-18 - t) / 22 * 0.55)
         death_poly.append((x_of(t), y_of(f)))
     if len(death_poly) > 3:
-        # translucent-ish via darker red overlay
         overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
         od.polygon(death_poly, fill=(180, 40, 40, 55))
-        # hatch lines
         x0, x1 = x_of(-20), x_of(-40)
         for i in range(0, 40):
             xx = x0 + (x1 - x0) * i / 40
@@ -210,93 +220,81 @@ def draw_heating_demand_chart():
     draw_polyline(d, blue_pts, BLUE, 4)
     draw_polyline(d, grey_pts, GREY, 4)
 
-    # Vertical dashed at -20
     x_m20 = x_of(-20)
     for y in range(int(T), int(B), 10):
         d.line([(x_m20, y), (x_m20, min(y + 5, B))], fill=ORANGE, width=1)
 
-    # Curve labels (keep both EN/ZH inside the plot)
-    bilingual_center(
+    label(
         d,
         (x_of(-28), y_of(0.84)),
         "Building & industrial heating load rises",
         "建筑与工业热负荷剧增",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         ORANGE,
-        ORANGE,
-        gap=1,
     )
-    bilingual_center(
+    label(
         d,
         (x_of(-5), y_of(0.88)),
         "150 kW-class extreme-cold unit",
         "150 kW 级极寒机组",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         BLUE,
-        BLUE,
-        gap=1,
     )
-    bilingual_center(
+    label(
         d,
         (x_of(4), y_of(0.48)),
         "Conventional HP (R32/R410A) cliff",
         "常规热泵 (R32/R410A) 衰减断崖",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         GREY,
-        GREY,
-        gap=1,
     )
 
-    # Callout: 70% at -40
     round_rect(d, (620, 120, 940, 190), 8, PANEL, BLUE, 1)
-    bilingual_center(
+    label(
         d,
         (780, 155),
         "At -40 °C still ~70% of -20 °C capacity",
         "在 -40 °C 环温下仍约有 -20 °C 制热量的 70%",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         INK,
-        MUTED,
-        gap=2,
     )
-    # pointer
     d.line([(700, 190), (x_of(-40) + 20, y_of(0.62))], fill=BLUE, width=1)
 
-    # Death zone label
     round_rect(d, (520, 480, 820, 555), 8, (40, 18, 28), RED, 1)
-    # warning triangle
     tx, ty = 545, 515
     d.polygon([(tx, ty - 14), (tx - 12, ty + 10), (tx + 12, ty + 10)], outline=RED, fill=(80, 20, 20))
     d.text((tx - 3, ty - 10), "!", font=F_B, fill=RED)
-    bilingual_center(
+    label(
         d,
         (690, 518),
         "Extreme-cold vacuum (death zone)",
         "极寒真空地带（死亡区）",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         RED,
-        RED,
-        gap=1,
     )
 
-    bilingual_center(
+    label(
         d,
         (W / 2, H - 28),
         "Schematic for teaching · not a certified performance map",
         "教学示意 · 非认证性能图谱",
+        lang,
         F_XS,
         FZ_XS,
         MUTED,
-        MUTED,
-        gap=1,
     )
 
-    save(im, "knowledge-co2-heating-demand-vs-output.png")
+    save(im, out_name("knowledge-co2-heating-demand-vs-output", lang))
 
 
 # ---------------------------------------------------------------------------
@@ -304,32 +302,30 @@ def draw_heating_demand_chart():
 # ---------------------------------------------------------------------------
 
 
-def draw_lifecycle_cost_chart():
+def draw_lifecycle_cost_chart(lang: Lang) -> None:
     W, H = 1024, 557
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
 
-    bilingual_center(
+    label(
         d,
         (W / 2, 28),
         "15-year total lifecycle cost in extreme cold (cumulative)",
         "极寒地区 15 年全生命周期总成本对比（累计费用）",
+        lang,
         F_TITLE,
         FZ_TITLE,
         INK,
-        MUTED,
-        gap=2,
     )
-    bilingual_center(
+    label(
         d,
         (W / 2, 62),
         "Initial investment + operating electricity",
         "初投资 + 运行电费",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         MUTED,
-        MUTED,
-        gap=1,
     )
 
     L, R, T, B = 70, 700, 95, 420
@@ -343,26 +339,22 @@ def draw_lifecycle_cost_chart():
         d.line([(x, T), (x, B)], fill=GRID, width=1)
     d.rectangle([L, T, R, B], outline=PANEL_EDGE, width=2)
 
-    # Axes labels
-    bilingual_center(d, (36, (T + B) / 2), "Cost (10k CNY)", "累计成本（万元）", F_XS, FZ_XS, MUTED, MUTED, gap=1)
+    label(d, (36, (T + B) / 2), "Cost (10k CNY)", "累计成本（万元）", lang, F_XS, FZ_XS, MUTED)
     for i, v in enumerate([0, 500, 1000, 1500, 2000, 2500]):
         y = B - i * plot_h / 5
         text_center(d, (L - 22, y), str(v), F_XS, MUTED)
     for yr in range(0, 16, 3):
         x = L + yr * plot_w / 15
         text_center(d, (x, B + 14), str(yr), F_XS, MUTED)
-    bilingual_center(d, ((L + R) / 2, B + 36), "Operating year", "运行年份", F_S, FZ_XS, MUTED, MUTED, gap=1)
+    label(d, ((L + R) / 2, B + 36), "Operating year", "运行年份", lang, F_S, FZ_S, MUTED)
 
     def xy(year: float, cost_wan: float):
         return (L + year / 15 * plot_w, B - cost_wan / 2500 * plot_h)
 
-    # Series: CO2 green, electric boiler red dashed, cascade grey stops ~3.5
-    # Capex: CO2 160, boiler 13.5, cascade 55; end: CO2 1120, boiler 2265
     co2 = [xy(y, 160 + (1120 - 160) * y / 15) for y in range(0, 16)]
     boiler = [xy(y, 13.5 + (2265 - 13.5) * y / 15) for y in range(0, 16)]
     cascade = [xy(y, 55 + (400 - 55) * y / 3.5) for y in [0, 1, 2, 3, 3.5]]
 
-    # Fill savings band between boiler and co2 from year ~3 to 15
     cross_yr = 3.0
     band = []
     for y in range(3, 16):
@@ -376,10 +368,8 @@ def draw_lifecycle_cost_chart():
     d = ImageDraw.Draw(im)
 
     draw_polyline(d, co2, GREEN, 3)
-    # dashed boiler
     for i in range(0, len(boiler) - 1):
         p1, p2 = boiler[i], boiler[i + 1]
-        # short dashes
         segs = 4
         for s in range(segs):
             if s % 2 == 0:
@@ -388,111 +378,112 @@ def draw_lifecycle_cost_chart():
                 d.line([a, b], fill=RED, width=3)
     draw_polyline(d, cascade, GREY, 3)
 
-    # STOP on cascade
     sx, sy = cascade[-1]
     d.ellipse([sx - 14, sy - 14, sx + 14, sy + 14], fill=RED, outline=INK, width=2)
     text_center(d, (sx, sy), "STOP", F_XS, INK)
 
-    # Legend
     round_rect(d, (80, 100, 380, 190), 8, PANEL, PANEL_EDGE, 1)
     d.line([(95, 118), (130, 118)], fill=GREEN, width=3)
-    bilingual_center(d, (250, 118), "CO2 heat pump", "CO2 热泵", F_S, FZ_XS, INK, MUTED, gap=1)
+    label(d, (250, 118), "CO2 heat pump", "CO2 热泵", lang, F_S, FZ_S, INK)
     d.line([(95, 145), (105, 145), (115, 145), (130, 145)], fill=RED, width=3)
-    bilingual_center(d, (255, 145), "Electric boiler", "电锅炉", F_S, FZ_XS, INK, MUTED, gap=1)
+    label(d, (255, 145), "Electric boiler", "电锅炉", lang, F_S, FZ_S, INK)
     d.line([(95, 172), (130, 172)], fill=GREY, width=3)
-    bilingual_center(d, (270, 172), "Conventional cascade HP", "常规复叠热泵", F_S, FZ_XS, INK, MUTED, gap=1)
+    label(d, (270, 172), "Conventional cascade HP", "常规复叠热泵", lang, F_S, FZ_S, INK)
 
-    # End markers
-    bilingual_center(d, (xy(15, 1120)[0] - 40, xy(15, 1120)[1] - 18), "11.20 M", "1120 万", F_S, FZ_XS, GREEN, GREEN, gap=1)
-    bilingual_center(d, (xy(15, 2265)[0] - 40, xy(15, 2265)[1] - 18), "22.65 M", "2265 万", F_S, FZ_XS, RED, RED, gap=1)
-    bilingual_center(d, (xy(0, 160)[0] + 50, xy(0, 160)[1] - 12), "1.60 M start", "160 万初投", F_XS, FZ_XS, GREEN, GREEN, gap=1)
-    bilingual_center(d, (xy(0, 13.5)[0] + 55, xy(0, 13.5)[1] + 14), "0.135 M start", "13.5 万初投", F_XS, FZ_XS, RED, RED, gap=1)
+    label(d, (xy(15, 1120)[0] - 40, xy(15, 1120)[1] - 18), "11.20 M", "1120 万", lang, F_S, FZ_S, GREEN)
+    label(d, (xy(15, 2265)[0] - 40, xy(15, 2265)[1] - 18), "22.65 M", "2265 万", lang, F_S, FZ_S, RED)
+    label(d, (xy(0, 160)[0] + 50, xy(0, 160)[1] - 12), "1.60 M start", "160 万初投", lang, F_XS, FZ_XS, GREEN)
+    label(d, (xy(0, 13.5)[0] + 55, xy(0, 13.5)[1] + 14), "0.135 M start", "13.5 万初投", lang, F_XS, FZ_XS, RED)
 
-    # Golden cross
     cx, cy = xy(cross_yr, 160 + (1120 - 160) * cross_yr / 15)
     d.ellipse([cx - 6, cy - 6, cx + 6, cy + 6], fill=GOLD, outline=INK)
-    bilingual_center(
+    label(
         d,
         (cx + 90, cy - 28),
         "Golden cross (~3 yr payback)",
         "黄金交叉点（约 3 年回本）",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         GOLD,
-        GOLD,
-        gap=1,
     )
 
-    # Savings label
-    bilingual_center(
+    label(
         d,
         (xy(10, 1400)[0], xy(10, 1400)[1]),
         "Sustained savings (~11.45 M over 15 yr)",
         "持续对比收益（15 年约省 1145 万）",
+        lang,
         F_S,
-        FZ_XS,
+        FZ_S,
         GREEN,
-        GREEN,
-        gap=1,
     )
 
-    # Cascade note
-    bilingual_center(
+    label(
         d,
         (sx - 20, sy + 36),
         "0.55 M start · fails below -25 °C",
         "55 万初投 · -25 °C 以下宕机",
+        lang,
         F_XS,
         FZ_XS,
         GREY,
-        GREY,
-        gap=1,
     )
 
-    # Expert panel
     round_rect(d, (720, 95, 1000, 420), 10, PANEL, GREEN, 2)
-    bilingual_center(d, (860, 120), "Expert takeaway", "专家核心解读", F_H, FZ_H, GREEN, GREEN, gap=2)
-    # Wrapped body — draw as stacked bilingual short lines
-    lines = [
-        ("CO2 HP costs more upfront,", "CO2 热泵初投资较高，"),
-        ("but extreme-cold efficiency", "但在极寒工况能效高，"),
-        ("closes the boiler gap in ~3 years,", "约 3 年抹平与电锅炉差价，"),
-        ("then compounds savings for 12 more.", "其后 12 年持续产生节能收益。"),
-        ("", ""),
-        ("Conventional cascade (R410A/R32)", "常规复叠 (R410A/R32)"),
-        ("fits cold regions better than", "更适于寒冷地区，"),
-        ("true extreme cold vs CO2 cascade.", "极寒稳定性不及 CO2 复叠。"),
+    label(d, (860, 120), "Expert takeaway", "专家核心解读", lang, F_H, FZ_H, GREEN)
+
+    lines_en = [
+        "CO2 HP costs more upfront,",
+        "but extreme-cold efficiency",
+        "closes the boiler gap in ~3 years,",
+        "then compounds savings for 12 more.",
+        "",
+        "Conventional cascade (R410A/R32)",
+        "fits cold regions better than",
+        "true extreme cold vs CO2 cascade.",
     ]
+    lines_zh = [
+        "CO2 热泵初投资较高，",
+        "但在极寒工况能效高，",
+        "约 3 年抹平与电锅炉差价，",
+        "其后 12 年持续产生节能收益。",
+        "",
+        "常规复叠 (R410A/R32)",
+        "更适于寒冷地区，",
+        "极寒稳定性不及 CO2 复叠。",
+    ]
+    lines = lines_en if lang == "en" else lines_zh
+    f_body = F_XS if lang == "en" else FZ_XS
+    line_gap = 22 if lang == "en" else 26
     y = 155
-    for en, zh in lines:
-        if not en:
+    for line in lines:
+        if not line:
             y += 10
             continue
-        text_center(d, (860, y), en, F_XS, INK)
-        y += 14
-        text_center(d, (860, y), zh, FZ_XS, MUTED)
-        y += 18
+        text_center(d, (860, y), line, f_body, INK)
+        y += line_gap
 
-    bilingual_center(
+    label(
         d,
         (W / 2, H - 22),
         "Note: estimates for a 1 steam-ton scale under stated conditions · reference only",
         "注：按 1 蒸吨规模与特定工况估算，仅供参考",
+        lang,
         F_XS,
         FZ_XS,
         MUTED,
-        MUTED,
-        gap=1,
     )
 
-    save(im, "knowledge-extreme-cold-15yr-lifecycle-cost.png")
+    save(im, out_name("knowledge-extreme-cold-15yr-lifecycle-cost", lang))
 
 
 def main():
     _init_fonts()
     OUT.mkdir(parents=True, exist_ok=True)
-    draw_heating_demand_chart()
-    draw_lifecycle_cost_chart()
+    for lang in ("en", "zh"):
+        draw_heating_demand_chart(lang)  # type: ignore[arg-type]
+        draw_lifecycle_cost_chart(lang)  # type: ignore[arg-type]
     print("ALL DONE ->", OUT)
 
 
