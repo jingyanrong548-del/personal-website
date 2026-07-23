@@ -152,6 +152,8 @@ npm run generate:diagrams
 - `scripts/generate-hthp-config-overlays.py` — HTHP 构型叠标（幂等；重做前 `git checkout -- public/images/hthp-configs/`）
 - `scripts/overlay-knowledge-3d-legends.py` — **3D/实物原图底部双语图例**（不重绘主体；清单见 `scripts/knowledge-3d-restore-manifest.json`）
 
+**3D 中英换图：** 清单内英文原图为 `public/images/<name>.png`；中文标注版为同名 `.zh.png`。词表见 `scripts/knowledge-3d-zh-glossary.json`（译文以图内英文为准）。页面用 `data-i18n-src-zh`，由 `src/i18n.js` 按语言切换 `src`。**.zh.png 不进** `generate:diagrams`，避免被脚本覆盖。
+
 **重要：** `generate-knowledge-{comp,valve,hx,vessel,lub,pipe,encl,elec,ref,shop}-diagrams.py` 仅作备查，**禁止**默认跑进 `generate:diagrams`，否则会再次用框线图覆盖 3D 原图。若需恢复原图：
 
 ```bash

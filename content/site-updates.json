@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "diagrams-3d-zh-swap-2026-07",
+      "date": "2026-07-23",
+      "category": "site",
+      "title": {
+        "en": "3D knowledge cutaways: Chinese assets on language switch",
+        "zh": "知识库 3D 剖视图：中英切换换图"
+      },
+      "summary": {
+        "en": "Manifest 3D figures keep English originals for EN; ZH loads dedicated Chinese-label PNGs (translations based on English labels).",
+        "zh": "3D 清单图英文界面用原图；中文界面切换为中文标注版（译文以图内英文为准）。"
+      },
+      "url": "/knowledge-compressor.html"
+    },
+    {
       "id": "diagram-glyph-fix-2026-07",
       "date": "2026-07-22",
       "category": "site",

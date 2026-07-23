@@ -2291,6 +2291,17 @@ export function setLanguage(lang, options = {}) {
         }
     });
 
+    document.querySelectorAll('[data-i18n-src-zh]').forEach((el) => {
+        if (!el.dataset.i18nSrcEn) {
+            el.dataset.i18nSrcEn = el.getAttribute('src') || '';
+        }
+        const zh = el.getAttribute('data-i18n-src-zh');
+        const next = lang === 'zh' && zh ? zh : el.dataset.i18nSrcEn;
+        if (next && el.getAttribute('src') !== next) {
+            el.setAttribute('src', next);
+        }
+    });
+
     const currentYear = new Date().getFullYear();
     const currentDate = new Date();
     const appCount = document.querySelectorAll('#apps .app-card').length;

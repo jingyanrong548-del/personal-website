@@ -1,0 +1,6359 @@
+{
+  "_meta": {
+    "rule": "Chinese translations are based on English source labels in each EN PNG; do not invent new claims.",
+    "keep_acronyms": [
+      "TXV",
+      "EEV",
+      "VFD",
+      "GWP",
+      "ODP",
+      "COP",
+      "IP",
+      "ISO",
+      "POE",
+      "PAG",
+      "PVE",
+      "MO",
+      "AB",
+      "PLC",
+      "BMS",
+      "MCCB",
+      "IHX",
+      "HTHP",
+      "A2W",
+      "CO2",
+      "R290",
+      "R744"
+    ],
+    "sources": [
+      "scripts/knowledge-3d-extracted-en.json",
+      "scripts/knowledge-3d-zh-phrase-map.json"
+    ]
+  },
+  "common": [
+    {
+      "en": "Suction (low pressure)",
+      "zh": "吸气（低压）"
+    },
+    {
+      "en": "Discharge (high pressure)",
+      "zh": "排气（高压）"
+    },
+    {
+      "en": "Suction",
+      "zh": "吸气"
+    },
+    {
+      "en": "Discharge",
+      "zh": "排气"
+    },
+    {
+      "en": "Compressor",
+      "zh": "压缩机"
+    },
+    {
+      "en": "Evaporator",
+      "zh": "蒸发器"
+    },
+    {
+      "en": "Condenser",
+      "zh": "冷凝器"
+    },
+    {
+      "en": "Expansion valve",
+      "zh": "膨胀阀"
+    },
+    {
+      "en": "Motor (inside)",
+      "zh": "电机（壳内）"
+    },
+    {
+      "en": "Motor (external)",
+      "zh": "电机（外置）"
+    },
+    {
+      "en": "Compressor (inside)",
+      "zh": "压缩机（壳内）"
+    },
+    {
+      "en": "Shaft Seal",
+      "zh": "轴封"
+    },
+    {
+      "en": "Drive Separate",
+      "zh": "驱动分离"
+    },
+    {
+      "en": "NO FIELD SERVICE",
+      "zh": "现场不可维修"
+    },
+    {
+      "en": "SERVICEABLE",
+      "zh": "可维修"
+    },
+    {
+      "en": "Fully welded shell",
+      "zh": "全焊壳体"
+    },
+    {
+      "en": "Motor sealed inside",
+      "zh": "电机密封在内"
+    },
+    {
+      "en": "Not serviceable in the field",
+      "zh": "现场不可维修"
+    },
+    {
+      "en": "Replace as a unit",
+      "zh": "整机更换"
+    },
+    {
+      "en": "Bolted housing",
+      "zh": "螺栓壳体"
+    },
+    {
+      "en": "Motor inside",
+      "zh": "电机在内"
+    },
+    {
+      "en": "Field serviceable",
+      "zh": "现场可维修"
+    },
+    {
+      "en": "Components can be replaced",
+      "zh": "部件可更换"
+    },
+    {
+      "en": "External motor",
+      "zh": "外置电机"
+    },
+    {
+      "en": "Shaft with seal",
+      "zh": "带轴封的轴"
+    },
+    {
+      "en": "Drive and compressor separate",
+      "zh": "驱动与压缩机分离"
+    },
+    {
+      "en": "Easy access for maintenance",
+      "zh": "维护方便"
+    },
+    {
+      "en": "HERMETIC (Fully welded shell)",
+      "zh": "全封闭（全焊壳体）"
+    },
+    {
+      "en": "SEMI-HERMETIC (Bolted housing)",
+      "zh": "半封闭（螺栓壳体）"
+    },
+    {
+      "en": "OPEN-DRIVE (External motor)",
+      "zh": "开启式（外置电机）"
+    },
+    {
+      "en": "Hermetic",
+      "zh": "全封闭"
+    },
+    {
+      "en": "Semi-hermetic",
+      "zh": "半封闭"
+    },
+    {
+      "en": "Open-drive",
+      "zh": "开启式"
+    },
+    {
+      "en": "Open",
+      "zh": "开启式"
+    },
+    {
+      "en": "Capacity: small–medium",
+      "zh": "容量：小–中"
+    },
+    {
+      "en": "Capacity: medium–large",
+      "zh": "容量：中–大"
+    },
+    {
+      "en": "Capacity: medium",
+      "zh": "容量：中"
+    },
+    {
+      "en": "Capacity: large",
+      "zh": "容量：大"
+    },
+    {
+      "en": "Capacity: small",
+      "zh": "容量：小"
+    },
+    {
+      "en": "Reciprocating piston",
+      "zh": "往复活塞"
+    },
+    {
+      "en": "Scroll",
+      "zh": "涡旋"
+    },
+    {
+      "en": "Screw",
+      "zh": "螺杆"
+    },
+    {
+      "en": "Centrifugal",
+      "zh": "离心"
+    },
+    {
+      "en": "Rotary",
+      "zh": "转子"
+    },
+    {
+      "en": "Compressor families",
+      "zh": "压缩机类型"
+    },
+    {
+      "en": "Oil separator",
+      "zh": "油分离器"
+    },
+    {
+      "en": "Liquid receiver",
+      "zh": "储液器"
+    },
+    {
+      "en": "Suction accumulator",
+      "zh": "回气集液器"
+    },
+    {
+      "en": "Flash tank",
+      "zh": "闪蒸罐"
+    },
+    {
+      "en": "Economizer",
+      "zh": "经济器"
+    },
+    {
+      "en": "Heat exchanger",
+      "zh": "换热器"
+    },
+    {
+      "en": "Plate",
+      "zh": "板式"
+    },
+    {
+      "en": "Shell-and-tube",
+      "zh": "壳管"
+    },
+    {
+      "en": "Fin-tube",
+      "zh": "翅片管"
+    },
+    {
+      "en": "Microchannel",
+      "zh": "微通道"
+    },
+    {
+      "en": "Tube-in-tube",
+      "zh": "套管"
+    },
+    {
+      "en": "Coaxial",
+      "zh": "同轴"
+    },
+    {
+      "en": "NOTE:",
+      "zh": "注："
+    },
+    {
+      "en": "Note:",
+      "zh": "注："
+    }
+  ],
+  "files": {
+    "knowledge-comp-cycle.png": {
+      "title_en": "Vapor-compression cycle — compressor highlighted",
+      "title_zh": "蒸汽压缩循环 — 突出压缩机",
+      "labels": [
+        {
+          "en": "Vapor-compression cycle",
+          "zh": "蒸汽压缩循环"
+        },
+        {
+          "en": "Evaporator",
+          "zh": "蒸发器"
+        },
+        {
+          "en": "(low pressure)",
+          "zh": "（低压）"
+        },
+        {
+          "en": "absorbs heat",
+          "zh": "吸热"
+        },
+        {
+          "en": "suction",
+          "zh": "吸气"
+        },
+        {
+          "en": "Compressor",
+          "zh": "压缩机"
+        },
+        {
+          "en": "discharge",
+          "zh": "排气"
+        },
+        {
+          "en": "Condenser",
+          "zh": "冷凝器"
+        },
+        {
+          "en": "(high pressure)",
+          "zh": "（高压）"
+        },
+        {
+          "en": "rejects heat",
+          "zh": "放热"
+        },
+        {
+          "en": "Expansion valve",
+          "zh": "膨胀阀"
+        },
+        {
+          "en": "(throttle)",
+          "zh": "（节流）"
+        },
+        {
+          "en": "Vapor-compression cycle — compressor highlighted",
+          "zh": "蒸汽压缩循环 — 突出压缩机"
+        }
+      ]
+    },
+    "knowledge-comp-hermetic.png": {
+      "title_en": "Hermetic · semi-hermetic · open-drive",
+      "title_zh": "全封闭 · 半封闭 · 开启式",
+      "labels": [
+        {
+          "en": "Hermetic • Semi-hermetic • Open",
+          "zh": "全封闭 · 半封闭 · 开启式"
+        },
+        {
+          "en": "HERMETIC (Fully welded shell)",
+          "zh": "全封闭（全焊壳体）"
+        },
+        {
+          "en": "Motor (inside)",
+          "zh": "电机（壳内）"
+        },
+        {
+          "en": "Compressor (inside)",
+          "zh": "压缩机（壳内）"
+        },
+        {
+          "en": "NO FIELD SERVICE",
+          "zh": "现场不可维修"
+        },
+        {
+          "en": "Fully welded shell",
+          "zh": "全焊壳体"
+        },
+        {
+          "en": "Motor sealed inside",
+          "zh": "电机密封在内"
+        },
+        {
+          "en": "Not serviceable in the field",
+          "zh": "现场不可维修"
+        },
+        {
+          "en": "Replace as a unit",
+          "zh": "整机更换"
+        },
+        {
+          "en": "SEMI-HERMETIC (Bolted housing)",
+          "zh": "半封闭（螺栓壳体）"
+        },
+        {
+          "en": "SERVICEABLE",
+          "zh": "可维修"
+        },
+        {
+          "en": "Bolted housing",
+          "zh": "螺栓壳体"
+        },
+        {
+          "en": "Motor inside",
+          "zh": "电机在内"
+        },
+        {
+          "en": "Field serviceable",
+          "zh": "现场可维修"
+        },
+        {
+          "en": "Components can be replaced",
+          "zh": "部件可更换"
+        },
+        {
+          "en": "OPEN-DRIVE (External motor)",
+          "zh": "开启式（外置电机）"
+        },
+        {
+          "en": "Shaft Seal",
+          "zh": "轴封"
+        },
+        {
+          "en": "Motor (external)",
+          "zh": "电机（外置）"
+        },
+        {
+          "en": "Drive Separate",
+          "zh": "驱动分离"
+        },
+        {
+          "en": "DRIVE SEPARATE",
+          "zh": "驱动分离"
+        },
+        {
+          "en": "External motor",
+          "zh": "外置电机"
+        },
+        {
+          "en": "Shaft with seal",
+          "zh": "带轴封的轴"
+        },
+        {
+          "en": "Drive and compressor separate",
+          "zh": "驱动与压缩机分离"
+        },
+        {
+          "en": "Easy access for maintenance",
+          "zh": "维护方便"
+        },
+        {
+          "en": "NOTE: Selection depends on application, capacity, maintenance requirements, and site conditions.",
+          "zh": "注：选型取决于应用、容量、维护需求与现场条件。"
+        },
+        {
+          "en": "Hermetic • semi-hermetic • open-drive",
+          "zh": "全封闭 · 半封闭 · 开启式驱动"
+        }
+      ]
+    },
+    "knowledge-comp-hthp.png": {
+      "title_en": "Heat pump & high-lift duty",
+      "title_zh": "热泵与高升程工况",
+      "labels": [
+        {
+          "en": "Heat pump & high-lift duty",
+          "zh": "热泵与高升程工况"
+        },
+        {
+          "en": "Liquid injection / vapor injection",
+          "zh": "喷液 / 喷气"
+        },
+        {
+          "en": "Low pressure vapor",
+          "zh": "低压蒸汽"
+        },
+        {
+          "en": "EVAPORATOR",
+          "zh": "蒸发器"
+        },
+        {
+          "en": "High pressure hot vapor",
+          "zh": "高压热蒸汽"
+        },
+        {
+          "en": "COMPRESSOR",
+          "zh": "压缩机"
+        },
+        {
+          "en": "Inverter speed control",
+          "zh": "变频调速"
+        },
+        {
+          "en": "Oil thermal stress / oil-free path",
+          "zh": "油热应力 / 无油路径"
+        },
+        {
+          "en": "CONDENSER",
+          "zh": "冷凝器"
+        },
+        {
+          "en": "EXPANSION VALVE",
+          "zh": "膨胀阀"
+        },
+        {
+          "en": "High pressure liquid",
+          "zh": "高压液体"
+        },
+        {
+          "en": "Low pressure cold liquid / two-phase",
+          "zh": "低压冷液 / 两相"
+        },
+        {
+          "en": "Heat source",
+          "zh": "热源"
+        },
+        {
+          "en": "Low temperature e.g., air, water, ground",
+          "zh": "低温源，如空气、水、地源"
+        },
+        {
+          "en": "Tsource (low)",
+          "zh": "Tsource（低）"
+        },
+        {
+          "en": "e.g., 0–20 °C",
+          "zh": "例如 0–20 °C"
+        },
+        {
+          "en": "Tsink (high)",
+          "zh": "Tsink（高）"
+        },
+        {
+          "en": "e.g., 60–120 °C",
+          "zh": "例如 60–120 °C"
+        },
+        {
+          "en": "Higher temperature",
+          "zh": "更高温度"
+        },
+        {
+          "en": "Temperature lift ΔT",
+          "zh": "温升 ΔT"
+        },
+        {
+          "en": "= Tsink - Tsource",
+          "zh": "= Tsink - Tsource"
+        },
+        {
+          "en": "Pressure ratio ↑",
+          "zh": "压比 ↑"
+        },
+        {
+          "en": "Phigh / Plow",
+          "zh": "Phigh / Plow"
+        },
+        {
+          "en": "Lower temperature",
+          "zh": "更低温度"
+        }
+      ]
+    },
+    "knowledge-comp-map.png": {
+      "title_en": "Performance map at the duty point",
+      "title_zh": "工况点上的性能曲线图读法",
+      "labels": [
+        {
+          "en": "Read the map at your duty point",
+          "zh": "在工况点读取图谱"
+        },
+        {
+          "en": "Condensing temperature (°C)",
+          "zh": "冷凝温度（°C）"
+        },
+        {
+          "en": "Evaporating temperature (°C)",
+          "zh": "蒸发温度（°C）"
+        },
+        {
+          "en": "Capacity (kW)",
+          "zh": "容量（kW）"
+        },
+        {
+          "en": "Power (kW)",
+          "zh": "功率（kW）"
+        },
+        {
+          "en": "Duty point",
+          "zh": "工况点"
+        },
+        {
+          "en": "At your duty point, read capacity and power from the corresponding contours.",
+          "zh": "在工况点处，从对应等值线读取容量与功率。"
+        },
+        {
+          "en": "Use the side factors to understand how changes affect performance.",
+          "zh": "用侧边因素理解变化如何影响性能。"
+        },
+        {
+          "en": "Displacement",
+          "zh": "排量"
+        },
+        {
+          "en": "Higher displacement shifts capacity and power upward (proportionally).",
+          "zh": "更大排量使容量与功率成比例上移。"
+        },
+        {
+          "en": "Volumetric efficiency",
+          "zh": "容积效率"
+        },
+        {
+          "en": "Higher efficiency shifts capacity upward (more capacity for given conditions).",
+          "zh": "更高效率使容量上移（相同工况下容量更大）。"
+        },
+        {
+          "en": "Pressure ratio",
+          "zh": "压比"
+        },
+        {
+          "en": "Higher condensing temperature or lower evaporating temperature increases pressure ratio (moves up and left).",
+          "zh": "更高冷凝温度或更低蒸发温度会提高压比（图谱上移向左）。"
+        },
+        {
+          "en": "Discharge temperature",
+          "zh": "排气温度"
+        },
+        {
+          "en": "Discharge temperature increases toward the upper-left of the map (higher condensing temperature and/or lower evaporating temperature).",
+          "zh": "排气温度向图谱左上增大（冷凝温度更高和/或蒸发温度更低）。"
+        },
+        {
+          "en": "Performance map at the duty point",
+          "zh": "工况点上的性能曲线图读法"
+        }
+      ]
+    },
+    "knowledge-comp-oil.png": {
+      "title_en": "Lubrication & oil return",
+      "title_zh": "润滑与回油",
+      "labels": [
+        {
+          "en": "Lubrication & oil return",
+          "zh": "润滑与回油"
+        },
+        {
+          "en": "Oil mist in discharge",
+          "zh": "排气中油雾"
+        },
+        {
+          "en": "Compressor",
+          "zh": "压缩机"
+        },
+        {
+          "en": "Oil separator",
+          "zh": "油分离器"
+        },
+        {
+          "en": "Condenser (High pressure)",
+          "zh": "冷凝器（高压）"
+        },
+        {
+          "en": "Oil return",
+          "zh": "回油"
+        },
+        {
+          "en": "Evaporator (Low pressure)",
+          "zh": "蒸发器（低压）"
+        },
+        {
+          "en": "Oil hold-up in evaporator",
+          "zh": "蒸发器积油"
+        },
+        {
+          "en": "Liquid slug risk (suction)",
+          "zh": "液击风险（吸气）"
+        },
+        {
+          "en": "Refrigerant flow",
+          "zh": "制冷剂流向"
+        },
+        {
+          "en": "Oil flow / return",
+          "zh": "油流 / 回油"
+        },
+        {
+          "en": "Potential liquid slug path",
+          "zh": "潜在液击路径"
+        },
+        {
+          "en": "Key points",
+          "zh": "要点"
+        },
+        {
+          "en": "Oil is entrained in discharge gas as an oil mist.",
+          "zh": "油以油雾形式夹带于排气中。"
+        },
+        {
+          "en": "The oil separator captures oil and returns it to the compressor.",
+          "zh": "油分离器捕集油并返回压缩机。"
+        },
+        {
+          "en": "Oil return line (capillary) must be sized and routed properly.",
+          "zh": "回油管（毛细管）须正确选型与布管。"
+        },
+        {
+          "en": "Oil hold-up in the evaporator increases liquid slug risk on suction.",
+          "zh": "蒸发器积油会增加吸气侧液击风险。"
+        }
+      ]
+    },
+    "knowledge-comp-types.png": {
+      "title_en": "Compressor families (3D cutaways)",
+      "title_zh": "压缩机类型一览（3D 剖视）",
+      "labels": [
+        {
+          "en": "Compressor families",
+          "zh": "压缩机类型"
+        },
+        {
+          "en": "Reciprocating piston",
+          "zh": "往复活塞"
+        },
+        {
+          "en": "Piston moves up and down in a cylinder. Suction on the downstroke, compression on the upstroke.",
+          "zh": "活塞在气缸内上下运动；下行吸气，上行压缩。"
+        },
+        {
+          "en": "Capacity: small–medium",
+          "zh": "容量：小–中"
+        },
+        {
+          "en": "Scroll",
+          "zh": "涡旋"
+        },
+        {
+          "en": "Two spiral scrolls orbit. Gas is trapped in pockets that move inward and are compressed continuously.",
+          "zh": "两片涡旋相对公转；气体被困在向内移动的腔室中连续压缩。"
+        },
+        {
+          "en": "Capacity: medium",
+          "zh": "容量：中"
+        },
+        {
+          "en": "Screw",
+          "zh": "螺杆"
+        },
+        {
+          "en": "Two intermeshing helical rotors trap and compress gas as it moves axially through the compressor.",
+          "zh": "两根啮合螺杆沿轴向输送并压缩气体。"
+        },
+        {
+          "en": "Capacity: medium–large",
+          "zh": "容量：中–大"
+        },
+        {
+          "en": "Centrifugal",
+          "zh": "离心"
+        },
+        {
+          "en": "A high-speed impeller throws gas outward. Velocity is converted to pressure in the diffuser.",
+          "zh": "高速叶轮将气体甩向外侧；速度在扩压器中转为压力。"
+        },
+        {
+          "en": "Capacity: large",
+          "zh": "容量：大"
+        },
+        {
+          "en": "Rotary",
+          "zh": "转子"
+        },
+        {
+          "en": "An eccentrically mounted rotor turns in a circular housing. Gas is trapped in chambers and compressed.",
+          "zh": "偏心转子在圆形壳体内转动；气体在腔室中被捕获并压缩。"
+        },
+        {
+          "en": "Capacity: small",
+          "zh": "容量：小"
+        },
+        {
+          "en": "Suction (low pressure)",
+          "zh": "吸气（低压）"
+        },
+        {
+          "en": "Discharge (high pressure)",
+          "zh": "排气（高压）"
+        },
+        {
+          "en": "Compressor families (3D cutaways)",
+          "zh": "压缩机类型一览（3D 剖视）"
+        }
+      ]
+    },
+    "knowledge-elec-controller.png": {
+      "title_en": "Controller & I/O",
+      "title_zh": "控制器与 I/O",
+      "labels": [
+        {
+          "en": "Unit controller / PLC — I/O and interlocks",
+          "zh": "机组控制器 / PLC — I/O 与联锁"
+        },
+        {
+          "en": "INPUTS (from plant)",
+          "zh": "输入（来自机组）"
+        },
+        {
+          "en": "PRESSURE TRANSDUCERS",
+          "zh": "压力变送器"
+        },
+        {
+          "en": "High pressure (HP)",
+          "zh": "高压（HP）"
+        },
+        {
+          "en": "Low pressure (LP)",
+          "zh": "低压（LP）"
+        },
+        {
+          "en": "TEMPERATURE PROBES",
+          "zh": "温度探头"
+        },
+        {
+          "en": "Suction temp",
+          "zh": "吸气温度"
+        },
+        {
+          "en": "Discharge temp",
+          "zh": "排气温度"
+        },
+        {
+          "en": "Liquid temp",
+          "zh": "液体温度"
+        },
+        {
+          "en": "FLOW SWITCH",
+          "zh": "流量开关"
+        },
+        {
+          "en": "Liquid line flow proven",
+          "zh": "液管通流确认"
+        },
+        {
+          "en": "OTHER INPUTS",
+          "zh": "其他输入"
+        },
+        {
+          "en": "Door switch",
+          "zh": "门开关"
+        },
+        {
+          "en": "Float switch",
+          "zh": "浮球开关"
+        },
+        {
+          "en": "Vibration monitor",
+          "zh": "振动监视"
+        },
+        {
+          "en": "Power quality",
+          "zh": "电能质量"
+        },
+        {
+          "en": "BUILT FOR RELIABILITY",
+          "zh": "为可靠性而设计"
+        },
+        {
+          "en": "Industrial grade",
+          "zh": "工业级"
+        },
+        {
+          "en": "EMI/ESD protected",
+          "zh": "EMI/ESD 防护"
+        },
+        {
+          "en": "Wide temp. range",
+          "zh": "宽温度范围"
+        },
+        {
+          "en": "FEATURES",
+          "zh": "特性"
+        },
+        {
+          "en": "Real-time control",
+          "zh": "实时控制"
+        },
+        {
+          "en": "Advanced algorithms",
+          "zh": "先进算法"
+        },
+        {
+          "en": "Data logging",
+          "zh": "数据记录"
+        },
+        {
+          "en": "Alarm handling",
+          "zh": "报警处理"
+        },
+        {
+          "en": "COMMUNICATIONS",
+          "zh": "通信"
+        },
+        {
+          "en": "Modbus RTU/TCP",
+          "zh": "Modbus RTU/TCP"
+        },
+        {
+          "en": "BACnet IP",
+          "zh": "BACnet IP"
+        },
+        {
+          "en": "MQTT",
+          "zh": "MQTT"
+        },
+        {
+          "en": "SNMP",
+          "zh": "SNMP"
+        },
+        {
+          "en": "MODE",
+          "zh": "MODE"
+        },
+        {
+          "en": "HEAT",
+          "zh": "HEAT"
+        },
+        {
+          "en": "COOL",
+          "zh": "COOL"
+        },
+        {
+          "en": "DEFROST",
+          "zh": "除霜"
+        },
+        {
+          "en": "I1",
+          "zh": "I1"
+        },
+        {
+          "en": "I2",
+          "zh": "I2"
+        },
+        {
+          "en": "I3",
+          "zh": "I3"
+        },
+        {
+          "en": "I4",
+          "zh": "I4"
+        },
+        {
+          "en": "I5",
+          "zh": "I5"
+        },
+        {
+          "en": "I6",
+          "zh": "I6"
+        },
+        {
+          "en": "I7",
+          "zh": "I7"
+        },
+        {
+          "en": "I8",
+          "zh": "I8"
+        },
+        {
+          "en": "24V DC",
+          "zh": "24V DC"
+        },
+        {
+          "en": "+",
+          "zh": "+"
+        },
+        {
+          "en": "-",
+          "zh": "-"
+        },
+        {
+          "en": "OUTPUTS",
+          "zh": "输出"
+        },
+        {
+          "en": "Q1",
+          "zh": "Q1"
+        },
+        {
+          "en": "Q2",
+          "zh": "Q2"
+        },
+        {
+          "en": "Q3",
+          "zh": "Q3"
+        },
+        {
+          "en": "Q4",
+          "zh": "Q4"
+        },
+        {
+          "en": "Q5",
+          "zh": "Q5"
+        },
+        {
+          "en": "Q6",
+          "zh": "Q6"
+        },
+        {
+          "en": "Q7",
+          "zh": "Q7"
+        },
+        {
+          "en": "Q8",
+          "zh": "Q8"
+        },
+        {
+          "en": "OUTPUTS (to equipment)",
+          "zh": "输出（至设备）"
+        },
+        {
+          "en": "COMPRESSOR ENABLE",
+          "zh": "压缩机使能"
+        },
+        {
+          "en": "Run / Stop",
+          "zh": "运行 / 停止"
+        },
+        {
+          "en": "REVERSING VALVE",
+          "zh": "换向阀"
+        },
+        {
+          "en": "Heat / Cool",
+          "zh": "制热 / 制冷"
+        },
+        {
+          "en": "EEV DRIVE (STEPPER)",
+          "zh": "EEV 驱动（步进）"
+        },
+        {
+          "en": "Position command (0–100%)",
+          "zh": "开度指令（0–100%）"
+        },
+        {
+          "en": "ALARM RELAY",
+          "zh": "报警继电器"
+        },
+        {
+          "en": "Common alarm (NO/NC contacts)",
+          "zh": "公共报警（NO/NC 触点）"
+        },
+        {
+          "en": "SAFETY INTERLOCK CHAIN (hard stops)",
+          "zh": "安全联锁链（硬停）"
+        },
+        {
+          "en": "HIGH PRESSURE (HP)",
+          "zh": "高压（HP）"
+        },
+        {
+          "en": "Above limit",
+          "zh": "超上限"
+        },
+        {
+          "en": "LOW PRESSURE (LP)",
+          "zh": "低压（LP）"
+        },
+        {
+          "en": "Below limit",
+          "zh": "低于下限"
+        },
+        {
+          "en": "COMPRESSOR OVERLOAD",
+          "zh": "压缩机过载"
+        },
+        {
+          "en": "Trip / Fault",
+          "zh": "跳闸 / 故障"
+        },
+        {
+          "en": "EMERGENCY STOP",
+          "zh": "急停"
+        },
+        {
+          "en": "Manual E-stop",
+          "zh": "手动急停"
+        },
+        {
+          "en": "ANY TRIP OPENS CHAIN -> UNIT SHUTDOWN",
+          "zh": "任一跳闸断开联锁链 → 机组停机"
+        },
+        {
+          "en": "MANUAL RESET REQUIRED",
+          "zh": "需手动复位"
+        },
+        {
+          "en": "CONTROLLER FUNCTIONS",
+          "zh": "控制器功能"
+        },
+        {
+          "en": "Superheat control (EEV)",
+          "zh": "过热度控制（EEV）"
+        },
+        {
+          "en": "Compressor management",
+          "zh": "压缩机管理"
+        },
+        {
+          "en": "Fan & pump control",
+          "zh": "风机与水泵控制"
+        },
+        {
+          "en": "Efficiency optimization",
+          "zh": "效率优化"
+        },
+        {
+          "en": "INTERLOCK PRINCIPLE",
+          "zh": "联锁原理"
+        },
+        {
+          "en": "Safety chain is wired in series.",
+          "zh": "安全链串联接线。"
+        },
+        {
+          "en": "If any device opens, outputs are de-energized.",
+          "zh": "任一器件断开，则输出失电。"
+        },
+        {
+          "en": "FAIL-SAFE DESIGN",
+          "zh": "故障安全设计"
+        },
+        {
+          "en": "Power loss -> Outputs OFF",
+          "zh": "失电 → 输出断开"
+        },
+        {
+          "en": "Watchdog monitors controller health.",
+          "zh": "看门狗监视控制器健康。"
+        },
+        {
+          "en": "DATA & LOGGING",
+          "zh": "数据与记录"
+        },
+        {
+          "en": "Events, alarms, and trends stored locally and in cloud (if connected).",
+          "zh": "事件、报警与趋势本地存储，并上云（若已连接）。"
+        },
+        {
+          "en": "CONNECTIVITY",
+          "zh": "连接性"
+        },
+        {
+          "en": "Ethernet (Modbus TCP, BACnet IP)",
+          "zh": "Ethernet (Modbus TCP, BACnet IP)"
+        },
+        {
+          "en": "Cellular / Wi-Fi",
+          "zh": "蜂窝 / Wi-Fi"
+        },
+        {
+          "en": "Secure VPN / Firewall",
+          "zh": "安全 VPN / 防火墙"
+        },
+        {
+          "en": "RELIABLE CONTROL. SAFE OPERATION. MAXIMUM UPTIME.",
+          "zh": "可靠控制。安全运行。最大可用率。"
+        },
+        {
+          "en": "Controller & I/O",
+          "zh": "控制器与 I/O"
+        }
+      ]
+    },
+    "knowledge-elec-iot.png": {
+      "title_en": "IoT / remote monitoring",
+      "title_zh": "物联网 / 远程监测",
+      "labels": [
+        {
+          "en": "Remote control & IoT loop",
+          "zh": "远程控制与 IoT 闭环"
+        },
+        {
+          "en": "1 Plant sensors & unit controller",
+          "zh": "1 机组传感器与控制器"
+        },
+        {
+          "en": "Field sensors",
+          "zh": "现场传感器"
+        },
+        {
+          "en": "Pressure",
+          "zh": "压力"
+        },
+        {
+          "en": "Temperature",
+          "zh": "温度"
+        },
+        {
+          "en": "Flow",
+          "zh": "流量"
+        },
+        {
+          "en": "Power",
+          "zh": "电源/功率"
+        },
+        {
+          "en": "Vibration",
+          "zh": "振动"
+        },
+        {
+          "en": "Unit controller (PLC)",
+          "zh": "机组控制器（PLC）"
+        },
+        {
+          "en": "Collects real-time data and executes local control & safety interlocks.",
+          "zh": "采集实时数据并执行本地控制与安全联锁。"
+        },
+        {
+          "en": "2 Industrial gateway (edge)",
+          "zh": "2 工业网关（边缘）"
+        },
+        {
+          "en": "Protocols",
+          "zh": "协议"
+        },
+        {
+          "en": "Modbus RTU/TCP",
+          "zh": "Modbus RTU/TCP"
+        },
+        {
+          "en": "BACnet IP",
+          "zh": "BACnet IP"
+        },
+        {
+          "en": "MQTT",
+          "zh": "MQTT"
+        },
+        {
+          "en": "Aggregates, normalizes and securely publishes data to the cloud.",
+          "zh": "汇聚、标准化并安全发布数据至云端。"
+        },
+        {
+          "en": "3 Cloud platform & AI assist",
+          "zh": "3 云平台与 AI 辅助"
+        },
+        {
+          "en": "Time-series storage",
+          "zh": "时序存储"
+        },
+        {
+          "en": "Analytics & ML models",
+          "zh": "分析与机器学习模型"
+        },
+        {
+          "en": "Anomaly detection",
+          "zh": "异常检测"
+        },
+        {
+          "en": "Predictive insights",
+          "zh": "预测洞察"
+        },
+        {
+          "en": "Alarms & notifications",
+          "zh": "报警与通知"
+        },
+        {
+          "en": "Secure APIs",
+          "zh": "安全 API"
+        },
+        {
+          "en": "Turns data into insights and recommended actions.",
+          "zh": "将数据转化为洞察与建议动作。"
+        },
+        {
+          "en": "4 O&M dashboard (human-in-the-loop)",
+          "zh": "4 运维仪表盘（人在回路）"
+        },
+        {
+          "en": "Overview",
+          "zh": "概览"
+        },
+        {
+          "en": "Plant status",
+          "zh": "机组状态"
+        },
+        {
+          "en": "Healthy",
+          "zh": "正常"
+        },
+        {
+          "en": "KPIs",
+          "zh": "KPI"
+        },
+        {
+          "en": "COP",
+          "zh": "COP"
+        },
+        {
+          "en": "4.2",
+          "zh": "4.2"
+        },
+        {
+          "en": "132 kW",
+          "zh": "132 kW"
+        },
+        {
+          "en": "Suction P",
+          "zh": "吸气压力"
+        },
+        {
+          "en": "2.1 bar(g)",
+          "zh": "2.1 bar(g)"
+        },
+        {
+          "en": "Trends",
+          "zh": "趋势"
+        },
+        {
+          "en": "Active alarms",
+          "zh": "活动报警"
+        },
+        {
+          "en": "10:24",
+          "zh": "10:24"
+        },
+        {
+          "en": "High discharge temperature",
+          "zh": "高排气温度"
+        },
+        {
+          "en": "Warning",
+          "zh": "警告"
+        },
+        {
+          "en": "10:18",
+          "zh": "10:18"
+        },
+        {
+          "en": "Vibration alert - Comp. 2",
+          "zh": "振动告警 - 压缩机 2"
+        },
+        {
+          "en": "10:05",
+          "zh": "10:05"
+        },
+        {
+          "en": "Suction pressure low",
+          "zh": "吸气压力低"
+        },
+        {
+          "en": "Info",
+          "zh": "信息"
+        },
+        {
+          "en": "Operators review performance, receive alerts and approve actions.",
+          "zh": "运维人员查看性能、接收告警并批准动作。"
+        },
+        {
+          "en": "5 Remote actions & setpoints",
+          "zh": "5 远程操作与设定点"
+        },
+        {
+          "en": "Approved actions",
+          "zh": "已批准动作"
+        },
+        {
+          "en": "Adjust setpoints",
+          "zh": "调整设定点"
+        },
+        {
+          "en": "Schedule changes",
+          "zh": "日程变更"
+        },
+        {
+          "en": "Firmware updates",
+          "zh": "固件更新"
+        },
+        {
+          "en": "Configuration update",
+          "zh": "配置更新"
+        },
+        {
+          "en": "Sent securely to plant",
+          "zh": "安全下发至机组"
+        },
+        {
+          "en": "Authenticated",
+          "zh": "已认证"
+        },
+        {
+          "en": "Encrypted (TLS)",
+          "zh": "加密（TLS）"
+        },
+        {
+          "en": "Authorized",
+          "zh": "已授权"
+        },
+        {
+          "en": "Audited",
+          "zh": "已审计"
+        },
+        {
+          "en": "Commands are validated and applied by the local controller within limits.",
+          "zh": "指令经校验后由本地控制器在限值内执行。"
+        },
+        {
+          "en": "Feedback loop: updated setpoints & model learning",
+          "zh": "反馈回路：更新设定点与模型学习"
+        },
+        {
+          "en": "Performance feedback improves models and future recommendations.",
+          "zh": "性能反馈改进模型与后续建议。"
+        },
+        {
+          "en": "Safety first: The local controller always enforces hard safety limits and interlocks. Remote commands cannot override hard safety.",
+          "zh": "安全优先：本地控制器始终执行硬安全限值与联锁。远程指令不能覆盖硬安全。"
+        },
+        {
+          "en": "IoT / remote monitoring",
+          "zh": "物联网 / 远程监测"
+        }
+      ]
+    },
+    "knowledge-elec-layers.png": {
+      "title_en": "Electrical layers in a heat-pump package",
+      "title_zh": "热泵电气分层",
+      "labels": [
+        {
+          "en": "Heat-pump electrical layers",
+          "zh": "热泵电气分层"
+        },
+        {
+          "en": "Field / IoT",
+          "zh": "现场 / IoT"
+        },
+        {
+          "en": "Remote monitoring",
+          "zh": "远程监视"
+        },
+        {
+          "en": "Telemetry & alerts",
+          "zh": "遥测与告警"
+        },
+        {
+          "en": "Firmware updates",
+          "zh": "固件更新"
+        },
+        {
+          "en": "Data to cloud",
+          "zh": "数据上云"
+        },
+        {
+          "en": "Gateway module",
+          "zh": "网关模块"
+        },
+        {
+          "en": "Cloud",
+          "zh": "Cloud"
+        },
+        {
+          "en": "Controller",
+          "zh": "控制器"
+        },
+        {
+          "en": "Unit PLC / control board",
+          "zh": "机组 PLC / 控制板"
+        },
+        {
+          "en": "Algorithms & logic",
+          "zh": "算法与逻辑"
+        },
+        {
+          "en": "I/O for sensors & valves",
+          "zh": "传感器与阀门 I/O"
+        },
+        {
+          "en": "User interface",
+          "zh": "用户界面"
+        },
+        {
+          "en": "HEAT PUMP",
+          "zh": "热泵"
+        },
+        {
+          "en": "LWT 45 °C",
+          "zh": "LWT 45 °C"
+        },
+        {
+          "en": "EWT 37 °C",
+          "zh": "EWT 37 °C"
+        },
+        {
+          "en": "SH 6.0 K",
+          "zh": "SH 6.0 K"
+        },
+        {
+          "en": "MODE HEAT",
+          "zh": "制热模式"
+        },
+        {
+          "en": "Pressure transducer",
+          "zh": "压力变送器"
+        },
+        {
+          "en": "Temp. sensors",
+          "zh": "温度传感器"
+        },
+        {
+          "en": "EEV / EXV valve driver",
+          "zh": "EEV / EXV 阀驱动"
+        },
+        {
+          "en": "Drive",
+          "zh": "Drive"
+        },
+        {
+          "en": "Variable speed control",
+          "zh": "变速控制"
+        },
+        {
+          "en": "DC bus & inverter",
+          "zh": "直流母线与逆变器"
+        },
+        {
+          "en": "Motor protection",
+          "zh": "电机保护"
+        },
+        {
+          "en": "Diagnostics",
+          "zh": "诊断"
+        },
+        {
+          "en": "VFD / Inverter",
+          "zh": "VFD / 变频器"
+        },
+        {
+          "en": "L1, L2, L3, M1, M2, M3",
+          "zh": "L1, L2, L3, M1, M2, M3"
+        },
+        {
+          "en": "Motor",
+          "zh": "电机"
+        },
+        {
+          "en": "Hermetic compressor motor",
+          "zh": "全封闭压缩机电机"
+        },
+        {
+          "en": "High-efficiency permanent magnet",
+          "zh": "高效永磁"
+        },
+        {
+          "en": "Wide speed range",
+          "zh": "宽转速范围"
+        },
+        {
+          "en": "Compressor motor (Hermetic)",
+          "zh": "压缩机电机（全封闭）"
+        },
+        {
+          "en": "Protection",
+          "zh": "保护"
+        },
+        {
+          "en": "Overcurrent protection",
+          "zh": "过流保护"
+        },
+        {
+          "en": "Short-circuit protection",
+          "zh": "短路保护"
+        },
+        {
+          "en": "Contactor control",
+          "zh": "接触器控制"
+        },
+        {
+          "en": "Safe isolation",
+          "zh": "安全隔离"
+        },
+        {
+          "en": "MCCB",
+          "zh": "MCCB"
+        },
+        {
+          "en": "Contactor",
+          "zh": "接触器"
+        },
+        {
+          "en": "Thermal overload relay",
+          "zh": "热过载继电器"
+        },
+        {
+          "en": "Control relays & fuses",
+          "zh": "控制继电器与熔断器"
+        },
+        {
+          "en": "3-Phase AC Power In",
+          "zh": "三相交流电源输入"
+        },
+        {
+          "en": "DATA / TELEMETRY (Ethernet / Cloud)",
+          "zh": "数据 / 遥测（以太网 / 云）"
+        },
+        {
+          "en": "CONTROL SIGNALS (Low voltage)",
+          "zh": "控制信号（低压）"
+        },
+        {
+          "en": "POWER (3-Phase AC)",
+          "zh": "电源（三相交流）"
+        },
+        {
+          "en": "POWER DISTRIBUTION & PROTECTION",
+          "zh": "配电与保护"
+        },
+        {
+          "en": "Communication / Data",
+          "zh": "通信 / 数据"
+        },
+        {
+          "en": "Control Signals",
+          "zh": "控制信号"
+        },
+        {
+          "en": "Power (High Current)",
+          "zh": "动力（大电流）"
+        },
+        {
+          "en": "Information / Cloud",
+          "zh": "信息 / 云"
+        },
+        {
+          "en": "Control / Monitoring",
+          "zh": "控制 / 监视"
+        },
+        {
+          "en": "Power Flow",
+          "zh": "功率流"
+        },
+        {
+          "en": "Electrical layers in a heat-pump package",
+          "zh": "热泵电气分层"
+        }
+      ]
+    },
+    "knowledge-elec-motor.png": {
+      "title_en": "Compressor motor drive basics",
+      "title_zh": "压缩机电机驱动基础",
+      "labels": [
+        {
+          "en": "Compressor motors — hermetic vs open",
+          "zh": "压缩机电机 — 全封闭 vs 开启式"
+        },
+        {
+          "en": "Hermetic / Semi-hermetic",
+          "zh": "全封闭 / 半封闭"
+        },
+        {
+          "en": "Motor and compressor share a sealed shell. Windings are bathed in refrigerant-oil mixture for cooling and lubrication.",
+          "zh": "电机与压缩机共用密封壳体。绕组浸于制冷剂–油混合物中冷却润滑。"
+        },
+        {
+          "en": "Refrigerant-oil mixture (cooling & lubrication)",
+          "zh": "制冷剂–油混合物（冷却与润滑）"
+        },
+        {
+          "en": "Motor winding (inside shell)",
+          "zh": "电机绕组（壳内）"
+        },
+        {
+          "en": "Hermetic shell (sealed)",
+          "zh": "全封闭壳体（密封）"
+        },
+        {
+          "en": "No shaft seal — no leakage path",
+          "zh": "无轴封 — 无泄漏通路"
+        },
+        {
+          "en": "Oil sump",
+          "zh": "油池"
+        },
+        {
+          "en": "Compact, quiet, efficient",
+          "zh": "紧凑、安静、高效"
+        },
+        {
+          "en": "Excellent containment — zero leakage",
+          "zh": "密封性优 — 零泄漏"
+        },
+        {
+          "en": "Cooling depends on refrigerant & oil",
+          "zh": "冷却取决于制冷剂与润滑油"
+        },
+        {
+          "en": "Replace as a unit (not field serviceable)",
+          "zh": "整机更换（现场不可维修）"
+        },
+        {
+          "en": "Open drive",
+          "zh": "开启式驱动"
+        },
+        {
+          "en": "Motor is outside the compressor. Power is transmitted through a shaft with a seal.",
+          "zh": "电机在压缩机外。动力经带轴封的轴传递。"
+        },
+        {
+          "en": "Compressor (inside)",
+          "zh": "压缩机（壳内）"
+        },
+        {
+          "en": "Shaft coupling",
+          "zh": "联轴器"
+        },
+        {
+          "en": "Shaft seal (prevents leakage)",
+          "zh": "轴封（防泄漏）"
+        },
+        {
+          "en": "Motor (outside)",
+          "zh": "电机（外部）"
+        },
+        {
+          "en": "Ambient air cooling (fins & fan)",
+          "zh": "环境空气冷却（翅片与风机）"
+        },
+        {
+          "en": "Alignment critical (check during installation & service)",
+          "zh": "对中关键（安装与检修时检查）"
+        },
+        {
+          "en": "IP rating (e.g., IP55)",
+          "zh": "IP 等级（如 IP55）"
+        },
+        {
+          "en": "Motor is serviceable and replaceable",
+          "zh": "电机可维修可更换"
+        },
+        {
+          "en": "Shaft seal is a wear item — requires maintenance",
+          "zh": "轴封为磨损件 — 需维护"
+        },
+        {
+          "en": "Efficiency can be higher (motor optimised independently)",
+          "zh": "效率可更高（电机可独立优化）"
+        },
+        {
+          "en": "Requires alignment and periodic inspection",
+          "zh": "需要对中并定期检查"
+        },
+        {
+          "en": "Both need correct insulation class and start method.",
+          "zh": "两者都需正确绝缘等级与启动方式。"
+        },
+        {
+          "en": "Compressor motor drive basics",
+          "zh": "压缩机电机驱动基础"
+        }
+      ]
+    },
+    "knowledge-elec-panel.png": {
+      "title_en": "Control panel layout",
+      "title_zh": "电控柜布置",
+      "labels": [
+        {
+          "en": "Panel components — protection layer",
+          "zh": "盘柜部件 — 保护层"
+        },
+        {
+          "en": "1 MCCB / Breaker",
+          "zh": "1 MCCB / 断路器"
+        },
+        {
+          "en": "Main protection against short circuit and overload",
+          "zh": "短路与过载主保护"
+        },
+        {
+          "en": "Manual ON/OFF",
+          "zh": "手动开/关"
+        },
+        {
+          "en": "Adjustable trip (according to design)",
+          "zh": "可调跳闸（按设计）"
+        },
+        {
+          "en": "2 Contactor (with coil)",
+          "zh": "2 接触器（含线圈）"
+        },
+        {
+          "en": "Remotely switches power to the load",
+          "zh": "远程切换负载电源"
+        },
+        {
+          "en": "Coil energized by control circuit",
+          "zh": "由控制回路励磁的线圈"
+        },
+        {
+          "en": "Auxiliary contacts for interlocking & feedback",
+          "zh": "联锁与反馈用辅助触点"
+        },
+        {
+          "en": "3 Thermal Overload Relay",
+          "zh": "3 热过载继电器"
+        },
+        {
+          "en": "Protects motor from overload",
+          "zh": "保护电机过载"
+        },
+        {
+          "en": "Bimetal element senses current",
+          "zh": "双金属片感知电流"
+        },
+        {
+          "en": "Trips contactor coil on overload",
+          "zh": "过载时断开接触器线圈"
+        },
+        {
+          "en": "4 Control Transformer 24V / 230V",
+          "zh": "4 控制变压器 24V / 230V"
+        },
+        {
+          "en": "Steps down to safe control voltage",
+          "zh": "降至安全控制电压"
+        },
+        {
+          "en": "Supplies control circuit & devices",
+          "zh": "供给控制回路与器件"
+        },
+        {
+          "en": "5 Terminal Strips",
+          "zh": "5 端子排"
+        },
+        {
+          "en": "Connection points for field wiring",
+          "zh": "现场接线连接点"
+        },
+        {
+          "en": "Organized & labeled for easy maintenance",
+          "zh": "整齐贴标便于维护"
+        },
+        {
+          "en": "6 Segregated Wiring",
+          "zh": "6 分区布线"
+        },
+        {
+          "en": "Power (high current) separated from control (low voltage)",
+          "zh": "动力（大电流）与控制（低压）分离"
+        },
+        {
+          "en": "Reduces noise & improves safety",
+          "zh": "降低噪声并提高安全性"
+        },
+        {
+          "en": "Contactor — Main Contacts (Cutaway)",
+          "zh": "接触器 — 主触点（剖视）"
+        },
+        {
+          "en": "Moving contact (armature)",
+          "zh": "动触点（衔铁）"
+        },
+        {
+          "en": "Fixed contacts",
+          "zh": "静触点"
+        },
+        {
+          "en": "Arc chute",
+          "zh": "灭弧室"
+        },
+        {
+          "en": "Return spring",
+          "zh": "复位弹簧"
+        },
+        {
+          "en": "Thermal Overload — Bimetal (Cutaway)",
+          "zh": "热过载 — 双金属（剖视）"
+        },
+        {
+          "en": "Bimetal element (heats with current)",
+          "zh": "双金属片（随电流发热）"
+        },
+        {
+          "en": "Trip mechanism",
+          "zh": "跳闸机构"
+        },
+        {
+          "en": "Adjustable current setting",
+          "zh": "可调电流设定"
+        },
+        {
+          "en": "WIRING LEGEND",
+          "zh": "接线图例"
+        },
+        {
+          "en": "3-Phase Power (R / S / T)",
+          "zh": "三相电源（R / S / T）"
+        },
+        {
+          "en": "Neutral (N)",
+          "zh": "中性线（N）"
+        },
+        {
+          "en": "Protective Earth (PE)",
+          "zh": "保护接地（PE）"
+        },
+        {
+          "en": "SEGREGATION",
+          "zh": "分区隔离"
+        },
+        {
+          "en": "Power wiring (left side)",
+          "zh": "动力线（左侧）"
+        },
+        {
+          "en": "Control / signal wiring (right side)",
+          "zh": "控制/信号线（右侧）"
+        },
+        {
+          "en": "DEVICE FUNCTIONS",
+          "zh": "设备功能"
+        },
+        {
+          "en": "Protects",
+          "zh": "保护"
+        },
+        {
+          "en": "Switches",
+          "zh": "开关"
+        },
+        {
+          "en": "Controls",
+          "zh": "控制"
+        },
+        {
+          "en": "Connects",
+          "zh": "连接"
+        },
+        {
+          "en": "Isolates",
+          "zh": "隔离"
+        },
+        {
+          "en": "GOOD PRACTICE",
+          "zh": "良好实践"
+        },
+        {
+          "en": "Keep wiring tidy and labeled",
+          "zh": "布线整齐并贴标"
+        },
+        {
+          "en": "Maintain proper clearances",
+          "zh": "保持适当间距"
+        },
+        {
+          "en": "Follow manufacturer settings",
+          "zh": "遵循制造商设定"
+        },
+        {
+          "en": "Verify against electrical drawings",
+          "zh": "对照电气图纸核对"
+        },
+        {
+          "en": "Set overload to nameplate FLC — do not raise to stop trips.",
+          "zh": "过载按铭牌 FLC 整定 — 勿为止跳闸而抬高。"
+        },
+        {
+          "en": "CONTROL TRANSFORMER",
+          "zh": "控制变压器"
+        },
+        {
+          "en": "230V",
+          "zh": "230V"
+        },
+        {
+          "en": "24V",
+          "zh": "24V"
+        },
+        {
+          "en": "1/L1",
+          "zh": "1/L1"
+        },
+        {
+          "en": "3/L2",
+          "zh": "3/L2"
+        },
+        {
+          "en": "5/L3",
+          "zh": "5/L3"
+        },
+        {
+          "en": "2/T1",
+          "zh": "2/T1"
+        },
+        {
+          "en": "4/T2",
+          "zh": "4/T2"
+        },
+        {
+          "en": "6/T3",
+          "zh": "6/T3"
+        },
+        {
+          "en": "KM1",
+          "zh": "KM1"
+        },
+        {
+          "en": "RESET",
+          "zh": "RESET"
+        },
+        {
+          "en": "TEST",
+          "zh": "TEST"
+        },
+        {
+          "en": "STOP",
+          "zh": "STOP"
+        },
+        {
+          "en": "Control panel layout",
+          "zh": "电控柜布置"
+        }
+      ]
+    },
+    "knowledge-elec-vfd.png": {
+      "title_en": "VFD / inverter drive",
+      "title_zh": "变频器 / 逆变驱动",
+      "labels": [
+        {
+          "en": "VFD / inverter capacity control",
+          "zh": "VFD / 变频容量控制"
+        },
+        {
+          "en": "GRID / SUPPLY IN",
+          "zh": "电网 / 电源输入"
+        },
+        {
+          "en": "3-phase AC 50/60 Hz",
+          "zh": "三相交流 50/60 Hz"
+        },
+        {
+          "en": "L1, L2, L3, PE",
+          "zh": "L1, L2, L3, PE"
+        },
+        {
+          "en": "EMI / RFI FILTER",
+          "zh": "EMI / RFI 滤波器"
+        },
+        {
+          "en": "Reduces conducted emissions to the grid.",
+          "zh": "降低向电网的传导发射。"
+        },
+        {
+          "en": "INPUT RECTIFIER",
+          "zh": "输入整流"
+        },
+        {
+          "en": "3-phase diode bridge",
+          "zh": "三相二极管桥"
+        },
+        {
+          "en": "Converts AC to DC",
+          "zh": "交流转直流"
+        },
+        {
+          "en": "1. INPUT RECTIFIER",
+          "zh": "1. 输入整流"
+        },
+        {
+          "en": "AC to DC conversion",
+          "zh": "交流转直流"
+        },
+        {
+          "en": "High efficiency low losses",
+          "zh": "高效率、低损耗"
+        },
+        {
+          "en": "2. DC BUS",
+          "zh": "2. 直流母线"
+        },
+        {
+          "en": "DC link energy storage",
+          "zh": "直流环节储能"
+        },
+        {
+          "en": "Smooths ripple, supports transients",
+          "zh": "平滑纹波，支撑暂态"
+        },
+        {
+          "en": "3. IGBT INVERTER",
+          "zh": "3. IGBT 逆变器"
+        },
+        {
+          "en": "IGBT bridge generates variable frequency 3-phase AC",
+          "zh": "IGBT 桥生成变频三相交流"
+        },
+        {
+          "en": "4. OUTPUT FILTER",
+          "zh": "4. 输出滤波"
+        },
+        {
+          "en": "Filters PWM waveform",
+          "zh": "滤除 PWM 波形"
+        },
+        {
+          "en": "Reduces dv/dt, protects motor",
+          "zh": "降低 dv/dt，保护电机"
+        },
+        {
+          "en": "5. CONTROL BOARD",
+          "zh": "5. 控制板"
+        },
+        {
+          "en": "TO COMPRESSOR MOTOR",
+          "zh": "至压缩机电机"
+        },
+        {
+          "en": "Screened motor cable (3-phase)",
+          "zh": "屏蔽电机电缆（三相）"
+        },
+        {
+          "en": "U, V, W, PE",
+          "zh": "U, V, W, PE"
+        },
+        {
+          "en": "Hermetic compressor motor (AC induction / PMSM)",
+          "zh": "全封闭压缩机电机（交流感应 / PMSM）"
+        },
+        {
+          "en": "Hz • V • TORQUE CONTROL",
+          "zh": "Hz • V • 扭矩控制"
+        },
+        {
+          "en": "Torque %",
+          "zh": "扭矩 %"
+        },
+        {
+          "en": "Speed (Hz)",
+          "zh": "转速（Hz）"
+        },
+        {
+          "en": "Hz (speed) %",
+          "zh": "Hz（转速）%"
+        },
+        {
+          "en": "Voltage (V) %",
+          "zh": "电压 (V) %"
+        },
+        {
+          "en": "Constant V/Hz maintains flux",
+          "zh": "恒 V/Hz 维持磁通"
+        },
+        {
+          "en": "Torque ~ Hz² at constant V/Hz",
+          "zh": "恒 V/Hz 时扭矩 ~ Hz²"
+        },
+        {
+          "en": "Wide speed range for capacity control",
+          "zh": "宽转速范围用于容量控制"
+        },
+        {
+          "en": "PART-LOAD BENEFITS",
+          "zh": "部分负荷优势"
+        },
+        {
+          "en": "Precise capacity matching",
+          "zh": "精确容量匹配"
+        },
+        {
+          "en": "Higher part-load efficiency (COP)",
+          "zh": "更高部分负荷效率（COP）"
+        },
+        {
+          "en": "Lower starting current & noise",
+          "zh": "更低启动电流与噪声"
+        },
+        {
+          "en": "Stable control & comfort",
+          "zh": "稳定控制与舒适"
+        },
+        {
+          "en": "POWER QUALITY & PROTECTION",
+          "zh": "电能质量与保护"
+        },
+        {
+          "en": "Harmonics reduced on output with sine-wave filtering",
+          "zh": "输出经正弦滤波后谐波降低"
+        },
+        {
+          "en": "EMI filters limit interference to meet standards",
+          "zh": "EMI 滤波器限制干扰以满足标准"
+        },
+        {
+          "en": "Protections: overcurrent, overvoltage, overtemp, ground fault, short circuit, phase loss",
+          "zh": "保护：过流、过压、过温、接地故障、短路、缺相"
+        },
+        {
+          "en": "CE",
+          "zh": "CE"
+        },
+        {
+          "en": "cULus LISTED",
+          "zh": "cULus LISTED"
+        },
+        {
+          "en": "RoHS",
+          "zh": "RoHS"
+        },
+        {
+          "en": "The VFD adjusts compressor speed to match load — reducing energy use while maintaining precise superheat and system stability.",
+          "zh": "VFD 调节压缩机转速匹配负荷 — 降低能耗并保持精确过热度与系统稳定。"
+        },
+        {
+          "en": "AC IN",
+          "zh": "交流输入"
+        },
+        {
+          "en": "VFD",
+          "zh": "VFD"
+        },
+        {
+          "en": "COMPRESSOR",
+          "zh": "压缩机"
+        },
+        {
+          "en": "VFD / inverter drive",
+          "zh": "变频器 / 逆变驱动"
+        }
+      ]
+    },
+    "knowledge-encl-frame.png": {
+      "title_en": "Frame, panels, doors, and IP",
+      "title_zh": "机架、面板、门与防护等级",
+      "labels": [
+        {
+          "en": "HEAT PUMP CABINET CONSTRUCTION",
+          "zh": "热泵机柜结构"
+        },
+        {
+          "en": "Bolted Frame, Folded Sheet-Metal Panels, Hinged Access Door",
+          "zh": "螺栓机架、折弯钣金面板、铰链检修门"
+        },
+        {
+          "en": "1. FRAME",
+          "zh": "1. 机架"
+        },
+        {
+          "en": "Structural support made from bolted steel frame for strength and stability.",
+          "zh": "螺栓钢架结构支撑，提供强度与稳定性。"
+        },
+        {
+          "en": "Frame",
+          "zh": "机架"
+        },
+        {
+          "en": "2. PANELS",
+          "zh": "2. 面板"
+        },
+        {
+          "en": "Folded sheet-metal panels provide enclosure and weather protection.",
+          "zh": "折弯钣金面板形成机壳并提供防风雨。"
+        },
+        {
+          "en": "Panel",
+          "zh": "Panel"
+        },
+        {
+          "en": "3. DOOR",
+          "zh": "3. 门"
+        },
+        {
+          "en": "Hinged access door allows service access to internal components.",
+          "zh": "铰链检修门便于触及内部部件。"
+        },
+        {
+          "en": "Door",
+          "zh": "门"
+        },
+        {
+          "en": "IP RATING",
+          "zh": "IP 等级"
+        },
+        {
+          "en": "IP54",
+          "zh": "IP54"
+        },
+        {
+          "en": "IP54 protection against limited dust ingress and splashing water from any direction.",
+          "zh": "IP54：防有限粉尘进入与任意方向溅水。"
+        },
+        {
+          "en": "FRAME",
+          "zh": "FRAME"
+        },
+        {
+          "en": "Bolted steel construction",
+          "zh": "螺栓钢结构"
+        },
+        {
+          "en": "High strength and rigidity",
+          "zh": "高强度与刚度"
+        },
+        {
+          "en": "Corrosion-resistant finish",
+          "zh": "耐腐蚀表面处理"
+        },
+        {
+          "en": "PANELS",
+          "zh": "PANELS"
+        },
+        {
+          "en": "Folded sheet-metal",
+          "zh": "折弯钣金"
+        },
+        {
+          "en": "Weather and UV resistant",
+          "zh": "耐候与耐紫外"
+        },
+        {
+          "en": "Securely fastened to frame",
+          "zh": "牢固固定于机架"
+        },
+        {
+          "en": "DOOR",
+          "zh": "DOOR"
+        },
+        {
+          "en": "Hinged for easy access",
+          "zh": "铰链开启便于检修"
+        },
+        {
+          "en": "Gasketed seal",
+          "zh": "垫片密封"
+        },
+        {
+          "en": "Lockable handle",
+          "zh": "可上锁手柄"
+        },
+        {
+          "en": "IP54 as standard",
+          "zh": "标配 IP54"
+        },
+        {
+          "en": "Protection against dust",
+          "zh": "防尘"
+        },
+        {
+          "en": "Protection against splashing water",
+          "zh": "防溅水"
+        },
+        {
+          "en": "BENEFITS:",
+          "zh": "优点："
+        },
+        {
+          "en": "Durable construction",
+          "zh": "耐用结构"
+        },
+        {
+          "en": "Weather protection",
+          "zh": "防风雨"
+        },
+        {
+          "en": "Easy maintenance",
+          "zh": "便于维护"
+        },
+        {
+          "en": "Reliable performance",
+          "zh": "可靠性能"
+        },
+        {
+          "en": "Frame, panels, doors, and IP",
+          "zh": "机架、面板、门与防护等级"
+        }
+      ]
+    },
+    "knowledge-encl-role.png": {
+      "title_en": "Enclosure roles in a heat-pump package",
+      "title_zh": "热泵机组机柜角色",
+      "labels": [
+        {
+          "en": "HEAT PUMP OUTDOOR UNIT",
+          "zh": "热泵室外机"
+        },
+        {
+          "en": "Frame and Sheet-Metal Enclosure",
+          "zh": "机架与钣金机壳"
+        },
+        {
+          "en": "Frame",
+          "zh": "机架"
+        },
+        {
+          "en": "Sheet metal",
+          "zh": "钣金"
+        },
+        {
+          "en": "Door",
+          "zh": "门"
+        },
+        {
+          "en": "Ground",
+          "zh": "接地"
+        },
+        {
+          "en": "The steel frame provides structural support.",
+          "zh": "钢架提供结构支撑。"
+        },
+        {
+          "en": "Sheet-metal panels form the enclosure.",
+          "zh": "钣金面板构成机壳。"
+        },
+        {
+          "en": "The door allows access for service.",
+          "zh": "门便于检修进入。"
+        },
+        {
+          "en": "The ground connection bonds the enclosure to earth for safety.",
+          "zh": "接地将机壳可靠接至大地以保证安全。"
+        },
+        {
+          "en": "Enclosure roles in a heat-pump package",
+          "zh": "热泵机组机柜角色"
+        }
+      ]
+    },
+    "knowledge-encl-routing.png": {
+      "title_en": "Cable trays and bend radius",
+      "title_zh": "线槽与弯曲半径",
+      "labels": [
+        {
+          "en": "CABLE TRAY ROUTING INSIDE HEAT PUMP ENCLOSURE",
+          "zh": "热泵机柜内线槽布线"
+        },
+        {
+          "en": "Proper cable routing improves reliability and serviceability. Follow minimum bend radius and secure cables at recommended tie points.",
+          "zh": "正确布线提高可靠性与可维护性。遵循最小弯曲半径并在推荐绑扎点固定。"
+        },
+        {
+          "en": "Cable tray",
+          "zh": "线槽"
+        },
+        {
+          "en": "Tie points",
+          "zh": "绑扎点"
+        },
+        {
+          "en": "Strain relief",
+          "zh": "应力释放"
+        },
+        {
+          "en": "Bend radius",
+          "zh": "弯曲半径"
+        },
+        {
+          "en": "Maintain minimum bend radius. R ≥ 10 x cable OD",
+          "zh": "保持最小弯曲半径。R ≥ 10 × 电缆外径"
+        },
+        {
+          "en": "ROUTING GUIDELINES",
+          "zh": "布线指南"
+        },
+        {
+          "en": "Use cable tray or ladder for mechanical protection",
+          "zh": "用线槽或桥架提供机械保护"
+        },
+        {
+          "en": "Secure cables at regular intervals using tie points",
+          "zh": "按间隔在绑扎点固定电缆"
+        },
+        {
+          "en": "Maintain minimum bend radius to prevent damage",
+          "zh": "保持最小弯曲半径以防损坏"
+        },
+        {
+          "en": "Provide strain relief at all panel entries",
+          "zh": "所有柜体入口提供应力释放"
+        },
+        {
+          "en": "Keep power and signal cables separated as required",
+          "zh": "按要求分离动力与信号电缆"
+        },
+        {
+          "en": "Follow all applicable codes and manufacturer instructions",
+          "zh": "遵循所有适用规范与制造商说明"
+        },
+        {
+          "en": "Cable trays and bend radius",
+          "zh": "线槽与弯曲半径"
+        }
+      ]
+    },
+    "knowledge-encl-segregation.png": {
+      "title_en": "Power and signal segregation",
+      "title_zh": "强电与信号分隔",
+      "labels": [
+        {
+          "en": "CABLE SEGREGATION IN ELECTRICAL CABINET",
+          "zh": "电气柜内电缆分区"
+        },
+        {
+          "en": "Keep power and signal circuits separate to improve EMC performance and reduce noise coupling.",
+          "zh": "动力与信号回路分开，以改善 EMC 并降低噪声耦合。"
+        },
+        {
+          "en": "POWER",
+          "zh": "POWER"
+        },
+        {
+          "en": "Power cables in dedicated tray",
+          "zh": "动力电缆专用线槽"
+        },
+        {
+          "en": "SIGNAL",
+          "zh": "SIGNAL"
+        },
+        {
+          "en": "Signal / sensor cables in separate tray",
+          "zh": "信号/传感器电缆独立线槽"
+        },
+        {
+          "en": "EMC BOUNDARY",
+          "zh": "EMC 边界"
+        },
+        {
+          "en": "Physical separation between power and signal circuits",
+          "zh": "动力与信号回路物理分隔"
+        },
+        {
+          "en": "SHIELD TERMINATION",
+          "zh": "屏蔽端接"
+        },
+        {
+          "en": "Cable shield connected to chassis at entry to drain high-frequency noise",
+          "zh": "电缆屏蔽在入口处接机壳以泄放高频噪声"
+        },
+        {
+          "en": "TYPICAL LAYOUT (TOP VIEW)",
+          "zh": "典型布置（俯视）"
+        },
+        {
+          "en": "≥ 200 mm",
+          "zh": "≥ 200 mm"
+        },
+        {
+          "en": "(8 in)",
+          "zh": "(8 in)"
+        },
+        {
+          "en": "BEST PRACTICES",
+          "zh": "最佳实践"
+        },
+        {
+          "en": "Separate power and signal cables in different trays or compartments.",
+          "zh": "动力与信号电缆分槽或分仓敷设。"
+        },
+        {
+          "en": "Maintain adequate distance between power and signal paths.",
+          "zh": "动力与信号路径保持足够间距。"
+        },
+        {
+          "en": "Terminate cable shields 360° to chassis at panel entry.",
+          "zh": "在柜体入口将电缆屏蔽 360° 端接至机壳。"
+        },
+        {
+          "en": "Avoid running cables above variable speed drives and switching devices.",
+          "zh": "避免电缆从变频与开关装置上方穿越。"
+        },
+        {
+          "en": "Power and signal segregation",
+          "zh": "强电与信号分隔"
+        }
+      ]
+    },
+    "knowledge-hx-types.png": {
+      "title_en": "Heat exchanger families (3D)",
+      "title_zh": "换热器类型一览（3D）",
+      "labels": [
+        {
+          "en": "Heat exchanger families",
+          "zh": "换热器类型"
+        },
+        {
+          "en": "1 PLATE",
+          "zh": "1 板式"
+        },
+        {
+          "en": "Brazed plate heat exchanger",
+          "zh": "钎焊板式换热器"
+        },
+        {
+          "en": "Stacked plates · compact water duty",
+          "zh": "叠板 · 紧凑水侧工况"
+        },
+        {
+          "en": "kW-MW",
+          "zh": "kW-MW"
+        },
+        {
+          "en": "2 SHELL & TUBE",
+          "zh": "2 壳管式"
+        },
+        {
+          "en": "Shell & tube heat exchanger",
+          "zh": "壳管式换热器"
+        },
+        {
+          "en": "Shell + tubes · industrial service",
+          "zh": "壳体 + 管束 · 工业工况"
+        },
+        {
+          "en": "medium-large",
+          "zh": "中–大"
+        },
+        {
+          "en": "3 FIN-TUBE",
+          "zh": "3 翅片管"
+        },
+        {
+          "en": "Fin-tube heat exchanger (coil)",
+          "zh": "翅片管换热器（盘管）"
+        },
+        {
+          "en": "Air (in)",
+          "zh": "空气（进）"
+        },
+        {
+          "en": "Air coil · A2W outdoor",
+          "zh": "空气盘管 · A2W 室外"
+        },
+        {
+          "en": "small-large",
+          "zh": "小–大"
+        },
+        {
+          "en": "4 MICROCHANNEL",
+          "zh": "4 微通道"
+        },
+        {
+          "en": "Microchannel heat exchanger",
+          "zh": "微通道换热器"
+        },
+        {
+          "en": "Flat tubes · low charge",
+          "zh": "扁管 · 低充注"
+        },
+        {
+          "en": "small-med",
+          "zh": "小–中"
+        },
+        {
+          "en": "5 COAXIAL",
+          "zh": "5 套管式"
+        },
+        {
+          "en": "Coaxial (tube-in-tube) heat exchanger",
+          "zh": "套管式换热器"
+        },
+        {
+          "en": "Tube-in-tube · small HP",
+          "zh": "套管式 · 小型热泵"
+        },
+        {
+          "en": "small",
+          "zh": "小"
+        },
+        {
+          "en": "Blue arrow = secondary / cold side",
+          "zh": "蓝箭头 = 二次侧 / 冷侧"
+        },
+        {
+          "en": "Red arrow = primary / hot side",
+          "zh": "红箭头 = 一次侧 / 热侧"
+        },
+        {
+          "en": "Boundaries overlap by brand, fluid, and duty — confirm with OEM software.",
+          "zh": "边界因品牌、工质与工况重叠 — 请用 OEM 软件确认。"
+        },
+        {
+          "en": "Heat exchanger families (3D)",
+          "zh": "换热器类型一览（3D）"
+        }
+      ]
+    },
+    "knowledge-lub-contamination.png": {
+      "title_en": "Oil charge & contamination control",
+      "title_zh": "充注与污染控制",
+      "labels": [
+        {
+          "en": "REFRIGERATION OIL CHARGE & CONTAMINATION CONTROL",
+          "zh": "制冷油充注与污染控制"
+        },
+        {
+          "en": "Clean Oil In → Clean System → Reliable Operation",
+          "zh": "洁净进油 → 洁净系统 → 可靠运行"
+        },
+        {
+          "en": "1. NEW OIL DRUM",
+          "zh": "1. 新油桶"
+        },
+        {
+          "en": "REFRIGERATION OIL",
+          "zh": "制冷油"
+        },
+        {
+          "en": "Use oil specified by equipment manufacturer",
+          "zh": "使用设备制造商指定油品"
+        },
+        {
+          "en": "Store sealed in clean, dry area",
+          "zh": "密封存放于清洁干燥处"
+        },
+        {
+          "en": "Keep container closed",
+          "zh": "保持容器密闭"
+        },
+        {
+          "en": "Inspect for damage or contamination",
+          "zh": "检查破损或污染"
+        },
+        {
+          "en": "2. DRY CHARGE / VACUUM",
+          "zh": "2. 干燥充注 / 真空"
+        },
+        {
+          "en": "VACUUM PUMP",
+          "zh": "真空泵"
+        },
+        {
+          "en": "TARGET VACUUM: ≤ 500 microns (≤ 0.67 mbar)",
+          "zh": "目标真空：≤ 500 microns（≤ 0.67 mbar）"
+        },
+        {
+          "en": "inHg",
+          "zh": "inHg"
+        },
+        {
+          "en": "Evacuate system to required vacuum level",
+          "zh": "抽空至要求真空度"
+        },
+        {
+          "en": "Prevent moisture and non-condensables",
+          "zh": "防止水分与不凝气体"
+        },
+        {
+          "en": "Charge oil through low point using clean, dry equipment",
+          "zh": "用洁净干燥设备从低点充油"
+        },
+        {
+          "en": "Break vacuum with dry refrigerant only",
+          "zh": "仅用干燥制冷剂破真空"
+        },
+        {
+          "en": "3. OPERATING OIL CIRCUIT",
+          "zh": "3. 运行油路"
+        },
+        {
+          "en": "COMPRESSOR",
+          "zh": "压缩机"
+        },
+        {
+          "en": "CONDENSOR",
+          "zh": "冷凝器"
+        },
+        {
+          "en": "OIL SEPARATOR",
+          "zh": "油分离器"
+        },
+        {
+          "en": "EXPANSION DEVICE",
+          "zh": "膨胀装置"
+        },
+        {
+          "en": "REFRIGERANT (VAPOR)",
+          "zh": "制冷剂（蒸气）"
+        },
+        {
+          "en": "REFRIGERANT (LIQUID)",
+          "zh": "制冷剂（液体）"
+        },
+        {
+          "en": "OIL RETURN",
+          "zh": "回油"
+        },
+        {
+          "en": "Maintain proper oil level in compressor",
+          "zh": "保持压缩机合适油位"
+        },
+        {
+          "en": "Ensure good oil circulation and return",
+          "zh": "保证良好油循环与回油"
+        },
+        {
+          "en": "Monitor oil condition regularly",
+          "zh": "定期监测油况"
+        },
+        {
+          "en": "Follow manufacturer’s guidelines",
+          "zh": "遵循制造商指南"
+        },
+        {
+          "en": "4. CONTAMINANTS",
+          "zh": "4. 污染物"
+        },
+        {
+          "en": "MOISTURE",
+          "zh": "水分"
+        },
+        {
+          "en": "Causes acid formation",
+          "zh": "导致生酸"
+        },
+        {
+          "en": "Reduces lubrication",
+          "zh": "降低润滑"
+        },
+        {
+          "en": "May lead to ice or sludge",
+          "zh": "可能导致结冰或油泥"
+        },
+        {
+          "en": "ACID",
+          "zh": "酸"
+        },
+        {
+          "en": "Corrosive to components",
+          "zh": "腐蚀部件"
+        },
+        {
+          "en": "Degrades oil",
+          "zh": "劣化油品"
+        },
+        {
+          "en": "Leads to system failure",
+          "zh": "导致系统失效"
+        },
+        {
+          "en": "METAL DEBRIS",
+          "zh": "金属碎屑"
+        },
+        {
+          "en": "From wear or failure",
+          "zh": "来自磨损或故障"
+        },
+        {
+          "en": "Abrasive to parts",
+          "zh": "磨损零件"
+        },
+        {
+          "en": "Can plug oil passages and strainers",
+          "zh": "可能堵塞油路与滤网"
+        },
+        {
+          "en": "Contaminants degrade oil and harm equipment",
+          "zh": "污染物劣化油品并伤害设备"
+        },
+        {
+          "en": "Check oil condition at regular intervals",
+          "zh": "定期检查油况"
+        },
+        {
+          "en": "Identify and correct the source of contamination",
+          "zh": "查明并消除污染源"
+        },
+        {
+          "en": "5. FILTER-DRIER / OIL CHANGE",
+          "zh": "5. 干燥过滤 / 换油"
+        },
+        {
+          "en": "FILTER-DRIER",
+          "zh": "干燥过滤器"
+        },
+        {
+          "en": "OIL CHANGE (IF REQUIRED)",
+          "zh": "换油（如需要）"
+        },
+        {
+          "en": "Use properly sized filter-drier to remove moisture and acid",
+          "zh": "选用合适干燥过滤器除去水分与酸"
+        },
+        {
+          "en": "Change oil if degraded, contaminated, or after component failure",
+          "zh": "油劣化、污染或部件故障后换油"
+        },
+        {
+          "en": "Evacuate system and recharge with clean oil",
+          "zh": "抽空系统并充入洁净油"
+        },
+        {
+          "en": "Dispose of used oil responsibly",
+          "zh": "妥善处置废油"
+        },
+        {
+          "en": "BEST PRACTICES",
+          "zh": "最佳实践"
+        },
+        {
+          "en": "Keep system sealed and dry",
+          "zh": "保持系统密封干燥"
+        },
+        {
+          "en": "Use clean tools and equipment",
+          "zh": "使用洁净工具与设备"
+        },
+        {
+          "en": "Maintain filters and strainers",
+          "zh": "维护过滤器与滤网"
+        },
+        {
+          "en": "Record oil type, charge amount, and condition",
+          "zh": "记录油型、充注量与状态"
+        },
+        {
+          "en": "Train personnel and follow procedures",
+          "zh": "培训人员并遵循规程"
+        },
+        {
+          "en": "REMEMBER",
+          "zh": "记住"
+        },
+        {
+          "en": "Clean oil protects equipment, improves efficiency, and extends system life.",
+          "zh": "洁净油保护设备、提高效率并延长寿命。"
+        },
+        {
+          "en": "Oil charge & contamination control",
+          "zh": "充注与污染控制"
+        }
+      ]
+    },
+    "knowledge-lub-cycle.png": {
+      "title_en": "Oil path in the refrigeration cycle",
+      "title_zh": "制冷循环中的油路",
+      "labels": [
+        {
+          "en": "VAPOR-COMPRESSION CYCLE",
+          "zh": "蒸汽压缩循环"
+        },
+        {
+          "en": "Oil Management Overview",
+          "zh": "油管理概览"
+        },
+        {
+          "en": "Refrigerant (High Pressure)",
+          "zh": "制冷剂（高压）"
+        },
+        {
+          "en": "Refrigerant (Low Pressure)",
+          "zh": "制冷剂（低压）"
+        },
+        {
+          "en": "Oil",
+          "zh": "油"
+        },
+        {
+          "en": "Oil Mist (Carried with Refrigerant)",
+          "zh": "油雾（随制冷剂夹带）"
+        },
+        {
+          "en": "Compressor",
+          "zh": "压缩机"
+        },
+        {
+          "en": "Oil separator",
+          "zh": "油分离器"
+        },
+        {
+          "en": "Condenser",
+          "zh": "冷凝器"
+        },
+        {
+          "en": "Receiver",
+          "zh": "储液器"
+        },
+        {
+          "en": "Expansion device",
+          "zh": "膨胀装置"
+        },
+        {
+          "en": "Evaporator",
+          "zh": "蒸发器"
+        },
+        {
+          "en": "Compressor sump oil",
+          "zh": "压缩机油池油"
+        },
+        {
+          "en": "Oil lubricates bearings, pistons, and other moving parts.",
+          "zh": "油润滑轴承、活塞及其他运动件。"
+        },
+        {
+          "en": "Oil mist is removed from the discharge gas. Clean refrigerant continues to the condenser.",
+          "zh": "从排气中除去油雾；洁净制冷剂继续进入冷凝器。"
+        },
+        {
+          "en": "Oil return",
+          "zh": "回油"
+        },
+        {
+          "en": "Metered oil return via capillary tube back to compressor crankcase.",
+          "zh": "经毛细管计量回油至压缩机曲轴箱。"
+        },
+        {
+          "en": "Evaporator oil hold-up",
+          "zh": "蒸发器积油"
+        },
+        {
+          "en": "A thin oil film remains on internal tube surfaces, returning to the compressor with refrigerant.",
+          "zh": "管内壁残留薄油膜，随制冷剂返回压缩机。"
+        },
+        {
+          "en": "1. Compression",
+          "zh": "1. 压缩"
+        },
+        {
+          "en": "Refrigerant is compressed. Oil is entrained in the discharge gas as mist.",
+          "zh": "制冷剂被压缩；油以雾状夹带在排气中。"
+        },
+        {
+          "en": "2. Oil Separation",
+          "zh": "2. 分油"
+        },
+        {
+          "en": "Oil mist is removed in the separator. Clean refrigerant flows to the condenser.",
+          "zh": "油雾在油分中被除去；洁净制冷剂流向冷凝器。"
+        },
+        {
+          "en": "3. Oil Return",
+          "zh": "3. 回油"
+        },
+        {
+          "en": "Oil is metered through a capillary tube back to the compressor sump.",
+          "zh": "油经毛细管计量返回压缩机油池。"
+        },
+        {
+          "en": "4. Condensation",
+          "zh": "4. 冷凝"
+        },
+        {
+          "en": "Refrigerant rejects heat in the condenser and condenses to liquid.",
+          "zh": "制冷剂在冷凝器放热并冷凝为液体。"
+        },
+        {
+          "en": "5. Expansion",
+          "zh": "5. 膨胀"
+        },
+        {
+          "en": "Liquid refrigerant is metered through the expansion device.",
+          "zh": "液态制冷剂经膨胀装置节流。"
+        },
+        {
+          "en": "6. Evaporation",
+          "zh": "6. 蒸发"
+        },
+        {
+          "en": "Refrigerant absorbs heat in the evaporator. Oil film returns to the compressor.",
+          "zh": "制冷剂在蒸发器吸热；油膜返回压缩机。"
+        },
+        {
+          "en": "Oil path in the refrigeration cycle",
+          "zh": "制冷循环中的油路"
+        }
+      ]
+    },
+    "knowledge-lub-families.png": {
+      "title_en": "Lubricant families",
+      "title_zh": "润滑油族系",
+      "labels": [
+        {
+          "en": "REFRIGERATION LUBRICANT FAMILIES – COMPARISON",
+          "zh": "制冷润滑油族系 — 对照"
+        },
+        {
+          "en": "Typical properties and refrigerant compatibility guide",
+          "zh": "典型特性与工质兼容性导读"
+        },
+        {
+          "en": "MO (MINERAL OIL)",
+          "zh": "MO（矿物油）"
+        },
+        {
+          "en": "AB (ALKYLBENZENE OIL)",
+          "zh": "AB（烷基苯油）"
+        },
+        {
+          "en": "POE (POLYOL ESTER OIL)",
+          "zh": "POE（多元醇酯油）"
+        },
+        {
+          "en": "PAG (POLYALKYLENE GLYCOL OIL)",
+          "zh": "PAG（聚烷撑二醇油）"
+        },
+        {
+          "en": "PVE (POLYVINYL ETHER OIL)",
+          "zh": "PVE（聚乙烯醚油）"
+        },
+        {
+          "en": "TYPICAL PAIRING",
+          "zh": "典型配对"
+        },
+        {
+          "en": "SUITABLE REFRIGERANTS",
+          "zh": "适用工质"
+        },
+        {
+          "en": "KEY CHARACTERISTICS",
+          "zh": "关键特性"
+        },
+        {
+          "en": "TYPICAL APPLICATIONS",
+          "zh": "典型应用"
+        },
+        {
+          "en": "NOTES",
+          "zh": "备注"
+        },
+        {
+          "en": "LEGEND (Suitability)",
+          "zh": "图例（适用性）"
+        },
+        {
+          "en": "Refined petroleum mineral oil",
+          "zh": "精炼石油基矿物油"
+        },
+        {
+          "en": "Synthetic hydrocarbon based oil",
+          "zh": "合成烃基油"
+        },
+        {
+          "en": "Synthetic ester based oil",
+          "zh": "合成酯基油"
+        },
+        {
+          "en": "Synthetic polyether based oil",
+          "zh": "合成聚醚基油"
+        },
+        {
+          "en": "Synthetic ether based oil",
+          "zh": "合成醚基油"
+        },
+        {
+          "en": "Best with HCFC",
+          "zh": "最适于 HCFC"
+        },
+        {
+          "en": "Not recommended with most HFC or HFO",
+          "zh": "多数 HFC/HFO 不推荐"
+        },
+        {
+          "en": "Good with HCFC",
+          "zh": "适于 HCFC"
+        },
+        {
+          "en": "Limited use with HFC",
+          "zh": "HFC 有限适用"
+        },
+        {
+          "en": "Not recommended with HFO",
+          "zh": "HFO 不推荐"
+        },
+        {
+          "en": "Excellent with HFC and HFO",
+          "zh": "适于 HFC 与 HFO"
+        },
+        {
+          "en": "Not recommended with ammonia",
+          "zh": "氨不推荐"
+        },
+        {
+          "en": "Excellent with HFC",
+          "zh": "适于 HFC"
+        },
+        {
+          "en": "Not recommended with HCFC, HFO, ammonia or CO2",
+          "zh": "HCFC、HFO、氨或 CO2 不推荐"
+        },
+        {
+          "en": "Good with HFO",
+          "zh": "适于 HFO"
+        },
+        {
+          "en": "Some use with CO2 (with appropriate additives)",
+          "zh": "CO2 可用（需合适添加剂）"
+        },
+        {
+          "en": "HCFC",
+          "zh": "HCFC"
+        },
+        {
+          "en": "HFC",
+          "zh": "HFC"
+        },
+        {
+          "en": "HFO",
+          "zh": "HFO"
+        },
+        {
+          "en": "NH3",
+          "zh": "NH3"
+        },
+        {
+          "en": "CO2",
+          "zh": "CO2"
+        },
+        {
+          "en": "Good lubricity",
+          "zh": "润滑性好"
+        },
+        {
+          "en": "Low cost",
+          "zh": "成本低"
+        },
+        {
+          "en": "Poor moisture tolerance",
+          "zh": "耐湿性差"
+        },
+        {
+          "en": "Forms sludge/varnish over time",
+          "zh": "长期易生成油泥/漆膜"
+        },
+        {
+          "en": "Better thermal stability",
+          "zh": "热稳定性更好"
+        },
+        {
+          "en": "Good solvency",
+          "zh": "溶解性好"
+        },
+        {
+          "en": "Moderate moisture tolerance",
+          "zh": "耐湿性中等"
+        },
+        {
+          "en": "Lower pour point than MO",
+          "zh": "倾点低于 MO"
+        },
+        {
+          "en": "Excellent miscibility with HFC/HFO",
+          "zh": "与 HFC/HFO 互溶性优"
+        },
+        {
+          "en": "High lubricity",
+          "zh": "高润滑性"
+        },
+        {
+          "en": "High moisture tolerance",
+          "zh": "高耐湿性"
+        },
+        {
+          "en": "Biodegradable (varies)",
+          "zh": "可生物降解（视牌号）"
+        },
+        {
+          "en": "Very high miscibility with HFC",
+          "zh": "与 HFC 互溶性极高"
+        },
+        {
+          "en": "Excellent lubricity",
+          "zh": "润滑性优"
+        },
+        {
+          "en": "Very high moisture absorption",
+          "zh": "吸湿性很强"
+        },
+        {
+          "en": "Requires additives",
+          "zh": "需添加剂"
+        },
+        {
+          "en": "Excellent low temperature performance",
+          "zh": "低温性能优"
+        },
+        {
+          "en": "Good miscibility with HFO/CO2",
+          "zh": "与 HFO/CO2 互溶性好"
+        },
+        {
+          "en": "Low volatility",
+          "zh": "低挥发性"
+        },
+        {
+          "en": "Older systems using HCFC (e.g., R-22)",
+          "zh": "使用 HCFC 的旧系统（如 R-22）"
+        },
+        {
+          "en": "Reciprocating compressors with mineral oil",
+          "zh": "配矿物油的往复压缩机"
+        },
+        {
+          "en": "Not miscible with HFC/HFO.",
+          "zh": "与 HFC/HFO 不互溶。"
+        },
+        {
+          "en": "Oil return issues possible.",
+          "zh": "可能出现回油问题。"
+        },
+        {
+          "en": "HCFC systems",
+          "zh": "HCFC 系统"
+        },
+        {
+          "en": "Some HFC systems (where miscibility is adequate)",
+          "zh": "部分 HFC 系统（互溶足够时）"
+        },
+        {
+          "en": "Reciprocating & rotary",
+          "zh": "往复与转子"
+        },
+        {
+          "en": "Miscibility with HFC varies.",
+          "zh": "与 HFC 互溶性因牌号而异。"
+        },
+        {
+          "en": "Check OEM recommendations.",
+          "zh": "请核对 OEM 推荐。"
+        },
+        {
+          "en": "HFC/HFO systems",
+          "zh": "HFC/HFO 系统"
+        },
+        {
+          "en": "Variable speed",
+          "zh": "变频"
+        },
+        {
+          "en": "Scroll compressors",
+          "zh": "涡旋压缩机"
+        },
+        {
+          "en": "Heat pumps",
+          "zh": "热泵"
+        },
+        {
+          "en": "Hygroscopic – keep system clean and sealed.",
+          "zh": "吸湿——保持系统洁净密封。"
+        },
+        {
+          "en": "HFC systems (e.g., R-134a, R-410A, R-407C)",
+          "zh": "HFC 系统（如 R-134a、R-410A、R-407C）"
+        },
+        {
+          "en": "Screw and vane compressors",
+          "zh": "螺杆与叶片压缩机"
+        },
+        {
+          "en": "Keep moisture out.",
+          "zh": "严防水分。"
+        },
+        {
+          "en": "Use only in compatible systems.",
+          "zh": "仅用于兼容系统。"
+        },
+        {
+          "en": "HFO refrigerant systems (e.g., R-1234yf)",
+          "zh": "HFO 工质系统（如 R-1234yf）"
+        },
+        {
+          "en": "CO2 transcritical systems (with suitable additives)",
+          "zh": "CO2 跨临界系统（需合适添加剂）"
+        },
+        {
+          "en": "Additive package may be required for wear protection in CO2 systems.",
+          "zh": "CO2 系统可能需抗磨添加剂包。"
+        },
+        {
+          "en": "Excellent",
+          "zh": "优"
+        },
+        {
+          "en": "Limited / Conditional",
+          "zh": "有限 / 有条件"
+        },
+        {
+          "en": "Not Recommended",
+          "zh": "不推荐"
+        },
+        {
+          "en": "HCFC = Hydrochlorofluorocarbon",
+          "zh": "HCFC = 氢氯氟烃"
+        },
+        {
+          "en": "HFC = Hydrofluorocarbon",
+          "zh": "HFC = 氢氟烃"
+        },
+        {
+          "en": "HFO = Hydrofluoroolefin",
+          "zh": "HFO = 氢氟烯烃"
+        },
+        {
+          "en": "NH3 = Ammonia",
+          "zh": "NH3 = 氨"
+        },
+        {
+          "en": "CO2 = Carbon Dioxide",
+          "zh": "CO2 = 二氧化碳"
+        },
+        {
+          "en": "Lubricant families",
+          "zh": "润滑油族系"
+        }
+      ]
+    },
+    "knowledge-lub-viscosity.png": {
+      "title_en": "Viscosity versus temperature",
+      "title_zh": "粘度–温度关系",
+      "labels": [
+        {
+          "en": "HEAT PUMP LUBRICANT VISCOSITY",
+          "zh": "热泵润滑油粘度"
+        },
+        {
+          "en": "VISCOSITY–TEMPERATURE CHARACTERISTICS",
+          "zh": "粘度–温度特性"
+        },
+        {
+          "en": "Lubricant viscosity decreases as temperature increases.",
+          "zh": "润滑油粘度随温度升高而降低。"
+        },
+        {
+          "en": "The viscosity must stay within an optimal window for reliable lubrication across operating conditions.",
+          "zh": "粘度须保持在适宜窗口，以在全工况可靠润滑。"
+        },
+        {
+          "en": "Kinematic Viscosity (mm²/s)",
+          "zh": "运动粘度（mm²/s）"
+        },
+        {
+          "en": "Temperature (°C)",
+          "zh": "温度（°C）"
+        },
+        {
+          "en": "Cold start",
+          "zh": "冷启动"
+        },
+        {
+          "en": "High viscosity at low temperature for film thickness and wear protection.",
+          "zh": "低温高粘度以保证油膜厚度与抗磨。"
+        },
+        {
+          "en": "ISO VG 68",
+          "zh": "ISO VG 68"
+        },
+        {
+          "en": "ISO VG 32",
+          "zh": "ISO VG 32"
+        },
+        {
+          "en": "Viscosity window",
+          "zh": "粘度窗口"
+        },
+        {
+          "en": "Upper limit (too viscous)",
+          "zh": "上限（过稠）"
+        },
+        {
+          "en": "Lower limit (too thin)",
+          "zh": "下限（过稀）"
+        },
+        {
+          "en": "High discharge temp.",
+          "zh": "高排气温度"
+        },
+        {
+          "en": "Viscosity must remain above the lower limit to maintain lubrication and prevent wear.",
+          "zh": "粘度须保持在下限之上以维持润滑并防止磨损。"
+        },
+        {
+          "en": "VISCOSITY",
+          "zh": "粘度"
+        },
+        {
+          "en": "A measure of a fluid's resistance to flow. Essential for forming a protective lubricant film between moving parts.",
+          "zh": "流体流动阻力的量度；用于在运动件间形成保护油膜。"
+        },
+        {
+          "en": "EFFECT OF TEMPERATURE",
+          "zh": "温度影响"
+        },
+        {
+          "en": "As temperature increases, viscosity decreases.",
+          "zh": "温度升高，粘度降低。"
+        },
+        {
+          "en": "WHY IT MATTERS",
+          "zh": "为何重要"
+        },
+        {
+          "en": "Reduces wear and extends component life",
+          "zh": "减少磨损并延长寿命"
+        },
+        {
+          "en": "Ensures efficient operation",
+          "zh": "保障高效运行"
+        },
+        {
+          "en": "Supports reliable performance across wide temperature range",
+          "zh": "在宽温区内支持可靠性能"
+        },
+        {
+          "en": "Higher viscosity – better film strength at high temperature",
+          "zh": "更高粘度 — 高温油膜强度更好"
+        },
+        {
+          "en": "Lower viscosity – better low temperature fluidity",
+          "zh": "更低粘度 — 低温流动性更好"
+        },
+        {
+          "en": "Select the appropriate ISO VG grade to ensure viscosity stays within the optimal window from cold start to high discharge temperature.",
+          "zh": "选择合适 ISO VG，使从冷启动到高排气温度粘度仍落在窗口内。"
+        },
+        {
+          "en": "Viscosity versus temperature",
+          "zh": "粘度–温度关系"
+        }
+      ]
+    },
+    "knowledge-pipe-corrosion.png": {
+      "title_en": "Piping corrosion risks",
+      "title_zh": "管路腐蚀风险",
+      "labels": [
+        {
+          "en": "CORROSION PROTECTION LAYERS",
+          "zh": "防腐层"
+        },
+        {
+          "en": "Multi-layer protection for metal piping",
+          "zh": "金属配管多层防护"
+        },
+        {
+          "en": "1 Base metal",
+          "zh": "1 基材"
+        },
+        {
+          "en": "Steel or copper pipe provides structural strength.",
+          "zh": "钢管或铜管提供结构强度。"
+        },
+        {
+          "en": "2 Galvanizing",
+          "zh": "2 镀锌"
+        },
+        {
+          "en": "Zinc coating (hot-dip) provides sacrificial corrosion protection.",
+          "zh": "热浸锌涂层提供牺牲阳极防腐。"
+        },
+        {
+          "en": "3 Protective coating",
+          "zh": "3 防护涂层"
+        },
+        {
+          "en": "Epoxy or fusion-bonded epoxy provides a barrier against moisture, chemicals, and abrasion.",
+          "zh": "环氧或熔结环氧形成防潮、防化学品与耐磨屏障。"
+        },
+        {
+          "en": "ALTERNATIVE MATERIAL",
+          "zh": "替代材料"
+        },
+        {
+          "en": "Stainless steel pipe",
+          "zh": "不锈钢管"
+        },
+        {
+          "en": "Provides inherent corrosion resistance without the need for galvanizing or protective coatings in many environments.",
+          "zh": "许多环境下具固有耐蚀性，无需镀锌或防护涂层。"
+        },
+        {
+          "en": "HOW IT WORKS",
+          "zh": "工作原理"
+        },
+        {
+          "en": "The zinc layer corrodes preferentially to the base metal (sacrificial protection).",
+          "zh": "锌层相对基材优先腐蚀（牺牲阳极保护）。"
+        },
+        {
+          "en": "The outer coating acts as a barrier to prevent exposure to corrosive elements, extending the service life of the pipe.",
+          "zh": "外涂层形成屏障，防止腐蚀介质侵蚀，延长管道寿命。"
+        },
+        {
+          "en": "Piping corrosion risks",
+          "zh": "管路腐蚀风险"
+        }
+      ]
+    },
+    "knowledge-pipe-cycle.png": {
+      "title_en": "Refrigerant piping roles in the cycle",
+      "title_zh": "循环中的制冷剂管路角色",
+      "labels": [
+        {
+          "en": "HEAT PUMP REFRIGERANT PIPING LAYOUT",
+          "zh": "热泵制冷剂配管布置"
+        },
+        {
+          "en": "PIPING SCHEMATIC & DESIGN CONSIDERATIONS",
+          "zh": "配管示意与设计要点"
+        },
+        {
+          "en": "LEGEND",
+          "zh": "图例"
+        },
+        {
+          "en": "Suction Line (Low Pressure)",
+          "zh": "吸气管（低压）"
+        },
+        {
+          "en": "Discharge Line (High Pressure)",
+          "zh": "排气管（高压）"
+        },
+        {
+          "en": "Liquid Line (High Pressure)",
+          "zh": "液管（高压）"
+        },
+        {
+          "en": "Oil Return Path (Design Consideration)",
+          "zh": "回油路径（设计注意）"
+        },
+        {
+          "en": "INDOOR UNIT (EVAPORATOR IN HEATING MODE)",
+          "zh": "室内机（制热模式为蒸发器）"
+        },
+        {
+          "en": "REVERSING VALVE",
+          "zh": "换向阀"
+        },
+        {
+          "en": "OUTDOOR UNIT (CONDENSER IN HEATING MODE)",
+          "zh": "室外机（制热模式为冷凝器）"
+        },
+        {
+          "en": "COMPRESSOR",
+          "zh": "压缩机"
+        },
+        {
+          "en": "DISCHARGE LINE",
+          "zh": "排气管"
+        },
+        {
+          "en": "High Pressure, High Temp.",
+          "zh": "高压、高温"
+        },
+        {
+          "en": "VIBRATION ISOLATOR",
+          "zh": "隔振器"
+        },
+        {
+          "en": "Near compressor",
+          "zh": "靠近压缩机"
+        },
+        {
+          "en": "SUCTION LINE",
+          "zh": "吸气管"
+        },
+        {
+          "en": "Low Pressure, Low Temp.",
+          "zh": "低压、低温"
+        },
+        {
+          "en": "PITCH",
+          "zh": "PITCH"
+        },
+        {
+          "en": "Up 1/4\" per ft. (Min.)",
+          "zh": "每英尺上坡 1/4\"（最小）"
+        },
+        {
+          "en": "At regular intervals",
+          "zh": "按固定间隔"
+        },
+        {
+          "en": "OIL RETURN UP RISER",
+          "zh": "立管上行回油"
+        },
+        {
+          "en": "Use traps if riser > 20 ft. (6 m)",
+          "zh": "立管 > 20 ft（6 m）时设存油弯"
+        },
+        {
+          "en": "SIGHT GLASS",
+          "zh": "视液镜"
+        },
+        {
+          "en": "FILTER DRIER",
+          "zh": "干燥过滤器"
+        },
+        {
+          "en": "OIL RETURN TRAP",
+          "zh": "回油存油弯"
+        },
+        {
+          "en": "At low points every 20-30 ft. (6-9 m)",
+          "zh": "每隔 20–30 ft（6–9 m）在低点设置"
+        },
+        {
+          "en": "VIBRATION CONTROL",
+          "zh": "振动控制"
+        },
+        {
+          "en": "Install vibration isolators near the compressor and at regular intervals.",
+          "zh": "在压缩机附近及按间隔安装隔振器。"
+        },
+        {
+          "en": "Avoid rigid mounting to structure.",
+          "zh": "避免刚性固定到结构。"
+        },
+        {
+          "en": "Use flexible connections where appropriate.",
+          "zh": "适当处使用软连接。"
+        },
+        {
+          "en": "TYPICAL PIPING SIZES (Example)",
+          "zh": "典型管径（示例）"
+        },
+        {
+          "en": "Line",
+          "zh": "Line"
+        },
+        {
+          "en": "Capacity (Tons)",
+          "zh": "容量（冷吨）"
+        },
+        {
+          "en": "Typical OD (in.)",
+          "zh": "典型外径（in.）"
+        },
+        {
+          "en": "Suction",
+          "zh": "吸气"
+        },
+        {
+          "en": "2-3",
+          "zh": "2-3"
+        },
+        {
+          "en": "7/8",
+          "zh": "7/8"
+        },
+        {
+          "en": "3-5",
+          "zh": "3-5"
+        },
+        {
+          "en": "11/8",
+          "zh": "11/8"
+        },
+        {
+          "en": "Liquid",
+          "zh": "液体"
+        },
+        {
+          "en": "3/8",
+          "zh": "3/8"
+        },
+        {
+          "en": "1/2",
+          "zh": "1/2"
+        },
+        {
+          "en": "Discharge",
+          "zh": "排气"
+        },
+        {
+          "en": "5/8",
+          "zh": "5/8"
+        },
+        {
+          "en": "3/4",
+          "zh": "3/4"
+        },
+        {
+          "en": "NOTES",
+          "zh": "备注"
+        },
+        {
+          "en": "Diagram shows heating mode. Refrigerant flow reverses in cooling mode.",
+          "zh": "图示为制热模式。制冷模式下制冷剂流向相反。"
+        },
+        {
+          "en": "Follow manufacturer recommendations and applicable codes.",
+          "zh": "遵循制造商建议与适用规范。"
+        },
+        {
+          "en": "PIPING GENERAL GUIDELINES",
+          "zh": "配管通用指南"
+        },
+        {
+          "en": "Keep piping runs as short and direct as possible.",
+          "zh": "配管尽量短直。"
+        },
+        {
+          "en": "Minimize the number of elbows and fittings.",
+          "zh": "尽量减少弯头与管件。"
+        },
+        {
+          "en": "Support piping at regular intervals.",
+          "zh": "按间隔支撑配管。"
+        },
+        {
+          "en": "Use proper line sizing for capacity and oil return.",
+          "zh": "按容量与回油正确选型管径。"
+        },
+        {
+          "en": "Pressure test and evacuate per standard practice.",
+          "zh": "按标准做法试压与抽真空。"
+        },
+        {
+          "en": "SUCTION LINE (LOW PRESSURE)",
+          "zh": "吸气管（低压）"
+        },
+        {
+          "en": "Insulate the entire length.",
+          "zh": "全长保温。"
+        },
+        {
+          "en": "Pitch up toward the compressor.",
+          "zh": "向压缩机方向上坡。"
+        },
+        {
+          "en": "Keep velocities low (recommended 2,000-3,000 FPM).",
+          "zh": "保持低流速（建议 2,000–3,000 FPM）。"
+        },
+        {
+          "en": "Seal insulation and avoid heat gain.",
+          "zh": "密封保温并避免得热。"
+        },
+        {
+          "en": "DISCHARGE LINE (HIGH PRESSURE)",
+          "zh": "排气管（高压）"
+        },
+        {
+          "en": "Keep as short as practical.",
+          "zh": "尽量短。"
+        },
+        {
+          "en": "Provide vibration isolation.",
+          "zh": "提供隔振。"
+        },
+        {
+          "en": "Do not route near sleeping areas if possible.",
+          "zh": "尽量勿靠近休息区布管。"
+        },
+        {
+          "en": "Use high-temperature insulation if required.",
+          "zh": "需要时使用耐高温保温。"
+        },
+        {
+          "en": "LIQUID LINE (HIGH PRESSURE)",
+          "zh": "液管（高压）"
+        },
+        {
+          "en": "Keep lines clean and dry.",
+          "zh": "保持管路洁净干燥。"
+        },
+        {
+          "en": "Install filter drier and sight glass.",
+          "zh": "安装干燥过滤器与视液镜。"
+        },
+        {
+          "en": "Protect from physical damage and heat sources.",
+          "zh": "防止机械损伤与热源影响。"
+        },
+        {
+          "en": "Support adequately.",
+          "zh": "充分支撑。"
+        },
+        {
+          "en": "OIL RETURN CONSIDERATIONS",
+          "zh": "回油注意事项"
+        },
+        {
+          "en": "Proper oil return is critical for compressor life.",
+          "zh": "正确回油对压缩机寿命至关重要。"
+        },
+        {
+          "en": "Pitch suction line up toward compressor.",
+          "zh": "吸气管向压缩机方向上坡。"
+        },
+        {
+          "en": "Use oil traps at low points.",
+          "zh": "在低点设置存油弯。"
+        },
+        {
+          "en": "For vertical risers > 20 ft. (6 m), use traps.",
+          "zh": "立管高度 > 20 ft（6 m）时设置存油弯。"
+        },
+        {
+          "en": "Ensure adequate velocity in suction line.",
+          "zh": "确保吸气管有足够流速。"
+        },
+        {
+          "en": "Refrigerant piping roles in the cycle",
+          "zh": "循环中的制冷剂管路角色"
+        }
+      ]
+    },
+    "knowledge-pipe-insulation.png": {
+      "title_en": "Pipe insulation & vapor barrier",
+      "title_zh": "保温与隔汽层",
+      "labels": [
+        {
+          "en": "INSULATED REFRIGERATION PIPE",
+          "zh": "绝热制冷配管"
+        },
+        {
+          "en": "Cross-section View",
+          "zh": "剖视图"
+        },
+        {
+          "en": "Insulation",
+          "zh": "保温/绝缘"
+        },
+        {
+          "en": "Pipe",
+          "zh": "Pipe"
+        },
+        {
+          "en": "Vapor barrier",
+          "zh": "隔汽层"
+        },
+        {
+          "en": "Dew point",
+          "zh": "露点"
+        },
+        {
+          "en": "If the cold pipe surface temperature is below the dew point of the surrounding air, moisture will condense on the pipe.",
+          "zh": "若冷管表面温度低于周围空气露点，管壁会结露。"
+        },
+        {
+          "en": "LAYERS (INSIDE TO OUTSIDE)",
+          "zh": "分层（由内到外）"
+        },
+        {
+          "en": "Carries cold refrigerant.",
+          "zh": "输送低温制冷剂。"
+        },
+        {
+          "en": "Closed-cell foam reduces heat gain and prevents condensation.",
+          "zh": "闭孔泡沫减少得热并防止结露。"
+        },
+        {
+          "en": "Prevents moisture from entering the insulation.",
+          "zh": "防止湿气进入保温层。"
+        },
+        {
+          "en": "Pipe insulation & vapor barrier",
+          "zh": "保温与隔汽层"
+        }
+      ]
+    },
+    "knowledge-pipe-sizing.png": {
+      "title_en": "Pipe sizing geometry",
+      "title_zh": "管径选型几何",
+      "labels": [
+        {
+          "en": "REFRIGERANT PIPE SIZING AND SUPPORT SPACING",
+          "zh": "制冷剂管径与支撑间距"
+        },
+        {
+          "en": "Refrigerant piping must be properly sized, supported, and sloped to ensure oil return and system reliability. Provide adequate support spacing and install oil traps at risers.",
+          "zh": "制冷剂配管须正确选型、支撑与坡度，以保证回油与系统可靠性。提供足够支撑间距并在立管设存油弯。"
+        },
+        {
+          "en": "Slope",
+          "zh": "Slope"
+        },
+        {
+          "en": "Support spacing",
+          "zh": "支撑间距"
+        },
+        {
+          "en": "1.5 – 2.0 m (5 – 6.5 ft)",
+          "zh": "1.5 – 2.0 m (5 – 6.5 ft)"
+        },
+        {
+          "en": "Oil trap",
+          "zh": "存油弯"
+        },
+        {
+          "en": "Riser",
+          "zh": "Riser"
+        },
+        {
+          "en": "Diameter",
+          "zh": "直径"
+        },
+        {
+          "en": "NOMINAL PIPE DIAMETER",
+          "zh": "公称管径"
+        },
+        {
+          "en": "RECOMMENDED SUPPORT SPACING",
+          "zh": "推荐支撑间距"
+        },
+        {
+          "en": "≤ 28 mm (1-1/8 in)",
+          "zh": "≤ 28 mm (1-1/8 in)"
+        },
+        {
+          "en": "1.2 – 1.5 m (4 – 5 ft)",
+          "zh": "1.2 – 1.5 m (4 – 5 ft)"
+        },
+        {
+          "en": "29 – 54 mm (1-1/8 to 2-1/8 in)",
+          "zh": "29 – 54 mm (1-1/8 to 2-1/8 in)"
+        },
+        {
+          "en": "55 – 108 mm (2-1/8 to 4-1/8 in)",
+          "zh": "55 – 108 mm (2-1/8 to 4-1/8 in)"
+        },
+        {
+          "en": "2.0 – 2.5 m (6.5 – 8 ft)",
+          "zh": "2.0 – 2.5 m (6.5 – 8 ft)"
+        },
+        {
+          "en": "≥ 109 mm (4-1/8 in)",
+          "zh": "≥ 109 mm (4-1/8 in)"
+        },
+        {
+          "en": "2.5 – 3.0 m (8 – 10 ft)",
+          "zh": "2.5 – 3.0 m (8 – 10 ft)"
+        },
+        {
+          "en": "NOTES",
+          "zh": "备注"
+        },
+        {
+          "en": "Slope horizontal piping in the direction of refrigerant flow.",
+          "zh": "水平配管沿制冷剂流向设坡。"
+        },
+        {
+          "en": "Minimum slope: 1% (10 mm per meter) toward the flow direction.",
+          "zh": "最小坡度：沿流向 1%（每米 10 mm）。"
+        },
+        {
+          "en": "Install oil traps at the base of risers greater than 6 m (20 ft).",
+          "zh": "立管高度大于 6 m（20 ft）时在底部设存油弯。"
+        },
+        {
+          "en": "Ensure all piping is securely supported and protected from vibration.",
+          "zh": "确保管路可靠支撑并防振。"
+        },
+        {
+          "en": "Follow manufacturer guidelines and applicable codes.",
+          "zh": "遵循制造商指南与适用规范。"
+        },
+        {
+          "en": "Pipe sizing geometry",
+          "zh": "管径选型几何"
+        }
+      ]
+    },
+    "knowledge-pipe-supports.png": {
+      "title_en": "Pipe supports and expansion",
+      "title_zh": "支架与热膨胀",
+      "labels": [
+        {
+          "en": "REFRIGERATION PIPE SUPPORTS",
+          "zh": "制冷配管支吊架"
+        },
+        {
+          "en": "VIBRATION ISOLATION & THERMAL EXPANSION",
+          "zh": "隔振与热膨胀"
+        },
+        {
+          "en": "Clamp",
+          "zh": "Clamp"
+        },
+        {
+          "en": "Isolator",
+          "zh": "隔离器"
+        },
+        {
+          "en": "Spring hanger",
+          "zh": "弹簧吊架"
+        },
+        {
+          "en": "Expansion guide",
+          "zh": "膨胀导向"
+        },
+        {
+          "en": "CLAMP ON ISOLATOR PAD",
+          "zh": "隔振垫上管卡"
+        },
+        {
+          "en": "Secures the pipe to the support",
+          "zh": "将管子固定到支吊架"
+        },
+        {
+          "en": "Rubber isolator reduces vibration transmission to the structure",
+          "zh": "橡胶隔振器降低向结构传递的振动"
+        },
+        {
+          "en": "SPRING HANGER",
+          "zh": "弹簧吊架"
+        },
+        {
+          "en": "Supports pipe weight",
+          "zh": "承受管道重量"
+        },
+        {
+          "en": "Allows vertical movement",
+          "zh": "允许垂直位移"
+        },
+        {
+          "en": "Isolates vibration and reduces noise",
+          "zh": "隔离振动并降低噪声"
+        },
+        {
+          "en": "EXPANSION GUIDE",
+          "zh": "膨胀导向"
+        },
+        {
+          "en": "Guides pipe movement",
+          "zh": "引导管道位移"
+        },
+        {
+          "en": "Allows thermal expansion and contraction",
+          "zh": "允许热胀冷缩"
+        },
+        {
+          "en": "Prevents stress on the piping system",
+          "zh": "防止配管系统受力"
+        },
+        {
+          "en": "Proper support selection and installation help prevent vibration, reduce noise, and protect the piping system from stress caused by thermal expansion and contraction.",
+          "zh": "正确选型与安装支吊架可防振、降噪，并保护配管免受热胀冷缩应力。"
+        },
+        {
+          "en": "Direction of thermal movement",
+          "zh": "热位移方向"
+        },
+        {
+          "en": "Pipe supports and expansion",
+          "zh": "支架与热膨胀"
+        }
+      ]
+    },
+    "knowledge-ref-gwp-landscape.png": {
+      "title_en": "GWP landscape of common fluids",
+      "title_zh": "常用工质 GWP 景观",
+      "labels": [
+        {
+          "en": "GWP landscape for heat pump fluids (schematic)",
+          "zh": "热泵工质 GWP 格局（示意）"
+        },
+        {
+          "en": "GWP (100-yr) → low to high",
+          "zh": "GWP（100年）→ 低到高"
+        },
+        {
+          "en": "High GWP",
+          "zh": "高 GWP"
+        },
+        {
+          "en": "Legacy HFC (declining) — R410A, R134a, R245fa — GWP 675—4000+",
+          "zh": "传统 HFC（递减）— R410A, R134a, R245fa — GWP 675—4000+"
+        },
+        {
+          "en": "Comfort & commercial transition",
+          "zh": "舒适与商用过渡"
+        },
+        {
+          "en": "Transitional blends",
+          "zh": "过渡混配"
+        },
+        {
+          "en": "R32, R454B, R515B",
+          "zh": "R32, R454B, R515B"
+        },
+        {
+          "en": "Low GWP",
+          "zh": "低 GWP"
+        },
+        {
+          "en": "Natural fluids & HFO — GWP 0–700",
+          "zh": "天然工质与 HFO — GWP 0–700"
+        },
+        {
+          "en": "R744, R717, R290, R1234yf, R32",
+          "zh": "R744, R717, R290, R1234yf, R32"
+        },
+        {
+          "en": "Industrial & high-temp HP",
+          "zh": "工业与高温热泵"
+        },
+        {
+          "en": "Application temperature band → Comfort HP / Commercial / Industrial & HTHP",
+          "zh": "应用温度带 → 舒适热泵 / 商用 / 工业与 HTHP"
+        },
+        {
+          "en": "Not a property chart — confirm values in engineering datasheets",
+          "zh": "非物性表 — 请以工程数据表确认数值"
+        },
+        {
+          "en": "GWP landscape of common fluids",
+          "zh": "常用工质 GWP 景观"
+        }
+      ]
+    },
+    "knowledge-ref-policy-map.png": {
+      "title_en": "Policy & phase-down map",
+      "title_zh": "政策与削减路线图",
+      "labels": [
+        {
+          "en": "International policy framework for refrigerants & heat pumps",
+          "zh": "制冷剂与热泵国际政策框架"
+        },
+        {
+          "en": "Direct refrigerant regulation",
+          "zh": "制冷剂直接管控"
+        },
+        {
+          "en": "Montreal Protocol (1987) — ODS phase-out — CFC, HCFC",
+          "zh": "蒙特利尔议定书（1987）— ODS 淘汰 — CFC, HCFC"
+        },
+        {
+          "en": "Kigali Amendment (2016) — HFC phasedown",
+          "zh": "基加利修正案（2016）— HFC 削减"
+        },
+        {
+          "en": "Indirect climate drivers",
+          "zh": "间接气候驱动因素"
+        },
+        {
+          "en": "Kyoto Protocol (1997) — GHG targets",
+          "zh": "京都议定书（1997）— 温室气体目标"
+        },
+        {
+          "en": "Paris Agreement (2015) — NDCs, net-zero, electrification",
+          "zh": "巴黎协定（2015）— NDCs、净零、电气化"
+        },
+        {
+          "en": "Heat pump industry",
+          "zh": "热泵行业"
+        },
+        {
+          "en": "Fluid choice ← Montreal / Kigali + national F-gas law",
+          "zh": "工质选择 ← 蒙特利尔 / 基加利 + 国家 F-gas 法规"
+        },
+        {
+          "en": "Deployment scale ← Paris / electrification & grid decarbonisation",
+          "zh": "部署规模 ← 巴黎协定 / 电气化与电网脱碳"
+        },
+        {
+          "en": "Only Montreal & Kigali directly regulate refrigerants; Kyoto & Paris drive heat pump adoption context",
+          "zh": "仅蒙特利尔与基加利直接管制制冷剂；京都与巴黎协定驱动热泵推广背景"
+        },
+        {
+          "en": "Policy & phase-down map",
+          "zh": "政策与削减路线图"
+        }
+      ]
+    },
+    "knowledge-ref-regions-matrix.png": {
+      "title_en": "Regional refrigerant matrix",
+      "title_zh": "区域制冷剂矩阵",
+      "labels": [
+        {
+          "en": "China · EU · United States — regulatory eras (schematic)",
+          "zh": "中国 · 欧盟 · 美国 — 监管时代（示意）"
+        },
+        {
+          "en": "China",
+          "zh": "中国"
+        },
+        {
+          "en": "EU",
+          "zh": "欧盟"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Past (1987–2014)",
+          "zh": "过去（1987–2014）"
+        },
+        {
+          "en": "HCFC phase-out",
+          "zh": "HCFC 淘汰"
+        },
+        {
+          "en": "Montreal compliance",
+          "zh": "蒙特利尔合规"
+        },
+        {
+          "en": "ODS rules",
+          "zh": "ODS 规则"
+        },
+        {
+          "en": "F-gas 517/2014 prep",
+          "zh": "F-gas 517/2014 准备"
+        },
+        {
+          "en": "Clean Air Act Title VI",
+          "zh": "清洁空气法 Title VI"
+        },
+        {
+          "en": "SNAP",
+          "zh": "SNAP"
+        },
+        {
+          "en": "Present (2015–2025)",
+          "zh": "现在（2015–2025）"
+        },
+        {
+          "en": "Kigali 2021",
+          "zh": "基加利 2021"
+        },
+        {
+          "en": "MEE HFC quotas",
+          "zh": "生态环境部 HFC 配额"
+        },
+        {
+          "en": "2024/573 revision",
+          "zh": "2024/573 修订"
+        },
+        {
+          "en": "split AC GWP≤750 from 2025",
+          "zh": "分体空调自 2025 起 GWP≤750"
+        },
+        {
+          "en": "AIM Act 2020",
+          "zh": "AIM Act 2020"
+        },
+        {
+          "en": "EPA rules",
+          "zh": "EPA 规则"
+        },
+        {
+          "en": "CA CARB",
+          "zh": "CA CARB"
+        },
+        {
+          "en": "Future (2026–2036+)",
+          "zh": "未来（2026–2036+）"
+        },
+        {
+          "en": "A5 schedule to 2045",
+          "zh": "A5 时间表至 2045"
+        },
+        {
+          "en": "natural-fluid standards",
+          "zh": "天然工质标准"
+        },
+        {
+          "en": "Further quota cuts",
+          "zh": "配额进一步削减"
+        },
+        {
+          "en": "PFAS uncertainty",
+          "zh": "PFAS 不确定性"
+        },
+        {
+          "en": "Later AIM phases",
+          "zh": "后续 AIM 阶段"
+        },
+        {
+          "en": "state-led faster bans",
+          "zh": "州主导更快禁令"
+        },
+        {
+          "en": "Three jurisdictions, three clocks — never assume one global ban date",
+          "zh": "三个辖区、三套时间表 — 切勿假定全球统一禁令日期"
+        },
+        {
+          "en": "Regional refrigerant matrix",
+          "zh": "区域制冷剂矩阵"
+        }
+      ]
+    },
+    "knowledge-ref-timeline.png": {
+      "title_en": "Refrigerant generations timeline",
+      "title_zh": "制冷剂代际时间轴",
+      "labels": [
+        {
+          "en": "Refrigerant generations timeline",
+          "zh": "制冷剂代际时间轴"
+        },
+        {
+          "en": "1830s – Natural fluids",
+          "zh": "1830s – 天然工质"
+        },
+        {
+          "en": "NH₃, CO₂, H₂O",
+          "zh": "NH₃, CO₂, H₂O"
+        },
+        {
+          "en": "1930s – 1st gen CFC",
+          "zh": "1930s – 第1代 CFC"
+        },
+        {
+          "en": "R11, R12",
+          "zh": "R11, R12"
+        },
+        {
+          "en": "1987",
+          "zh": "1987"
+        },
+        {
+          "en": "Montreal Protocol",
+          "zh": "蒙特利尔议定书"
+        },
+        {
+          "en": "(ozone treaty)",
+          "zh": "（臭氧条约）"
+        },
+        {
+          "en": "HCFC 2nd gen",
+          "zh": "HCFC 第2代"
+        },
+        {
+          "en": "R22, R123",
+          "zh": "R22, R123"
+        },
+        {
+          "en": "1990s – 3rd gen HFC",
+          "zh": "1990s – 第3代 HFC"
+        },
+        {
+          "en": "R410A, R134a, R407C",
+          "zh": "R410A, R134a, R407C"
+        },
+        {
+          "en": "2016",
+          "zh": "2016"
+        },
+        {
+          "en": "Kigali Amendment",
+          "zh": "基加利修正案"
+        },
+        {
+          "en": "(HFC phasedown)",
+          "zh": "（HFC 削减）"
+        },
+        {
+          "en": "4th gen HFO / low-GWP blends",
+          "zh": "第4代 HFO / 低 GWP 混配"
+        },
+        {
+          "en": "R32, R454B, R1233zd(E)",
+          "zh": "R32, R454B, R1233zd(E)"
+        },
+        {
+          "en": "2000s+ – Natural revival",
+          "zh": "2000s+ – 天然工质回归"
+        },
+        {
+          "en": "R744, R717, R290",
+          "zh": "R744, R717, R290"
+        },
+        {
+          "en": "Industrial naturals — continuous parallel track",
+          "zh": "工业天然工质 — 持续并行路径"
+        },
+        {
+          "en": "*Generations overlap in time; treaty dates are orientation markers only.",
+          "zh": "*各代在时间上重叠；条约日期仅作方位参考。"
+        }
+      ]
+    },
+    "knowledge-shop-inline.png": {
+      "title_en": "Inline production checkpoints",
+      "title_zh": "产线在线检查点",
+      "labels": [
+        {
+          "en": "Heat Pump Inline Production Test Bench",
+          "zh": "热泵在线生产测试台"
+        },
+        {
+          "en": "100% testing of every unit – Leak, Safety, Function",
+          "zh": "每台 100% 检测 – 泄漏、安全、功能"
+        },
+        {
+          "en": "UNIT UNDER TEST",
+          "zh": "被测机组"
+        },
+        {
+          "en": "1 Refrigerant Circuit",
+          "zh": "1 制冷剂回路"
+        },
+        {
+          "en": "2 Electrical Connections",
+          "zh": "2 电气连接"
+        },
+        {
+          "en": "3 Controls & Sensors",
+          "zh": "3 控制与传感器"
+        },
+        {
+          "en": "4 Water Circuit (if applicable)",
+          "zh": "4 水路（如适用）"
+        },
+        {
+          "en": "Leak test",
+          "zh": "泄漏测试"
+        },
+        {
+          "en": "PASS",
+          "zh": "PASS"
+        },
+        {
+          "en": "Refrigerant circuit pressurised with forming gas (N2)",
+          "zh": "制冷剂回路用成形气体（N2）加压"
+        },
+        {
+          "en": "Helium sniffer detects leak rate",
+          "zh": "氦检漏仪检测泄漏率"
+        },
+        {
+          "en": "Safety",
+          "zh": "安全"
+        },
+        {
+          "en": "Electrical safety test",
+          "zh": "电气安全测试"
+        },
+        {
+          "en": "Insulation resistance",
+          "zh": "绝缘电阻"
+        },
+        {
+          "en": "Dielectric withstand",
+          "zh": "介电耐压"
+        },
+        {
+          "en": "Earth continuity",
+          "zh": "接地连续性"
+        },
+        {
+          "en": "Function",
+          "zh": "功能"
+        },
+        {
+          "en": "Functional operation",
+          "zh": "功能运行"
+        },
+        {
+          "en": "Performance & sensor checks",
+          "zh": "性能与传感器检查"
+        },
+        {
+          "en": "Control logic verification",
+          "zh": "控制逻辑验证"
+        },
+        {
+          "en": "SAFETY TEST",
+          "zh": "安全测试"
+        },
+        {
+          "en": "Insulation Resistance",
+          "zh": "绝缘电阻"
+        },
+        {
+          "en": "Dielectric Withstand",
+          "zh": "介电耐压"
+        },
+        {
+          "en": "Earth Continuity",
+          "zh": "接地连续性"
+        },
+        {
+          "en": "Polarity / Wiring",
+          "zh": "极性 / 接线"
+        },
+        {
+          "en": "L",
+          "zh": "L"
+        },
+        {
+          "en": "N",
+          "zh": "N"
+        },
+        {
+          "en": "PE",
+          "zh": "PE"
+        },
+        {
+          "en": "FUNCTION TEST",
+          "zh": "功能测试"
+        },
+        {
+          "en": "Compressor",
+          "zh": "压缩机"
+        },
+        {
+          "en": "OK",
+          "zh": "OK"
+        },
+        {
+          "en": "Fan Motor",
+          "zh": "风机电机"
+        },
+        {
+          "en": "Sensors",
+          "zh": "传感器"
+        },
+        {
+          "en": "Valves / Actuators",
+          "zh": "阀门 / 执行器"
+        },
+        {
+          "en": "Heating Mode",
+          "zh": "制热模式"
+        },
+        {
+          "en": "Cooling Mode",
+          "zh": "制冷模式"
+        },
+        {
+          "en": "Water Flow (if appl.)",
+          "zh": "水流量（如适用）"
+        },
+        {
+          "en": "FLOW",
+          "zh": "FLOW"
+        },
+        {
+          "en": "Unit arrives on conveyor",
+          "zh": "机组到达输送线"
+        },
+        {
+          "en": "Automatic fixture lock & connection",
+          "zh": "自动夹具锁紧与连接"
+        },
+        {
+          "en": "Function check",
+          "zh": "功能检查"
+        },
+        {
+          "en": "Unit released (100% PASS)",
+          "zh": "机组放行（100% PASS）"
+        },
+        {
+          "en": "Inline production checkpoints",
+          "zh": "产线在线检查点"
+        }
+      ]
+    },
+    "knowledge-shop-loop.png": {
+      "title_en": "Factory test loop",
+      "title_zh": "工厂测试回路",
+      "labels": [
+        {
+          "en": "HEAT PUMP FACTORY QUALITY LOOP",
+          "zh": "热泵工厂质量闭环"
+        },
+        {
+          "en": "Quality built in at every step. Test. Verify. Improve. Repeat.",
+          "zh": "每一步内建质量。测试。验证。改进。循环。"
+        },
+        {
+          "en": "1 ASSEMBLY",
+          "zh": "1 装配"
+        },
+        {
+          "en": "Component verification",
+          "zh": "部件验证"
+        },
+        {
+          "en": "Torque and braze checks",
+          "zh": "扭矩与钎焊检查"
+        },
+        {
+          "en": "Visual inspection",
+          "zh": "外观检查"
+        },
+        {
+          "en": "Work instruction compliance",
+          "zh": "作业指导书符合性"
+        },
+        {
+          "en": "2 VACUUM & CHARGE TOOLS",
+          "zh": "2 抽真空与充注工具"
+        },
+        {
+          "en": "Leak check (vacuum decay)",
+          "zh": "检漏（真空衰减）"
+        },
+        {
+          "en": "Moisture control",
+          "zh": "水分控制"
+        },
+        {
+          "en": "Accurate refrigerant charge",
+          "zh": "精确制冷剂充注"
+        },
+        {
+          "en": "Tool calibration & records",
+          "zh": "工具校准与记录"
+        },
+        {
+          "en": "3 INLINE TEST",
+          "zh": "3 在线检测"
+        },
+        {
+          "en": "PASS",
+          "zh": "PASS"
+        },
+        {
+          "en": "Electrical safety test",
+          "zh": "电气安全测试"
+        },
+        {
+          "en": "Leak test",
+          "zh": "泄漏测试"
+        },
+        {
+          "en": "Functional test (run)",
+          "zh": "功能测试（运行）"
+        },
+        {
+          "en": "Sensor and control check",
+          "zh": "传感器与控制检查"
+        },
+        {
+          "en": "4 PERFORMANCE TEST",
+          "zh": "4 性能测试"
+        },
+        {
+          "en": "Heating 7.2 kW",
+          "zh": "制热 7.2 kW"
+        },
+        {
+          "en": "Cooling 6.8 kW",
+          "zh": "制冷 6.8 kW"
+        },
+        {
+          "en": "COP 3.40",
+          "zh": "COP 3.40"
+        },
+        {
+          "en": "Flow 45.0 L/min",
+          "zh": "流量 45.0 L/min"
+        },
+        {
+          "en": "Ambient 7 °C",
+          "zh": "环境 7 °C"
+        },
+        {
+          "en": "Capacity (heating/cooling)",
+          "zh": "容量（制热/制冷）"
+        },
+        {
+          "en": "COP / Efficiency",
+          "zh": "COP / 效率"
+        },
+        {
+          "en": "Operating limits",
+          "zh": "运行限值"
+        },
+        {
+          "en": "Data logging & verification",
+          "zh": "数据记录与验证"
+        },
+        {
+          "en": "5 SHIP",
+          "zh": "5 出货"
+        },
+        {
+          "en": "Final visual inspection",
+          "zh": "最终外观检查"
+        },
+        {
+          "en": "Label & documentation",
+          "zh": "标签与文件"
+        },
+        {
+          "en": "Protect & package",
+          "zh": "防护与封装"
+        },
+        {
+          "en": "Release to ship",
+          "zh": "放行出货"
+        },
+        {
+          "en": "QUALITY FEEDBACK LOOP",
+          "zh": "质量反馈闭环"
+        },
+        {
+          "en": "DATA & TRACEABILITY",
+          "zh": "数据与可追溯"
+        },
+        {
+          "en": "Record results, maintain traceability, ensure accountability.",
+          "zh": "记录结果、保持可追溯、落实责任。"
+        },
+        {
+          "en": "ANALYZE & IMPROVE",
+          "zh": "分析与改进"
+        },
+        {
+          "en": "Review data, identify trends, and drive continuous improvement.",
+          "zh": "审阅数据、识别趋势并推动持续改进。"
+        },
+        {
+          "en": "CORRECT & PREVENT",
+          "zh": "纠正与预防"
+        },
+        {
+          "en": "Address root causes, update standards, prevent recurrence.",
+          "zh": "处理根因、更新标准、防止再发。"
+        },
+        {
+          "en": "TRAIN & STANDARDIZE",
+          "zh": "培训与标准化"
+        },
+        {
+          "en": "Build skills, share best practices, standardize work.",
+          "zh": "培养技能、共享最佳实践、标准化作业。"
+        },
+        {
+          "en": "QUALITY AT THE SOURCE",
+          "zh": "源头质量"
+        },
+        {
+          "en": "CUSTOMER CONFIDENCE",
+          "zh": "客户信心"
+        },
+        {
+          "en": "RELIABLE PERFORMANCE",
+          "zh": "可靠性能"
+        },
+        {
+          "en": "Factory test loop",
+          "zh": "工厂测试回路"
+        }
+      ]
+    },
+    "knowledge-shop-perf.png": {
+      "title_en": "Performance test bench",
+      "title_zh": "性能测试台",
+      "labels": [
+        {
+          "en": "HEAT PUMP PERFORMANCE TEST CHAMBER",
+          "zh": "热泵性能测试室"
+        },
+        {
+          "en": "Controlled source (evaporator) and sink (condenser) conditions with instrumentation and performance monitoring",
+          "zh": "受控热源（蒸发器）与热汇（冷凝器）工况，配仪表与性能监视"
+        },
+        {
+          "en": "UNIT UNDER TEST (HEAT PUMP)",
+          "zh": "被测机组（热泵）"
+        },
+        {
+          "en": "SOURCE",
+          "zh": "SOURCE"
+        },
+        {
+          "en": "Controlled inlet temperature",
+          "zh": "受控进口温度"
+        },
+        {
+          "en": "7.0 °C",
+          "zh": "7.0 °C"
+        },
+        {
+          "en": "Medium: Water (Glycol)",
+          "zh": "介质：水（乙二醇）"
+        },
+        {
+          "en": "Supply to Unit Under Test",
+          "zh": "供给被测机组"
+        },
+        {
+          "en": "Return from Unit Under Test",
+          "zh": "来自被测机组回液"
+        },
+        {
+          "en": "Source Conditions",
+          "zh": "热源工况"
+        },
+        {
+          "en": "± 0.2 °C",
+          "zh": "± 0.2 °C"
+        },
+        {
+          "en": "2.00 L/s",
+          "zh": "2.00 L/s"
+        },
+        {
+          "en": "± 1 %",
+          "zh": "± 1 %"
+        },
+        {
+          "en": "S1",
+          "zh": "S1"
+        },
+        {
+          "en": "F1",
+          "zh": "F1"
+        },
+        {
+          "en": "S2",
+          "zh": "S2"
+        },
+        {
+          "en": "SINK",
+          "zh": "SINK"
+        },
+        {
+          "en": "35.0 °C",
+          "zh": "35.0 °C"
+        },
+        {
+          "en": "Medium: Water",
+          "zh": "介质：水"
+        },
+        {
+          "en": "Supply from Unit Under Test",
+          "zh": "来自被测机组供水"
+        },
+        {
+          "en": "Return to Unit Under Test",
+          "zh": "返回被测机组"
+        },
+        {
+          "en": "Sink Conditions",
+          "zh": "热汇工况"
+        },
+        {
+          "en": "S3",
+          "zh": "S3"
+        },
+        {
+          "en": "F2",
+          "zh": "F2"
+        },
+        {
+          "en": "SENSORS",
+          "zh": "传感器"
+        },
+        {
+          "en": "S1: Source Inlet Temp. (°C)",
+          "zh": "S1：热源进口温度（°C）"
+        },
+        {
+          "en": "S2: Source Outlet Temp. (°C)",
+          "zh": "S2：热源出口温度（°C）"
+        },
+        {
+          "en": "F1: Source Flow Rate (L/s)",
+          "zh": "F1：热源流量（L/s）"
+        },
+        {
+          "en": "S3: Sink Outlet Temp. (°C)",
+          "zh": "S3：热汇出口温度（°C）"
+        },
+        {
+          "en": "S4: Sink Inlet Temp. (°C)",
+          "zh": "S4：热汇进口温度（°C）"
+        },
+        {
+          "en": "F2: Sink Flow Rate (L/s)",
+          "zh": "F2：热汇流量（L/s）"
+        },
+        {
+          "en": "P: Pressure (High / Low)",
+          "zh": "P：压力（高 / 低）"
+        },
+        {
+          "en": "Electrical Power (kW)",
+          "zh": "电功率（kW）"
+        },
+        {
+          "en": "DATA ACQUISITION SYSTEM",
+          "zh": "数据采集系统"
+        },
+        {
+          "en": "High-speed measurement and logging",
+          "zh": "高速测量与记录"
+        },
+        {
+          "en": "COP DATA",
+          "zh": "COP 数据"
+        },
+        {
+          "en": "PERFORMANCE SUMMARY",
+          "zh": "性能摘要"
+        },
+        {
+          "en": "Heating Capacity: 12.45 kW",
+          "zh": "制热量: 12.45 kW"
+        },
+        {
+          "en": "Electrical Power: 3.25 kW",
+          "zh": "电功率: 3.25 kW"
+        },
+        {
+          "en": "COP (Heating): 3.83",
+          "zh": "COP（制热）: 3.83"
+        },
+        {
+          "en": "Source Inlet Temp.: 7.0 °C",
+          "zh": "热源进口温度: 7.0 °C"
+        },
+        {
+          "en": "Sink Outlet Temp.: 35.0 °C",
+          "zh": "热汇出口温度: 35.0 °C"
+        },
+        {
+          "en": "Flow Rate (Source): 2.00 L/s",
+          "zh": "流量（热源）: 2.00 L/s"
+        },
+        {
+          "en": "Flow Rate (Sink): 2.00 L/s",
+          "zh": "流量（热汇）: 2.00 L/s"
+        },
+        {
+          "en": "TRENDS",
+          "zh": "趋势"
+        },
+        {
+          "en": "Capacity (kW)",
+          "zh": "容量（kW）"
+        },
+        {
+          "en": "COP",
+          "zh": "COP"
+        },
+        {
+          "en": "Power (kW)",
+          "zh": "功率（kW）"
+        },
+        {
+          "en": "Time (min)",
+          "zh": "时间（min）"
+        },
+        {
+          "en": "OPERATING POINT",
+          "zh": "工况点"
+        },
+        {
+          "en": "Sink Outlet Temp. (°C)",
+          "zh": "热汇出口温度（°C）"
+        },
+        {
+          "en": "Source Inlet Temp. (°C)",
+          "zh": "热源进口温度（°C）"
+        },
+        {
+          "en": "Source Inlet: 7.0 °C",
+          "zh": "热源进口: 7.0 °C"
+        },
+        {
+          "en": "Sink Outlet: 35.0 °C",
+          "zh": "热汇出口: 35.0 °C"
+        },
+        {
+          "en": "COP: 3.83",
+          "zh": "COP: 3.83"
+        },
+        {
+          "en": "DATA LOGGING",
+          "zh": "数据记录"
+        },
+        {
+          "en": "Logging Interval: 1 s",
+          "zh": "记录间隔: 1 s"
+        },
+        {
+          "en": "Data stored locally and exportable (CSV)",
+          "zh": "数据本地存储并可导出（CSV）"
+        },
+        {
+          "en": "CSV",
+          "zh": "CSV"
+        },
+        {
+          "en": "Performance test bench",
+          "zh": "性能测试台"
+        }
+      ]
+    },
+    "knowledge-shop-tools.png": {
+      "title_en": "Shop tools for assembly & service",
+      "title_zh": "装配与售后工具",
+      "labels": [
+        {
+          "en": "HEAT PUMP SHOP TOOLS FAMILY",
+          "zh": "热泵车间工具族"
+        },
+        {
+          "en": "Essential tools for installation, commissioning and service",
+          "zh": "安装、调试与维修必备工具"
+        },
+        {
+          "en": "VACUUM PUMP",
+          "zh": "真空泵"
+        },
+        {
+          "en": "Evacuates air and moisture from the refrigerant circuit to ensure efficient and reliable system operation.",
+          "zh": "抽除制冷剂回路中的空气与水分，保证高效可靠运行。"
+        },
+        {
+          "en": "REFRIGERANT CHARGING MACHINE",
+          "zh": "制冷剂充注机"
+        },
+        {
+          "en": "Recovers, evacuates and charges refrigerant with precision for safe and accurate system commissioning.",
+          "zh": "精确回收、抽真空与充注制冷剂，确保安全准确调试。"
+        },
+        {
+          "en": "ELECTRONIC LEAK DETECTOR",
+          "zh": "电子检漏仪"
+        },
+        {
+          "en": "Detects refrigerant leaks quickly and accurately to help ensure system integrity.",
+          "zh": "快速准确检测制冷剂泄漏，保障系统完整性。"
+        },
+        {
+          "en": "TORQUE WRENCH",
+          "zh": "扭矩扳手"
+        },
+        {
+          "en": "Applies the correct torque to flare nuts and fasteners to prevent leaks and ensure reliable connections.",
+          "zh": "对喇叭口螺母与紧固件施加正确扭矩，防止泄漏并保证可靠连接。"
+        },
+        {
+          "en": "Always follow manufacturer instructions and local regulations. Use appropriate PPE and safe handling practices.",
+          "zh": "始终遵循制造商说明与当地法规。使用合适 PPE 与安全操作。"
+        },
+        {
+          "en": "Shop tools for assembly & service",
+          "zh": "装配与售后工具"
+        }
+      ]
+    },
+    "knowledge-valve-reversing.png": {
+      "title_en": "4-way reversing valve — heating vs cooling",
+      "title_zh": "四通换向阀 — 制热/制冷路径",
+      "labels": [
+        {
+          "en": "4-way reversing valve · heating vs cooling paths",
+          "zh": "四通换向阀 · 制热/制冷路径"
+        },
+        {
+          "en": "HEATING MODE",
+          "zh": "制热模式"
+        },
+        {
+          "en": "Hot discharge to indoor (condenser)",
+          "zh": "热排气至室内（冷凝器）"
+        },
+        {
+          "en": "Outdoor gives up heat (evaporator)",
+          "zh": "室外放热（蒸发器）"
+        },
+        {
+          "en": "D",
+          "zh": "D"
+        },
+        {
+          "en": "DISCHARGE",
+          "zh": "排气"
+        },
+        {
+          "en": "(from compressor)",
+          "zh": "（来自压缩机）"
+        },
+        {
+          "en": "E",
+          "zh": "E"
+        },
+        {
+          "en": "INDOOR COIL",
+          "zh": "室内盘管"
+        },
+        {
+          "en": "(condenser)",
+          "zh": "（冷凝器）"
+        },
+        {
+          "en": "C",
+          "zh": "C"
+        },
+        {
+          "en": "OUTDOOR COIL",
+          "zh": "室外盘管"
+        },
+        {
+          "en": "(evaporator)",
+          "zh": "（蒸发器）"
+        },
+        {
+          "en": "S",
+          "zh": "S"
+        },
+        {
+          "en": "SUCTION",
+          "zh": "吸气"
+        },
+        {
+          "en": "(to compressor)",
+          "zh": "（至压缩机）"
+        },
+        {
+          "en": "Indoor = condenser",
+          "zh": "室内 = 冷凝器"
+        },
+        {
+          "en": "Heat OUT to space",
+          "zh": "向室内放热"
+        },
+        {
+          "en": "Heat IN from outside",
+          "zh": "从室外吸热"
+        },
+        {
+          "en": "NOTE: Defrost may reverse briefly",
+          "zh": "注：除霜可能短暂换向"
+        },
+        {
+          "en": "SLIDE POSITION – HEATING",
+          "zh": "滑块位置 – 制热"
+        },
+        {
+          "en": "Slide shifted LEFT",
+          "zh": "滑块移至左侧"
+        },
+        {
+          "en": "D connects to E, C connects to S",
+          "zh": "D 接 E，C 接 S"
+        },
+        {
+          "en": "COOLING MODE",
+          "zh": "制冷模式"
+        },
+        {
+          "en": "Hot discharge to outdoor (condenser)",
+          "zh": "热排气至室外（冷凝器）"
+        },
+        {
+          "en": "Indoor absorbs heat (evaporator)",
+          "zh": "室内吸热（蒸发器）"
+        },
+        {
+          "en": "Outdoor = condenser",
+          "zh": "室外 = 冷凝器"
+        },
+        {
+          "en": "Heat OUT to outside",
+          "zh": "向室外放热"
+        },
+        {
+          "en": "Heat IN from space",
+          "zh": "从室内吸热"
+        },
+        {
+          "en": "NOTE: Same compressor rotation",
+          "zh": "注：压缩机转向相同"
+        },
+        {
+          "en": "SLIDE POSITION – COOLING",
+          "zh": "滑块位置 – 制冷"
+        },
+        {
+          "en": "Slide shifted RIGHT",
+          "zh": "滑块移至右侧"
+        },
+        {
+          "en": "D connects to C, E connects to S",
+          "zh": "D 接 C，E 接 S"
+        },
+        {
+          "en": "D = DISCHARGE",
+          "zh": "D = 排气"
+        },
+        {
+          "en": "(high pressure gas)",
+          "zh": "（高压气体）"
+        },
+        {
+          "en": "S = SUCTION",
+          "zh": "S = 吸气"
+        },
+        {
+          "en": "(low pressure gas)",
+          "zh": "（低压气体）"
+        },
+        {
+          "en": "E = INDOOR COIL",
+          "zh": "E = 室内盘管"
+        },
+        {
+          "en": "(indoor heat exchanger)",
+          "zh": "（室内换热器）"
+        },
+        {
+          "en": "C = OUTDOOR COIL",
+          "zh": "C = 室外盘管"
+        },
+        {
+          "en": "(outdoor heat exchanger)",
+          "zh": "（室外换热器）"
+        },
+        {
+          "en": "Stuck mid-stroke bypasses high to low and kills capacity.",
+          "zh": "卡在行程中间会使高低压旁通并丧失能力。"
+        },
+        {
+          "en": "4-way reversing valve — heating vs cooling",
+          "zh": "四通换向阀 — 制热/制冷路径"
+        }
+      ]
+    },
+    "knowledge-valve-txv-eev.png": {
+      "title_en": "TXV vs EEV — superheat control",
+      "title_zh": "TXV 与 EEV — 过热度控制",
+      "labels": [
+        {
+          "en": "TXV vs EEV — control of superheat",
+          "zh": "TXV 与 EEV — 过热度控制"
+        },
+        {
+          "en": "Bulb",
+          "zh": "Bulb"
+        },
+        {
+          "en": "Capillary",
+          "zh": "Capillary"
+        },
+        {
+          "en": "SUCTION LINE (to compressor)",
+          "zh": "吸气管（至压缩机）"
+        },
+        {
+          "en": "Diaphragm + spring",
+          "zh": "膜片 + 弹簧"
+        },
+        {
+          "en": "Needle",
+          "zh": "Needle"
+        },
+        {
+          "en": "LIQUID INLET (from condenser)",
+          "zh": "液体入口（来自冷凝器）"
+        },
+        {
+          "en": "TO EVAPORATOR",
+          "zh": "至蒸发器"
+        },
+        {
+          "en": "Set SH via spring",
+          "zh": "用弹簧设定过热度"
+        },
+        {
+          "en": "Bulb charge & position critical",
+          "zh": "感温包充注与位置关键"
+        },
+        {
+          "en": "Good for stable loads",
+          "zh": "适于稳定负荷"
+        },
+        {
+          "en": "Stepper driver",
+          "zh": "步进驱动器"
+        },
+        {
+          "en": "P/T sensors",
+          "zh": "压力/温度传感器"
+        },
+        {
+          "en": "PRESSURE TRANSDUCER (evaporator pressure)",
+          "zh": "压力变送器（蒸发压力）"
+        },
+        {
+          "en": "TEMPERATURE SENSOR (evaporator outlet)",
+          "zh": "温度传感器（蒸发器出口）"
+        },
+        {
+          "en": "Controller",
+          "zh": "控制器"
+        },
+        {
+          "en": "SH 6.0 K",
+          "zh": "SH 6.0 K"
+        },
+        {
+          "en": "Wide capacity range",
+          "zh": "宽容量范围"
+        },
+        {
+          "en": "Diagnostics & maps",
+          "zh": "诊断与图谱"
+        },
+        {
+          "en": "Wiring & firmware matter",
+          "zh": "布线与固件很关键"
+        },
+        {
+          "en": "Both target evaporator superheat —",
+          "zh": "两者都以蒸发器过热度为目标 —"
+        },
+        {
+          "en": "EEV is a control interface, not a more expensive TXV.",
+          "zh": "EEV 是控制接口，并非更贵的 TXV。"
+        },
+        {
+          "en": "TXV vs EEV — superheat control",
+          "zh": "TXV 与 EEV — 过热度控制"
+        }
+      ]
+    },
+    "knowledge-valve-types.png": {
+      "title_en": "Refrigerant-side valve families",
+      "title_zh": "制冷剂侧阀门族系",
+      "labels": [
+        {
+          "en": "Refrigerant-side valve families",
+          "zh": "制冷剂侧阀门族系"
+        },
+        {
+          "en": "1. TXV",
+          "zh": "1. TXV"
+        },
+        {
+          "en": "Sensing bulb",
+          "zh": "感温包"
+        },
+        {
+          "en": "Capillary tube",
+          "zh": "毛细管"
+        },
+        {
+          "en": "Diaphragm",
+          "zh": "膜片"
+        },
+        {
+          "en": "Spring",
+          "zh": "Spring"
+        },
+        {
+          "en": "Needle (orifice)",
+          "zh": "针阀（节流孔）"
+        },
+        {
+          "en": "IN Liquid",
+          "zh": "液体入口"
+        },
+        {
+          "en": "OUT To Evaporator",
+          "zh": "出口至蒸发器"
+        },
+        {
+          "en": "Thermostatic expansion - meters liquid / holds SH",
+          "zh": "热力膨胀 — 计量液体 / 维持过热度"
+        },
+        {
+          "en": "2. EEV",
+          "zh": "2. EEV"
+        },
+        {
+          "en": "Stepper motor",
+          "zh": "步进电机"
+        },
+        {
+          "en": "Needle valve",
+          "zh": "针阀"
+        },
+        {
+          "en": "Electronic expansion - stepper + sensors",
+          "zh": "电子膨胀 — 步进 + 传感器"
+        },
+        {
+          "en": "3. Solenoid",
+          "zh": "3. 电磁阀"
+        },
+        {
+          "en": "Coil",
+          "zh": "Coil"
+        },
+        {
+          "en": "Plunger",
+          "zh": "Plunger"
+        },
+        {
+          "en": "Seat",
+          "zh": "Seat"
+        },
+        {
+          "en": "OUT To System",
+          "zh": "出口至系统"
+        },
+        {
+          "en": "On/off liquid line",
+          "zh": "液管通断"
+        },
+        {
+          "en": "4. 4-way",
+          "zh": "4. 四通阀"
+        },
+        {
+          "en": "D (Discharge)",
+          "zh": "D（排气）"
+        },
+        {
+          "en": "S (Suction)",
+          "zh": "S（吸气）"
+        },
+        {
+          "en": "E (Evaporator)",
+          "zh": "E（蒸发器）"
+        },
+        {
+          "en": "C (Condenser)",
+          "zh": "C（冷凝器）"
+        },
+        {
+          "en": "Slide (spool)",
+          "zh": "滑块（阀芯）"
+        },
+        {
+          "en": "Reversing / defrost",
+          "zh": "换向 / 除霜"
+        },
+        {
+          "en": "5. Check",
+          "zh": "5. 止回"
+        },
+        {
+          "en": "Check disc",
+          "zh": "止回阀瓣"
+        },
+        {
+          "en": "IN From System",
+          "zh": "系统入口"
+        },
+        {
+          "en": "Allows flow this direction only",
+          "zh": "仅允许此方向流动"
+        },
+        {
+          "en": "One-way flow",
+          "zh": "单向流动"
+        },
+        {
+          "en": "6. Safety",
+          "zh": "6. 安全"
+        },
+        {
+          "en": "Adjusting screw",
+          "zh": "调节螺钉"
+        },
+        {
+          "en": "Disc (poppet)",
+          "zh": "阀瓣（提升式）"
+        },
+        {
+          "en": "OUT To Discharge",
+          "zh": "出口至排气"
+        },
+        {
+          "en": "Relief / pressure",
+          "zh": "泄压 / 压力"
+        },
+        {
+          "en": "7. Ball / shut",
+          "zh": "7. 球阀 / 截止"
+        },
+        {
+          "en": "Stem",
+          "zh": "Stem"
+        },
+        {
+          "en": "Ball",
+          "zh": "Ball"
+        },
+        {
+          "en": "Seats",
+          "zh": "Seats"
+        },
+        {
+          "en": "Handle position",
+          "zh": "手柄位置"
+        },
+        {
+          "en": "OPEN",
+          "zh": "OPEN"
+        },
+        {
+          "en": "CLOSED",
+          "zh": "CLOSED"
+        },
+        {
+          "en": "Isolation service",
+          "zh": "检修隔离"
+        },
+        {
+          "en": "Water-side actuators are separate — keep refrigerant and hydronic BOMs apart.",
+          "zh": "水侧执行器单独 — 制冷剂与水侧 BOM 分开。"
+        }
+      ]
+    },
+    "knowledge-vessel-accum.png": {
+      "title_en": "Suction accumulator — liquid slug protection",
+      "title_zh": "回气集液器 — 防液击",
+      "labels": [
+        {
+          "en": "Suction accumulator — liquid slug protection",
+          "zh": "回气集液器 — 防液击"
+        },
+        {
+          "en": "WHAT IT DOES",
+          "zh": "作用"
+        },
+        {
+          "en": "Prevents liquid refrigerant from reaching the compressor by separating and holding liquid at low velocity, allowing only vapor to pass to the compressor.",
+          "zh": "在低速下分离并暂存液体，仅让蒸汽通往压缩机，防止液态制冷剂进入压缩机。"
+        },
+        {
+          "en": "WHERE IT'S USED",
+          "zh": "应用场合"
+        },
+        {
+          "en": "Low-temp evaporators with high load variation",
+          "zh": "负荷波动大的低温蒸发器"
+        },
+        {
+          "en": "Systems with long suction lines or floodback potential",
+          "zh": "长吸气管或可能回液的系统"
+        },
+        {
+          "en": "Protects compressors from liquid slugging and damage",
+          "zh": "保护压缩机免受液击与损坏"
+        },
+        {
+          "en": "KEY BENEFITS",
+          "zh": "主要优点"
+        },
+        {
+          "en": "Prevents liquid slugging",
+          "zh": "防止液击"
+        },
+        {
+          "en": "Improves system reliability",
+          "zh": "提高系统可靠性"
+        },
+        {
+          "en": "Allows stable oil return",
+          "zh": "保证稳定回油"
+        },
+        {
+          "en": "Extends compressor life",
+          "zh": "延长压缩机寿命"
+        },
+        {
+          "en": "VAPOR TO COMPRESSOR",
+          "zh": "蒸汽至压缩机"
+        },
+        {
+          "en": "To compressor suction",
+          "zh": "至压缩机吸气"
+        },
+        {
+          "en": "Outlet connection",
+          "zh": "出口接管"
+        },
+        {
+          "en": "VAPOR SPACE",
+          "zh": "蒸汽空间"
+        },
+        {
+          "en": "Only vapor passes through to the compressor.",
+          "zh": "仅蒸汽通往压缩机。"
+        },
+        {
+          "en": "FROM EVAPORATOR",
+          "zh": "来自蒸发器"
+        },
+        {
+          "en": "Suction line",
+          "zh": "吸气管"
+        },
+        {
+          "en": "INLET BAFFLE",
+          "zh": "入口挡板"
+        },
+        {
+          "en": "Slows down incoming flow and directs it against the vessel wall to drop out liquid.",
+          "zh": "减缓进流并导向器壁以沉降液体。"
+        },
+        {
+          "en": "LIQUID HOLD-UP",
+          "zh": "积液"
+        },
+        {
+          "en": "Liquid refrigerant collects here. Volume is sized to handle system surges and variations.",
+          "zh": "液态制冷剂在此汇集。容积按系统冲击与波动设计。"
+        },
+        {
+          "en": "U-BEND OIL RETURN",
+          "zh": "U 弯回油"
+        },
+        {
+          "en": "Oil carried with the vapor condenses in the accumulator and returns to the system through the U-bend or orifice pick-up.",
+          "zh": "随蒸汽携带的油在气液分离器中冷凝，经 U 弯或取油孔返回系统。"
+        },
+        {
+          "en": "SLUG PROTECTION",
+          "zh": "防液击"
+        },
+        {
+          "en": "Holds back liquid during normal operation and surges so only vapor reaches the compressor.",
+          "zh": "正常运行与冲击时拦截液体，使仅蒸汽到达压缩机。"
+        },
+        {
+          "en": "OIL MUST LEAVE WITH VAPOR",
+          "zh": "油须随蒸汽带走"
+        },
+        {
+          "en": "Oil returns to the compressor only when carried with vapor. Too much liquid hold-up can trap oil and cause oil starvation. Size the accumulator correctly.",
+          "zh": "油仅随蒸汽返回压缩机。积液过多会困油导致缺油。气液分离器须正确选型。"
+        },
+        {
+          "en": "GOOD PRACTICE",
+          "zh": "良好实践"
+        },
+        {
+          "en": "Install upright",
+          "zh": "直立安装"
+        },
+        {
+          "en": "Size for system capacity and surge",
+          "zh": "按系统容量与冲击选型"
+        },
+        {
+          "en": "Insulate to prevent sweat and icing",
+          "zh": "保温以防结露与结冰"
+        },
+        {
+          "en": "Ensure oil return path is always open",
+          "zh": "确保回油通路始终畅通"
+        },
+        {
+          "en": "VAPOR (low density)",
+          "zh": "蒸汽（低密度）"
+        },
+        {
+          "en": "Flows to compressor",
+          "zh": "流向压缩机"
+        },
+        {
+          "en": "LIQUID REFRIGERANT (high density)",
+          "zh": "液态制冷剂（高密度）"
+        },
+        {
+          "en": "Collected and held in accumulator",
+          "zh": "在气液分离器中收集并暂存"
+        },
+        {
+          "en": "OIL (entrained)",
+          "zh": "油（夹带）"
+        },
+        {
+          "en": "Returns with vapor via U-bend",
+          "zh": "经 U 弯随蒸汽返回"
+        }
+      ]
+    },
+    "knowledge-vessel-cycle.png": {
+      "title_en": "Vapor-compression cycle — vessels highlighted",
+      "title_zh": "蒸汽压缩循环 — 突出容器",
+      "labels": [
+        {
+          "en": "Vapor-compression cycle — vessels highlighted",
+          "zh": "蒸汽压缩循环 — 突出容器"
+        },
+        {
+          "en": "Compressor",
+          "zh": "压缩机"
+        },
+        {
+          "en": "Suction (low pressure)",
+          "zh": "吸气（低压）"
+        },
+        {
+          "en": "Discharge (high pressure)",
+          "zh": "排气（高压）"
+        },
+        {
+          "en": "Condenser",
+          "zh": "冷凝器"
+        },
+        {
+          "en": "Expansion valve",
+          "zh": "膨胀阀"
+        },
+        {
+          "en": "TXV / EEV + throttle + SH control",
+          "zh": "TXV / EEV + 节流 + 过热度控制"
+        },
+        {
+          "en": "Evaporator",
+          "zh": "蒸发器"
+        },
+        {
+          "en": "1 Oil separator (on discharge)",
+          "zh": "1 油分离器（排气管）"
+        },
+        {
+          "en": "Removes oil from hot discharge gas before the condenser.",
+          "zh": "在冷凝器前从热排气中除油。"
+        },
+        {
+          "en": "Oil returns to the compressor via float, differential and check valve.",
+          "zh": "油经浮球、压差与止回阀返回压缩机。"
+        },
+        {
+          "en": "Protects efficiency and heat transfer.",
+          "zh": "保护效率与传热。"
+        },
+        {
+          "en": "2 Suction accumulator (on suction line)",
+          "zh": "2 气液分离器（吸气管）"
+        },
+        {
+          "en": "Prevents liquid slugging of the compressor.",
+          "zh": "防止压缩机液击。"
+        },
+        {
+          "en": "Stores refrigerant during low load and defrost.",
+          "zh": "低负荷与除霜时储存制冷剂。"
+        },
+        {
+          "en": "Keeps the compressor safe and stable.",
+          "zh": "保证压缩机安全稳定。"
+        },
+        {
+          "en": "3 Liquid receiver (after condenser)",
+          "zh": "3 储液器（冷凝器后）"
+        },
+        {
+          "en": "Stores liquid refrigerant at high pressure.",
+          "zh": "在高压下储存液态制冷剂。"
+        },
+        {
+          "en": "Provides steady supply to the expansion device.",
+          "zh": "向膨胀装置稳定供液。"
+        },
+        {
+          "en": "Ensures stable feed and system capacity.",
+          "zh": "保证稳定供液与系统能力。"
+        },
+        {
+          "en": "4 Flash / economizer tank (intermediate pressure)",
+          "zh": "4 闪蒸/经济器罐（中间压力）"
+        },
+        {
+          "en": "Separates vapor and liquid at intermediate pressure.",
+          "zh": "在中间压力分离汽液。"
+        },
+        {
+          "en": "Improves capacity and efficiency; reduces compressor work.",
+          "zh": "提高容量与效率；降低压缩机功耗。"
+        },
+        {
+          "en": "Supports efficiency and low compressor ratio.",
+          "zh": "有利于效率与较低压缩比。"
+        },
+        {
+          "en": "Suction / low pressure (low temperature)",
+          "zh": "吸气 / 低压（低温）"
+        },
+        {
+          "en": "Discharge / high pressure (high temperature)",
+          "zh": "排气 / 高压（高温）"
+        },
+        {
+          "en": "Intermediate pressure (economizer circuit)",
+          "zh": "中间压力（经济器回路）"
+        },
+        {
+          "en": "Start diagnostics at oil return and liquid management.",
+          "zh": "诊断从回油与液体管理入手。"
+        },
+        {
+          "en": "Good oil return, proper subcooling and safe suction = reliable system.",
+          "zh": "良好回油、合适过冷与安全吸气 = 可靠系统。"
+        }
+      ]
+    },
+    "knowledge-vessel-flash.png": {
+      "title_en": "Flash tank / economizer vessel",
+      "title_zh": "闪蒸罐 / 经济器容器",
+      "labels": [
+        {
+          "en": "Flash tank / economizer vessel",
+          "zh": "闪蒸罐 / 经济器容器"
+        },
+        {
+          "en": "Separates high-pressure liquid into vapor and liquid at an intermediate pressure for efficient multi-stage compression and high-lift (HTHP) systems.",
+          "zh": "在中间压力将高压液体分离为汽液，服务高效多级压缩与大温升（HTHP）系统。"
+        },
+        {
+          "en": "VAPOR OUTLET",
+          "zh": "蒸汽出口"
+        },
+        {
+          "en": "To compressor mid-injection port or economizer port",
+          "zh": "至压缩机中间喷注口或经济器口"
+        },
+        {
+          "en": "FLASH CHAMBER",
+          "zh": "闪蒸室"
+        },
+        {
+          "en": "High-pressure liquid enters and flashes to an intermediate pressure. Vapor separates from liquid.",
+          "zh": "高压液体进入并闪蒸至中间压力。蒸汽与液体分离。"
+        },
+        {
+          "en": "HIGH-PRESSURE LIQUID INLET",
+          "zh": "高压液体入口"
+        },
+        {
+          "en": "From condenser or discharge line",
+          "zh": "来自冷凝器或排气管"
+        },
+        {
+          "en": "INTERMEDIATE PRESSURE",
+          "zh": "中间压力"
+        },
+        {
+          "en": "Operating pressure is between condenser (high side) and evaporator (low side).",
+          "zh": "运行压力介于冷凝器（高压侧）与蒸发器（低压侧）之间。"
+        },
+        {
+          "en": "LIQUID OUTLET",
+          "zh": "液体出口"
+        },
+        {
+          "en": "To lower expansion stage (EXV / TXV / Valve)",
+          "zh": "至下级膨胀级（EXV / TXV / 阀门）"
+        },
+        {
+          "en": "LEVEL CONTROL",
+          "zh": "液位控制"
+        },
+        {
+          "en": "Maintains proper liquid level in the vessel to ensure stable separation and protect the compressor from liquid carryover.",
+          "zh": "维持容器合适液位，保证稳定分离并防止液体带入压缩机。"
+        },
+        {
+          "en": "Float & mechanical valve (shown)",
+          "zh": "浮球与机械阀（示意）"
+        },
+        {
+          "en": "or Electronic level sensor with control valve",
+          "zh": "或电子液位传感器配控制阀"
+        },
+        {
+          "en": "HIGH-LIFT HTHP APPLICATIONS",
+          "zh": "大温升 HTHP 应用"
+        },
+        {
+          "en": "Reduces compression ratio per stage, improves efficiency, and increases system capacity for high-temperature heat pump and industrial systems.",
+          "zh": "降低每级压缩比、提高效率，并提升高温热泵与工业系统容量。"
+        },
+        {
+          "en": "Vapor (higher specific volume)",
+          "zh": "蒸汽（比容较大）"
+        },
+        {
+          "en": "Liquid (higher density)",
+          "zh": "液体（密度较高）"
+        },
+        {
+          "en": "Purpose",
+          "zh": "用途"
+        },
+        {
+          "en": "Safe liquid/vapor separation",
+          "zh": "安全气液分离"
+        },
+        {
+          "en": "Chip away liquid before mid-injection",
+          "zh": "中间喷注前打掉液体"
+        },
+        {
+          "en": "Improve compressor reliability and system efficiency",
+          "zh": "提高压缩机可靠性与系统效率"
+        }
+      ]
+    },
+    "knowledge-vessel-oil.png": {
+      "title_en": "Oil separator — discharge path",
+      "title_zh": "油分离器 — 排气路径",
+      "labels": [
+        {
+          "en": "Oil separator — discharge path",
+          "zh": "油分离器 — 排气路径"
+        },
+        {
+          "en": "Separates entrained oil from discharge gas and returns it to the compressor.",
+          "zh": "从排气中分离夹带油并返回压缩机。"
+        },
+        {
+          "en": "1 DISCHARGE GAS IN",
+          "zh": "1 排气进气"
+        },
+        {
+          "en": "Hot, high-pressure gas with entrained oil mist enters tangentially.",
+          "zh": "夹带油雾的高温高压气体切向进入。"
+        },
+        {
+          "en": "2 CENTRIFUGAL SEPARATION",
+          "zh": "2 离心分离"
+        },
+        {
+          "en": "Tangential entry creates a vortex that drives oil droplets to the wall.",
+          "zh": "切向入口形成涡流，将油滴甩向壁面。"
+        },
+        {
+          "en": "3 COALESCING STAGE",
+          "zh": "3 聚结级"
+        },
+        {
+          "en": "Oil droplets collide with the coalescing pad, merge into larger drops, and drain downward.",
+          "zh": "油滴撞击聚结垫、合并成大滴并向下排出。"
+        },
+        {
+          "en": "4 CLEAN GAS OUT",
+          "zh": "4 洁净气体出口"
+        },
+        {
+          "en": "Cleaned, oil-free gas exits the top and flows to the condenser.",
+          "zh": "洁净无油气体从顶部排出并流向冷凝器。"
+        },
+        {
+          "en": "5 OIL RETURN",
+          "zh": "5 回油"
+        },
+        {
+          "en": "Oil is returned to the compressor crankcase through a calibrated capillary (or orifice) for proper metering.",
+          "zh": "油经标定毛细管（或孔口）计量返回压缩机曲轴箱。"
+        },
+        {
+          "en": "From compressor discharge",
+          "zh": "来自压缩机排气"
+        },
+        {
+          "en": "To condenser",
+          "zh": "至冷凝器"
+        },
+        {
+          "en": "Coalescing pad",
+          "zh": "聚结垫"
+        },
+        {
+          "en": "Oil sump",
+          "zh": "油池"
+        },
+        {
+          "en": "Collected oil accumulates in the sump.",
+          "zh": "分离出的油积聚在油池。"
+        },
+        {
+          "en": "Return capillary (metering device)",
+          "zh": "回油毛细管（计量装置）"
+        },
+        {
+          "en": "To compressor crankcase",
+          "zh": "至压缩机曲轴箱"
+        },
+        {
+          "en": "PART-LOAD OIL RETURN",
+          "zh": "部分负荷回油"
+        },
+        {
+          "en": "At part load, system pressure differential decreases. The capillary restricts oil flow to match compressor oil consumption, preventing oil carryover and overfeeding.",
+          "zh": "部分负荷时系统压差减小。毛细管限制油流量以匹配压缩机耗油，防止带油与过量回油。"
+        },
+        {
+          "en": "KEY",
+          "zh": "KEY"
+        },
+        {
+          "en": "Gas flow (refrigerant)",
+          "zh": "气体流动（制冷剂）"
+        },
+        {
+          "en": "Oil flow (entrained oil / return)",
+          "zh": "油流（夹带油 / 回油）"
+        },
+        {
+          "en": "Oil separator protects system efficiency and reliability by removing oil from discharge gas and returning it to the compressor.",
+          "zh": "油分离器从排气中除油并回油至压缩机，保障效率与可靠性。"
+        }
+      ]
+    },
+    "knowledge-vessel-receiver.png": {
+      "title_en": "Liquid receiver — charge storage",
+      "title_zh": "储液器 — 充注贮存",
+      "labels": [
+        {
+          "en": "Liquid receiver — charge storage",
+          "zh": "储液器 — 充注贮存"
+        },
+        {
+          "en": "INLET",
+          "zh": "入口"
+        },
+        {
+          "en": "From condenser (High-pressure liquid)",
+          "zh": "来自冷凝器（高压液体）"
+        },
+        {
+          "en": "VAPOR HEADSPACE",
+          "zh": "蒸汽气室"
+        },
+        {
+          "en": "Space above liquid level accommodates vapor during load changes and pump-down.",
+          "zh": "液位上方空间在负荷变化与泵下时容纳蒸汽。"
+        },
+        {
+          "en": "LIQUID LEVEL",
+          "zh": "液位"
+        },
+        {
+          "en": "Maintains steady supply of liquid to the system. (Sight glass or float indicator)",
+          "zh": "向系统稳定供液。（视液镜或浮球指示）"
+        },
+        {
+          "en": "PUMP-DOWN VOLUME",
+          "zh": "泵下容积"
+        },
+        {
+          "en": "Vapor space and internal volume provide storage for refrigerant during pump-down.",
+          "zh": "蒸汽空间与内部容积在泵下时储存制冷剂。"
+        },
+        {
+          "en": "CHARGE MARGIN",
+          "zh": "充注裕量"
+        },
+        {
+          "en": "Extra volume assures adequate refrigerant inventory during normal operation and load changes.",
+          "zh": "额外容积保证正常运行与负荷变化时有足够制冷剂存量。"
+        },
+        {
+          "en": "SAFETY RELIEF VALVE (CODE)",
+          "zh": "安全泄压阀（规范）"
+        },
+        {
+          "en": "Protects receiver from overpressure. Discharge to a safe location.",
+          "zh": "保护储液器过压。排放至安全位置。"
+        },
+        {
+          "en": "DISCHARGE",
+          "zh": "排气"
+        },
+        {
+          "en": "To safe location",
+          "zh": "至安全位置"
+        },
+        {
+          "en": "SIGHT GLASS / FLOAT",
+          "zh": "视液镜 / 浮球"
+        },
+        {
+          "en": "Visual indication of liquid level.",
+          "zh": "液位目视指示。"
+        },
+        {
+          "en": "OUTLET",
+          "zh": "出口"
+        },
+        {
+          "en": "To liquid line / expansion valve (High-pressure liquid)",
+          "zh": "至液管 / 膨胀阀（高压液体）"
+        },
+        {
+          "en": "KEY FUNCTIONS",
+          "zh": "主要功能"
+        },
+        {
+          "en": "Stores high-pressure liquid",
+          "zh": "储存高压液体"
+        },
+        {
+          "en": "Ensures steady supply to expansion device",
+          "zh": "保证向膨胀装置稳定供液"
+        },
+        {
+          "en": "Separates any vapor from liquid",
+          "zh": "分离液体中的蒸汽"
+        },
+        {
+          "en": "Provides system charge management",
+          "zh": "提供系统充注管理"
+        },
+        {
+          "en": "Protects against liquid slugging",
+          "zh": "防止液击"
+        },
+        {
+          "en": "Store liquid refrigerant after the condenser — provide capacity, stability, and a clean supply to the system.",
+          "zh": "在冷凝器后储存液态制冷剂 — 提供存量、稳定性与洁净供液。"
+        }
+      ]
+    },
+    "knowledge-vessel-types.png": {
+      "title_en": "Refrigerant vessel families",
+      "title_zh": "制冷剂容器族系",
+      "labels": [
+        {
+          "en": "Refrigerant vessel families",
+          "zh": "制冷剂容器族系"
+        },
+        {
+          "en": "1 Oil separator",
+          "zh": "1 油分离器"
+        },
+        {
+          "en": "Removes and returns oil from discharge gas.",
+          "zh": "从排气中除油并回油。"
+        },
+        {
+          "en": "IN",
+          "zh": "IN"
+        },
+        {
+          "en": "Discharge gas from compressor",
+          "zh": "压缩机排气"
+        },
+        {
+          "en": "Vapor outlet (cleaned gas)",
+          "zh": "蒸汽出口（洁净气体）"
+        },
+        {
+          "en": "OUT",
+          "zh": "OUT"
+        },
+        {
+          "en": "To condenser or system",
+          "zh": "至冷凝器或系统"
+        },
+        {
+          "en": "Centrifugal separation section",
+          "zh": "离心分离段"
+        },
+        {
+          "en": "Coalescing media",
+          "zh": "聚结介质"
+        },
+        {
+          "en": "Oil sump",
+          "zh": "油池"
+        },
+        {
+          "en": "Oil return capillary To compressor crankcase",
+          "zh": "回油毛细管至压缩机曲轴箱"
+        },
+        {
+          "en": "Keep oil out of the system and return it to the compressor.",
+          "zh": "使油离开系统回路并返回压缩机。"
+        },
+        {
+          "en": "Capacity: medium–large",
+          "zh": "容量：中–大"
+        },
+        {
+          "en": "2 Suction accumulator",
+          "zh": "2 气液分离器"
+        },
+        {
+          "en": "Prevents liquid slugging; stores refrigerant and returns oil.",
+          "zh": "防止液击；储存制冷剂并回油。"
+        },
+        {
+          "en": "Vapor outlet",
+          "zh": "蒸汽出口"
+        },
+        {
+          "en": "To compressor (suction)",
+          "zh": "至压缩机（吸气）"
+        },
+        {
+          "en": "Inlet baffle",
+          "zh": "入口挡板"
+        },
+        {
+          "en": "From evaporator",
+          "zh": "来自蒸发器"
+        },
+        {
+          "en": "Liquid hold-up zone",
+          "zh": "积液区"
+        },
+        {
+          "en": "U-bend oil return pick-up",
+          "zh": "U 弯回油取油"
+        },
+        {
+          "en": "To compressor crankcase",
+          "zh": "至压缩机曲轴箱"
+        },
+        {
+          "en": "Protects compressor from liquid and ensures oil return.",
+          "zh": "保护压缩机免受液体冲击并保证回油。"
+        },
+        {
+          "en": "Capacity: small–large",
+          "zh": "容量：小–大"
+        },
+        {
+          "en": "3 Liquid receiver",
+          "zh": "3 储液器"
+        },
+        {
+          "en": "Stores liquid refrigerant; provides supply and system protection.",
+          "zh": "储存液态制冷剂；提供供液与系统保护。"
+        },
+        {
+          "en": "Safety relief valve (system protection)",
+          "zh": "安全泄压阀（系统保护）"
+        },
+        {
+          "en": "From condenser",
+          "zh": "来自冷凝器"
+        },
+        {
+          "en": "To expansion device / system",
+          "zh": "至膨胀装置 / 系统"
+        },
+        {
+          "en": "Liquid level",
+          "zh": "液位"
+        },
+        {
+          "en": "Drain / service connection",
+          "zh": "排污 / 检修接口"
+        },
+        {
+          "en": "OR",
+          "zh": "OR"
+        },
+        {
+          "en": "Provides liquid inventory and a stable supply to the system.",
+          "zh": "提供液体存量并向系统稳定供液。"
+        },
+        {
+          "en": "Capacity: small–very large",
+          "zh": "容量：小–很大"
+        },
+        {
+          "en": "4 Flash tank / economizer",
+          "zh": "4 闪蒸罐 / 经济器"
+        },
+        {
+          "en": "Separates flash gas from liquid; supplies vapor for injection/economizing.",
+          "zh": "分离闪蒸气体与液体；为喷气/经济器供汽。"
+        },
+        {
+          "en": "High-pressure liquid from condenser",
+          "zh": "来自冷凝器的高压液体"
+        },
+        {
+          "en": "To injection port or economizer circuit",
+          "zh": "至喷注口或经济器回路"
+        },
+        {
+          "en": "Vapor (flash) space",
+          "zh": "蒸汽（闪蒸）空间"
+        },
+        {
+          "en": "Level control (maintains liquid level)",
+          "zh": "液位控制（维持液位）"
+        },
+        {
+          "en": "Liquid to lower expansion device",
+          "zh": "液体至下级膨胀装置"
+        },
+        {
+          "en": "Drain / service",
+          "zh": "排污 / 检修"
+        },
+        {
+          "en": "Improves efficiency and capacity control via vapor injection or subcooling.",
+          "zh": "通过喷气或过冷提高效率与容量控制。"
+        },
+        {
+          "en": "Quote functional duty, not catalog nickname alone.",
+          "zh": "按功能工况报价，勿仅凭产品俗称。"
+        }
+      ]
+    }
+  }
+}
