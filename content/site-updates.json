@@ -9,8 +9,8 @@
         "zh": "第 1 讲极寒图表：中英切换换图"
       },
       "summary": {
-        "en": "Heating-load and 15-year lifecycle charts now swap between English-only and Chinese-only PNGs when you change language.",
-        "zh": "供热负荷与 15 年生命周期成本图随语言切换为纯英文或纯中文标注版。"
+        "en": "Chinese mode keeps the original Chinese charts; English mode loads English-label versions derived from those artworks.",
+        "zh": "中文模式保持极寒两张中文原图；英文模式切换为基于中文原图改成的英文标注版。"
       },
       "url": "/knowledge.html#kp-article-co2"
     },
