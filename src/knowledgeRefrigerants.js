@@ -2,6 +2,7 @@ import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import { initHubDirectoryFromPath } from './hubDirectory.js';
 import './heatPumpRefrigerants.js';
 
 function updateKnowledgeRefMeta(lang) {
@@ -31,4 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initSiteLegalDisclaimer();
     initNavChipHighlight();
     initWhatsNew();
+    initHubDirectoryFromPath();
 });

@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "hub-directory-tree-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Shared directory tree across Content, Knowledge, and Tools",
+        "zh": "内容中心、知识库、工具与标准共用目录树"
+      },
+      "summary": {
+        "en": "Each hub shows a scannable outline of its sections; child pages share the same collapsible directory for quick jumps.",
+        "zh": "三大板块入口页展示可扫读大纲目录；各子页共用可折叠目录栏，便于同板块内跳转检索。"
+      },
+      "url": "/articles.html"
+    },
+    {
       "id": "extreme-cold-charts-zh-swap-2026-07",
       "date": "2026-07-23",
       "category": "page",

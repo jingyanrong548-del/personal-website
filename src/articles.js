@@ -4,6 +4,7 @@ import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal } from './contactModal.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 import { escapeHtml, formatInlineMarkup } from './formatInlineMarkup.js';
+import { initHubDirectoryFromPath } from './hubDirectory.js';
 
 function formatDate(iso, lang) {
     return new Date(iso).toLocaleDateString(lang === 'zh' ? 'zh-CN' : 'en-US', {
@@ -24,8 +25,6 @@ function renderArchive(index) {
     if (featuredEl && latest) {
         const title = lang === 'zh' ? latest.title.zh : latest.title.en;
         const highlights = (lang === 'zh' ? latest.highlights?.zh : latest.highlights?.en) || [];
-        const briefingEntry = document.getElementById('articles-briefing-entry');
-        if (briefingEntry) briefingEntry.href = latest.url;
         featuredEl.innerHTML = `
             <article class="articles-featured-card">
                 <p class="articles-featured-kicker">${escapeHtml(t['articles.featured.kicker'] || 'Latest briefing')}</p>
@@ -79,5 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavChipHighlight();
     initContactModal();
     initWhatsNew();
+    initHubDirectoryFromPath();
     loadArchive();
 });

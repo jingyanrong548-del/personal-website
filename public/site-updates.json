@@ -1,7 +1,21 @@
 {
-  "version": "extreme-cold-charts-zh-swap-2026-07",
-  "generatedAt": "2026-07-23",
+  "version": "hub-directory-tree-2026-07",
+  "generatedAt": "2026-07-24",
   "items": [
+    {
+      "id": "hub-directory-tree-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Shared directory tree across Content, Knowledge, and Tools",
+        "zh": "内容中心、知识库、工具与标准共用目录树"
+      },
+      "summary": {
+        "en": "Each hub shows a scannable outline of its sections; child pages share the same collapsible directory for quick jumps.",
+        "zh": "三大板块入口页展示可扫读大纲目录；各子页共用可折叠目录栏，便于同板块内跳转检索。"
+      },
+      "url": "/articles.html"
+    },
     {
       "id": "extreme-cold-charts-zh-swap-2026-07",
       "date": "2026-07-23",
@@ -97,20 +111,6 @@
       "summary": {
         "en": "Cycle-guide figures and the extreme-cold demand/lifecycle charts now carry English-first labels with Chinese underneath—same image for both site languages.",
         "zh": "循环导读全部示意与基础知识中极寒负荷/生命周期成本图改为英文为主、中文对照；中英切换不换图。"
-      },
-      "url": "/knowledge-cycles.html"
-    },
-    {
-      "id": "knowledge-cycles-2026-07",
-      "date": "2026-07-21",
-      "category": "page",
-      "title": {
-        "en": "Knowledge hub: refrigeration & heat-pump cycle guide",
-        "zh": "知识库新增制冷/热泵循环导读"
-      },
-      "summary": {
-        "en": "Illustrated map of reverse Carnot, Brayton, vapor-compression upgrades, transcritical CO₂, absorption, and open steam/MVR—inserted between fundamentals and refrigerants.",
-        "zh": "图文介绍逆卡诺、布雷顿、蒸汽压缩强化、跨临界 CO₂、吸收式与开式蒸汽/MVR；学习路径插在基础与制冷剂之间。"
       },
       "url": "/knowledge-cycles.html"
     }

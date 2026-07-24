@@ -141,6 +141,7 @@ function buildBriefingPage(item) {
   })}
 <body data-article-type="briefing">
 ${siteNav({ depth, brand: 'link' })}
+<div data-hub-directory="content" data-hub-mode="rail" class="hub-dir-mount"></div>
 <script type="application/json" id="article-data">${JSON.stringify(item)}</script>
 <main id="main-content" class="article-page">
     <div class="container container--narrow">
@@ -194,6 +195,7 @@ function buildInsightPage(item) {
   })}
 <body data-article-type="insight">
 ${siteNav({ depth, brand: 'link' })}
+<div data-hub-directory="content" data-hub-mode="rail" class="hub-dir-mount"></div>
 <script type="application/json" id="article-data">${JSON.stringify(item)}</script>
 <main id="main-content" class="article-page">
     <div class="container container--narrow">

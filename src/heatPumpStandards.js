@@ -5,6 +5,7 @@ import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initLanguageSwitcher, translations, getCurrentLanguage } from './i18n.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import { initHubDirectoryFromPath } from './hubDirectory.js';
 
 function escapeHtml(s) {
     if (s == null) return '';
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
     initWhatsNew();
+    initHubDirectoryFromPath();
 
     if (!hasTable) {
         return;

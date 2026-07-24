@@ -2,6 +2,7 @@ import { initLanguageSwitcher, translations } from './i18n.js';
 import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import { initHubDirectoryFromPath } from './hubDirectory.js';
 
 function updateKnowledgeValveMeta(lang) {
     const title = translations[lang]?.['knowledgeValve.seo.title'];
@@ -29,4 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initSiteLegalDisclaimer();
     initNavChipHighlight();
     initWhatsNew();
+    initHubDirectoryFromPath();
 });

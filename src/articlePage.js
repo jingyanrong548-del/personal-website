@@ -3,6 +3,7 @@ import { initSiteLegalDisclaimer } from './siteSectionDisclaimer.js';
 import { initNavChipHighlight } from './navHighlight.js';
 import { initContactModal, updateVCardForLanguage } from './contactModal.js';
 import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
+import { initHubDirectoryFromPath } from './hubDirectory.js';
 import { escapeHtml, formatInlineMarkup } from './formatInlineMarkup.js';
 
 const SECTION_IDS = ['policy', 'market', 'standards', 'technology', 'calendar'];
@@ -167,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('article-contact-cta'),
     ].filter(Boolean));
     initWhatsNew();
+    initHubDirectoryFromPath();
 
     renderArticle();
 });
