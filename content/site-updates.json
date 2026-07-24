@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "cycles-diagrams-sidebar-2026-07",
+      "date": "2026-07-24",
+      "category": "page",
+      "title": {
+        "en": "Cycle guide diagrams: left plot + right key-parameter cards",
+        "zh": "循环导读示意图：左主图 + 右关键参数卡"
+      },
+      "summary": {
+        "en": "All 12 refrigeration & heat-pump cycle figures now use the same clear layout as compressor performance maps—main diagram on the left, stacked tip cards on the right.",
+        "zh": "全部 12 张制冷/热泵循环示意统一为与压缩机「性能图与关键参数」相同的清晰布局：左侧主图、右侧堆叠要点卡。"
+      },
+      "url": "/knowledge-cycles.html"
+    },
+    {
       "id": "ota-copilot-workspace-2026-07",
       "date": "2026-07-24",
       "category": "tool",

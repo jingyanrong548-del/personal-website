@@ -1,7 +1,21 @@
 {
-  "version": "ota-copilot-workspace-2026-07",
+  "version": "cycles-diagrams-sidebar-2026-07",
   "generatedAt": "2026-07-24",
   "items": [
+    {
+      "id": "cycles-diagrams-sidebar-2026-07",
+      "date": "2026-07-24",
+      "category": "page",
+      "title": {
+        "en": "Cycle guide diagrams: left plot + right key-parameter cards",
+        "zh": "循环导读示意图：左主图 + 右关键参数卡"
+      },
+      "summary": {
+        "en": "All 12 refrigeration & heat-pump cycle figures now use the same clear layout as compressor performance maps—main diagram on the left, stacked tip cards on the right.",
+        "zh": "全部 12 张制冷/热泵循环示意统一为与压缩机「性能图与关键参数」相同的清晰布局：左侧主图、右侧堆叠要点卡。"
+      },
+      "url": "/knowledge-cycles.html"
+    },
     {
       "id": "ota-copilot-workspace-2026-07",
       "date": "2026-07-24",
@@ -99,20 +113,6 @@
         "zh": "新增工程服务入口，结构对齐 IEA HPT Annex 58：技术、集成、转型、规格与测试、传播；含示意图与官网链接。"
       },
       "url": "/services.html"
-    },
-    {
-      "id": "hub-directory-tree-2026-07",
-      "date": "2026-07-24",
-      "category": "site",
-      "title": {
-        "en": "Shared directory tree across Content, Knowledge, and Tools",
-        "zh": "内容中心、知识库、工具与标准共用目录树"
-      },
-      "summary": {
-        "en": "Each hub shows a scannable outline of its sections; child pages share the same collapsible directory for quick jumps.",
-        "zh": "三大板块入口页展示可扫读大纲目录；各子页共用可折叠目录栏，便于同板块内跳转检索。"
-      },
-      "url": "/articles.html"
     }
   ]
 }

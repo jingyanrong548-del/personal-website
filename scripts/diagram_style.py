@@ -133,7 +133,7 @@ def bilingual_center(
 
 
 def bilingual_title(draw, xy, en: str, zh: str, f_en, f_zh, fill_en, fill_zh) -> None:
-    bilingual_center(draw, xy, en, zh, f_en, f_zh, fill_en, fill_zh, gap=3)
+    bilingual_center(draw, xy, en, zh, f_en, f_zh, fill_en, fill_zh, gap=4)
 
 
 def bilingual_block_lines(
@@ -186,18 +186,20 @@ class Fonts:
 
     def __init__(self) -> None:
         require_cjk_font()
-        self.title = font_latin(22, True)
-        self.h = font_latin(16, True)
-        self.b = font_latin(13, True)
-        self.n = font_latin(12)
-        self.s = font_latin(11)
-        self.xs = font_latin(10)
-        self.ztitle = font_cjk(14)
-        self.zh = font_cjk(12)
-        self.zb = font_cjk(11)
-        self.zn = font_cjk(10)
-        self.zs = font_cjk(9)
-        self.zxs = font_cjk(8)
+        # Sizes tuned for screen readability at ~980px display width
+        # (CJK below ~11px reads as muddy / “ghosted” after browser scaling).
+        self.title = font_latin(24, True)
+        self.h = font_latin(17, True)
+        self.b = font_latin(14, True)
+        self.n = font_latin(13)
+        self.s = font_latin(12)
+        self.xs = font_latin(11)
+        self.ztitle = font_cjk(16)
+        self.zh = font_cjk(13)
+        self.zb = font_cjk(12)
+        self.zn = font_cjk(12)
+        self.zs = font_cjk(11)
+        self.zxs = font_cjk(10)
 
 
 def new_canvas(w: int = W, h: int = H, bg=BG):
@@ -216,14 +218,54 @@ def bi_title(draw, fonts: Fonts, en: str, zh: str, y: float = 28, w: int = W):
 
 
 def bi_foot(draw, fonts: Fonts, en: str, zh: str, y: float = 548, w: int = W):
-    bilingual_center(draw, (w / 2, y), en, zh, fonts.n, fonts.zs, MUTED, MUTED, gap=2)
+    bilingual_center(draw, (w / 2, y), en, zh, fonts.n, fonts.zn, MUTED, MUTED, gap=3)
 
 
-def save_png(im, name: str, out: Path | None = None) -> None:
+def save_png(im, name: str, out: Path | None = None, *, downscale: bool = True) -> None:
+    """Save PNG. If downscale and image is larger than W×H, LANCZOS to W×H.
+
+    Pass downscale=False to keep a hires canvas (better on retina displays).
+    """
+    from PIL import Image as PILImage
+
     dest = (out or IMAGES_OUT) / name
     dest.parent.mkdir(parents=True, exist_ok=True)
+    if downscale and (im.size[0] > W or im.size[1] > H):
+        im = im.resize((W, H), PILImage.Resampling.LANCZOS)
     im.save(dest, "PNG", optimize=True)
-    print("wrote", name)
+    print("wrote", name, im.size)
+
+
+def new_canvas_hires(scale: int = 2, bg=BG):
+    """Draw at scale× resolution; pair with save_png which downscales to W×H."""
+    from PIL import Image, ImageDraw
+
+    im = Image.new("RGB", (W * scale, H * scale), bg)
+    return im, ImageDraw.Draw(im), scale
+
+
+def scale_fonts(fonts: Fonts, scale: int) -> Fonts:
+    """Return a Fonts-like bundle with sizes multiplied by scale (for hires drawing)."""
+    require_cjk_font()
+
+    class _Scaled:
+        pass
+
+    s = _Scaled()
+    # Slightly larger than 1× base so text stays bold after CSS shrink-to-fit
+    s.title = font_latin(26 * scale, True)
+    s.h = font_latin(18 * scale, True)
+    s.b = font_latin(15 * scale, True)
+    s.n = font_latin(14 * scale)
+    s.s = font_latin(13 * scale)
+    s.xs = font_latin(12 * scale)
+    s.ztitle = font_cjk(17 * scale)
+    s.zh = font_cjk(14 * scale)
+    s.zb = font_cjk(13 * scale)
+    s.zn = font_cjk(13 * scale)
+    s.zs = font_cjk(12 * scale)
+    s.zxs = font_cjk(11 * scale)
+    return s  # type: ignore[return-value]
 
 
 def card(draw, box, fill=CARD, outline=GRID, r=12, width=2):
@@ -237,3 +279,56 @@ def bi_in_box(draw, fonts: Fonts, box, en: str, zh: str, fill=INK, title=False):
         bilingual_center(draw, (cx, cy), en, zh, fonts.h, fonts.zh, fill, fill, gap=2)
     else:
         bilingual_center(draw, (cx, cy), en, zh, fonts.b, fonts.zb, fill, fill, gap=2)
+
+
+# Left plot + right tip-stack layout (matches compressor "performance maps" style)
+PLOT_BOX = (56, 72, 630, 505)  # outer card for main diagram
+SIDE_X0, SIDE_X1 = 650, 1004
+SIDE_Y0 = 74
+SIDE_CARD_H = 96
+SIDE_STEP = 106
+
+
+def sidebar_tips(
+    draw,
+    fonts: Fonts,
+    tips: list[tuple[str, str, str, str]],
+    x0: int = SIDE_X0,
+    x1: int = SIDE_X1,
+    y0: int = SIDE_Y0,
+    card_h: int | None = None,
+    step: int | None = None,
+    scale: int = 1,
+) -> None:
+    """Stacked tip cards: (en_title, zh_title, en_sub, zh_sub).
+
+    Uses larger bilingual type + wider EN/ZH gap so labels stay sharp on screen.
+    Pass scale=2 (and scale_fonts) when drawing on a hires canvas.
+    """
+    n = len(tips)
+    if n <= 0:
+        return
+    if card_h is None or step is None:
+        if n == 3:
+            card_h, step = 118 * scale, 136 * scale
+        elif n == 4:
+            card_h, step = 96 * scale, 106 * scale
+        elif n >= 5:
+            card_h, step = 78 * scale, 86 * scale
+        else:
+            card_h, step = SIDE_CARD_H * scale, SIDE_STEP * scale
+    gap = max(3, 3 * scale)
+    # Tip title: both EN/ZH in dark ink (MUTED ZH + tiny gap looked like ghosting).
+    tip_zh = fonts.zh if hasattr(fonts, "zh") else fonts.zb
+    for i, (te, tz, se, sz) in enumerate(tips):
+        y = y0 + i * step
+        box = (x0, y, x1, y + card_h)
+        round_rect(draw, box, max(6, 10 * scale // 2 + 4), CARD, GRID, max(1, scale))
+        cx = (x0 + x1) / 2
+        bilingual_center(draw, (cx, y + card_h * 0.32), te, tz, fonts.b, tip_zh, INK, INK, gap=gap)
+        bilingual_center(draw, (cx, y + card_h * 0.70), se, sz, fonts.s, fonts.zs, MUTED, MUTED, gap=gap)
+
+
+def plot_card(draw, box=PLOT_BOX, fill=CARD, outline=GRID, r=10, width=1):
+    """Outer card framing the left-hand main diagram."""
+    round_rect(draw, box, r, fill, outline, width)
