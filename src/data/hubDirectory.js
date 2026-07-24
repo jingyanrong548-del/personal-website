@@ -165,3 +165,67 @@ export const TOOLS_ITEMS = [
         matchHash: '#apps',
     },
 ];
+
+/** @type {HubGroup[]} */
+export const SERVICES_GROUPS = [
+    {
+        id: 'presales',
+        titleKey: 'hubDir.services.group.presales',
+        children: [
+            {
+                id: 'survey',
+                titleKey: 'services.hub.survey.title',
+                descKey: 'services.hub.survey.desc',
+                url: '/services-survey.html',
+            },
+            {
+                id: 'proposal',
+                titleKey: 'services.hub.proposal.title',
+                descKey: 'services.hub.proposal.desc',
+                url: '/services-proposal.html',
+            },
+            {
+                id: 'exchange',
+                titleKey: 'services.hub.exchange.title',
+                descKey: 'services.hub.exchange.desc',
+                url: '/services-exchange.html',
+            },
+            {
+                id: 'contract',
+                titleKey: 'services.hub.contract.title',
+                descKey: 'services.hub.contract.desc',
+                url: '/services-contract.html',
+            },
+        ],
+    },
+    {
+        id: 'aftersales',
+        titleKey: 'hubDir.services.group.aftersales',
+        children: [
+            {
+                id: 'install',
+                titleKey: 'services.hub.install.title',
+                descKey: 'services.hub.install.desc',
+                url: '/services-install.html',
+            },
+            {
+                id: 'commission',
+                titleKey: 'services.hub.commission.title',
+                descKey: 'services.hub.commission.desc',
+                url: '/services-commission.html',
+            },
+            {
+                id: 'maintain',
+                titleKey: 'services.hub.maintain.title',
+                descKey: 'services.hub.maintain.desc',
+                url: '/services-maintain.html',
+            },
+            {
+                id: 'eol',
+                titleKey: 'services.hub.eol.title',
+                descKey: 'services.hub.eol.desc',
+                url: '/services-eol.html',
+            },
+        ],
+    },
+];

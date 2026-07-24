@@ -1,6 +1,7 @@
 /**
  * Shared site navigation HTML (3 chips + 2 anchors).
  * Used by build-content.mjs and scripts/sync-nav.mjs.
+ * Note: Engineering Services chip is deferred until the section is ready to open.
  */
 
 function chipLinks(p) {

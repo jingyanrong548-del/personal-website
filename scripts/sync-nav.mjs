@@ -39,6 +39,7 @@ function processFile(relPath, navHtml) {
 const rootPages = [
   'articles.html',
   'knowledge.html',
+  'knowledge-cycles.html',
   'knowledge-refrigerants.html',
   'knowledge-compressor.html',
   'knowledge-exchanger.html',
@@ -54,6 +55,15 @@ const rootPages = [
   'heat-pump-refrigerants.html',
   'heat-pump-policies.html',
   'useful-links.html',
+  'services.html',
+  'services-survey.html',
+  'services-proposal.html',
+  'services-exchange.html',
+  'services-contract.html',
+  'services-install.html',
+  'services-commission.html',
+  'services-maintain.html',
+  'services-eol.html',
 ];
 
 rootPages.forEach((f) => processFile(f, siteNav({ depth: 0, brand: 'link' })));

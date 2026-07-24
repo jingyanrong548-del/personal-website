@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal & architecture — Engineering services</title>
+    <meta id="meta-page-title" name="title" content="Proposal & architecture — Engineering services">
+    <meta id="meta-page-description" name="description" content="Industrial heat-pump proposal: duty profile to cycle architecture, equipment boundaries, TCO and verifiable delivery packages.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/services-proposal.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.jingyanrong.com/services-proposal.html">
+    <meta id="meta-og-title" property="og:title" content="Proposal & architecture — Engineering services">
+    <meta id="meta-og-description" property="og:description" content="Industrial heat-pump proposal: duty profile to cycle architecture, equipment boundaries, TCO and verifiable delivery packages.">
+    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Proposal & architecture — Engineering services">
+    <meta id="meta-twitter-description" name="twitter:description" content="Industrial heat-pump proposal: duty profile to cycle architecture, equipment boundaries, TCO and verifiable delivery packages.">
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/servicesProposal.js"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Jing Yanrong</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
+                                <li><a href="./heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__group nav-menu__group--anchors">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
+                                <li><a href="./#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div data-hub-directory="services" data-hub-mode="rail" class="hub-dir-mount"></div>
+    <main id="main-content" class="knowledge-page knowledge-ref-page services-page">
+        <header class="knowledge-hero">
+            <div class="container">
+                <div class="knowledge-hero-card">
+                    <p class="knowledge-kicker" data-i18n="servicesProposal.kicker"></p>
+                    <h1 class="knowledge-title" data-i18n="servicesProposal.pageTitle"></h1>
+                    <p class="knowledge-lede" data-i18n="servicesProposal.lede" data-i18n-html="true"></p>
+                    <nav class="knowledge-toc" aria-label="Table of contents">
+                        <h2 class="knowledge-toc-title" data-i18n="servicesProposal.toc.title"></h2>
+                        <ol class="knowledge-toc-list"><li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-boundaries"><span class="knowledge-toc-kicker">Ch. 1</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item1"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-measure"><span class="knowledge-toc-kicker">Ch. 2</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item2"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-interfaces"><span class="knowledge-toc-kicker">Ch. 3</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item3"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-risk"><span class="knowledge-toc-kicker">Ch. 4</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item4"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-checklist"><span class="knowledge-toc-kicker">Ch. 5</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item5"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-other"><span class="knowledge-toc-kicker">Ch. 6</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item6"></span></a></li>
+<li class="knowledge-toc-item"><a class="knowledge-toc-link" href="#svc-proposal-faq"><span class="knowledge-toc-kicker">Ch. 7</span><span class="knowledge-toc-link-title" data-i18n="servicesProposal.toc.item7"></span></a></li></ol>
+                    </nav>
+                    <div class="knowledge-actions">
+                        <a class="knowledge-btn knowledge-btn-primary" href="./services.html" data-i18n="nav.services">Services</a>
+                        <button type="button" class="knowledge-btn knowledge-btn-secondary" id="services-contact-cta" data-i18n="servicesProposal.cta"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="svc-proposal-boundaries" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-boundaries-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-boundaries-title" data-i18n="servicesProposal.boundaries.title"></h2>
+                <p class="knowledge-article2-lede" data-i18n="servicesProposal.boundaries.lede" data-i18n-html="true"></p><figure class="knowledge-co2-figure services-figure"><svg xmlns="http://www.w3.org" viewBox="0 0 640 220" class="services-svg" role="img"><rect width="640" height="220" fill="#f8fafc"/><rect x="30" y="70" width="100" height="50" rx="6" fill="#e8f5e9" stroke="#2e7d32"/><text x="80" y="100" text-anchor="middle" font-size="12" fill="#1b5e20" font-family="system-ui">Duty</text><text x="150" y="100" fill="#2e7d32" font-size="18">→</text><rect x="170" y="55" width="120" height="80" rx="6" fill="#fff" stroke="#2e7d32" stroke-width="2"/><text x="230" y="100" text-anchor="middle" font-size="12" fill="#1b5e20" font-family="system-ui">Architecture</text><text x="310" y="100" fill="#2e7d32" font-size="18">→</text><rect x="330" y="55" width="120" height="80" rx="6" fill="#fff" stroke="#1565c0" stroke-width="2"/><text x="390" y="100" text-anchor="middle" font-size="12" fill="#0d47a1" font-family="system-ui">Battery limits</text><text x="470" y="100" fill="#2e7d32" font-size="18">→</text><rect x="490" y="70" width="120" height="50" rx="6" fill="#e3f2fd" stroke="#1565c0"/><text x="550" y="100" text-anchor="middle" font-size="12" fill="#0d47a1" font-family="system-ui">Verify</text></svg><figcaption class="knowledge-co2-figure-caption" data-i18n="servicesProposal.figure.caption"></figcaption></figure><div class="knowledge-reasons knowledge-reasons--article2"><div class="knowledge-reason" data-svc-reason="servicesProposal.boundaries.r1"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.boundaries.r1.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.boundaries.r1.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.boundaries.r2"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.boundaries.r2.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.boundaries.r2.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.boundaries.r3"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.boundaries.r3.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.boundaries.r3.text" data-i18n-html="true"></p></div></div>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-measure" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-measure-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-measure-title" data-i18n="servicesProposal.measure.title"></h2>
+                <p class="knowledge-article2-lede" data-i18n="servicesProposal.measure.lede" data-i18n-html="true"></p><div class="knowledge-reasons knowledge-reasons--article2"><div class="knowledge-reason" data-svc-reason="servicesProposal.measure.r1"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.measure.r1.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.measure.r1.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.measure.r2"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.measure.r2.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.measure.r2.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.measure.r3"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.measure.r3.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.measure.r3.text" data-i18n-html="true"></p></div></div>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-interfaces" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-interfaces-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-interfaces-title" data-i18n="servicesProposal.interfaces.title"></h2>
+                <p class="knowledge-article2-lede" data-i18n="servicesProposal.interfaces.lede" data-i18n-html="true"></p><div class="knowledge-reasons knowledge-reasons--article2"><div class="knowledge-reason" data-svc-reason="servicesProposal.interfaces.r1"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.interfaces.r1.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.interfaces.r1.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.interfaces.r2"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.interfaces.r2.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.interfaces.r2.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.interfaces.r3"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.interfaces.r3.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.interfaces.r3.text" data-i18n-html="true"></p></div></div>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-risk" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-risk-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-risk-title" data-i18n="servicesProposal.risk.title"></h2>
+                <p class="knowledge-article2-lede" data-i18n="servicesProposal.risk.lede" data-i18n-html="true"></p><div class="knowledge-reasons knowledge-reasons--article2"><div class="knowledge-reason" data-svc-reason="servicesProposal.risk.r1"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.risk.r1.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.risk.r1.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.risk.r2"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.risk.r2.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.risk.r2.text" data-i18n-html="true"></p></div><div class="knowledge-reason" data-svc-reason="servicesProposal.risk.r3"><h3 class="knowledge-reason-title" data-i18n="servicesProposal.risk.r3.title"></h3><p class="knowledge-reason-text" data-i18n="servicesProposal.risk.r3.text" data-i18n-html="true"></p></div></div>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-checklist" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-checklist-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-checklist-title" data-i18n="servicesProposal.checklist.title"></h2>
+                <ul class="knowledge-select-list">
+                    <li data-i18n="servicesProposal.checklist.i1"></li>
+<li data-i18n="servicesProposal.checklist.i2"></li>
+<li data-i18n="servicesProposal.checklist.i3"></li>
+<li data-i18n="servicesProposal.checklist.i4"></li>
+<li data-i18n="servicesProposal.checklist.i5"></li>
+<li data-i18n="servicesProposal.checklist.i6"></li>
+                </ul>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-other" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-other-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-other-title" data-i18n="servicesProposal.other.title"></h2>
+                <p class="knowledge-reason-text services-callout" data-i18n="servicesProposal.other.text" data-i18n-html="true"></p>
+            </div>
+        </section>
+        <hr class="knowledge-chapter-rule" aria-hidden="true" />
+        <section id="svc-proposal-faq" class="knowledge-article knowledge-section" aria-labelledby="svc-proposal-faq-title">
+            <div class="container">
+                <h2 class="knowledge-section-title" id="svc-proposal-faq-title" data-i18n="servicesProposal.faq.title"></h2>
+                <div class="knowledge-faq">
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="servicesProposal.faq.q1"></summary><p class="knowledge-faq-a" data-i18n="servicesProposal.faq.a1" data-i18n-html="true"></p></details>
+                    <details class="knowledge-faq-item"><summary class="knowledge-faq-q" data-i18n="servicesProposal.faq.q2"></summary><p class="knowledge-faq-a" data-i18n="servicesProposal.faq.a2" data-i18n-html="true"></p></details>
+                </div>
+                <p class="knowledge-reason-text knowledge-article5-disclaimer" data-i18n="servicesProposal.disclaimer"></p>
+            </div>
+        </section>
+        <footer class="knowledge-footer">
+            <div class="container">
+                <div class="knowledge-footer-card">
+                    <p class="knowledge-footer-title" data-i18n="servicesProposal.related.title"></p>
+                    <p class="knowledge-footer-text" data-i18n="servicesProposal.related.text" data-i18n-html="true"></p>
+                </div>
+                <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

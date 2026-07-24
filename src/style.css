@@ -8140,6 +8140,67 @@ html {
         padding-right: 1rem;
     }
 }
+
+/* Engineering services */
+.services-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+.services-svg--lifecycle {
+    border: none;
+    max-width: 44rem;
+    margin: 0 auto;
+}
+.services-lifecycle {
+    margin: 1.25rem 0 1.5rem;
+}
+.services-lifecycle .knowledge-co2-figure-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.services-figure {
+    margin: 1rem 0 1.25rem;
+}
+.services-callout {
+    padding: 1rem 1.15rem;
+    border-left: 3px solid var(--emerald-600);
+    background: rgba(46, 125, 50, 0.06);
+    border-radius: 0 6px 6px 0;
+}
+.services-hub-boundary {
+    margin-top: 1.75rem;
+}
+.services-hub-page .consultant-cta {
+    margin-top: 1.75rem;
+}
+.methodology-services-link-wrap {
+    margin: 1.25rem 0 0;
+    text-align: center;
+}
+.methodology-services-link {
+    font-weight: 600;
+    color: var(--emerald-700);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(46, 125, 50, 0.35);
+}
+.methodology-services-link:hover {
+    border-bottom-color: var(--emerald-600);
+}
+.services-page .knowledge-select-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0.75rem 0 0;
+}
+.services-page .knowledge-select-list li {
+    margin: 0.35rem 0;
+    line-height: 1.55;
+}
+.services-page .knowledge-select-list li:empty {
+    display: none;
+}
 .articles-more-notes {
     margin-top: 2rem;
 }

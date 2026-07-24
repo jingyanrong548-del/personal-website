@@ -9,6 +9,7 @@ import {
     CONTENT_SERIES_META,
     KNOWLEDGE_GROUPS,
     TOOLS_ITEMS,
+    SERVICES_GROUPS,
 } from './data/hubDirectory.js';
 
 /** @type {{ mount: HTMLElement, hub: string, mode: string }[]} */
@@ -101,6 +102,9 @@ function detectHub(pathname = location.pathname) {
     ) {
         return 'tools';
     }
+    if (p.endsWith('/services.html') || /\/services-[^/]+\.html$/.test(p)) {
+        return 'services';
+    }
     return null;
 }
 
@@ -109,13 +113,15 @@ function isHubPage(pathname = location.pathname) {
     return (
         p.endsWith('/articles.html') ||
         p.endsWith('/knowledge.html') ||
-        p.endsWith('/heat-pump-standards.html')
+        p.endsWith('/heat-pump-standards.html') ||
+        p.endsWith('/services.html')
     );
 }
 
 function hubTitleKey(hub) {
     if (hub === 'content') return 'nav.content';
     if (hub === 'knowledge') return 'nav.knowledgeHub';
+    if (hub === 'services') return 'nav.services';
     return 'nav.toolsStandards';
 }
 
@@ -212,6 +218,16 @@ function buildKnowledgeTree({ showDesc = false } = {}) {
     }).join('');
 }
 
+function buildServicesTree({ showDesc = false } = {}) {
+    return SERVICES_GROUPS.map((group) => {
+        const leaves = group.children.map((leaf) => leafLinkHtml(leaf, { showDesc })).join('');
+        return `<li class="hub-dir__group">
+            <span class="hub-dir__group-title">${escapeHtml(t(group.titleKey))}</span>
+            <ul class="hub-dir__leaves">${leaves}</ul>
+        </li>`;
+    }).join('');
+}
+
 function buildToolsTree() {
     return TOOLS_ITEMS.map((leaf) => leafLinkHtml(leaf, { showDesc: false })).join('');
 }
@@ -267,11 +283,12 @@ export async function initHubDirectory(opts) {
 }
 
 function renderMount(mount, hub, mode) {
-    const showDesc = mode === 'full' && hub === 'knowledge';
+    const showDesc = mode === 'full' && (hub === 'knowledge' || hub === 'services');
     const showFilter = mode === 'full' && hub === 'knowledge';
     let treeInner = '';
     if (hub === 'content') treeInner = buildContentTree({ showDesc: false });
     else if (hub === 'knowledge') treeInner = buildKnowledgeTree({ showDesc });
+    else if (hub === 'services') treeInner = buildServicesTree({ showDesc });
     else treeInner = `<ul class="hub-dir__leaves hub-dir__leaves--flat">${buildToolsTree()}</ul>`;
 
     const tree =
