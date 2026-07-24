@@ -2,7 +2,7 @@
  * Replaces navbar in static HTML with shared siteNav from site-nav.mjs.
  * Run after editing scripts/site-nav.mjs: node scripts/sync-nav.mjs
  */
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { siteNav, notePageNav } from './site-nav.mjs';
@@ -38,6 +38,10 @@ function processFile(relPath, navHtml) {
 
 const rootPages = [
   'articles.html',
+  'ai-engineer.html',
+  'tools.html',
+  'cases.html',
+  'founder.html',
   'knowledge.html',
   'knowledge-cycles.html',
   'knowledge-refrigerants.html',
@@ -56,14 +60,11 @@ const rootPages = [
   'heat-pump-policies.html',
   'useful-links.html',
   'services.html',
-  'services-survey.html',
-  'services-proposal.html',
-  'services-exchange.html',
-  'services-contract.html',
-  'services-install.html',
-  'services-commission.html',
-  'services-maintain.html',
-  'services-eol.html',
+  'services-technologies.html',
+  'services-integration.html',
+  'services-transition.html',
+  'services-specs.html',
+  'services-dissemination.html',
 ];
 
 rootPages.forEach((f) => processFile(f, siteNav({ depth: 0, brand: 'link' })));
@@ -77,8 +78,9 @@ indexHtml = indexHtml.slice(0, idxStart) + indexNav.trim() + '\n\n' + indexHtml.
 writeFileSync(join(ROOT, 'index.html'), indexHtml);
 console.log('synced: index.html');
 
-['briefings', 'insights'].forEach((dir) => {
+['briefings', 'insights', 'cases'].forEach((dir) => {
   const folder = join(ROOT, dir);
+  if (!existsSync(folder)) return;
   readdirSync(folder)
     .filter((f) => f.endsWith('.html'))
     .forEach((f) => {

@@ -1,43 +1,34 @@
 /**
- * Shared site navigation HTML (3 chips + 2 anchors).
- * Used by build-content.mjs and scripts/sync-nav.mjs.
- * Note: Engineering Services chip is deferred until the section is ready to open.
+ * Shared site navigation — Open Thermal AI (aligned transformation plan).
+ * Top nav: AI | Tools | Knowledge | Cases | Services | Founder
+ * Insights live under Knowledge → Research Insights (not a top chip).
  */
 
 function chipLinks(p) {
-  return `<li><a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a></li>
+  return `<li><a href="${p}ai-engineer.html" class="nav-link nav-link--chip" data-i18n="nav.aiEngineer">AI Engineer</a></li>
+                                <li><a href="${p}tools.html" class="nav-link nav-link--chip" data-i18n="nav.tools">Tools</a></li>
                                 <li><a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a></li>
-                                <li><a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a></li>`;
-}
-
-function anchorLinks(homePrefix) {
-  const hp = homePrefix;
-  return `<li><a href="${hp}#apps" class="nav-link nav-link--anchor" data-i18n="nav.apps">Toolbox</a></li>
-                                <li><a href="${hp}#about" class="nav-link nav-link--anchor" data-i18n="nav.about">About</a></li>`;
+                                <li><a href="${p}cases.html" class="nav-link nav-link--chip" data-i18n="nav.cases">Cases</a></li>
+                                <li><a href="${p}services.html" class="nav-link nav-link--chip" data-i18n="nav.services">Services</a></li>
+                                <li><a href="${p}founder.html" class="nav-link nav-link--chip" data-i18n="nav.founder">Founder</a></li>`;
 }
 
 /**
  * @param {object} opts
- * @param {0|1} [opts.depth=0] 0 = site root pages, 1 = briefings/insights
- * @param {'link'|'text'} [opts.brand='link'] index uses text-only brand
+ * @param {0|1} [opts.depth=0]
+ * @param {'link'|'text'} [opts.brand='link']
  */
 export function siteNav({ depth = 0, brand = 'link' } = {}) {
   const p = depth === 0 ? './' : '../';
-  const hp = depth === 0 ? './' : '../';
   const brandEl =
     brand === 'text'
-      ? `<div class="nav-brand" data-i18n="nav.brand">Jing Yanrong</div>`
-      : `<a class="nav-brand" href="${p}" data-i18n="nav.brand">Jing Yanrong</a>`;
+      ? `<div class="nav-brand" data-i18n="nav.brand">Open Thermal AI</div>`
+      : `<a class="nav-brand" href="${p}" data-i18n="nav.brand">Open Thermal AI</a>`;
 
   const menuBlock = `<ul class="nav-menu">
                         <li class="nav-menu__group nav-menu__group--chips">
                             <ul class="nav-menu__sublist">
                                 ${chipLinks(p)}
-                            </ul>
-                        </li>
-                        <li class="nav-menu__group nav-menu__group--anchors">
-                            <ul class="nav-menu__sublist">
-                                ${anchorLinks(hp)}
                             </ul>
                         </li>
                     </ul>`;
@@ -71,10 +62,13 @@ export function notePageNav(depth = 1) {
   const p = depth === 0 ? './' : '../';
   return `<a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
 <nav class="navbar"><div class="container">
-<a class="nav-brand" href="${p}" data-i18n="nav.brand">Jing Yanrong</a>
-<a href="${p}articles.html" class="nav-link nav-link--chip" data-i18n="nav.content">Content</a>
+<a class="nav-brand" href="${p}" data-i18n="nav.brand">Open Thermal AI</a>
+<a href="${p}ai-engineer.html" class="nav-link nav-link--chip" data-i18n="nav.aiEngineer">AI Engineer</a>
+<a href="${p}tools.html" class="nav-link nav-link--chip" data-i18n="nav.tools">Tools</a>
 <a href="${p}knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Knowledge</a>
-<a href="${p}heat-pump-standards.html" class="nav-link nav-link--chip" data-i18n="nav.toolsStandards">Tools &amp; Standards</a>
+<a href="${p}cases.html" class="nav-link nav-link--chip" data-i18n="nav.cases">Cases</a>
+<a href="${p}services.html" class="nav-link nav-link--chip" data-i18n="nav.services">Services</a>
+<a href="${p}founder.html" class="nav-link nav-link--chip" data-i18n="nav.founder">Founder</a>
 <div class="language-switcher"><button class="lang-btn" data-lang="zh" type="button">中文</button><button class="lang-btn active" data-lang="en" type="button">EN</button></div>
 </div></nav>`;
 }

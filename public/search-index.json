@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-24",
-  "count": 44,
+  "count": 54,
   "items": [
     {
       "id": "briefing-2026-w29",
@@ -279,6 +279,38 @@
       "date": "2023-10-01"
     },
     {
+      "id": "ai-engineer",
+      "category": "tool",
+      "url": "/ai-engineer.html",
+      "title": {
+        "en": "AI Thermal Engineer",
+        "zh": "AI 热泵工程师"
+      },
+      "summary": {
+        "en": "Enter source/sink temperatures and duty; get concept cycle, compressor notes, COP band, and risks.",
+        "zh": "输入热源/目标温度与负荷，获得循环概念、压缩机建议、COP 区间与风险清单。"
+      },
+      "keywords": {
+        "en": [
+          "AI",
+          "thermal engineer",
+          "COP",
+          "heat pump design"
+        ],
+        "zh": [
+          "AI",
+          "热泵工程师",
+          "COP",
+          "设计"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "articles",
       "category": "page",
       "url": "/articles.html",
@@ -476,6 +508,38 @@
       "date": null
     },
     {
+      "id": "services",
+      "category": "page",
+      "url": "/services.html",
+      "title": {
+        "en": "Engineering services — Annex 58 frame",
+        "zh": "工程服务 — Annex 58 框架"
+      },
+      "summary": {
+        "en": "Industrial HTHP advisory structured like IEA HPT Annex 58 Tasks 1–5.",
+        "zh": "按 IEA HPT Annex 58 Task 1–5 组织的工业高温热泵顾问导读。"
+      },
+      "keywords": {
+        "en": [
+          "services",
+          "Annex 58",
+          "HTHP",
+          "industrial heat pump"
+        ],
+        "zh": [
+          "工程服务",
+          "Annex 58",
+          "高温热泵",
+          "工业热泵"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "tool-euc",
       "category": "tool",
       "url": "https://euc.jingyanrong.com",
@@ -497,6 +561,38 @@
           "单位",
           "换算",
           "计算"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "tools-hub",
+      "category": "tool",
+      "url": "/tools.html",
+      "title": {
+        "en": "Engineering Tools",
+        "zh": "工程工具"
+      },
+      "summary": {
+        "en": "Auditable industrial heat pump calculators and standards references.",
+        "zh": "可审计的工业热泵计算器与标准查阅。"
+      },
+      "keywords": {
+        "en": [
+          "toolbox",
+          "calculator",
+          "matching",
+          "benefit"
+        ],
+        "zh": [
+          "工具箱",
+          "计算器",
+          "匹配",
+          "效益"
         ]
       },
       "body": {
@@ -553,6 +649,36 @@
         "zh": [
           "闪发罐",
           "闪蒸"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "founder",
+      "category": "page",
+      "url": "/founder.html",
+      "title": {
+        "en": "Founder & Chief Thermal Architect",
+        "zh": "创始人兼首席热系统架构师"
+      },
+      "summary": {
+        "en": "Jing Yanrong — founder of Open Thermal AI; 30 years industrial heat-pump R&D.",
+        "zh": "荆炎荣 — Open Thermal AI 创始人；三十年工业热泵研发经验。"
+      },
+      "keywords": {
+        "en": [
+          "founder",
+          "Jing Yanrong",
+          "architect"
+        ],
+        "zh": [
+          "创始人",
+          "荆炎荣",
+          "架构师"
         ]
       },
       "body": {
@@ -691,40 +817,6 @@
       "date": null
     },
     {
-      "id": "home",
-      "category": "site",
-      "url": "/",
-      "title": {
-        "en": "Home — Jing Yanrong",
-        "zh": "首页 — 荆炎荣"
-      },
-      "summary": {
-        "en": "Industrial refrigeration and wide-temperature heat pumps; engineering toolbox and articles.",
-        "zh": "工业制冷与宽温区热泵；工程工具箱与文章内容入口。"
-      },
-      "keywords": {
-        "en": [
-          "home",
-          "toolbox",
-          "about",
-          "heat pump",
-          "refrigeration"
-        ],
-        "zh": [
-          "首页",
-          "工具箱",
-          "关于",
-          "热泵",
-          "制冷"
-        ]
-      },
-      "body": {
-        "en": "",
-        "zh": ""
-      },
-      "date": null
-    },
-    {
       "id": "hthp-column",
       "category": "page",
       "url": "/hthp-column.html",
@@ -782,6 +874,38 @@
           "IEA",
           "高温热泵",
           "笔记"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "cases-hub",
+      "category": "page",
+      "url": "/cases.html",
+      "title": {
+        "en": "Industrial Heat Pump Case Library",
+        "zh": "工业热泵案例库"
+      },
+      "summary": {
+        "en": "Structured cases across food, chemical, manufacturing and more.",
+        "zh": "食品、化工、制造等行业结构化案例。"
+      },
+      "keywords": {
+        "en": [
+          "cases",
+          "case study",
+          "ROI",
+          "COP"
+        ],
+        "zh": [
+          "案例",
+          "案例库",
+          "投资回报",
+          "COP"
         ]
       },
       "body": {
@@ -966,6 +1090,40 @@
         "zh": [
           "喷油",
           "螺杆"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "home",
+      "category": "site",
+      "url": "/",
+      "title": {
+        "en": "Open Thermal AI — Industrial Heat Pump Intelligence Platform",
+        "zh": "Open Thermal AI — 工业热泵人工智能智能平台"
+      },
+      "summary": {
+        "en": "AI-powered industrial heat pump design & engineering intelligence: knowledge, tools, cases, AI Thermal Engineer.",
+        "zh": "AI 驱动的工业热泵设计与工程智能：知识库、工具、案例、AI 热泵工程师。"
+      },
+      "keywords": {
+        "en": [
+          "home",
+          "Open Thermal AI",
+          "heat pump",
+          "AI",
+          "tools"
+        ],
+        "zh": [
+          "首页",
+          "Open Thermal AI",
+          "热泵",
+          "AI",
+          "工具"
         ]
       },
       "body": {
@@ -1173,6 +1331,156 @@
           "蓄热",
           "水箱",
           "分层"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "services-technologies",
+      "category": "page",
+      "url": "/services-technologies.html",
+      "title": {
+        "en": "Task 1 · Technologies",
+        "zh": "Task 1 · 技术与部件"
+      },
+      "summary": {
+        "en": "HTHP technology screening aligned with Annex 58 Task 1.",
+        "zh": "对齐 Annex 58 Task 1 的高温热泵技术筛选。"
+      },
+      "keywords": {
+        "en": [
+          "technologies",
+          "TRL",
+          "screening"
+        ],
+        "zh": [
+          "技术",
+          "TRL",
+          "筛选"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "services-integration",
+      "category": "page",
+      "url": "/services-integration.html",
+      "title": {
+        "en": "Task 2 · Integration",
+        "zh": "Task 2 · 集成概念"
+      },
+      "summary": {
+        "en": "Process integration concepts aligned with Annex 58 Task 2.",
+        "zh": "对齐 Annex 58 Task 2 的工艺集成概念。"
+      },
+      "keywords": {
+        "en": [
+          "integration",
+          "coupling",
+          "process"
+        ],
+        "zh": [
+          "集成",
+          "耦合",
+          "工艺"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "services-transition",
+      "category": "page",
+      "url": "/services-transition.html",
+      "title": {
+        "en": "Task 3 · Transition",
+        "zh": "Task 3 · 应用与转型"
+      },
+      "summary": {
+        "en": "Conversion strategies aligned with Annex 58 Task 3.",
+        "zh": "对齐 Annex 58 Task 3 的转型策略。"
+      },
+      "keywords": {
+        "en": [
+          "transition",
+          "roadmap",
+          "decarbonisation"
+        ],
+        "zh": [
+          "转型",
+          "路线图",
+          "脱碳"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "services-specs",
+      "category": "page",
+      "url": "/services-specs.html",
+      "title": {
+        "en": "Task 4 · Specs & testing",
+        "zh": "Task 4 · 规格与测试"
+      },
+      "summary": {
+        "en": "Specification and testing hygiene aligned with Annex 58 Task 4.",
+        "zh": "对齐 Annex 58 Task 4 的规格与测试卫生。"
+      },
+      "keywords": {
+        "en": [
+          "specification",
+          "FAT",
+          "acceptance"
+        ],
+        "zh": [
+          "规格",
+          "验收",
+          "测试"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "services-dissemination",
+      "category": "page",
+      "url": "/services-dissemination.html",
+      "title": {
+        "en": "Task 5 · Dissemination",
+        "zh": "Task 5 · 传播与赋能"
+      },
+      "summary": {
+        "en": "Stakeholder exchange aligned with Annex 58 Task 5.",
+        "zh": "对齐 Annex 58 Task 5 的干系人交流与赋能。"
+      },
+      "keywords": {
+        "en": [
+          "dissemination",
+          "workshop",
+          "stakeholders"
+        ],
+        "zh": [
+          "传播",
+          "研讨",
+          "干系人"
         ]
       },
       "body": {

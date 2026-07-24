@@ -1,12 +1,11 @@
 /**
- * Static IA for the three hub directories (content / knowledge / tools).
- * URLs are site-root absolute paths so they work from any depth.
+ * Static IA for hub directories — aligned with Open Thermal AI transformation plan.
+ * Engineering Data Layer (conceptual): Knowledge + Cases + Standards + Tools feed AI.
  */
 
 /** @typedef {{ id: string, titleKey: string, url: string, descKey?: string, matchPath?: string, matchHash?: string | null }} HubLeaf */
 /** @typedef {{ id: string, titleKey: string, children: HubLeaf[] }} HubGroup */
 
-/** Content center: industry notes (static). Briefings/insights filled from content-index.json. */
 export const CONTENT_NOTES = [
     {
         id: 'annex68',
@@ -26,11 +25,34 @@ export const CONTENT_SERIES_META = [
     { id: 'notes', titleKey: 'articles.section.notes', type: 'notes' },
 ];
 
+/** Knowledge hub: Research Insights · Technical Articles · Standards (+ nested chapters). */
 /** @type {HubGroup[]} */
 export const KNOWLEDGE_GROUPS = [
     {
-        id: 'fundamentals',
-        titleKey: 'hubDir.knowledge.group.fundamentals',
+        id: 'researchInsights',
+        titleKey: 'hubDir.knowledge.group.researchInsights',
+        children: [
+            {
+                id: 'articlesHub',
+                titleKey: 'hubDir.knowledge.leaf.researchInsights',
+                descKey: 'hubDir.knowledge.leaf.researchInsights.desc',
+                url: '/articles.html',
+            },
+            {
+                id: 'briefings',
+                titleKey: 'articles.section.briefings',
+                url: '/articles.html',
+            },
+            {
+                id: 'insights',
+                titleKey: 'articles.section.insights',
+                url: '/articles.html',
+            },
+        ],
+    },
+    {
+        id: 'technicalArticles',
+        titleKey: 'hubDir.knowledge.group.technicalArticles',
         children: [
             {
                 id: 'basics',
@@ -52,12 +74,12 @@ export const KNOWLEDGE_GROUPS = [
                 descKey: 'knowledge.hub.refrigerants.desc',
                 url: '/knowledge-refrigerants.html',
             },
-        ],
-    },
-    {
-        id: 'components',
-        titleKey: 'hubDir.knowledge.group.components',
-        children: [
+            {
+                id: 'hthp',
+                titleKey: 'knowledge.hub.hthp.title',
+                descKey: 'knowledge.hub.hthp.desc',
+                url: '/hthp-column.html',
+            },
             {
                 id: 'compressor',
                 titleKey: 'knowledge.hub.compressor.title',
@@ -88,12 +110,6 @@ export const KNOWLEDGE_GROUPS = [
                 descKey: 'knowledge.hub.lubricants.desc',
                 url: '/knowledge-lubricants.html',
             },
-        ],
-    },
-    {
-        id: 'systems',
-        titleKey: 'hubDir.knowledge.group.systems',
-        children: [
             {
                 id: 'electrical',
                 titleKey: 'knowledge.hub.electrical.title',
@@ -112,23 +128,38 @@ export const KNOWLEDGE_GROUPS = [
                 descKey: 'knowledge.hub.enclosure.desc',
                 url: '/knowledge-enclosure.html',
             },
-        ],
-    },
-    {
-        id: 'special',
-        titleKey: 'hubDir.knowledge.group.special',
-        children: [
             {
                 id: 'shopTest',
                 titleKey: 'knowledge.hub.shopTest.title',
                 descKey: 'knowledge.hub.shopTest.desc',
                 url: '/knowledge-shop-test.html',
             },
+        ],
+    },
+    {
+        id: 'standards',
+        titleKey: 'hubDir.knowledge.group.standards',
+        children: [
             {
-                id: 'hthp',
-                titleKey: 'knowledge.hub.hthp.title',
-                descKey: 'knowledge.hub.hthp.desc',
-                url: '/hthp-column.html',
+                id: 'hpStandards',
+                titleKey: 'toolsStd.nav.standards',
+                url: '/heat-pump-standards.html#standards',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#standards',
+            },
+            {
+                id: 'policies',
+                titleKey: 'toolsStd.nav.policies',
+                url: '/heat-pump-standards.html#policies',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#policies',
+            },
+            {
+                id: 'links',
+                titleKey: 'toolsStd.nav.links',
+                url: '/heat-pump-standards.html#links',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#links',
             },
         ],
     },
@@ -136,6 +167,12 @@ export const KNOWLEDGE_GROUPS = [
 
 /** @type {HubLeaf[]} */
 export const TOOLS_ITEMS = [
+    {
+        id: 'calculators',
+        titleKey: 'tools.hub.title',
+        url: '/tools.html',
+        matchPath: '/tools.html',
+    },
     {
         id: 'standards',
         titleKey: 'toolsStd.nav.standards',
@@ -157,74 +194,104 @@ export const TOOLS_ITEMS = [
         matchPath: '/heat-pump-standards.html',
         matchHash: '#links',
     },
+];
+
+/** Tools Center: Thermodynamic · Cycle Design · Economic · Component · Standards */
+/** @type {HubGroup[]} */
+export const TOOLS_GROUPS = [
     {
-        id: 'calculators',
-        titleKey: 'toolsStd.cta.tools',
-        url: '/#apps',
-        matchPath: '/',
-        matchHash: '#apps',
+        id: 'thermodynamic',
+        titleKey: 'hubDir.tools.group.thermodynamic',
+        children: [
+            { id: 'euc', titleKey: 'apps.app0.title', url: 'https://euc.jingyanrong.com' },
+            { id: 'tpc', titleKey: 'apps.appTpc.title', url: 'https://tpc.jingyanrong.com' },
+        ],
+    },
+    {
+        id: 'cycleDesign',
+        titleKey: 'hubDir.tools.group.cycleDesign',
+        children: [
+            { id: 'mc', titleKey: 'toolsShowcase.card1.title', url: 'https://mc.jingyanrong.com' },
+            { id: 'hthp-zone', titleKey: 'apps.zone.hthpConfig', url: '/tools.html#apps-hthp-zone' },
+        ],
+    },
+    {
+        id: 'economic',
+        titleKey: 'hubDir.tools.group.economic',
+        children: [{ id: 'ba', titleKey: 'toolsShowcase.card2.title', url: 'https://ba.jingyanrong.com' }],
+    },
+    {
+        id: 'componentDb',
+        titleKey: 'hubDir.tools.group.componentDb',
+        children: [
+            { id: 'ft', titleKey: 'apps.appFt.title', url: 'https://ft.jingyanrong.com' },
+            { id: 'tools-invite', titleKey: 'apps.zone.invitation', url: '/tools.html#apps-invited-gate' },
+        ],
+    },
+    {
+        id: 'standards',
+        titleKey: 'hubDir.tools.group.standards',
+        children: [
+            {
+                id: 'standards',
+                titleKey: 'toolsStd.nav.standards',
+                url: '/heat-pump-standards.html#standards',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#standards',
+            },
+            {
+                id: 'policies',
+                titleKey: 'toolsStd.nav.policies',
+                url: '/heat-pump-standards.html#policies',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#policies',
+            },
+            {
+                id: 'links',
+                titleKey: 'toolsStd.nav.links',
+                url: '/heat-pump-standards.html#links',
+                matchPath: '/heat-pump-standards.html',
+                matchHash: '#links',
+            },
+        ],
     },
 ];
 
 /** @type {HubGroup[]} */
 export const SERVICES_GROUPS = [
     {
-        id: 'presales',
-        titleKey: 'hubDir.services.group.presales',
+        id: 'annex58',
+        titleKey: 'hubDir.services.group.annex58',
         children: [
             {
-                id: 'survey',
-                titleKey: 'services.hub.survey.title',
-                descKey: 'services.hub.survey.desc',
-                url: '/services-survey.html',
+                id: 'technologies',
+                titleKey: 'services.hub.task1.title',
+                descKey: 'services.hub.task1.desc',
+                url: '/services-technologies.html',
             },
             {
-                id: 'proposal',
-                titleKey: 'services.hub.proposal.title',
-                descKey: 'services.hub.proposal.desc',
-                url: '/services-proposal.html',
+                id: 'integration',
+                titleKey: 'services.hub.task2.title',
+                descKey: 'services.hub.task2.desc',
+                url: '/services-integration.html',
             },
             {
-                id: 'exchange',
-                titleKey: 'services.hub.exchange.title',
-                descKey: 'services.hub.exchange.desc',
-                url: '/services-exchange.html',
+                id: 'transition',
+                titleKey: 'services.hub.task3.title',
+                descKey: 'services.hub.task3.desc',
+                url: '/services-transition.html',
             },
             {
-                id: 'contract',
-                titleKey: 'services.hub.contract.title',
-                descKey: 'services.hub.contract.desc',
-                url: '/services-contract.html',
-            },
-        ],
-    },
-    {
-        id: 'aftersales',
-        titleKey: 'hubDir.services.group.aftersales',
-        children: [
-            {
-                id: 'install',
-                titleKey: 'services.hub.install.title',
-                descKey: 'services.hub.install.desc',
-                url: '/services-install.html',
+                id: 'specs',
+                titleKey: 'services.hub.task4.title',
+                descKey: 'services.hub.task4.desc',
+                url: '/services-specs.html',
             },
             {
-                id: 'commission',
-                titleKey: 'services.hub.commission.title',
-                descKey: 'services.hub.commission.desc',
-                url: '/services-commission.html',
-            },
-            {
-                id: 'maintain',
-                titleKey: 'services.hub.maintain.title',
-                descKey: 'services.hub.maintain.desc',
-                url: '/services-maintain.html',
-            },
-            {
-                id: 'eol',
-                titleKey: 'services.hub.eol.title',
-                descKey: 'services.hub.eol.desc',
-                url: '/services-eol.html',
+                id: 'dissemination',
+                titleKey: 'services.hub.task5.title',
+                descKey: 'services.hub.task5.desc',
+                url: '/services-dissemination.html',
             },
         ],
     },

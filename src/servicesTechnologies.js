@@ -1,2 +1,2 @@
 import { initServicesChapter } from './servicesPageInit.js';
-initServicesChapter('servicesExchange');
+initServicesChapter('svcT1');

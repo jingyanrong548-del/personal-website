@@ -68,8 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display version number immediately
     const versionElement = document.getElementById('app-version');
     if (versionElement) {
-        // @ts-ignore - __APP_VERSION__ is defined by Vite in vite.config.js
-        const appVersion = __APP_VERSION__ || '1.0.0';
+        const appVersion = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '1.0.0';
         versionElement.textContent = `V${appVersion}`;
     }
     

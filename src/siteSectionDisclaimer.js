@@ -1,6 +1,7 @@
 /**
  * Bilingual (ZH + EN) legal / AI notices: short visible summary + optional <details> full text.
  * Not switched by UI language — both languages always present.
+ * Aligned with Open Thermal AI platform (v4+): knowledge, tools, cases, AI preview.
  */
 
 const DATA_ROOT = 'data-site-disclaimer-root';
@@ -8,24 +9,24 @@ const DATA_SLOT = 'data-site-disclaimer-slot';
 
 /** Visible by default — one line per language. */
 const SUMMARY_ZH =
-    '本站仅供一般参考，不构成法律或任何专业意见；内容可能含人工智能（AI）辅助、按「现状」提供不作担保，重要决策请咨询持证专家并以官方文本为准。不代表雇主或第三方立场。';
+    'Open Thermal AI（由荆炎荣创办）仅供工程学习与一般参考，不构成法律、监管或任何专业意见；站内工具与 AI 预览为工程辅助、按「现状」提供不作担保，重要决策请咨询持证专家并以官方文本为准。不代表雇主或第三方立场。';
 const SUMMARY_EN =
-    'General reference on a personal site only — not legal or other professional advice. May include AI-assisted material, provided as-is without warranty; consult qualified professionals and official sources for important decisions. Not the views of employers or third parties.';
+    'Open Thermal AI (founded by Jing Yanrong) is for engineering learning and general reference only—not legal, regulatory, or other professional advice. On-site tools and the AI preview are engineering aids provided as-is without warranty; consult qualified professionals and official sources for important decisions. Not the views of employers or third parties.';
 
 /** Inside <details> — fuller notice (legacy long-form, consolidated). */
 const DETAIL_ZH_1 =
-    '本网站内容仅供一般性信息参考、个人学习与行业交流，不构成任何司法辖区下的法律意见、监管解释、税务或证券建议、工程设计签认、产品合格/认证结论或投资建议；亦不代表本人现任或过往雇主、客户及任何政府机构、行业协会或第三方的立场。';
+    '本站为 Open Thermal AI 工业热泵智能平台的公开内容（含知识库、工程工具、案例库、服务导读与 AI Thermal Engineer 预览）。内容仅供一般性信息参考、个人学习与行业交流，不构成任何司法辖区下的法律意见、监管解释、税务或证券建议、工程设计签认、产品合格/认证结论或投资建议；亦不代表创办人现任或过往雇主、客户及任何政府机构、行业协会或第三方的立场。';
 const DETAIL_ZH_2 =
-    '部分内容可能由人工智能（AI）辅助起草、摘录、翻译或排版；尽管编者已合理核对，不对准确性、完整性、时效性及对特定场景的适用性作任何明示或默示担保。您因信赖本站信息作出的决策或行动，风险与责任由您自行承担。';
+    '部分内容可能由人工智能（AI）辅助起草、摘录、翻译或排版；AI Thermal Engineer 等交互模块在 Phase 1 为原型/模拟预览，并非已连接生产级大模型的实时咨询服务，亦不可作为采购依据或注册工程师盖章交付物。尽管编者已合理核对，不对准确性、完整性、时效性及对特定场景的适用性作任何明示或默示担保。您因信赖本站信息、工具输出或 AI 预览作出的决策或行动，风险与责任由您自行承担。';
 const DETAIL_ZH_3 =
-    '本网站由个人维护并公开发布；访问本站不形成律师—客户关系或其他受监管的专业服务关系；不保证站内链接、工具、脚本与第三方服务的持续可用或安全；未经许可不得以商业目的复制或再传播本站实质性内容。若您认为内容涉嫌侵权、错误或可能误导公众，欢迎通过页面联系方式指出，编者将在合理范围内予以核查与更正。';
+    '本站由个人维护并公开发布；访问本站不形成律师—客户关系或其他受监管的专业服务关系；不保证站内链接、计算器、脚本、第三方子域工具与外部服务的持续可用或安全；未经许可不得以商业目的复制或再传播本站实质性内容。若您认为内容涉嫌侵权、错误或可能误导公众，欢迎通过页面联系方式指出，编者将在合理范围内予以核查与更正。';
 
 const DETAIL_EN_1 =
-    'Content is for general information, personal learning and industry exchange only. It does not constitute legal advice, regulatory interpretation, tax or securities advice, engineering sign-off, product conformity or certification, or investment advice in any jurisdiction, nor the views of my employers, clients, government bodies, trade associations or any third party.';
+    'This site is the public face of Open Thermal AI—an industrial heat-pump intelligence platform (knowledge, engineering tools, cases, services orientation, and AI Thermal Engineer preview). Content is for general information, personal learning and industry exchange only. It does not constitute legal advice, regulatory interpretation, tax or securities advice, engineering sign-off, product conformity or certification, or investment advice in any jurisdiction, nor the views of the founder’s employers, clients, government bodies, trade associations or any third party.';
 const DETAIL_EN_2 =
-    'Some content may be drafted, excerpted, translated or laid out with AI assistance; despite reasonable care, no express or implied warranty is given as to accuracy, completeness, currency or fitness for your situation. You bear sole risk for decisions or actions taken in reliance on this site.';
+    'Some content may be drafted, excerpted, translated or laid out with AI assistance. Interactive modules such as AI Thermal Engineer are Phase 1 prototype / mock previews—not a live production LLM advisory service, and not a basis for procurement or PE-stamped deliverables. Despite reasonable care, no express or implied warranty is given as to accuracy, completeness, currency or fitness for your situation. You bear sole risk for decisions or actions taken in reliance on this site, its tools, or AI previews.';
 const DETAIL_EN_3 =
-    'No attorney–client or other regulated professional relationship is created. Availability or security of links, tools, scripts and third-party services is not guaranteed. Substantial commercial republication is not permitted without permission. If you believe any item is infringing, incorrect or misleading, please contact the editor via the site; reasonable verification and correction will be attempted where appropriate.';
+    'No attorney–client or other regulated professional relationship is created. Availability or security of links, calculators, scripts, third-party subdomain tools and external services is not guaranteed. Substantial commercial republication is not permitted without permission. If you believe any item is infringing, incorrect or misleading, please contact the editor via the site; reasonable verification and correction will be attempted where appropriate.';
 
 function p(lang, cls, text) {
     const el = document.createElement('p');

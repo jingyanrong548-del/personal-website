@@ -1,0 +1,54 @@
+{
+  "id": "case-manufacturing-paint-booth",
+  "slug": "manufacturing-paint-booth-waste-heat",
+  "published": "2026-07-15",
+  "industry": "wasteHeat",
+  "title": {
+    "en": "Manufacturing: paint-booth exhaust heat to 70°C wash water",
+    "zh": "制造：涂装废气余热提升至 70°C 清洗热水"
+  },
+  "excerpt": {
+    "en": "Illustrative low-lift heat pump recovering booth exhaust to supply parts wash water.",
+    "zh": "示意案例：低温升热泵回收涂装废气热量，供应零件清洗热水。"
+  },
+  "engineering": {
+    "heatSource": { "en": "Filtered booth exhaust ~28–35°C equivalent", "zh": "过滤后涂装废气当量约 28–35°C" },
+    "heatSink": { "en": "Parts wash water 65–70°C", "zh": "零件清洗水 65–70°C" },
+    "temperature": { "sourceC": [28, 35], "sinkC": [65, 70] },
+    "capacityKw": 350,
+    "refrigerant": "R513A / R515B class",
+    "technology": { "en": "Air-to-water heat pump + glycol recovery coil", "zh": "空气—水热泵 + 乙二醇回收盘管" },
+    "cop": 3.3,
+    "challenge": { "en": "VOC / fouling on recovery coils", "zh": "VOC / 回收盘管结垢" },
+    "result": { "en": "Illustrative strong ROI on two-shift booth runtime", "zh": "示意双班涂装时回收期更优" }
+  },
+  "background": {
+    "en": "An automotive supplier exhausted warm booth air while purchasing electric or gas heat for wash lines.",
+    "zh": "汽车零部件供应商排放温热涂装废气，同时又用电或燃气加热清洗线。"
+  },
+  "inputs": {
+    "en": "Source: filtered exhaust air ~28–35°C equivalent. Sink: wash water 65–70°C. Duty: ~350 kW.",
+    "zh": "热源：过滤后废气当量约 28–35°C。热汇：清洗水 65–70°C。负荷约 350 kW。"
+  },
+  "solution": {
+    "en": "Air-to-water heat pump with glycol coil recovery and fouling-tolerant exchangers; weekend setback strategy.",
+    "zh": "空气—水热泵 + 乙二醇盘管回收与耐污换热器；周末低负荷策略。"
+  },
+  "performance": {
+    "en": "Illustrative COP 3.0–3.6; strong when booth runs two shifts.",
+    "zh": "示意 COP 约 3.0–3.6；双班涂装时效益更明显。"
+  },
+  "roi": {
+    "en": "Payback often <4 years where electricity is competitive and booth runtime is high.",
+    "zh": "在电价有竞争力且涂装高运行时，回收期常小于 4 年。"
+  },
+  "faq": [
+    {
+      "q": { "en": "What about VOC and fouling?", "zh": "VOC 与结垢怎么办？" },
+      "a": {
+        "en": "Recovery coils need filtration and cleanable design; heat pump refrigerant circuit stays sealed from booth air.",
+        "zh": "回收盘管需过滤与可清洗设计；热泵制冷剂回路与涂装空气隔离密封。"
+      }
+    }
+  ]
+}

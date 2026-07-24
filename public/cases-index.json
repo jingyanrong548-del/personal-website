@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-07-24",
+  "items": [
+    {
+      "id": "case-manufacturing-paint-booth",
+      "slug": "manufacturing-paint-booth-waste-heat",
+      "published": "2026-07-15",
+      "industry": "wasteHeat",
+      "title": {
+        "en": "Manufacturing: paint-booth exhaust heat to 70°C wash water",
+        "zh": "制造：涂装废气余热提升至 70°C 清洗热水"
+      },
+      "excerpt": {
+        "en": "Illustrative low-lift heat pump recovering booth exhaust to supply parts wash water.",
+        "zh": "示意案例：低温升热泵回收涂装废气热量，供应零件清洗热水。"
+      },
+      "url": "/cases/manufacturing-paint-booth-waste-heat.html",
+      "capacityKw": 350,
+      "refrigerant": "R513A / R515B class",
+      "cop": 3.3,
+      "technology": {
+        "en": "Air-to-water heat pump + glycol recovery coil",
+        "zh": "空气—水热泵 + 乙二醇回收盘管"
+      }
+    },
+    {
+      "id": "case-chemical-solvent-recovery",
+      "slug": "chemical-solvent-recovery-110c",
+      "published": "2026-07-08",
+      "industry": "chemical",
+      "title": {
+        "en": "Chemical: 110°C heating from 45°C cooling-water return",
+        "zh": "化工：45°C 冷却水回水提升至 110°C 工艺加热"
+      },
+      "excerpt": {
+        "en": "Illustrative cascade / two-stage concept for a solvent recovery heater, displacing LP steam.",
+        "zh": "示意案例：溶剂回收加热用两级/复叠概念，替代低压蒸汽。"
+      },
+      "url": "/cases/chemical-solvent-recovery-110c.html",
+      "capacityKw": 1200,
+      "refrigerant": "R515B / cascade candidate",
+      "cop": 2.2,
+      "technology": {
+        "en": "Two-stage or cascade VCHP",
+        "zh": "两级或复叠蒸汽压缩热泵"
+      }
+    },
+    {
+      "id": "case-food-process-water",
+      "slug": "food-process-water-90c",
+      "published": "2026-07-01",
+      "industry": "food",
+      "title": {
+        "en": "Food plant: 90°C process water from 35°C wash effluent",
+        "zh": "食品厂：35°C 洗涤废水提升至 90°C 工艺热水"
+      },
+      "excerpt": {
+        "en": "Illustrative case: single-stage HFC/HFO heat pump replacing a gas boiler for CIP and wash water.",
+        "zh": "示意案例：单级 HFC/HFO 热泵替代燃气锅炉，供应 CIP 与洗涤热水。"
+      },
+      "url": "/cases/food-process-water-90c.html",
+      "capacityKw": 800,
+      "refrigerant": "R1234ze(E)",
+      "cop": 2.6,
+      "technology": {
+        "en": "Single-stage screw VCHP",
+        "zh": "单级螺杆蒸汽压缩热泵"
+      }
+    }
+  ]
+}

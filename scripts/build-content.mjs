@@ -49,7 +49,7 @@ function articleHead({ title, description, canonical, type = 'article', publishe
     <meta property="og:title" content="${escapeHtml(title.en)}">
     <meta property="og:description" content="${escapeHtml(description.en)}">
     <meta property="og:image" content="${OG_IMAGE}">
-    <meta property="og:site_name" content="荆炎荣个人网站">
+    <meta property="og:site_name" content="Open Thermal AI">
     <meta property="article:published_time" content="${published}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(title.en)}">
@@ -324,6 +324,88 @@ ${entries}
   writeFileSync(join(ROOT, 'public', 'feed.xml'), xml);
 }
 
+
+function buildCasePage(item) {
+  const canonical = `${SITE}/cases/${item.slug}.html`;
+  const faqLd = (item.faq || []).map((f) => ({
+    '@type': 'Question',
+    name: f.q?.en || '',
+    acceptedAnswer: { '@type': 'Answer', text: f.a?.en || '' },
+  }));
+  const head = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${escapeHtml(item.title.en)} — Open Thermal AI Cases</title>
+    <meta name="description" content="${escapeHtml(item.excerpt?.en || '')}">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:site_name" content="Open Thermal AI">
+    <meta property="og:title" content="${escapeHtml(item.title.en)}">
+    <meta property="og:description" content="${escapeHtml(item.excerpt?.en || '')}">
+    <script type="application/ld+json">${JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'TechArticle',
+      headline: item.title.en,
+      datePublished: item.published,
+      author: { '@type': 'Organization', name: 'Open Thermal AI' },
+      url: canonical,
+    })}</script>
+    ${faqLd.length ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqLd })}</script>` : ''}
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/casePage.js"></script>
+</head>`;
+  const body = `
+<body class="theme-ota">
+${siteNav({ depth: 1, brand: 'link' }).trim()}
+<main id="main-content" class="case-detail-page section" data-case-slug="${escapeHtml(item.slug)}">
+  <div class="container container--narrow">
+    <p><a href="../cases.html" data-i18n="cases.back">← All cases</a></p>
+    <p class="section-kicker case-industry" data-industry="${escapeHtml(item.industry)}"></p>
+    <h1 data-i18n-case="title">${escapeHtml(item.title.en)}</h1>
+    <p class="section-lede-minimal" data-i18n-case="excerpt">${escapeHtml(item.excerpt?.en || '')}</p>
+    <section class="case-engineering" id="case-engineering">
+      <h2 data-i18n="cases.detail.engineering">Engineering data</h2>
+      <dl class="case-eng-dl" id="case-eng-dl"></dl>
+    </section>
+    <section><h2 data-i18n="cases.detail.background">Project background</h2><p data-i18n-case="background">${escapeHtml(item.background?.en || '')}</p></section>
+    <section><h2 data-i18n="cases.detail.inputs">Source / inputs</h2><p data-i18n-case="inputs">${escapeHtml(item.inputs?.en || '')}</p></section>
+    <section><h2 data-i18n="cases.detail.solution">Heat pump solution</h2><p data-i18n-case="solution">${escapeHtml(item.solution?.en || '')}</p></section>
+    <section><h2 data-i18n="cases.detail.performance">COP &amp; savings</h2><p data-i18n-case="performance">${escapeHtml(item.performance?.en || '')}</p></section>
+    <section><h2 data-i18n="cases.detail.roi">Investment / ROI notes</h2><p data-i18n-case="roi">${escapeHtml(item.roi?.en || '')}</p></section>
+    <div id="case-faq"></div>
+  </div>
+</main>
+<script type="application/json" id="case-data">${JSON.stringify(item).replace(/</g, '\\u003c')}</script>
+<footer class="footer-section"><div class="container"><div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div></div></footer>
+</body>
+</html>`;
+  const outDir = join(ROOT, 'cases');
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, `${item.slug}.html`), head + body);
+  return { ...item, type: 'case', url: `/cases/${item.slug}.html`, canonical };
+}
+
+function buildCasesIndex(cases) {
+  const items = cases
+    .map((c) => ({
+      id: c.id,
+      slug: c.slug,
+      published: c.published,
+      industry: c.industry,
+      title: c.title,
+      excerpt: c.excerpt,
+      url: `/cases/${c.slug}.html`,
+      capacityKw: c.engineering?.capacityKw ?? null,
+      refrigerant: c.engineering?.refrigerant ?? null,
+      cop: c.engineering?.cop ?? null,
+      technology: c.engineering?.technology ?? null,
+    }))
+    .sort((a, b) => (a.published < b.published ? 1 : -1));
+  writeFileSync(join(ROOT, 'public', 'cases-index.json'), JSON.stringify({ generatedAt: new Date().toISOString().slice(0, 10), items }, null, 2));
+  return items;
+}
+
 function buildSitemap(articleUrls) {
   const today = new Date().toISOString().slice(0, 10);
   const staticPages = [
@@ -343,6 +425,16 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/knowledge-shop-test.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/hthp-column.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/heat-pump-standards.html`, priority: '0.8', changefreq: 'monthly' },
+    { loc: `${SITE}/tools.html`, priority: '0.9', changefreq: 'weekly' },
+    { loc: `${SITE}/ai-engineer.html`, priority: '0.95', changefreq: 'weekly' },
+    { loc: `${SITE}/cases.html`, priority: '0.9', changefreq: 'weekly' },
+    { loc: `${SITE}/founder.html`, priority: '0.7', changefreq: 'monthly' },
+    { loc: `${SITE}/services.html`, priority: '0.85', changefreq: 'monthly' },
+    { loc: `${SITE}/services-technologies.html`, priority: '0.75', changefreq: 'monthly' },
+    { loc: `${SITE}/services-integration.html`, priority: '0.75', changefreq: 'monthly' },
+    { loc: `${SITE}/services-transition.html`, priority: '0.75', changefreq: 'monthly' },
+    { loc: `${SITE}/services-specs.html`, priority: '0.75', changefreq: 'monthly' },
+    { loc: `${SITE}/services-dissemination.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/annex68-iea-hpt.html`, priority: '0.6', changefreq: 'monthly' },
     { loc: `${SITE}/briefings/conferences.html`, priority: '0.6', changefreq: 'monthly' },
   ];
@@ -577,23 +669,29 @@ function buildSiteUpdates(briefings, insights) {
 function main() {
   const briefings = loadJsonFiles('briefings');
   const insights = loadJsonFiles('insights');
+  const cases = loadJsonFiles('cases');
 
   const articleUrls = [];
   briefings.forEach((b) => articleUrls.push(buildBriefingPage(b)));
   insights.forEach((i) => articleUrls.push(buildInsightPage(i)));
+  const caseUrls = cases.map((c) => buildCasePage(c));
+  buildCasesIndex(cases);
 
   const index = buildContentIndex(briefings, insights);
   const searchIndex = buildSearchIndex(briefings, insights);
   buildSiteUpdates(briefings, insights);
   buildFeed(index.items);
-  buildSitemap(articleUrls);
+  buildSitemap([...articleUrls, ...caseUrls]);
 
   const inputsPath = join(ROOT, 'scripts', 'generated-pages.json');
   writeFileSync(
     inputsPath,
     JSON.stringify(
       {
-        articlePages: articleUrls.map((a) => `${a.type === 'briefing' ? 'briefings' : 'insights'}/${a.slug}.html`),
+        articlePages: [
+          ...articleUrls.map((a) => `${a.type === 'briefing' ? 'briefings' : 'insights'}/${a.slug}.html`),
+          ...caseUrls.map((c) => `cases/${c.slug}.html`),
+        ],
       },
       null,
       2
@@ -601,7 +699,7 @@ function main() {
   );
 
   console.log(
-    `[build-content] ${briefings.length} briefing(s), ${insights.length} insight(s), search index ${searchIndex.count} item(s), feed + sitemap updated.`
+    `[build-content] ${briefings.length} briefing(s), ${insights.length} insight(s), ${cases.length} case(s), search index ${searchIndex.count} item(s), feed + sitemap updated.`
   );
 }
 

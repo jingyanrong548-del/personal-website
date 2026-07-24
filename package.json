@@ -1,7 +1,7 @@
 {
   "name": "jing-yanrong",
-  "version": "3.0.0",
-  "description": "Personal homepage for Jing Yanrong (荆炎荣)",
+  "version": "4.0.0",
+  "description": "Open Thermal AI — Industrial Heat Pump Intelligence Platform",
   "type": "module",
   "scripts": {
     "dev": "node scripts/build-content.mjs && vite",

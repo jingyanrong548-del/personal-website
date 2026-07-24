@@ -1,7 +1,63 @@
 {
-  "version": "hub-directory-tree-2026-07",
+  "version": "ota-v4-2026-07",
   "generatedAt": "2026-07-24",
   "items": [
+    {
+      "id": "ota-v4-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Open Thermal AI v4.0 — platform major release",
+        "zh": "Open Thermal AI v4.0 — 平台大版本发布"
+      },
+      "summary": {
+        "en": "Major version bump to 4.0.0 for the Open Thermal AI shell (dark theme, IA, AI preview). Site legal notice updated for platform tools and Phase 1 AI prototype wording.",
+        "zh": "版本升级至 4.0.0，对应 Open Thermal AI 平台壳层（暗色主题、信息架构、AI 预览）。免责声明同步适配平台工具与 Phase 1 AI 原型表述。"
+      },
+      "url": "/"
+    },
+    {
+      "id": "ota-ia-align-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "IA alignment: Insights under Knowledge · Tools taxonomy · AI Preview",
+        "zh": "信息架构对齐：洞察并入知识库 · 工具分类 · AI 预览定位"
+      },
+      "summary": {
+        "en": "Top nav drops Insights (now under Knowledge). Tools Center taxonomy updated. AI Thermal Engineer labeled Prototype / Phase 1. Cases carry structured engineering data for future RAG.",
+        "zh": "顶栏去掉 Insights（并入 Knowledge）。工具中心分类更新。AI Thermal Engineer 标明原型/Phase 1。案例增加结构化工程字段，服务未来 RAG。"
+      },
+      "url": "/"
+    },
+    {
+      "id": "open-thermal-ai-v1-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Open Thermal AI platform shell (Phase 1)",
+        "zh": "Open Thermal AI 平台壳层上线（Phase 1）"
+      },
+      "summary": {
+        "en": "Rebranded navigation, AI Thermal Engineer mock, Tools hub, Cases library, and Founder page—Vite-based Phase 1 toward a global industrial heat-pump intelligence platform.",
+        "zh": "品牌与导航升级、AI 热泵工程师（mock）、工具中心、案例库与创始人页——基于现有 Vite 架构的 Phase 1 平台壳层。"
+      },
+      "url": "/"
+    },
+    {
+      "id": "services-annex58-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Engineering services: Annex 58 Tasks 1–5 frame",
+        "zh": "工程服务：按 Annex 58 Task 1–5 重组上线"
+      },
+      "summary": {
+        "en": "New Services hub aligned with IEA HPT Annex 58—technologies, integration, transition, specs & testing, dissemination—with illustrated guides and official links.",
+        "zh": "新增工程服务入口，结构对齐 IEA HPT Annex 58：技术、集成、转型、规格与测试、传播；含示意图与官网链接。"
+      },
+      "url": "/services.html"
+    },
     {
       "id": "hub-directory-tree-2026-07",
       "date": "2026-07-24",
@@ -57,62 +113,6 @@
         "zh": "英文标注改用含全量符号的字体；示意图中的下标与 Δ 改为 ASCII（dT1、CO2、dP），消除 T 后出现方框的问题。"
       },
       "url": "/knowledge-exchanger.html#khx-flow"
-    },
-    {
-      "id": "hx-lmtd-profile-fix-2026-07",
-      "date": "2026-07-22",
-      "category": "page",
-      "title": {
-        "en": "Heat exchanger guide: fixed counterflow temperature profiles",
-        "zh": "换热器导读：修正逆流温谱配图"
-      },
-      "summary": {
-        "en": "Chapter 3 LMTD schematic no longer shows an impossible hot/cold temperature cross; hot stays above cold with a clear approach at the hot-in / cold-out end.",
-        "zh": "第 3 章 LMTD 示意不再出现不可能的冷热流体温度交叉；全程热侧高于冷侧，并在热侧进/冷侧出端标出接近温度。"
-      },
-      "url": "/knowledge-exchanger.html#khx-flow"
-    },
-    {
-      "id": "diagrams-3d-restore-2026-07",
-      "date": "2026-07-22",
-      "category": "page",
-      "title": {
-        "en": "Restored 3D knowledge cutaways + bilingual legend strips",
-        "zh": "恢复知识库 3D 剖视原图，并加双语图例条"
-      },
-      "summary": {
-        "en": "Physical/3D figures overwritten by schematic redraws are restored; each keeps a bottom EN/ZH title strip without covering the artwork.",
-        "zh": "此前被框线示意覆盖的实物/3D 剖视图已恢复；底部增加英主中辅标题条，不遮挡主体。"
-      },
-      "url": "/knowledge.html"
-    },
-    {
-      "id": "diagrams-bilingual-full-2026-07",
-      "date": "2026-07-22",
-      "category": "page",
-      "title": {
-        "en": "All knowledge diagrams + HTHP configs: bilingual labels",
-        "zh": "知识库示意图与 HTHP 构型图全面中英对照"
-      },
-      "summary": {
-        "en": "Every knowledge-hub figure now uses English-first labels with Chinese underneath; homepage HTHP config schematics get bilingual Heat sink/source overlays—same assets for both languages.",
-        "zh": "知识库各专章示意均为英文为主、中文对照；首页高温热泵构型图叠标热汇/热源等双语；中英切换不换图。"
-      },
-      "url": "/knowledge.html"
-    },
-    {
-      "id": "diagrams-bilingual-pilot-2026-07",
-      "date": "2026-07-22",
-      "category": "page",
-      "title": {
-        "en": "Pilot: bilingual diagram labels (EN primary / ZH)",
-        "zh": "试点：知识库示意图中英对照（英主中辅）"
-      },
-      "summary": {
-        "en": "Cycle-guide figures and the extreme-cold demand/lifecycle charts now carry English-first labels with Chinese underneath—same image for both site languages.",
-        "zh": "循环导读全部示意与基础知识中极寒负荷/生命周期成本图改为英文为主、中文对照；中英切换不换图。"
-      },
-      "url": "/knowledge-cycles.html"
     }
   ]
 }

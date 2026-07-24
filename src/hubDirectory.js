@@ -8,6 +8,7 @@ import {
     CONTENT_NOTES,
     CONTENT_SERIES_META,
     KNOWLEDGE_GROUPS,
+    TOOLS_GROUPS,
     TOOLS_ITEMS,
     SERVICES_GROUPS,
 } from './data/hubDirectory.js';
@@ -228,8 +229,14 @@ function buildServicesTree({ showDesc = false } = {}) {
     }).join('');
 }
 
-function buildToolsTree() {
-    return TOOLS_ITEMS.map((leaf) => leafLinkHtml(leaf, { showDesc: false })).join('');
+function buildToolsTree({ showDesc = false } = {}) {
+    return TOOLS_GROUPS.map((group) => {
+        const leaves = group.children.map((leaf) => leafLinkHtml(leaf, { showDesc })).join('');
+        return `<li class="hub-dir__group">
+            <span class="hub-dir__group-title">${escapeHtml(t(group.titleKey))}</span>
+            <ul class="hub-dir__leaves">${leaves}</ul>
+        </li>`;
+    }).join('');
 }
 
 function railShouldOpen() {
@@ -289,11 +296,12 @@ function renderMount(mount, hub, mode) {
     if (hub === 'content') treeInner = buildContentTree({ showDesc: false });
     else if (hub === 'knowledge') treeInner = buildKnowledgeTree({ showDesc });
     else if (hub === 'services') treeInner = buildServicesTree({ showDesc });
-    else treeInner = `<ul class="hub-dir__leaves hub-dir__leaves--flat">${buildToolsTree()}</ul>`;
+    else if (hub === 'tools') treeInner = buildToolsTree({ showDesc: false });
+    else treeInner = `<ul class="hub-dir__leaves hub-dir__leaves--flat">${TOOLS_ITEMS.map((leaf) => leafLinkHtml(leaf, { showDesc: false })).join('')}</ul>`;
 
     const tree =
         hub === 'tools'
-            ? treeInner
+            ? `<ul class="hub-dir__tree">${treeInner}</ul>`
             : `<ul class="hub-dir__tree">${treeInner}</ul>`;
 
     const filterHtml = showFilter
