@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-24",
-  "count": 57,
+  "count": 58,
   "items": [
     {
       "id": "briefing-2026-w29",
@@ -279,6 +279,38 @@
       "date": "2023-10-01"
     },
     {
+      "id": "ai-workspace",
+      "category": "site",
+      "url": "/ai-workspace.html",
+      "title": {
+        "en": "AI Engineering Workspace",
+        "zh": "AI 工程工作台"
+      },
+      "summary": {
+        "en": "OpenThermal AI Copilot: chat, project context, multi-agent routing, and Engineering Suite tool orchestration (Phase 1 mock).",
+        "zh": "OpenThermal AI Copilot：对话、项目上下文、多 Agent 路由与工程套件工具编排（Phase 1 mock）。"
+      },
+      "keywords": {
+        "en": [
+          "AI Workspace",
+          "Copilot",
+          "agents",
+          "heat pump design"
+        ],
+        "zh": [
+          "AI Workspace",
+          "Copilot",
+          "Agent",
+          "热泵设计"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "ai-engineer",
       "category": "tool",
       "url": "/ai-engineer.html",
@@ -302,38 +334,6 @@
           "热泵工程师",
           "COP",
           "设计"
-        ]
-      },
-      "body": {
-        "en": "",
-        "zh": ""
-      },
-      "date": null
-    },
-    {
-      "id": "ai-workspace",
-      "category": "site",
-      "url": "/ai-workspace.html",
-      "title": {
-        "en": "AI Workspace",
-        "zh": "AI Workspace"
-      },
-      "summary": {
-        "en": "Coming Soon: unified AI Workspace for thermal consulting, design assistance, cycle optimization, and digital twin.",
-        "zh": "即将推出：统一 AI Workspace，覆盖热能咨询、设计辅助、循环优化与数字孪生。"
-      },
-      "keywords": {
-        "en": [
-          "AI Workspace",
-          "Coming Soon",
-          "thermal AI",
-          "digital twin"
-        ],
-        "zh": [
-          "AI Workspace",
-          "即将推出",
-          "热能 AI",
-          "数字孪生"
         ]
       },
       "body": {
@@ -1222,6 +1222,38 @@
           "保温",
           "防腐",
           "减振"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "projects",
+      "category": "site",
+      "url": "/projects.html",
+      "title": {
+        "en": "Project Space",
+        "zh": "项目空间"
+      },
+      "summary": {
+        "en": "Local project space for heat-pump design sessions — parameters, chat history, versions in the browser.",
+        "zh": "工业热泵设计会话的本地项目空间 — 参数、对话与版本保存在浏览器。"
+      },
+      "keywords": {
+        "en": [
+          "projects",
+          "session",
+          "design git",
+          "workspace"
+        ],
+        "zh": [
+          "项目",
+          "会话",
+          "设计版本",
+          "工作台"
         ]
       },
       "body": {

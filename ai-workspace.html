@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Workspace — Open Thermal AI</title>
-    <meta id="meta-page-title" name="title" content="AI Workspace — Open Thermal AI">
-    <meta id="meta-page-description" name="description" content="AI Workspace for industrial thermal engineering — Coming Soon. Preview available via AI Thermal Engineer.">
+    <title>AI Engineering Workspace — Open Thermal AI</title>
+    <meta id="meta-page-title" name="title" content="AI Engineering Workspace — Open Thermal AI">
+    <meta id="meta-page-description" name="description" content="Open Thermal AI Copilot workspace: chat, project context, agent routing, and engineering tool orchestration. Phase 1 mock preview.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.jingyanrong.com/ai-workspace.html">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jingyanrong.com/ai-workspace.html">
     <meta property="og:site_name" content="Open Thermal AI">
-    <meta id="meta-og-title" property="og:title" content="AI Workspace — Open Thermal AI">
-    <meta id="meta-og-description" property="og:description" content="Coming Soon: AI Workspace for industrial thermal engineering.">
+    <meta id="meta-og-title" property="og:title" content="AI Engineering Workspace — Open Thermal AI">
+    <meta id="meta-og-description" property="og:description" content="Chat + project context + agent/tool orchestration for industrial heat-pump design. Phase 1 mock.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta id="meta-twitter-title" name="twitter:title" content="AI Workspace — Open Thermal AI">
-    <meta id="meta-twitter-description" name="twitter:description" content="Coming Soon: AI Workspace for industrial thermal engineering.">
+    <meta id="meta-twitter-title" name="twitter:title" content="AI Engineering Workspace — Open Thermal AI">
+    <meta id="meta-twitter-description" name="twitter:description" content="Chat + project context + agent/tool orchestration for industrial heat-pump design. Phase 1 mock.">
     <link rel="stylesheet" href="/src/style.css">
     <script type="module" src="/src/aiWorkspacePage.js"></script>
 </head>
@@ -64,36 +64,89 @@
         </div>
     </nav>
 
-    <main id="main-content" class="workspace-page section">
-        <div class="container container--narrow">
-            <header class="section-header-minimal">
-                <p class="section-kicker" data-i18n="workspace.kicker">Open Thermal AI</p>
-                <p class="workspace-status-badge" data-i18n="workspace.badge">Coming Soon</p>
-                <h1 class="section-title-minimal" data-i18n="workspace.title">AI Workspace</h1>
-                <p class="section-lede-minimal" data-i18n="workspace.lede">The future home for AI-assisted thermal engineering. Open Thermal AI is evolving into an AI engineering platform — foundation first, live models next.</p>
+    <main id="main-content" class="workspace-app section">
+        <div class="container workspace-app-container">
+            <header class="workspace-app-header">
+                <div>
+                    <p class="section-kicker" data-i18n="workspace.kicker">Open Thermal AI</p>
+                    <h1 class="section-title-minimal" data-i18n="workspace.title">AI Engineering Workspace</h1>
+                    <p class="workspace-status-badge" data-i18n="workspace.badge">Preview · Phase 1 mock</p>
+                </div>
+                <div class="workspace-app-header-links">
+                    <a href="./projects.html" data-i18n="workspace.linkProjects">Project Space →</a>
+                    <a href="./ai-engineer.html" data-i18n="workspace.linkEngineer">AI Thermal Engineer →</a>
+                    <a href="./tools.html" data-i18n="workspace.ctaTools">Engineering Suite →</a>
+                </div>
             </header>
+            <p class="section-lede-minimal workspace-app-lede" data-i18n="workspace.lede">Describe a duty or design question. Phase 1 routes mock agents and tools — not a live LLM. Same analyze contract as AI Thermal Engineer.</p>
 
-            <section class="workspace-preview" aria-labelledby="workspace-preview-heading">
-                <h2 id="workspace-preview-heading" data-i18n="workspace.preview.title">Available today</h2>
-                <p data-i18n="workspace.preview.text">Phase 1 AI Thermal Engineer preview — structured reasoning mock with a stable API contract. Not a live LLM.</p>
-                <p><a href="./ai-engineer.html" class="hero-cta-btn hero-cta-primary" data-i18n="workspace.preview.cta">Open AI Thermal Engineer preview →</a></p>
-            </section>
+            <div class="workspace-shell">
+                <aside class="workspace-panel workspace-panel--agents" aria-labelledby="workspace-agents-heading">
+                    <h2 id="workspace-agents-heading" data-i18n="workspace.agents.title">Agent stack</h2>
+                    <p class="workspace-panel-note" data-i18n="workspace.agents.note">Multi-agent architecture (preview routing).</p>
+                    <ul class="workspace-agent-list" id="workspace-agent-list"></ul>
+                    <div class="workspace-upload">
+                        <h3 data-i18n="workspace.upload.title">Files</h3>
+                        <p data-i18n="workspace.upload.note">Excel / PDF / CAD / P&amp;ID / test data — parsing comes in Phase 2.</p>
+                        <label class="workspace-upload-btn">
+                            <span data-i18n="workspace.upload.cta">Add files (Coming)</span>
+                            <input type="file" id="workspace-file-input" multiple disabled aria-disabled="true">
+                        </label>
+                        <p class="workspace-upload-hint" id="workspace-upload-hint" hidden data-i18n="workspace.upload.disabled">Upload is reserved — not processed yet.</p>
+                    </div>
+                </aside>
 
-            <section class="workspace-future" aria-labelledby="workspace-future-heading">
-                <h2 id="workspace-future-heading" data-i18n="workspace.future.title">Planned capabilities</h2>
-                <ul class="workspace-future-list">
-                    <li data-i18n="workspace.future.consultant">AI Thermal Consultant</li>
-                    <li data-i18n="workspace.future.design">Heat Pump Design Assistant</li>
-                    <li data-i18n="workspace.future.cycle">Cycle Optimization AI</li>
-                    <li data-i18n="workspace.future.knowledge">Engineering Knowledge Assistant</li>
-                    <li data-i18n="workspace.future.twin">Digital Twin Simulation</li>
-                </ul>
-            </section>
+                <section class="workspace-panel workspace-panel--chat" aria-labelledby="workspace-chat-heading">
+                    <h2 id="workspace-chat-heading" class="u-sr-only" data-i18n="workspace.chat.title">Copilot chat</h2>
+                    <div class="workspace-chat-log" id="workspace-chat-log" role="log" aria-live="polite"></div>
+                    <form class="workspace-chat-form" id="workspace-chat-form">
+                        <label class="u-sr-only" for="workspace-chat-input" data-i18n="workspace.chat.inputLabel">Message</label>
+                        <textarea id="workspace-chat-input" name="message" rows="4" data-i18n-placeholder="workspace.chat.placeholder" placeholder="Describe source / sink / duty / COP target…"></textarea>
+                        <div class="workspace-chat-actions">
+                            <button type="submit" class="hero-cta-btn hero-cta-primary" id="workspace-send" data-i18n="workspace.chat.send">Run Copilot</button>
+                            <button type="button" class="hero-cta-btn hero-cta-secondary" id="workspace-save-project" data-i18n="workspace.chat.saveProject">Save to Project Space</button>
+                        </div>
+                    </form>
+                </section>
 
-            <p class="workspace-cta-links">
-                <a href="./tools.html" data-i18n="workspace.ctaTools">Engineering Suite →</a>
-                <a href="./roadmap.html" data-i18n="workspace.ctaRoadmap">Platform roadmap →</a>
-            </p>
+                <aside class="workspace-panel workspace-panel--context" aria-labelledby="workspace-context-heading">
+                    <h2 id="workspace-context-heading" data-i18n="workspace.context.title">Project context</h2>
+                    <form class="workspace-context-form" id="workspace-context-form">
+                        <label><span data-i18n="workspace.context.name">Project name</span>
+                            <input type="text" name="name" id="ctx-name" autocomplete="off">
+                        </label>
+                        <label><span data-i18n="workspace.context.source">Source °C</span>
+                            <input type="number" name="sourceTempC" id="ctx-source" step="0.1">
+                        </label>
+                        <label><span data-i18n="workspace.context.target">Sink °C</span>
+                            <input type="number" name="targetTempC" id="ctx-target" step="0.1">
+                        </label>
+                        <label><span data-i18n="workspace.context.load">Duty kW</span>
+                            <input type="number" name="heatLoadKw" id="ctx-load" step="1" min="0">
+                        </label>
+                        <label><span data-i18n="workspace.context.refrigerant">Refrigerant</span>
+                            <input type="text" name="refrigerant" id="ctx-ref" autocomplete="off">
+                        </label>
+                        <label><span data-i18n="workspace.context.compressor">Compressor</span>
+                            <input type="text" name="compressor" id="ctx-comp" autocomplete="off">
+                        </label>
+                        <label><span data-i18n="workspace.context.hx">Heat exchanger</span>
+                            <input type="text" name="hx" id="ctx-hx" autocomplete="off">
+                        </label>
+                        <label><span data-i18n="workspace.context.cop">COP target</span>
+                            <input type="number" name="copTarget" id="ctx-cop" step="0.1" min="0">
+                        </label>
+                        <label><span data-i18n="workspace.context.budget">Budget note</span>
+                            <input type="text" name="budget" id="ctx-budget" autocomplete="off">
+                        </label>
+                    </form>
+                    <div class="workspace-tools-used" id="workspace-tools-used" hidden>
+                        <h3 data-i18n="workspace.tools.title">Tools invoked</h3>
+                        <ul id="workspace-tools-list"></ul>
+                    </div>
+                    <p class="workspace-report-note" data-i18n="workspace.report.note">One-click engineering PDF report — Phase 2.</p>
+                </aside>
+            </div>
         </div>
     </main>
 
@@ -102,9 +155,9 @@
             <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
             <p class="footer-nav-links">
                 <a href="./" data-i18n="nav.brand">Open Thermal AI</a>
+                · <a href="./projects.html" data-i18n="footer.projects">Projects</a>
                 · <a href="./why.html" data-i18n="footer.why">Why Open Thermal AI</a>
                 · <a href="./roadmap.html" data-i18n="footer.roadmap">Roadmap</a>
-                · <a href="./founder.html" data-i18n="nav.founder">Founder</a>
             </p>
         </div>
     </footer>

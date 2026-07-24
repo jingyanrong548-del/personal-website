@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "ota-copilot-workspace-2026-07",
+      "date": "2026-07-24",
+      "category": "tool",
+      "title": {
+        "en": "OpenThermal AI Copilot: homepage entry + Engineering Workspace + Project Space",
+        "zh": "OpenThermal AI Copilot：首页入口 + 工程工作台 + 项目空间"
+      },
+      "summary": {
+        "en": "Phase 1 mock Copilot on the homepage, AI Engineering Workspace with agent/tool routing, and local Project Space. Not a live LLM yet.",
+        "zh": "首页 Phase 1 mock Copilot、带 Agent/工具路由的 AI 工程工作台，以及本地项目空间。尚未接入真实大模型。"
+      },
+      "url": "/ai-workspace.html"
+    },
+    {
       "id": "ota-platform-skeleton-2026-07",
       "date": "2026-07-24",
       "category": "site",

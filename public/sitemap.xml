@@ -139,6 +139,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.jingyanrong.com/projects.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.jingyanrong.com/services.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>

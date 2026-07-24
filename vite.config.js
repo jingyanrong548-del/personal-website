@@ -40,6 +40,7 @@ export default defineConfig({
         roadmap: resolve(__dirname, 'roadmap.html'),
         why: resolve(__dirname, 'why.html'),
         aiWorkspace: resolve(__dirname, 'ai-workspace.html'),
+        projects: resolve(__dirname, 'projects.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
         hthpColumn: resolve(__dirname, 'hthp-column.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),

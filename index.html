@@ -205,9 +205,21 @@
                 <h1 class="hero-headline" data-i18n="hero.headline">AI Platform for Industrial Thermal Intelligence</h1>
                 <p class="hero-subheadline" data-i18n="hero.subheadline">An open platform combining thermal engineering knowledge, AI tools, simulation methods and industrial applications.</p>
                 <p class="hero-founded" data-i18n="hero.foundedBy">Founded by Jing Yanrong · Thermal Engineering Expert</p>
+
+                <form class="hero-copilot" id="hero-copilot-form" action="./ai-workspace.html" method="get">
+                    <p class="hero-copilot-label" data-i18n="copilot.label">OpenThermal AI Copilot</p>
+                    <label class="u-sr-only" for="hero-copilot-input" data-i18n="copilot.inputLabel">Design brief</label>
+                    <textarea id="hero-copilot-input" name="q" rows="5" data-i18n-placeholder="copilot.placeholder" placeholder="Design an industrial heat pump: source 80°C waste water → sink 95°C hot water, 2000 kW, COP>4…"></textarea>
+                    <div class="hero-copilot-actions">
+                        <button type="submit" class="hero-cta-btn hero-cta-primary" data-i18n="copilot.submit">Ask Copilot</button>
+                        <a href="./ai-workspace.html" class="hero-cta-btn hero-cta-secondary" data-i18n="copilot.openWorkspace">Open AI Workspace</a>
+                    </div>
+                    <p class="hero-copilot-note" data-i18n="copilot.note">Phase 1 mock preview — routes agents &amp; tools; not a live LLM.</p>
+                </form>
+
                 <div class="hero-cta-container hero-cta-container--triple">
-                    <a href="./ai-workspace.html" class="hero-cta-btn hero-cta-primary" data-i18n="hero.ctaStart">Explore AI Tools</a>
                     <a href="./knowledge.html" class="hero-cta-btn hero-cta-secondary" data-i18n="hero.ctaKnowledge">Open Knowledge</a>
+                    <a href="./tools.html" class="hero-cta-btn hero-cta-secondary" data-i18n="hero.ctaTools">Use Engineering Tools</a>
                     <a href="./roadmap.html" class="hero-cta-btn hero-cta-secondary" data-i18n="hero.ctaRoadmap">Platform Roadmap</a>
                 </div>
                 <ul class="hero-capability-tags" aria-label="Capabilities">
@@ -474,8 +486,9 @@
             <div class="footer-intro">
                 <h3 class="footer-intro-title" data-i18n="footer.introTitle">Open Thermal AI — open tools for decarbonization and electrified thermal systems, with physics you can inspect.</h3>
                 <p class="footer-nav-links">
-                    <a href="./why.html" data-i18n="footer.why">Why Open Thermal AI</a>
-                    · <a href="./ai-workspace.html" data-i18n="footer.workspace">AI Workspace</a>
+                    <a href="./ai-workspace.html" data-i18n="footer.workspace">AI Workspace</a>
+                    · <a href="./projects.html" data-i18n="footer.projects">Projects</a>
+                    · <a href="./why.html" data-i18n="footer.why">Why Open Thermal AI</a>
                     · <a href="./roadmap.html" data-i18n="footer.roadmap">Roadmap</a>
                 </p>
             </div>

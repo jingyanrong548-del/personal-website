@@ -432,6 +432,7 @@ function buildSitemap(articleUrls) {
     { loc: `${SITE}/roadmap.html`, priority: '0.8', changefreq: 'monthly' },
     { loc: `${SITE}/why.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/ai-workspace.html`, priority: '0.85', changefreq: 'monthly' },
+    { loc: `${SITE}/projects.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/services.html`, priority: '0.85', changefreq: 'monthly' },
     { loc: `${SITE}/services-technologies.html`, priority: '0.75', changefreq: 'monthly' },
     { loc: `${SITE}/services-integration.html`, priority: '0.75', changefreq: 'monthly' },

@@ -40,6 +40,7 @@ const rootPages = [
   'articles.html',
   'ai-engineer.html',
   'ai-workspace.html',
+  'projects.html',
   'tools.html',
   'cases.html',
   'founder.html',

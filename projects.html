@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Space — Open Thermal AI</title>
+    <meta id="meta-page-title" name="title" content="Project Space — Open Thermal AI">
+    <meta id="meta-page-description" name="description" content="Local Project Space for industrial heat-pump design sessions — parameters, chat history, and versions (browser storage, Phase 1).">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jingyanrong.com/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jingyanrong.com/projects.html">
+    <meta property="og:site_name" content="Open Thermal AI">
+    <meta id="meta-og-title" property="og:title" content="Project Space — Open Thermal AI">
+    <meta id="meta-og-description" property="og:description" content="Save heat-pump design sessions locally — design Git for industrial thermal projects.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="meta-twitter-title" name="twitter:title" content="Project Space — Open Thermal AI">
+    <meta id="meta-twitter-description" name="twitter:description" content="Save heat-pump design sessions locally — design Git for industrial thermal projects.">
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/projectsPage.js"></script>
+</head>
+<body class="theme-ota">
+    <a class="skip-link" href="#main-content" data-i18n="ui.skipToMain">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a class="nav-brand" href="./" data-i18n="nav.brand">Open Thermal AI</a>
+            <details class="nav-mobile-menu">
+                <summary class="nav-mobile-menu-toggle" aria-label="Menu">
+                    <span data-i18n="nav.menu">Menu</span>
+                </summary>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./ai-engineer.html" class="nav-link nav-link--chip" data-i18n="nav.aiEngineer">AI Engineer</a></li>
+                                <li><a href="./tools.html" class="nav-link nav-link--chip" data-i18n="nav.tools">Tools</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Open Knowledge</a></li>
+                                <li><a href="./cases.html" class="nav-link nav-link--chip" data-i18n="nav.cases">Cases</a></li>
+                                <li><a href="./services.html" class="nav-link nav-link--chip" data-i18n="nav.services">Services</a></li>
+                                <li><a href="./founder.html" class="nav-link nav-link--chip" data-i18n="nav.founder">Founder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <div class="nav-right nav-right--desktop">
+                <ul class="nav-menu">
+                        <li class="nav-menu__group nav-menu__group--chips">
+                            <ul class="nav-menu__sublist">
+                                <li><a href="./ai-engineer.html" class="nav-link nav-link--chip" data-i18n="nav.aiEngineer">AI Engineer</a></li>
+                                <li><a href="./tools.html" class="nav-link nav-link--chip" data-i18n="nav.tools">Tools</a></li>
+                                <li><a href="./knowledge.html" class="nav-link nav-link--chip" data-i18n="nav.knowledgeHub">Open Knowledge</a></li>
+                                <li><a href="./cases.html" class="nav-link nav-link--chip" data-i18n="nav.cases">Cases</a></li>
+                                <li><a href="./services.html" class="nav-link nav-link--chip" data-i18n="nav.services">Services</a></li>
+                                <li><a href="./founder.html" class="nav-link nav-link--chip" data-i18n="nav.founder">Founder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                <button class="lang-btn active" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="projects-page section">
+        <div class="container container--narrow">
+            <header class="section-header-minimal">
+                <p class="section-kicker" data-i18n="projects.kicker">Open Thermal AI</p>
+                <h1 class="section-title-minimal" data-i18n="projects.title">Project Space</h1>
+                <p class="section-lede-minimal" data-i18n="projects.lede">Local design sessions — parameters, Copilot chat, and versions stored in this browser. Cloud sync is Phase 4.</p>
+            </header>
+
+            <div class="projects-toolbar">
+                <a href="./ai-workspace.html" class="hero-cta-btn hero-cta-primary" data-i18n="projects.new">New session in Workspace</a>
+                <button type="button" class="hero-cta-btn hero-cta-secondary" id="projects-create" data-i18n="projects.createEmpty">Create empty project</button>
+            </div>
+
+            <p class="projects-empty" id="projects-empty" hidden data-i18n="projects.empty">No projects yet. Start in AI Workspace and tap “Save to Project Space”.</p>
+            <ul class="projects-list" id="projects-list"></ul>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="site-legal-disclaimer-slot" data-site-disclaimer-slot></div>
+            <p class="footer-nav-links">
+                <a href="./" data-i18n="nav.brand">Open Thermal AI</a>
+                · <a href="./ai-workspace.html" data-i18n="footer.workspace">AI Workspace</a>
+                · <a href="./roadmap.html" data-i18n="footer.roadmap">Roadmap</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
