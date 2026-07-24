@@ -37,6 +37,7 @@ export default defineConfig({
         tools: resolve(__dirname, 'tools.html'),
         cases: resolve(__dirname, 'cases.html'),
         founder: resolve(__dirname, 'founder.html'),
+        roadmap: resolve(__dirname, 'roadmap.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
         hthpColumn: resolve(__dirname, 'hthp-column.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),

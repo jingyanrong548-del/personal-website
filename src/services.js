@@ -8,9 +8,9 @@ import { initContactModal } from './contactModal.js';
 function updateServicesHubMeta(lang) {
     const title =
         translations[lang]?.['services.hub.title'] ||
-        (lang === 'zh' ? '工程服务' : 'Engineering services');
+        (lang === 'zh' ? 'Open Core + 专业服务' : 'Open Core + Professional Services');
     const desc = translations[lang]?.['services.hub.lede']?.replace(/<[^>]+>/g, '') || '';
-    const fullTitle = lang === 'zh' ? `${title} — 荆炎荣` : `${title} — Jing Yanrong`;
+    const fullTitle = `${title} — Open Thermal AI`;
     document.title = fullTitle;
     document.getElementById('meta-page-title')?.setAttribute('content', fullTitle);
     document.getElementById('meta-og-title')?.setAttribute('content', fullTitle);

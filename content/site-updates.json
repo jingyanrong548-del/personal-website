@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "ota-frontend-strategy-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Platform IA upgrade: Open Knowledge · Roadmap · Open Core services",
+        "zh": "平台信息架构升级：开放知识 · 路线图 · Open Core 服务"
+      },
+      "summary": {
+        "en": "Homepage repositioned as Open Thermal AI platform (founder as trust strip). New public Roadmap. Services framed as Open Core + Professional Services. Knowledge hub branded Open Knowledge with Open Dataset placeholders.",
+        "zh": "首页定位为 Open Thermal AI 平台（创始人作信任条）。新增公开路线图。服务改为 Open Core + 专业服务。知识库强化为 Open Knowledge，并加入 Open Dataset 占位。"
+      },
+      "url": "/roadmap.html"
+    },
+    {
       "id": "ota-v4-2026-07",
       "date": "2026-07-24",
       "category": "site",

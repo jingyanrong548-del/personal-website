@@ -4,7 +4,7 @@
 **Domain:** keep `www.jingyanrong.com`  
 **Stack (Phase 1):** Vite + multi-page static + Vanilla JS (no Next.js / FastAPI yet)
 
-**Current baseline (as of 2026-07):** A Phase 1 shell already exists in-repo (Open Thermal AI nav, `ai-engineer.html` mock, `tools.html`, `cases.html`, `founder.html`, dark theme tokens). This plan is the **product north star** and reconciles that shell with the refined dual-brand IA below. Gaps between shell and this plan are listed under “Delta vs current shell”.
+**Current baseline (as of 2026-07):** A Phase 1 shell already exists in-repo (Open Thermal AI nav, `ai-engineer.html` mock, `tools.html`, `cases.html`, `founder.html`, dark theme tokens). **Frontend strategy layer (2026-07):** homepage platform IA, public `roadmap.html`, Services Open Core + Professional Services, Knowledge branded Open Knowledge + Dataset placeholders. This plan remains the **product north star**; AI live backend is still Phase 2.
 
 ---
 

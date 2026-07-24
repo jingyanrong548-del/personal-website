@@ -1,7 +1,21 @@
 {
-  "version": "ota-v4-2026-07",
+  "version": "ota-frontend-strategy-2026-07",
   "generatedAt": "2026-07-24",
   "items": [
+    {
+      "id": "ota-frontend-strategy-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Platform IA upgrade: Open Knowledge · Roadmap · Open Core services",
+        "zh": "平台信息架构升级：开放知识 · 路线图 · Open Core 服务"
+      },
+      "summary": {
+        "en": "Homepage repositioned as Open Thermal AI platform (founder as trust strip). New public Roadmap. Services framed as Open Core + Professional Services. Knowledge hub branded Open Knowledge with Open Dataset placeholders.",
+        "zh": "首页定位为 Open Thermal AI 平台（创始人作信任条）。新增公开路线图。服务改为 Open Core + 专业服务。知识库强化为 Open Knowledge，并加入 Open Dataset 占位。"
+      },
+      "url": "/roadmap.html"
+    },
     {
       "id": "ota-v4-2026-07",
       "date": "2026-07-24",
@@ -99,20 +113,6 @@
         "zh": "3D 清单图英文界面用原图；中文界面切换为中文标注版（译文以图内英文为准）。"
       },
       "url": "/knowledge-compressor.html"
-    },
-    {
-      "id": "diagram-glyph-fix-2026-07",
-      "date": "2026-07-22",
-      "category": "site",
-      "title": {
-        "en": "Fixed missing glyphs (□) in knowledge diagrams",
-        "zh": "修复知识库示意图缺字方框（□）"
-      },
-      "summary": {
-        "en": "Latin labels now use Unicode-capable fonts; subscripts/Δ in schematics rewritten as ASCII (dT1, CO2, dP) so boxes no longer appear after T.",
-        "zh": "英文标注改用含全量符号的字体；示意图中的下标与 Δ 改为 ASCII（dT1、CO2、dP），消除 T 后出现方框的问题。"
-      },
-      "url": "/knowledge-exchanger.html#khx-flow"
     }
   ]
 }

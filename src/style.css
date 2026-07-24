@@ -9430,3 +9430,173 @@ body.theme-ota .apps-zone-title + p,
 body.theme-ota .invitation-lede {
     color: #CBD5E1;
 }
+
+/* Phase 1 frontend strategy — Open Knowledge / Roadmap / Open Core */
+.founder-authority-strip .founder-strip-founded {
+    margin: 0.35rem 0 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.founder-expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 1rem 0 1.25rem;
+    padding: 0;
+}
+
+.founder-expertise-tags li {
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-light);
+    background: var(--glass-bg);
+}
+
+.roadmap-teaser-section {
+    text-align: left;
+}
+
+.roadmap-phases {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.roadmap-phase {
+    padding: 1.25rem 1.35rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--glass-bg);
+}
+
+.roadmap-phase--current {
+    border-color: rgba(56, 189, 248, 0.55);
+}
+
+.roadmap-phase-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7DD3FC;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-phase h2 {
+    font-size: 1.15rem;
+    margin: 0 0 0.5rem;
+}
+
+.footer-nav-links {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.footer-nav-links a {
+    color: var(--secondary-color);
+}
+
+.services-open-core,
+.services-pro {
+    margin: 2rem 0;
+}
+
+.services-open-core-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.services-open-core-links a {
+    color: var(--secondary-color);
+}
+
+.services-pro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.services-pro-card {
+    padding: 1.1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--glass-bg);
+}
+
+.services-pro-card a {
+    display: inline-block;
+    margin-top: 0.65rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.knowledge-hub-subtitle {
+    margin: 0.35rem 0 0.75rem;
+    font-size: 1.05rem;
+    color: var(--text-light);
+}
+
+.knowledge-dataset-coming {
+    margin-top: 2.5rem;
+    padding: 1.35rem 1.5rem;
+    border: 1px dashed rgba(56, 189, 248, 0.4);
+    border-radius: 12px;
+    background: var(--glass-bg);
+}
+
+.knowledge-dataset-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.knowledge-dataset-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FBBF24;
+    border: 1px solid rgba(251, 191, 36, 0.45);
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem;
+}
+
+.knowledge-dataset-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.knowledge-dataset-list li {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.mentorship-section {
+    margin-top: 1rem;
+}
+
+body.theme-ota .partners-section,
+body.theme-ota .testimonials-section {
+    background: transparent;
+}
+
