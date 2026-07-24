@@ -1,11 +1,12 @@
 /**
- * Workspace chat client — Phase 1 mock turns.
+ * Workspace chat client — mock locally; live via Open Thermal AI proxy when configured.
  * Reuses thermalEngineerClient.analyze; routes agents + tools for UI transparency.
  */
 
 import { analyze } from './thermalEngineerClient.js';
 import { routeAgents, getAgent } from './agentRegistry.js';
 import { invokeTools, TOOL_CATALOG } from './toolsOrchestrator.js';
+import { aiLiveEnabled, apiRoot } from './config.js';
 
 /**
  * Parse free-text engineering brief into structured fields.
@@ -36,7 +37,6 @@ export function parseEngineeringBrief(text) {
   if (cop) out.copMin = Number(cop[1]);
   if (ref) out.refrigerant = ref[1].replace(/CO2/i, 'CO₂');
 
-  // Fallback: first two temperature numbers as source/target if labels missing
   if (out.sourceTempC == null || out.targetTempC == null) {
     const temps = [...text.matchAll(new RegExp(String.raw`(-?\d+(?:\.\d+)?)\s*${deg}`, 'gi'))].map((m) =>
       Number(m[1])
@@ -67,6 +67,36 @@ export function parseEngineeringBrief(text) {
  * @param {{ message: string, context?: ProjectContext, locale?: string }} input
  */
 export async function chatTurn(input) {
+  if (aiLiveEnabled()) {
+    const base = apiRoot();
+    const res = await fetch(`${base}/v1/copilot/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: input.message,
+        context: input.context || {},
+        locale: input.locale === 'zh' ? 'zh' : 'en',
+      }),
+    });
+    if (!res.ok) {
+      const errBody = await res.json().catch(() => ({}));
+      throw new Error(errBody.message || `Copilot API ${res.status}`);
+    }
+    const data = await res.json();
+    if (data.tools) {
+      data.tools = data.tools.map((t) => ({
+        ...t,
+        labelKey: t.labelKey || TOOL_CATALOG[t.toolId]?.labelKey,
+      }));
+    }
+    return data;
+  }
+
+  return mockChatTurn(input);
+}
+
+/** Local Phase 1 mock (no network). */
+async function mockChatTurn(input) {
   const locale = input.locale === 'zh' ? 'zh' : 'en';
   const message = (input.message || '').trim();
   const parsed = parseEngineeringBrief(message);
@@ -114,7 +144,6 @@ export async function chatTurn(input) {
 
   const reply = buildReply({
     locale,
-    message,
     analysis,
     agents,
     toolResults,

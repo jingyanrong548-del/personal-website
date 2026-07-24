@@ -5,6 +5,7 @@ import { initWhatsNew, refreshWhatsNewLanguage } from './whatsNew.js';
 import { AGENTS } from './ai/agentRegistry.js';
 import { chatTurn } from './ai/chatClient.js';
 import { createProject, updateProject, getProject } from './ai/projectStore.js';
+import { aiLiveEnabled } from './ai/config.js';
 
 function t(key) {
     const lang = getCurrentLanguage();
@@ -186,6 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initWhatsNew();
     renderAgentList();
     welcomeMessage();
+
+    const badge = document.querySelector('.workspace-status-badge');
+    if (badge && aiLiveEnabled()) {
+        badge.textContent = t('workspace.badge.live') || 'Live · LLM proxy';
+        badge.classList.add('is-live');
+    }
 
     const params = new URLSearchParams(location.search);
     const q = params.get('q');

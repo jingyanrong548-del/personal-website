@@ -155,6 +155,7 @@ export const platformTranslations = {
     'workspace.kicker': 'Open Thermal AI',
     'workspace.title': 'AI Engineering Workspace',
     'workspace.badge': 'Preview · Phase 1 mock',
+    'workspace.badge.live': 'Live · LLM proxy',
     'workspace.lede':
       'Describe a duty or design question. Phase 1 routes mock agents and tools — not a live LLM. Same analyze contract as AI Thermal Engineer.',
     'workspace.linkProjects': 'Project Space →',
@@ -513,6 +514,7 @@ export const platformTranslations = {
     'workspace.kicker': 'Open Thermal AI',
     'workspace.title': 'AI 工程工作台',
     'workspace.badge': '预览 · Phase 1 mock',
+    'workspace.badge.live': '在线 · LLM 代理',
     'workspace.lede':
       '描述工况或设计问题。Phase 1 会路由 mock Agent 与工具 — 非真实大模型。分析契约与 AI Thermal Engineer 一致。',
     'workspace.linkProjects': '项目空间 →',

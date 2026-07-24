@@ -76,5 +76,13 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    // Local live Copilot: run `npm run server` then set VITE_AI_USE_PROXY=true
+    // (or VITE_AI_API_BASE=http://127.0.0.1:8787) in .env.local
+    proxy: {
+      '/v1': {
+        target: 'http://127.0.0.1:8787',
+        changeOrigin: true,
+      },
+    },
   },
 })

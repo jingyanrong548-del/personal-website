@@ -1,60 +1,9 @@
 /**
- * AI Thermal Engineer client — mock by default; live when VITE_AI_API_BASE / proxy enabled.
- * Contract: POST /v1/thermal-engineer/analyze
+ * Rule-based thermal analyze (mirrors frontend mockAnalyze).
+ * Keeps numbers auditable; LLM only narrates on top.
  */
 
-import { aiLiveEnabled, apiRoot } from './config.js';
-
-export const USE_AI_API = aiLiveEnabled();
-export const AI_API_BASE = apiRoot();
-
-/**
- * @typedef {object} AnalyzeRequest
- * @property {number} sourceTempC
- * @property {number} targetTempC
- * @property {number} heatLoadKw
- * @property {string} [refrigerant]
- * @property {{ maxDischargeC?: number }} [constraints]
- * @property {string} [notes]
- * @property {string} [locale]
- * @property {string} [clientVersion]
- */
-
-/**
- * @typedef {object} AnalyzeResponse
- * @property {'ok'|'error'} status
- * @property {string} disclaimer
- * @property {{ cycle: string, summary: string }} concept
- * @property {{ type: string, notes: string[] }} compressor
- * @property {{ evaporator: object, condenser: object }} heatExchangers
- * @property {{ copBand: [number, number], confidence: string }} performance
- * @property {Array<{ id: string, severity: string, text: string }>} risks
- * @property {Array<{ type: string, url: string }>} refs
- */
-
-/**
- * @param {AnalyzeRequest} payload
- * @returns {Promise<AnalyzeResponse>}
- */
-export async function analyze(payload) {
-  if (aiLiveEnabled()) {
-    const base = apiRoot();
-    const res = await fetch(`${base}/v1/thermal-engineer/analyze`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...payload, clientVersion: 'ota-web-1.0' }),
-    });
-    if (!res.ok) throw new Error(`AI API ${res.status}`);
-    return res.json();
-  }
-  return mockAnalyze(payload);
-}
-
-/**
- * @param {AnalyzeRequest} req
- * @returns {AnalyzeResponse}
- */
-export function mockAnalyze(req) {
+export function ruleAnalyze(req) {
   const lift = (req.targetTempC ?? 0) - (req.sourceTempC ?? 0);
   const load = req.heatLoadKw ?? 0;
   const refrigerant = req.refrigerant || 'R1234ze(E)';
@@ -82,11 +31,7 @@ export function mockAnalyze(req) {
   const compressorType = lift > 60 ? 'screw_or_multi_stage' : 'screw_or_scroll';
   const compressorNotes =
     locale === 'zh'
-      ? [
-          '核对排气温度与润滑油耐温',
-          '温升较大时评估喷气增焓 / 中间冷却',
-          '确认电机与变频器在目标冷凝压力下的裕度',
-        ]
+      ? ['核对排气温度与润滑油耐温', '温升较大时评估喷气增焓 / 中间冷却', '确认电机与变频器在目标冷凝压力下的裕度']
       : [
           'Check discharge temperature vs oil rating',
           'For large lift, evaluate economizer / intercooling',

@@ -4,7 +4,7 @@
  * Future: AI Agent → live calculators → structured results.
  */
 
-import { USE_AI_API, AI_API_BASE } from './thermalEngineerClient.js';
+import { aiLiveEnabled, apiRoot } from './config.js';
 
 /** @typedef {{ id: string, labelKey: string, kind: 'tool'|'knowledge'|'ai', url?: string, status: 'live'|'mock'|'coming' }} ToolDef */
 
@@ -70,13 +70,17 @@ export const TOOL_CATALOG = {
  * @returns {Promise<Array<{ toolId: string, status: string, summary: string, url?: string }>>}
  */
 export async function invokeTools(toolIds, locale = 'en') {
-  if (USE_AI_API && AI_API_BASE) {
-    const res = await fetch(`${AI_API_BASE}/v1/tools/orchestrate`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ tools: toolIds, locale }),
-    });
-    if (res.ok) return res.json();
+  if (aiLiveEnabled()) {
+    try {
+      const res = await fetch(`${apiRoot()}/v1/tools/orchestrate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tools: toolIds, locale }),
+      });
+      if (res.ok) return res.json();
+    } catch {
+      /* fall through to local mock */
+    }
   }
 
   return toolIds.map((id) => {
@@ -114,14 +118,17 @@ export async function invokeTools(toolIds, locale = 'en') {
  * @param {{ toolId: string, inputs?: object, locale?: string }} payload
  */
 export async function explainTool(payload) {
-  if (USE_AI_API && AI_API_BASE) {
-    const res = await fetch(`${AI_API_BASE}/v1/tools/explain`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    if (!res.ok) throw new Error(`explain ${res.status}`);
-    return res.json();
+  if (aiLiveEnabled()) {
+    try {
+      const res = await fetch(`${apiRoot()}/v1/tools/explain`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) return res.json();
+    } catch {
+      /* fall through */
+    }
   }
   const zh = payload.locale === 'zh';
   return {

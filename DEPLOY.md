@@ -115,6 +115,10 @@ scp -r dist/* root@8.138.191.154:/www/wwwroot/www.jingyanrong.com/
 | `/heat-pump-policies.html` | `/heat-pump-standards.html#policies` |
 | `/useful-links.html` | `/heat-pump-standards.html#links` |
 
+### AI 代理（可选，阿里云）
+
+仓库内 [`server/`](./server/) 提供 OpenAI 兼容的 LLM 代理（密钥不进前端）。静态站默认仍是 mock；在服务器上 `npm run server` + Nginx 反代 `/v1/` 后，构建时设置 `VITE_AI_USE_PROXY=true`（或 `VITE_AI_API_BASE`）即可启用首页/工作台真实对话。详见 [`server/README.md`](./server/README.md)。
+
 宝塔示例（站点 `www.jingyanrong.com` → 设置 → 配置文件，在 `server { }` 内追加）：
 
 ```nginx
