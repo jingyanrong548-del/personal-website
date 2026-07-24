@@ -1,6 +1,20 @@
 {
   "manual": [
     {
+      "id": "ota-platform-skeleton-2026-07",
+      "date": "2026-07-24",
+      "category": "site",
+      "title": {
+        "en": "Platform skeleton: Why · AI Workspace · Engineering Suite · What's Next",
+        "zh": "平台骨架：Why · AI Workspace · 工程套件 · What's Next"
+      },
+      "summary": {
+        "en": "New Why Open Thermal AI and AI Workspace (Coming Soon) pages. Tools rebranded as Engineering Suite. Homepage hero and What's Next clarify platform direction.",
+        "zh": "新增 Why Open Thermal AI 与 AI Workspace（即将推出）。工具统一为 Engineering Suite。首页 Hero 与 What's Next 明确平台方向。"
+      },
+      "url": "/why.html"
+    },
+    {
       "id": "ota-frontend-strategy-2026-07",
       "date": "2026-07-24",
       "category": "site",

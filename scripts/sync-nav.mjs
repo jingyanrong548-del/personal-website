@@ -39,10 +39,13 @@ function processFile(relPath, navHtml) {
 const rootPages = [
   'articles.html',
   'ai-engineer.html',
+  'ai-workspace.html',
   'tools.html',
   'cases.html',
   'founder.html',
   'knowledge.html',
+  'roadmap.html',
+  'why.html',
   'knowledge-cycles.html',
   'knowledge-refrigerants.html',
   'knowledge-compressor.html',

@@ -38,6 +38,8 @@ export default defineConfig({
         cases: resolve(__dirname, 'cases.html'),
         founder: resolve(__dirname, 'founder.html'),
         roadmap: resolve(__dirname, 'roadmap.html'),
+        why: resolve(__dirname, 'why.html'),
+        aiWorkspace: resolve(__dirname, 'ai-workspace.html'),
         knowledge: resolve(__dirname, 'knowledge.html'),
         hthpColumn: resolve(__dirname, 'hthp-column.html'),
         heatPumpStandards: resolve(__dirname, 'heat-pump-standards.html'),

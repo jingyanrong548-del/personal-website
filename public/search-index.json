@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-24",
-  "count": 54,
+  "count": 57,
   "items": [
     {
       "id": "briefing-2026-w29",
@@ -311,6 +311,38 @@
       "date": null
     },
     {
+      "id": "ai-workspace",
+      "category": "site",
+      "url": "/ai-workspace.html",
+      "title": {
+        "en": "AI Workspace",
+        "zh": "AI Workspace"
+      },
+      "summary": {
+        "en": "Coming Soon: unified AI Workspace for thermal consulting, design assistance, cycle optimization, and digital twin.",
+        "zh": "即将推出：统一 AI Workspace，覆盖热能咨询、设计辅助、循环优化与数字孪生。"
+      },
+      "keywords": {
+        "en": [
+          "AI Workspace",
+          "Coming Soon",
+          "thermal AI",
+          "digital twin"
+        ],
+        "zh": [
+          "AI Workspace",
+          "即将推出",
+          "热能 AI",
+          "数字孪生"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "articles",
       "category": "page",
       "url": "/articles.html",
@@ -540,6 +572,38 @@
       "date": null
     },
     {
+      "id": "tools-hub",
+      "category": "tool",
+      "url": "/tools.html",
+      "title": {
+        "en": "Engineering Suite — Open Thermal AI",
+        "zh": "工程套件 — Open Thermal AI"
+      },
+      "summary": {
+        "en": "Open Thermal AI Engineering Suite: auditable industrial heat pump calculators and standards references.",
+        "zh": "Open Thermal AI Engineering Suite：可审计的工业热泵计算器与标准查阅。"
+      },
+      "keywords": {
+        "en": [
+          "Engineering Suite",
+          "calculator",
+          "matching",
+          "benefit"
+        ],
+        "zh": [
+          "工程套件",
+          "计算器",
+          "匹配",
+          "效益"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "tool-euc",
       "category": "tool",
       "url": "https://euc.jingyanrong.com",
@@ -561,38 +625,6 @@
           "单位",
           "换算",
           "计算"
-        ]
-      },
-      "body": {
-        "en": "",
-        "zh": ""
-      },
-      "date": null
-    },
-    {
-      "id": "tools-hub",
-      "category": "tool",
-      "url": "/tools.html",
-      "title": {
-        "en": "Engineering Tools",
-        "zh": "工程工具"
-      },
-      "summary": {
-        "en": "Auditable industrial heat pump calculators and standards references.",
-        "zh": "可审计的工业热泵计算器与标准查阅。"
-      },
-      "keywords": {
-        "en": [
-          "toolbox",
-          "calculator",
-          "matching",
-          "benefit"
-        ],
-        "zh": [
-          "工具箱",
-          "计算器",
-          "匹配",
-          "效益"
         ]
       },
       "body": {
@@ -1133,6 +1165,38 @@
       "date": null
     },
     {
+      "id": "roadmap",
+      "category": "site",
+      "url": "/roadmap.html",
+      "title": {
+        "en": "Open Thermal AI Roadmap",
+        "zh": "Open Thermal AI 路线图"
+      },
+      "summary": {
+        "en": "Platform Foundation → AI Engineering Assistant → Simulation & Digital Twin → Global Thermal AI Ecosystem.",
+        "zh": "平台骨架 → AI 工程助手 → 仿真与数字孪生 → 全球热能 AI 生态。"
+      },
+      "keywords": {
+        "en": [
+          "roadmap",
+          "platform",
+          "AI",
+          "digital twin"
+        ],
+        "zh": [
+          "路线图",
+          "平台",
+          "AI",
+          "数字孪生"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
       "id": "knowledge-piping",
       "category": "page",
       "url": "/knowledge-piping.html",
@@ -1614,6 +1678,38 @@
           "气液分离器",
           "贮液器",
           "闪发罐"
+        ]
+      },
+      "body": {
+        "en": "",
+        "zh": ""
+      },
+      "date": null
+    },
+    {
+      "id": "why-ota",
+      "category": "site",
+      "url": "/why.html",
+      "title": {
+        "en": "Why Open Thermal AI",
+        "zh": "为何是 Open Thermal AI"
+      },
+      "summary": {
+        "en": "Mission, vision, and values of the global open AI platform for industrial thermal intelligence.",
+        "zh": "全球工业热能开放式 AI 平台的使命、愿景与价值观。"
+      },
+      "keywords": {
+        "en": [
+          "mission",
+          "vision",
+          "values",
+          "Open Thermal AI"
+        ],
+        "zh": [
+          "使命",
+          "愿景",
+          "价值观",
+          "Open Thermal AI"
         ]
       },
       "body": {
